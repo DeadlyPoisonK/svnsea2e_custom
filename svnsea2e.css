@@ -1,0 +1,877 @@
+@import"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Trade+Winds&display=swap";
+
+.window-app .window-content {
+    color: #000
+}
+
+.window-app .window-header .window-title,
+.window-app .window-header a {
+    color: #fff
+}
+
+.window-app .window-header .window-title {
+    padding-left: .25rem
+}
+
+.window-app .window-header {
+    border-bottom: .0625rem solid #dbd5b0
+}
+
+.rollable:focus,
+.rollable:hover {
+    text-shadow: 0 0 .625rem white;
+    cursor: pointer;
+    background-image: url(/systems/svnsea2e/icons/d10.svg);
+    background-size: 20px;
+    background-repeat: no-repeat
+}
+
+.rollableT:focus,
+.rollableT:hover {
+    text-shadow: 0 0 .625rem white;
+    cursor: pointer;
+    background-image: url(/systems/svnsea2e/icons/d10.svg);
+    background-size: 20px;
+    background-repeat: no-repeat
+}
+
+.roll-throw{
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: #000;
+  background: rgba(255, 255, 255, 0.3); /* Transparente para ver el papel */
+  border: 1px solid rgba(0,0,0,0.2); /* Un borde sutil queda bien aquí */
+  cursor: pointer;
+}
+
+.grid,
+.grid-2col {
+    display: grid;
+    grid-column: span 2/span 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .25rem;
+    margin: .25rem 0;
+    padding: 0
+}
+
+.grid-3col {
+    grid-column: span 3/span 3;
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
+.grid-4col {
+    grid-column: span 4/span 4;
+    grid-template-columns: repeat(4, minmax(0, 1fr))
+}
+
+.grid-5col,
+.grid-6col {
+    grid-column: span 5/span 5;
+    grid-template-columns: repeat(5, minmax(0, 1fr))
+}
+
+.grid-7col {
+    grid-column: span 7/span 7;
+    grid-template-columns: repeat(7, minmax(0, 1fr))
+}
+
+.grid-8col {
+    grid-column: span 8/span 8;
+    grid-template-columns: repeat(8, minmax(0, 1fr))
+}
+
+.grid-9col {
+    grid-column: span 9/span 9;
+    grid-template-columns: repeat(9, minmax(0, 1fr))
+}
+
+.grid-10col {
+    grid-column: span 10/span 10;
+    grid-template-columns: repeat(10, minmax(0, 1fr))
+}
+
+.grid-11col {
+    grid-column: span 11/span 11;
+    grid-template-columns: repeat(11, minmax(0, 1fr))
+}
+
+.grid-12col {
+    grid-column: span 12/span 12;
+    grid-template-columns: repeat(12, minmax(0, 1fr))
+}
+
+.flex-group-center,
+.flex-group-left,
+.flex-group-right {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: .125rem;
+    border: 0 solid transparent
+}
+
+.flex-group-left {
+    justify-content: flex-start;
+    text-align: left
+}
+
+.flex-group-right {
+    justify-content: flex-end;
+    text-align: right
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+.flex-between {
+    justify-content: space-between
+}
+
+.dialog .dialog-button .d10 {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 0
+}
+
+.dialog .dialog-button.roll {
+    display: flex
+}
+
+.dialog .roll-dialog input[type=number] {
+    max-width: 3rem;
+    text-align: center
+}
+
+#chat #chat-controls div.roll-type-select select,
+#chat #chat-form textarea,
+#chat #chat-log .message {
+    background: white
+}
+
+#chat #chat-log .chat-card.skill-roll .card-header {
+    padding-bottom: .125rem;
+    background: url(/systems/svnsea2e/imgs/paint_border.png);
+    background-repeat: no-repeat;
+    background-size: 100% .375rem;
+    background-position: left bottom
+}
+
+#chat #chat-log .chat-card.skill-roll .card-content .raises {
+    font-weight: 700
+}
+
+#chat #chat-log .message {
+    font-size: 1em;
+    color: #000;
+    padding: 0
+}
+
+#chat #chat-log .message .message-header {
+    color: #fff;
+    background: #771213;
+    padding-left: .5rem;
+    padding-right: .5rem
+}
+
+#chat #chat-log .message .message-header .message-sender {
+    padding-bottom: .125rem;
+    font-weight: 700;
+    text-indent: .4em;
+    line-height: 1.3em;
+    flex: 4
+}
+
+#chat #chat-log .message .message-header h4 {
+    color: #fff
+}
+
+#chat #chat-log .message .message-content {
+    padding: .5rem;
+    margin-top: 0;
+    margin-bottom: .25rem
+}
+
+#chat #chat-log .message .message-content h3,
+#chat #chat-log .message .message-content h4,
+#chat #chat-log .message .message-content h5,
+#chat #chat-log .message .message-content h6 {
+    margin-top: 0;
+    margin-bottom: .25rem
+}
+
+#chat #chat-log .message .message-content .raise-combos-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: .25rem
+}
+
+#chat #chat-log .message .message-content .raise-combos-list .combo {
+    padding: .25rem;
+    margin: .125rem;
+    display: inline-block;
+    background: rgba(0, 0, 0, .1)
+}
+
+.svnsea2e form .form-group,
+.svnsea2e form .form-group-stacked,
+.svnsea2e form .wounds {
+    margin: .25rem
+}
+
+.svnsea2e form .form-group>label {
+    flex: 3
+}
+
+.svnsea2e form .form-group>label.icon-label {
+    flex: 1
+}
+
+.svnsea2e .item-form {
+    font-family: Roboto, sans-serif
+}
+
+.svnsea2e .sheet-tabs {
+    flex: 0
+}
+
+.svnsea2e .sheet-body,
+.svnsea2e .sheet-body .tab,
+.svnsea2e .sheet-body .tab .editor {
+    height: 95%
+}
+
+.svnsea2e .tox .tox-editor-container {
+    background: white
+}
+
+.svnsea2e .tox .tox-edit-area {
+    padding: 0 .5rem
+}
+
+.svnsea2e .tabs {
+    border-bottom: .125rem solid #530202
+}
+
+.svnsea2e .tabs h2 {
+    border: 0 solid transparent;
+    font-size: 1.1em;
+    margin: 0
+}
+
+.svnsea2e .tabs .item {
+    font-weight: 700;
+    text-transform: uppercase;
+    border-top: .125rem solid #530202;
+    border-left: .125rem solid #530202;
+    border-right: .125rem solid #530202;
+    border-bottom: 0;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    padding: .25rem;
+    margin: .25rem .125rem 0;
+    background: #771213;
+    flex: 1
+}
+
+.svnsea2e .tabs .item h2 {
+    color: #fff;
+    background: none
+}
+
+.svnsea2e .tabs .item.active {
+    background: white;
+    text-shadow: none
+}
+
+.svnsea2e .tabs .item.active h2 {
+    color: #000
+}
+
+.sheet img {
+    border: 0 solid transparent
+}
+
+.sheet h1.charname,
+.sheet h3 {
+    padding-bottom: .125rem;
+    background: url(/systems/svnsea2e/imgs/paint_border.png);
+    background-repeat: no-repeat;
+    background-size: 100% .375rem;
+    background-position: left bottom
+}
+
+.sheet input[type=text] {
+    min-width: 1.875rem;
+    text-align: left;
+    border: 0 solid transparent
+}
+
+.sheet nav.sheet-tabs {
+    height: auto;
+    display: flex;
+    border-top: 0px
+}
+
+.sheet .sheet-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: .5rem
+}
+
+.sheet .sheet-header .villanyrank {
+    margin-left: .5rem
+}
+
+.sheet .sheet-header .profile-img {
+    margin-right: .25rem
+}
+
+.sheet .sheet-header .header-fields {
+    flex: 1
+}
+
+.sheet .sheet-header .flex-group-center,
+.sheet .sheet-header .flex-group-left {
+    padding: 0
+}
+
+.sheet .sheet-header .grid .relrep,
+.sheet .sheet-header .grid .resources {
+    border-top: .0625rem solid #530202
+}
+
+.sheet .sheet-header h1.charname {
+    height: 3.125rem;
+    margin: .25rem;
+    text-indent: 0
+}
+
+.sheet .sheet-header h1.charname input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: none;
+    text-indent: 1rem;
+    font-family: Trade Winds, cursive
+}
+
+.sheet .sheet-header .herospts,
+.sheet .sheet-header .wealth {
+    max-width: 1.875rem;
+    margin-right: .625rem
+}
+
+.sheet .corruption {
+    min-width: 22em
+}
+
+.sheet .tag {
+    display: inline-block;
+    margin: 0 .125rem .125rem 0;
+    padding: .25rem;
+    font-size: 1em;
+    background: rgba(0, 0, 0, .1)
+}
+
+.sheet .secretsociety .tag {
+    flex-grow: .25;
+    flex-shrink: .25;
+    flex-basis: .625rem
+}
+
+.sheet .flexrow .tag-list {
+    flex: 0 0 95%
+}
+
+.sheet .flexrow .skill-selector,
+.sheet .flexrow .advantage-selector .language-selector {
+    flex: 0 0 2%
+}
+
+.sheet .details-list,
+.sheet .tag-list {
+    line-height: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.sheet .arcana {
+    width: 85%
+}
+
+.sheet .items-list {
+    list-style: none;
+    margin: .5rem 0;
+    padding: 0;
+    overflow-y: auto;
+    line-height: 1.875rem
+}
+
+.sheet .items-list .item-header {
+    font-weight: 700
+}
+
+.sheet .items-list .item {
+    line-height: 1.5rem;
+    padding: .25rem 0;
+    border-bottom: .0625rem solid #dbd5b0
+}
+
+.sheet .items-list .item .item-image {
+    flex: 0 0 1.5rem;
+    margin-right: .25rem
+}
+
+.sheet .items-list .item img {
+    display: block
+}
+
+.sheet .items-list .item:last-child {
+    border-bottom: none
+}
+
+.sheet .items-list .item .item-weight {
+    flex: 0 0 3.75rem;
+    border-left: .0625rem solid #dbd5b0;
+    border-right: .0625rem solid #dbd5b0
+}
+
+.sheet .items-list .item .item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.sheet .items-list .item .item-controls {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80px;
+  flex: 0 0 80px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.sheet .items-list .item .item-controls a {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 22px;
+  flex: 0 0 22px;
+  text-align: center;
+  color: #000;
+}
+
+.sheet .items-list .item .item-summary {
+    flex: 0 0 100%;
+    font-size: 1em;
+    line-height: 1.2em;
+    padding: .5rem;
+    border-top: .25rem solid #dbd5b0
+}
+
+.sheet .items-list .item-name {
+    margin: 0
+}
+
+.sheet .items-list .item-controls {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 86px;
+  flex: 0 0 86px;
+  text-align: right;
+}
+
+.sheet .items-list .item h4.item-name {
+    font-size: 16px; 
+    line-height: 24px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sheet .items-list .item h4.item-name span {
+    margin-left: 8px; /* Puedes ajustar este número entre 5px y 10px */
+}
+.sheet .favor-label,
+.sheet .skill-name,
+.sheet .trait-name {
+    font-weight: 600;
+    padding-left: 1.5rem
+}
+
+.sheet .wound-title {
+    font-weight: 600;
+    margin-bottom: .625rem
+}
+
+.sheet .brute h2.ability-title {
+    text-shadow: none
+}
+
+.sheet .skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 8em;
+    gap: .2em
+}
+
+.sheet .skill {
+    height: 1em
+}
+
+.sheet .twodigit input[type=text] {
+  max-width: 30px;
+  text-align: right;
+}
+
+.sheet .twodigit input[type=number] {
+  max-width: 30px;
+  text-align: right;
+}
+
+.actor header.sheet-header {
+    flex: 0 0 9.375rem;
+    flex-direction: column
+}
+
+.actor header.sheet-header .header-concept {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+
+.actor header.sheet-header .header-data>.flex-group {
+    gap: .2rem
+}
+
+.actor header.sheet-header .header-data>.flex-group>* {
+    flex: auto
+}
+
+.actor header.sheet-header .header-data input {
+    text-align: center;
+    font-size: .9rem
+}
+
+.actor header.sheet-header .profile-img {
+    flex: 0 0 9.375rem;
+    height: 9.375rem;
+    width: 9.375rem;
+    border: .25rem solid #530202;
+    border-radius: 9.375rem
+}
+
+.actor header.sheet-header .wounds .pts {
+    padding-left: .625rem
+}
+
+.actor header.sheet-header .wounds .pts.bigger {
+    padding-left: 2.375rem
+}
+
+/* Corrección para el contenedor principal de Raises */
+.actor header.sheet-header .raise-tracking {
+    display: flex; /* Alinea el label y el grupo de números horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-end; /* Opcional: para que no se estire demasiado */
+    min-width: 10em;
+    gap: 0.5rem; /* Espacio entre la palabra 'Raises' y los botones */
+}
+
+.actor header.sheet-header .raise-tracking label {
+    margin-right: 0; /* Ya usamos gap en el padre, así que quitamos el margen */
+    margin-bottom: 0; /* Aseguramos que no haya margen inferior empujando */
+}
+
+/* IMPORTANTE: Esto arregla la "escalera" de los botones y el input */
+.actor header.sheet-header .raise-tracking .twodigit {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* Espacio pequeño entre botones e input */
+}
+
+.actor header.sheet-header .raise-tracking button {
+    width: 1.8rem;
+    font-size: 0.8em;
+    height: 1.8rem;
+    margin: 0;
+    padding: 0;
+    /* Mantenemos tus estilos visuales existentes */
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1em;
+    border: 1px solid rgba(119, 18, 19, 0.5);
+    -webkit-box-shadow: 1px 1px 4px #771213;
+    box-shadow: 1px 1px 4px #771213;
+    /* Flex para centrar el texto dentro del botón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actor header.sheet-header .raise-tracking input {
+    text-align: center;
+    margin: 0; /* Previene márgenes extraños del navegador */
+    height: 1.8rem; /* Igualamos la altura a los botones */
+}
+
+.actor .danger-points input[type=text] {
+    font-size: 6em;
+    height: 8rem;
+    width: 8rem;
+    border: .25rem solid #530202;
+    border-radius: 2em;
+    text-align: center
+}
+
+.actor .danger-points button {
+    margin-top: 3em;
+    width: auto
+}
+
+.actor .sheet-header.dangerpts {
+    flex-direction: row;
+    margin: 0;
+    gap: .5rem
+}
+
+.actor .sheet-header.dangerpts .profile-img {
+    flex: 0 0 3.125rem;
+    height: 3.125rem;
+    width: 3.125rem;
+    border: .0625rem solid #530202;
+    border-radius: 3.125rem
+}
+
+.actor .red {
+    color: red
+}
+
+.item .sheet-header {
+    flex: 0 0 9.375rem
+}
+
+.item .sheet-header .profile-img {
+    flex: 0 0 7.8125rem;
+    height: 7.8125rem;
+    width: 7.8125rem;
+    border: .25rem solid #530202;
+    border-radius: 7.8125rem
+}
+
+.item .sheet-header .item-subtitle {
+    font-size: .8em;
+    opacity: .5
+}
+
+.toolbox {
+    font-size: .8em
+}
+
+.toolbox .window-content {
+    background: none;
+    color: #fff
+}
+
+.toolbox .items {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding-right: .5rem
+}
+
+.toolbox .actor-resume {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-between
+}
+
+.toolbox .actor-resume h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #fff
+}
+
+.toolbox .score-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem
+}
+
+.toolbox .score-container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+
+
+.htk-control {
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Esto pintará de verde tanto el icono como el texto dentro del span */
+.htk-control .htk-on {
+    color: #2ecc71; /* Verde brillante */
+    text-shadow: 0 0 5px #2ecc71; /* Efecto de brillo */
+}
+
+/* Esto pintará de gris */
+.htk-control .htk-off {
+    color: #7f8c8d; /* Gris apagado */
+}
+
+/* Efecto para las imágenes de items lanzables */
+.item .item-image.item-throw {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Suaviza la animación */
+}
+
+.item .item-image.item-throw img {
+  border-radius: 4px; /* Opcional: bordes redondeados */
+}
+
+/* Cuando el mouse pasa por encima */
+.item .item-image.item-throw:hover {
+  transform: scale(1.15); /* Aumenta el tamaño un 15% */
+  filter: drop-shadow(0 0 5px gold); /* Añade un brillo dorado */
+  z-index: 1; /* Asegura que quede por encima de otros elementos */
+}
+
+/* Efecto al hacer clic (opcional, para sentir el click) */
+.item .item-image.item-throw:active {
+  transform: scale(0.95);
+}
+/* --- TOOLTIP PERSONALIZADO --- */
+
+/* Asegura que el contenedor sea la referencia para posicionar el texto */
+.item .item-image.item-throw {
+  position: relative; 
+}
+
+/* El cuadro de texto (oculto por defecto) - POSICIÓN DERECHA */
+.item .item-image.item-throw::after {
+  content: attr(data-tooltip-text);
+  position: absolute;
+  
+  /* NUEVA POSICIÓN: A LA DERECHA Y CENTRADO VERTICALMENTE */
+  top: 50%;               /* Baja el borde superior a la mitad de la imagen */
+  left: 100%;             /* Mueve el borde izquierdo al final de la imagen */
+  transform: translateY(-50%); /* Sube el texto la mitad de su propia altura para centrarlo */
+  margin-left: 10px;      /* Añade un pequeño espacio entre la imagen y el texto */
+  
+  /* Estilo visual (Igual que antes) */
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1000;
+  border: 1px solid #530202;
+  
+  /* Animación y Tiempo (Igual que antes) */
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  transition-delay: 0.5s; /* Tiempo de espera antes de aparecer */
+  visibility: hidden;
+}
+
+/* Cuando pasas el mouse, se muestra */
+.item .item-image.item-throw:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Estilo para el contenedor de la cabecera en el chat */
+.chat-card .grid-card {
+  display: grid;
+  grid-template-columns: 40px 1fr; /* 40px para imagen, resto para texto */
+  gap: 10px; /* Separación entre imagen y texto */
+  align-items: center; /* Centrar verticalmente */
+  margin-bottom: 5px;
+  border-bottom: 2px solid #530202; /* La línea roja debajo del nombre */
+  padding-bottom: 5px;
+}
+
+/* Estilo para la imagen en el chat */
+.chat-card .card-img {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+/* Estilo para el nombre (La fuente bonita) */
+.chat-card .card-name {
+  font-family: "Trade Winds", cursive; /* La fuente pirata */
+  font-size: 1.5em;
+  margin: 0;
+  color: #000;
+  line-height: 1;
+}
+
+/* Ajuste para el cuadro de descripción */
+.chat-card .card-div {
+  padding: 5px;
+  border: 2px solid #530202;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5); /* Un poco de fondo para leer mejor */
+  margin-top: 5px;
+}
+
+/* 1. Convertimos el contenedor de iniciativa en Flexbox */
+#combat .combatant .token-initiative {
+    display: flex !important; /* Forzamos flexbox */
+    align-items: center;
+    justify-content: center;
+    gap: 4px; /* Espacio entre botones y número */
+    flex: 0 0 90px; /* Le damos un poco más de ancho al contenedor general */
+}
+
+/* 2. Ajustamos el Input (el número) para que no sea gigante */
+#combat .combatant .token-initiative input.initiative-input {
+    flex: 0 0 30px; /* Ancho fijo para el número */
+    text-align: center;
+    min-width: unset; /* Evita que foundry fuerce anchos raros */
+    margin: 0;
+}
+
+/* 3. Estilo de los Botones */
+#combat .combatant .token-initiative .combat-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanquecino */
+    border: 1px solid #771213;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.2s;
+    line-height: 1;
+}
+
+/* Hover */
+#combat .combatant .token-initiative .combat-btn:hover {
+    background: #771213;
+    color: white;
+}
+
+
+
+
