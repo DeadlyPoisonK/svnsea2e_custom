@@ -11,13 +11,7 @@
     "templateVersion": 3,
     "authors": [
         {
-            "name": "psychoph"
-        },
-        {
-            "name": "mattraykowski"
-        },
-        {
-            "name": "schmurtz"
+            "name": "DeadlyPoisonK"
         }
     ],
     "esmodules": [
@@ -169,8 +163,8 @@
     "gridUnits": "ft",
     "primaryTokenAttribute": "wounds",
     "secondaryTokenAttribute": "dwounds",
-    "url": "https://github.com/Detailing-the-Realm/svnsea2e",
-    "manifest": "https://github.com/Detailing-the-Realm/svnsea2e/releases/latest/download/system.json",
-    "download": "https://github.com/Detailing-the-Realm/svnsea2e/releases/download/v4.0.0/system.zip",
+    "url": "https://github.com/DeadlyPoisonK/svnsea2e_custom",
+    "manifest": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/latest/download/system.json",
+    "download": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/latest/download/system.zip",
     "license": "MIT"
 }

@@ -25,6 +25,28 @@ Cambios propios agregados sobre esa base:
 
 Y probablemente algún que otro ajuste menor que ya ni recuerdo — si notás algo raro o distinto avisame.
 
+## Metadata del sistema (`system.json`)
+
+- `authors` ya no lista a los desarrolladores originales del oficial (psychoph, mattraykowski, schmurtz) — queda `DeadlyPoisonK`.
+- `url`, `manifest` y `download` apuntaban al repo oficial (`Detailing-the-Realm/svnsea2e`); ahora apuntan a `DeadlyPoisonK/svnsea2e_custom`. **Ojo:** `manifest`/`download` solo van a funcionar si publicás una Release en GitHub con un `system.zip` y un `system.json` como assets — si no hay Release, Foundry no va a poder instalar/actualizar el sistema desde esa URL. Revisalo antes de compartir el link.
+- El `LICENSE` **no lo toqué**: mantiene el copyright de Jason "psychoph" Hardin y Matt Raykowski (2021) sobre el código original, bajo MIT. Esa nota de copyright es parte de los términos de la licencia MIT del proyecto original — quitarla de un derivado incumple la licencia bajo la que se te permitió usar y modificar el código. Si querés sumar tu propio copyright por los cambios, se agrega una línea nueva, no se reemplaza la existente.
+
+## Estado de las traducciones (revisión de los 6 idiomas: en/de/fr/es/it/pt-BR)
+
+Ninguna de las funciones nuevas quedó traducida — todas usan texto fijo en vez de `{{localize}}`, así que se ven igual sin importar el idioma configurado en Foundry:
+
+- **HtK (jugador y villano):** los textos "Activar Hard To Kill (25 Heridas)" y "HTK: ON/OFF" están escritos directo en los templates. No existe ninguna clave `SVNSEA2E.Htk*` en ningún `lang/*.json`.
+- **Checkbox "usado" de Virtud/Hubris:** el template llama a `{{localize 'SVNSEA2E.Used'}}`, pero esa clave **no existe en ningún idioma** (ni en el oficial). Foundry va a mostrar literalmente "SVNSEA2E.Used" como tooltip hasta que se agregue la clave a los 6 archivos.
+- **Diálogo de tirada libre ("Roll Dice"):** el botón y el label "Número de Dados:" están fijos (inglés + español mezclados), sin clave de traducción.
+- **Dados no usados / explosiones en el roll-card:** acá sí existen claves oficiales ya traducidas a los 6 idiomas (`SVNSEA2E.UnusedDice`, `SVNSEA2E.UnusedDie`, `SVNSEA2E.RollsExploded`) pero el template nuevo **no las usa** — puso `"UnusedDices"` fijo en inglés y `"(+N dados explotados)"` fijo en español en vez de llamarlas. Es decir, la traducción ya está lista, solo falta conectarla.
+- Aparte, y sin relación a los cambios propios: `it.json` (italiano) ya venía sin `SVNSEA2E.UnusedDice` y `SVNSEA2E.UnusedDie` desde el oficial — hueco heredado, no introducido por este fork.
+
+Pendiente si querés que las nuevas funciones respeten el idioma del jugador: agregar las claves que faltan (`SVNSEA2E.Used`, y algunas para HtK/Roll Dice) a los 6 `lang/*.json`, y reemplazar los textos fijos de `roll-card.hbs` por `{{localize "SVNSEA2E.UnusedDice"}}` / `{{localize "SVNSEA2E.RollsExploded"}}`.
+
+## Créditos
+
+Este fork existe gracias al trabajo original de **Jason "psychoph" Hardin**, **Matt Raykowski** y **schmurtz**, creadores de [Detailing-the-Realm/svnsea2e](https://github.com/Detailing-the-Realm/svnsea2e). Todo lo que no está listado en "Estado respecto al oficial" es obra de ellos. `authors` en `system.json` quedó solo con `DeadlyPoisonK` porque ese campo identifica a quién mantiene *este paquete* (para que Foundry sepa a quién reportarle bugs de esta versión), no porque se les quiera restar mérito — el trabajo de base sigue siendo enteramente suyo.
+
 ## Contacto
 
 Si encontrás un problema, algo roto, o tenés una sugerencia: hablame por Discord, `deadlypoison#2956`.
