@@ -1,4 +1,4 @@
-# svnsea2e_custom
+# 7 Sea System
 
 Fork personal del sistema **7th Sea Second Edition (Unofficial)** para Foundry VTT, basado en [Detailing-the-Realm/svnsea2e](https://github.com/Detailing-the-Realm/svnsea2e).
 
