@@ -1328,14 +1328,21 @@ class M extends ActorSheet {
               let numDice = parseInt(html.find("#dice-number").val(), 10);
               if (isNaN(numDice) || numDice < 1) numDice = 1;
 
+              // 1b. Leer las casillas de Advantages / Danger Points del diálogo
+              const addOneToDiceChecked = html.find("#addOneToDice").is(":checked");
+              const joieDeVivreChecked = html.find("#joieDeVivreAdvantage").is(":checked");
+              const explodeDiceChecked = html.find("#explodeDice").is(":checked");
+              const increaseThresholdChecked = html.find("#increaseThreshold").is(":checked");
+
               // 2. Ejecutar la función 'de' (la lógica interna de tiradas)
               // NOTA: 'de' espera un formulario complejo, así que creamos un objeto 'fakeForm'
-              // con valores en 0/false para que solo cuente los dados que pusimos manuales.
+              // con valores en 0/false para que solo cuente los dados que pusimos manuales,
+              // salvo las casillas de Advantages/Danger Points que sí se leen del diálogo.
               await de({
                 rolldata: {
                   skilldice: numDice, // Aquí van tus dados manuales
                   threshold: 10,      // Dificultad estándar
-                  explode: false,     // Sin explosión por defecto
+                  explode: false,     // La explosión manual se maneja vía explodeDice
                   reroll: false,
                   skipWoundBonus: true
                 },
@@ -1352,9 +1359,10 @@ class M extends ActorSheet {
                   useForMe: { value: 0 },
                   useForHelpMe: { value: 0 },
                   bonusDice: { value: 0 },
-                  increaseThreshold: { checked: false },
-                  addOneToDice: { checked: false },
-                  joieDeVivreAdvantage: { checked: false }
+                  increaseThreshold: { checked: increaseThresholdChecked },
+                  addOneToDice: { checked: addOneToDiceChecked },
+                  joieDeVivreAdvantage: { checked: joieDeVivreChecked },
+                  explodeDice: { checked: explodeDiceChecked }
                 }
               });
               resolve();

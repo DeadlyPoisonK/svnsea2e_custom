@@ -20,7 +20,7 @@
               </ul>
             </div>
             {{#if unusedRolls.length}}
-            <h6>UnusedDices</h6>
+            <h6>{{localize "SVNSEA2E.UnusedDice"}}</h6>
             <div class="flexrow flex-group flex-left">
               <ul class="raise-combos-list">
                 {{#each unusedRolls as |ur|}}
@@ -38,7 +38,7 @@
               <div class="explosions">
                 {{ explosions }}
                 {{#if extraDice}}
-                  <br><strong>(+{{ extraDice }} dados explotados)</strong>
+                  <br><strong>(+{{ extraDice }} {{localize "SVNSEA2E.ExtraDiceExploded"}})</strong>
                 {{/if}}
               </div>
             {{/if}}

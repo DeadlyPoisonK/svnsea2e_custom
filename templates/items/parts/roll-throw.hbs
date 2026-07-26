@@ -1,5 +1,29 @@
 <div id="dice-dialog" style="width: auto; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
-  <label for="dice-number" style="text-align: center; display: block; margin-bottom: 5px;">Número de Dados:</label>
-  <input type="number" id="dice-number" value="1" min="1" style="width: 100%; padding: 5px; text-align: center;" />
+  <div class="form-group">
+    <label for="dice-number" style="text-align: center; display: block; margin-bottom: 5px;">{{localize "SVNSEA2E.DiceNumberLabel"}}</label>
+    <input type="number" id="dice-number" value="1" min="1" style="width: 100%; padding: 5px; text-align: center;" />
+  </div>
+  <fieldset>
+    <legend>{{ localize "SVNSEA2E.Advantages" }}</legend>
+    <div class="form-group">
+      <label for="addOneToDice">{{ localize "SVNSEA2E.AddOneToDice" }}</label>
+      <input type="checkbox" id="addOneToDice" name="addOneToDice" value="1" />
+    </div>
+    <div class="form-group">
+      <label for="joieDeVivreAdvantage">{{ localize "SVNSEA2E.JoieDeVivre" }}</label>
+      <input type="checkbox" id="joieDeVivreAdvantage" name="joieDeVivreAdvantage" value="1" />
+    </div>
+    <div class="form-group">
+      <label for="explodeDice">10s Explotan</label>
+      <input type="checkbox" id="explodeDice" name="explodeDice" value="1" />
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>{{ localize "SVNSEA2E.DangerPoints" }}</legend>
+    <div class="form-group">
+      <label for="increaseThreshold">{{ localize "SVNSEA2E.IncreaseThreshold" }}</label>
+      <input type="checkbox" id="increaseThreshold" name="increaseThreshold" value="1" />
+    </div>
+  </fieldset>
 </div>
 

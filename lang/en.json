@@ -350,5 +350,13 @@
   "SVNSEA2E.JoieDeVivre": "Joie de Vivre",
   "SVNSEA2E.Toolbox": "Toolbox",
   "SVNSEA2E.EmptyToolbox": "Drop some actor here",
-  "SVNSEA2E.OpenToolbox": "Open toolbox"
+  "SVNSEA2E.OpenToolbox": "Open toolbox",
+  "SVNSEA2E.Used": "Used",
+  "SVNSEA2E.HtkToggleTooltip": "Enable Hard To Kill (25 Wounds)",
+  "SVNSEA2E.HtkToggleVillainTooltip": "Enable Hard To Kill (Adds 1 extra Dramatic Wound)",
+  "SVNSEA2E.HtkOn": "HTK: ON",
+  "SVNSEA2E.HtkOff": "HTK: OFF",
+  "SVNSEA2E.RollDice": "Roll Dice",
+  "SVNSEA2E.DiceNumberLabel": "Number of Dice:",
+  "SVNSEA2E.ExtraDiceExploded": "exploded dice"
 }

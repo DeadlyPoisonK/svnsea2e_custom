@@ -349,5 +349,13 @@
   "SVNSEA2E.JoieDeVivre": "Joie de Vivre",
   "SVNSEA2E.EmptyToolbox": "Glisser des acteurs ici",
   "SVNSEA2E.Toolbox": "Boite à outils",
-  "SVNSEA2E.OpenToolbox": "Ouvrir la boite à outils"
+  "SVNSEA2E.OpenToolbox": "Ouvrir la boite à outils",
+  "SVNSEA2E.Used": "Utilisé",
+  "SVNSEA2E.HtkToggleTooltip": "Activer Difficile à Tuer (25 Blessures)",
+  "SVNSEA2E.HtkToggleVillainTooltip": "Activer Difficile à Tuer (Ajoute 1 Blessure Dramatique supplémentaire)",
+  "SVNSEA2E.HtkOn": "HTK : ACTIVÉ",
+  "SVNSEA2E.HtkOff": "HTK : DÉSACTIVÉ",
+  "SVNSEA2E.RollDice": "Lancer les dés",
+  "SVNSEA2E.DiceNumberLabel": "Nombre de dés :",
+  "SVNSEA2E.ExtraDiceExploded": "dés explosés"
 }

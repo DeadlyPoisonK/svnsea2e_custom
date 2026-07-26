@@ -341,5 +341,13 @@
   "SVNSEA2E.JoieDeVivre": "Joie de Vivre",
   "SVNSEA2E.Toolbox": "Toolbox",
   "SVNSEA2E.EmptyToolbox": "Drop some actor here",
-  "SVNSEA2E.OpenToolbox": "Open toolbox"
+  "SVNSEA2E.OpenToolbox": "Open toolbox",
+  "SVNSEA2E.Used": "Verwendet",
+  "SVNSEA2E.HtkToggleTooltip": "Hard To Kill aktivieren (25 Wunden)",
+  "SVNSEA2E.HtkToggleVillainTooltip": "Hard To Kill aktivieren (Fügt 1 zusätzliche dramatische Wunde hinzu)",
+  "SVNSEA2E.HtkOn": "HTK: AN",
+  "SVNSEA2E.HtkOff": "HTK: AUS",
+  "SVNSEA2E.RollDice": "Würfel werfen",
+  "SVNSEA2E.DiceNumberLabel": "Anzahl der Würfel:",
+  "SVNSEA2E.ExtraDiceExploded": "explodierte Würfel"
 }

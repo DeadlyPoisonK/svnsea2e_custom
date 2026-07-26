@@ -25,14 +25,14 @@
       </span>
     </div>
     {{!-- ARREGLO: HARD TO KILL (HtK) HEROES --}}
-    <a class="htk-control" title="Activar Hard To Kill (25 Heridas)">
+    <a class="htk-control" title="{{localize "SVNSEA2E.HtkToggleTooltip"}}">
       {{#if actor.system.htk}}
           <span class="htk-on">
-              <i class="fas fa-heart"></i> HTK: ON
+              <i class="fas fa-heart"></i> {{localize "SVNSEA2E.HtkOn"}}
           </span>
       {{else}}
           <span class="htk-off">
-              <i class="fas fa-heart-broken"></i> HTK: OFF
+              <i class="fas fa-heart-broken"></i> {{localize "SVNSEA2E.HtkOff"}}
           </span>
       {{/if}}
     </a>
@@ -52,11 +52,11 @@
 {{!-- NUEVO BLOQUE: HARD TO KILL (HtK) PARA VILLANOS --}}
 {{#if isVillain}}
   <div class="flex-group-left" style="margin-bottom: 5px;">
-    <a class="htk-control" title="Activar Duro de Matar (Añade 1 Herida Dramática extra)">
+    <a class="htk-control" title="{{localize "SVNSEA2E.HtkToggleVillainTooltip"}}">
       {{#if actor.system.htk}}
-          <span class="htk-on" style="color: green; font-weight: bold;"><i class="fas fa-heart"></i> HTK: ON</span>
+          <span class="htk-on" style="color: green; font-weight: bold;"><i class="fas fa-heart"></i> {{localize "SVNSEA2E.HtkOn"}}</span>
       {{else}}
-          <span class="htk-off" style="color: gray;"><i class="fas fa-heart-broken"></i> HTK: OFF</span>
+          <span class="htk-off" style="color: gray;"><i class="fas fa-heart-broken"></i> {{localize "SVNSEA2E.HtkOff"}}</span>
       {{/if}}
     </a>
   </div>
@@ -84,5 +84,5 @@
   {{/for}}
 </div>
 <div class="flex-group">
-  <button type="button" class="roll-throw">Roll Dice</button>
+  <button type="button" class="roll-throw">{{localize "SVNSEA2E.RollDice"}}</button>
 </div>

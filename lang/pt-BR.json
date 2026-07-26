@@ -350,5 +350,13 @@
   "SVNSEA2E.JoieDeVivre": "Joie de Vivre",
   "SVNSEA2E.Toolbox": "Toolbox",
   "SVNSEA2E.EmptyToolbox": "Drop some actor here",
-  "SVNSEA2E.OpenToolbox": "Open toolbox"
+  "SVNSEA2E.OpenToolbox": "Open toolbox",
+  "SVNSEA2E.Used": "Usado",
+  "SVNSEA2E.HtkToggleTooltip": "Ativar Difícil de Matar (25 Feridas)",
+  "SVNSEA2E.HtkToggleVillainTooltip": "Ativar Difícil de Matar (Adiciona 1 Ferida Dramática extra)",
+  "SVNSEA2E.HtkOn": "HTK: ATIVADO",
+  "SVNSEA2E.HtkOff": "HTK: DESATIVADO",
+  "SVNSEA2E.RollDice": "Rolar Dados",
+  "SVNSEA2E.DiceNumberLabel": "Número de Dados:",
+  "SVNSEA2E.ExtraDiceExploded": "dados explodidos"
 }

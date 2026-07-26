@@ -341,5 +341,15 @@
   "SVNSEA2E.Initiative": "Incrementi",
   "SVNSEA2E.Toolbox": "Toolbox",
   "SVNSEA2E.EmptyToolbox": "Drop some actor here",
-  "SVNSEA2E.OpenToolbox": "Open toolbox"
+  "SVNSEA2E.OpenToolbox": "Open toolbox",
+  "SVNSEA2E.UnusedDice": "dadi non usati",
+  "SVNSEA2E.UnusedDie": "dado non usato",
+  "SVNSEA2E.Used": "Usato",
+  "SVNSEA2E.HtkToggleTooltip": "Attiva Difficile da Uccidere (25 Ferite)",
+  "SVNSEA2E.HtkToggleVillainTooltip": "Attiva Difficile da Uccidere (Aggiunge 1 Ferita Drammatica extra)",
+  "SVNSEA2E.HtkOn": "HTK: ATTIVO",
+  "SVNSEA2E.HtkOff": "HTK: DISATTIVO",
+  "SVNSEA2E.RollDice": "Tira Dadi",
+  "SVNSEA2E.DiceNumberLabel": "Numero di Dadi:",
+  "SVNSEA2E.ExtraDiceExploded": "dadi esplosi"
 }

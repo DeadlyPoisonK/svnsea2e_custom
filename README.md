@@ -19,29 +19,25 @@ Cambios propios agregados sobre esa base:
 - **Hard To Kill (HtK):** toggle nuevo en la hoja de personaje jugador y en la de villano (villano suma 1 Herida Dramática extra). No existe en el oficial.
 - **Tirada de dados libre ("Roll Dice"):** botón nuevo en la hoja de personaje que abre un diálogo para elegir cantidad de dados y tirarlos al chat, sin depender de una habilidad. No existe en el oficial.
 - **Sistema de tiradas de habilidad mejorado:** la tarjeta de resultado en el chat (roll-card) ahora muestra los dados no usados ("UnusedDices") y el conteo de dados explotados ("+N dados explotados"), además de lo que ya mostraba el oficial (combos, rerolls, umbral). Textos en español.
+- **Tirar ítems al chat:** se agregó la clase `item-throw` (con su handler `_onItemThrow` → `item.ItemThrow()`) a los ítems de Advantages, Dueling Styles, Backgrounds, Virtue, Hubris, Stories, Artifacts y Sorcery en las hojas de personaje. En el oficial esos ítems solo mostraban la imagen (`item-image`) sin poder tirarlos al chat; ahora se puede hacer clic en el ícono de cada uno para enviarlo.
 - **Uso de Virtudes/Hubris:** casilla de "usado" agregada a cada Virtud y Hubris en la pestaña Fate, para marcarlas como gastadas en la sesión. El oficial no tenía forma de trackear esto en la hoja.
 - **Iniciativa editable:** el campo de iniciativa pasó de estar deshabilitado (solo lectura) a editable directamente, con los botones +1/-1 corregidos para no disparar el submit del formulario.
 - Íconos e imágenes propias agregadas (`icons/`) para varias habilidades/estilos de duelo.
 
 Y probablemente algún que otro ajuste menor que ya ni recuerdo — si notás algo raro o distinto avisame.
 
-## Metadata del sistema (`system.json`)
-
-- `authors` ya no lista a los desarrolladores originales del oficial (psychoph, mattraykowski, schmurtz) — queda `DeadlyPoisonK`.
-- `url`, `manifest` y `download` apuntaban al repo oficial (`Detailing-the-Realm/svnsea2e`); ahora apuntan a `DeadlyPoisonK/svnsea2e_custom`. **Ojo:** `manifest`/`download` solo van a funcionar si publicás una Release en GitHub con un `system.zip` y un `system.json` como assets — si no hay Release, Foundry no va a poder instalar/actualizar el sistema desde esa URL. Revisalo antes de compartir el link.
-- El `LICENSE` **no lo toqué**: mantiene el copyright de Jason "psychoph" Hardin y Matt Raykowski (2021) sobre el código original, bajo MIT. Esa nota de copyright es parte de los términos de la licencia MIT del proyecto original — quitarla de un derivado incumple la licencia bajo la que se te permitió usar y modificar el código. Si querés sumar tu propio copyright por los cambios, se agrega una línea nueva, no se reemplaza la existente.
 
 ## Estado de las traducciones (revisión de los 6 idiomas: en/de/fr/es/it/pt-BR)
 
-Ninguna de las funciones nuevas quedó traducida — todas usan texto fijo en vez de `{{localize}}`, así que se ven igual sin importar el idioma configurado en Foundry:
+Claves nuevas agregadas a `en/de/fr/es/it/pt-BR` (traducción funcional, no revisada por hablante nativo salvo el español):
 
-- **HtK (jugador y villano):** los textos "Activar Hard To Kill (25 Heridas)" y "HTK: ON/OFF" están escritos directo en los templates. No existe ninguna clave `SVNSEA2E.Htk*` en ningún `lang/*.json`.
-- **Checkbox "usado" de Virtud/Hubris:** el template llama a `{{localize 'SVNSEA2E.Used'}}`, pero esa clave **no existe en ningún idioma** (ni en el oficial). Foundry va a mostrar literalmente "SVNSEA2E.Used" como tooltip hasta que se agregue la clave a los 6 archivos.
-- **Diálogo de tirada libre ("Roll Dice"):** el botón y el label "Número de Dados:" están fijos (inglés + español mezclados), sin clave de traducción.
-- **Dados no usados / explosiones en el roll-card:** acá sí existen claves oficiales ya traducidas a los 6 idiomas (`SVNSEA2E.UnusedDice`, `SVNSEA2E.UnusedDie`, `SVNSEA2E.RollsExploded`) pero el template nuevo **no las usa** — puso `"UnusedDices"` fijo en inglés y `"(+N dados explotados)"` fijo en español en vez de llamarlas. Es decir, la traducción ya está lista, solo falta conectarla.
-- Aparte, y sin relación a los cambios propios: `it.json` (italiano) ya venía sin `SVNSEA2E.UnusedDice` y `SVNSEA2E.UnusedDie` desde el oficial — hueco heredado, no introducido por este fork.
+- `SVNSEA2E.Used` — tooltip del checkbox "usado" en Virtud/Hubris. No existía en ningún idioma (tampoco en el oficial); el tooltip mostraba literalmente la clave sin traducir.
+- `SVNSEA2E.HtkToggleTooltip` / `SVNSEA2E.HtkToggleVillainTooltip` / `SVNSEA2E.HtkOn` / `SVNSEA2E.HtkOff` — toggle de Hard To Kill (jugador y villano). Antes estaba escrito directo en los templates.
+- `SVNSEA2E.RollDice` — botón de tirada libre.
+- `SVNSEA2E.DiceNumberLabel` — label "Número de Dados" del diálogo de tirada libre.
+- `SVNSEA2E.ExtraDiceExploded` — sufijo del conteo de dados explotados en el roll-card.
 
-Pendiente si querés que las nuevas funciones respeten el idioma del jugador: agregar las claves que faltan (`SVNSEA2E.Used`, y algunas para HtK/Roll Dice) a los 6 `lang/*.json`, y reemplazar los textos fijos de `roll-card.hbs` por `{{localize "SVNSEA2E.UnusedDice"}}` / `{{localize "SVNSEA2E.RollsExploded"}}`.
+Además, `roll-card.hbs` ahora usa la clave oficial `SVNSEA2E.UnusedDice` (ya traducida a los 6 idiomas desde el oficial) en vez del texto fijo `"UnusedDices"` que tenía. De paso se completó `it.json` (italiano), al que le faltaban `SVNSEA2E.UnusedDice` y `SVNSEA2E.UnusedDie` desde el oficial — hueco heredado, no introducido por este fork, pero ya corregido acá.
 
 ## Créditos
 

@@ -351,5 +351,13 @@
   "SVNSEA2E.JoieDeVivre": "Joie de Vivre",
   "SVNSEA2E.Toolbox": "Toolbox",
   "SVNSEA2E.EmptyToolbox": "Drop some actor here",
-  "SVNSEA2E.OpenToolbox": "Open toolbox"
+  "SVNSEA2E.OpenToolbox": "Open toolbox",
+  "SVNSEA2E.Used": "Usado",
+  "SVNSEA2E.HtkToggleTooltip": "Activar Hard To Kill (25 Heridas)",
+  "SVNSEA2E.HtkToggleVillainTooltip": "Activar Duro de Matar (Añade 1 Herida Dramática extra)",
+  "SVNSEA2E.HtkOn": "HTK: ACTIVADO",
+  "SVNSEA2E.HtkOff": "HTK: DESACTIVADO",
+  "SVNSEA2E.RollDice": "Tirar Dados",
+  "SVNSEA2E.DiceNumberLabel": "Número de Dados:",
+  "SVNSEA2E.ExtraDiceExploded": "dados explotados"
 }
