@@ -95,6 +95,16 @@ ok(pcSheet.element.querySelector('li.item[data-item-id]').classList.contains('hi
 await pcSheet.render();
 ok(pcSheet.element.querySelector('li.item[data-item-id]').classList.contains('hidden'), 'collapse kept after re-render');
 
+// Dragging an item row
+{
+  const row = pcSheet.element.querySelector('li.item.draggable');
+  let payload;
+  const dragEvent = new window.Event('dragstart');
+  dragEvent.dataTransfer = { setData: (type, data) => (payload = JSON.parse(data)) };
+  row.dispatchEvent(dragEvent);
+  ok(row.getAttribute('draggable') === 'true' && payload?.type === 'Item' && payload.uuid.includes(row.dataset.itemId), 'item row drag data');
+}
+
 // Background drop with advantages from world items and skills
 const worldAdv = await Item.create({ name: 'Linguist', type: 'advantage' }); game.items.set(worldAdv.id, worldAdv);
 const bg = await Item.create({ name: 'Sailor', type: 'background', system: { skills: ['sailing', 'athletics'], advantages: ['Linguist', 'Missing One'], nation: 'none' } });

@@ -1,0 +1,40 @@
+# Publishing a GitHub release tagged vX.Y builds the system and attaches system.json and system.zip to it.
+name: Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Point the manifest at this release
+        env:
+          TAG: ${{ github.ref_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          node -e '
+            const fs = require("fs");
+            const m = JSON.parse(fs.readFileSync("system.json", "utf8"));
+            m.version = process.env.TAG.replace(/^v/, "");
+            m.download = `https://github.com/${process.env.REPO}/releases/download/${process.env.TAG}/system.zip`;
+            fs.writeFileSync("system.json", JSON.stringify(m, null, 4) + "\n");
+          '
+      - name: Package
+        run: zip -r system.zip system.json svnsea2e.mjs svnsea2e.mjs.map svnsea2e.css templates lang icons imgs LICENSE README.md
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            system.json
+            system.zip

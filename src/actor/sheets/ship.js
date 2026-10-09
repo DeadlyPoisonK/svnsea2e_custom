@@ -88,17 +88,6 @@ export class ShipSheet extends SvnSea2EActorSheet {
     }
   }
 
-  /** Crew members are dragged as actors. */
-  async _onDragStart(event) {
-    const row = event.currentTarget;
-    if (row.dataset.actorId) {
-      const actor = game.actors.get(row.dataset.actorId);
-      if (actor) event.dataTransfer.setData('text/plain', JSON.stringify(actor.toDragData()));
-      return;
-    }
-    return super._onDragStart(event);
-  }
-
   /** An actor dropped on a role header joins the crew with that role. */
   async _onDropActor(event, actor) {
     if (!this.isEditable || actor.pack) return null;

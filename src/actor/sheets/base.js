@@ -134,10 +134,23 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
         event.currentTarget.blur();
       });
     }
+    // Item rows (and ship crew rows) can be dragged to other sheets, the hotbar or the canvas.
+    if (this.isEditable) {
+      for (const row of this.element.querySelectorAll('li.draggable')) {
+        row.setAttribute('draggable', 'true');
+        row.addEventListener('dragstart', this.#onDragRow.bind(this));
+      }
+    }
     for (const section of this.#collapsedSections) {
       const header = this.element.querySelector(`.item-header[data-section="${section}"]`);
       if (header) this.#setSectionCollapsed(header, true);
     }
+  }
+
+  #onDragRow(event) {
+    const row = event.currentTarget;
+    const dragged = row.dataset.itemId ? this.actor.items.get(row.dataset.itemId) : game.actors.get(row.dataset.actorId);
+    if (dragged) event.dataTransfer.setData('text/plain', JSON.stringify(dragged.toDragData()));
   }
 
   /** Hide or show the item rows that follow a section header, up to the next header. */

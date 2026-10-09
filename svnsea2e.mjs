@@ -1232,10 +1232,21 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
         event.currentTarget.blur();
       });
     }
+    if (this.isEditable) {
+      for (const row of this.element.querySelectorAll("li.draggable")) {
+        row.setAttribute("draggable", "true");
+        row.addEventListener("dragstart", this.#onDragRow.bind(this));
+      }
+    }
     for (const section of this.#collapsedSections) {
       const header = this.element.querySelector(`.item-header[data-section="${section}"]`);
       if (header) this.#setSectionCollapsed(header, true);
     }
+  }
+  #onDragRow(event) {
+    const row = event.currentTarget;
+    const dragged = row.dataset.itemId ? this.actor.items.get(row.dataset.itemId) : game.actors.get(row.dataset.actorId);
+    if (dragged) event.dataTransfer.setData("text/plain", JSON.stringify(dragged.toDragData()));
   }
   /** Hide or show the item rows that follow a section header, up to the next header. */
   #setSectionCollapsed(header, collapsed) {
@@ -1693,16 +1704,6 @@ class ShipSheet extends SvnSea2EActorSheet {
       });
       header.addEventListener("drop", () => header.classList.remove("drag-over"));
     }
-  }
-  /** Crew members are dragged as actors. */
-  async _onDragStart(event) {
-    const row = event.currentTarget;
-    if (row.dataset.actorId) {
-      const actor = game.actors.get(row.dataset.actorId);
-      if (actor) event.dataTransfer.setData("text/plain", JSON.stringify(actor.toDragData()));
-      return;
-    }
-    return super._onDragStart(event);
   }
   /** An actor dropped on a role header joins the crew with that role. */
   async _onDropActor(event, actor) {
