@@ -3,10 +3,11 @@
     "name": "svnsea2e",
     "title": "7th Sea Second Edition (Unofficial)",
     "description": "The 7th Sea Second Edition (Unofficial) system for FoundryVTT!",
-    "version": "23.2",
+    "version": "23.3",
     "compatibility": {
         "minimum": "13.341",
-        "verified": "13.341"
+        "verified": "13.341",
+        "maximum": "13"
     },
     "templateVersion": 3,
     "authors": [
@@ -164,7 +165,7 @@
     "primaryTokenAttribute": "wounds",
     "secondaryTokenAttribute": "dwounds",
     "url": "https://github.com/DeadlyPoisonK/svnsea2e_custom",
-    "manifest": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/latest/download/system.json",
-    "download": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/latest/download/system.zip",
+    "manifest": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.3/system.json",
+    "download": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.3/system.zip",
     "license": "MIT"
 }
