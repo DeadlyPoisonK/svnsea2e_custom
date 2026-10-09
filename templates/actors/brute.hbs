@@ -9,9 +9,9 @@
           {{#for 1 wounds.max 1}}
             <i data-action="setWounds" data-value="{{@index}}" data-type="wounds" class="fillable {{#iff wounds.value '>=' @index}}fa-solid{{else}}fa-regular{{/iff}} fa-heart fa-lg"></i>
           {{/for}}
-        </div>
-        <div class="flex-group">
-          <button type="button" class="roll-throw" data-action="freeRoll">{{localize "SVNSEA2E.RollDice"}}</button>
+          <div class="flex-group">
+            <button type="button" class="roll-throw" data-action="freeRoll">{{localize "SVNSEA2E.RollDice"}}</button>
+          </div>
         </div>
       </div>
     </div>

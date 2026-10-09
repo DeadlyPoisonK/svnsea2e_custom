@@ -60,19 +60,6 @@
   align-items: center;
 }
 
-:where(.svnsea2e.sheet header.sheet-header h1) {
-  flex: 1 1 0%;
-  margin: 0;
-  border-bottom: none;
-}
-
-:where(.svnsea2e.sheet header.sheet-header h1 input) {
-  height: 48px;
-  line-height: 48px;
-  margin: 8px 2%;
-  width: 96%;
-}
-
 :where(.svnsea2e.sheet nav.sheet-tabs) {
   border-top: 1px solid #b5b3a4;
   border-bottom: 1px solid #b5b3a4;
@@ -94,7 +81,7 @@
   padding: 0;
   font-family: var(--svnsea-font);
   font-weight: normal;
-  line-height: normal;
+  line-height: unset;
   color: inherit;
   text-shadow: none;
 }
@@ -116,6 +103,20 @@
 
 :where(.svnsea2e.sheet h4) {
   font-size: 1em;
+}
+
+/* After the generic headings, so the header title keeps no margin and no underline. */
+:where(.svnsea2e.sheet header.sheet-header h1) {
+  flex: 1 1 0%;
+  margin: 0;
+  border-bottom: none;
+}
+
+:where(.svnsea2e.sheet header.sheet-header h1 input) {
+  height: 48px;
+  line-height: 48px;
+  margin: 8px 2%;
+  width: 96%;
 }
 
 :where(.svnsea2e.sheet p) {
@@ -206,7 +207,8 @@
   font-family: monospace;
 }
 
-:where(.svnsea2e.sheet .sheet-content button) {
+/* The ProseMirror editor keeps Foundry's own buttons (edit toggle, menu). */
+:where(.svnsea2e.sheet .sheet-content button:not(prose-mirror *)) {
   display: inline-block;
   width: 100%;
   height: auto;
@@ -330,6 +332,11 @@
 .svnsea2e .form-group,
 .svnsea2e .wounds {
   margin: 0.25rem;
+}
+
+/* Font Awesome 7 gives icons a fixed width; v6 hearts used their natural width. */
+.svnsea2e .wounds .fillable {
+  width: auto;
 }
 
 .svnsea2e .form-group > label {
@@ -530,6 +537,12 @@
 .svnsea2e .twodigit input[type="number"] {
   max-width: 30px;
   text-align: right;
+}
+
+/* These number fields were borderless text inputs up to v23.3. */
+.svnsea2e .concept .twodigit input[type="number"],
+.svnsea2e input[type="number"][name="system.wealth"] {
+  border: 0 solid transparent;
 }
 
 /* Raises (initiative) */
@@ -776,7 +789,6 @@
 .svnsea2e textarea.equipment,
 .svnsea2e .redemption textarea {
   width: 100%;
-  min-height: 8rem;
 }
 
 /* ---------- Danger points ---------- */
@@ -796,6 +808,7 @@
 }
 
 .svnsea2e .sheet-header.dangerpts {
+  flex: 0 0 auto;
   flex-direction: row;
   align-items: center;
   margin: 0;
