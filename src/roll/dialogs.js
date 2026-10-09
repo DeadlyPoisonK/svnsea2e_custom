@@ -8,22 +8,25 @@ const renderTemplate = (path, data) => foundry.applications.handlebars.renderTem
  * Show a roll dialog and resolve with the submitted form, or null when it is closed.
  * @returns {Promise<{options: import('./roll.js').RollOptions, form: HTMLFormElement}|null>}
  */
-async function promptRoll(title, template, data) {
+async function promptRoll(title, template, data, { cancel = false } = {}) {
   const content = await renderTemplate(template, data);
+  const buttons = [
+    {
+      action: 'roll',
+      label: game.i18n.localize('SVNSEA2E.Roll'),
+      icon: 'fa-solid fa-dice-d10',
+      default: true,
+      callback: (event, button) => ({ options: readRollForm(button.form), form: button.form }),
+    },
+  ];
+  if (cancel) buttons.push({ action: 'cancel', label: game.i18n.localize('Cancel'), callback: () => null });
   return DialogV2.wait({
     window: { title },
-    classes: ['svnsea2e', 'roll-dialog'],
+    // Up to v23.3 these were Application V1 dialogs, always light.
+    classes: ['svnsea2e', 'roll-dialog', 'themed', 'theme-light'],
     position: { width: 400 },
     content,
-    buttons: [
-      {
-        action: 'roll',
-        label: game.i18n.localize('SVNSEA2E.Roll'),
-        icon: 'fa-solid fa-dice-d10',
-        default: true,
-        callback: (event, button) => ({ options: readRollForm(button.form), form: button.form }),
-      },
-    ],
+    buttons,
     rejectClose: false,
   });
 }
@@ -83,7 +86,12 @@ export async function rollTrait(actor, trait) {
 
 /** Free roll ("Roll Dice"): any number of dice, without skill, trait or wound bonus. */
 export async function rollFreeDice(actor) {
-  const result = await promptRoll(game.i18n.localize('SVNSEA2E.Roll'), `${TEMPLATES}/items/parts/roll-throw.hbs`, {});
+  const result = await promptRoll(
+    game.i18n.localize('SVNSEA2E.Roll'),
+    `${TEMPLATES}/items/parts/roll-throw.hbs`,
+    {},
+    { cancel: true },
+  );
   if (!result) return false;
   const diceCount = Math.max(parseInt(result.form.elements.diceNumber?.value) || 1, 1);
   const { addOneToDice, joieDeVivre, explodeDice, increaseThreshold } = result.options;

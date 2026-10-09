@@ -24,7 +24,8 @@ export class ChoiceSelector extends HandlebarsApplicationMixin(ApplicationV2) {
 
   static DEFAULT_OPTIONS = {
     tag: 'form',
-    classes: ['svnsea2e', 'choice-selector'],
+    // Up to v23.3 the selectors were Application V1 windows, always light.
+    classes: ['svnsea2e', 'choice-selector', 'themed', 'theme-light'],
     position: { width: 320, height: 'auto' },
     window: { contentClasses: ['standard-form'] },
     form: { handler: ChoiceSelector.#onSubmit, closeOnSubmit: true },

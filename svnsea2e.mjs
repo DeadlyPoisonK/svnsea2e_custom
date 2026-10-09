@@ -798,7 +798,8 @@ class ChoiceSelector extends HandlebarsApplicationMixin$2(ApplicationV2) {
   }
   static DEFAULT_OPTIONS = {
     tag: "form",
-    classes: ["svnsea2e", "choice-selector"],
+    // Up to v23.3 the selectors were Application V1 windows, always light.
+    classes: ["svnsea2e", "choice-selector", "themed", "theme-light"],
     position: { width: 320, height: "auto" },
     window: { contentClasses: ["standard-form"] },
     form: { handler: ChoiceSelector.#onSubmit, closeOnSubmit: true }
@@ -1028,22 +1029,25 @@ async function rollD10s(count) {
 }
 const { DialogV2 } = foundry.applications.api;
 const renderTemplate = (path, data) => foundry.applications.handlebars.renderTemplate(path, data);
-async function promptRoll(title, template, data) {
+async function promptRoll(title, template, data, { cancel = false } = {}) {
   const content = await renderTemplate(template, data);
+  const buttons = [
+    {
+      action: "roll",
+      label: game.i18n.localize("SVNSEA2E.Roll"),
+      icon: "fa-solid fa-dice-d10",
+      default: true,
+      callback: (event, button) => ({ options: readRollForm(button.form), form: button.form })
+    }
+  ];
+  if (cancel) buttons.push({ action: "cancel", label: game.i18n.localize("Cancel"), callback: () => null });
   return DialogV2.wait({
     window: { title },
-    classes: ["svnsea2e", "roll-dialog"],
+    // Up to v23.3 these were Application V1 dialogs, always light.
+    classes: ["svnsea2e", "roll-dialog", "themed", "theme-light"],
     position: { width: 400 },
     content,
-    buttons: [
-      {
-        action: "roll",
-        label: game.i18n.localize("SVNSEA2E.Roll"),
-        icon: "fa-solid fa-dice-d10",
-        default: true,
-        callback: (event, button) => ({ options: readRollForm(button.form), form: button.form })
-      }
-    ],
+    buttons,
     rejectClose: false
   });
 }
@@ -1093,7 +1097,12 @@ async function rollTrait(actor, trait) {
   return rollDicePool({ actor, rolldata, options: result.options, title });
 }
 async function rollFreeDice(actor) {
-  const result = await promptRoll(game.i18n.localize("SVNSEA2E.Roll"), `${TEMPLATES}/items/parts/roll-throw.hbs`, {});
+  const result = await promptRoll(
+    game.i18n.localize("SVNSEA2E.Roll"),
+    `${TEMPLATES}/items/parts/roll-throw.hbs`,
+    {},
+    { cancel: true }
+  );
   if (!result) return false;
   const diceCount = Math.max(parseInt(result.form.elements.diceNumber?.value) || 1, 1);
   const { addOneToDice, joieDeVivre, explodeDice, increaseThreshold } = result.options;

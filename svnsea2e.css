@@ -28,9 +28,10 @@
    Up to v23.3 the sheets were Application V1 windows and inherited Foundry's
    legacy ".app" styles (flex form groups, heading sizes, inputs, buttons, tabs).
    ApplicationV2 windows no longer get them, so they are reproduced here with
-   the same weight they had, to keep the original layout. */
+   the same weight they had, to keep the original layout. The roll dialogs and
+   the choice selector were Application V1 windows too. */
 
-:where(.svnsea2e.sheet) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector)) {
   --form-field-height: 26px;
   --svnsea-font: "Signika", sans-serif;
   --svnsea-underline: #782e22;
@@ -38,20 +39,20 @@
   font-size: var(--font-size-14);
 }
 
-:where(.svnsea2e.sheet .window-content) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) .window-content) {
   padding: 8px;
   color: #191813;
 }
 
-:where(.svnsea2e.sheet .window-content > *) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) .window-content > *) {
   flex: 1 1 0%;
 }
 
-:where(.svnsea2e.sheet .flexcol > *) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) .flexcol > *) {
   flex: 1 1 0%;
 }
 
-:where(.svnsea2e.sheet .flexrow) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) .flexrow) {
   align-items: initial;
 }
 
@@ -71,12 +72,12 @@
   word-break: break-word;
 }
 
-:where(.svnsea2e.sheet h1),
-:where(.svnsea2e.sheet h2),
-:where(.svnsea2e.sheet h3),
-:where(.svnsea2e.sheet h4),
-:where(.svnsea2e.sheet h5),
-:where(.svnsea2e.sheet h6) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) h1),
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) h2),
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) h3),
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) h4),
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) h5),
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) h6) {
   margin: 0 0 0.5rem;
   padding: 0;
   font-family: var(--svnsea-font);
@@ -86,22 +87,22 @@
   text-shadow: none;
 }
 
-:where(.svnsea2e.sheet h1) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) h1) {
   font-size: 2em;
   border-bottom: 2px solid var(--svnsea-underline);
 }
 
-:where(.svnsea2e.sheet h2) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) h2) {
   font-size: 1.5em;
   border-bottom: 1px solid var(--svnsea-underline);
 }
 
-:where(.svnsea2e.sheet h3) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) h3) {
   font-size: 1.25em;
   border-bottom: 1px solid var(--svnsea-underline);
 }
 
-:where(.svnsea2e.sheet h4) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) h4) {
   font-size: 1em;
 }
 
@@ -119,45 +120,46 @@
   width: 96%;
 }
 
-:where(.svnsea2e.sheet p) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) p) {
   margin: 0.5em 0;
 }
 
-:where(.svnsea2e.sheet hr) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) hr) {
   border: none;
   border-top: 1px solid #b5b3a4;
   border-bottom: 1px solid #f0f0e0;
   margin-block: 0.5em;
 }
 
-:where(.svnsea2e.sheet ul li),
-:where(.svnsea2e.sheet ol li) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) ul li),
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) ol li) {
   margin: 0;
 }
 
-:where(.svnsea2e.sheet .form-group),
-:where(.svnsea2e.sheet .form-group-stacked) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) .form-group),
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) .form-group-stacked) {
   clear: both;
   display: flex;
   flex-flow: row wrap;
+  gap: 0;
   margin: 3px 0;
   align-items: center;
 }
 
-:where(.svnsea2e.sheet .form-group > *) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) .form-group > *) {
   flex: 3 1 0%;
 }
 
-:where(.svnsea2e.sheet .form-group > label) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) .form-group > label) {
   flex: 2 1 0%;
 }
 
-:where(.svnsea2e.sheet .form-group label) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) .form-group label) {
   line-height: var(--form-field-height);
 }
 
-:where(.svnsea2e.sheet input[type="text"]),
-:where(.svnsea2e.sheet input[type="number"]) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) input[type="text"]),
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) input[type="number"]) {
   width: calc(100% - 2px);
   min-width: 20px;
   height: var(--form-field-height);
@@ -174,7 +176,7 @@
   outline-offset: 0;
 }
 
-:where(.svnsea2e.sheet input[type="checkbox"]) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) input[type="checkbox"]) {
   flex: 0 0 20px;
   width: 20px;
   height: 20px;
@@ -183,7 +185,7 @@
   accent-color: #666;
 }
 
-:where(.svnsea2e.sheet select) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) select) {
   width: auto;
   height: calc(var(--form-field-height) + 1px);
   background: rgba(0, 0, 0, 0.05);
@@ -196,7 +198,7 @@
   color: inherit;
 }
 
-:where(.svnsea2e.sheet textarea) {
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) textarea) {
   width: 100%;
   min-height: 50px;
   padding: 5px;
@@ -207,8 +209,34 @@
   font-family: monospace;
 }
 
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) label) {
+  font-weight: normal;
+}
+
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) fieldset) {
+  display: block;
+  margin: 0 2px;
+  padding: 0.35em 0.75em 0.625em;
+  border: 2px groove #f0f0f0;
+  border-radius: 0;
+}
+
+:where(.svnsea2e.roll-dialog .dialog-form),
+:where(.svnsea2e.roll-dialog .dialog-content) {
+  gap: 0;
+}
+
+:where(.svnsea2e:is(.sheet, .roll-dialog, .choice-selector) legend) {
+  padding: 0 2px;
+  font-size: inherit;
+  font-weight: normal;
+  color: inherit;
+}
+
 /* The ProseMirror editor keeps Foundry's own buttons (edit toggle, menu). */
-:where(.svnsea2e.sheet .sheet-content button:not(prose-mirror *)) {
+:where(.svnsea2e.sheet .sheet-content button:not(prose-mirror *)),
+:where(.svnsea2e.roll-dialog .form-footer button),
+:where(.svnsea2e.choice-selector button) {
   display: inline-block;
   width: 100%;
   height: auto;
@@ -329,8 +357,9 @@
   justify-content: space-between;
 }
 
-.svnsea2e .form-group,
-.svnsea2e .wounds {
+/* Sheets only: up to v23.3 these rules did not reach the roll dialogs. */
+.svnsea2e.sheet .form-group,
+.svnsea2e.sheet .wounds {
   margin: 0.25rem;
 }
 
@@ -339,11 +368,11 @@
   width: auto;
 }
 
-.svnsea2e .form-group > label {
+.svnsea2e.sheet .form-group > label {
   flex: 3;
 }
 
-.svnsea2e .form-group > label.icon-label {
+.svnsea2e.sheet .form-group > label.icon-label {
   flex: 1;
 }
 
@@ -833,20 +862,62 @@
 /* ---------- Dialogs ---------- */
 
 .svnsea2e.roll-dialog .roll-dialog input[type="number"] {
-  max-width: 4rem;
+  max-width: 3rem;
   text-align: center;
 }
 
-.svnsea2e.roll-dialog fieldset {
-  margin: 0.25rem 0;
+/* "Roll Dice": a framed box with the dice count centered on top, as in v23.3. */
+.svnsea2e.roll-dialog .free-roll {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.svnsea2e.roll-dialog .free-roll .form-group {
+  display: block;
+  margin: 0;
+}
+
+.svnsea2e.roll-dialog .free-roll .form-group label {
+  line-height: normal;
+}
+
+.svnsea2e.roll-dialog .free-roll .dice-number label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.svnsea2e.roll-dialog .free-roll .dice-number input[type="number"] {
+  width: 100%;
+  max-width: none;
+  padding: 5px;
+  text-align: center;
 }
 
 .svnsea2e.choice-selector .choice-list {
   list-style: none;
-  margin: 0 0 0.5rem;
-  padding: 0;
-  max-height: 60vh;
+  margin: 16px 0;
+  padding: 0 0 0 20px;
+  max-height: calc(100vh - 200px);
   overflow-y: auto;
+}
+
+.svnsea2e.choice-selector .choice-list li {
+  height: 24px;
+}
+
+.svnsea2e.choice-selector label.checkbox {
+  display: inline;
+  font-size: var(--font-size-11);
+  line-height: 22px;
+}
+
+.svnsea2e.choice-selector label.checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0 3px;
+  vertical-align: middle;
 }
 
 /* ---------- Toolbox ---------- */
