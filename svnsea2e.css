@@ -1079,6 +1079,8 @@
 #combat .combatant .token-initiative,
 .combat-tracker .combatant .token-initiative {
   display: flex;
+  /* v14 stacks the initiative vertically; v13 kept +1, value and -1 in a row. */
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 4px;
