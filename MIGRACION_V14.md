@@ -185,7 +185,7 @@ Si preferís seguir subiendo los archivos a mano, sirve igual. El zip tiene que 
 ## Decisiones para que revises
 
 - **Tema claro forzado en las hojas.** Si preferís que sigan el tema del usuario, se quitan las clases `themed theme-light` en `src/actor/sheets/base.js` y `src/item/sheets.js`, pero el CSS está pensado para fondo claro.
-- **Estilo global del chat** (encabezado rojo y fondo blanco en *todos* los mensajes): es lo que hacía el CSS original. Si choca con algún módulo, está al principio de la sección "Chat" de `svnsea2e.css`.
+- **Estilo global del chat** (encabezado rojo y fondo blanco en *todos* los mensajes, combinaciones de aumentos en fichas): es lo que pretendía el CSS original, pero en Foundry 13 no se veía porque sus selectores usaban `#chat-log`, que ya no existía; los jugadores de la v23.3 veían el chat con el estilo base de Foundry. Se decidió mantenerlo en la v24. Si choca con algún módulo, está al principio de la sección "Chat" de `svnsea2e.css`.
 - **Preferencias de hoja:** los identificadores internos de las hojas cambiaron. Si alguien había elegido a mano una hoja para un actor concreto, vuelve a la hoja por defecto, que es la del sistema.
 - **`item.ItemThrow()`** sigue existiendo como alias de `item.sendToChat()` por si alguna macro lo usa.
 - **Las hojas de virtud, hubris, cualidad de monstruo, aventura de barco y trasfondo de barco** comparten una plantilla (`templates/items/simple.hbs`), porque eran idénticas.
