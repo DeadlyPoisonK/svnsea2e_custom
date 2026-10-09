@@ -1,83 +1,36 @@
-<div class="tab fate" data-group="primary" data-tab="fate">
+<div class="tab fate {{tabs.fate.cssClass}}" data-group="primary" data-tab="fate">
   <ol class="items-list">
-    <li class="flexrow item-header story">
-      <h3 class="item-name flexrow">{{localize "SVNSEA2E.Virtue"}}</h3>
-      <div class="item-controls">
-        <a class="item-control item-create" title="{{localize 'SVNSEA2E.AddVirtue'}}" data-type="virtue" {{#each section.dataset as |v k|}}data-{{k}}="{{v}}" {{/each}}>
-        <i class="fas fa-plus"></i> {{localize "SVNSEA2E.Add"}}
-        </a>
-      </div>
-    </li>
-  {{#each virtues as |item id|}}
-    <li class="item flexrow story" data-item-id="{{item._id}}">
-      <div class="item-image item-throw"><img src="{{ item.img }}" title="{{ item.name }}" /></div>
-      <h4 class="item-name">{{ item.name }}</h4>
-      <div class="item-controls">
-        <input type="checkbox" class="item-control item-check" title="{{localize 'SVNSEA2E.Used'}}" {{checked item.system.used}} />
-        <a class="item-control item-edit" title="{{ item.editlabel }}"><i class="fas fa-edit"></i></a>
-        <a class="item-control item-delete" title="{{ item.deletelabel }}"><i class="fas fa-trash"></i></a>
-      </div>
-    </li>
-  {{/each}}
+    {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="virtue" label="SVNSEA2E.Virtue" type="virtue" addTitle="SVNSEA2E.AddVirtue" cssClass="story"}}
+    {{#each virtues as |item|}}
+      {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="story" used=true}}
+    {{/each}}
+    {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="hubris" label="SVNSEA2E.Hubris" type="hubris" addTitle="SVNSEA2E.AddHubris" cssClass="story"}}
+    {{#each hubriss as |item|}}
+      {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="story" used=true}}
+    {{/each}}
+    {{#if isPlayerCharacter}}
+      {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="story" label="SVNSEA2E.Stories" type="story" addTitle="SVNSEA2E.AddStory" cssClass="story"}}
+      {{#each stories as |item|}}
+        {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="story"}}
+      {{/each}}
+    {{/if}}
   </ol>
-  <ol class="items-list">
-    <li class="flexrow item-header story">
-      <h3 class="item-name flexrow">{{localize "SVNSEA2E.Hubris"}}</h3>
-      <div class="item-controls">
-        <a class="item-control item-create" title="{{localize 'SVNSEA2E.AddHubris'}}" data-type="hubris" {{#each section.dataset as |v k|}}data-{{k}}="{{v}}" {{/each}}>
-        <i class="fas fa-plus"></i> {{localize "SVNSEA2E.Add"}}
-        </a>
+  {{#if isPlayerCharacter}}
+    {{#if isCorrupt}}
+      <div class="redemption flexrow flex-group">
+        <label for="{{actor.id}}-redemption"><h3 class="item-name">{{localize "SVNSEA2E.Redemption"}}</h3></label>
       </div>
-    </li>
-  {{#each hubriss as |item id|}}
-    <li class="item flexrow story" data-item-id="{{item._id}}">
-      <div class="item-image item-throw"><img src="{{ item.img }}" title="{{ item.name }}" /></div>
-      <h4 class="item-name">{{ item.name }}</h4>
-      <div class="item-controls">
-        <input type="checkbox" class="item-control item-check" title="{{localize 'SVNSEA2E.Used'}}" {{checked item.system.used}} />
-        <a class="item-control item-edit" title="{{ item.editlabel }}"><i class="fas fa-edit"></i></a>
-        <a class="item-control item-delete" title="{{ item.deletelabel }}"><i class="fas fa-trash"></i></a>
+      <div class="redemption flexrow flex-group flex-between">
+        <textarea id="{{actor.id}}-redemption" name="system.redemption">{{redemption}}</textarea>
       </div>
-    </li>
-  {{/each}}
-  </ol>
-{{#if isPlayerCharacter}}
-  <ol class="items-list">
-    <li class="flexrow item-header story">
-      <h3 class="item-name flexrow">{{localize "SVNSEA2E.Stories"}}</h3>
-      <div class="item-controls">
-        <a class="item-control item-create" title="{{localize 'SVNSEA2E.AddStory'}}" data-type="story" {{#each section.dataset as |v k|}}data-{{k}}="{{v}}" {{/each}}>
-          <i class="fas fa-plus"></i> {{localize "SVNSEA2E.Add"}}
-        </a>
-      </div>
-    </li>
-  {{#each stories as |item id|}}
-    <li class="item flexrow story" data-item-id="{{item._id}}">
-      <div class="item-image item-throw"><img src="{{ item.img }}" title="{{ item.name }}" /></div>
-      <h4 class="item-name">{{ item.name }}</h4>
-      <div class="item-controls">
-        <a class="item-control item-edit" title="{{ item.editlabel }}"><i class="fas fa-edit"></i></a>
-        <a class="item-control item-delete" title="{{ item.deletelabel }}"><i class="fas fa-trash"></i></a>
-      </div>
-    </li>
-  {{/each}}
-  </ol>
-  {{#if isCorrupt}}
-  <div class="redemption flexrow flex-group">
-    <label for="system.redemption" class=""><h3 class="item-name">{{ localize "SVNSEA2E.Redemption" }}</h3></label>
-  </div>
-  <div class="redemption flexrow flex-group flex-between">
-    <textarea name="system.redemption">{{ redemption }}</textarea>
-  </div>
+    {{/if}}
   {{/if}}
-{{/if}}
-{{#if isVillain}}
-  <div class="redemption flexrow flex-group">
-    <h3 for="system.redemption" class="">{{ localize "SVNSEA2E.Redemption" }}</h3>
-  </div>
-  <div class="redemption flexrow flex-group flex-between">
-    <textarea name="system.redemption">{{ redemption }}</textarea>
-  </div>
-{{/if}}
-
+  {{#if isVillain}}
+    <div class="redemption flexrow flex-group">
+      <label for="{{actor.id}}-redemption"><h3 class="item-name">{{localize "SVNSEA2E.Redemption"}}</h3></label>
+    </div>
+    <div class="redemption flexrow flex-group flex-between">
+      <textarea id="{{actor.id}}-redemption" name="system.redemption">{{redemption}}</textarea>
+    </div>
+  {{/if}}
 </div>

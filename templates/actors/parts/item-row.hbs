@@ -1,0 +1,28 @@
+{{!-- One owned item. Hash: item, rowClass, used (show the "used" checkbox), toggle (background on/off), noThrow --}}
+<li class="item flexrow draggable {{rowClass}}" data-item-id="{{item.id}}">
+  {{#if toggle}}
+    <a class="item-control item-toggle" data-action="toggleBackground" data-tooltip="{{localize 'SVNSEA2E.BackgroundToggleTooltip'}}">
+      <i class="fa-regular {{#if item.system.active}}fa-square-check{{else}}fa-square{{/if}}"></i>
+    </a>
+  {{/if}}
+  {{#if noThrow}}
+    <div class="item-image"><img src="{{item.img}}" alt="{{item.name}}" /></div>
+  {{else}}
+    <div class="item-image item-throw" data-action="throwItem" data-tooltip="{{localize 'SVNSEA2E.SendToChat'}}"><img src="{{item.img}}" alt="{{item.name}}" /></div>
+  {{/if}}
+  <h4 class="item-name" data-action="itemSummary">
+    {{item.name}}
+    {{#if item.system.knack}}<span data-tooltip="{{localize 'SVNSEA2E.Knack'}}"><i class="fa-solid fa-award"></i></span>{{/if}}
+    {{#if item.system.innate}}<span data-tooltip="{{localize 'SVNSEA2E.Innate'}}"><i class="fa-solid fa-person"></i></span>{{/if}}
+  </h4>
+  {{#if favor}}<span class="flavor tag"><strong>{{localize 'SVNSEA2E.Favor'}}</strong>: {{item.system.favor}}</span>{{/if}}
+  <div class="item-controls">
+    {{#if used}}
+      <input type="checkbox" class="item-control item-check" data-action="toggleUsed" data-tooltip="{{localize 'SVNSEA2E.Used'}}" {{checked item.system.used}} {{disabled (not @root.editable)}} />
+    {{/if}}
+    <a class="item-control item-edit" data-action="editItem" data-tooltip="{{localize 'SVNSEA2E.Edit'}}"><i class="fa-solid fa-pen-to-square"></i></a>
+    {{#if @root.editable}}
+      <a class="item-control item-delete" data-action="deleteItem" data-tooltip="{{localize 'SVNSEA2E.Delete'}}"><i class="fa-solid fa-trash"></i></a>
+    {{/if}}
+  </div>
+</li>

@@ -1,47 +1,33 @@
-<form class="{{cssClass}}" autocomplete="off">
+<div class="sheet-content flexcol {{cssClass}}">
   <header class="sheet-header">
-    <img class="profile-img" src="{{img}}" data-edit="img" title="{{name}}" />
+    <img class="profile-img" src="{{img}}" data-action="editImage" data-edit="img" data-tooltip="{{name}}" alt="{{name}}" />
     <div class="header-fields">
       {{> "systems/svnsea2e/templates/items/parts/item-header.hbs"}}
+
     </div>
   </header>
-
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">
-      <h2>{{localize "SVNSEA2E.Description"}}</h2>
-    </a>
-    <a class="item" data-tab="attributes">
-      <h2>{{localize "SVNSEA2E.Attributes"}}</h2>
-    </a>
-  </nav>
-
-  {{!-- Sheet Body --}}
+  {{> "systems/svnsea2e/templates/parts/sheet-tabs.hbs"}}
   <section class="sheet-body">
-
-    {{!-- Description Tab --}}
-    <div class="tab" data-group="primary" data-tab="description">
-      {{editor description target="system.description" button=true owner=owner editable=editable}}
+    <div class="tab {{tabs.description.cssClass}}" data-group="primary" data-tab="description">
+      {{> "systems/svnsea2e/templates/items/parts/item-editor.hbs" field="description"}}
     </div>
-
-    {{!-- Attributes Tab --}}
-    <div class="tab attributes" data-group="primary" data-tab="attributes">
+    <div class="tab attributes {{tabs.attributes.cssClass}}" data-group="primary" data-tab="attributes">
       <div class="form-group cost">
-        <label for="system.cost.normal" class="resource-label">{{localize "SVNSEA2E.Cost"}}</label>
-        <input name="system.cost.normal" id="system.cost.normal" type="text" value="{{normalCost}}" data-dtype="Number" />
-      </div>
-      <div class=" form-group">
-        <label for="system.cost.reducecost" class="resource-label">{{localize "SVNSEA2E.ReducedCost"}}</label>
-        <input name="system.cost.reducecost" id="system.cost.reducecost" type="text" value="{{reducedCost}}" />
+        <label for="{{item.id}}-cost" class="resource-label">{{localize "SVNSEA2E.Cost"}}</label>
+        <input name="system.cost.normal" id="{{item.id}}-cost" type="number" value="{{normalCost}}" step="1" />
       </div>
       <div class="form-group">
-        <label for="system.knack" class="resource-label">{{localize "SVNSEA2E.Knack"}}</label>
-        <input type="checkbox" name="system.knack" id="system.knack" value="{{knack}}" data-dtype="Boolean" {{checked knack}} />
+        <label for="{{item.id}}-reducecost" class="resource-label">{{localize "SVNSEA2E.ReducedCost"}}</label>
+        <input name="system.cost.reducecost" id="{{item.id}}-reducecost" type="number" value="{{reducedCost}}" step="1" />
       </div>
       <div class="form-group">
-        <label for="system.innate" class="resource-label">{{localize "SVNSEA2E.Innate"}}</label>
-        <input type="checkbox" name="system.innate" id="system.innate" value="{{innate}}" data-dtype="Boolean" {{checked innate}} />
+        <label for="{{item.id}}-knack" class="resource-label">{{localize "SVNSEA2E.Knack"}}</label>
+        <input type="checkbox" name="system.knack" id="{{item.id}}-knack" {{checked knack}} />
+      </div>
+      <div class="form-group">
+        <label for="{{item.id}}-innate" class="resource-label">{{localize "SVNSEA2E.Innate"}}</label>
+        <input type="checkbox" name="system.innate" id="{{item.id}}-innate" {{checked innate}} />
       </div>
     </div>
   </section>
-</form>
+</div>

@@ -1,33 +1,24 @@
-<form class="{{cssClass}}" autocomplete="off">
+<div class="sheet-content {{cssClass}}">
   <header class="sheet-header dangerpts">
-    <img class="profile-img" src="systems/svnsea2e/icons/dangerpts.jpg" data-edit="img" title="{{localize 'SVNSEA2E.DangerPoints'}}" />
+    <img class="profile-img" src="systems/svnsea2e/icons/dangerpts.jpg" alt="{{localize 'SVNSEA2E.DangerPoints'}}" />
     <div class="header-fields">
       <h1 class="dangerpts-title">{{localize "SVNSEA2E.DangerPoints"}}</h1>
     </div>
   </header>
 
-  {{!-- Sheet Body --}}
   <section class="sheet-body danger-points">
     <div class="grid grid-3col">
       <div class="flex-group-left">
-        <button type="button" class="dpmminus" data-value="2">
-          <i class="fas fa-minus"></i><i class="fas fa-minus"></i>
-        </button>
-        <button type="button" class="dpminus" data-value="1">
-          <i class="fas fa-minus"></i>
-        </button>
+        <button type="button" data-action="adjustPoints" data-delta="-2"><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i></button>
+        <button type="button" data-action="adjustPoints" data-delta="-1"><i class="fa-solid fa-minus"></i></button>
       </div>
       <div class="flex-group-center">
-        <input type="text" name="system.points" value="{{points}}">
+        <input type="number" name="system.points" value="{{points}}" min="0" step="1" />
       </div>
       <div class="flex-group-right">
-        <button type="button" class="dpplus" data-value="1">
-          <i class="fas fa-plus"></i>
-        </button>
-        <button type="button" class="dppplus" data-value="2">
-          <i class="fas fa-plus"></i><i class="fas fa-plus"></i>
-        </button>
+        <button type="button" data-action="adjustPoints" data-delta="1"><i class="fa-solid fa-plus"></i></button>
+        <button type="button" data-action="adjustPoints" data-delta="2"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-plus"></i></button>
       </div>
     </div>
   </section>
-</form>
+</div>

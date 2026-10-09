@@ -1,0 +1,6 @@
+{{!-- Rich text editor for one HTML field. Usage: {{> ".../item-editor.hbs" field="description"}} --}}
+{{#if editable}}
+  <prose-mirror name="system.{{field}}" value="{{lookup system field}}" data-document-uuid="{{item.uuid}}" toggled>{{{lookup enriched field}}}</prose-mirror>
+{{else}}
+  <div class="editor-content">{{{lookup enriched field}}}</div>
+{{/if}}

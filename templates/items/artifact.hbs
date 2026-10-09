@@ -1,28 +1,20 @@
-<form class="{{cssClass}}" autocomplete="off">
+<div class="sheet-content flexcol {{cssClass}}">
   <header class="sheet-header">
-    <img class="profile-img" src="{{img}}" data-edit="img" title="{{name}}" />
+    <img class="profile-img" src="{{img}}" data-action="editImage" data-edit="img" data-tooltip="{{name}}" alt="{{name}}" />
     <div class="header-fields">
       {{> "systems/svnsea2e/templates/items/parts/item-header.hbs"}}
       <div class="form-group">
-        <label for="system.artifactType">{{localize "SVNSEA2E.Type"}}</label>
-        <select class="artifact-type" id="system.artifactType" name="system.artifactType">
+        <label for="{{item.id}}-artifactType">{{localize "SVNSEA2E.Type"}}</label>
+        <select class="artifact-type" id="{{item.id}}-artifactType" name="system.artifactType">
           {{selectOptions config.artifactTypes selected=artifactType localize=true}}
         </select>
       </div>
     </div>
   </header>
-
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">
-      <h2>{{localize "SVNSEA2E.Description"}}</h2>
-    </a>
-  </nav>
-
-  {{!-- Sheet Body --}}
+  {{> "systems/svnsea2e/templates/parts/sheet-tabs.hbs"}}
   <section class="sheet-body">
-    <div class="tab" data-group="primary" data-tab="description">
-      {{editor description target="system.description" button=true owner=owner editable=editable}}
+    <div class="tab {{tabs.description.cssClass}}" data-group="primary" data-tab="description">
+      {{> "systems/svnsea2e/templates/items/parts/item-editor.hbs" field="description"}}
     </div>
   </section>
-</form>
+</div>

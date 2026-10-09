@@ -1,26 +1,29 @@
-<div class="tab concept" data-group="primary" data-tab="concept">
+<div class="tab concept {{tabs.concept.cssClass}}" data-group="primary" data-tab="concept">
   <div class="nation grid grid-2col">
     <div class="form-group flex-group">
-      <label for="system.nation">{{localize "SVNSEA2E.Nation"}}</label>
-      <select class="nation" name="system.nation" id="system.nation">
+      <label for="{{actor.id}}-nation">{{localize "SVNSEA2E.Nation"}}</label>
+      <select class="nation" name="system.nation" id="{{actor.id}}-nation">
         {{selectOptions config.nations selected=nation localize=true}}
       </select>
     </div>
     <div class="form-group flex-group twodigit">
-      <label for="system.age">{{localize "SVNSEA2E.Age"}}</label>
-      <input type="text" name="system.age" value="{{age}}" id="system.age" />
+      <label for="{{actor.id}}-age">{{localize "SVNSEA2E.Age"}}</label>
+      <input type="number" name="system.age" value="{{age}}" id="{{actor.id}}-age" min="0" step="1" />
     </div>
   </div>
-
   <div class="grid grid-2col">
     <div class="form-group flex-group">
-      <label for="system.religion">{{localize "SVNSEA2E.Religion"}}</label>
-      <input type="text" id="system.religion" name="system.religion" value="{{religion}}" placeholder="{{localize "SVNSEA2E.Religion"}}" />
+      <label for="{{actor.id}}-religion">{{localize "SVNSEA2E.Religion"}}</label>
+      <input type="text" id="{{actor.id}}-religion" name="system.religion" value="{{religion}}" placeholder="{{localize "SVNSEA2E.Religion"}}" />
     </div>
     <div class="form-group flex-group">
-      <label for="system.reputation">{{localize "SVNSEA2E.Reputation"}}</label>
-      <input type="text" id="system.reputation" name="system.reputation" value="{{reputation}}" placeholder="{{localize "SVNSEA2E.Reputation"}}" />
+      <label for="{{actor.id}}-reputation">{{localize "SVNSEA2E.Reputation"}}</label>
+      <input type="text" id="{{actor.id}}-reputation" name="system.reputation" value="{{reputation}}" placeholder="{{localize "SVNSEA2E.Reputation"}}" />
     </div>
   </div>
-  {{editor concept target="system.concept" button=true owner=owner editable=editable}}
+  {{#if editable}}
+    <prose-mirror name="system.concept" value="{{system.concept}}" data-document-uuid="{{actor.uuid}}" toggled>{{{enrichedConcept}}}</prose-mirror>
+  {{else}}
+    <div class="editor-content">{{{enrichedConcept}}}</div>
+  {{/if}}
 </div>

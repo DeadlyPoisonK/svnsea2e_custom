@@ -1,30 +1,22 @@
-<form>
+<div class="roll-dialog">
   <div class="form-group">
-    <label>{{ localize "SVNSEA2E.NumberTraitDice" }}</label>
-    <select name="trait">
-    {{#for 1 traitmax 1 }}
-      {{#iff @index '==' traitmax}}
-        <option value="{{@index}}" selected>{{ @index }}</option>
-      {{else}}
-          <option value="{{@index}}">{{ @index }}</option>
-      {{/iff}}
-    {{/for}}
+    <label for="svnsea2e-roll-trait">{{localize "SVNSEA2E.NumberTraitDice"}}</label>
+    <select id="svnsea2e-roll-trait" name="trait">
+      {{#for 1 traitmax 1}}
+        <option value="{{@index}}" {{#iff @index '==' traitmax}}selected{{/iff}}>{{@index}}</option>
+      {{/for}}
     </select>
   </div>
   <div class="form-group">
-    <label for="bonusDice">{{ localize "SVNSEA2E.BonusDice" }}</label>
-    <input type="text" name="bonusDice" value="0" />
+    <label for="svnsea2e-roll-bonus">{{localize "SVNSEA2E.BonusDice"}}</label>
+    <input type="number" id="svnsea2e-roll-bonus" name="bonusDice" value="0" step="1" />
   </div>
   <div class="form-group">
-    <label for="addOneToDice">{{ localize "SVNSEA2E.AddOneToDice" }}</label>
-    <input type="checkbox" id="addOneToDice" name="addOneToDice" value="1" />
+    <label for="svnsea2e-roll-addone">{{localize "SVNSEA2E.AddOneToDice"}}</label>
+    <input type="checkbox" id="svnsea2e-roll-addone" name="addOneToDice" value="1" />
   </div>
   <div class="form-group">
-      <label for="addOneToDice">{{ localize "SVNSEA2E.JoieDeVivre" }}</label>
-      <input type="checkbox" id="joieDeVivreAdvantage" name="joieDeVivreAdvantage" value="1" />
-    </div>
-  <!-- <div class="form-group">
-    <label for="setInitiative">{{ localize "SVNSEA2E.SetInitiative" }}</label>
-    <input type="checkbox" name="setInitiative" value="0" />
-  </div> -->
-</form>
+    <label for="svnsea2e-roll-joie">{{localize "SVNSEA2E.JoieDeVivre"}}</label>
+    <input type="checkbox" id="svnsea2e-roll-joie" name="joieDeVivreAdvantage" value="1" />
+  </div>
+</div>
