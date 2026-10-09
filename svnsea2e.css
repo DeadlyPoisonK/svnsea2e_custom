@@ -516,6 +516,11 @@
   border-radius: 50%;
 }
 
+/* Up to v23.3 the item form was not a flex column: the header took its content height. */
+.svnsea2e.item .sheet-header {
+  flex: 0 0 auto;
+}
+
 .svnsea2e.item .sheet-header .profile-img {
   flex: 0 0 7.8125rem;
   height: 7.8125rem;
@@ -541,6 +546,8 @@
 
 /* These number fields were borderless text inputs up to v23.3. */
 .svnsea2e .concept .twodigit input[type="number"],
+.svnsea2e .attributes input[type="number"],
+.svnsea2e input[type="number"][name="system.influence.value"],
 .svnsea2e input[type="number"][name="system.wealth"] {
   border: 0 solid transparent;
 }
