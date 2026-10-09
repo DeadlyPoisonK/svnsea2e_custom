@@ -35,4 +35,7 @@ export default [
     files: ['tools/**/*.mjs'],
     languageOptions: { globals: { ...globals.node } },
   },
+  {
+    ignores: ['tests/**', 'svnsea2e.mjs'],
+  },
 ];

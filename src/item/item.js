@@ -36,7 +36,8 @@ export class SvnSea2EItem extends Item {
    * @param {boolean} [options.secrets]  Whether to reveal secret blocks.
    */
   async getChatData({ secrets = this.isOwner } = {}) {
-    const data = foundry.utils.deepClone(this.system);
+    // A plain copy (with derived values): the enriched HTML must not leak into the live data.
+    const data = this.system.toObject(false);
     const enrichOptions = { secrets, relativeTo: this, rollData: this.actor?.getRollData() };
     data.description = await enrichHTML(data.description, enrichOptions);
     for (const field of ENRICHED_FIELDS) {
