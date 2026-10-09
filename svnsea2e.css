@@ -305,6 +305,17 @@
   height: 100%;
 }
 
+/* While editing, Foundry stacks the menu and a stretching text area: keep it a flex column,
+   or the text area collapses to 0px and the text disappears. */
+.svnsea2e prose-mirror {
+  display: flex;
+  flex-direction: column;
+}
+
+.svnsea2e prose-mirror.active .editor-content {
+  min-height: 0;
+}
+
 .svnsea2e .concept prose-mirror,
 .svnsea2e .concept .editor-content {
   height: auto;
