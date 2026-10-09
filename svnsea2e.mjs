@@ -1544,10 +1544,8 @@ class M extends ActorSheet {
       } else {
         dwounds = clickValue;
       }
-      // Aseguramos que las heridas normales no excedan la marca de la dramática
-      if (wounds > clickValue * divisor) {
-        wounds = clickValue * divisor;
-      }
+      // Las heridas dramáticas no deben modificar las normales (hay habilidades
+      // que curan/causan una sin afectar la otra).
     }
 
     updateObj['system.wounds.value'] = wounds;
