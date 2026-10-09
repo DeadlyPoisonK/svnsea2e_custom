@@ -18,7 +18,7 @@
   {{#if favor}}<span class="flavor tag"><strong>{{localize 'SVNSEA2E.Favor'}}</strong>: {{item.system.favor}}</span>{{/if}}
   <div class="item-controls">
     {{#if used}}
-      <input type="checkbox" class="item-control item-check" data-action="toggleUsed" data-tooltip="{{localize 'SVNSEA2E.Used'}}" {{checked item.system.used}} {{disabled (not @root.editable)}} />
+      <input type="checkbox" class="item-control item-check" data-action="toggleUsed" data-tooltip="{{localize 'SVNSEA2E.Used'}}" {{checked item.system.used}} {{#unless @root.editable}}disabled{{/unless}} />
     {{/if}}
     <a class="item-control item-edit" data-action="editItem" data-tooltip="{{localize 'SVNSEA2E.Edit'}}"><i class="fa-solid fa-pen-to-square"></i></a>
     {{#if @root.editable}}
