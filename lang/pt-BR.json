@@ -365,6 +365,8 @@
   "SVNSEA2E.SendToChat": "Enviar para o chat",
   "SVNSEA2E.ExplodeTens": "10s explodem",
   "SVNSEA2E.RemoveFromToolbox": "Remover da caixa de ferramentas",
+  "SVNSEA2E.ToolboxConfigure": "Configurar caixa de ferramentas",
+  "SVNSEA2E.ToolboxColumns": "Valores a exibir:",
   "SVNSEA2E.BackgroundAdvantageSelect": "Seleção de Vantagens da Formação",
   "SVNSEA2E.Hero": "Herói",
   "SVNSEA2E.DeathToken": "Ficha da Morte",

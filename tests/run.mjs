@@ -237,6 +237,16 @@ await new Promise((r) => setTimeout(r, 20));
 ok(settings.get('toolboxActors').includes(pc.uuid), 'toolbox stores dropped actor');
 await tb.render();
 ok(tb.element.textContent.includes(pc.name), 'toolbox lists actor');
+const pcWounds = pc.system.wounds.value;
+await tb.click('[data-action="adjust"][data-key="wounds"][data-delta="1"]');
+ok(pc.system.wounds.value === pcWounds + 1, 'toolbox +1 wound');
+await tb.click('[data-action="adjust"][data-key="heropts"][data-delta="-1"]');
+ok(pc.system.heropts >= 0, 'toolbox -1 never below 0');
+DialogV2.prefill = (form) => { form.elements.raises.checked = false; };
+await tb.options.actions.configure.call(tb); // a window header control, not in the rendered part
+DialogV2.prefill = null;
+await tb.render();
+ok(settings.get('toolboxColumns').raises === false && !tb.element.querySelector('[data-key="raises"]'), 'toolbox hides a column');
 await tb.click('[data-action="removeActor"]');
 ok(settings.get('toolboxActors').length === 0, 'toolbox remove');
 

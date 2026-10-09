@@ -18,4 +18,13 @@ export function registerSystemSettings() {
     type: Array,
     default: [],
   });
+
+  // Optional toolbox columns, by key: false hides one. Columns added later show up until the GM hides them.
+  game.settings.register(SYSTEM_ID, 'toolboxColumns', {
+    name: 'Toolbox columns',
+    scope: 'client',
+    config: false,
+    type: Object,
+    default: {},
+  });
 }

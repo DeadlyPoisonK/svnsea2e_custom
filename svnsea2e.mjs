@@ -347,6 +347,13 @@ function registerSystemSettings() {
     type: Array,
     default: []
   });
+  game.settings.register(SYSTEM_ID, "toolboxColumns", {
+    name: "Toolbox columns",
+    scope: "client",
+    config: false,
+    type: Object,
+    default: {}
+  });
 }
 const PARTIALS = [
   "actors/parts/actor-name.hbs",
@@ -553,14 +560,30 @@ function isLight(color) {
   const [r, g, b] = color.rgb.map((c) => c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
   return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.179;
 }
-const { ApplicationV2: ApplicationV2$1, HandlebarsApplicationMixin: HandlebarsApplicationMixin$3 } = foundry.applications.api;
+const { ApplicationV2: ApplicationV2$1, DialogV2: DialogV2$1, HandlebarsApplicationMixin: HandlebarsApplicationMixin$3 } = foundry.applications.api;
+const { getProperty } = foundry.utils;
+const COLUMNS = [
+  { key: "raises", path: "initiative", icon: "fa-star-of-life", label: "SVNSEA2E.Initiative" },
+  { key: "heropts", path: "heropts", icon: "fa-sun", label: "SVNSEA2E.HeroPoints" },
+  { key: "wounds", path: "wounds.value", max: "wounds.max", icon: "fa-heart", label: "SVNSEA2E.Wounds" },
+  { key: "dwounds", path: "dwounds.value", max: "dwounds.max", icon: "fa-heart-crack", label: "SVNSEA2E.DramaWounds" },
+  { key: "points", path: "points", icon: "fa-skull", label: "SVNSEA2E.DangerPoints", fixed: true }
+];
 class Toolbox extends HandlebarsApplicationMixin$3(ApplicationV2$1) {
   static DEFAULT_OPTIONS = {
     id: "svnsea-toolbox",
     classes: ["svnsea2e", "toolbox", "themed", "theme-dark"],
-    window: { title: "SVNSEA2E.Toolbox", minimizable: true, resizable: true },
-    position: { top: 20, width: 300, height: "auto" },
+    window: {
+      title: "SVNSEA2E.Toolbox",
+      minimizable: true,
+      resizable: true,
+      controls: [{ icon: "fa-solid fa-gear", label: "SVNSEA2E.ToolboxConfigure", action: "configure" }]
+    },
+    position: { top: 20, width: 420, height: "auto" },
     actions: {
+      adjust: Toolbox.#onAdjust,
+      configure: Toolbox.#onConfigure,
+      openSheet: Toolbox.#onOpenSheet,
       removeActor: Toolbox.#onRemoveActor
     }
   };
@@ -575,6 +598,11 @@ class Toolbox extends HandlebarsApplicationMixin$3(ApplicationV2$1) {
     await game.settings.set(SYSTEM_ID, "toolboxActors", uuids);
     this.render();
   }
+  /** Keys of the optional columns the GM chose to show. */
+  get columnKeys() {
+    const chosen = game.settings.get(SYSTEM_ID, "toolboxColumns") ?? {};
+    return COLUMNS.filter((column) => column.fixed || chosen[column.key] !== false).map((column) => column.key);
+  }
   /** Whether a change to this actor should refresh the toolbox. */
   shows(actor) {
     return this.rendered && this.actorUuids.includes(actor.uuid);
@@ -587,13 +615,27 @@ class Toolbox extends HandlebarsApplicationMixin$3(ApplicationV2$1) {
   /** @override */
   _initializeApplicationOptions(options) {
     options = super._initializeApplicationOptions(options);
-    options.position.left ??= Math.max(window.innerWidth - 650, 0);
+    options.position.left ??= Math.max(window.innerWidth - 770, 0);
     return options;
   }
   /** @override */
   async _prepareContext(options) {
     const actors = this.actorUuids.map((uuid) => fromUuidSync(uuid)).filter((actor) => actor);
-    return { actors };
+    const keys = this.columnKeys;
+    const columns = COLUMNS.filter(
+      (column) => keys.includes(column.key) && actors.some((actor) => getProperty(actor.system, column.path) !== void 0)
+    );
+    const rows = actors.map((actor) => ({
+      uuid: actor.uuid,
+      name: actor.name,
+      cells: columns.map((column) => {
+        const value = getProperty(actor.system, column.path);
+        if (value === void 0) return null;
+        const max = column.max && getProperty(actor.system, column.max);
+        return { key: column.key, label: column.label, text: max ? `${value}/${max}` : `${value}` };
+      })
+    }));
+    return { columns, rows };
   }
   /** @override */
   _onRender(context, options) {
@@ -609,8 +651,56 @@ class Toolbox extends HandlebarsApplicationMixin$3(ApplicationV2$1) {
     const uuids = this.actorUuids;
     if (!uuids.includes(data.uuid)) await this._setActorUuids([...uuids, data.uuid]);
   }
+  /** +1 / -1 on a value; the updateActor hook re-renders the toolbox. */
+  static async #onAdjust(event, target) {
+    const actor = fromUuidSync(target.closest("[data-uuid]").dataset.uuid);
+    const column = COLUMNS.find((c) => c.key === target.dataset.key);
+    if (!actor || !column) return;
+    const system = actor.system;
+    const delta = Number(target.dataset.delta);
+    const max = column.max ? getProperty(system, column.max) : Infinity;
+    const value = clamp(getProperty(system, column.path) + delta, 0, max);
+    if (column.key === "raises") return updateInitiative(actor.id, value);
+    const update = { [`system.${column.path}`]: value };
+    if (column.key === "wounds" && delta > 0 && system.dwounds) {
+      update["system.dwounds.value"] = Math.max(system.dwounds.value, Math.trunc(value / actor.woundGroupSize));
+    }
+    await actor.update(update);
+  }
+  /** Choose the columns to show. */
+  static async #onConfigure() {
+    const keys = this.columnKeys;
+    const content = COLUMNS.filter((column) => !column.fixed).map(
+      (column) => `<label class="checkbox">
+          <input type="checkbox" name="${column.key}" ${keys.includes(column.key) ? "checked" : ""} />
+          <i class="fa-solid ${column.icon}"></i> ${game.i18n.localize(column.label)}
+        </label>`
+    ).join("");
+    const chosen = await DialogV2$1.wait({
+      window: { title: "SVNSEA2E.ToolboxConfigure" },
+      classes: ["svnsea2e", "toolbox-config"],
+      content: `<p>${game.i18n.localize("SVNSEA2E.ToolboxColumns")}</p><div class="toolbox-columns">${content}</div>`,
+      buttons: [
+        {
+          action: "save",
+          label: game.i18n.localize("SVNSEA2E.Save"),
+          icon: "fa-solid fa-floppy-disk",
+          default: true,
+          callback: (event, button) => Object.fromEntries(COLUMNS.filter((c) => !c.fixed).map((c) => [c.key, button.form.elements[c.key].checked]))
+        }
+      ],
+      rejectClose: false
+    });
+    if (!chosen) return;
+    await game.settings.set(SYSTEM_ID, "toolboxColumns", chosen);
+    this.render();
+  }
+  static #onOpenSheet(event, target) {
+    fromUuidSync(target.closest("[data-uuid]").dataset.uuid)?.sheet.render(true);
+  }
   static async #onRemoveActor(event, target) {
-    await this._setActorUuids(this.actorUuids.filter((uuid) => uuid !== target.dataset.uuid));
+    const uuid = target.closest("[data-uuid]").dataset.uuid;
+    await this._setActorUuids(this.actorUuids.filter((u) => u !== uuid));
   }
 }
 class SvnSea2EActor extends Actor {

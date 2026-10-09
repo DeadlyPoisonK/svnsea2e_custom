@@ -364,6 +364,8 @@
   "SVNSEA2E.SendToChat": "Envoyer dans le chat",
   "SVNSEA2E.ExplodeTens": "Les 10 explosent",
   "SVNSEA2E.RemoveFromToolbox": "Retirer de la boîte à outils",
+  "SVNSEA2E.ToolboxConfigure": "Configurer la boîte à outils",
+  "SVNSEA2E.ToolboxColumns": "Valeurs à afficher :",
   "SVNSEA2E.BackgroundAdvantageSelect": "Sélection des avantages du background",
   "SVNSEA2E.Hero": "Héros",
   "SVNSEA2E.SorceryGaldr": "Galdr",

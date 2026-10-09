@@ -1,27 +1,36 @@
 <div class="items">
-  {{#each actors as |actor|}}
-    <div class="actor-resume">
-      <h3>{{actor.name}}</h3>
-      <div class="score-container">
-        {{#iff actor.type '!=' 'dangerpts'}}
-          <div>
-            <label class="icon-label"><i class="fa-solid fa-star-of-life" data-tooltip="{{capitalize (localize "SVNSEA2E.Raises")}}"></i></label>
-            <span>{{actor.system.initiative}}</span>
-          </div>
-          <div>
-            <label class="icon-label"><i class="fa-solid fa-sun" data-tooltip="{{capitalize (localize "SVNSEA2E.HeroPoints")}}"></i></label>
-            <span>{{actor.system.heropts}}</span>
-          </div>
-        {{else}}
-          <div>
-            <label class="icon-label"><i class="fa-solid fa-skull" data-tooltip="{{capitalize (localize "SVNSEA2E.DangerPoints")}}"></i></label>
-            <span>{{actor.system.points}}</span>
-          </div>
-        {{/iff}}
-        <a class="remove-actor" data-action="removeActor" data-uuid="{{actor.uuid}}" data-tooltip="{{localize "SVNSEA2E.RemoveFromToolbox"}}"><i class="fa-solid fa-xmark"></i></a>
-      </div>
-    </div>
+  {{#if rows.length}}
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          {{#each columns as |column|}}
+            <th><i class="fa-solid {{column.icon}}" data-tooltip="{{localize column.label}}"></i></th>
+          {{/each}}
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each rows as |row|}}
+          <tr data-uuid="{{row.uuid}}">
+            <td class="actor-name"><a data-action="openSheet" data-tooltip="{{row.name}}">{{row.name}}</a></td>
+            {{#each row.cells as |cell|}}
+              <td>
+                {{#if cell}}
+                  <span class="stat" data-tooltip="{{localize cell.label}}">
+                    <a class="adjust" data-action="adjust" data-key="{{cell.key}}" data-delta="-1"><i class="fa-solid fa-minus"></i></a>
+                    <span class="value">{{cell.text}}</span>
+                    <a class="adjust" data-action="adjust" data-key="{{cell.key}}" data-delta="1"><i class="fa-solid fa-plus"></i></a>
+                  </span>
+                {{/if}}
+              </td>
+            {{/each}}
+            <td><a class="remove-actor" data-action="removeActor" data-tooltip="{{localize "SVNSEA2E.RemoveFromToolbox"}}"><i class="fa-solid fa-xmark"></i></a></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
   {{else}}
     <p>{{localize "SVNSEA2E.EmptyToolbox"}}</p>
-  {{/each}}
+  {{/if}}
 </div>

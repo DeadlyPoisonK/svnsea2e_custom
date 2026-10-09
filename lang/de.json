@@ -356,6 +356,8 @@
   "SVNSEA2E.SendToChat": "In den Chat senden",
   "SVNSEA2E.ExplodeTens": "10er explodieren",
   "SVNSEA2E.RemoveFromToolbox": "Aus der Toolbox entfernen",
+  "SVNSEA2E.ToolboxConfigure": "Werkzeugkasten konfigurieren",
+  "SVNSEA2E.ToolboxColumns": "Anzuzeigende Werte:",
   "SVNSEA2E.BackgroundAdvantageSelect": "Hintergrund Vorteilsauswahl",
   "SVNSEA2E.Hero": "Held",
   "SVNSEA2E.DeathToken": "Todesmarke",

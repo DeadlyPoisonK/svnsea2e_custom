@@ -365,6 +365,8 @@
   "SVNSEA2E.SendToChat": "Send to chat",
   "SVNSEA2E.ExplodeTens": "10s explode",
   "SVNSEA2E.RemoveFromToolbox": "Remove from toolbox",
+  "SVNSEA2E.ToolboxConfigure": "Configure toolbox",
+  "SVNSEA2E.ToolboxColumns": "Values to show:",
   "SVNSEA2E.BackgroundAdvantageSelect": "Background Advantage Selection",
   "SVNSEA2E.Hero": "Hero",
   "SVNSEA2E.DeathToken": "Death Token",
