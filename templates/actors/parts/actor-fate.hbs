@@ -4,17 +4,21 @@
     {{#each virtues as |item|}}
       {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="story" used=true}}
     {{/each}}
+  </ol>
+  <ol class="items-list">
     {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="hubris" label="SVNSEA2E.Hubris" type="hubris" addTitle="SVNSEA2E.AddHubris" cssClass="story"}}
     {{#each hubriss as |item|}}
       {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="story" used=true}}
     {{/each}}
-    {{#if isPlayerCharacter}}
+  </ol>
+  {{#if isPlayerCharacter}}
+    <ol class="items-list">
       {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="story" label="SVNSEA2E.Stories" type="story" addTitle="SVNSEA2E.AddStory" cssClass="story"}}
       {{#each stories as |item|}}
         {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="story"}}
       {{/each}}
-    {{/if}}
-  </ol>
+    </ol>
+  {{/if}}
   {{#if isPlayerCharacter}}
     {{#if isCorrupt}}
       <div class="redemption flexrow flex-group">
