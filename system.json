@@ -3,13 +3,11 @@
     "name": "svnsea2e",
     "title": "7th Sea Second Edition (Unofficial)",
     "description": "The 7th Sea Second Edition (Unofficial) system for FoundryVTT!",
-    "version": "23.3",
+    "version": "24.0",
     "compatibility": {
-        "minimum": "13.341",
-        "verified": "13.341",
-        "maximum": "13"
+        "minimum": "14",
+        "verified": "14"
     },
-    "templateVersion": 3,
     "authors": [
         {
             "name": "DeadlyPoisonK"
@@ -63,15 +61,13 @@
             "dangerpts": {},
             "hero": {
                 "htmlFields": [
-                    "concept",
-                    "arcana.virtue.description"
+                    "concept"
                 ]
             },
             "monster": {},
             "playercharacter": {
                 "htmlFields": [
-                    "concept",
-                    "arcana.virtue.description"
+                    "concept"
                 ]
             },
             "ship": {
@@ -81,81 +77,82 @@
             },
             "villain": {
                 "htmlFields": [
-                    "concept",
-                    "arcana.virtue.description"
+                    "concept"
                 ]
             }
         },
         "Item": {
             "advantage": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "artifact": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "background": {
                 "htmlFields": [
-                    "desciption",
+                    "description",
                     "quirk"
                 ]
             },
             "duelstyle": {
                 "htmlFields": [
-                    "desciption",
+                    "description",
                     "bonus"
                 ]
             },
             "monsterquality": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "scheme": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "secretsociety": {
                 "htmlFields": [
-                    "desciption",
+                    "description",
                     "concern",
                     "earnfavor",
-                    "callupon",
                     "favor"
                 ]
             },
             "shipadventure": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "shipbackground": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "sorcery": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "story": {
                 "htmlFields": [
-                    "desciption"
+                    "description",
+                    "reward",
+                    "endings",
+                    "steps"
                 ]
             },
             "virtue": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "hubris": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             }
         }
@@ -165,7 +162,7 @@
     "primaryTokenAttribute": "wounds",
     "secondaryTokenAttribute": "dwounds",
     "url": "https://github.com/DeadlyPoisonK/svnsea2e_custom",
-    "manifest": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.3/system.json",
-    "download": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.3/system.zip",
+    "manifest": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/latest/download/system.json",
+    "download": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v24.0/system.zip",
     "license": "MIT"
 }

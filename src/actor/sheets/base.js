@@ -13,7 +13,8 @@ const { ActorSheetV2 } = foundry.applications.sheets;
  */
 export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
-    classes: ['svnsea2e', 'sheet', 'actor'],
+    // The sheets are designed for a light background; keep them light whatever the user's theme.
+    classes: ['svnsea2e', 'sheet', 'actor', 'themed', 'theme-light'],
     position: { width: 1050, height: 750 },
     window: { resizable: true },
     form: { submitOnChange: true },
@@ -94,7 +95,7 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
 
   /** @override */
   _prepareTabs(group) {
-    return this.constructor.TABS[group] ? super._prepareTabs(group) : {};
+    return this._getTabsConfig(group) ? super._prepareTabs(group) : {};
   }
 
   /** Add the actor's items, grouped by type, to the context. */

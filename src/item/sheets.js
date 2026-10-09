@@ -20,7 +20,7 @@ const EDITOR_FIELDS = {
 /** Base sheet shared by every item type. Subclasses define PARTS and, when needed, TABS. */
 export class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
   static DEFAULT_OPTIONS = {
-    classes: ['svnsea2e', 'sheet', 'item'],
+    classes: ['svnsea2e', 'sheet', 'item', 'themed', 'theme-light'],
     position: { width: 600, height: 700 },
     window: { resizable: true },
     form: { submitOnChange: true },

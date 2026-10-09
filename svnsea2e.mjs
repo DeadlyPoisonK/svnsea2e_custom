@@ -547,7 +547,7 @@ const { ApplicationV2: ApplicationV2$1, HandlebarsApplicationMixin: HandlebarsAp
 class Toolbox extends HandlebarsApplicationMixin$3(ApplicationV2$1) {
   static DEFAULT_OPTIONS = {
     id: "svnsea-toolbox",
-    classes: ["svnsea2e", "toolbox"],
+    classes: ["svnsea2e", "toolbox", "themed", "theme-dark"],
     window: { title: "SVNSEA2E.Toolbox", minimizable: true, resizable: true },
     position: { top: 20, width: 300, height: "auto" },
     actions: {
@@ -1119,7 +1119,8 @@ const { HandlebarsApplicationMixin: HandlebarsApplicationMixin$1 } = foundry.app
 const { ActorSheetV2 } = foundry.applications.sheets;
 class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
-    classes: ["svnsea2e", "sheet", "actor"],
+    // The sheets are designed for a light background; keep them light whatever the user's theme.
+    classes: ["svnsea2e", "sheet", "actor", "themed", "theme-light"],
     position: { width: 1050, height: 750 },
     window: { resizable: true },
     form: { submitOnChange: true },
@@ -1196,7 +1197,7 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
   }
   /** @override */
   _prepareTabs(group) {
-    return this.constructor.TABS[group] ? super._prepareTabs(group) : {};
+    return this._getTabsConfig(group) ? super._prepareTabs(group) : {};
   }
   /** Add the actor's items, grouped by type, to the context. */
   _prepareItems(context) {
@@ -1945,7 +1946,7 @@ const EDITOR_FIELDS = {
 };
 class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
   static DEFAULT_OPTIONS = {
-    classes: ["svnsea2e", "sheet", "item"],
+    classes: ["svnsea2e", "sheet", "item", "themed", "theme-light"],
     position: { width: 600, height: 700 },
     window: { resizable: true },
     form: { submitOnChange: true },

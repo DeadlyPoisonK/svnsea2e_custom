@@ -9,7 +9,7 @@ const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 export class Toolbox extends HandlebarsApplicationMixin(ApplicationV2) {
   static DEFAULT_OPTIONS = {
     id: 'svnsea-toolbox',
-    classes: ['svnsea2e', 'toolbox'],
+    classes: ['svnsea2e', 'toolbox', 'themed', 'theme-dark'],
     window: { title: 'SVNSEA2E.Toolbox', minimizable: true, resizable: true },
     position: { top: 20, width: 300, height: 'auto' },
     actions: {
