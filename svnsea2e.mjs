@@ -543,6 +543,16 @@ function registerChatListeners() {
     updateInitiative(button.dataset.actor, button.dataset.raise);
   });
 }
+function onRenderChatMessage(message, html) {
+  const color = message.author?.color;
+  if (!color) return;
+  html.style.setProperty("--svnsea-author-color", color.css);
+  html.style.setProperty("--svnsea-author-text", isLight(color) ? "#000" : "#fff");
+}
+function isLight(color) {
+  const [r, g, b] = color.rgb.map((c) => c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.179;
+}
 const { ApplicationV2: ApplicationV2$1, HandlebarsApplicationMixin: HandlebarsApplicationMixin$3 } = foundry.applications.api;
 class Toolbox extends HandlebarsApplicationMixin$3(ApplicationV2$1) {
   static DEFAULT_OPTIONS = {
@@ -2236,4 +2246,5 @@ Hooks.on("renderActorDirectory", (app, html) => {
   header.insertBefore(wrapper, header.querySelector("search"));
 });
 Hooks.on("renderCombatTracker", onRenderCombatTracker);
+Hooks.on("renderChatMessageHTML", onRenderChatMessage);
 //# sourceMappingURL=svnsea2e.mjs.map

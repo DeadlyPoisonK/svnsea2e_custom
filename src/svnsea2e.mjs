@@ -5,7 +5,7 @@ import { preloadHandlebarsTemplates, registerHandlebarsHelpers } from './templat
 import { invalidateAdvantageCache } from './helpers.js';
 import * as migrations from './migration.js';
 import { onRenderCombatTracker, updateInitiative } from './combat.js';
-import { registerChatListeners } from './chat.js';
+import { onRenderChatMessage, registerChatListeners } from './chat.js';
 import { Toolbox } from './toolbox/toolbox.js';
 
 import { SvnSea2EActor } from './actor/actor.js';
@@ -155,3 +155,4 @@ Hooks.on('renderActorDirectory', (app, html) => {
 });
 
 Hooks.on('renderCombatTracker', onRenderCombatTracker);
+Hooks.on('renderChatMessageHTML', onRenderChatMessage);

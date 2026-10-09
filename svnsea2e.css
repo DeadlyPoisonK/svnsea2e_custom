@@ -993,8 +993,8 @@
 }
 
 .chat-message.message .message-header {
-  color: #fff;
-  background: #771213;
+  color: var(--svnsea-author-text, #fff);
+  background: var(--svnsea-author-color, #771213);
   padding: 0 0.5rem;
 }
 
@@ -1008,7 +1008,7 @@
 .chat-message.message .message-header h4,
 .chat-message.message .message-header a,
 .chat-message.message .message-header .message-metadata {
-  color: #fff;
+  color: var(--svnsea-author-text, #fff);
 }
 
 .chat-message.message .message-content {
