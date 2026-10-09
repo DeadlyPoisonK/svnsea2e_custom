@@ -12,7 +12,7 @@ Base: rama `wip_v14`, versión 24.0 (Foundry 14 build 369). Mundo de pruebas loc
 
 | Fase | Tema | Estado | Quién |
 |---|---|---|---|
-| 0 | Auditoría de la lógica | pendiente | Claude |
+| 0 | Auditoría de la lógica | hecha — falta que el usuario revise el reporte | Claude |
 | 1 | Reordenar modelo de datos y documentos | pendiente | Claude (+ Antigravity para lo mecánico) |
 | 2 | Active Effects | pendiente | Claude diseña, Antigravity hace las pestañas |
 | 3 | Tirada guardada en el mensaje + "Editar tirada" | pendiente | Claude |
@@ -149,3 +149,15 @@ Reemplazar el `ChoiceSelector` de idiomas por el elemento nativo `<multi-select>
 ## Notas de la fase
 
 (Cada sesión agrega acá lo que decidió, lo que cambió del plan y lo que quedó pendiente.)
+
+### Fase 0 (2026-10-09)
+
+- Reporte: `.claude/handoff/fase-0-auditoria.md` (local: `.claude/` está en `.gitignore`). No se cambió código.
+- Verificado en Node con el mock y en el Foundry 14 local (mundo `7-sea`, solo lectura).
+- Hallazgos que cambian el plan:
+  - **Bug heredado del motor de tiradas:** los tríos `[a, b, b]` (`1+7+7`, `2+9+9`, `4+8+8`, `6+7+7`) cuentan un dado dos veces y borran el último dado. Arreglarlo cambia raises respecto de la v23.3, así que la comparación "igual que v23.3" de la Fase 3 debe excluir esos casos.
+  - **Datos que se pierden (heredado):** "Redención" del villano y la pestaña Concepto del monstruo escriben campos que el esquema no tiene. `callupon`/`favor` de la sociedad secreta tienen los tipos cruzados.
+  - **Active Effects en v14:** fase `initial` antes de `prepareDerivedData` y `final` después. Un efecto que sume a habilidades o a heridas máximas lo pisa el recorte/cálculo derivado: la Fase 1 debe dejar los máximos como "base + bono".
+  - **Migración HtK (Fase 2):** `migration.js` no recorre los tokens no vinculados de las escenas; hay que añadirlo.
+  - `system.json` usa `gridDistance`/`gridUnits`, que v14 ignora (grilla queda en 1 sin unidades).
+- Pendiente antes de la Fase 1: las 6 preguntas al final del reporte (barcos con heridas, concepto del monstruo, `servants`, tipo de `favor`, reglas a confirmar en el libro, cuándo arreglar el bug de los tríos).
