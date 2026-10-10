@@ -1,4 +1,5 @@
 import { TEMPLATES } from '../enums.js';
+import { updateRaisesFromEdit } from '../combat.js';
 import { explosionDice, resolveDice } from './engine.js';
 
 export const ROLL_MESSAGE = 'roll';
@@ -115,9 +116,9 @@ export async function completeDice(data) {
 /**
  * The card of a roll message, drawn from its system data.
  * @param {object} data      System data of the message.
- * @param {string} actorId   Actor that rolled, for the initiative button.
+ * @param {string} actorUuid   Actor that rolled (the token's actor when unlinked), for the initiative button.
  */
-export async function renderRollCard(data, actorId) {
+export async function renderRollCard(data, actorUuid) {
   const i18n = game.i18n;
   const result = resolveRoll(data);
   const joieRank = data.joieDeVivre ? data.joieRank : 0;
@@ -125,7 +126,7 @@ export async function renderRollCard(data, actorId) {
   let threshold = String(result.target);
   if (data.increaseThreshold) threshold += ` ${i18n.localize('SVNSEA2E.GMIncreasedThreshold')}`;
   return foundry.applications.handlebars.renderTemplate(ROLL_CARD, {
-    actorId,
+    actorUuid,
     raises: result.raises,
     raisetxt: i18n.localize(result.raises > 1 ? 'SVNSEA2E.Raises' : 'SVNSEA2E.Raise'),
     unusedDice: result.unused.length,
@@ -186,10 +187,12 @@ export async function editRoll(message) {
   const rolls = await completeDice(data);
   await message.update({
     system: data,
-    content: await renderRollCard(data, actor?.id ?? message.speaker.actor),
+    content: await renderRollCard(data, actor?.uuid ?? message.speaker.actor),
     // Dice So Nice (6.x) shows only the rolls added to a message, and hides the card until they land.
     ...(rolls.length ? { rolls: [...message.rolls, ...rolls].map((roll) => JSON.stringify(roll)) } : {}),
   });
+  // The raises this roll set in the action sequence change by the difference.
+  await updateRaisesFromEdit(actor, message);
   return message;
 }
 

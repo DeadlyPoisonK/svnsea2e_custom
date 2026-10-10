@@ -10,6 +10,8 @@ export function installMocks(repo) {
   Object.assign(globalThis, { window: dom.window, document: dom.window.document, HTMLElement: dom.window.HTMLElement, Event: dom.window.Event });
   globalThis.Handlebars = Handlebars;
   const log = { chat: [], notifications: [], updates: [], dialogs: [] };
+  // Actors of unlinked tokens, by token id (tests register them).
+  const tokenActors = new Map();
 
   // ---------- utils ----------
   const getProperty = (o, p) => p.split('.').reduce((a, k) => a?.[k], o);
@@ -234,6 +236,8 @@ export function installMocks(repo) {
     /** Tests make an unlinked token actor by setting `_token` ({delta}). */
     get isToken() { return !!this._token; }
     get token() { return this._token ?? null; }
+    // Like Foundry, the actor of an unlinked token has the id of its base actor and a UUID of its own.
+    get uuid() { return this._token ? `Scene.scene.Token.${this._token.id}.Actor.${this.id}` : super.uuid; }
     *allApplicableEffects() {
       yield* this.effects;
       for (const item of this.items ?? []) for (const effect of item.effects) if (effect.transfer) yield effect;
@@ -281,8 +285,8 @@ export function installMocks(repo) {
   class ChatMessage {
     static implementation = ChatMessage;
     static applyMode(d) { return { ...d, mode: 'applied' }; }
-    static getSpeaker({ actor } = {}) { return { actor: actor?.id }; }
-    static getSpeakerActor(speaker) { return game.actors.get(speaker?.actor) ?? null; }
+    static getSpeaker({ actor } = {}) { return { actor: actor?.id, token: actor?._token?.id }; }
+    static getSpeakerActor(speaker) { return tokenActors.get(speaker?.token) ?? game.actors.get(speaker?.actor) ?? null; }
     static async create(data) { const message = new ChatMessage(data); log.chat.push(message); game.messages.set(message.id, message); return message; }
     constructor(data) {
       const { system, rolls, ...rest } = data;
@@ -306,6 +310,56 @@ export function installMocks(repo) {
     }
   }
 
+  // Combats: combatants sorted by the system's _sortCombatants; updates call _onUpdate like Foundry.
+  class Combatant {
+    static documentName = 'Combatant';
+    constructor(data, parent) {
+      this._id = data._id ?? `cbt${++idCounter}`; this.parent = parent; this.actor = data.actor ?? null; this.name = data.name ?? data.actor?.name;
+      this.initiative = data.initiative ?? null; this.flags = deepClone(data.flags ?? {}); this.isOwner = data.isOwner ?? true;
+    }
+    get id() { return this._id; }
+    get actorId() { return this.actor?.id; }
+    getFlag(scope, key) { return getProperty(this.flags, `${scope}.${key}`); }
+    async update(changes) { return this.parent.updateEmbeddedDocuments('Combatant', [{ _id: this.id, ...changes }]); }
+    static async _preUpdateOperation() {}
+    _onUpdate() {}
+  }
+  class Combat {
+    constructor({ round = 0, active = true, combatants = [] } = {}) {
+      this._id = `cmb${++idCounter}`; this.round = round; this.active = active; this.turn = round ? 0 : null;
+      this.combatants = new Collection();
+      for (const data of combatants) { const c = new CONFIG.Combatant.documentClass(data, this); this.combatants.set(c.id, c); }
+      this.setupTurns();
+    }
+    get id() { return this._id; }
+    get started() { return this.round > 0; }
+    get combatant() { return this.turn === null ? undefined : this.turns[this.turn]; }
+    setupTurns() { this.turns = this.combatants.contents.sort(this._sortCombatants); }
+    _sortCombatants(a, b) { return (b.initiative ?? -Infinity) - (a.initiative ?? -Infinity); }
+    async updateEmbeddedDocuments(name, updates, options = {}) {
+      // Like ClientDatabaseBackend: the pre-operation step may change the operation (e.g. combatTurn).
+      const operation = { ...options, parent: this, updates };
+      await CONFIG.Combatant.documentClass._preUpdateOperation(updates.map((u) => this.combatants.get(u._id)), operation, game.user);
+      options = operation;
+      log.updates.push(['combatants', updates, options]);
+      for (const { _id, ...update } of updates) {
+        const combatant = this.combatants.get(_id);
+        for (const [k, v] of Object.entries(update)) {
+          if (k.startsWith('flags.')) setProperty(combatant.flags, k.slice(6), deepClone(v));
+          else combatant[k] = v;
+        }
+        combatant._onUpdate(update, options, game.user.id);
+      }
+      if (typeof options.combatTurn === 'number') this.turn = options.combatTurn;
+      this.setupTurns();
+    }
+    async update(changes, options = {}) { Object.assign(this, changes); this.setupTurns(); this._onUpdate(changes, options, game.user.id); return this; }
+    _onUpdate() {}
+    async nextRound() { return this.update({ round: this.round + 1, turn: 0 }, { direction: 1 }); }
+    async previousRound() { return this.update({ round: this.round - 1, turn: 0 }, { direction: -1 }); }
+    async rollInitiative() { throw new Error('d20 initiative rolled'); }
+  }
+
   class MockRoll {
     static next = [];
     constructor(formula) { this.formula = formula; }
@@ -327,9 +381,9 @@ export function installMocks(repo) {
   };
   const hooks = {};
   globalThis.Hooks = { once: (n, f) => (hooks[n] ??= []).push(f), on: (n, f) => (hooks[n] ??= []).push(f), callAll: async (n, ...a) => { for (const f of hooks[n] ?? []) await f(...a); } };
-  globalThis.Actor = Actor; globalThis.Item = Item; globalThis.ActiveEffect = ActiveEffect;
+  globalThis.Actor = Actor; globalThis.Item = Item; globalThis.ActiveEffect = ActiveEffect; globalThis.Combat = Combat; globalThis.Combatant = Combatant;
   globalThis.CONST = { DEFAULT_TOKEN: 'icons/svg/mystery-man.svg', CHAT_MESSAGE_STYLES: { OTHER: 0 } };
-  globalThis.CONFIG = { Actor: { dataModels: {} }, Item: { dataModels: {} }, ChatMessage: { dataModels: {} }, ActiveEffect: { documentClass: ActiveEffect }, Combat: {} };
+  globalThis.CONFIG = { Actor: { dataModels: {} }, Item: { dataModels: {} }, ChatMessage: { dataModels: {} }, ActiveEffect: { documentClass: ActiveEffect }, Combat: { documentClass: Combat }, Combatant: { documentClass: Combatant } };
   globalThis.ChatMessage = ChatMessage;
   globalThis.ui = { notifications: { info: (m) => log.notifications.push(['info', m]), warn: (m) => log.notifications.push(['warn', m]), error: (m) => log.notifications.push(['error', m]) } };
   const settings = new Map();
@@ -338,11 +392,11 @@ export function installMocks(repo) {
     i18n: { lang: en, localize: (k) => en[k] ?? k, format: (k, d) => (en[k] ?? k).replace(/{(\w+)}/g, (_, x) => d?.[x]) },
     settings: { register: (s, k, cfg) => settings.set(k, cfg.default), get: (s, k) => settings.get(k), set: async (s, k, v) => settings.set(k, v) },
     system: { version: '24.0' },
-    user: { id: 'gm', isGM: true },
+    user: { id: 'gm', isGM: true, isActiveGM: true },
     users: { activeGM: { isSelf: true } },
     actors: new Collection(), items: new Collection(), packs: [], combats: new Collection(), scenes: new Collection(), messages: new Collection(),
   };
-  globalThis.fromUuidSync = (uuid) => game.actors.get(uuid.split('.').pop());
+  globalThis.fromUuidSync = (uuid) => (uuid.includes('.Token.') ? tokenActors.get(uuid.split('.')[3]) : game.actors.get(uuid.split('.').pop()));
   globalThis.fromUuid = async (uuid) => fromUuidSync(uuid);
-  return { log, hooks, MockRoll, DialogV2, DocumentSheetConfig, settings };
+  return { log, hooks, MockRoll, DialogV2, DocumentSheetConfig, settings, tokenActors };
 }

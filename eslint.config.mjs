@@ -4,7 +4,7 @@ import globals from 'globals';
 const foundryGlobals = Object.fromEntries(
   [
     'foundry', 'game', 'ui', 'canvas', 'CONFIG', 'CONST', 'Hooks', 'Handlebars',
-    'Actor', 'Item', 'ActiveEffect', 'ChatMessage', 'Roll', 'Combat', 'fromUuid', 'fromUuidSync',
+    'Actor', 'Item', 'ActiveEffect', 'ChatMessage', 'Roll', 'Combat', 'Combatant', 'fromUuid', 'fromUuidSync',
   ].map((name) => [name, 'readonly']),
 );
 

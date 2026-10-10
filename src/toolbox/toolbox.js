@@ -126,7 +126,7 @@ export class Toolbox extends HandlebarsApplicationMixin(ApplicationV2) {
     const value = clamp(getProperty(system, column.path) + delta, 0, max);
 
     // Raises are also the initiative of the actor's combatants.
-    if (column.key === 'raises') return updateInitiative(actor.id, value);
+    if (column.key === 'raises') return updateInitiative(actor, value);
     // Like the hearts of the sheet: marking wounds also marks the dramatic wounds they reach.
     if (column.key === 'wounds') return actor.update(system.woundUpdate(value));
     await actor.update({ [`system.${column.path}`]: value });

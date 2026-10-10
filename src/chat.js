@@ -1,13 +1,19 @@
 import { updateInitiative } from './combat.js';
+import { ROLL_MESSAGE } from './roll/message.js';
 
-/** "Add to initiative tracker" button of the roll cards. */
+/**
+ * Button of the roll cards: set the actor's raises to those of this roll, even when another roll set them this round.
+ * The roll messages of v25 count their raises again (they may have been edited) and are followed by later edits.
+ */
 export function registerChatListeners() {
   document.addEventListener('click', (event) => {
     const button = event.target.closest?.('.initiative-tracker-add');
     if (!button) return;
     event.preventDefault();
     event.stopPropagation();
-    updateInitiative(button.dataset.actor, button.dataset.raise);
+    const message = game.messages.get(button.closest('[data-message-id]')?.dataset.messageId);
+    if (message?.type === ROLL_MESSAGE) updateInitiative(button.dataset.actor, message.system.resolve().raises, { message });
+    else updateInitiative(button.dataset.actor, button.dataset.raise);
   });
 }
 

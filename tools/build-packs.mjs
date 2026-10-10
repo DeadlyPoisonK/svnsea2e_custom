@@ -11,7 +11,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 
 const root = path.resolve(import.meta.dirname, '..');
-const foundryApp = process.env.FOUNDRY_APP ?? 'E:/Foundry Virtual Tabletop 12/resources/app';
+const foundryApp = process.env.FOUNDRY_APP ?? 'E:/Foundry Virtual Tabletop/resources/app';
 const { ClassicLevel } = createRequire(path.join(foundryApp, 'package.json'))('classic-level');
 
 /** LevelDB key prefix of each pack type, as Foundry stores them. */

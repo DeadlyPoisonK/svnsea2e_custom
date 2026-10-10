@@ -8,7 +8,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { installMocks } from './foundry-mock.mjs';
 const repo = path.resolve(import.meta.dirname, '..');
-const { log, hooks, MockRoll, DialogV2, DocumentSheetConfig, settings } = installMocks(repo);
+const { log, hooks, MockRoll, DialogV2, DocumentSheetConfig, settings, tokenActors } = installMocks(repo);
 const renderTemplate = (...a) => foundry.applications.handlebars.renderTemplate(...a);
 let failures = 0;
 const ok = (cond, msg) => { console.log(`${cond ? '✓' : '✗'} ${msg}`); if (!cond) failures++; };
@@ -514,17 +514,108 @@ ok(settings.get('toolboxColumns').raises === false && !tb.element.querySelector(
 await tb.click('[data-action="removeActor"]');
 ok(settings.get('toolboxActors').length === 0, 'toolbox remove');
 
-// ---------- Combat tracker hook ----------
-const combatant = { id: 'c1', actor: pc, actorId: pc.id, initiative: 2, isOwner: true };
-const combat = { active: true, combatants: Object.assign(new Map([['c1', combatant]]), { filter(fn) { return [...this.values()].filter(fn); } }), updateEmbeddedDocuments: async (n, u) => { combatant.initiative = u[0].initiative; } };
-game.combats.set('cb', combat);
-const trackerHtml = document.createElement('div');
-trackerHtml.innerHTML = '<li class="combatant" data-combatant-id="c1"><div class="token-initiative"><span>2</span></div></li>';
-await Hooks.callAll('renderCombatTracker', { viewed: combat }, trackerHtml);
-ok(trackerHtml.querySelectorAll('.combat-btn').length === 2, 'combat buttons added');
-trackerHtml.querySelector('.combat-btn.add').click();
-await new Promise((r) => setTimeout(r, 10));
-ok(combatant.initiative === 3 && pc.system.initiative === 3, 'combat +1 updates combatant and actor');
+// ---------- Action sequence: raises in the combat tracker ----------
+{
+  const boss = await make('villain', { name: 'Boss' });
+  // Two unlinked tokens of the same villain: same actor id, an actor and a combatant each.
+  const tokenOf = (tokenId) => {
+    const actor = new CONFIG.Actor.documentClass({ ...boss.toObject(), _id: boss.id });
+    actor._token = { id: tokenId };
+    actor.prepareData();
+    tokenActors.set(tokenId, actor);
+    return actor;
+  };
+  const t1 = tokenOf('tok1');
+  const t2 = tokenOf('tok2');
+  const ana = await make('hero', { name: 'Ana' });
+  await pc.update({ 'system.initiative': 0, 'system.dwounds.value': 0, 'system.heropts': 0 });
+  game.combats.clear();
+  const combat = new CONFIG.Combat.documentClass({ combatants: [{ actor: pc }, { actor: t1 }, { actor: t2 }, { actor: ana }] });
+  game.combats.set(combat.id, combat);
+  const of = (actor) => combat.combatants.find((c) => c.actor === actor);
+  const free = async (actor, faces) => {
+    MockRoll.next = [...faces];
+    await game.svnsea2e.rolls.rollDicePool({ actor, rolldata: { skilldice: faces.length, threshold: 10 }, options: {}, title: 'Test', kind: 'skill' });
+    return log.chat.at(-1);
+  };
+  const edit = async (message, extra, next) => {
+    MockRoll.next = [...next];
+    DialogV2.prefill = (form) => { form.elements.skill.value = String(Number(form.elements.skill.value) + extra); };
+    await game.svnsea2e.rolls.editRoll(message);
+    DialogV2.prefill = null;
+  };
+
+  // The approaches are rolled before the GM begins the combat (round 0).
+  const pcRoll = await free(pc, [5, 5, 5, 5]);
+  ok(of(pc).initiative === 2 && pc.system.initiative === 2, 'first roll fills the tracker and the actor');
+  await free(t1, [10, 10, 10]);
+  const t2Roll = await free(t2, [5, 5]);
+  ok(of(t1).initiative === 3 && of(t2).initiative === 1, `unlinked tokens keep their own raises (${of(t1).initiative}, ${of(t2).initiative})`);
+  ok(t1.system.initiative === 3 && t2.system.initiative === 1 && boss.system.initiative === 0, 'each token actor mirrors its raises, the base actor untouched');
+  ok(pcRoll.content.includes(`data-actor="${pc.uuid}"`) && t2Roll.content.includes(`data-actor="${t2.uuid}"`), 'cards keep the actor UUID');
+
+  await combat.update({ round: 1, turn: 0 });
+  const pcSecond = await free(pc, [10, 10]);
+  ok(of(pc).initiative === 2, 'a second roll in the round does not overwrite the raises');
+
+  // Villains act first on ties.
+  await free(ana, [5, 5, 5, 5, 5, 5]);
+  ok(combat.turns.map((c) => c.name).join() === 'Boss,Ana,playercharacter,Boss', `tie: villain first (${combat.turns.map((c) => `${c.name}:${c.initiative}`)})`);
+  ok(combat.combatant === of(t1), 'turn on the first combatant');
+
+  // Tracker: +1 / -1 buttons, no d20 buttons, a dash without raises.
+  const tracker = document.createElement('div');
+  tracker.innerHTML = '<div class="control-buttons"><button data-action="rollAll"></button><button data-action="rollNPC"></button></div>' +
+    combat.turns.map((c) => `<li class="combatant" data-combatant-id="${c.id}"><div class="token-initiative"><input class="initiative-input" value="${c.initiative}"></div></li>`).join('') +
+    '<li class="combatant" data-combatant-id="none"><div class="token-initiative"><button data-action="rollInitiative"></button></div></li>';
+  await Hooks.callAll('renderCombatTracker', { viewed: combat }, tracker);
+  ok(!tracker.querySelector('[data-action="rollAll"], [data-action="rollNPC"], [data-action="rollInitiative"]') && tracker.querySelectorAll('.spacer').length === 2, 'd20 initiative buttons removed');
+  ok(tracker.querySelectorAll('.combat-btn').length === 8 && tracker.querySelectorAll('.no-raises').length === 1, 'raise buttons added, dash without raises');
+  const button = (actor, kind) => tracker.querySelector(`[data-combatant-id="${of(actor).id}"] .combat-btn.${kind}`);
+  button(t1, 'sub').click(); await settle();
+  button(t1, 'sub').click(); await settle();
+  ok(of(t1).initiative === 1 && t1.system.initiative === 1 && of(t2).initiative === 1, 'tracker -1 changes that token only');
+  ok(combat.combatant === of(t1) && combat.turns.indexOf(of(t1)) === combat.turn && combat.turn !== 0, `the turn stays on the combatant spending raises (turn ${combat.turn})`);
+  button(pc, 'add').click(); await settle();
+  ok(of(pc).initiative === 3 && pc.system.initiative === 3, 'tracker +1 updates combatant and actor');
+  await of(ana).update({ initiative: 0 }); // the tracker's own field, as the GM types in it
+  ok(combat.combatant === of(t1) && ana.system.initiative === 0, `a change from the tracker field keeps the turn and the copy (turn ${combat.turn})`);
+  const options = [{ label: 'COMBATANT.ACTIONS.Update' }, { label: 'COMBATANT.ACTIONS.Reroll' }];
+  await Hooks.callAll('getCombatTrackerContextOptions', {}, options);
+  ok(options.length === 1 && options[0].label === 'COMBATANT.ACTIONS.Update', 'no "Reroll Initiative" in the context menu');
+  ok((await combat.rollInitiative(['x'])) === combat, 'd20 initiative never rolled');
+
+  // Editing the roll that set the raises adds the difference; editing another roll changes nothing.
+  await edit(pcRoll, 2, [5, 5]);
+  ok(pcRoll.system.resolve().raises === 3 && of(pc).initiative === 4 && pc.system.initiative === 4, `edit adds the new raises to what is left (${of(pc).initiative})`);
+  await edit(pcSecond, 2, [10, 10]);
+  ok(of(pc).initiative === 4, 'editing a later roll does not touch the tracker');
+  await edit(t2Roll, 2, [5, 5]);
+  ok(of(t2).initiative === 2 && of(t1).initiative === 1 && t2.system.initiative === 2, 'edit of an unlinked token roll changes that token only');
+
+  // The card button sets the raises on purpose, and its later edits are followed.
+  const card = document.createElement('div');
+  card.dataset.messageId = pcSecond.id;
+  card.innerHTML = pcSecond.content;
+  document.body.append(card);
+  card.querySelector('.initiative-tracker-add').click(); await settle();
+  ok(of(pc).initiative === 4 && of(pc).raisesRoll.message === pcSecond.id, `card button sets the raises of that roll (${of(pc).initiative})`);
+  card.remove();
+  await game.svnsea2e.updateInitiative(t1, 5);
+  ok(of(t1).initiative === 5 && of(t2).initiative === 2, 'toolbox raises of a token actor');
+
+  // A new round clears the raises; the first roll sets them again.
+  await combat.nextRound();
+  await settle();
+  ok(combat.combatants.contents.every((c) => c.initiative === null) && pc.system.initiative === 0 && t1.system.initiative === 0, 'new round clears the raises');
+  await free(t2, [5, 5]);
+  await free(pc, [5, 5, 5, 5]);
+  ok(of(pc).initiative === 2 && combat.combatant === of(pc), `first roll of the new round sets them again, the turn on the most raises (${combat.combatant?.name})`);
+  await combat.previousRound();
+  ok(of(pc).initiative === 2, 'going back a round clears nothing');
+  game.combats.clear();
+  tokenActors.clear();
+}
 
 // ---------- Migration to v25: ship crew flags → system.crew ----------
 {

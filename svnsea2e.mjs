@@ -725,23 +725,170 @@ const migrations = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePr
   MIGRATIONS,
   migrateWorldIfNeeded
 }, Symbol.toStringTag, { value: "Module" }));
-async function updateInitiative(actorId, value) {
-  let initiative = parseFloat(value);
-  if (Number.isNaN(initiative)) return;
-  initiative = Math.max(0, initiative);
-  for (const combat of game.combats.filter((c) => c.active)) {
-    const updates = combat.combatants.filter((c) => c.actorId === actorId || c.actor?.id === actorId).map((c) => ({ _id: c.id, initiative }));
-    if (updates.length) await combat.updateEmbeddedDocuments("Combatant", updates);
+const raisesRound = (combat) => Math.max(combat.round ?? 0, 1);
+const actsFirstOnTies = (combatant) => {
+  const actor = combatant.actor;
+  return !!(actor?.system?.isVillain || actor?.type === ActorType.BRUTE);
+};
+function compareTurns(a, ia, b, ib) {
+  ia = Number.isFinite(ia) ? ia : -Infinity;
+  ib = Number.isFinite(ib) ? ib : -Infinity;
+  return ib - ia || Number(actsFirstOnTies(b)) - Number(actsFirstOnTies(a)) || (a.name ?? "").localeCompare(b.name ?? "") || (a.id > b.id ? 1 : -1);
+}
+class SvnSea2ECombat extends Combat {
+  /** @override Called unbound by Combat#setupTurns. */
+  _sortCombatants(a, b) {
+    return compareTurns(a, a.initiative, b, b.initiative);
   }
-  await game.actors.get(actorId)?.update({ "system.initiative": initiative });
+  /**
+   * Set the raises of some combatants (updates with `_id` and `initiative`).
+   * @param {object[]} updates
+   * @param {object} [options]
+   * @param {boolean} [options.keepTurn=true]   Keep the turn on the current combatant. Without it the turn keeps its
+   *   place: at the beginning of the round, the first one, on whoever has the most raises.
+   */
+  async updateRaises(updates, { keepTurn = true } = {}) {
+    if (!updates.length) return;
+    const options = { turnEvents: false };
+    if (!keepTurn && this.turn !== null) options.combatTurn = this.turn;
+    await this.updateEmbeddedDocuments("Combatant", updates, options);
+  }
+  /**
+   * The turn that keeps the current combatant after these changes of initiative, or null when nothing moves. Foundry
+   * keeps the turn index, so the turn would jump to whoever takes that place in the new order.
+   * @param {object[]} updates   Combatant changes with `_id`.
+   */
+  turnKeepingCurrent(updates) {
+    const current = this.combatant;
+    if (!current || this.turn === null || !updates.some((u) => "initiative" in u)) return null;
+    const values = new Map(updates.filter((u) => "initiative" in u).map((u) => [u._id, u.initiative]));
+    const value = (c) => values.has(c.id) ? values.get(c.id) : c.initiative;
+    const order = this.combatants.contents.sort((a, b) => compareTurns(a, value(a), b, value(b)));
+    const turn = order.findIndex((c) => c.id === current.id);
+    return turn === this.turn ? null : turn;
+  }
+  /** @override The raises come from the rolls of the system: Foundry's d20 initiative is not rolled. */
+  async rollInitiative() {
+    return this;
+  }
+  /** @override A new round clears the raises; the active GM does it, as a player may advance the round. */
+  _onUpdate(changed, options, userId) {
+    super._onUpdate(changed, options, userId);
+    if ("round" in changed && options.direction > 0 && changed.round > 1 && game.user.isActiveGM) this.clearRaises();
+  }
+  /** Clear the raises of every combatant. Their marks of having rolled belong to the past round: they no longer count. */
+  async clearRaises() {
+    const updates = this.combatants.filter((c) => c.initiative !== null).map((c) => ({ _id: c.id, initiative: null }));
+    await this.updateRaises(updates, { keepTurn: false });
+  }
+}
+class SvnSea2ECombatant extends Combatant {
+  /** @override Any change of raises (rolls, buttons, the tracker's own field) keeps the turn on the same combatant. */
+  static async _preUpdateOperation(documents, operation, user) {
+    const combat = operation.parent ?? documents[0]?.parent;
+    if (combat?.turnKeepingCurrent && operation.combatTurn === void 0) {
+      const turn = combat.turnKeepingCurrent(operation.updates ?? []);
+      if (turn !== null) operation.combatTurn = turn;
+    }
+    return super._preUpdateOperation(documents, operation, user);
+  }
+  /** The roll that set the raises of the current round, if any: `{round, message, raises}`. */
+  get raisesRoll() {
+    const roll = this.getFlag(SYSTEM_ID, "roll");
+    return roll && this.parent && roll.round === raisesRound(this.parent) ? roll : null;
+  }
+  /** @override Keep the copy of the raises on the actor (the token's actor when unlinked). */
+  _onUpdate(changed, options, userId) {
+    super._onUpdate(changed, options, userId);
+    if (userId !== game.user.id || !("initiative" in changed)) return;
+    const actor = this.actor;
+    const value = changed.initiative ?? 0;
+    if (actor?.isOwner && "initiative" in actor.system && actor.system.initiative !== value) {
+      actor.update({ "system.initiative": value });
+    }
+  }
+}
+function actorFrom(ref) {
+  if (!ref) return null;
+  if (typeof ref !== "string") return ref;
+  return ref.includes(".") ? fromUuidSync(ref) : game.actors.get(ref);
+}
+function combatantsOf(actor) {
+  return game.combats.filter((combat) => combat.active).flatMap((combat) => combat.combatants.filter((c) => c.isOwner && c.actor && (c.actor === actor || c.actor.uuid === actor.uuid)));
+}
+async function updateCombatants(updates, options) {
+  const byCombat = /* @__PURE__ */ new Map();
+  for (const [combatant, update] of updates) {
+    const combat = combatant.parent;
+    if (!byCombat.has(combat)) byCombat.set(combat, []);
+    byCombat.get(combat).push({ _id: combatant.id, ...update });
+  }
+  for (const [combat, list] of byCombat) await combat.updateRaises(list, options);
+}
+async function updateInitiative(actorRef, value, { message } = {}) {
+  const actor = actorFrom(actorRef);
+  let initiative = parseFloat(value);
+  if (!actor || Number.isNaN(initiative)) return;
+  initiative = Math.max(0, initiative);
+  const combatants = combatantsOf(actor);
+  if (!combatants.length) {
+    if (actor.isOwner && "initiative" in actor.system) await actor.update({ "system.initiative": initiative });
+    return;
+  }
+  await updateCombatants(
+    combatants.map((c) => {
+      const update = { initiative };
+      if (message) update[`flags.${SYSTEM_ID}.roll`] = { round: raisesRound(c.parent), message: message.id, raises: initiative };
+      return [c, update];
+    })
+  );
+}
+async function setRaisesFromRoll(actor, message) {
+  if (!actor || !message) return;
+  const raises = message.system.resolve().raises;
+  const combatants = combatantsOf(actor).filter((c) => !c.raisesRoll);
+  await updateCombatants(
+    combatants.map((c) => [
+      c,
+      { initiative: raises, [`flags.${SYSTEM_ID}.roll`]: { round: raisesRound(c.parent), message: message.id, raises } }
+    ]),
+    { keepTurn: false }
+  );
+}
+async function updateRaisesFromEdit(actor, message) {
+  if (!actor || !message) return;
+  const raises = message.system.resolve().raises;
+  const updates = [];
+  for (const combatant of combatantsOf(actor)) {
+    const roll = combatant.raisesRoll;
+    if (roll?.message !== message.id || roll.raises === raises) continue;
+    const initiative = Math.max(0, (combatant.initiative ?? 0) + raises - roll.raises);
+    updates.push([combatant, { initiative, [`flags.${SYSTEM_ID}.roll`]: { ...roll, raises } }]);
+  }
+  await updateCombatants(updates);
 }
 function onRenderCombatTracker(app, html) {
+  for (const action of ["rollAll", "rollNPC"]) {
+    const button = html.querySelector(`[data-action="${action}"]`);
+    if (!button) continue;
+    const spacer = document.createElement("div");
+    spacer.className = "spacer";
+    button.replaceWith(spacer);
+  }
   const combat = app.viewed;
   if (!combat) return;
   for (const row of html.querySelectorAll(".combatant[data-combatant-id]")) {
     const combatant = combat.combatants.get(row.dataset.combatantId);
     const initiative = row.querySelector(".token-initiative");
-    if (!combatant?.actor || !combatant.isOwner || !initiative || initiative.querySelector(".combat-btn")) continue;
+    if (!initiative || initiative.querySelector(".combat-btn, .no-raises")) continue;
+    initiative.querySelector('[data-action="rollInitiative"]')?.remove();
+    if (!Number.isFinite(combatant?.initiative)) {
+      const empty = document.createElement("span");
+      empty.className = "no-raises";
+      empty.textContent = "–";
+      initiative.append(empty);
+    }
+    if (!combatant?.actor || !combatant.isOwner) continue;
     const makeButton = (delta) => {
       const button = document.createElement("a");
       button.className = `combat-btn ${delta > 0 ? "add" : "sub"}`;
@@ -750,7 +897,7 @@ function onRenderCombatTracker(app, html) {
       button.addEventListener("click", (event) => {
         event.preventDefault();
         event.stopPropagation();
-        updateInitiative(combatant.actor.id, (combatant.initiative || 0) + delta);
+        combat.updateRaises([{ _id: combatant.id, initiative: Math.max(0, (combatant.initiative || 0) + delta) }]);
       });
       button.addEventListener("dblclick", (event) => {
         event.preventDefault();
@@ -762,13 +909,323 @@ function onRenderCombatTracker(app, html) {
     initiative.append(makeButton(-1));
   }
 }
+function onGetCombatTrackerContextOptions(app, options) {
+  const index = options.findIndex((option) => option.label === "COMBATANT.ACTIONS.Reroll");
+  if (index >= 0) options.splice(index, 1);
+}
+function raisesPerCombo(threshold, increased) {
+  return threshold === 15 && !increased || threshold === 20 && increased ? 2 : 1;
+}
+function findComboIndices(dice, combo) {
+  const indices = [];
+  for (const value of combo) {
+    const index = dice.findIndex((die, i) => die.value === value && !indices.includes(i));
+    if (index === -1) return null;
+    indices.push(index);
+  }
+  return indices;
+}
+function groupDice(dice, target, increased) {
+  const pool = [...dice].sort((a, b) => b.value - a.value);
+  const result = { left: pool, combos: [], raises: 0 };
+  const findCombo = (exactOnly) => {
+    let bestOvershoot = Infinity;
+    let found = null;
+    const dfs = (index, sum, used) => {
+      if (sum === target) {
+        found = used;
+        return true;
+      }
+      if (!exactOnly && sum > target && sum < bestOvershoot) {
+        bestOvershoot = sum;
+        found = used;
+        return false;
+      }
+      if (sum >= target || index >= pool.length) return false;
+      if (dfs(index + 1, sum + pool[index].value, [...used, index])) return true;
+      return dfs(index + 1, sum, used);
+    };
+    dfs(0, 0, []);
+    if (!found) return null;
+    const combo = found.map((i) => pool[i].value);
+    for (let j = found.length - 1; j >= 0; j--) pool.splice(found[j], 1);
+    return combo;
+  };
+  for (const exactOnly of [true, false]) {
+    let combo;
+    while ((combo = findCombo(exactOnly)) !== null) {
+      result.combos.push(combo.sort((a, b) => a - b).join(" + "));
+      result.raises += raisesPerCombo(target, increased);
+    }
+  }
+  return result;
+}
+const byValue = (a, b) => a.value - b.value;
+function resolveDice(input, tables = SVNSEA2E) {
+  const { addOne, joieRank = 0, reroll, rerollFace = null } = input;
+  const increased = !!input.increaseThreshold;
+  const valueOf = (face2) => face2 <= joieRank ? 10 : addOne ? face2 + 1 : face2;
+  const dice = input.faces.map((face2) => ({ face: face2, value: valueOf(face2) })).sort(byValue);
+  const target = input.threshold + (increased ? 5 : 0);
+  const matches = target === 15 ? tables.match15 : target === 20 ? tables.match20 : tables.match10;
+  let raises = 0;
+  const combos = [];
+  const takeTens = () => {
+    if (target !== 10) return;
+    for (let i = dice.length - 1; i >= 0 && dice[i].value >= 10; i--) {
+      raises++;
+      combos.push(String(dice[i].value));
+      dice.splice(i, 1);
+    }
+  };
+  takeTens();
+  for (const combo of [...matches.two, ...matches.three]) {
+    let indices;
+    while (indices = findComboIndices(dice, combo)) {
+      raises += raisesPerCombo(target, increased);
+      combos.push(indices.map((i) => dice[i].value).join(" + "));
+      for (const i of indices.sort((a, b) => b - a)) dice.splice(i, 1);
+    }
+  }
+  let rerolled = null;
+  if (dice.length > 0 && reroll) {
+    if (rerollFace === null) return { needsReroll: true, target };
+    rerolled = { from: dice[0].face, to: rerollFace };
+    dice[0] = { face: rerollFace, value: valueOf(rerollFace) };
+    dice.sort(byValue);
+  }
+  takeTens();
+  let grouped = groupDice(dice, target, increased);
+  combos.push(...grouped.combos);
+  raises += grouped.raises;
+  if (grouped.left.length > 0 && (!increased && target === 15 || increased && target === 20)) {
+    const lower = groupDice(grouped.left, target - 5, increased);
+    combos.push(...lower.combos);
+    raises += lower.raises;
+    grouped = lower;
+  }
+  const faces = [...input.faces];
+  if (rerolled) faces[faces.indexOf(rerolled.from)] = rerolled.to;
+  return {
+    needsReroll: false,
+    target,
+    raises,
+    combos,
+    unused: grouped.left.map((die) => die.value),
+    faces: faces.sort((a, b) => a - b),
+    rerolled
+  };
+}
+function explosionDice(dice, explosions) {
+  let pending = dice.filter((face2) => face2 === 10).length;
+  const used = [];
+  for (const face2 of explosions) {
+    if (pending === 0) break;
+    used.push(face2);
+    pending += face2 === 10 ? 0 : -1;
+  }
+  return { used, missing: pending };
+}
+const ROLL_MESSAGE = "roll";
+const ROLL_CARD = `${TEMPLATES}/chats/roll-card.hbs`;
+const EDIT_DIALOG = `${TEMPLATES}/chats/edit-roll-dialog.hbs`;
+const { ArrayField: ArrayField$2, BooleanField: BooleanField$2, NumberField: NumberField$2, SchemaField: SchemaField$2, StringField: StringField$2 } = foundry.data.fields;
+const count = (options = {}) => new NumberField$2({ required: true, nullable: false, integer: true, min: 0, initial: 0, ...options });
+const face = () => new NumberField$2({ required: true, nullable: false, integer: true, min: 1, max: 10 });
+class RollMessageModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      kind: new StringField$2({ required: true, choices: ["skill", "trait", "free"], initial: "free" }),
+      pool: new SchemaField$2({
+        skill: count(),
+        trait: count(),
+        // The free roll keeps its number of dice here. Negative to take dice away.
+        bonus: new NumberField$2({ required: true, nullable: false, integer: true, initial: 0 }),
+        flair: new BooleanField$2(),
+        interpretation: new BooleanField$2(),
+        heroPoints: count(),
+        // Hero points given by other heroes: 3 dice each.
+        helpers: count(),
+        wound: count()
+      }),
+      threshold: new NumberField$2({ required: true, nullable: false, integer: true, choices: [10, 15], initial: 10 }),
+      increaseThreshold: new BooleanField$2(),
+      addOne: new BooleanField$2(),
+      explode: new BooleanField$2(),
+      reroll: new BooleanField$2(),
+      joieDeVivre: new BooleanField$2(),
+      joieRank: count({ max: 5 }),
+      // Faces in the order they were rolled. Explosions apart: they only count while `explode` is on.
+      dice: new ArrayField$2(face()),
+      explosions: new ArrayField$2(face()),
+      rerollFace: new NumberField$2({ required: true, nullable: true, integer: true, min: 1, max: 10, initial: null }),
+      edited: new BooleanField$2()
+    };
+  }
+  /** Number of dice of the pool, without explosions. */
+  get poolSize() {
+    return poolSize(this);
+  }
+  /** The raises, sets and leftover dice of the roll. */
+  resolve() {
+    return resolveRoll(this);
+  }
+}
+function poolSize({ pool }) {
+  return pool.skill + pool.trait + pool.bonus + pool.wound + (pool.flair ? 1 : 0) + (pool.interpretation ? 1 : 0) + pool.heroPoints + pool.helpers * 3;
+}
+function resolveRoll(data) {
+  return resolveDice({
+    faces: [...data.dice, ...data.explode ? explosionDice(data.dice, data.explosions).used : []],
+    threshold: data.threshold,
+    increaseThreshold: data.increaseThreshold,
+    addOne: data.addOne,
+    joieRank: data.joieDeVivre ? data.joieRank : 0,
+    reroll: data.reroll,
+    rerollFace: data.rerollFace
+  });
+}
+async function rollD10s(count2) {
+  const roll = await new foundry.dice.Roll(`${count2}d10`).evaluate();
+  return { roll, faces: roll.dice[0].results.map((r) => r.result) };
+}
+async function completeDice(data) {
+  const rolls = [];
+  const roll = async (count2) => {
+    const result = await rollD10s(count2);
+    rolls.push(result.roll);
+    return result.faces;
+  };
+  const size = poolSize(data);
+  if (data.dice.length > size) data.dice = data.dice.slice(0, size);
+  else if (data.dice.length < size) data.dice = [...data.dice, ...await roll(size - data.dice.length)];
+  if (data.explode) {
+    let missing;
+    while ((missing = explosionDice(data.dice, data.explosions).missing) > 0) data.explosions = [...data.explosions, ...await roll(missing)];
+    data.explosions = explosionDice(data.dice, data.explosions).used;
+  } else data.explosions = [];
+  const needs = resolveRoll({ ...data, rerollFace: null }).needsReroll;
+  if (!needs) data.rerollFace = null;
+  else if (data.rerollFace === null) [data.rerollFace] = await roll(1);
+  return rolls;
+}
+async function renderRollCard(data, actorUuid) {
+  const i18n = game.i18n;
+  const result = resolveRoll(data);
+  const joieRank = data.joieDeVivre ? data.joieRank : 0;
+  const explosions = data.explode ? explosionDice(data.dice, data.explosions).used.length : 0;
+  let threshold = String(result.target);
+  if (data.increaseThreshold) threshold += ` ${i18n.localize("SVNSEA2E.GMIncreasedThreshold")}`;
+  return foundry.applications.handlebars.renderTemplate(ROLL_CARD, {
+    actorUuid,
+    raises: result.raises,
+    raisetxt: i18n.localize(result.raises > 1 ? "SVNSEA2E.Raises" : "SVNSEA2E.Raise"),
+    unusedDice: result.unused.length,
+    unusedDiceTxt: i18n.localize(result.unused.length > 1 ? "SVNSEA2E.UnusedDice" : "SVNSEA2E.UnusedDie"),
+    dice: result.faces.map((face2) => ({ face: face2, joie: face2 <= joieRank })),
+    combos: result.combos,
+    unusedRolls: result.unused,
+    reroll: result.rerolled && i18n.format("SVNSEA2E.Reroll", { roll1: result.rerolled.from, roll2: result.rerolled.to }),
+    exploded: data.explode,
+    extraDice: explosions,
+    addOne: data.addOne,
+    joie: joieRank > 0 && i18n.format("SVNSEA2E.JoieDiceCount", { rank: joieRank }),
+    threshold: i18n.format("SVNSEA2E.RollThreshold", { threshold }),
+    edited: data.edited
+  });
+}
+function canEditRoll(message, user = game.user) {
+  return message?.type === ROLL_MESSAGE && (user.isGM || message.isAuthor) && message.isContentVisible;
+}
+async function editRoll(message) {
+  if (!canEditRoll(message)) return false;
+  const source = message.system.toObject();
+  const content = await foundry.applications.handlebars.renderTemplate(EDIT_DIALOG, {
+    data: source,
+    free: source.kind === "free",
+    thresholds: { 10: "10", 15: "15" },
+    threshold: String(source.threshold)
+  });
+  const form = await foundry.applications.api.DialogV2.wait({
+    window: { title: game.i18n.localize("SVNSEA2E.EditRoll"), icon: "fa-solid fa-pen-to-square" },
+    classes: ["svnsea2e", "roll-dialog", "themed", "theme-light"],
+    position: { width: 420 },
+    content,
+    buttons: [
+      { action: "save", label: game.i18n.localize("Save"), icon: "fa-solid fa-floppy-disk", default: true, callback: (event, button) => button.form },
+      { action: "cancel", label: game.i18n.localize("Cancel"), callback: () => null }
+    ],
+    rejectClose: false
+  });
+  if (!form) return false;
+  const data = { ...source, ...readEditForm(form), edited: true };
+  if (poolSize(data) < 1) {
+    ui.notifications.warn(game.i18n.localize("SVNSEA2E.NoDiceToRoll"));
+    return false;
+  }
+  const actor = ChatMessage.implementation.getSpeakerActor(message.speaker);
+  if (!await settleHeroPoints(actor, data.pool.heroPoints - source.pool.heroPoints)) return false;
+  const rolls = await completeDice(data);
+  await message.update({
+    system: data,
+    content: await renderRollCard(data, actor?.uuid ?? message.speaker.actor),
+    // Dice So Nice (6.x) shows only the rolls added to a message, and hides the card until they land.
+    ...rolls.length ? { rolls: [...message.rolls, ...rolls].map((roll) => JSON.stringify(roll)) } : {}
+  });
+  await updateRaisesFromEdit(actor, message);
+  return message;
+}
+async function settleHeroPoints(actor, spent) {
+  if (!spent || !actor || actor.system.isVillain || !("heropts" in actor.system)) return true;
+  const available = actor.system.heropts || 0;
+  if (spent > available) {
+    ui.notifications.error(game.i18n.localize("SVNSEA2E.NotEnoughHero"));
+    return false;
+  }
+  await actor.update({ "system.heropts": available - spent });
+  return true;
+}
+function readEditForm(form) {
+  const el = form.elements;
+  const num = (name, min = 0) => Math.max(parseInt(el[name]?.value) || 0, min);
+  const bool = (name) => !!el[name]?.checked;
+  return {
+    pool: {
+      skill: num("skill"),
+      trait: num("trait"),
+      bonus: num("bonus", -Infinity),
+      flair: bool("flair"),
+      interpretation: bool("interpretation"),
+      heroPoints: num("heroPoints"),
+      helpers: num("helpers"),
+      wound: num("wound")
+    },
+    threshold: num("threshold") === 15 ? 15 : 10,
+    increaseThreshold: bool("increaseThreshold"),
+    addOne: bool("addOne"),
+    explode: bool("explode"),
+    reroll: bool("reroll"),
+    joieDeVivre: bool("joieDeVivre"),
+    joieRank: Math.min(num("joieRank"), 5)
+  };
+}
+function onGetChatMessageContextOptions(app, options) {
+  options.push({
+    label: "SVNSEA2E.EditRoll",
+    icon: "fa-solid fa-pen-to-square",
+    visible: (li) => canEditRoll(game.messages.get(li.dataset.messageId)),
+    onClick: (event, li) => editRoll(game.messages.get(li.dataset.messageId))
+  });
+}
 function registerChatListeners() {
   document.addEventListener("click", (event) => {
     const button = event.target.closest?.(".initiative-tracker-add");
     if (!button) return;
     event.preventDefault();
     event.stopPropagation();
-    updateInitiative(button.dataset.actor, button.dataset.raise);
+    const message = game.messages.get(button.closest("[data-message-id]")?.dataset.messageId);
+    if (message?.type === ROLL_MESSAGE) updateInitiative(button.dataset.actor, message.system.resolve().raises, { message });
+    else updateInitiative(button.dataset.actor, button.dataset.raise);
   });
 }
 function onRenderChatMessage(message, html) {
@@ -881,7 +1338,7 @@ class Toolbox extends HandlebarsApplicationMixin$3(ApplicationV2$1) {
     const delta = Number(target.dataset.delta);
     const max = column.max ? getProperty(system, column.max) : Infinity;
     const value = clamp(getProperty(system, column.path) + delta, 0, max);
-    if (column.key === "raises") return updateInitiative(actor.id, value);
+    if (column.key === "raises") return updateInitiative(actor, value);
     if (column.key === "wounds") return actor.update(system.woundUpdate(value));
     await actor.update({ [`system.${column.path}`]: value });
   }
@@ -1009,9 +1466,9 @@ class SvnSea2EActor extends Actor {
     return this.items.some((item) => item.type === type && item.name === name);
   }
 }
-const { HTMLField: HTMLField$1, SchemaField: SchemaField$2, NumberField: NumberField$2, StringField: StringField$2, ArrayField: ArrayField$2, BooleanField: BooleanField$2 } = foundry.data.fields;
-const int = (initial = 0, { min = 0, max } = {}) => new NumberField$2({ required: true, integer: true, min, max, initial });
-const rank = (initial, [min, max]) => new SchemaField$2({ value: int(initial, { min, max }) });
+const { HTMLField: HTMLField$1, SchemaField: SchemaField$1, NumberField: NumberField$1, StringField: StringField$1, ArrayField: ArrayField$1, BooleanField: BooleanField$1 } = foundry.data.fields;
+const int = (initial = 0, { min = 0, max } = {}) => new NumberField$1({ required: true, integer: true, min, max, initial });
+const rank = (initial, [min, max]) => new SchemaField$1({ value: int(initial, { min, max }) });
 const RANK_BOUNDS = {
   heroTrait: [2, 5],
   skill: [0, 5],
@@ -1049,24 +1506,24 @@ const SKILLS = [
   "warfare",
   "weaponry"
 ];
-const woundsField = () => new SchemaField$2({ value: int(0), max: int(0) });
+const woundsField = () => new SchemaField$1({ value: int(0), max: int(0) });
 const conceptSchema = () => ({
-  nation: new StringField$2(),
-  religion: new StringField$2(),
+  nation: new StringField$1(),
+  religion: new StringField$1(),
   age: int(20),
-  reputation: new StringField$2(),
+  reputation: new StringField$1(),
   concept: new HTMLField$1({ initial: "<h3>Concept</h3><h3>Biography</h3>" })
 });
 const detailsSchema = () => ({
   ...conceptSchema(),
-  languages: new ArrayField$2(new StringField$2()),
-  equipment: new StringField$2()
+  languages: new ArrayField$1(new StringField$1()),
+  equipment: new StringField$1()
 });
 class WoundedModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       // Raises: kept on the actor, changed from the combat tracker, the toolbox and the roll cards.
-      initiative: new NumberField$2({ required: true, integer: false, min: 0, initial: 0 }),
+      initiative: new NumberField$1({ required: true, integer: false, min: 0, initial: 0 }),
       wounds: woundsField(),
       dwounds: woundsField()
     };
@@ -1114,7 +1571,7 @@ class WoundedModel extends foundry.abstract.TypeDataModel {
 }
 class CharacterModel extends WoundedModel {
   static defineSchema() {
-    return { htk: new BooleanField$2({ required: true, initial: false }), ...super.defineSchema() };
+    return { htk: new BooleanField$1({ required: true, initial: false }), ...super.defineSchema() };
   }
   get hardToKill() {
     return this.htk;
@@ -1129,8 +1586,8 @@ class HeroModel extends CharacterModel {
     return {
       ...super.defineSchema(),
       ...detailsSchema(),
-      traits: new SchemaField$2(Object.fromEntries(TRAITS.map((t) => [t, rank(2, RANK_BOUNDS.heroTrait)]))),
-      skills: new SchemaField$2(Object.fromEntries(SKILLS.map((s) => [s, rank(0, RANK_BOUNDS.skill)])))
+      traits: new SchemaField$1(Object.fromEntries(TRAITS.map((t) => [t, rank(2, RANK_BOUNDS.heroTrait)]))),
+      skills: new SchemaField$1(Object.fromEntries(SKILLS.map((s) => [s, rank(0, RANK_BOUNDS.skill)])))
     };
   }
   static migrateData(source) {
@@ -1156,7 +1613,7 @@ class PlayerModel extends HeroModel {
       wealth: int(0),
       heropts: int(0),
       corruptionpts: int(0),
-      redemption: new StringField$2()
+      redemption: new StringField$1()
     };
   }
 }
@@ -1164,7 +1621,7 @@ class VillainousModel extends CharacterModel {
   static defineSchema() {
     return {
       ...super.defineSchema(),
-      traits: new SchemaField$2({
+      traits: new SchemaField$1({
         ...this.hasInfluence ? { influence: rank(5, RANK_BOUNDS.influence) } : {},
         strength: rank(5, RANK_BOUNDS.strength)
       })
@@ -1195,7 +1652,7 @@ class VillainousModel extends CharacterModel {
 }
 class VillainModel extends VillainousModel {
   static defineSchema() {
-    return { ...super.defineSchema(), ...detailsSchema(), servants: new StringField$2(), redemption: new StringField$2() };
+    return { ...super.defineSchema(), ...detailsSchema(), servants: new StringField$1(), redemption: new StringField$1() };
   }
 }
 class MonsterModel extends VillainousModel {
@@ -1220,13 +1677,13 @@ class ShipModel extends WoundedModel {
   static defineSchema() {
     return {
       ...super.defineSchema(),
-      class: new StringField$2(),
+      class: new StringField$1(),
       cargo: new HTMLField$1(),
-      origin: new StringField$2(),
-      crewstatus: new StringField$2(),
+      origin: new StringField$1(),
+      crewstatus: new StringField$1(),
       wealth: int(0),
       // The roster: every crew member (a world actor) with their role on this ship.
-      crew: new ArrayField$2(new SchemaField$2({ actorId: new StringField$2({ required: true }), role: new StringField$2({ required: true }) }))
+      crew: new ArrayField$1(new SchemaField$1({ actorId: new StringField$1({ required: true }), role: new StringField$1({ required: true }) }))
     };
   }
   /** Give a crew member a role on this ship, adding them to the crew if needed. */
@@ -1245,8 +1702,8 @@ class BruteModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       wounds: woundsField(),
-      traits: new SchemaField$2({ strength: rank(5, RANK_BOUNDS.strength) }),
-      ability: new SchemaField$2({ name: new StringField$2(), description: new HTMLField$1() })
+      traits: new SchemaField$1({ strength: rank(5, RANK_BOUNDS.strength) }),
+      ability: new SchemaField$1({ name: new StringField$1(), description: new HTMLField$1() })
     };
   }
   static migrateData(source) {
@@ -1321,309 +1778,6 @@ class ChoiceSelector extends HandlebarsApplicationMixin$2(ApplicationV2) {
     await this.document.update({ [this.field]: chosen });
   }
 }
-function raisesPerCombo(threshold, increased) {
-  return threshold === 15 && !increased || threshold === 20 && increased ? 2 : 1;
-}
-function findComboIndices(dice, combo) {
-  const indices = [];
-  for (const value of combo) {
-    const index = dice.findIndex((die, i) => die.value === value && !indices.includes(i));
-    if (index === -1) return null;
-    indices.push(index);
-  }
-  return indices;
-}
-function groupDice(dice, target, increased) {
-  const pool = [...dice].sort((a, b) => b.value - a.value);
-  const result = { left: pool, combos: [], raises: 0 };
-  const findCombo = (exactOnly) => {
-    let bestOvershoot = Infinity;
-    let found = null;
-    const dfs = (index, sum, used) => {
-      if (sum === target) {
-        found = used;
-        return true;
-      }
-      if (!exactOnly && sum > target && sum < bestOvershoot) {
-        bestOvershoot = sum;
-        found = used;
-        return false;
-      }
-      if (sum >= target || index >= pool.length) return false;
-      if (dfs(index + 1, sum + pool[index].value, [...used, index])) return true;
-      return dfs(index + 1, sum, used);
-    };
-    dfs(0, 0, []);
-    if (!found) return null;
-    const combo = found.map((i) => pool[i].value);
-    for (let j = found.length - 1; j >= 0; j--) pool.splice(found[j], 1);
-    return combo;
-  };
-  for (const exactOnly of [true, false]) {
-    let combo;
-    while ((combo = findCombo(exactOnly)) !== null) {
-      result.combos.push(combo.sort((a, b) => a - b).join(" + "));
-      result.raises += raisesPerCombo(target, increased);
-    }
-  }
-  return result;
-}
-const byValue = (a, b) => a.value - b.value;
-function resolveDice(input, tables = SVNSEA2E) {
-  const { addOne, joieRank = 0, reroll, rerollFace = null } = input;
-  const increased = !!input.increaseThreshold;
-  const valueOf = (face2) => face2 <= joieRank ? 10 : addOne ? face2 + 1 : face2;
-  const dice = input.faces.map((face2) => ({ face: face2, value: valueOf(face2) })).sort(byValue);
-  const target = input.threshold + (increased ? 5 : 0);
-  const matches = target === 15 ? tables.match15 : target === 20 ? tables.match20 : tables.match10;
-  let raises = 0;
-  const combos = [];
-  const takeTens = () => {
-    if (target !== 10) return;
-    for (let i = dice.length - 1; i >= 0 && dice[i].value >= 10; i--) {
-      raises++;
-      combos.push(String(dice[i].value));
-      dice.splice(i, 1);
-    }
-  };
-  takeTens();
-  for (const combo of [...matches.two, ...matches.three]) {
-    let indices;
-    while (indices = findComboIndices(dice, combo)) {
-      raises += raisesPerCombo(target, increased);
-      combos.push(indices.map((i) => dice[i].value).join(" + "));
-      for (const i of indices.sort((a, b) => b - a)) dice.splice(i, 1);
-    }
-  }
-  let rerolled = null;
-  if (dice.length > 0 && reroll) {
-    if (rerollFace === null) return { needsReroll: true, target };
-    rerolled = { from: dice[0].face, to: rerollFace };
-    dice[0] = { face: rerollFace, value: valueOf(rerollFace) };
-    dice.sort(byValue);
-  }
-  takeTens();
-  let grouped = groupDice(dice, target, increased);
-  combos.push(...grouped.combos);
-  raises += grouped.raises;
-  if (grouped.left.length > 0 && (!increased && target === 15 || increased && target === 20)) {
-    const lower = groupDice(grouped.left, target - 5, increased);
-    combos.push(...lower.combos);
-    raises += lower.raises;
-    grouped = lower;
-  }
-  const faces = [...input.faces];
-  if (rerolled) faces[faces.indexOf(rerolled.from)] = rerolled.to;
-  return {
-    needsReroll: false,
-    target,
-    raises,
-    combos,
-    unused: grouped.left.map((die) => die.value),
-    faces: faces.sort((a, b) => a - b),
-    rerolled
-  };
-}
-function explosionDice(dice, explosions) {
-  let pending = dice.filter((face2) => face2 === 10).length;
-  const used = [];
-  for (const face2 of explosions) {
-    if (pending === 0) break;
-    used.push(face2);
-    pending += face2 === 10 ? 0 : -1;
-  }
-  return { used, missing: pending };
-}
-const ROLL_MESSAGE = "roll";
-const ROLL_CARD = `${TEMPLATES}/chats/roll-card.hbs`;
-const EDIT_DIALOG = `${TEMPLATES}/chats/edit-roll-dialog.hbs`;
-const { ArrayField: ArrayField$1, BooleanField: BooleanField$1, NumberField: NumberField$1, SchemaField: SchemaField$1, StringField: StringField$1 } = foundry.data.fields;
-const count = (options = {}) => new NumberField$1({ required: true, nullable: false, integer: true, min: 0, initial: 0, ...options });
-const face = () => new NumberField$1({ required: true, nullable: false, integer: true, min: 1, max: 10 });
-class RollMessageModel extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return {
-      kind: new StringField$1({ required: true, choices: ["skill", "trait", "free"], initial: "free" }),
-      pool: new SchemaField$1({
-        skill: count(),
-        trait: count(),
-        // The free roll keeps its number of dice here. Negative to take dice away.
-        bonus: new NumberField$1({ required: true, nullable: false, integer: true, initial: 0 }),
-        flair: new BooleanField$1(),
-        interpretation: new BooleanField$1(),
-        heroPoints: count(),
-        // Hero points given by other heroes: 3 dice each.
-        helpers: count(),
-        wound: count()
-      }),
-      threshold: new NumberField$1({ required: true, nullable: false, integer: true, choices: [10, 15], initial: 10 }),
-      increaseThreshold: new BooleanField$1(),
-      addOne: new BooleanField$1(),
-      explode: new BooleanField$1(),
-      reroll: new BooleanField$1(),
-      joieDeVivre: new BooleanField$1(),
-      joieRank: count({ max: 5 }),
-      // Faces in the order they were rolled. Explosions apart: they only count while `explode` is on.
-      dice: new ArrayField$1(face()),
-      explosions: new ArrayField$1(face()),
-      rerollFace: new NumberField$1({ required: true, nullable: true, integer: true, min: 1, max: 10, initial: null }),
-      edited: new BooleanField$1()
-    };
-  }
-  /** Number of dice of the pool, without explosions. */
-  get poolSize() {
-    return poolSize(this);
-  }
-  /** The raises, sets and leftover dice of the roll. */
-  resolve() {
-    return resolveRoll(this);
-  }
-}
-function poolSize({ pool }) {
-  return pool.skill + pool.trait + pool.bonus + pool.wound + (pool.flair ? 1 : 0) + (pool.interpretation ? 1 : 0) + pool.heroPoints + pool.helpers * 3;
-}
-function resolveRoll(data) {
-  return resolveDice({
-    faces: [...data.dice, ...data.explode ? explosionDice(data.dice, data.explosions).used : []],
-    threshold: data.threshold,
-    increaseThreshold: data.increaseThreshold,
-    addOne: data.addOne,
-    joieRank: data.joieDeVivre ? data.joieRank : 0,
-    reroll: data.reroll,
-    rerollFace: data.rerollFace
-  });
-}
-async function rollD10s(count2) {
-  const roll = await new foundry.dice.Roll(`${count2}d10`).evaluate();
-  return { roll, faces: roll.dice[0].results.map((r) => r.result) };
-}
-async function completeDice(data) {
-  const rolls = [];
-  const roll = async (count2) => {
-    const result = await rollD10s(count2);
-    rolls.push(result.roll);
-    return result.faces;
-  };
-  const size = poolSize(data);
-  if (data.dice.length > size) data.dice = data.dice.slice(0, size);
-  else if (data.dice.length < size) data.dice = [...data.dice, ...await roll(size - data.dice.length)];
-  if (data.explode) {
-    let missing;
-    while ((missing = explosionDice(data.dice, data.explosions).missing) > 0) data.explosions = [...data.explosions, ...await roll(missing)];
-    data.explosions = explosionDice(data.dice, data.explosions).used;
-  } else data.explosions = [];
-  const needs = resolveRoll({ ...data, rerollFace: null }).needsReroll;
-  if (!needs) data.rerollFace = null;
-  else if (data.rerollFace === null) [data.rerollFace] = await roll(1);
-  return rolls;
-}
-async function renderRollCard(data, actorId) {
-  const i18n = game.i18n;
-  const result = resolveRoll(data);
-  const joieRank = data.joieDeVivre ? data.joieRank : 0;
-  const explosions = data.explode ? explosionDice(data.dice, data.explosions).used.length : 0;
-  let threshold = String(result.target);
-  if (data.increaseThreshold) threshold += ` ${i18n.localize("SVNSEA2E.GMIncreasedThreshold")}`;
-  return foundry.applications.handlebars.renderTemplate(ROLL_CARD, {
-    actorId,
-    raises: result.raises,
-    raisetxt: i18n.localize(result.raises > 1 ? "SVNSEA2E.Raises" : "SVNSEA2E.Raise"),
-    unusedDice: result.unused.length,
-    unusedDiceTxt: i18n.localize(result.unused.length > 1 ? "SVNSEA2E.UnusedDice" : "SVNSEA2E.UnusedDie"),
-    dice: result.faces.map((face2) => ({ face: face2, joie: face2 <= joieRank })),
-    combos: result.combos,
-    unusedRolls: result.unused,
-    reroll: result.rerolled && i18n.format("SVNSEA2E.Reroll", { roll1: result.rerolled.from, roll2: result.rerolled.to }),
-    exploded: data.explode,
-    extraDice: explosions,
-    addOne: data.addOne,
-    joie: joieRank > 0 && i18n.format("SVNSEA2E.JoieDiceCount", { rank: joieRank }),
-    threshold: i18n.format("SVNSEA2E.RollThreshold", { threshold }),
-    edited: data.edited
-  });
-}
-function canEditRoll(message, user = game.user) {
-  return message?.type === ROLL_MESSAGE && (user.isGM || message.isAuthor) && message.isContentVisible;
-}
-async function editRoll(message) {
-  if (!canEditRoll(message)) return false;
-  const source = message.system.toObject();
-  const content = await foundry.applications.handlebars.renderTemplate(EDIT_DIALOG, {
-    data: source,
-    free: source.kind === "free",
-    thresholds: { 10: "10", 15: "15" },
-    threshold: String(source.threshold)
-  });
-  const form = await foundry.applications.api.DialogV2.wait({
-    window: { title: game.i18n.localize("SVNSEA2E.EditRoll"), icon: "fa-solid fa-pen-to-square" },
-    classes: ["svnsea2e", "roll-dialog", "themed", "theme-light"],
-    position: { width: 420 },
-    content,
-    buttons: [
-      { action: "save", label: game.i18n.localize("Save"), icon: "fa-solid fa-floppy-disk", default: true, callback: (event, button) => button.form },
-      { action: "cancel", label: game.i18n.localize("Cancel"), callback: () => null }
-    ],
-    rejectClose: false
-  });
-  if (!form) return false;
-  const data = { ...source, ...readEditForm(form), edited: true };
-  if (poolSize(data) < 1) {
-    ui.notifications.warn(game.i18n.localize("SVNSEA2E.NoDiceToRoll"));
-    return false;
-  }
-  const actor = ChatMessage.implementation.getSpeakerActor(message.speaker);
-  if (!await settleHeroPoints(actor, data.pool.heroPoints - source.pool.heroPoints)) return false;
-  const rolls = await completeDice(data);
-  await message.update({
-    system: data,
-    content: await renderRollCard(data, actor?.id ?? message.speaker.actor),
-    // Dice So Nice (6.x) shows only the rolls added to a message, and hides the card until they land.
-    ...rolls.length ? { rolls: [...message.rolls, ...rolls].map((roll) => JSON.stringify(roll)) } : {}
-  });
-  return message;
-}
-async function settleHeroPoints(actor, spent) {
-  if (!spent || !actor || actor.system.isVillain || !("heropts" in actor.system)) return true;
-  const available = actor.system.heropts || 0;
-  if (spent > available) {
-    ui.notifications.error(game.i18n.localize("SVNSEA2E.NotEnoughHero"));
-    return false;
-  }
-  await actor.update({ "system.heropts": available - spent });
-  return true;
-}
-function readEditForm(form) {
-  const el = form.elements;
-  const num = (name, min = 0) => Math.max(parseInt(el[name]?.value) || 0, min);
-  const bool = (name) => !!el[name]?.checked;
-  return {
-    pool: {
-      skill: num("skill"),
-      trait: num("trait"),
-      bonus: num("bonus", -Infinity),
-      flair: bool("flair"),
-      interpretation: bool("interpretation"),
-      heroPoints: num("heroPoints"),
-      helpers: num("helpers"),
-      wound: num("wound")
-    },
-    threshold: num("threshold") === 15 ? 15 : 10,
-    increaseThreshold: bool("increaseThreshold"),
-    addOne: bool("addOne"),
-    explode: bool("explode"),
-    reroll: bool("reroll"),
-    joieDeVivre: bool("joieDeVivre"),
-    joieRank: Math.min(num("joieRank"), 5)
-  };
-}
-function onGetChatMessageContextOptions(app, options) {
-  options.push({
-    label: "SVNSEA2E.EditRoll",
-    icon: "fa-solid fa-pen-to-square",
-    visible: (li) => canEditRoll(game.messages.get(li.dataset.messageId)),
-    onClick: (event, li) => editRoll(game.messages.get(li.dataset.messageId))
-  });
-}
 function readRollForm(form) {
   const el = form.elements;
   const num = (name) => parseInt(el[name]?.value) || 0;
@@ -1695,11 +1849,12 @@ async function rollDicePool({ actor, rolldata, options, title, kind = "free" }) 
     author: game.user.id,
     speaker: ChatMessage.implementation.getSpeaker({ actor }),
     flavor: title,
-    content: await renderRollCard(data, actor.id),
+    content: await renderRollCard(data, actor.uuid),
     system: data,
     rolls: [roll]
   });
-  await ChatMessage.implementation.create(chatData);
+  const message = await ChatMessage.implementation.create(chatData);
+  await setRaisesFromRoll(actor, message);
   return roll;
 }
 const { DialogV2 } = foundry.applications.api;
@@ -2631,7 +2786,9 @@ ${SVNSEA2E.ASCII}`);
   };
   CONFIG.SVNSEA2E = SVNSEA2E;
   CONFIG.SVNSEA2E.natTypes = { ...SVNSEA2E.nations, gisles: "SVNSEA2E.RegionGlamourIsles" };
-  CONFIG.Combat.initiative = { formula: "1d20", decimals: 2 };
+  CONFIG.Combat.initiative = { formula: "1d20", decimals: 0 };
+  CONFIG.Combat.documentClass = SvnSea2ECombat;
+  CONFIG.Combatant.documentClass = SvnSea2ECombatant;
   CONFIG.Actor.documentClass = SvnSea2EActor;
   CONFIG.Item.documentClass = SvnSea2EItem;
   CONFIG.ActiveEffect.documentClass = SvnSea2EActiveEffect;
@@ -2734,6 +2891,7 @@ Hooks.on("renderActorDirectory", (app, html) => {
   header.insertBefore(wrapper, header.querySelector("search"));
 });
 Hooks.on("renderCombatTracker", onRenderCombatTracker);
+Hooks.on("getCombatTrackerContextOptions", onGetCombatTrackerContextOptions);
 Hooks.on("renderActiveEffectConfig", onRenderActiveEffectConfig);
 Hooks.on("renderChatMessageHTML", onRenderChatMessage);
 Hooks.on("getChatMessageContextOptions", onGetChatMessageContextOptions);

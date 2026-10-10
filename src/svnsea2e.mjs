@@ -4,7 +4,13 @@ import { registerSystemSettings } from './settings.js';
 import { preloadHandlebarsTemplates, registerHandlebarsHelpers } from './templates.js';
 import { invalidateAdvantageCache } from './helpers.js';
 import * as migrations from './migration.js';
-import { onRenderCombatTracker, updateInitiative } from './combat.js';
+import {
+  onGetCombatTrackerContextOptions,
+  onRenderCombatTracker,
+  SvnSea2ECombat,
+  SvnSea2ECombatant,
+  updateInitiative,
+} from './combat.js';
 import { onRenderChatMessage, registerChatListeners } from './chat.js';
 import { Toolbox } from './toolbox/toolbox.js';
 
@@ -42,7 +48,10 @@ Hooks.once('init', () => {
 
   CONFIG.SVNSEA2E = SVNSEA2E;
   CONFIG.SVNSEA2E.natTypes = { ...SVNSEA2E.nations, gisles: 'SVNSEA2E.RegionGlamourIsles' };
-  CONFIG.Combat.initiative = { formula: '1d20', decimals: 2 };
+  // The initiative is the raises of the round, set by the rolls (src/combat.js); the formula is never rolled.
+  CONFIG.Combat.initiative = { formula: '1d20', decimals: 0 };
+  CONFIG.Combat.documentClass = SvnSea2ECombat;
+  CONFIG.Combatant.documentClass = SvnSea2ECombatant;
 
   CONFIG.Actor.documentClass = SvnSea2EActor;
   CONFIG.Item.documentClass = SvnSea2EItem;
@@ -154,6 +163,7 @@ Hooks.on('renderActorDirectory', (app, html) => {
 });
 
 Hooks.on('renderCombatTracker', onRenderCombatTracker);
+Hooks.on('getCombatTrackerContextOptions', onGetCombatTrackerContextOptions);
 Hooks.on('renderActiveEffectConfig', onRenderActiveEffectConfig);
 Hooks.on('renderChatMessageHTML', onRenderChatMessage);
 Hooks.on('getChatMessageContextOptions', onGetChatMessageContextOptions);

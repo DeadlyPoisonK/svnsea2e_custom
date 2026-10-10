@@ -1,3 +1,4 @@
+import { setRaisesFromRoll } from '../combat.js';
 import { completeDice, poolSize as sizeOf, renderRollCard, ROLL_MESSAGE } from './message.js';
 
 /**
@@ -116,10 +117,12 @@ export async function rollDicePool({ actor, rolldata, options, title, kind = 'fr
     author: game.user.id,
     speaker: ChatMessage.implementation.getSpeaker({ actor }),
     flavor: title,
-    content: await renderRollCard(data, actor.id),
+    content: await renderRollCard(data, actor.uuid),
     system: data,
     rolls: [roll],
   });
-  await ChatMessage.implementation.create(chatData);
+  const message = await ChatMessage.implementation.create(chatData);
+  // In an action sequence, the first roll of the round sets the raises of the actor's combatants.
+  await setRaisesFromRoll(actor, message);
   return roll;
 }

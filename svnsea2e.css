@@ -1183,3 +1183,10 @@
   background: #771213;
   color: white;
 }
+
+/* No raises yet this round. */
+.combat-tracker .combatant .token-initiative .no-raises {
+  flex: 0 0 30px;
+  text-align: center;
+  opacity: 0.6;
+}
