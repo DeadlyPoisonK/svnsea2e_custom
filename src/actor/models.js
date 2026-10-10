@@ -83,6 +83,15 @@ class WoundedModel extends foundry.abstract.TypeDataModel {
     };
   }
 
+  /** Raises saved by old versions as {value, min, max}, or below 0. */
+  static migrateData(source) {
+    if ('initiative' in source) {
+      const raises = Number(source.initiative?.value ?? source.initiative);
+      source.initiative = Number.isFinite(raises) ? Math.max(raises, 0) : 0;
+    }
+    return super.migrateData(source);
+  }
+
   /** Number of wounds in each dramatic wound group. */
   get woundsPerDramatic() {
     return 5;

@@ -25,18 +25,22 @@ export class AdvantageModel extends foundry.abstract.TypeDataModel {
       ...baseSchema(),
       cost: new SchemaField({
         normal: new NumberField({ required: true, integer: true, min: 0, initial: 1 }),
-        reducecost: new NumberField({ integer: true, min: 0 }),
+        // Free text: the reduced cost usually depends on the nation ("2 if you are Castillian").
+        reducecost: new StringField(),
       }),
       knack: new BooleanField({ initial: false }),
       innate: new BooleanField({ initial: false }),
     };
   }
 
-  /** Costs saved before they had to be whole numbers. */
+  /** Costs saved before the cost had to be a whole number and the reduced cost became text. */
   static migrateData(source) {
-    for (const key of ['normal', 'reducecost']) {
-      const cost = source.cost?.[key];
-      if (typeof cost === 'number') source.cost[key] = Math.max(Math.round(cost), 0);
+    const cost = source.cost;
+    if (cost) {
+      if (typeof cost.normal === 'string') cost.normal = parseInt(cost.normal);
+      if (typeof cost.normal === 'number') cost.normal = Number.isFinite(cost.normal) ? Math.max(Math.round(cost.normal), 0) : 1;
+      if (typeof cost.reducecost === 'number') cost.reducecost = String(cost.reducecost);
+      else if (cost.reducecost === null) cost.reducecost = '';
     }
     return super.migrateData(source);
   }

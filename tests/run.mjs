@@ -420,6 +420,11 @@ const society = await Item.create({ name: 'ss', type: 'secretsociety', system: {
 ok(society.system.favor === 2 && (await Item.create({ name: 'ss2', type: 'secretsociety', system: { favor: '' } })).system.favor === 0, 'favor text becomes a number');
 ok((await society.getChatData()).callupon.startsWith('<enriched>'), 'use favor is enriched in chat');
 ok((await Item.create({ name: 'a', type: 'advantage', system: { cost: { normal: 1.6, reducecost: -1 } } })).system.cost.normal === 2, 'advantage cost is a whole number');
+ok((await Item.create({ name: 'a2', type: 'advantage', system: { cost: { normal: 3, reducecost: '2 SI ERES ANATOLIO' } } })).system.cost.reducecost === '2 SI ERES ANATOLIO', 'reduced cost is free text');
+ok((await Item.create({ name: 'a3', type: 'advantage', system: { cost: { normal: '2', reducecost: 1 } } })).system.cost.reducecost === '1', 'old numeric reduced cost becomes text');
+for (const [initiative, expected] of [[{ value: 3, min: 0, max: 20 }, 3], [-2, 0], [null, 0]]) {
+  ok((await make('playercharacter', { system: { initiative } })).system.initiative === expected, `old initiative ${JSON.stringify(initiative)} → ${expected}`);
+}
 {
   const sheet = new classes['Item.advantage']({ document: await Item.create({ name: 'adv', type: 'advantage' }) });
   await sheet.render();
