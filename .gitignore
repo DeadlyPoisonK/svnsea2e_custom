@@ -3,3 +3,14 @@ node_modules/
 .DS_Store
 system.zip
 .claude/
+
+# Working notes: kept locally, not part of the system
+PLAN_V25.md
+MIGRACION_*.md
+
+# OS and editor files
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.zip
