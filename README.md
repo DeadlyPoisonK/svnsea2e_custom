@@ -12,7 +12,10 @@ Lo subí porque mis amigos me pidieron permiso para compartirlo entre ellos. Pre
 
 ## Versiones
 
-- **v24.x → Foundry VTT 14.** Reescrito sobre ApplicationV2, sin APIs deprecadas. Detalle completo de cambios, bugs corregidos y checklist de pruebas en [MIGRACION_V14.md](MIGRACION_V14.md).
+- **v24.x → Foundry VTT 14.** Reescrito sobre ApplicationV2, sin APIs deprecadas. Los datos no cambiaron: los mundos de la v23 se abren sin migrar nada.
+  - **Bugs corregidos:** los puntos de héroe gastados en una tirada ahora se descuentan; borrar un trasfondo activo quita sus habilidades y ventajas; el selector de ventajas del trasfondo lista también las de los compendios; los personajes de Inismore pueden tomar trasfondos de las Islas del Glamour; la influencia de los esquemas ya no sale como `[object Object]` en el chat; el interruptor de Hard To Kill muestra su estado real; la iniciativa no baja de 0.
+  - **Mejoras:** las secciones plegadas de las hojas se mantienen al redibujar; la toolbox recuerda sus actores y permite quitarlos; las tiradas privadas y a ciegas respetan los modos de mensaje de v14 y Dice So Nice anima solo; los ítems se pueden arrastrar a otras hojas o a la barra de macros; traducciones completadas en los 6 idiomas.
+  - **Se conservó:** el motor de tiradas da los mismos resultados que en la v23.3, y las hojas mantienen su aspecto (tema claro en las hojas, oscuro en la toolbox).
 - **v23.3 → Foundry VTT 13.** Última versión para v13. Se instala desde su release: `https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.3/system.json`.
 
 ## Estado respecto al oficial
@@ -55,7 +58,25 @@ npm run watch      # recompila solo al guardar
 npm test           # lint + build + chequeos de plantillas/idiomas + prueba de ejecución
 ```
 
-Los cambios de código se hacen en `src/`, nunca a mano en `svnsea2e.mjs`. Después de compilar hay que commitear también el `svnsea2e.mjs` generado. Las plantillas (`templates/`), el CSS y los idiomas (`lang/`) se editan directamente. La estructura de carpetas está explicada en [MIGRACION_V14.md](MIGRACION_V14.md#estructura-nueva-del-proyecto).
+Los cambios de código se hacen en `src/`, nunca a mano en `svnsea2e.mjs`. Después de compilar hay que commitear también el `svnsea2e.mjs` generado. Las plantillas (`templates/`), el CSS y los idiomas (`lang/`) se editan directamente.
+
+```
+src/
+  svnsea2e.mjs            punto de entrada: registro de modelos, hojas y hooks
+  config.js / enums.js    configuración y constantes
+  settings.js, templates.js, helpers.js, migration.js
+  combat.js / chat.js     iniciativa, botones del combat tracker y de la tarjeta de tirada
+  actor/                  documento Actor, modelos de datos y hojas (sheets/)
+  item/                   documento Item, modelos de datos y hojas
+  apps/choice-selector.js selector de idiomas, habilidades y ventajas de trasfondo
+  roll/                   motor de tiradas (roll.js) y diálogos (dialogs.js)
+  toolbox/                caja de herramientas del DJ
+templates/                plantillas Handlebars
+lang/                     traducciones
+svnsea2e.mjs (+ .map)     generado por el build: no editar a mano
+tools/check.mjs           chequeos estáticos (plantillas, acciones, idiomas, manifest)
+tests/                    prueba de ejecución con una simulación de la API de Foundry
+```
 
 Para publicar una versión: crear un release en GitHub con tag `vX.Y`. El workflow `Release` adjunta `system.json` y `system.zip` solo.
 
