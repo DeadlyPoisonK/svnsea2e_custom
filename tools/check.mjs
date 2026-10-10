@@ -48,7 +48,8 @@ for (const [, tpl] of sourceText.matchAll(/\$\{(?:TEMPLATES|ITEM_TEMPLATES|ACTOR
 
 // data-action handlers.
 const builtInActions = new Set(['tab', 'editImage', 'configureSheet', 'configureOwnership', 'copyUuid', 'close', 'toggleControls']);
-const handled = new Set([...sourceText.matchAll(/(\w+):\s*\w+\.#on\w+/g)].map((m) => m[1]));
+// Handlers are private static methods (`name: Sheet.#onName`) or shared functions (`name: onName`, src/effects.js).
+const handled = new Set([...sourceText.matchAll(/(\w+):\s*(?:\w+\.#on\w+|on[A-Z]\w*)\b/g)].map((m) => m[1]));
 for (const file of templates) {
   for (const [, action] of fs.readFileSync(file, 'utf8').matchAll(/data-action="(\w+)"/g)) {
     if (!builtInActions.has(action) && !handled.has(action)) errors.push(`${rel(file)}: no handler for data-action="${action}"`);

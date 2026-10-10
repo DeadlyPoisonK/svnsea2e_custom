@@ -63,15 +63,11 @@
     </div>
     <div class="tab features {{tabs.features.cssClass}}" data-group="primary" data-tab="features">
       <ol class="items-list">
-        {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="shipadventure" label="SVNSEA2E.Adventures" type="shipadventure" addTitle="SVNSEA2E.AddShipAdventure" cssClass="story"}}
-        {{#each adventures as |item|}}
-          {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="adventure" noThrow=true}}
-        {{/each}}
-        {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="shipbackground" label="SVNSEA2E.Backgrounds" type="shipbackground" addTitle="SVNSEA2E.AddShipBackground" cssClass="story"}}
-        {{#each backgrounds as |item|}}
-          {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="background" noThrow=true}}
+        {{#each itemLists.features as |section|}}
+          {{> "systems/svnsea2e/templates/actors/parts/item-list.hbs" section=section}}
         {{/each}}
       </ol>
     </div>
+    {{> "systems/svnsea2e/templates/parts/effects-tab.hbs"}}
   </section>
 </div>

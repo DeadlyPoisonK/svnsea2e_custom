@@ -1,20 +1,7 @@
 <div class="tab features {{tabs.advantages.cssClass}}" data-group="primary" data-tab="advantages">
   <ol class="items-list">
-    {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="advantage" label="SVNSEA2E.Advantage" type="advantage" addTitle="SVNSEA2E.AddAdvantage" cssClass="advantage"}}
-    {{#each advantages as |item|}}
-      {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="advantage" used=true}}
-    {{/each}}
-    {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="duelstyle" label="SVNSEA2E.DuelingStyles" type="duelstyle" addTitle="SVNSEA2E.AddDuelStyle" cssClass="duelingstyle"}}
-    {{#each duelstyles as |item|}}
-      {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="duelingstyle" used=true}}
-    {{/each}}
-    {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="background" label="SVNSEA2E.Backgrounds" type="background" addTitle="SVNSEA2E.AddBackground" cssClass="background"}}
-    {{#each backgrounds as |item|}}
-      {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="background" used=true toggle=true}}
-    {{/each}}
-    {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="secretsociety" label="SVNSEA2E.SecretSociety" type="secretsociety" addTitle="SVNSEA2E.AddSecretSociety" cssClass="secretsociety"}}
-    {{#each secretsocieties as |item|}}
-      {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="secretsociety" favor=true}}
+    {{#each itemLists.advantages as |section|}}
+      {{> "systems/svnsea2e/templates/actors/parts/item-list.hbs" section=section}}
     {{/each}}
   </ol>
 </div>

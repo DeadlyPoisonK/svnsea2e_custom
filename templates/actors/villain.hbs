@@ -19,21 +19,8 @@
 
     <div class="tab features {{tabs.advantages.cssClass}}" data-group="primary" data-tab="advantages">
       <ol class="items-list">
-        {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="advantage" label="SVNSEA2E.Advantage" type="advantage" addTitle="SVNSEA2E.AddAdvantage" cssClass="advantage"}}
-        {{#each advantages as |item|}}
-          {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="advantage" used=true}}
-        {{/each}}
-        {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="duelstyle" label="SVNSEA2E.DuelingStyles" type="duelstyle" addTitle="SVNSEA2E.AddDuelStyle" cssClass="duelingstyle"}}
-        {{#each duelstyles as |item|}}
-          {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="duelingstyle" used=true}}
-        {{/each}}
-        {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="monsterquality" label="SVNSEA2E.MonsterQualities" type="monsterquality" addTitle="SVNSEA2E.AddMonsterQuality"}}
-        {{#each monsterqualities as |item|}}
-          {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item used=true}}
-        {{/each}}
-        {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="scheme" label="SVNSEA2E.Schemes" type="scheme" addTitle="SVNSEA2E.AddScheme"}}
-        {{#each schemes as |item|}}
-          {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item used=true}}
+        {{#each itemLists.advantages as |section|}}
+          {{> "systems/svnsea2e/templates/actors/parts/item-list.hbs" section=section}}
         {{/each}}
       </ol>
     </div>
@@ -42,5 +29,6 @@
     {{> "systems/svnsea2e/templates/actors/parts/actor-inventory.hbs"}}
     {{> "systems/svnsea2e/templates/actors/parts/actor-fate.hbs"}}
     {{> "systems/svnsea2e/templates/actors/parts/actor-concept.hbs"}}
+    {{> "systems/svnsea2e/templates/parts/effects-tab.hbs"}}
   </section>
 </div>

@@ -22,20 +22,16 @@
     {{#each traits as |trait|}}
       <div class="trait flexrow flex-group flex-left">
         <span class="trait-name rollableT" data-action="rollTrait" data-label="{{trait.name}}">{{trait.label}}</span>
-        {{> "systems/svnsea2e/templates/actors/parts/rank-circles.hbs" value=trait.value max=trait.max path=(concat "system.traits." trait.name ".value") type="trait" key=trait.name}}
+        {{> "systems/svnsea2e/templates/actors/parts/rank-circles.hbs" value=trait.value max=trait.max path=(concat "system.traits." trait.name ".value") type="trait" key=trait.name locked=trait.locked}}
       </div>
     {{/each}}
     <div class="features">
       <ol class="items-list">
-        {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="advantage" label="SVNSEA2E.Advantage" type="advantage" addTitle="SVNSEA2E.AddAdvantage"}}
-        {{#each advantages as |item|}}
-          {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="advantage" used=true}}
-        {{/each}}
-        {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="duelstyle" label="SVNSEA2E.DuelingStyles" type="duelstyle" addTitle="SVNSEA2E.AddDuelStyle" cssClass="duelingstyle"}}
-        {{#each duelstyles as |item|}}
-          {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="duelingstyle" used=true}}
+        {{#each itemLists.features as |section|}}
+          {{> "systems/svnsea2e/templates/actors/parts/item-list.hbs" section=section}}
         {{/each}}
       </ol>
     </div>
+    {{> "systems/svnsea2e/templates/parts/effects-tab.hbs"}}
   </section>
 </div>

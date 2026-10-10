@@ -1,6 +1,6 @@
 import { ItemTypes } from '../../enums.js';
-import { enrichHTML, itemsOfType } from '../../helpers.js';
-import { ACTOR_TEMPLATES, SvnSea2EActorSheet } from './base.js';
+import { enrichHTML } from '../../helpers.js';
+import { ACTOR_TEMPLATES, SvnSea2EActorSheet, itemSections } from './base.js';
 
 export class ShipSheet extends SvnSea2EActorSheet {
   static DEFAULT_OPTIONS = {
@@ -30,8 +30,7 @@ export class ShipSheet extends SvnSea2EActorSheet {
   }
 
   _prepareItems(context) {
-    context.adventures = itemsOfType(this.actor, ItemTypes.SHIP_ADVENTURE);
-    context.backgrounds = itemsOfType(this.actor, ItemTypes.SHIP_BACKGROUND);
+    context.itemLists = { features: itemSections(this.actor, [ItemTypes.SHIP_ADVENTURE, ItemTypes.SHIP_BACKGROUND]) };
   }
 
   /** The roster: every role with the crew members currently assigned to it. */

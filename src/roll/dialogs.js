@@ -31,6 +31,33 @@ async function promptRoll(title, template, data, { cancel = false } = {}) {
   });
 }
 
+/**
+ * Defaults of the roll dialog set by the actor's active effects (`system.rollBonus`, see src/effects.js): extra dice
+ * and options already checked, with the names of the effects, shown in the dialog.
+ * @param {Actor} actor
+ * @param {object} [options]
+ * @param {string} [options.skill]   The skill rolled: its extra dice count too.
+ * @param {boolean} [options.dice]   Whether the roll takes extra dice (the free roll does not).
+ */
+function effectDefaults(actor, { skill, dice = true } = {}) {
+  const bonus = actor.system.rollBonus;
+  if (!bonus) return { dice: 0 };
+  const relevant = (key) => {
+    if (!key?.startsWith('system.rollBonus.')) return false;
+    if (key.startsWith('system.rollBonus.skills.')) return dice && key === `system.rollBonus.skills.${skill}`;
+    return dice || key !== 'system.rollBonus.dice';
+  };
+  const names = new Set();
+  for (const effect of actor.allApplicableEffects()) {
+    if (effect.active && effect.system.changes.some((change) => relevant(change.key))) names.add(effect.name);
+  }
+  return {
+    ...bonus,
+    dice: dice ? bonus.dice + (skill ? (bonus.skills[skill] ?? 0) : 0) : 0,
+    effects: [...names].sort((a, b) => a.localeCompare(b)).join(', '),
+  };
+}
+
 /** Skill roll for heroes and player characters: choose the trait and the bonuses. */
 export async function rollSkill(actor, skill) {
   const system = actor.system;
@@ -49,7 +76,7 @@ export async function rollSkill(actor, skill) {
   const result = await promptRoll(
     game.i18n.format('SVNSEA2E.ApproachPromptTitle', { skill: skillLabel }),
     `${TEMPLATES}/chats/skill-roll-dialog.hbs`,
-    { data: system, traits },
+    { data: system, traits, bonus: effectDefaults(actor, { skill }) },
   );
   if (!result) return false;
   const traitSelect = result.form.elements.trait;
@@ -78,6 +105,7 @@ export async function rollTrait(actor, trait) {
   const result = await promptRoll(title, `${TEMPLATES}/chats/trait-roll-dialog.hbs`, {
     data: system,
     traitmax: system.traits[trait].value,
+    bonus: effectDefaults(actor),
   });
   if (!result) return false;
   return rollDicePool({ actor, rolldata, options: result.options, title });
@@ -88,7 +116,7 @@ export async function rollFreeDice(actor) {
   const result = await promptRoll(
     game.i18n.localize('SVNSEA2E.Roll'),
     `${TEMPLATES}/items/parts/roll-throw.hbs`,
-    {},
+    { bonus: effectDefaults(actor, { dice: false }) },
     { cancel: true },
   );
   if (!result) return false;

@@ -1,8 +1,7 @@
 <div class="tab inventory {{tabs.inventory.cssClass}}" data-group="primary" data-tab="inventory">
   <ol class="items-list">
-    {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="artifact" label="SVNSEA2E.Artifacts" type="artifact" addTitle="SVNSEA2E.AddArtifact" cssClass="artifacts"}}
-    {{#each artifacts as |item|}}
-      {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item rowClass="artifacts" used=true}}
+    {{#each itemLists.inventory as |section|}}
+      {{> "systems/svnsea2e/templates/actors/parts/item-list.hbs" section=section}}
     {{/each}}
   </ol>
   <h3>{{localize "SVNSEA2E.Equipment"}}</h3>

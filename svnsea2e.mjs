@@ -359,12 +359,22 @@ const PARTIALS = [
   "actors/parts/actor-vtraits.hbs",
   "actors/parts/actor-wounds.hbs",
   "actors/parts/actor-languages.hbs",
-  "actors/parts/item-section.hbs",
+  "actors/parts/item-list.hbs",
   "actors/parts/item-row.hbs",
   "actors/parts/rank-circles.hbs",
   "parts/sheet-tabs.hbs",
+  "parts/effects-tab.hbs",
   "items/parts/item-header.hbs",
-  "items/parts/item-editor.hbs"
+  "items/parts/item-editor.hbs",
+  // Chosen by item type in templates/items/item.hbs.
+  "items/parts/header-artifact.hbs",
+  "items/parts/header-background.hbs",
+  "items/parts/header-scheme.hbs",
+  "items/parts/header-secretsociety.hbs",
+  "items/parts/header-sorcery.hbs",
+  "items/parts/header-story.hbs",
+  "items/parts/tab-attributes.hbs",
+  "items/parts/tab-details.hbs"
 ];
 function preloadHandlebarsTemplates() {
   return foundry.applications.handlebars.loadTemplates(PARTIALS.map((p) => `${TEMPLATES}/${p}`));
@@ -433,6 +443,160 @@ async function findAdvantage(name) {
   const entry = (await getPackAdvantages()).find((e) => e.name.toLowerCase() === lower);
   return entry ? fromUuid(entry.uuid) : null;
 }
+const SYSTEM_KEY = /^system\.(?:(?:traits|skills)\.\w+\.value|fear\.value|dwounds\.max|htk|rollBonus\.[\w.]+)$/;
+const changePhase = (change) => SYSTEM_KEY.test(change.key ?? "") ? "initial" : change.phase;
+const HERO_TRAITS = ["brawn", "finesse", "resolve", "wits", "panache"];
+const ROLL_OPTIONS = {
+  addOne: "SVNSEA2E.AddOneToDice",
+  explode: "SVNSEA2E.ExplodeTens",
+  joieDeVivre: "SVNSEA2E.JoieDeVivre",
+  increaseThreshold: "SVNSEA2E.IncreaseThreshold"
+};
+function rollBonusData() {
+  return {
+    dice: 0,
+    skills: Object.fromEntries(Object.keys(CONFIG.SVNSEA2E.skills).map((skill) => [skill, 0])),
+    ...Object.fromEntries(Object.keys(ROLL_OPTIONS).map((option) => [option, false]))
+  };
+}
+let effectKeys = null;
+function getEffectKeys() {
+  if (effectKeys) return effectKeys;
+  const { traits, skills } = CONFIG.SVNSEA2E;
+  const format = (key, name) => game.i18n.format(`SVNSEA2E.EffectKey${key}`, { name });
+  const keys = {};
+  for (const trait of [...HERO_TRAITS, "strength", "influence"]) keys[`system.traits.${trait}.value`] = format("Trait", traits[trait]);
+  keys["system.fear.value"] = format("Trait", game.i18n.localize("SVNSEA2E.Fear"));
+  for (const [skill, label] of Object.entries(skills)) keys[`system.skills.${skill}.value`] = format("Skill", label);
+  keys["system.dwounds.max"] = game.i18n.localize("SVNSEA2E.EffectKeyDramaticWounds");
+  keys["system.htk"] = game.i18n.localize("SVNSEA2E.HardToKill");
+  keys["system.rollBonus.dice"] = game.i18n.localize("SVNSEA2E.EffectKeyDice");
+  for (const [skill, label] of Object.entries(skills)) keys[`system.rollBonus.skills.${skill}`] = format("SkillDice", label);
+  for (const [option, label] of Object.entries(ROLL_OPTIONS)) {
+    keys[`system.rollBonus.${option}`] = format("Roll", game.i18n.localize(label));
+  }
+  return effectKeys = keys;
+}
+function hardToKillEffectData() {
+  return {
+    name: game.i18n.localize("SVNSEA2E.HardToKill"),
+    img: "icons/svg/regen.svg",
+    description: game.i18n.localize("SVNSEA2E.HardToKillDescription"),
+    system: { changes: [{ key: "system.htk", type: "override", value: "true", phase: "initial" }] },
+    flags: { [SYSTEM_ID]: { hardToKill: true } }
+  };
+}
+class SvnSea2EActiveEffect extends ActiveEffect {
+  /** The effects of an inactive background do not apply: like its skills and advantages, they need it active. */
+  get isSuppressed() {
+    if (this.parent?.type === ItemTypes.BACKGROUND && !this.parent.system.active) return true;
+    return super.isSuppressed;
+  }
+  /** @override */
+  shouldApplyChange(change, options) {
+    return changePhase(change) === options?.phase;
+  }
+}
+const CHANGE_SIGNS = { add: "+", subtract: "−", multiply: "×", override: "=", upgrade: "≥", downgrade: "≤" };
+function describeChanges(effect) {
+  const keys = getEffectKeys();
+  return effect.system.changes.filter((change) => change.key).map((change) => {
+    const value = String(change.value ?? "");
+    const sign = CHANGE_SIGNS[change.type] ?? change.type;
+    if (change.type === "add") return `${keys[change.key] ?? change.key} ${value.startsWith("-") ? "" : sign}${value}`;
+    return `${keys[change.key] ?? change.key} ${sign}${change.type === "subtract" ? "" : " "}${value}`;
+  }).join(", ");
+}
+function effectRow(effect) {
+  return {
+    id: effect.id,
+    name: effect.name,
+    img: effect.img,
+    disabled: effect.disabled,
+    suppressed: effect.isSuppressed,
+    active: effect.active,
+    duration: effect.isTemporary ? effect.duration.label : "",
+    changes: describeChanges(effect)
+  };
+}
+function prepareEffects(document2) {
+  const sections = { temporary: [], passive: [], inactive: [] };
+  for (const effect of document2.effects) {
+    const section = !effect.active ? "inactive" : effect.isTemporary ? "temporary" : "passive";
+    sections[section].push(effectRow(effect));
+  }
+  const labels = { temporary: "SVNSEA2E.EffectsTemporary", passive: "SVNSEA2E.EffectsPassive", inactive: "SVNSEA2E.EffectsInactive" };
+  const context = {
+    sections: Object.entries(sections).map(([id, effects]) => ({ id, label: labels[id], effects }))
+  };
+  if (document2.documentName === "Actor") {
+    context.isActor = true;
+    context.inherited = [];
+    for (const item of document2.items) {
+      for (const effect of item.effects) {
+        if (effect.transfer) context.inherited.push({ ...effectRow(effect), itemId: item.id, itemName: item.name });
+      }
+    }
+    context.inherited.sort((a, b) => a.name.localeCompare(b.name));
+  }
+  return context;
+}
+function getEffect(sheet, target) {
+  const row = target.closest("[data-effect-id]");
+  if (!row) return null;
+  const parent = row.dataset.itemId ? sheet.document.items.get(row.dataset.itemId) : sheet.document;
+  return parent?.effects.get(row.dataset.effectId) ?? null;
+}
+async function onCreateEffect(event, target) {
+  if (!this.isEditable) return;
+  const document2 = this.document;
+  const data = { name: game.i18n.localize("SVNSEA2E.NewEffect"), origin: document2.uuid };
+  if (target.dataset.section === "temporary") data.duration = { value: 1, units: "rounds" };
+  if (target.dataset.section === "inactive") data.disabled = true;
+  const [effect] = await document2.createEmbeddedDocuments("ActiveEffect", [data]);
+  effect?.sheet.render(true);
+}
+function onEditEffect(event, target) {
+  getEffect(this, target)?.sheet.render(true);
+}
+async function onToggleEffect(event, target) {
+  if (!this.isEditable) return;
+  const effect = getEffect(this, target);
+  if (effect) await effect.update({ disabled: !effect.disabled });
+}
+async function onDeleteEffect(event, target) {
+  if (!this.isEditable) return;
+  await getEffect(this, target)?.delete();
+}
+async function onOpenEffectSource(event, target) {
+  const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+  if (!item) return;
+  item.sheet.tabGroups.primary = "effects";
+  await item.sheet.render(true);
+}
+const EFFECT_ACTIONS = {
+  createEffect: onCreateEffect,
+  editEffect: onEditEffect,
+  toggleEffect: onToggleEffect,
+  deleteEffect: onDeleteEffect,
+  openEffectSource: onOpenEffectSource
+};
+const EFFECTS_TAB = { id: "effects", label: "SVNSEA2E.Effects" };
+function withEffectsTab(config) {
+  return config ? { ...config, tabs: [...config.tabs, EFFECTS_TAB] } : config;
+}
+function onRenderActiveEffectConfig(app, html) {
+  const inputs = html.querySelectorAll('input[name^="system.changes."][name$=".key"]');
+  if (!inputs.length) return;
+  const id = `${SYSTEM_ID}-effect-keys-${app.id}`;
+  if (!html.querySelector(`#${CSS.escape(id)}`)) {
+    const list = document.createElement("datalist");
+    list.id = id;
+    for (const [key, label] of Object.entries(getEffectKeys())) list.append(new Option(label, key));
+    html.append(list);
+  }
+  for (const input of inputs) input.setAttribute("list", id);
+}
 const MIGRATIONS = [
   {
     // The ship roster moves from two flags (the members on the ship, the role on each member) to `system.crew`.
@@ -454,8 +618,37 @@ const MIGRATIONS = [
       }
       return update;
     }
+  },
+  {
+    // Hard To Kill: an active effect that overrides `system.htk` replaces the toggle of the sheet. The effect goes on
+    // the actor's Hard To Kill advantage, or on the actor when it has none, and the stored `htk` goes back to false.
+    version: "25.0",
+    async afterActor(actor) {
+      if (!("htk" in actor.system)) return;
+      const advantages = actor.items.filter((item) => isHardToKill(item));
+      const stored = actor.isToken ? actor.token.delta?._source.system?.htk : actor._source.system.htk;
+      if (stored === true) {
+        if (!hasHardToKillEffect(actor) && !advantages.some(hasHardToKillEffect)) {
+          const holder = actor.isToken ? actor : advantages[0] ?? actor;
+          await holder.createEmbeddedDocuments("ActiveEffect", [hardToKillEffectData()]);
+        }
+        await actor.update({ "system.htk": false });
+      } else if (!actor.isToken) {
+        for (const advantage of advantages.filter((a) => !hasHardToKillEffect(a))) {
+          await advantage.createEmbeddedDocuments("ActiveEffect", [{ ...hardToKillEffectData(), disabled: true }]);
+        }
+      }
+    },
+    async afterItem(item) {
+      if (isHardToKill(item) && !hasHardToKillEffect(item)) {
+        await item.createEmbeddedDocuments("ActiveEffect", [hardToKillEffectData()]);
+      }
+    }
   }
 ];
+const HARD_TO_KILL_NAMES = ["hard to kill", "duro de matar"];
+const isHardToKill = (item) => item.type === ItemTypes.ADVANTAGE && HARD_TO_KILL_NAMES.includes(item.name.trim().toLowerCase());
+const hasHardToKillEffect = (document2) => document2.effects.some((effect) => effect.system.changes.some((change) => change.key === "system.htk"));
 async function migrateWorldIfNeeded() {
   if (!game.users.activeGM?.isSelf) return;
   const lastMigrated = game.settings.get(SYSTEM_ID, "systemMigrationVersion");
@@ -476,27 +669,47 @@ async function migrateWorld(migrations2) {
   for (const migration of migrations2) migration.prepare?.();
   const actorUpdate = (actor) => collectUpdates(migrations2, "actor", actor);
   const itemUpdate = (item) => collectUpdates(migrations2, "item", item);
-  for (const actor of game.actors) await migrateActor(actor, actorUpdate, itemUpdate);
-  for (const item of game.items) await applyUpdate(item, itemUpdate(item));
+  const migrateItem = async (item) => {
+    await applyUpdate(item, itemUpdate(item));
+    await runSteps(migrations2, "afterItem", item);
+  };
+  const migrateActor = async (actor) => {
+    await applyUpdate(actor, actorUpdate(actor));
+    const itemUpdates = actor.items.map((item) => ({ ...itemUpdate(item), _id: item.id })).filter((u) => Object.keys(u).length > 1);
+    if (itemUpdates.length) await actor.updateEmbeddedDocuments("Item", itemUpdates);
+    await runSteps(migrations2, "afterActor", actor);
+  };
+  for (const actor of game.actors) await migrateActor(actor);
+  for (const item of game.items) await migrateItem(item);
+  for (const scene of game.scenes) {
+    for (const token of scene.tokens) {
+      if (!token.actorLink && token.actor) await runSteps(migrations2, "afterActor", token.actor);
+    }
+  }
   for (const pack of game.packs) {
     if (pack.metadata.packageType !== "world" || !["Actor", "Item"].includes(pack.documentName)) continue;
     const wasLocked = pack.locked;
     await pack.configure({ locked: false });
     for (const doc of await pack.getDocuments()) {
-      if (pack.documentName === "Actor") await migrateActor(doc, actorUpdate, itemUpdate);
-      else await applyUpdate(doc, itemUpdate(doc));
+      if (pack.documentName === "Actor") await migrateActor(doc);
+      else await migrateItem(doc);
     }
     await pack.configure({ locked: wasLocked });
   }
   ui.notifications.info(`7th Sea 2E System Migration to version ${game.system.version} completed!`, { permanent: true });
 }
-async function migrateActor(actor, actorUpdate, itemUpdate) {
-  await applyUpdate(actor, actorUpdate(actor));
-  const itemUpdates = actor.items.map((item) => ({ ...itemUpdate(item), _id: item.id })).filter((u) => Object.keys(u).length > 1);
-  if (itemUpdates.length) await actor.updateEmbeddedDocuments("Item", itemUpdates);
-}
 function collectUpdates(migrations2, kind, doc) {
   return migrations2.reduce((update, m) => Object.assign(update, m[kind]?.call(m, doc) ?? {}), {});
+}
+async function runSteps(migrations2, kind, doc) {
+  for (const m of migrations2) {
+    if (!m[kind]) continue;
+    try {
+      await m[kind].call(m, doc);
+    } catch (err) {
+      console.error(`7th Sea 2E | Migration of ${doc.documentName} ${doc.name} failed`, err);
+    }
+  }
 }
 async function applyUpdate(doc, update) {
   if (foundry.utils.isEmpty(update)) return;
@@ -786,7 +999,8 @@ class SvnSea2EActor extends Actor {
     const update = {};
     for (const key of background.system.skills) {
       const skill = skills[key];
-      if (skill) update[`system.skills.${key}.value`] = clamp(skill.value + delta, skill.min, skill.max);
+      const stored = this._source.system.skills[key]?.value;
+      if (skill) update[`system.skills.${key}.value`] = clamp(stored + delta, skill.min, skill.max);
     }
     if (!foundry.utils.isEmpty(update)) await this.update(update);
   }
@@ -904,6 +1118,10 @@ class CharacterModel extends WoundedModel {
   }
   get hardToKill() {
     return this.htk;
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    this.rollBonus = rollBonusData();
   }
 }
 class HeroModel extends CharacterModel {
@@ -1038,6 +1256,7 @@ class BruteModel extends foundry.abstract.TypeDataModel {
   prepareBaseData() {
     super.prepareBaseData();
     setBounds(this.traits, RANK_BOUNDS.strength);
+    this.rollBonus = rollBonusData();
   }
   prepareDerivedData() {
     super.prepareDerivedData();
@@ -1308,6 +1527,24 @@ async function promptRoll(title, template, data, { cancel = false } = {}) {
     rejectClose: false
   });
 }
+function effectDefaults(actor, { skill, dice = true } = {}) {
+  const bonus = actor.system.rollBonus;
+  if (!bonus) return { dice: 0 };
+  const relevant = (key) => {
+    if (!key?.startsWith("system.rollBonus.")) return false;
+    if (key.startsWith("system.rollBonus.skills.")) return dice && key === `system.rollBonus.skills.${skill}`;
+    return dice || key !== "system.rollBonus.dice";
+  };
+  const names = /* @__PURE__ */ new Set();
+  for (const effect of actor.allApplicableEffects()) {
+    if (effect.active && effect.system.changes.some((change) => relevant(change.key))) names.add(effect.name);
+  }
+  return {
+    ...bonus,
+    dice: dice ? bonus.dice + (skill ? bonus.skills[skill] ?? 0 : 0) : 0,
+    effects: [...names].sort((a, b) => a.localeCompare(b)).join(", ")
+  };
+}
 async function rollSkill(actor, skill) {
   const system = actor.system;
   const rank2 = system.skills[skill].value;
@@ -1324,7 +1561,7 @@ async function rollSkill(actor, skill) {
   const result = await promptRoll(
     game.i18n.format("SVNSEA2E.ApproachPromptTitle", { skill: skillLabel }),
     `${TEMPLATES}/chats/skill-roll-dialog.hbs`,
-    { data: system, traits }
+    { data: system, traits, bonus: effectDefaults(actor, { skill }) }
   );
   if (!result) return false;
   const traitSelect = result.form.elements.trait;
@@ -1350,7 +1587,8 @@ async function rollTrait(actor, trait) {
   const title = game.i18n.format("SVNSEA2E.TraitRollTitle", { trait: CONFIG.SVNSEA2E.traits[trait] });
   const result = await promptRoll(title, `${TEMPLATES}/chats/trait-roll-dialog.hbs`, {
     data: system,
-    traitmax: system.traits[trait].value
+    traitmax: system.traits[trait].value,
+    bonus: effectDefaults(actor)
   });
   if (!result) return false;
   return rollDicePool({ actor, rolldata, options: result.options, title });
@@ -1359,7 +1597,7 @@ async function rollFreeDice(actor) {
   const result = await promptRoll(
     game.i18n.localize("SVNSEA2E.Roll"),
     `${TEMPLATES}/items/parts/roll-throw.hbs`,
-    {},
+    { bonus: effectDefaults(actor, { dice: false }) },
     { cancel: true }
   );
   if (!result) return false;
@@ -1393,6 +1631,29 @@ async function rollFreeDice(actor) {
 }
 const { HandlebarsApplicationMixin: HandlebarsApplicationMixin$1 } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
+const ITEM_SECTIONS = {
+  [ItemTypes.ADVANTAGE]: { label: "SVNSEA2E.Advantage", addTitle: "SVNSEA2E.AddAdvantage", cssClass: "advantage", used: true },
+  [ItemTypes.DUEL_STYLE]: { label: "SVNSEA2E.DuelingStyles", addTitle: "SVNSEA2E.AddDuelStyle", cssClass: "duelingstyle", used: true },
+  [ItemTypes.BACKGROUND]: { label: "SVNSEA2E.Backgrounds", addTitle: "SVNSEA2E.AddBackground", cssClass: "background", used: true, toggle: true },
+  [ItemTypes.SECRET_SOCIETY]: { label: "SVNSEA2E.SecretSociety", addTitle: "SVNSEA2E.AddSecretSociety", cssClass: "secretsociety", favor: true },
+  [ItemTypes.MONSTER_QUALITY]: { label: "SVNSEA2E.MonsterQualities", addTitle: "SVNSEA2E.AddMonsterQuality", used: true },
+  [ItemTypes.SCHEME]: { label: "SVNSEA2E.Schemes", addTitle: "SVNSEA2E.AddScheme", used: true },
+  [ItemTypes.VIRTUE]: { label: "SVNSEA2E.Virtue", addTitle: "SVNSEA2E.AddVirtue", cssClass: "story", used: true },
+  [ItemTypes.HUBRIS]: { label: "SVNSEA2E.Hubris", addTitle: "SVNSEA2E.AddHubris", cssClass: "story", used: true },
+  [ItemTypes.STORY]: { label: "SVNSEA2E.Stories", addTitle: "SVNSEA2E.AddStory", cssClass: "story" },
+  [ItemTypes.ARTIFACT]: { label: "SVNSEA2E.Artifacts", addTitle: "SVNSEA2E.AddArtifact", cssClass: "artifacts", used: true },
+  [ItemTypes.SORCERY]: { addTitle: "SVNSEA2E.Sorcery", cssClass: "sorcery", used: true },
+  [ItemTypes.SHIP_ADVENTURE]: { label: "SVNSEA2E.Adventures", addTitle: "SVNSEA2E.AddShipAdventure", cssClass: "story", rowClass: "adventure", noThrow: true },
+  [ItemTypes.SHIP_BACKGROUND]: { label: "SVNSEA2E.Backgrounds", addTitle: "SVNSEA2E.AddShipBackground", cssClass: "story", rowClass: "background", noThrow: true }
+};
+function itemSections(actor, types) {
+  return types.map((entry) => {
+    const [type, options] = Array.isArray(entry) ? entry : [entry, {}];
+    const section = { type, ...ITEM_SECTIONS[type], ...options, items: itemsOfType(actor, type) };
+    section.rowClass ??= section.cssClass;
+    return section;
+  });
+}
 class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
     // The sheets are designed for a light background; keep them light whatever the user's theme.
@@ -1409,13 +1670,13 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
       toggleUsed: SvnSea2EActorSheet.#onToggleUsed,
       toggleBackground: SvnSea2EActorSheet.#onToggleBackground,
       toggleSection: SvnSea2EActorSheet.#onToggleSection,
-      toggleHtk: SvnSea2EActorSheet.#onToggleHtk,
       selectLanguages: SvnSea2EActorSheet.#onSelectLanguages,
       setRank: SvnSea2EActorSheet.#onSetRank,
       setWounds: SvnSea2EActorSheet.#onSetWounds,
       rollSkill: SvnSea2EActorSheet.#onRollSkill,
       rollTrait: SvnSea2EActorSheet.#onRollTrait,
-      freeRoll: SvnSea2EActorSheet.#onFreeRoll
+      freeRoll: SvnSea2EActorSheet.#onFreeRoll,
+      ...EFFECT_ACTIONS
     }
   };
   /** Item list sections collapsed by the user, kept across re-renders. */
@@ -1444,13 +1705,19 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
       name: actor.name,
       img: actor.img,
       traits: this._prepareTraits(),
-      selectedlangs: this._prepareLanguages()
+      selectedlangs: this._prepareLanguages(),
+      effects: prepareEffects(actor)
     });
+    if (system.fear) context.fearLocked = this._isModified("system.fear.value");
     if (typeof system.concept === "string") {
       context.enrichedConcept = await enrichHTML(system.concept, { secrets: actor.isOwner, relativeTo: actor });
     }
     this._prepareItems(context);
     return context;
+  }
+  /** @override */
+  _getTabsConfig(group) {
+    return withEffectsTab(super._getTabsConfig(group));
   }
   /** @override */
   _prepareTabs(group) {
@@ -1459,13 +1726,18 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
   /** Add the actor's items, grouped by type, to the context. */
   _prepareItems(context) {
   }
+  /** Whether an active effect changes this value: the sheet shows the result, but cannot edit it. */
+  _isModified(path) {
+    return foundry.utils.hasProperty(this.actor.overrides ?? {}, path);
+  }
   /** Traits with their localized label. */
   _prepareTraits() {
     if (!this.actor.system.traits) return [];
     return Object.entries(this.actor.system.traits).map(([name, trait]) => ({
       ...trait,
       name,
-      label: CONFIG.SVNSEA2E.traits[name]
+      label: CONFIG.SVNSEA2E.traits[name],
+      locked: this._isModified(`system.traits.${name}.value`)
     }));
   }
   /** Selected languages as {key: label}. */
@@ -1491,9 +1763,11 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
       if (header) this.#setSectionCollapsed(header, true);
     }
   }
+  /** Rows of items, effects (of the actor or of one of its items) and ship crew members. */
   #onDragRow(event) {
-    const row = event.currentTarget;
-    const dragged = row.dataset.itemId ? this.actor.items.get(row.dataset.itemId) : game.actors.get(row.dataset.actorId);
+    const { itemId, effectId, actorId } = event.currentTarget.dataset;
+    const item = itemId ? this.actor.items.get(itemId) : null;
+    const dragged = effectId ? (item ?? this.actor).effects.get(effectId) : item ?? game.actors.get(actorId);
     if (dragged) event.dataTransfer.setData("text/plain", JSON.stringify(dragged.toDragData()));
   }
   /** Hide or show the item rows that follow a section header, up to the next header. */
@@ -1564,18 +1838,6 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
     else this.#collapsedSections.delete(section);
     this.#setSectionCollapsed(target, collapsed);
   }
-  /** Hard To Kill: one more dramatic wound. The maxima are derived by the data model. */
-  static async #onToggleHtk(event, target) {
-    if (!this.isEditable) return;
-    const system = this.actor.system;
-    const update = { "system.htk": !system.htk };
-    if (system.htk) {
-      const dramatic = system.dwounds.max - 1;
-      update["system.wounds.value"] = Math.min(system.wounds.value, dramatic * system.woundsPerDramatic);
-      update["system.dwounds.value"] = Math.min(system.dwounds.value, dramatic);
-    }
-    await this.actor.update(update);
-  }
   static #onSelectLanguages(event, target) {
     if (!this.isEditable) return;
     new ChoiceSelector({
@@ -1590,8 +1852,8 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
    * it; a rank never goes below its minimum (2 for hero traits, 1 for Strength).
    */
   static async #onSetRank(event, target) {
-    if (!this.isEditable) return;
     const name = target.dataset.name;
+    if (!this.isEditable || this._isModified(name)) return;
     let value = parseInt(target.dataset.value);
     const rank2 = foundry.utils.getProperty(this.actor, name.replace(/\.value$/, ""));
     const current = typeof rank2 === "object" ? rank2.value : rank2;
@@ -1657,19 +1919,21 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
   }
 }
 const ACTOR_TEMPLATES = `${TEMPLATES}/actors`;
-const tab$1 = (id, label) => ({ id, label: `SVNSEA2E.${label}` });
+const { ADVANTAGE, ARTIFACT, BACKGROUND, DUEL_STYLE, HUBRIS, MONSTER_QUALITY, SCHEME, SECRET_SOCIETY, SORCERY, STORY, VIRTUE } = ItemTypes;
+const tab = (id, label) => ({ id, label: `SVNSEA2E.${label}` });
 const scrollable = [".sheet-body .tab", ".sheet-body"];
-function prepareCharacterItems(actor, context) {
-  context.skills = skillsToSheetData(actor.system);
-  context.advantages = itemsOfType(actor, ItemTypes.ADVANTAGE);
-  context.backgrounds = itemsOfType(actor, ItemTypes.BACKGROUND);
-  context.sorcery = itemsOfType(actor, ItemTypes.SORCERY);
-  context.secretsocieties = itemsOfType(actor, ItemTypes.SECRET_SOCIETY);
-  context.stories = itemsOfType(actor, ItemTypes.STORY);
-  context.duelstyles = itemsOfType(actor, ItemTypes.DUEL_STYLE);
-  context.artifacts = itemsOfType(actor, ItemTypes.ARTIFACT);
-  context.virtues = itemsOfType(actor, ItemTypes.VIRTUE);
-  context.hubriss = itemsOfType(actor, ItemTypes.HUBRIS);
+function prepareCharacterItems(sheet, context) {
+  const actor = sheet.actor;
+  context.skills = skillsToSheetData(actor.system).map((skill) => ({
+    ...skill,
+    locked: sheet._isModified(`system.skills.${skill.name}.value`)
+  }));
+  context.itemLists = {
+    advantages: itemSections(actor, [ADVANTAGE, DUEL_STYLE, BACKGROUND, SECRET_SOCIETY]),
+    sorcery: itemSections(actor, [SORCERY]),
+    inventory: itemSections(actor, [ARTIFACT]),
+    fate: itemSections(actor, context.isPlayerCharacter ? [VIRTUE, HUBRIS, STORY] : [VIRTUE, HUBRIS])
+  };
 }
 class PlayerCharacterSheet extends SvnSea2EActorSheet {
   static DEFAULT_OPTIONS = { classes: ["pc"] };
@@ -1677,18 +1941,18 @@ class PlayerCharacterSheet extends SvnSea2EActorSheet {
   static TABS = {
     primary: {
       tabs: [
-        tab$1("concept", "Concept"),
-        tab$1("traits", "Traits"),
-        tab$1("advantages", "Features"),
-        tab$1("fate", "Fate"),
-        tab$1("inventory", "Inventory"),
-        tab$1("sorcery", "Sorcery")
+        tab("concept", "Concept"),
+        tab("traits", "Traits"),
+        tab("advantages", "Features"),
+        tab("fate", "Fate"),
+        tab("inventory", "Inventory"),
+        tab("sorcery", "Sorcery")
       ],
       initial: "traits"
     }
   };
   _prepareItems(context) {
-    prepareCharacterItems(this.actor, context);
+    prepareCharacterItems(this, context);
   }
 }
 class HeroSheet extends SvnSea2EActorSheet {
@@ -1697,18 +1961,18 @@ class HeroSheet extends SvnSea2EActorSheet {
   static TABS = {
     primary: {
       tabs: [
-        tab$1("traits", "Traits"),
-        tab$1("advantages", "Advantages"),
-        tab$1("sorcery", "Sorcery"),
-        tab$1("inventory", "Inventory"),
-        tab$1("fate", "Fate"),
-        tab$1("concept", "Concept")
+        tab("traits", "Traits"),
+        tab("advantages", "Advantages"),
+        tab("sorcery", "Sorcery"),
+        tab("inventory", "Inventory"),
+        tab("fate", "Fate"),
+        tab("concept", "Concept")
       ],
       initial: "traits"
     }
   };
   _prepareItems(context) {
-    prepareCharacterItems(this.actor, context);
+    prepareCharacterItems(this, context);
   }
 }
 class VillainSheet extends SvnSea2EActorSheet {
@@ -1717,26 +1981,24 @@ class VillainSheet extends SvnSea2EActorSheet {
   static TABS = {
     primary: {
       tabs: [
-        tab$1("traits", "Traits"),
-        tab$1("advantages", "Features"),
-        tab$1("sorcery", "Sorcery"),
-        tab$1("inventory", "Inventory"),
-        tab$1("fate", "Fate"),
-        tab$1("concept", "Concept")
+        tab("traits", "Traits"),
+        tab("advantages", "Features"),
+        tab("sorcery", "Sorcery"),
+        tab("inventory", "Inventory"),
+        tab("fate", "Fate"),
+        tab("concept", "Concept")
       ],
       initial: "traits"
     }
   };
   _prepareItems(context) {
     const actor = this.actor;
-    context.advantages = itemsOfType(actor, ItemTypes.ADVANTAGE);
-    context.artifacts = itemsOfType(actor, ItemTypes.ARTIFACT);
-    context.sorcery = itemsOfType(actor, ItemTypes.SORCERY);
-    context.schemes = itemsOfType(actor, ItemTypes.SCHEME);
-    context.virtues = itemsOfType(actor, ItemTypes.VIRTUE);
-    context.hubriss = itemsOfType(actor, ItemTypes.HUBRIS);
-    context.monsterqualities = itemsOfType(actor, ItemTypes.MONSTER_QUALITY);
-    context.duelstyles = itemsOfType(actor, ItemTypes.DUEL_STYLE);
+    context.itemLists = {
+      advantages: itemSections(actor, [ADVANTAGE, DUEL_STYLE, MONSTER_QUALITY, SCHEME]),
+      sorcery: itemSections(actor, [SORCERY]),
+      inventory: itemSections(actor, [ARTIFACT]),
+      fate: itemSections(actor, [VIRTUE, HUBRIS])
+    };
   }
 }
 class MonsterSheet extends SvnSea2EActorSheet {
@@ -1744,23 +2006,23 @@ class MonsterSheet extends SvnSea2EActorSheet {
   static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/monster.hbs`, scrollable } };
   static TABS = {
     primary: {
-      tabs: [tab$1("features", "Features"), tab$1("fate", "Fate"), tab$1("concept", "Concept")],
+      tabs: [tab("features", "Features"), tab("fate", "Fate"), tab("concept", "Concept")],
       initial: "features"
     }
   };
   _prepareItems(context) {
     const actor = this.actor;
-    context.monsterqualities = itemsOfType(actor, ItemTypes.MONSTER_QUALITY);
-    context.virtues = itemsOfType(actor, ItemTypes.VIRTUE);
-    context.hubriss = itemsOfType(actor, ItemTypes.HUBRIS);
+    context.itemLists = {
+      features: itemSections(actor, [[MONSTER_QUALITY, { used: false }]]),
+      fate: itemSections(actor, [VIRTUE, HUBRIS])
+    };
   }
 }
 class BruteSheet extends SvnSea2EActorSheet {
   static DEFAULT_OPTIONS = { classes: ["brute"] };
   static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/brute.hbs`, scrollable: [".sheet-body"] } };
   _prepareItems(context) {
-    context.advantages = itemsOfType(this.actor, ItemTypes.ADVANTAGE);
-    context.duelstyles = itemsOfType(this.actor, ItemTypes.DUEL_STYLE);
+    context.itemLists = { features: itemSections(this.actor, [ADVANTAGE, DUEL_STYLE]) };
   }
 }
 class DangerPointsSheet extends SvnSea2EActorSheet {
@@ -1802,8 +2064,7 @@ class ShipSheet extends SvnSea2EActorSheet {
     return context;
   }
   _prepareItems(context) {
-    context.adventures = itemsOfType(this.actor, ItemTypes.SHIP_ADVENTURE);
-    context.backgrounds = itemsOfType(this.actor, ItemTypes.SHIP_BACKGROUND);
+    context.itemLists = { features: itemSections(this.actor, [ItemTypes.SHIP_ADVENTURE, ItemTypes.SHIP_BACKGROUND]) };
   }
   /** The roster: every role with the crew members currently assigned to it. */
   _prepareCrew() {
@@ -2065,14 +2326,19 @@ class VirtueModel extends SimpleItemModel {
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ItemSheetV2 } = foundry.applications.sheets;
 const ITEM_TEMPLATES = `${TEMPLATES}/items`;
-const tab = (id, label) => ({ id, label: `SVNSEA2E.${label}` });
-const DESCRIPTION_TAB = { primary: { tabs: [tab("description", "Description")], initial: "description" } };
-const EDITOR_FIELDS = {
-  [ItemTypes.BACKGROUND]: ["quirk"],
-  [ItemTypes.DUEL_STYLE]: ["bonus"],
-  [ItemTypes.SECRET_SOCIETY]: ["concern", "earnfavor", "callupon"],
-  [ItemTypes.STORY]: ["reward", "endings", "steps"]
+const ITEM_LAYOUTS = {
+  [ItemTypes.ADVANTAGE]: { tabs: ["description", "attributes"] },
+  [ItemTypes.ARTIFACT]: { header: true },
+  [ItemTypes.BACKGROUND]: { header: true, tabs: ["description", "quirk", "details"] },
+  [ItemTypes.DUEL_STYLE]: { tabs: ["description", "bonus"] },
+  [ItemTypes.SCHEME]: { header: true },
+  [ItemTypes.SECRET_SOCIETY]: { header: true, tabs: ["description", "concern", "earnfavor", "callupon"], width: 800 },
+  [ItemTypes.SORCERY]: { header: true, width: 750 },
+  [ItemTypes.STORY]: { header: true, tabs: ["description", "reward", "endings", "steps"] }
 };
+const PARTIAL_TABS = /* @__PURE__ */ new Set(["attributes", "details"]);
+const TAB_LABELS = { earnfavor: "SVNSEA2E.EarnFavor", callupon: "SVNSEA2E.UseFavor" };
+const tabLabel = (id) => TAB_LABELS[id] ?? `SVNSEA2E.${id[0].toUpperCase()}${id.slice(1)}`;
 class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
   static DEFAULT_OPTIONS = {
     classes: ["svnsea2e", "sheet", "item", "themed", "theme-light"],
@@ -2081,30 +2347,51 @@ class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     form: { submitOnChange: true },
     actions: {
       selectSkills: SvnSea2EItemSheet.#onSelectSkills,
-      selectAdvantages: SvnSea2EItemSheet.#onSelectAdvantages
+      selectAdvantages: SvnSea2EItemSheet.#onSelectAdvantages,
+      ...EFFECT_ACTIONS
     }
   };
-  static TABS = DESCRIPTION_TAB;
+  static PARTS = { sheet: { template: `${ITEM_TEMPLATES}/item.hbs`, scrollable: [".sheet-body .tab"] } };
+  get layout() {
+    return ITEM_LAYOUTS[this.item.type] ?? {};
+  }
+  /** @override */
+  _initializeApplicationOptions(options) {
+    options = super._initializeApplicationOptions(options);
+    const width = ITEM_LAYOUTS[options.document?.type]?.width;
+    if (width) options.position.width = width;
+    return options;
+  }
+  /** @override */
+  _getTabsConfig(group) {
+    if (group !== "primary") return null;
+    const tabs = (this.layout.tabs ?? ["description"]).map((id) => ({ id, label: tabLabel(id) }));
+    return withEffectsTab({ tabs, initial: "description" });
+  }
   /** @override */
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
     const item = this.item;
     const system = item.system;
+    const tabs = this._prepareTabs("primary");
     Object.assign(context, {
       item,
       system,
       editable: this.isEditable,
       cssClass: item.isOwner ? "editable" : "locked",
       config: CONFIG.SVNSEA2E,
-      tabs: this._prepareTabs("primary"),
+      tabs,
       itemType: CONFIG.SVNSEA2E.itemTypes[item.type],
       name: item.name,
       img: item.img,
+      headerPartial: this.layout.header ? `${ITEM_TEMPLATES}/parts/header-${item.type}.hbs` : null,
+      bodyTabs: Object.values(tabs).filter((tab2) => tab2.id !== "effects").map((tab2) => ({ ...tab2, editor: !PARTIAL_TABS.has(tab2.id), partial: `${ITEM_TEMPLATES}/parts/tab-${tab2.id}.hbs` })),
+      effects: prepareEffects(item),
       enriched: {}
     });
     const enrichOptions = { secrets: item.isOwner, relativeTo: item, rollData: item.actor?.getRollData() };
-    for (const field of ["description", ...EDITOR_FIELDS[item.type] ?? []]) {
-      context.enriched[field] = await enrichHTML(system[field], enrichOptions);
+    for (const tab2 of context.bodyTabs.filter((t) => t.editor)) {
+      context.enriched[tab2.id] = await enrichHTML(system[tab2.id], enrichOptions);
     }
     if (item.type === ItemTypes.BACKGROUND) context.selectedskills = system.skills.map((s) => CONFIG.SVNSEA2E.skills[s]);
     return context;
@@ -2129,77 +2416,6 @@ class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     }).render(true);
   }
 }
-const part = (template) => ({ sheet: { template: `${ITEM_TEMPLATES}/${template}.hbs`, scrollable: [".sheet-body .tab"] } });
-class AdvantageSheet extends SvnSea2EItemSheet {
-  static PARTS = part("advantage");
-  static TABS = {
-    primary: { tabs: [tab("description", "Description"), tab("attributes", "Attributes")], initial: "description" }
-  };
-}
-class ArtifactSheet extends SvnSea2EItemSheet {
-  static PARTS = part("artifact");
-}
-class BackgroundSheet extends SvnSea2EItemSheet {
-  static PARTS = part("background");
-  static TABS = {
-    primary: {
-      tabs: [tab("description", "Description"), tab("quirk", "Quirk"), tab("details", "Details")],
-      initial: "description"
-    }
-  };
-}
-class DuelStyleSheet extends SvnSea2EItemSheet {
-  static PARTS = part("duelstyle");
-  static TABS = {
-    primary: { tabs: [tab("description", "Description"), tab("bonus", "Bonus")], initial: "description" }
-  };
-}
-class MonsterQualitySheet extends SvnSea2EItemSheet {
-  static PARTS = part("simple");
-}
-class SchemeSheet extends SvnSea2EItemSheet {
-  static PARTS = part("scheme");
-}
-class SecretSocietySheet extends SvnSea2EItemSheet {
-  static DEFAULT_OPTIONS = { position: { width: 800 } };
-  static PARTS = part("secretsociety");
-  static TABS = {
-    primary: {
-      tabs: [
-        tab("description", "Description"),
-        tab("concern", "Concern"),
-        tab("earnfavor", "EarnFavor"),
-        tab("callupon", "UseFavor")
-      ],
-      initial: "description"
-    }
-  };
-}
-class ShipAdventureSheet extends SvnSea2EItemSheet {
-  static PARTS = part("simple");
-}
-class ShipBackgroundSheet extends SvnSea2EItemSheet {
-  static PARTS = part("simple");
-}
-class SorcerySheet extends SvnSea2EItemSheet {
-  static DEFAULT_OPTIONS = { position: { width: 750 } };
-  static PARTS = part("sorcery");
-}
-class StorySheet extends SvnSea2EItemSheet {
-  static PARTS = part("story");
-  static TABS = {
-    primary: {
-      tabs: [tab("description", "Description"), tab("reward", "Reward"), tab("endings", "Endings"), tab("steps", "Steps")],
-      initial: "description"
-    }
-  };
-}
-class VirtueSheet extends SvnSea2EItemSheet {
-  static PARTS = part("simple");
-}
-class HubrisSheet extends SvnSea2EItemSheet {
-  static PARTS = part("simple");
-}
 Hooks.once("init", () => {
   console.log(`7th Sea 2E | Initializing 7th Sea Second Edition System
 ${SVNSEA2E.ASCII}`);
@@ -2216,6 +2432,7 @@ ${SVNSEA2E.ASCII}`);
   CONFIG.Combat.initiative = { formula: "1d20", decimals: 2 };
   CONFIG.Actor.documentClass = SvnSea2EActor;
   CONFIG.Item.documentClass = SvnSea2EItem;
+  CONFIG.ActiveEffect.documentClass = SvnSea2EActiveEffect;
   Object.assign(CONFIG.Actor.dataModels, {
     [ActorType.BRUTE]: BruteModel,
     [ActorType.DANGERPOINTS]: DangerPointsModel,
@@ -2261,19 +2478,7 @@ function registerSheets() {
   register(Actor, VillainSheet, ActorType.VILLAIN);
   register(Actor, ShipSheet, ActorType.SHIP);
   register(Actor, DangerPointsSheet, ActorType.DANGERPOINTS);
-  register(Item, AdvantageSheet, ItemTypes.ADVANTAGE);
-  register(Item, ArtifactSheet, ItemTypes.ARTIFACT);
-  register(Item, BackgroundSheet, ItemTypes.BACKGROUND);
-  register(Item, DuelStyleSheet, ItemTypes.DUEL_STYLE);
-  register(Item, MonsterQualitySheet, ItemTypes.MONSTER_QUALITY);
-  register(Item, SchemeSheet, ItemTypes.SCHEME);
-  register(Item, SecretSocietySheet, ItemTypes.SECRET_SOCIETY);
-  register(Item, ShipAdventureSheet, ItemTypes.SHIP_ADVENTURE);
-  register(Item, ShipBackgroundSheet, ItemTypes.SHIP_BACKGROUND);
-  register(Item, SorcerySheet, ItemTypes.SORCERY);
-  register(Item, StorySheet, ItemTypes.STORY);
-  register(Item, VirtueSheet, ItemTypes.VIRTUE);
-  register(Item, HubrisSheet, ItemTypes.HUBRIS);
+  DocumentSheetConfig.registerSheet(Item, SYSTEM_ID, SvnSea2EItemSheet, { types: Object.values(ItemTypes), makeDefault: true });
 }
 Hooks.once("setup", () => {
   const lists = [
@@ -2305,6 +2510,12 @@ Hooks.once("ready", async () => {
 Hooks.on("updateActor", (actor) => {
   if (game.svnsea2e.toolbox.shows(actor)) game.svnsea2e.toolbox.render();
 });
+for (const hook of ["createActiveEffect", "updateActiveEffect", "deleteActiveEffect"]) {
+  Hooks.on(hook, (effect) => {
+    const actor = effect.actor;
+    if (actor && game.svnsea2e.toolbox.shows(actor)) game.svnsea2e.toolbox.render();
+  });
+}
 for (const hook of ["createItem", "updateItem", "deleteItem"]) Hooks.on(hook, invalidateAdvantageCache);
 Hooks.on("renderActorDirectory", (app, html) => {
   if (!game.user.isGM || html.querySelector(".svnsea2e-toolbox-button")) return;
@@ -2320,5 +2531,6 @@ Hooks.on("renderActorDirectory", (app, html) => {
   header.insertBefore(wrapper, header.querySelector("search"));
 });
 Hooks.on("renderCombatTracker", onRenderCombatTracker);
+Hooks.on("renderActiveEffectConfig", onRenderActiveEffectConfig);
 Hooks.on("renderChatMessageHTML", onRenderChatMessage);
 //# sourceMappingURL=svnsea2e.mjs.map

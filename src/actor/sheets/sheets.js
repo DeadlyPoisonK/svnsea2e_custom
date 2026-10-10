@@ -1,22 +1,26 @@
 import { ItemTypes } from '../../enums.js';
-import { itemsOfType, skillsToSheetData } from '../../helpers.js';
-import { ACTOR_TEMPLATES, SvnSea2EActorSheet } from './base.js';
+import { skillsToSheetData } from '../../helpers.js';
+import { ACTOR_TEMPLATES, SvnSea2EActorSheet, itemSections } from './base.js';
+
+const { ADVANTAGE, ARTIFACT, BACKGROUND, DUEL_STYLE, HUBRIS, MONSTER_QUALITY, SCHEME, SECRET_SOCIETY, SORCERY, STORY, VIRTUE } =
+  ItemTypes;
 
 const tab = (id, label) => ({ id, label: `SVNSEA2E.${label}` });
 const scrollable = ['.sheet-body .tab', '.sheet-body'];
 
-/** Items shown by the hero and player character sheets. */
-function prepareCharacterItems(actor, context) {
-  context.skills = skillsToSheetData(actor.system);
-  context.advantages = itemsOfType(actor, ItemTypes.ADVANTAGE);
-  context.backgrounds = itemsOfType(actor, ItemTypes.BACKGROUND);
-  context.sorcery = itemsOfType(actor, ItemTypes.SORCERY);
-  context.secretsocieties = itemsOfType(actor, ItemTypes.SECRET_SOCIETY);
-  context.stories = itemsOfType(actor, ItemTypes.STORY);
-  context.duelstyles = itemsOfType(actor, ItemTypes.DUEL_STYLE);
-  context.artifacts = itemsOfType(actor, ItemTypes.ARTIFACT);
-  context.virtues = itemsOfType(actor, ItemTypes.VIRTUE);
-  context.hubriss = itemsOfType(actor, ItemTypes.HUBRIS);
+/** Skills and item lists of the hero and player character sheets. */
+function prepareCharacterItems(sheet, context) {
+  const actor = sheet.actor;
+  context.skills = skillsToSheetData(actor.system).map((skill) => ({
+    ...skill,
+    locked: sheet._isModified(`system.skills.${skill.name}.value`),
+  }));
+  context.itemLists = {
+    advantages: itemSections(actor, [ADVANTAGE, DUEL_STYLE, BACKGROUND, SECRET_SOCIETY]),
+    sorcery: itemSections(actor, [SORCERY]),
+    inventory: itemSections(actor, [ARTIFACT]),
+    fate: itemSections(actor, context.isPlayerCharacter ? [VIRTUE, HUBRIS, STORY] : [VIRTUE, HUBRIS]),
+  };
 }
 
 export class PlayerCharacterSheet extends SvnSea2EActorSheet {
@@ -37,7 +41,7 @@ export class PlayerCharacterSheet extends SvnSea2EActorSheet {
   };
 
   _prepareItems(context) {
-    prepareCharacterItems(this.actor, context);
+    prepareCharacterItems(this, context);
   }
 }
 
@@ -59,7 +63,7 @@ export class HeroSheet extends SvnSea2EActorSheet {
   };
 
   _prepareItems(context) {
-    prepareCharacterItems(this.actor, context);
+    prepareCharacterItems(this, context);
   }
 }
 
@@ -82,14 +86,12 @@ export class VillainSheet extends SvnSea2EActorSheet {
 
   _prepareItems(context) {
     const actor = this.actor;
-    context.advantages = itemsOfType(actor, ItemTypes.ADVANTAGE);
-    context.artifacts = itemsOfType(actor, ItemTypes.ARTIFACT);
-    context.sorcery = itemsOfType(actor, ItemTypes.SORCERY);
-    context.schemes = itemsOfType(actor, ItemTypes.SCHEME);
-    context.virtues = itemsOfType(actor, ItemTypes.VIRTUE);
-    context.hubriss = itemsOfType(actor, ItemTypes.HUBRIS);
-    context.monsterqualities = itemsOfType(actor, ItemTypes.MONSTER_QUALITY);
-    context.duelstyles = itemsOfType(actor, ItemTypes.DUEL_STYLE);
+    context.itemLists = {
+      advantages: itemSections(actor, [ADVANTAGE, DUEL_STYLE, MONSTER_QUALITY, SCHEME]),
+      sorcery: itemSections(actor, [SORCERY]),
+      inventory: itemSections(actor, [ARTIFACT]),
+      fate: itemSections(actor, [VIRTUE, HUBRIS]),
+    };
   }
 }
 
@@ -105,9 +107,10 @@ export class MonsterSheet extends SvnSea2EActorSheet {
 
   _prepareItems(context) {
     const actor = this.actor;
-    context.monsterqualities = itemsOfType(actor, ItemTypes.MONSTER_QUALITY);
-    context.virtues = itemsOfType(actor, ItemTypes.VIRTUE);
-    context.hubriss = itemsOfType(actor, ItemTypes.HUBRIS);
+    context.itemLists = {
+      features: itemSections(actor, [[MONSTER_QUALITY, { used: false }]]),
+      fate: itemSections(actor, [VIRTUE, HUBRIS]),
+    };
   }
 }
 
@@ -116,8 +119,7 @@ export class BruteSheet extends SvnSea2EActorSheet {
   static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/brute.hbs`, scrollable: ['.sheet-body'] } };
 
   _prepareItems(context) {
-    context.advantages = itemsOfType(this.actor, ItemTypes.ADVANTAGE);
-    context.duelstyles = itemsOfType(this.actor, ItemTypes.DUEL_STYLE);
+    context.itemLists = { features: itemSections(this.actor, [ADVANTAGE, DUEL_STYLE]) };
   }
 }
 

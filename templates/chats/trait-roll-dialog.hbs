@@ -1,4 +1,5 @@
 <div class="trait-roll">
+  {{#if bonus.effects}}<p class="hint roll-effects">{{localize "SVNSEA2E.RollEffects"}}: {{bonus.effects}}</p>{{/if}}
   <div class="form-group">
     <label for="svnsea2e-roll-trait">{{localize "SVNSEA2E.NumberTraitDice"}}</label>
     <select id="svnsea2e-roll-trait" name="trait">
@@ -9,10 +10,10 @@
   </div>
   <div class="form-group">
     <label for="svnsea2e-roll-bonus">{{localize "SVNSEA2E.BonusDice"}}</label>
-    <input type="number" id="svnsea2e-roll-bonus" name="bonusDice" value="0" step="1" />
+    <input type="number" id="svnsea2e-roll-bonus" name="bonusDice" value="{{bonus.dice}}" step="1" />
   </div>
   <div class="form-group">
     <label for="svnsea2e-roll-addone">{{localize "SVNSEA2E.AddOneToDice"}}</label>
-    <input type="checkbox" id="svnsea2e-roll-addone" name="addOneToDice" value="1" />
+    <input type="checkbox" id="svnsea2e-roll-addone" name="addOneToDice" value="1" {{checked bonus.addOne}} />
   </div>
 </div>

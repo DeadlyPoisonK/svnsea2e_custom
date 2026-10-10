@@ -592,25 +592,24 @@
   border: 0 solid transparent;
 }
 
-/* Hard To Kill */
+/* Hard To Kill: shown when an active effect turns it on */
 
-.svnsea2e .htk-control {
+.svnsea2e .htk-badge {
   font-weight: bold;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.svnsea2e .htk-control .htk-on {
   color: #2ecc71;
   text-shadow: 0 0 5px #2ecc71;
-}
-
-.svnsea2e .htk-control .htk-off {
-  color: #7f8c8d;
+  margin-right: 10px;
+  white-space: nowrap;
 }
 
 .svnsea2e .htk-row {
   margin-bottom: 5px;
+}
+
+/* Ranks changed by an active effect: shown, not editable */
+.svnsea2e .rank-circles.locked {
+  color: #6b4f9e;
+  cursor: help;
 }
 
 .svnsea2e .red {
@@ -765,6 +764,52 @@
   line-height: 1.2em;
   padding: 0.5rem;
   border-top: 0.25rem solid var(--svnsea-line);
+}
+
+/* Effects tab */
+.svnsea2e .effects-list .effect .effect-changes {
+  flex: 2;
+  font-size: 0.85em;
+  color: #4b4a44;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.svnsea2e .effects-list .effect .effect-duration,
+.svnsea2e .effects-list .effect .effect-source {
+  flex: 0 0 8rem;
+  font-size: 0.85em;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Effect icons are mostly white SVGs */
+.svnsea2e .effects-list .effect .item-image img {
+  background: #4b4a44;
+  border-radius: 3px;
+}
+
+.svnsea2e .effects-list .effect.inactive {
+  opacity: 0.6;
+}
+
+.svnsea2e .effects-list .effect .item-controls i {
+  flex: 0 0 22px;
+  text-align: center;
+}
+
+.svnsea2e .effects-list .item-header {
+  cursor: default;
+}
+
+.svnsea2e .effects-hint,
+.svnsea2e .roll-effects {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #4b4a44;
 }
 
 /* Item images that send the item to chat */

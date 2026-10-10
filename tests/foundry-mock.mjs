@@ -13,6 +13,7 @@ export function installMocks(repo) {
 
   // ---------- utils ----------
   const getProperty = (o, p) => p.split('.').reduce((a, k) => a?.[k], o);
+  const hasProperty = (o, p) => getProperty(o, p) !== undefined;
   const setProperty = (o, p, v) => { const ks = p.split('.'); const last = ks.pop(); let t = o; for (const k of ks) t = t[k] ??= {}; t[last] = v; };
   const deepClone = (o) => { if (o && typeof o === 'object' && !Array.isArray(o) && Object.getPrototypeOf(o) !== Object.prototype) throw new Error('deepClone: unsupported class instance'); return structuredClone(o); };
   const isEmpty = (o) => !o || Object.keys(o).length === 0;
@@ -54,6 +55,7 @@ export function installMocks(repo) {
   Handlebars.registerHelper('checked', (v) => (v ? 'checked' : ''));
   Handlebars.registerHelper('disabled', (v) => (v ? 'disabled' : ''));
   Handlebars.registerHelper('not', (v) => !v);
+  Handlebars.registerHelper('ifThen', (c, a, b) => (c ? a : b));
   Handlebars.registerHelper('concat', (...a) => { a.pop(); return new Handlebars.SafeString(a.join('')); });
   Handlebars.registerHelper('selectOptions', (choices, o) => new Handlebars.SafeString(Object.entries(choices ?? {}).map(([k, v]) => `<option value="${k}" ${k === o.hash.selected ? 'selected' : ''}>${v}</option>`).join('')));
 
@@ -124,27 +126,76 @@ export function installMocks(repo) {
       return config.buttons[0].callback(new window.Event('click'), button, null);
     }
   }
-  const DocumentSheetConfig = { registered: [], registerSheet(doc, scope, sheet, cfg) { this.registered.push([doc.name, sheet.name, cfg.types[0]]); }, unregisterSheet() {} };
+  const DocumentSheetConfig = { registered: [], registerSheet(doc, scope, sheet, cfg) { for (const type of cfg.types) this.registered.push([doc.name, sheet.name, type]); }, unregisterSheet() {} };
 
   // ---------- documents ----------
   let idCounter = 0;
   class Collection extends Map { [Symbol.iterator]() { return this.values(); } get contents() { return [...this.values()]; } filter(fn) { return this.contents.filter(fn); } find(fn) { return this.contents.find(fn); } some(fn) { return this.contents.some(fn); } map(fn) { return this.contents.map(fn); } }
+
+  // Active effects: enough of Foundry's to apply "add" and "override" changes in phases, like Actor#applyActiveEffects.
+  class ActiveEffect {
+    static documentName = 'ActiveEffect';
+    constructor(data, parent) {
+      this._id = data._id ?? `ae${++idCounter}`; this.parent = parent; this.name = data.name; this.img = data.img ?? 'icons/svg/aura.svg';
+      this.disabled = !!data.disabled; this.transfer = data.transfer ?? true; this.flags = deepClone(data.flags ?? {});
+      this.description = data.description ?? ''; this.origin = data.origin ?? null;
+      this.duration = { value: data.duration?.value ?? null, units: data.duration?.units ?? 'seconds' };
+      this.system = { changes: (data.system?.changes ?? []).map((c) => ({ type: 'add', phase: 'initial', ...c })) };
+    }
+    get id() { return this._id; }
+    get documentName() { return 'ActiveEffect'; }
+    get uuid() { return `${this.parent.uuid}.ActiveEffect.${this.id}`; }
+    get actor() { return this.parent instanceof Actor ? this.parent : (this.parent?.parent ?? null); }
+    get isSuppressed() { return false; }
+    get active() { return !this.disabled && !this.isSuppressed; }
+    get isTemporary() { return Number.isFinite(this.duration.value); }
+    shouldApplyChange(change, options) { return change.phase === options?.phase; }
+    getFlag(scope, key) { return getProperty(this.flags, `${scope}.${key}`); }
+    get sheet() { return { render: () => log.updates.push(['effectSheet', this.name]), tabGroups: {} }; }
+    toObject() { return { _id: this._id, name: this.name, img: this.img, disabled: this.disabled, transfer: this.transfer, duration: { ...this.duration }, system: deepClone(this.system), flags: deepClone(this.flags) }; }
+    toDragData() { return { type: 'ActiveEffect', uuid: this.uuid }; }
+    async update(changes) { log.updates.push([this.name, changes]); for (const [k, v] of Object.entries(changes)) setProperty(this, k, v); this.parent._refreshEffects(); return this; }
+    async delete() { this.parent.effects.delete(this.id); log.updates.push(['deleteEffect', this.name]); this.parent._refreshEffects(); }
+  }
+  /** The value of a change, applied like ActiveEffect._applyChangeUnguided (add and override only). */
+  const applyChange = (current, change) => {
+    const raw = change.value;
+    const cast = typeof current === 'boolean' ? raw === true || raw === 'true' : typeof current === 'number' ? Number(raw) || 0 : raw;
+    if (change.type === 'override') return cast;
+    if (typeof current === 'boolean') return current || cast;
+    return current + cast;
+  };
+  const effectsMixin = {
+    async createEmbeddedEffects(list) {
+      const created = list.map((d) => new CONFIG.ActiveEffect.documentClass({ ...d, _id: undefined }, this));
+      for (const e of created) this.effects.set(e.id, e);
+      log.updates.push(['createEffect', list.map((d) => d.name)]);
+      this._refreshEffects();
+      return created;
+    },
+    _refreshEffects() { this.prepareData(); this.parent?.prepareData?.(); },
+  };
   class BaseDocument {
     constructor(data, parent = null) {
       this._id = data._id ?? `id${++idCounter}`; this.name = data.name; this.type = data.type; this.img = data.img; this.parent = parent;
       const model = CONFIG[this.constructor.documentName].dataModels[this.type];
       this._source = { system: model.migrateData(foundry.utils.deepClone({ ...model.initialData(), ...(data.system ?? {}) })), flags: deepClone(data.flags ?? {}) };
       this.flags = this._source.flags; this.isOwner = true; this.limited = false; this.pack = null;
+      this.effects = new Collection();
+      for (const e of data.effects ?? []) { const effect = new CONFIG.ActiveEffect.documentClass(e, this); this.effects.set(effect.id, effect); }
     }
     get id() { return this._id; }
     get uuid() { return this.parent ? `${this.parent.uuid}.Item.${this.id}` : `${this.constructor.documentName}.${this.id}`; }
     get documentName() { return this.constructor.documentName; }
     prepareData() {
-      // Same order as ClientDocumentMixin#prepareData (no active effects in the mock).
+      // Same order as ClientDocumentMixin#prepareData, with the effect phases of Actor#prepareData.
       const model = CONFIG[this.constructor.documentName].dataModels[this.type];
       this.system = new model(deepClone(this._source.system), { parent: this });
       this.system.prepareBaseData(); this.prepareBaseData();
+      this.overrides = {};
+      this.applyActiveEffects?.('initial');
       this.system.prepareDerivedData(); this.prepareDerivedData();
+      this.applyActiveEffects?.('final');
     }
     prepareBaseData() {}
     prepareDerivedData() {}
@@ -160,29 +211,51 @@ export function installMocks(repo) {
       }
       // Foundry migrates the changes too, so the data models may fix values on update.
       this._source.system = CONFIG[this.documentName].dataModels[this.type].migrateData(this._source.system);
-      this.prepareData(); return this;
+      // Like Foundry, a change to an embedded document prepares its parent again.
+      this.prepareData(); this.parent?.prepareData?.(); return this;
     }
     getFlag(scope, key) { return getProperty(this.flags, `${scope}.${key}`); }
     async setFlag(scope, key, value) { return this.update({ [`flags.${scope}.${key}`]: value }); }
     async unsetFlag(scope, key) { delete this.flags[scope]?.[key]; return this; }
-    toObject() { return { _id: this._id, name: this.name, type: this.type, img: this.img, system: deepClone(this._source.system), flags: deepClone(this.flags) }; }
+    toObject() { return { _id: this._id, name: this.name, type: this.type, img: this.img, system: deepClone(this._source.system), flags: deepClone(this.flags), effects: this.effects?.map((e) => e.toObject()) ?? [] }; }
     toDragData() { return { type: this.documentName, uuid: this.uuid }; }
     async delete() {
       const parent = this.parent;
       parent?.items.delete(this.id); game.items.delete(this.id); log.updates.push(['delete', this.name]);
+      parent?.prepareData();
       parent?._onDeleteDescendantDocuments(parent, 'items', [this], [this.id], {}, game.user.id);
     }
-    get sheet() { return { render() {} }; }
+    get sheet() { return (this._sheet ??= { render: () => log.updates.push(['sheet', this.name]), tabGroups: {} }); }
     static async create(data, { parent } = {}) { const d = new CONFIG[this.documentName].documentClass(data, parent); await d._preCreate?.(data, {}, game.user); d.prepareData(); return d; }
   }
   class Actor extends BaseDocument {
     static documentName = 'Actor';
     constructor(data, parent) { super(data, parent); this.items = new Collection(); }
-    get isToken() { return false; }
+    /** Tests make an unlinked token actor by setting `_token` ({delta}). */
+    get isToken() { return !!this._token; }
+    get token() { return this._token ?? null; }
+    *allApplicableEffects() {
+      yield* this.effects;
+      for (const item of this.items ?? []) for (const effect of item.effects) if (effect.transfer) yield effect;
+    }
+    applyActiveEffects(phase) {
+      const changes = [];
+      for (const effect of this.allApplicableEffects()) {
+        if (!effect.active) continue;
+        for (const change of effect.system.changes) if (change.key && effect.shouldApplyChange(change, { phase })) changes.push(change);
+      }
+      for (const change of changes) {
+        const value = applyChange(getProperty(this, change.key), change);
+        setProperty(this, change.key, value);
+        setProperty(this.overrides, change.key, value);
+      }
+    }
     async createEmbeddedDocuments(name, list) {
+      if (name === 'ActiveEffect') return this.createEmbeddedEffects(list);
       const out = [];
       for (const d of list) { const item = await CONFIG.Item.documentClass.create({ ...d, _id: undefined }, { parent: this }); this.items.set(item.id, item); out.push(item); }
       log.updates.push(['create', list.map((d) => d.name)]);
+      this.prepareData();
       this._onCreateDescendantDocuments(this, 'items', out, list, {}, game.user.id);
       return out;
     }
@@ -196,7 +269,13 @@ export function installMocks(repo) {
     _onDeleteDescendantDocuments() {}
     async updateEmbeddedDocuments(name, list) { for (const u of list) { const { _id, ...rest } = u; await this.items.get(_id).update(rest); } }
   }
-  class Item extends BaseDocument { static documentName = 'Item'; get actor() { return this.parent; } }
+  class Item extends BaseDocument {
+    static documentName = 'Item';
+    get actor() { return this.parent; }
+    async createEmbeddedDocuments(name, list) { return this.createEmbeddedEffects(list); }
+  }
+  Object.assign(Actor.prototype, effectsMixin);
+  Object.assign(Item.prototype, effectsMixin);
 
   class MockRoll {
     static next = [];
@@ -205,7 +284,7 @@ export function installMocks(repo) {
   }
 
   globalThis.foundry = {
-    utils: { getProperty, setProperty, deepClone, isEmpty, isNewerVersion, mergeObject: Object.assign },
+    utils: { getProperty, setProperty, hasProperty, deepClone, isEmpty, isNewerVersion, mergeObject: Object.assign },
     data: { fields: { SchemaField, ArrayField, StringField, HTMLField, NumberField, BooleanField }, operators: { ForcedDeletion } },
     abstract: { TypeDataModel },
     dice: { Roll: MockRoll },
@@ -219,9 +298,9 @@ export function installMocks(repo) {
   };
   const hooks = {};
   globalThis.Hooks = { once: (n, f) => (hooks[n] ??= []).push(f), on: (n, f) => (hooks[n] ??= []).push(f), callAll: async (n, ...a) => { for (const f of hooks[n] ?? []) await f(...a); } };
-  globalThis.Actor = Actor; globalThis.Item = Item;
+  globalThis.Actor = Actor; globalThis.Item = Item; globalThis.ActiveEffect = ActiveEffect;
   globalThis.CONST = { DEFAULT_TOKEN: 'icons/svg/mystery-man.svg', CHAT_MESSAGE_STYLES: { OTHER: 0 } };
-  globalThis.CONFIG = { Actor: { dataModels: {} }, Item: { dataModels: {} }, Combat: {} };
+  globalThis.CONFIG = { Actor: { dataModels: {} }, Item: { dataModels: {} }, ActiveEffect: { documentClass: ActiveEffect }, Combat: {} };
   globalThis.ChatMessage = { implementation: { applyMode: (d) => ({ ...d, mode: 'applied' }), create: async (d) => { log.chat.push(d); return d; }, getSpeaker: ({ actor } = {}) => ({ actor: actor?.id }) } };
   globalThis.ui = { notifications: { info: (m) => log.notifications.push(['info', m]), warn: (m) => log.notifications.push(['warn', m]), error: (m) => log.notifications.push(['error', m]) } };
   const settings = new Map();
@@ -232,7 +311,7 @@ export function installMocks(repo) {
     system: { version: '24.0' },
     user: { id: 'gm', isGM: true },
     users: { activeGM: { isSelf: true } },
-    actors: new Collection(), items: new Collection(), packs: [], combats: new Collection(),
+    actors: new Collection(), items: new Collection(), packs: [], combats: new Collection(), scenes: new Collection(),
   };
   globalThis.fromUuidSync = (uuid) => game.actors.get(uuid.split('.').pop());
   globalThis.fromUuid = async (uuid) => fromUuidSync(uuid);

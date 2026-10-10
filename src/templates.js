@@ -13,12 +13,22 @@ const PARTIALS = [
   'actors/parts/actor-vtraits.hbs',
   'actors/parts/actor-wounds.hbs',
   'actors/parts/actor-languages.hbs',
-  'actors/parts/item-section.hbs',
+  'actors/parts/item-list.hbs',
   'actors/parts/item-row.hbs',
   'actors/parts/rank-circles.hbs',
   'parts/sheet-tabs.hbs',
+  'parts/effects-tab.hbs',
   'items/parts/item-header.hbs',
   'items/parts/item-editor.hbs',
+  // Chosen by item type in templates/items/item.hbs.
+  'items/parts/header-artifact.hbs',
+  'items/parts/header-background.hbs',
+  'items/parts/header-scheme.hbs',
+  'items/parts/header-secretsociety.hbs',
+  'items/parts/header-sorcery.hbs',
+  'items/parts/header-story.hbs',
+  'items/parts/tab-attributes.hbs',
+  'items/parts/tab-details.hbs',
 ];
 
 export function preloadHandlebarsTemplates() {

@@ -161,6 +161,18 @@
             }
         }
     },
+    "packs": [
+        {
+            "name": "effects",
+            "label": "7th Sea Effects",
+            "path": "packs/effects",
+            "type": "ActiveEffect",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        }
+    ],
     "grid": {
         "distance": 5,
         "units": "ft"

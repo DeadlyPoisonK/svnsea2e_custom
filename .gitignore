@@ -1,5 +1,9 @@
 node_modules/
 *.log
+# Compendium packs are LevelDB folders: their .log files are data
+!packs/**/*.log
+packs/**/LOCK
+packs/**/LOG*
 .DS_Store
 system.zip
 .claude/

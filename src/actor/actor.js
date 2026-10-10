@@ -94,7 +94,9 @@ export class SvnSea2EActor extends Actor {
     const update = {};
     for (const key of background.system.skills) {
       const skill = skills[key];
-      if (skill) update[`system.skills.${key}.value`] = clamp(skill.value + delta, skill.min, skill.max);
+      // From the stored rank: the prepared one may include the +1 of an active effect.
+      const stored = this._source.system.skills[key]?.value;
+      if (skill) update[`system.skills.${key}.value`] = clamp(stored + delta, skill.min, skill.max);
     }
     if (!foundry.utils.isEmpty(update)) await this.update(update);
   }

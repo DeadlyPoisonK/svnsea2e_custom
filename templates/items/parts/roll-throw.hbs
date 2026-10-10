@@ -1,4 +1,5 @@
 <div class="roll-dialog free-roll">
+  {{#if bonus.effects}}<p class="hint roll-effects">{{localize "SVNSEA2E.RollEffects"}}: {{bonus.effects}}</p>{{/if}}
   <div class="form-group dice-number">
     <label for="svnsea2e-roll-dice">{{localize "SVNSEA2E.DiceNumberLabel"}}</label>
     <input type="number" id="svnsea2e-roll-dice" name="diceNumber" value="1" min="1" step="1" autofocus />
@@ -7,11 +8,11 @@
     <legend>{{localize "SVNSEA2E.Advantages"}}</legend>
     <div class="form-group">
       <label for="svnsea2e-roll-addone">{{localize "SVNSEA2E.AddOneToDice"}}</label>
-      <input type="checkbox" id="svnsea2e-roll-addone" name="addOneToDice" value="1" />
+      <input type="checkbox" id="svnsea2e-roll-addone" name="addOneToDice" value="1" {{checked bonus.addOne}} />
     </div>
     <div class="form-group">
       <label for="svnsea2e-roll-joie">{{localize "SVNSEA2E.JoieDeVivre"}}</label>
-      <input type="checkbox" id="svnsea2e-roll-joie" name="joieDeVivreAdvantage" value="1" />
+      <input type="checkbox" id="svnsea2e-roll-joie" name="joieDeVivreAdvantage" value="1" {{checked bonus.joieDeVivre}} />
     </div>
     <div class="form-group">
       <label for="svnsea2e-roll-joie-rank">{{localize "SVNSEA2E.JoieSkillRank"}}</label>
@@ -19,14 +20,14 @@
     </div>
     <div class="form-group">
       <label for="svnsea2e-roll-explode">{{localize "SVNSEA2E.ExplodeTens"}}</label>
-      <input type="checkbox" id="svnsea2e-roll-explode" name="explodeDice" value="1" />
+      <input type="checkbox" id="svnsea2e-roll-explode" name="explodeDice" value="1" {{checked bonus.explode}} />
     </div>
   </fieldset>
   <fieldset>
     <legend>{{localize "SVNSEA2E.DangerPoints"}}</legend>
     <div class="form-group">
       <label for="svnsea2e-roll-threshold">{{localize "SVNSEA2E.IncreaseThreshold"}}</label>
-      <input type="checkbox" id="svnsea2e-roll-threshold" name="increaseThreshold" value="1" />
+      <input type="checkbox" id="svnsea2e-roll-threshold" name="increaseThreshold" value="1" {{checked bonus.increaseThreshold}} />
     </div>
   </fieldset>
 </div>

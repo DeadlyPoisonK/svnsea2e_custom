@@ -1,0 +1,26 @@
+{{!-- Every item sheet. The header fields of each type are in parts/header-<type>.hbs; each tab is a rich text field
+      or parts/tab-<id>.hbs (see ITEM_LAYOUTS in src/item/sheets.js). --}}
+<div class="sheet-content flexcol {{cssClass}}">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{img}}" data-action="editImage" data-edit="img" data-tooltip="{{name}}" alt="{{name}}" />
+    <div class="header-fields">
+      {{> "systems/svnsea2e/templates/items/parts/item-header.hbs"}}
+      {{#if headerPartial}}
+        {{> (lookup . "headerPartial")}}
+      {{/if}}
+    </div>
+  </header>
+  {{> "systems/svnsea2e/templates/parts/sheet-tabs.hbs"}}
+  <section class="sheet-body">
+    {{#each bodyTabs as |tab|}}
+      <div class="tab {{tab.id}} {{tab.cssClass}}" data-group="primary" data-tab="{{tab.id}}">
+        {{#if tab.editor}}
+          {{> "systems/svnsea2e/templates/items/parts/item-editor.hbs" .. field=tab.id}}
+        {{else}}
+          {{> (lookup tab "partial") ..}}
+        {{/if}}
+      </div>
+    {{/each}}
+    {{> "systems/svnsea2e/templates/parts/effects-tab.hbs"}}
+  </section>
+</div>

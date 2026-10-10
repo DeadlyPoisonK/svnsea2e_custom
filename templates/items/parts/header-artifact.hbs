@@ -1,0 +1,6 @@
+<div class="form-group">
+  <label for="{{item.id}}-artifactType">{{localize "SVNSEA2E.Type"}}</label>
+  <select class="artifact-type" id="{{item.id}}-artifactType" name="system.artifactType">
+    {{selectOptions config.artifactTypes selected=system.artifactType localize=true}}
+  </select>
+</div>

@@ -15,13 +15,13 @@
     <div class="tab features {{tabs.features.cssClass}}" data-group="primary" data-tab="features">
       {{> "systems/svnsea2e/templates/actors/parts/actor-vtraits.hbs"}}
       <ol class="items-list">
-        {{> "systems/svnsea2e/templates/actors/parts/item-section.hbs" section="monsterquality" label="SVNSEA2E.MonsterQualities" type="monsterquality" addTitle="SVNSEA2E.AddMonsterQuality"}}
-        {{#each monsterqualities as |item|}}
-          {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item}}
+        {{#each itemLists.features as |section|}}
+          {{> "systems/svnsea2e/templates/actors/parts/item-list.hbs" section=section}}
         {{/each}}
       </ol>
     </div>
     {{> "systems/svnsea2e/templates/actors/parts/actor-fate.hbs"}}
     {{> "systems/svnsea2e/templates/actors/parts/actor-concept.hbs"}}
+    {{> "systems/svnsea2e/templates/parts/effects-tab.hbs"}}
   </section>
 </div>

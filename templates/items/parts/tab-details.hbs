@@ -1,0 +1,18 @@
+<h3 class="skill-title">{{localize "SVNSEA2E.Skills"}}</h3>
+<div class="skills flexrow flex-group flex-left">
+  <ul class="tag-list">
+    {{#each selectedskills as |skill|}}
+      <li class="tag">{{skill}}</li>
+    {{/each}}
+  </ul>
+  {{#if editable}}<a class="skill-selector" data-action="selectSkills" data-tooltip="{{localize 'SVNSEA2E.BackgroundSkillSelect'}}"><i class="fa-solid fa-pen-to-square"></i></a>{{/if}}
+</div>
+<h3 class="advantages-title">{{localize "SVNSEA2E.Advantages"}}</h3>
+<div class="advantages flexrow flex-group flex-left">
+  <ul class="tag-list">
+    {{#each system.advantages as |advantage|}}
+      <li class="tag">{{advantage}}</li>
+    {{/each}}
+  </ul>
+  {{#if editable}}<a class="advantage-selector" data-action="selectAdvantages" data-tooltip="{{localize 'SVNSEA2E.BackgroundAdvantageSelect'}}"><i class="fa-solid fa-pen-to-square"></i></a>{{/if}}
+</div>

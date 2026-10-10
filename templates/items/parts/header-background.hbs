@@ -1,0 +1,6 @@
+<div class="form-group">
+  <label for="{{item.id}}-nation">{{localize "SVNSEA2E.Nation"}}</label>
+  <select id="{{item.id}}-nation" class="nation" name="system.nation">
+    {{selectOptions config.natTypes selected=system.nation localize=true}}
+  </select>
+</div>

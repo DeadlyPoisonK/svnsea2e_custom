@@ -1,11 +1,11 @@
-{{!-- One owned item. Hash: item, rowClass, used (show the "used" checkbox), toggle (background on/off), noThrow --}}
-<li class="item flexrow draggable {{rowClass}}" data-item-id="{{item.id}}">
-  {{#if toggle}}
+{{!-- One owned item. Hash: item, section (rowClass, used: "used" checkbox, toggle: background on/off, favor, noThrow) --}}
+<li class="item flexrow draggable {{section.rowClass}}" data-item-id="{{item.id}}">
+  {{#if section.toggle}}
     <a class="item-control item-toggle" data-action="toggleBackground" data-tooltip="{{localize 'SVNSEA2E.BackgroundToggleTooltip'}}">
       <i class="fa-regular {{#if item.system.active}}fa-square-check{{else}}fa-square{{/if}}"></i>
     </a>
   {{/if}}
-  {{#if noThrow}}
+  {{#if section.noThrow}}
     <div class="item-image"><img src="{{item.img}}" alt="{{item.name}}" /></div>
   {{else}}
     <div class="item-image item-throw" data-action="throwItem" data-tooltip="{{localize 'SVNSEA2E.SendToChat'}}"><img src="{{item.img}}" alt="{{item.name}}" /></div>
@@ -15,9 +15,9 @@
     {{#if item.system.knack}}<span data-tooltip="{{localize 'SVNSEA2E.Knack'}}"><i class="fa-solid fa-award"></i></span>{{/if}}
     {{#if item.system.innate}}<span data-tooltip="{{localize 'SVNSEA2E.Innate'}}"><i class="fa-solid fa-person"></i></span>{{/if}}
   </h4>
-  {{#if favor}}<span class="flavor tag"><strong>{{localize 'SVNSEA2E.Favor'}}</strong>: {{item.system.favor}}</span>{{/if}}
+  {{#if section.favor}}<span class="flavor tag"><strong>{{localize 'SVNSEA2E.Favor'}}</strong>: {{item.system.favor}}</span>{{/if}}
   <div class="item-controls">
-    {{#if used}}
+    {{#if section.used}}
       <input type="checkbox" class="item-control item-check" data-action="toggleUsed" data-tooltip="{{localize 'SVNSEA2E.Used'}}" {{checked item.system.used}} {{#unless @root.editable}}disabled{{/unless}} />
     {{/if}}
     <a class="item-control item-edit" data-action="editItem" data-tooltip="{{localize 'SVNSEA2E.Edit'}}"><i class="fa-solid fa-pen-to-square"></i></a>

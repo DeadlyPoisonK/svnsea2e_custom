@@ -1,0 +1,65 @@
+{{!-- The "Effects" tab of actor and item sheets (a plain section on sheets without tabs). Context: effects (see
+      prepareEffects in src/effects.js). Effects from a compendium are dropped anywhere on the sheet. --}}
+<div class="effects {{#if tabs.effects}}tab {{tabs.effects.cssClass}}{{/if}}" {{#if tabs.effects}}data-group="primary" data-tab="effects"{{/if}}>
+  <ol class="items-list effects-list">
+    {{#each effects.sections as |section|}}
+      <li class="flexrow item-header" data-section="{{section.id}}">
+        <h3 class="item-name flexrow">{{localize section.label}}</h3>
+        {{#if @root.editable}}
+          <div class="item-controls">
+            <a class="item-control effect-create" data-action="createEffect" data-section="{{section.id}}" data-tooltip="{{localize 'SVNSEA2E.NewEffect'}}">
+              <i class="fa-solid fa-plus"></i> {{localize "SVNSEA2E.Add"}}
+            </a>
+          </div>
+        {{/if}}
+      </li>
+      {{#each section.effects as |effect|}}
+        <li class="item effect flexrow draggable" data-effect-id="{{effect.id}}">
+          <div class="item-image"><img src="{{effect.img}}" alt="{{effect.name}}" /></div>
+          <h4 class="item-name" data-action="editEffect">{{effect.name}}</h4>
+          <div class="effect-changes">{{effect.changes}}</div>
+          <div class="effect-duration">{{effect.duration}}</div>
+          <div class="item-controls">
+            {{#if @root.editable}}
+              <a class="item-control" data-action="toggleEffect" data-tooltip="{{localize (ifThen effect.disabled 'SVNSEA2E.EffectEnable' 'SVNSEA2E.EffectDisable')}}">
+                <i class="fa-solid {{#if effect.disabled}}fa-toggle-off{{else}}fa-toggle-on{{/if}}"></i>
+              </a>
+            {{/if}}
+            <a class="item-control" data-action="editEffect" data-tooltip="{{localize 'SVNSEA2E.Edit'}}"><i class="fa-solid fa-pen-to-square"></i></a>
+            {{#if @root.editable}}
+              <a class="item-control" data-action="deleteEffect" data-tooltip="{{localize 'SVNSEA2E.Delete'}}"><i class="fa-solid fa-trash"></i></a>
+            {{/if}}
+          </div>
+        </li>
+      {{/each}}
+    {{/each}}
+
+    {{#if effects.isActor}}
+      <li class="flexrow item-header" data-section="inherited">
+        <h3 class="item-name flexrow">{{localize "SVNSEA2E.EffectsInherited"}}</h3>
+      </li>
+      {{#each effects.inherited as |effect|}}
+        <li class="item effect inherited flexrow draggable {{#unless effect.active}}inactive{{/unless}}" data-item-id="{{effect.itemId}}" data-effect-id="{{effect.id}}">
+          <div class="item-image"><img src="{{effect.img}}" alt="{{effect.name}}" /></div>
+          <h4 class="item-name" data-action="openEffectSource" data-tooltip="{{localize 'SVNSEA2E.EffectOpenSource'}}">{{effect.name}}</h4>
+          <div class="effect-changes">{{effect.changes}}</div>
+          <div class="effect-source">
+            <a data-action="openEffectSource" data-tooltip="{{localize 'SVNSEA2E.EffectOpenSource'}}">{{effect.itemName}}</a>
+          </div>
+          <div class="item-controls">
+            {{#if effect.active}}
+              <i class="fa-solid fa-check" data-tooltip="{{localize 'SVNSEA2E.EffectActive'}}"></i>
+            {{else if effect.suppressed}}
+              <i class="fa-solid fa-ban" data-tooltip="{{localize 'SVNSEA2E.EffectSuppressed'}}"></i>
+            {{else}}
+              <i class="fa-solid fa-toggle-off" data-tooltip="{{localize 'SVNSEA2E.EffectDisabled'}}"></i>
+            {{/if}}
+          </div>
+        </li>
+      {{else}}
+        <li class="item effect empty"><span class="hint">{{localize "SVNSEA2E.EffectsInheritedNone"}}</span></li>
+      {{/each}}
+    {{/if}}
+  </ol>
+  {{#if @root.editable}}<p class="hint effects-hint">{{localize "SVNSEA2E.EffectsDropHint"}}</p>{{/if}}
+</div>

@@ -22,7 +22,8 @@ import { ShipSheet } from './actor/sheets/ship.js';
 
 import { SvnSea2EItem } from './item/item.js';
 import * as itemModels from './item/models.js';
-import * as itemSheets from './item/sheets.js';
+import { SvnSea2EItemSheet } from './item/sheets.js';
+import { SvnSea2EActiveEffect, onRenderActiveEffectConfig } from './effects.js';
 import { rollDicePool } from './roll/roll.js';
 import { rollFreeDice, rollSkill, rollTrait } from './roll/dialogs.js';
 
@@ -44,6 +45,7 @@ Hooks.once('init', () => {
 
   CONFIG.Actor.documentClass = SvnSea2EActor;
   CONFIG.Item.documentClass = SvnSea2EItem;
+  CONFIG.ActiveEffect.documentClass = SvnSea2EActiveEffect;
 
   Object.assign(CONFIG.Actor.dataModels, {
     [ActorType.BRUTE]: actorModels.BruteModel,
@@ -98,19 +100,7 @@ function registerSheets() {
   register(Actor, ShipSheet, ActorType.SHIP);
   register(Actor, DangerPointsSheet, ActorType.DANGERPOINTS);
 
-  register(Item, itemSheets.AdvantageSheet, ItemTypes.ADVANTAGE);
-  register(Item, itemSheets.ArtifactSheet, ItemTypes.ARTIFACT);
-  register(Item, itemSheets.BackgroundSheet, ItemTypes.BACKGROUND);
-  register(Item, itemSheets.DuelStyleSheet, ItemTypes.DUEL_STYLE);
-  register(Item, itemSheets.MonsterQualitySheet, ItemTypes.MONSTER_QUALITY);
-  register(Item, itemSheets.SchemeSheet, ItemTypes.SCHEME);
-  register(Item, itemSheets.SecretSocietySheet, ItemTypes.SECRET_SOCIETY);
-  register(Item, itemSheets.ShipAdventureSheet, ItemTypes.SHIP_ADVENTURE);
-  register(Item, itemSheets.ShipBackgroundSheet, ItemTypes.SHIP_BACKGROUND);
-  register(Item, itemSheets.SorcerySheet, ItemTypes.SORCERY);
-  register(Item, itemSheets.StorySheet, ItemTypes.STORY);
-  register(Item, itemSheets.VirtueSheet, ItemTypes.VIRTUE);
-  register(Item, itemSheets.HubrisSheet, ItemTypes.HUBRIS);
+  DocumentSheetConfig.registerSheet(Item, SYSTEM_ID, SvnSea2EItemSheet, { types: Object.values(ItemTypes), makeDefault: true });
 }
 
 /** Localize and sort the configuration lists once translations are available. */
@@ -132,10 +122,17 @@ Hooks.once('ready', async () => {
   game.svnsea2e.toolbox.render(true);
 });
 
-// Keep the toolbox up to date when one of its actors changes (the hook runs on every client).
+// Keep the toolbox up to date when one of its actors changes (the hooks run on every client). Effects may change
+// the maximum wounds.
 Hooks.on('updateActor', (actor) => {
   if (game.svnsea2e.toolbox.shows(actor)) game.svnsea2e.toolbox.render();
 });
+for (const hook of ['createActiveEffect', 'updateActiveEffect', 'deleteActiveEffect']) {
+  Hooks.on(hook, (effect) => {
+    const actor = effect.actor;
+    if (actor && game.svnsea2e.toolbox.shows(actor)) game.svnsea2e.toolbox.render();
+  });
+}
 
 for (const hook of ['createItem', 'updateItem', 'deleteItem']) Hooks.on(hook, invalidateAdvantageCache);
 
@@ -155,4 +152,5 @@ Hooks.on('renderActorDirectory', (app, html) => {
 });
 
 Hooks.on('renderCombatTracker', onRenderCombatTracker);
+Hooks.on('renderActiveEffectConfig', onRenderActiveEffectConfig);
 Hooks.on('renderChatMessageHTML', onRenderChatMessage);

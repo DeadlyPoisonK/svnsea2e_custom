@@ -8,6 +8,7 @@
   "scripts": {
     "build": "vite build",
     "watch": "vite build --watch --mode development",
+    "build:packs": "node tools/build-packs.mjs",
     "lint": "eslint src",
     "check": "npm run lint && npm run build && node tools/check.mjs",
     "test": "npm run check && node tests/run.mjs"

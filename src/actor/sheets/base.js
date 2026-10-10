@@ -1,14 +1,51 @@
 import { ActorType, ItemTypes, TEMPLATES } from '../../enums.js';
-import { enrichHTML, isValidGlamorIsles } from '../../helpers.js';
+import { enrichHTML, isValidGlamorIsles, itemsOfType } from '../../helpers.js';
 import { ChoiceSelector } from '../../apps/choice-selector.js';
 import { rollFreeDice, rollSkill, rollTrait } from '../../roll/dialogs.js';
+import { EFFECT_ACTIONS, prepareEffects, withEffectsTab } from '../../effects.js';
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
 
 /**
+ * How each item type is listed on the actor sheets (see templates/actors/parts/item-list.hbs): the section label,
+ * the tooltip of its "Add" button, CSS classes, and whether the rows show the "used" checkbox, the background toggle,
+ * the favor, or an image that does not send the item to chat.
+ */
+const ITEM_SECTIONS = {
+  [ItemTypes.ADVANTAGE]: { label: 'SVNSEA2E.Advantage', addTitle: 'SVNSEA2E.AddAdvantage', cssClass: 'advantage', used: true },
+  [ItemTypes.DUEL_STYLE]: { label: 'SVNSEA2E.DuelingStyles', addTitle: 'SVNSEA2E.AddDuelStyle', cssClass: 'duelingstyle', used: true },
+  [ItemTypes.BACKGROUND]: { label: 'SVNSEA2E.Backgrounds', addTitle: 'SVNSEA2E.AddBackground', cssClass: 'background', used: true, toggle: true },
+  [ItemTypes.SECRET_SOCIETY]: { label: 'SVNSEA2E.SecretSociety', addTitle: 'SVNSEA2E.AddSecretSociety', cssClass: 'secretsociety', favor: true },
+  [ItemTypes.MONSTER_QUALITY]: { label: 'SVNSEA2E.MonsterQualities', addTitle: 'SVNSEA2E.AddMonsterQuality', used: true },
+  [ItemTypes.SCHEME]: { label: 'SVNSEA2E.Schemes', addTitle: 'SVNSEA2E.AddScheme', used: true },
+  [ItemTypes.VIRTUE]: { label: 'SVNSEA2E.Virtue', addTitle: 'SVNSEA2E.AddVirtue', cssClass: 'story', used: true },
+  [ItemTypes.HUBRIS]: { label: 'SVNSEA2E.Hubris', addTitle: 'SVNSEA2E.AddHubris', cssClass: 'story', used: true },
+  [ItemTypes.STORY]: { label: 'SVNSEA2E.Stories', addTitle: 'SVNSEA2E.AddStory', cssClass: 'story' },
+  [ItemTypes.ARTIFACT]: { label: 'SVNSEA2E.Artifacts', addTitle: 'SVNSEA2E.AddArtifact', cssClass: 'artifacts', used: true },
+  [ItemTypes.SORCERY]: { addTitle: 'SVNSEA2E.Sorcery', cssClass: 'sorcery', used: true },
+  [ItemTypes.SHIP_ADVENTURE]: { label: 'SVNSEA2E.Adventures', addTitle: 'SVNSEA2E.AddShipAdventure', cssClass: 'story', rowClass: 'adventure', noThrow: true },
+  [ItemTypes.SHIP_BACKGROUND]: { label: 'SVNSEA2E.Backgrounds', addTitle: 'SVNSEA2E.AddShipBackground', cssClass: 'story', rowClass: 'background', noThrow: true },
+};
+
+/**
+ * The sections of an item list, each one with the actor's items of its type sorted by name.
+ * @param {Actor} actor
+ * @param {(string|[string, object])[]} types  Item types, or [type, options that replace the defaults].
+ */
+export function itemSections(actor, types) {
+  return types.map((entry) => {
+    const [type, options] = Array.isArray(entry) ? entry : [entry, {}];
+    const section = { type, ...ITEM_SECTIONS[type], ...options, items: itemsOfType(actor, type) };
+    section.rowClass ??= section.cssClass;
+    return section;
+  });
+}
+
+/**
  * Base sheet shared by every actor type.
- * Subclasses define PARTS (one template), TABS and `_prepareItems(context)`.
+ * Subclasses define PARTS (one template), TABS and `_prepareItems(context)`. Sheets with tabs get an "Effects" tab
+ * at the end (templates/parts/effects-tab.hbs).
  */
 export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
@@ -26,13 +63,13 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
       toggleUsed: SvnSea2EActorSheet.#onToggleUsed,
       toggleBackground: SvnSea2EActorSheet.#onToggleBackground,
       toggleSection: SvnSea2EActorSheet.#onToggleSection,
-      toggleHtk: SvnSea2EActorSheet.#onToggleHtk,
       selectLanguages: SvnSea2EActorSheet.#onSelectLanguages,
       setRank: SvnSea2EActorSheet.#onSetRank,
       setWounds: SvnSea2EActorSheet.#onSetWounds,
       rollSkill: SvnSea2EActorSheet.#onRollSkill,
       rollTrait: SvnSea2EActorSheet.#onRollTrait,
       freeRoll: SvnSea2EActorSheet.#onFreeRoll,
+      ...EFFECT_ACTIONS,
     },
   };
 
@@ -66,12 +103,19 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
       img: actor.img,
       traits: this._prepareTraits(),
       selectedlangs: this._prepareLanguages(),
+      effects: prepareEffects(actor),
     });
+    if (system.fear) context.fearLocked = this._isModified('system.fear.value');
     if (typeof system.concept === 'string') {
       context.enrichedConcept = await enrichHTML(system.concept, { secrets: actor.isOwner, relativeTo: actor });
     }
     this._prepareItems(context);
     return context;
+  }
+
+  /** @override */
+  _getTabsConfig(group) {
+    return withEffectsTab(super._getTabsConfig(group));
   }
 
   /** @override */
@@ -82,6 +126,11 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
   /** Add the actor's items, grouped by type, to the context. */
   _prepareItems(context) {}
 
+  /** Whether an active effect changes this value: the sheet shows the result, but cannot edit it. */
+  _isModified(path) {
+    return foundry.utils.hasProperty(this.actor.overrides ?? {}, path);
+  }
+
   /** Traits with their localized label. */
   _prepareTraits() {
     if (!this.actor.system.traits) return [];
@@ -89,6 +138,7 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
       ...trait,
       name,
       label: CONFIG.SVNSEA2E.traits[name],
+      locked: this._isModified(`system.traits.${name}.value`),
     }));
   }
 
@@ -119,9 +169,11 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
     }
   }
 
+  /** Rows of items, effects (of the actor or of one of its items) and ship crew members. */
   #onDragRow(event) {
-    const row = event.currentTarget;
-    const dragged = row.dataset.itemId ? this.actor.items.get(row.dataset.itemId) : game.actors.get(row.dataset.actorId);
+    const { itemId, effectId, actorId } = event.currentTarget.dataset;
+    const item = itemId ? this.actor.items.get(itemId) : null;
+    const dragged = effectId ? (item ?? this.actor).effects.get(effectId) : (item ?? game.actors.get(actorId));
     if (dragged) event.dataTransfer.setData('text/plain', JSON.stringify(dragged.toDragData()));
   }
 
@@ -205,20 +257,6 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
     this.#setSectionCollapsed(target, collapsed);
   }
 
-  /** Hard To Kill: one more dramatic wound. The maxima are derived by the data model. */
-  static async #onToggleHtk(event, target) {
-    if (!this.isEditable) return;
-    const system = this.actor.system;
-    const update = { 'system.htk': !system.htk };
-    if (system.htk) {
-      // Turning it off: the wounds marked in the lost dramatic wound go too.
-      const dramatic = system.dwounds.max - 1;
-      update['system.wounds.value'] = Math.min(system.wounds.value, dramatic * system.woundsPerDramatic);
-      update['system.dwounds.value'] = Math.min(system.dwounds.value, dramatic);
-    }
-    await this.actor.update(update);
-  }
-
   static #onSelectLanguages(event, target) {
     if (!this.isEditable) return;
     new ChoiceSelector({
@@ -234,8 +272,8 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
    * it; a rank never goes below its minimum (2 for hero traits, 1 for Strength).
    */
   static async #onSetRank(event, target) {
-    if (!this.isEditable) return;
     const name = target.dataset.name;
+    if (!this.isEditable || this._isModified(name)) return;
     let value = parseInt(target.dataset.value);
     // `name` is the stored value: a rank's `value`, or a plain number like the corruption points.
     const rank = foundry.utils.getProperty(this.actor, name.replace(/\.value$/, ''));

@@ -32,7 +32,7 @@ jobs:
             fs.writeFileSync("system.json", JSON.stringify(m, null, 4) + "\n");
           '
       - name: Package
-        run: zip -r system.zip system.json svnsea2e.mjs svnsea2e.mjs.map svnsea2e.css templates lang icons imgs LICENSE README.md
+        run: zip -r system.zip system.json svnsea2e.mjs svnsea2e.mjs.map svnsea2e.css templates lang icons imgs packs LICENSE README.md -x 'packs/_source/*'
       - uses: softprops/action-gh-release@v2
         with:
           files: |

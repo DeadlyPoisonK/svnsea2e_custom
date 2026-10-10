@@ -20,28 +20,14 @@
         <input type="number" name="system.wealth" value="{{system.wealth}}" id="{{actor.id}}-wealth" min="0" step="1" />
       </span>
     </div>
-    {{!-- Hard To Kill --}}
-    <a class="htk-control" data-action="toggleHtk" data-tooltip="{{localize "SVNSEA2E.HtkToggleTooltip"}}">
-      {{#if system.htk}}
-        <span class="htk-on"><i class="fa-solid fa-heart"></i> {{localize "SVNSEA2E.HtkOn"}}</span>
-      {{else}}
-        <span class="htk-off"><i class="fa-solid fa-heart-crack"></i> {{localize "SVNSEA2E.HtkOff"}}</span>
-      {{/if}}
-    </a>
+    {{!-- Hard To Kill: turned on by an active effect (Effects tab) --}}
+    {{#if system.htk}}<span class="htk-badge" data-tooltip="{{localize 'SVNSEA2E.HtkTooltip'}}"><i class="fa-solid fa-heart"></i> {{localize "SVNSEA2E.HardToKill"}}</span>{{/if}}
   </div>
 {{/if}}
 
-{{#if isVillain}}
-  <div class="flex-group-left htk-row">
-    <a class="htk-control" data-action="toggleHtk" data-tooltip="{{localize "SVNSEA2E.HtkToggleVillainTooltip"}}">
-      {{#if system.htk}}
-        <span class="htk-on"><i class="fa-solid fa-heart"></i> {{localize "SVNSEA2E.HtkOn"}}</span>
-      {{else}}
-        <span class="htk-off"><i class="fa-solid fa-heart-crack"></i> {{localize "SVNSEA2E.HtkOff"}}</span>
-      {{/if}}
-    </a>
-  </div>
-{{/if}}
+{{#unless isPlayerCharacter}}
+  {{#if system.htk}}<div class="flex-group-left htk-row"><span class="htk-badge" data-tooltip="{{localize 'SVNSEA2E.HtkTooltip'}}"><i class="fa-solid fa-heart"></i> {{localize "SVNSEA2E.HardToKill"}}</span></div>{{/if}}
+{{/unless}}
 
 {{!-- Wound track: every group ends with a dramatic wound (red heart). --}}
 <div class="flex-group-left wounds">

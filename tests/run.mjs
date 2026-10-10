@@ -32,7 +32,9 @@ ok(sheetClasses['Actor.playercharacter'] === 'PlayerCharacterSheet', 'PC sheet c
 
 // Grab classes through a second registration pass.
 const classes = {};
-foundry.applications.apps.DocumentSheetConfig.registerSheet = (doc, scope, sheet, cfg) => (classes[`${doc.name}.${cfg.types[0]}`] = sheet);
+foundry.applications.apps.DocumentSheetConfig.registerSheet = (doc, scope, sheet, cfg) => {
+  for (const type of cfg.types) classes[`${doc.name}.${type}`] = sheet;
+};
 await Hooks.callAll('init');
 
 // ---------- Player character ----------
@@ -41,21 +43,26 @@ ok(pc.img === 'systems/svnsea2e/icons/playercharacter.jpg', 'default actor icon'
 ok(pc.system.wounds.max === 20 && pc.system.dwounds.max === 4, 'hero wounds 20/4');
 const pcSheet = new classes['Actor.playercharacter']({ document: pc });
 await pcSheet.render();
-ok(pcSheet.element.querySelectorAll('[data-action="tab"]').length === 6, 'pc tabs rendered');
+ok(pcSheet.element.querySelectorAll('[data-action="tab"]').length === 7, 'pc tabs rendered');
 ok(pcSheet.element.querySelector('.tab.traits.active'), 'traits tab active');
+ok([...pcSheet.element.querySelectorAll('[data-action="tab"]')].at(-1).dataset.tab === 'effects', 'effects tab last');
 
-await pcSheet.click('[data-action="toggleHtk"]');
-ok(pc.system.htk && pc.system.wounds.max === 25 && pc.system.dwounds.max === 5, 'HtK on → 25/5');
+// Hard To Kill comes from an active effect: no toggle on the sheet. Saved in the "final" phase on purpose: the
+// system keys always apply in the "initial" one, before the maxima are derived.
+ok(!pcSheet.element.querySelector('[data-action="toggleHtk"]'), 'no Hard To Kill toggle');
+const [htkEffect] = await pc.createEmbeddedDocuments('ActiveEffect', [{ name: 'HtK', system: { changes: [{ key: 'system.htk', type: 'override', value: 'true', phase: 'final' }] } }]);
+ok(pc.system.htk && pc.system.wounds.max === 25 && pc.system.dwounds.max === 5 && pc._source.system.htk === false, 'HtK effect → 25/5');
 await pcSheet.render();
-ok(pcSheet.element.querySelectorAll('[data-type="dwounds"]').length === 5, '5 dramatic hearts after HtK');
+ok(pcSheet.element.querySelectorAll('[data-type="dwounds"]').length === 5 && pcSheet.element.querySelector('.htk-badge'), '5 dramatic hearts and the HtK badge');
 
 await pcSheet.click('[data-action="setWounds"][data-type="wounds"][data-value="12"]');
 ok(pc.system.wounds.value === 12 && pc.system.dwounds.value === 2, 'wounds 12 → dramatic 2');
 await pcSheet.render();
 await pcSheet.click('[data-action="setWounds"][data-type="dwounds"][data-value="2"]');
 ok(pc.system.dwounds.value === 1 && pc.system.wounds.value === 12, 'click current dramatic → -1, normal wounds untouched');
-await pcSheet.click('[data-action="toggleHtk"]');
-ok(!pc.system.htk && pc.system.wounds.max === 20, 'HtK off');
+await htkEffect.update({ disabled: true });
+ok(!pc.system.htk && pc.system.wounds.max === 20 && pc.system.dwounds.max === 4, 'HtK effect disabled → 20/4');
+await htkEffect.delete();
 
 await pcSheet.render();
 await pcSheet.click('[data-action="setRank"][data-key="brawn"][data-value="4"]');
@@ -228,9 +235,9 @@ await pcSheet.click('[data-action="selectLanguages"]');
 const villain = await make('villain');
 ok(villain.system.wounds.max === 24 && villain.system.villainy === 10, `villain derived (${villain.system.wounds.max}, ${villain.system.villainy})`);
 const vSheet = new classes['Actor.villain']({ document: villain });
+await villain.createEmbeddedDocuments('ActiveEffect', [{ name: 'HtK', system: { changes: [{ key: 'system.htk', type: 'override', value: 'true' }] } }]);
+ok(villain.system.dwounds.max === 5 && villain.system.wounds.max === 30, 'villain HtK effect 30/5');
 await vSheet.render();
-await vSheet.click('[data-action="toggleHtk"]');
-ok(villain.system.dwounds.max === 5 && villain.system.wounds.max === 30, 'villain HtK 30/5');
 await vSheet.render();
 await vSheet.click('[data-action="setWounds"][data-type="wounds"][data-value="13"]');
 ok(villain.system.dwounds.value === 2, 'villain group size 6');
@@ -281,11 +288,16 @@ await sSheet.click('[data-action="removeCrew"]');
 ok(ship.system.crew.length === 0, 'crew removed');
 
 // ---------- Items ----------
+const itemFields = { artifact: 'system.artifactType', background: 'system.nation', scheme: 'system.influence.value', secretsociety: 'system.favor', sorcery: 'system.sorcsubcat', story: 'system.status' };
+const itemTabs = { advantage: 3, background: 4, duelstyle: 3, secretsociety: 5, story: 5 };
 for (const type of ['advantage', 'artifact', 'background', 'duelstyle', 'monsterquality', 'scheme', 'secretsociety', 'shipadventure', 'shipbackground', 'sorcery', 'story', 'virtue', 'hubris']) {
   const item = await Item.create({ name: type, type });
   const sheet = new classes[`Item.${type}`]({ document: item });
   await sheet.render();
-  ok(sheet.element.querySelector('prose-mirror[name="system.description"]') && sheet.element.querySelector('.tab.active'), `item sheet ${type}`);
+  ok(sheet.element.querySelector('prose-mirror[name="system.description"]') && sheet.element.querySelector('.tab.description.active'), `item sheet ${type}`);
+  const tabs = [...sheet.element.querySelectorAll('[data-action="tab"]')].map((t) => t.dataset.tab);
+  ok(tabs.length === (itemTabs[type] ?? 2) && tabs.at(-1) === 'effects' && sheet.element.querySelector('.tab.effects[data-tab="effects"]'), `item sheet ${type}: ${tabs.join(', ')}`);
+  if (itemFields[type]) ok(sheet.element.querySelector(`.header-fields [name="${itemFields[type]}"]`), `item sheet ${type}: header fields`);
   const data = await item.getChatData();
   ok(typeof data.metadatahtml === 'string', `chat data ${type}`);
 }
@@ -296,6 +308,83 @@ const society = await Item.create({ name: 'ss', type: 'secretsociety', system: {
 ok(society.system.favor === 2 && (await Item.create({ name: 'ss2', type: 'secretsociety', system: { favor: '' } })).system.favor === 0, 'favor text becomes a number');
 ok((await society.getChatData()).callupon.startsWith('<enriched>'), 'use favor is enriched in chat');
 ok((await Item.create({ name: 'a', type: 'advantage', system: { cost: { normal: 1.6, reducecost: -1 } } })).system.cost.normal === 2, 'advantage cost is a whole number');
+{
+  const sheet = new classes['Item.advantage']({ document: await Item.create({ name: 'adv', type: 'advantage' }) });
+  await sheet.render();
+  ok(sheet.element.querySelector('.tab.attributes [name="system.cost.normal"]'), 'advantage attributes tab');
+  const bgSheet = new classes['Item.background']({ document: await Item.create({ name: 'bg', type: 'background' }) });
+  await bgSheet.render();
+  ok(bgSheet.element.querySelector('.tab.details [data-action="selectSkills"]') && bgSheet.element.querySelector('.tab.quirk prose-mirror[name="system.quirk"]'), 'background details and quirk tabs');
+  const wide = new classes['Item.secretsociety']({ document: await Item.create({ name: 'ss3', type: 'secretsociety' }) });
+  ok(wide.options.position.width === 800 && sheet.options.position.width === 600, 'secret society sheet is wider');
+}
+
+// ---------- Active effects ----------
+{
+  const fx = await make('playercharacter', { name: 'Effects' });
+  const fxSheet = new classes['Actor.playercharacter']({ document: fx });
+  await fxSheet.render();
+  ok(fxSheet.element.querySelectorAll('.tab.effects .item-header').length === 4, 'effects tab: temporary, passive, inactive, from items');
+
+  // Effects of the actor: created from each section, toggled, deleted.
+  await fxSheet.click('[data-action="createEffect"][data-section="temporary"]');
+  await fxSheet.click('[data-action="createEffect"][data-section="inactive"]');
+  const [temporary, inactive] = fx.effects.contents;
+  ok(temporary.isTemporary && temporary.active && inactive.disabled && log.updates.some(([k, n]) => k === 'effectSheet' && n === 'New Effect'), 'effects created from the sections, sheet opened');
+  await fxSheet.render();
+  ok(fxSheet.element.querySelector(`[data-section="temporary"] ~ [data-effect-id="${temporary.id}"]`), 'temporary effect listed');
+  await fxSheet.click(`[data-effect-id="${inactive.id}"] [data-action="toggleEffect"]`);
+  ok(!inactive.disabled, 'effect enabled from the sheet');
+  await fxSheet.click(`[data-effect-id="${temporary.id}"] [data-action="deleteEffect"]`);
+  await fxSheet.click(`[data-effect-id="${inactive.id}"] [data-action="deleteEffect"]`);
+  ok(fx.effects.size === 0, 'effects deleted from the sheet');
+
+  // An advantage transfers its effects: +1 Aim (the rank stays within its bounds) and 2 extra dice on Aim rolls.
+  await fx.update({ 'system.skills.aim.value': 2 });
+  const advantage = await Item.create({ name: 'Sharpshooter', type: 'advantage' });
+  await advantage.createEmbeddedDocuments('ActiveEffect', [{ name: 'Keen eye', system: { changes: [
+    { key: 'system.skills.aim.value', type: 'add', value: '1' },
+    { key: 'system.rollBonus.skills.aim', type: 'add', value: '2' },
+    { key: 'system.rollBonus.addOne', type: 'override', value: 'true' },
+  ] } }]);
+  await fxSheet._onDropItem({}, advantage);
+  const owned = fx.items.find((i) => i.name === 'Sharpshooter');
+  ok(owned.effects.size === 1 && fx.system.skills.aim.value === 3 && fx._source.system.skills.aim.value === 2, 'item effect transferred: Aim 2 + 1');
+  ok(fx.system.rollBonus.skills.aim === 2 && fx.system.rollBonus.addOne && fx.system.rollBonus.dice === 0, 'roll bonuses from the effect');
+  await fxSheet.render();
+  const aimCircles = fxSheet.element.querySelector('[data-key="aim"]').closest('.rank-circles');
+  ok(aimCircles.classList.contains('locked') && !aimCircles.querySelector('[data-action]'), 'a rank changed by an effect is shown but not clickable');
+  const inherited = fxSheet.element.querySelector(`.effect.inherited[data-item-id="${owned.id}"]`);
+  ok(inherited?.textContent.includes('Sharpshooter') && inherited.textContent.includes('Skill: Aim +1') && !inherited.querySelector('[data-action="deleteEffect"], [data-action="toggleEffect"]'), 'inherited effect: source item, changes, no delete');
+  await fxSheet.click(`.effect.inherited [data-action="openEffectSource"]`);
+  ok(owned.sheet.tabGroups.primary === 'effects' && log.updates.at(-1)[0] === 'sheet', 'inherited effect opens its item on the effects tab');
+
+  // The roll dialog starts with the extra dice and options of the effects.
+  MockRoll.next = [1, 1, 1, 1, 1, 1, 1, 1];
+  await fxSheet.click('[data-action="rollSkill"][data-label="aim"]');
+  const dialog = log.dialogs.at(-1).content;
+  ok(/name="bonusDice" value="2"/.test(dialog) && /name="addOneToDice" value="1" checked/.test(dialog) && dialog.includes('From effects: Keen eye'), 'skill dialog filled by the effects');
+  ok(log.chat.at(-1).rolls[0].formula === '7d10', `Aim 3 + Brawn 2 + 2 extra dice (${log.chat.at(-1).rolls[0].formula})`);
+  await fxSheet.click('[data-action="rollTrait"][data-label="wits"]');
+  ok(/name="bonusDice" value="0"/.test(log.dialogs.at(-1).content), 'Aim dice are not added to other rolls');
+
+  // A background adds +1 to the stored rank, not to the one raised by the effect.
+  const sailor = await Item.create({ name: 'Marksman', type: 'background', system: { skills: ['aim'], nation: 'none' } });
+  await fxSheet._onDropItem({}, sailor);
+  await settle();
+  ok(fx._source.system.skills.aim.value === 3 && fx.system.skills.aim.value === 4, 'background +1 on the stored rank');
+
+  // Effects of an inactive background are suppressed.
+  const fxBg = fx.items.find((i) => i.type === 'background');
+  await fxBg.createEmbeddedDocuments('ActiveEffect', [{ name: 'Sea legs', system: { changes: [{ key: 'system.rollBonus.dice', type: 'add', value: '1' }] } }]);
+  ok(fx.system.rollBonus.dice === 1, 'active background effect applies');
+  await fx.toggleBackground(fxBg);
+  ok(fx.system.rollBonus.dice === 0 && fxBg.effects.contents[0].isSuppressed, 'inactive background effect suppressed');
+
+  // Deleting the advantage takes its effect away.
+  await owned.delete();
+  ok(fx.system.skills.aim.value === 2 && !fx.system.rollBonus.addOne, 'effect gone with its item');
+}
 
 // ---------- Toolbox ----------
 const tb = game.svnsea2e.toolbox;
@@ -346,6 +435,42 @@ ok(combatant.initiative === 3 && pc.system.initiative === 3, 'combat +1 updates 
   await oldShip.update({ 'system.crew': [] });
   await game.svnsea2e.migrations.migrateWorldIfNeeded();
   ok(oldShip.system.crew.length === 0, 'migration runs once');
+}
+
+// ---------- Migration to v25: Hard To Kill toggle → active effect ----------
+{
+  const htkEffects = (doc) => doc.effects.filter((e) => e.system.changes.some((c) => c.key === 'system.htk'));
+  const withAdvantage = await make('playercharacter', { name: 'Tough', system: { htk: true } });
+  await withAdvantage.createEmbeddedDocuments('Item', [{ name: 'Duro de Matar', type: 'advantage' }]);
+  const withoutAdvantage = await make('villain', { name: 'Brute force', system: { htk: true } });
+  const toggleOff = await make('hero', { name: 'Unsure' });
+  await toggleOff.createEmbeddedDocuments('Item', [{ name: 'Hard To Kill', type: 'advantage' }]);
+  const worldAdvantage = await Item.create({ name: 'Hard to kill ', type: 'advantage' }); game.items.set(worldAdvantage.id, worldAdvantage);
+  // An unlinked token whose own data turned Hard To Kill on.
+  const tokenActor = await make('villain', { name: 'Token' });
+  tokenActor._token = { delta: { _source: { system: { htk: true } } } };
+  tokenActor._source.system.htk = true; tokenActor.prepareData();
+  game.actors.delete(tokenActor.id);
+  game.scenes.set('scene', { tokens: [{ actorLink: false, actor: tokenActor }] });
+  ok(withAdvantage.system.dwounds.max === 5 && withoutAdvantage.system.wounds.max === 30, 'v24 Hard To Kill toggles on');
+
+  await settings.set('systemMigrationVersion', '24.0');
+  await game.svnsea2e.migrations.migrateWorldIfNeeded();
+  const advantage = withAdvantage.items.find((i) => i.type === 'advantage');
+  ok(htkEffects(advantage).length === 1 && htkEffects(withAdvantage).length === 0 && withAdvantage._source.system.htk === false, 'effect on the Hard To Kill advantage, stored htk false');
+  ok(withAdvantage.system.dwounds.max === 5 && withAdvantage.system.wounds.max === 25, 'hero keeps 5 dramatic wounds');
+  ok(htkEffects(withoutAdvantage).length === 1 && withoutAdvantage.system.wounds.max === 30 && withoutAdvantage.system.dwounds.max === 5, 'villain without the advantage: effect on the actor, still 30/5');
+  ok(htkEffects(withoutAdvantage)[0].name === 'Hard To Kill', 'effect named after the advantage');
+  await htkEffects(withoutAdvantage)[0].update({ disabled: true });
+  ok(withoutAdvantage.system.dwounds.max === 4 && withoutAdvantage.system.wounds.max === 24, 'effect disabled → back to 4 dramatic wounds');
+  const offEffect = htkEffects(toggleOff.items.contents[0])[0];
+  ok(offEffect?.disabled && toggleOff.system.dwounds.max === 4, 'advantage without the toggle on: disabled effect, wounds unchanged');
+  ok(htkEffects(worldAdvantage).length === 1 && !htkEffects(worldAdvantage)[0].disabled, 'world advantage gets the effect');
+  ok(htkEffects(tokenActor).length === 1 && tokenActor._source.system.htk === false && tokenActor.system.dwounds.max === 5, 'unlinked token actor migrated');
+  await settings.set('systemMigrationVersion', '24.0');
+  await game.svnsea2e.migrations.migrateWorldIfNeeded();
+  ok(htkEffects(advantage).length === 1 && htkEffects(worldAdvantage).length === 1 && htkEffects(toggleOff.items.contents[0]).length === 1, 'running it again adds nothing');
+  game.scenes.clear();
 }
 
 // Actor directory button

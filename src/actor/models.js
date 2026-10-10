@@ -3,9 +3,10 @@
  *
  * Bounds and maxima are set in prepareBaseData, before Foundry applies the active effects of the "initial" phase, so
  * an effect may raise them (+1 to `system.dwounds.max`, `system.htk = true`...). prepareDerivedData then adds
- * Hard To Kill, computes the rest and keeps every value within its bounds.
+ * Hard To Kill, computes the rest and keeps every value within its bounds. See src/effects.js for the effect keys.
  */
 import { clamp } from '../helpers.js';
+import { rollBonusData } from '../effects.js';
 
 const { HTMLField, SchemaField, NumberField, StringField, ArrayField, BooleanField } = foundry.data.fields;
 
@@ -131,7 +132,10 @@ class WoundedModel extends foundry.abstract.TypeDataModel {
   }
 }
 
-/** Heroes, villains and monsters can be Hard To Kill. */
+/**
+ * Heroes, villains and monsters can be Hard To Kill. `htk` stays false in the stored data since v25: an active effect
+ * (normally on the Hard To Kill advantage) turns it on.
+ */
 class CharacterModel extends WoundedModel {
   static defineSchema() {
     return { htk: new BooleanField({ required: true, initial: false }), ...super.defineSchema() };
@@ -139,6 +143,11 @@ class CharacterModel extends WoundedModel {
 
   get hardToKill() {
     return this.htk;
+  }
+
+  prepareBaseData() {
+    super.prepareBaseData();
+    this.rollBonus = rollBonusData();
   }
 }
 
@@ -308,6 +317,7 @@ export class BruteModel extends foundry.abstract.TypeDataModel {
   prepareBaseData() {
     super.prepareBaseData();
     setBounds(this.traits, RANK_BOUNDS.strength);
+    this.rollBonus = rollBonusData();
   }
 
   prepareDerivedData() {
