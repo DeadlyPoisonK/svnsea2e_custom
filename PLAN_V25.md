@@ -12,7 +12,7 @@ Base: rama `wip_v14`, versión 24.0 (Foundry 14 build 369). Mundo de pruebas loc
 
 | Fase | Tema | Estado | Quién |
 |---|---|---|---|
-| 0 | Auditoría de la lógica | hecha — falta que el usuario revise el reporte | Claude |
+| 0 | Auditoría de la lógica | hecha y revisada | Claude |
 | 1 | Reordenar modelo de datos y documentos | pendiente | Claude (+ Antigravity para lo mecánico) |
 | 2 | Active Effects | pendiente | Claude diseña, Antigravity hace las pestañas |
 | 3 | Tirada guardada en el mensaje + "Editar tirada" | pendiente | Claude |
@@ -66,6 +66,7 @@ Revisar todo `src/`, las plantillas y `system.json` y responder:
 - Quitar de las hojas el campo de iniciativa y sus botones ±1. `system.initiative` se queda en el esquema.
 - Ya visto: el interruptor de HtK (`base.js` `#onToggleHtk`) escribe `wounds.max` y `dwounds.max` en la base de datos, pero `actor.js` ya los recalcula como derivados. Esa escritura sobra.
 - Antigravity puede hacer los cambios mecánicos (renombres en plantillas, mover helpers) con un encargo por paso.
+- Hacer todo lo de la auditoría (`.claude/handoff/fase-0-auditoria.md`, "Cambios de esquema para la Fase 1") con las respuestas anotadas en "Notas de la fase → Fase 0", incluido el arreglo de los tríos del motor de tiradas y de Joie de Vivre.
 
 **Aceptación:** `npm test` pasa; un mundo copiado de la campaña carga sin errores y las hojas muestran los mismos números que antes; las migraciones corren una sola vez.
 
@@ -160,4 +161,13 @@ Reemplazar el `ChoiceSelector` de idiomas por el elemento nativo `<multi-select>
   - **Active Effects en v14:** fase `initial` antes de `prepareDerivedData` y `final` después. Un efecto que sume a habilidades o a heridas máximas lo pisa el recorte/cálculo derivado: la Fase 1 debe dejar los máximos como "base + bono".
   - **Migración HtK (Fase 2):** `migration.js` no recorre los tokens no vinculados de las escenas; hay que añadirlo.
   - `system.json` usa `gridDistance`/`gridUnits`, que v14 ignora (grilla queda en 1 sin unidades).
-- Pendiente antes de la Fase 1: las 6 preguntas al final del reporte (barcos con heridas, concepto del monstruo, `servants`, tipo de `favor`, reglas a confirmar en el libro, cuándo arreglar el bug de los tríos).
+- Respuestas del usuario (entran en la Fase 1):
+  1. **Barcos:** sí llevan heridas y heridas dramáticas. Se quedan `wounds`/`dwounds`; el barco no usa HtK.
+  2. **Monstruo:** la pestaña Concepto guarda sus datos: el monstruo recibe los campos de concepto (y `concept` va a `htmlFields`).
+  3. **`servants` del villano:** se muestra en la hoja, debajo de Fuerza, como los demás campos.
+  4. **`favor`:** siempre es un número → `NumberField` con migración (`"2"` → 2, `""` → 0).
+  5. **Reglas** (manuales en `E:\ROL\7 Mar\Manuales`):
+     - vida del villano = Fuerza × 4 + 4; con HtK = Fuerza × 5 + 5. Es lo que ya calcula el código ((Fuerza + 1) por dramática, 4 o 5 dramáticas): correcto.
+     - los monstruos **no** tienen Influencia: se quita del monstruo (rasgos: Fuerza; más Miedo). Su villanía, si se muestra, es solo Fuerza.
+     - Joie de Vivre (texto del manual): cuesta 1 punto de héroe, justo antes de una confrontación con un villano; los héroes que lo oyen cuentan como 10 los dados de su **siguiente** tirada con valor igual o inferior a **su habilidad**. Se compara el dado sin el +1 contra el rango de habilidad, nunca contra el número de dados. En la tirada de rasgo no aplica (rango 0); en la tirada libre hace falta pedir el rango de habilidad si se marca.
+  6. **Bug de los tríos:** se arregla en la Fase 1.
