@@ -184,26 +184,13 @@ export async function editRoll(message) {
   if (!(await settleHeroPoints(actor, data.pool.heroPoints - source.pool.heroPoints))) return false;
 
   const rolls = await completeDice(data);
-  await message.update({ system: data, content: await renderRollCard(data, actor?.id ?? message.speaker.actor) });
-  showDice(rolls, message);
+  await message.update({
+    system: data,
+    content: await renderRollCard(data, actor?.id ?? message.speaker.actor),
+    // Dice So Nice (6.x) shows only the rolls added to a message, and hides the card until they land.
+    ...(rolls.length ? { rolls: [...message.rolls, ...rolls].map((roll) => JSON.stringify(roll)) } : {}),
+  });
   return message;
-}
-
-/**
- * Show the dice added by an edit with Dice So Nice, to everyone who sees the message. They are not attached to the
- * message: Dice So Nice would hide the whole card while it shows them, and its 5.2 version (for Foundry 13) never
- * shows it again on Foundry 14.
- */
-function showDice(rolls, message) {
-  if (!game.dice3d) return;
-  const whisper = message.whisper?.length ? message.whisper : null;
-  for (const roll of rolls) {
-    try {
-      game.dice3d.showForRoll(roll, game.user, true, whisper, message.blind)?.catch?.(() => {});
-    } catch {
-      // A Dice So Nice that fails must not break the edit.
-    }
-  }
 }
 
 /** Hero points spent (or given back, when negative) by an edit. False when the hero does not have them. */

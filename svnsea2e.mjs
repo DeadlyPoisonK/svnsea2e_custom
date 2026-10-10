@@ -1574,20 +1574,13 @@ async function editRoll(message) {
   const actor = ChatMessage.implementation.getSpeakerActor(message.speaker);
   if (!await settleHeroPoints(actor, data.pool.heroPoints - source.pool.heroPoints)) return false;
   const rolls = await completeDice(data);
-  await message.update({ system: data, content: await renderRollCard(data, actor?.id ?? message.speaker.actor) });
-  showDice(rolls, message);
+  await message.update({
+    system: data,
+    content: await renderRollCard(data, actor?.id ?? message.speaker.actor),
+    // Dice So Nice (6.x) shows only the rolls added to a message, and hides the card until they land.
+    ...rolls.length ? { rolls: [...message.rolls, ...rolls].map((roll) => JSON.stringify(roll)) } : {}
+  });
   return message;
-}
-function showDice(rolls, message) {
-  if (!game.dice3d) return;
-  const whisper = message.whisper?.length ? message.whisper : null;
-  for (const roll of rolls) {
-    try {
-      game.dice3d.showForRoll(roll, game.user, true, whisper, message.blind)?.catch?.(() => {
-      });
-    } catch {
-    }
-  }
 }
 async function settleHeroPoints(actor, spent) {
   if (!spent || !actor || actor.system.isVillain || !("heropts" in actor.system)) return true;

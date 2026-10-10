@@ -246,8 +246,6 @@ ok(pc.system.initiative === Number(card.querySelector('.initiative-tracker-add')
     DialogV2.prefill = null;
     return result;
   };
-  const shown = [];
-  game.dice3d = { showForRoll: async (r, user, sync, whisper, blind) => shown.push([r.formula, whisper, blind]) };
   const summary = (m) => { const r = m.system.resolve(); return `${r.raises}|${r.combos.join(',')}|${r.unused.join(',')}`; };
   const msg = await roll();
   const s = msg.system;
@@ -260,7 +258,7 @@ ok(pc.system.initiative === Number(card.querySelector('.initiative-tracker-add')
   await edit(msg, (form) => { form.elements.addOne.checked = true; });
   ok(msg.system.addOne && summary(msg) === summary(withOne) && raisesOf(msg) === raisesOf(withOne), `edited +1 = rolled with +1 (${summary(msg)})`);
   ok(msg.rolls.length === 1 && msg.system.dice.join() === D.join() && msg.system.edited && msg.content.includes('Roll edited'), 'nothing rolled again, marked as edited');
-  ok(shown.length === 0, 'Dice So Nice shows nothing');
+  ok(!log.updates.at(-1)[1].rolls, 'no rolls added: Dice So Nice does not animate');
 
   // Threshold 15: 6 + 9 (2 raises), then 2 + 3 + 5 at 10 (1 raise), 4 left.
   await edit(msg, (form) => { form.elements.addOne.checked = false; form.elements.threshold.value = '15'; });
@@ -269,10 +267,10 @@ ok(pc.system.initiative === Number(card.querySelector('.initiative-tracker-add')
 
   // Adding dice rolls only the new ones and keeps the others.
   await edit(msg, (form) => { form.elements.bonus.value = '2'; }, [10, 1]);
-  ok(msg.system.dice.join() === [...D, 10, 1].join() && msg.rolls.length === 1 && shown.map((r) => r[0]).join() === '2d10', 'two dice added, only they are rolled and shown');
+  ok(msg.system.dice.join() === [...D, 10, 1].join() && msg.rolls.length === 2 && JSON.parse(msg.rolls[1]).formula === '2d10', 'two dice added, only they are rolled and attached');
   ok(summary(msg) === '4|10,1 + 9,4 + 6,2 + 3 + 5|', `added dice counted (${summary(msg)})`);
   await edit(msg, (form) => { form.elements.bonus.value = '0'; form.elements.trait.value = '2'; });
-  ok(msg.system.dice.join() === D.slice(0, 5).join() && shown.length === 1, 'fewer dice: the last ones are dropped, nothing rolled');
+  ok(msg.system.dice.join() === D.slice(0, 5).join() && msg.rolls.length === 2, 'fewer dice: the last ones are dropped, nothing rolled');
 
   // Explosions: a 10 explodes once 10s explode; the explosion is dropped when they stop exploding.
   await edit(msg, (form) => { form.elements.trait.value = '3'; form.elements.bonus.value = '1'; }, [10]);
@@ -284,9 +282,9 @@ ok(pc.system.initiative === Number(card.querySelector('.initiative-tracker-add')
   // Rank 3 reroll: the lowest leftover die is rolled again once, and the face is kept by later edits.
   await edit(msg, (form) => { form.elements.bonus.value = '0'; form.elements.reroll.checked = true; }, [8]);
   ok(msg.system.rerollFace === 8 && msg.content.includes('Rerolled 2 and got 8'), `reroll rolled (${msg.system.rerollFace})`);
-  const shownBefore = shown.length;
+  const rollsBefore = msg.rolls.length;
   await edit(msg, (form) => { form.elements.addOne.checked = true; });
-  ok(msg.system.rerollFace === 8 && shown.length === shownBefore, 'reroll kept, nothing rolled');
+  ok(msg.system.rerollFace === 8 && msg.rolls.length === rollsBefore, 'reroll kept, nothing rolled');
   await edit(msg, (form) => { form.elements.addOne.checked = false; form.elements.reroll.checked = false; });
   ok(msg.system.rerollFace === null, 'reroll dropped');
 
@@ -323,16 +321,6 @@ ok(pc.system.initiative === Number(card.querySelector('.initiative-tracker-add')
   ok(!option.visible(li(msg)), 'not while the author cannot see it (blind roll)');
   msg.blind = false;
   game.user = gm;
-
-  // A Dice So Nice that fails does not break the edit; the dice of a private roll are shown to its recipients only.
-  game.dice3d = { showForRoll: () => { throw new Error('broken'); } };
-  ok((await edit(msg, (form) => { form.elements.bonus.value = '1'; }, [5])) === msg && msg.system.dice.length === 7, 'edit works with a broken Dice So Nice');
-  game.dice3d = { showForRoll: async (r, user, sync, whisper, blind) => shown.push([r.formula, whisper, blind]) };
-  msg.whisper = ['gm']; msg.blind = false;
-  await edit(msg, (form) => { form.elements.bonus.value = '2'; }, [5]);
-  ok(shown.at(-1)[1]?.join() === 'gm', 'new dice shown to the recipients of the message');
-  msg.whisper = [];
-  delete game.dice3d;
 
   // Free roll: its dice are bonus dice, without wound die.
   DialogV2.prefill = (form) => { form.querySelector('[name="diceNumber"]').value = '3'; };
