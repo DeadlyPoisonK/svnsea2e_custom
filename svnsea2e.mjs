@@ -905,8 +905,8 @@ function onRenderCombatTracker(app, html) {
       });
       return button;
     };
-    initiative.prepend(makeButton(1));
-    initiative.append(makeButton(-1));
+    initiative.prepend(makeButton(-1));
+    initiative.append(makeButton(1));
   }
 }
 function onGetCombatTrackerContextOptions(app, options) {

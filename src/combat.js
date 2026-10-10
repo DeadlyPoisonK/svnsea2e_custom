@@ -195,7 +195,7 @@ export async function updateRaisesFromEdit(actor, message) {
 }
 
 /**
- * Combat tracker: +1 / -1 raise buttons around each combatant's raises, and no d20 initiative buttons (the raises
+ * Combat tracker: -1 / +1 raise buttons around each combatant's raises, and no d20 initiative buttons (the raises
  * come from the rolls).
  */
 export function onRenderCombatTracker(app, html) {
@@ -239,8 +239,8 @@ export function onRenderCombatTracker(app, html) {
       });
       return button;
     };
-    initiative.prepend(makeButton(1));
-    initiative.append(makeButton(-1));
+    initiative.prepend(makeButton(-1));
+    initiative.append(makeButton(1));
   }
 }
 

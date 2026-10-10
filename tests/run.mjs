@@ -571,6 +571,8 @@ ok(settings.get('toolboxActors').length === 0, 'toolbox remove');
   await Hooks.callAll('renderCombatTracker', { viewed: combat }, tracker);
   ok(!tracker.querySelector('[data-action="rollAll"], [data-action="rollNPC"], [data-action="rollInitiative"]') && tracker.querySelectorAll('.spacer').length === 2, 'd20 initiative buttons removed');
   ok(tracker.querySelectorAll('.combat-btn').length === 8 && tracker.querySelectorAll('.no-raises').length === 1, 'raise buttons added, dash without raises');
+  const rowButtons = [...tracker.querySelector('.token-initiative').children];
+  ok(rowButtons[0].matches('.combat-btn.sub') && rowButtons.at(-1).matches('.combat-btn.add'), '-1 on the left, +1 on the right');
   const button = (actor, kind) => tracker.querySelector(`[data-combatant-id="${of(actor).id}"] .combat-btn.${kind}`);
   button(t1, 'sub').click(); await settle();
   button(t1, 'sub').click(); await settle();
