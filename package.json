@@ -1,6 +1,6 @@
 {
   "name": "svnsea2e",
-  "version": "24.0.0",
+  "version": "25.0.0",
   "description": "7th Sea Second Edition (Unofficial) system for Foundry VTT",
   "private": true,
   "type": "module",
