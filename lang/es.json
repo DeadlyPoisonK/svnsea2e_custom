@@ -358,6 +358,8 @@
   "SVNSEA2E.HtkOff": "HTK: DESACTIVADO",
   "SVNSEA2E.RollDice": "Tirar Dados",
   "SVNSEA2E.DiceNumberLabel": "Número de Dados:",
+  "SVNSEA2E.JoieSkillRank": "Nivel de habilidad (Joie de Vivre)",
+  "SVNSEA2E.Servants": "Sirvientes",
   "SVNSEA2E.ExtraDiceExploded": "dados explotados",
   "SVNSEA2E.GenericRoll": "Tirada Genérica",
   "SVNSEA2E.NoDiceToRoll": "No hay dados para tirar.",

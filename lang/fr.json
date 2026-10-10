@@ -357,6 +357,8 @@
   "SVNSEA2E.HtkOff": "HTK : DÉSACTIVÉ",
   "SVNSEA2E.RollDice": "Lancer les dés",
   "SVNSEA2E.DiceNumberLabel": "Nombre de dés :",
+  "SVNSEA2E.JoieSkillRank": "Rang de compétence (Joie de Vivre)",
+  "SVNSEA2E.Servants": "Serviteurs",
   "SVNSEA2E.ExtraDiceExploded": "dés explosés",
   "SVNSEA2E.GenericRoll": "Jet générique",
   "SVNSEA2E.NoDiceToRoll": "Il n'y a aucun dé à lancer.",

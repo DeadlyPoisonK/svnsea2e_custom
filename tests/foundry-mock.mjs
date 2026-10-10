@@ -26,7 +26,17 @@ export function installMocks(repo) {
   class HTMLField extends StringField {}
   class NumberField extends Field { initial() { return this.opts.initial ?? null; } }
   class BooleanField extends Field { initial() { return this.opts.initial ?? false; } }
-  class TypeDataModel { static defineSchema() { return {}; } static initialData() { return Object.fromEntries(Object.entries(this.defineSchema()).map(([k, f]) => [k, f.initial()])); } }
+  // Like Foundry: the instance holds the (migrated) source plus derived values, with the document as `parent`.
+  class TypeDataModel {
+    constructor(source, { parent } = {}) { Object.assign(this, source); Object.defineProperty(this, 'parent', { value: parent, enumerable: false }); }
+    static defineSchema() { return {}; }
+    static initialData() { return Object.fromEntries(Object.entries(this.defineSchema()).map(([k, f]) => [k, f.initial()])); }
+    static migrateData(source) { return source; }
+    prepareBaseData() {}
+    prepareDerivedData() {}
+    toObject() { return structuredClone({ ...this }); }
+  }
+  class ForcedDeletion {}
 
   // ---------- handlebars ----------
   const tplRoot = path.join(repo, 'templates');
@@ -118,23 +128,25 @@ export function installMocks(repo) {
 
   // ---------- documents ----------
   let idCounter = 0;
-  class Collection extends Map { get contents() { return [...this.values()]; } filter(fn) { return this.contents.filter(fn); } find(fn) { return this.contents.find(fn); } some(fn) { return this.contents.some(fn); } map(fn) { return this.contents.map(fn); } }
+  class Collection extends Map { [Symbol.iterator]() { return this.values(); } get contents() { return [...this.values()]; } filter(fn) { return this.contents.filter(fn); } find(fn) { return this.contents.find(fn); } some(fn) { return this.contents.some(fn); } map(fn) { return this.contents.map(fn); } }
   class BaseDocument {
     constructor(data, parent = null) {
       this._id = data._id ?? `id${++idCounter}`; this.name = data.name; this.type = data.type; this.img = data.img; this.parent = parent;
       const model = CONFIG[this.constructor.documentName].dataModels[this.type];
-      this._source = { system: foundry.utils.deepClone({ ...model.initialData(), ...(data.system ?? {}) }), flags: deepClone(data.flags ?? {}) };
+      this._source = { system: model.migrateData(foundry.utils.deepClone({ ...model.initialData(), ...(data.system ?? {}) })), flags: deepClone(data.flags ?? {}) };
       this.flags = this._source.flags; this.isOwner = true; this.limited = false; this.pack = null;
     }
     get id() { return this._id; }
     get uuid() { return this.parent ? `${this.parent.uuid}.Item.${this.id}` : `${this.constructor.documentName}.${this.id}`; }
     get documentName() { return this.constructor.documentName; }
     prepareData() {
-      // Like a TypeDataModel: a class instance that deepClone refuses, with toObject().
-      const system = Object.create({ toObject() { return structuredClone({ ...this }); } });
-      Object.assign(system, deepClone(this._source.system));
-      this.system = system; this.prepareDerivedData();
+      // Same order as ClientDocumentMixin#prepareData (no active effects in the mock).
+      const model = CONFIG[this.constructor.documentName].dataModels[this.type];
+      this.system = new model(deepClone(this._source.system), { parent: this });
+      this.system.prepareBaseData(); this.prepareBaseData();
+      this.system.prepareDerivedData(); this.prepareDerivedData();
     }
+    prepareBaseData() {}
     prepareDerivedData() {}
     getRollData() { return {}; }
     async _preCreate() {}
@@ -142,18 +154,24 @@ export function installMocks(repo) {
     async update(changes) {
       log.updates.push([this.name, changes]);
       for (const [k, v] of Object.entries(changes)) {
-        if (k.startsWith('system.')) setProperty(this._source.system, k.slice(7), v);
-        else if (k.startsWith('flags.')) setProperty(this.flags, k.slice(6), v);
-        else this[k] = v;
+        const [target, path] = k.startsWith('system.') ? [this._source.system, k.slice(7)] : k.startsWith('flags.') ? [this.flags, k.slice(6)] : [this, k];
+        if (v instanceof ForcedDeletion) { const keys = path.split('.'); const last = keys.pop(); const parent = keys.length ? getProperty(target, keys.join('.')) : target; delete parent?.[last]; }
+        else setProperty(target, path, v);
       }
+      // Foundry migrates the changes too, so the data models may fix values on update.
+      this._source.system = CONFIG[this.documentName].dataModels[this.type].migrateData(this._source.system);
       this.prepareData(); return this;
     }
     getFlag(scope, key) { return getProperty(this.flags, `${scope}.${key}`); }
     async setFlag(scope, key, value) { return this.update({ [`flags.${scope}.${key}`]: value }); }
     async unsetFlag(scope, key) { delete this.flags[scope]?.[key]; return this; }
-    toObject() { return { _id: this._id, name: this.name, type: this.type, img: this.img, system: deepClone(this._source.system) }; }
+    toObject() { return { _id: this._id, name: this.name, type: this.type, img: this.img, system: deepClone(this._source.system), flags: deepClone(this.flags) }; }
     toDragData() { return { type: this.documentName, uuid: this.uuid }; }
-    async delete() { this.parent?.items.delete(this.id); game.items.delete(this.id); log.updates.push(['delete', this.name]); }
+    async delete() {
+      const parent = this.parent;
+      parent?.items.delete(this.id); game.items.delete(this.id); log.updates.push(['delete', this.name]);
+      parent?._onDeleteDescendantDocuments(parent, 'items', [this], [this.id], {}, game.user.id);
+    }
     get sheet() { return { render() {} }; }
     static async create(data, { parent } = {}) { const d = new CONFIG[this.documentName].documentClass(data, parent); await d._preCreate?.(data, {}, game.user); d.prepareData(); return d; }
   }
@@ -161,8 +179,21 @@ export function installMocks(repo) {
     static documentName = 'Actor';
     constructor(data, parent) { super(data, parent); this.items = new Collection(); }
     get isToken() { return false; }
-    async createEmbeddedDocuments(name, list) { const out = []; for (const d of list) { const item = await CONFIG.Item.documentClass.create({ ...d, _id: undefined }, { parent: this }); this.items.set(item.id, item); out.push(item); } log.updates.push(['create', list.map((d) => d.name)]); return out; }
-    async deleteEmbeddedDocuments(name, ids) { for (const id of ids) this.items.delete(id); log.updates.push(['deleteEmbedded', ids.length]); }
+    async createEmbeddedDocuments(name, list) {
+      const out = [];
+      for (const d of list) { const item = await CONFIG.Item.documentClass.create({ ...d, _id: undefined }, { parent: this }); this.items.set(item.id, item); out.push(item); }
+      log.updates.push(['create', list.map((d) => d.name)]);
+      this._onCreateDescendantDocuments(this, 'items', out, list, {}, game.user.id);
+      return out;
+    }
+    async deleteEmbeddedDocuments(name, ids) {
+      const deleted = ids.map((id) => this.items.get(id)).filter((i) => i);
+      for (const id of ids) this.items.delete(id);
+      log.updates.push(['deleteEmbedded', ids.length]);
+      this._onDeleteDescendantDocuments(this, 'items', deleted, ids, {}, game.user.id);
+    }
+    _onCreateDescendantDocuments() {}
+    _onDeleteDescendantDocuments() {}
     async updateEmbeddedDocuments(name, list) { for (const u of list) { const { _id, ...rest } = u; await this.items.get(_id).update(rest); } }
   }
   class Item extends BaseDocument { static documentName = 'Item'; get actor() { return this.parent; } }
@@ -175,7 +206,7 @@ export function installMocks(repo) {
 
   globalThis.foundry = {
     utils: { getProperty, setProperty, deepClone, isEmpty, isNewerVersion, mergeObject: Object.assign },
-    data: { fields: { SchemaField, ArrayField, StringField, HTMLField, NumberField, BooleanField } },
+    data: { fields: { SchemaField, ArrayField, StringField, HTMLField, NumberField, BooleanField }, operators: { ForcedDeletion } },
     abstract: { TypeDataModel },
     dice: { Roll: MockRoll },
     applications: {

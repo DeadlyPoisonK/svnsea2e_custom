@@ -22,14 +22,6 @@ SVNSEA2E.itemTypes = {
   hubris: "SVNSEA2E.Hubris",
   virtue: "SVNSEA2E.Virtue"
 };
-SVNSEA2E.actorTypes = {
-  brute: "SVNSEA2E.Brute",
-  playercharacter: "SVNSEA2E.PlayerCharacter",
-  monster: "SVNSEA2E.Monster",
-  villain: "SVNSEA2E.Villain",
-  ship: "SVNSEA2E.Ship",
-  hero: "SVNSEA2E.Hero"
-};
 SVNSEA2E.nations = {
   none: "SVNSEA2E.Empty",
   aksum: "SVNSEA2E.NationAksum",
@@ -217,19 +209,20 @@ SVNSEA2E.artifactTypes = {
   wonder: "SVNSEA2E.Wonder",
   tatoo: "SVNSEA2E.Tatoo"
 };
-SVNSEA2E.shipRoles = {
+SVNSEA2E.crewRoles = {
   captain: "SVNSEA2E.Captain",
   firstmate: "SVNSEA2E.FirstMate",
   quartermaster: "SVNSEA2E.QuaterMaster",
   accountant: "SVNSEA2E.Accountant",
   boatswain: "SVNSEA2E.Boatswain",
   shipsmaster: "SVNSEA2E.ShipsMaster",
+  captaintops: "SVNSEA2E.CaptainTops",
+  surgeon: "SVNSEA2E.Surgeon",
+  cook: "SVNSEA2E.Cook",
   mastergunner: "SVNSEA2E.MasterGunner",
   mastermariner: "SVNSEA2E.MasterMariner",
-  captaintops: "SVNSEA2E.CaptainTops",
-  cook: "SVNSEA2E.Cook",
-  surgeon: "SVNSEA2E.Surgeon",
   midshipmen: "SVNSEA2E.Midshipmen",
+  powdermonkey: "SVNSEA2E.PowderMonkey",
   ableseaman: "SVNSEA2E.AbleSeaman",
   seaman: "SVNSEA2E.Seaman"
 };
@@ -331,7 +324,6 @@ const ItemTypes = {
   VIRTUE: "virtue",
   HUBRIS: "hubris"
 };
-const VILLAIN_TYPES = [ActorType.VILLAIN, ActorType.MONSTER];
 function registerSystemSettings() {
   game.settings.register(SYSTEM_ID, "systemMigrationVersion", {
     name: "System Migration Version",
@@ -381,14 +373,11 @@ function registerHandlebarsHelpers() {
   Handlebars.registerHelper("for", function(from, count, step, options) {
     const start = parseInt(from);
     const end = start + parseInt(count);
-    let groupSize = 5;
-    if (this.wounds?.max && this.dwounds?.max > 0) groupSize = Math.floor(this.wounds.max / this.dwounds.max);
+    const groupSize = parseInt(options.hash.group) || 5;
     const data = Handlebars.createFrame(options.data);
     let out = "";
     for (let i = start; i < end; i += step) {
       data.index = i;
-      data.first = i === 0;
-      data.last = i === count;
       data.mod = Math.trunc(i / groupSize);
       data.remain = i % groupSize;
       out += options.fn(this, { data });
@@ -406,11 +395,6 @@ function registerHandlebarsHelpers() {
     };
     if (!(operator in ops)) throw new Error(`Unknown operator ${operator}`);
     return ops[operator]() ? options.fn(this) : options.inverse(this);
-  });
-  Handlebars.registerHelper("toLowerCase", (str) => String(str ?? "").toLowerCase());
-  Handlebars.registerHelper("capitalize", (str) => {
-    str = String(str ?? "");
-    return str.charAt(0).toUpperCase() + str.slice(1);
   });
 }
 const clamp = (value, min, max) => Math.min(Math.max(Number(value) || 0, Number(min) || 0), Number(max));
@@ -449,7 +433,29 @@ async function findAdvantage(name) {
   const entry = (await getPackAdvantages()).find((e) => e.name.toLowerCase() === lower);
   return entry ? fromUuid(entry.uuid) : null;
 }
-const MIGRATIONS = [];
+const MIGRATIONS = [
+  {
+    // The ship roster moves from two flags (the members on the ship, the role on each member) to `system.crew`.
+    version: "25.0",
+    prepare() {
+      this.roles = new Map(game.actors.map((actor) => [actor.id, actor.getFlag(SYSTEM_ID, "crewMember")?.role]));
+    },
+    actor(actor) {
+      const flags = actor.flags[SYSTEM_ID] ?? {};
+      const update = {};
+      const remove = () => new foundry.data.operators.ForcedDeletion();
+      if ("crewMember" in flags) update[`flags.${SYSTEM_ID}.crewMember`] = remove();
+      if ("shipsCrew" in flags) {
+        update[`flags.${SYSTEM_ID}.shipsCrew`] = remove();
+        if (actor.type === ActorType.SHIP) {
+          const members = flags.shipsCrew?.members ?? [];
+          update["system.crew"] = members.map((actorId) => ({ actorId, role: this.roles?.get(actorId) })).filter((member) => member.role);
+        }
+      }
+      return update;
+    }
+  }
+];
 async function migrateWorldIfNeeded() {
   if (!game.users.activeGM?.isSelf) return;
   const lastMigrated = game.settings.get(SYSTEM_ID, "systemMigrationVersion");
@@ -457,15 +463,17 @@ async function migrateWorldIfNeeded() {
     (m) => !lastMigrated || foundry.utils.isNewerVersion(m.version, lastMigrated)
   );
   if (pending.length) await migrateWorld(pending);
-  if (lastMigrated !== game.system.version) {
-    await game.settings.set(SYSTEM_ID, "systemMigrationVersion", game.system.version);
-  }
+  const migrated = [game.system.version, lastMigrated, ...pending.map((m) => m.version)].filter(Boolean).reduce(
+    (a, b) => foundry.utils.isNewerVersion(b, a) ? b : a
+  );
+  if (lastMigrated !== migrated) await game.settings.set(SYSTEM_ID, "systemMigrationVersion", migrated);
 }
 async function migrateWorld(migrations2) {
   ui.notifications.info(
     `Applying 7th Sea 2E System Migration for version ${game.system.version}. Please be patient and do not close your game or shut down your server.`,
     { permanent: true }
   );
+  for (const migration of migrations2) migration.prepare?.();
   const actorUpdate = (actor) => collectUpdates(migrations2, "actor", actor);
   const itemUpdate = (item) => collectUpdates(migrations2, "item", item);
   for (const actor of game.actors) await migrateActor(actor, actorUpdate, itemUpdate);
@@ -488,7 +496,7 @@ async function migrateActor(actor, actorUpdate, itemUpdate) {
   if (itemUpdates.length) await actor.updateEmbeddedDocuments("Item", itemUpdates);
 }
 function collectUpdates(migrations2, kind, doc) {
-  return migrations2.reduce((update, m) => Object.assign(update, m[kind]?.(doc) ?? {}), {});
+  return migrations2.reduce((update, m) => Object.assign(update, m[kind]?.call(m, doc) ?? {}), {});
 }
 async function applyUpdate(doc, update) {
   if (foundry.utils.isEmpty(update)) return;
@@ -661,11 +669,8 @@ class Toolbox extends HandlebarsApplicationMixin$3(ApplicationV2$1) {
     const max = column.max ? getProperty(system, column.max) : Infinity;
     const value = clamp(getProperty(system, column.path) + delta, 0, max);
     if (column.key === "raises") return updateInitiative(actor.id, value);
-    const update = { [`system.${column.path}`]: value };
-    if (column.key === "wounds" && delta > 0 && system.dwounds) {
-      update["system.dwounds.value"] = Math.max(system.dwounds.value, Math.trunc(value / actor.woundGroupSize));
-    }
-    await actor.update(update);
+    if (column.key === "wounds") return actor.update(system.woundUpdate(value));
+    await actor.update({ [`system.${column.path}`]: value });
   }
   /** Choose the columns to show. */
   static async #onConfigure() {
@@ -711,88 +716,106 @@ class SvnSea2EActor extends Actor {
       this.updateSource({ img: `${SYSTEM_PATH}/icons/${this.type}.jpg` });
     }
   }
-  /** @override */
-  prepareDerivedData() {
-    super.prepareDerivedData();
-    const system = this.system;
-    switch (this.type) {
-      case ActorType.PLAYER:
-      case ActorType.HERO:
-        this._prepareHeroWounds(system);
-        this._clampRanks(system.traits);
-        this._clampRanks(system.skills);
-        break;
-      case ActorType.VILLAIN:
-      case ActorType.MONSTER:
-        this._prepareVillainData(system);
-        break;
-      case ActorType.BRUTE:
-        this._prepareBruteData(system);
-        break;
+  /* -------------------------------------------- */
+  /*  Backgrounds                                 */
+  /* -------------------------------------------- */
+  /**
+   * An active background grants its advantages and +1 to its skills however it is added: from the sheet, the items
+   * directory, a macro... Only the client that made the change applies them.
+   * @override
+   */
+  _onCreateDescendantDocuments(parent, collection, documents, data, options, userId) {
+    super._onCreateDescendantDocuments(parent, collection, documents, data, options, userId);
+    if (userId !== game.user.id || parent !== this) return;
+    const backgrounds = documents.filter((item) => item.type === ItemTypes.BACKGROUND && item.system.active);
+    if (backgrounds.length) this.#forEach(backgrounds, (background) => this.applyBackground(background));
+  }
+  /** Deleting an active background takes back what it granted. @override */
+  _onDeleteDescendantDocuments(parent, collection, documents, ids, options, userId) {
+    super._onDeleteDescendantDocuments(parent, collection, documents, ids, options, userId);
+    if (userId !== game.user.id || parent !== this) return;
+    const backgrounds = documents.filter((item) => item.type === ItemTypes.BACKGROUND && item.system.active);
+    if (backgrounds.length) this.#forEach(backgrounds, (background) => this.removeBackground(background));
+  }
+  /** Run an async task for each document, one after the other. */
+  async #forEach(documents, task) {
+    for (const document2 of documents) await task(document2);
+  }
+  /** Activate or deactivate a background, adding or removing what it grants. */
+  async toggleBackground(background) {
+    const active = !background.system.active;
+    if (active) await this.applyBackground(background);
+    else await this.removeBackground(background);
+    await background.update({ "system.active": active });
+  }
+  /**
+   * Add the background's advantages to the actor and raise its skills by one. The advantages are marked with the
+   * background that created them, so that removing it only removes those.
+   */
+  async applyBackground(background) {
+    const toCreate = [];
+    for (const name of background.system.advantages) {
+      const advantage = await findAdvantage(name);
+      if (!advantage) {
+        ui.notifications.error(game.i18n.format("SVNSEA2E.ItemDoesntExist", { name }));
+        continue;
+      }
+      if (this.hasItem(ItemTypes.ADVANTAGE, advantage.name) || toCreate.some((a) => a.name === advantage.name)) {
+        ui.notifications.error(game.i18n.format("SVNSEA2E.ItemExists", { type: advantage.type, name: advantage.name }));
+        continue;
+      }
+      const data = advantage.toObject();
+      delete data._id;
+      foundry.utils.setProperty(data, `flags.${SYSTEM_ID}.grantedBy`, background.id);
+      toCreate.push(data);
     }
+    if (toCreate.length) await this.createEmbeddedDocuments("Item", toCreate);
+    await this.#shiftSkills(background, 1);
+    if (!background.getFlag(SYSTEM_ID, "tracksGrants")) await background.setFlag(SYSTEM_ID, "tracksGrants", true);
   }
-  /** Keep every value/min/max entry within its bounds. */
-  _clampRanks(ranks) {
-    for (const rank of Object.values(ranks)) rank.value = clamp(rank.value, rank.min, rank.max);
+  /** Remove the advantages the background granted and lower its skills by one. */
+  async removeBackground(background) {
+    await this.#shiftSkills(background, -1);
+    const granted = background.getFlag(SYSTEM_ID, "tracksGrants") ? (item) => item.getFlag(SYSTEM_ID, "grantedBy") === background.id : (item) => background.system.advantages.includes(item.name);
+    const ids = this.items.filter((item) => item.type === ItemTypes.ADVANTAGE && granted(item)).map((item) => item.id);
+    if (ids.length) await this.deleteEmbeddedDocuments("Item", ids);
   }
-  /** Heroes have 4 dramatic wounds (20 wounds), or 5 (25 wounds) when Hard To Kill. */
-  _prepareHeroWounds(system) {
-    system.dwounds.max = system.htk ? 5 : 4;
-    system.wounds.max = system.dwounds.max * 5;
-    this._clampWounds(system);
+  async #shiftSkills(background, delta) {
+    const skills = this.system.skills;
+    if (!skills) return;
+    const update = {};
+    for (const key of background.system.skills) {
+      const skill = skills[key];
+      if (skill) update[`system.skills.${key}.value`] = clamp(skill.value + delta, skill.min, skill.max);
+    }
+    if (!foundry.utils.isEmpty(update)) await this.update(update);
   }
-  /** Villains and monsters: dramatic wounds every Strength + 1 wounds; Hard To Kill adds one dramatic wound. */
-  _prepareVillainData(system) {
-    this._clampRanks(system.traits);
-    system.villainy = parseInt(system.traits.strength.value) + parseInt(system.traits.influence.value);
-    system.dwounds.max = system.htk ? 5 : 4;
-    system.wounds.max = (parseInt(system.traits.strength.value) + 1) * system.dwounds.max;
-    this._clampWounds(system);
-  }
-  /** A brute squad has as many wounds as its Strength. */
-  _prepareBruteData(system) {
-    const strength = system.traits.strength;
-    strength.value = clamp(strength.value, strength.min, strength.max);
-    system.wounds.max = strength.value;
-    if (system.wounds.value > system.wounds.max) system.wounds.value = system.wounds.max;
-  }
-  _clampWounds(system) {
-    system.wounds.value = clamp(system.wounds.value, system.wounds.min, system.wounds.max);
-    system.dwounds.value = clamp(system.dwounds.value, system.dwounds.min, system.dwounds.max);
-  }
-  /** Number of wounds in each dramatic wound group. */
-  get woundGroupSize() {
-    if (VILLAIN_TYPES.includes(this.type)) return parseInt(this.system.traits.strength.value) + 1;
-    return 5;
-  }
-  /* -------------------------------------------- */
-  /*  Ship crew                                   */
-  /* -------------------------------------------- */
-  async removeFromCrew() {
-    await this.unsetFlag(SYSTEM_ID, "crewMember");
-  }
-  async setCrewMemberRole(shipId, role) {
-    return this.setFlag(SYSTEM_ID, "crewMember", { shipId, role });
+  /** Whether the actor has an item of this type and name. */
+  hasItem(type, name) {
+    return this.items.some((item) => item.type === type && item.name === name);
   }
 }
 const { HTMLField: HTMLField$1, SchemaField: SchemaField$1, NumberField: NumberField$1, StringField: StringField$1, ArrayField: ArrayField$1, BooleanField: BooleanField$1 } = foundry.data.fields;
-const int = (initial = 0, min = 0) => new NumberField$1({ required: true, integer: true, min, initial });
-const ranked = (initial = 0, max = 5) => new SchemaField$1({ value: int(initial), min: int(0), max: int(max) });
-const baseSchema$1 = () => ({
-  htk: new BooleanField$1({ required: true, initial: false }),
-  initiative: new NumberField$1({ required: true, integer: false, min: 0, initial: 0 }),
-  wounds: new SchemaField$1({ value: int(0), min: int(0), max: int(20) }),
-  dwounds: new SchemaField$1({ value: int(0), min: int(0), max: int(4) })
-});
-const detailsSchema = () => ({
-  nation: new StringField$1(),
-  religion: new StringField$1(),
-  age: int(20),
-  reputation: new StringField$1(),
-  languages: new ArrayField$1(new StringField$1()),
-  equipment: new StringField$1(),
-  concept: new HTMLField$1({ initial: "<h3>Concept</h3><h3>Biography</h3>" })
-});
+const int = (initial = 0, { min = 0, max } = {}) => new NumberField$1({ required: true, integer: true, min, max, initial });
+const rank = (initial, [min, max]) => new SchemaField$1({ value: int(initial, { min, max }) });
+const RANK_BOUNDS = {
+  heroTrait: [2, 5],
+  skill: [0, 5],
+  strength: [1, 20],
+  influence: [0, 20],
+  fear: [0, 5]
+};
+function setBounds(ranks, [min, max]) {
+  for (const entry of Object.values(ranks)) Object.assign(entry, { min, max });
+}
+function clampRanks(ranks) {
+  for (const entry of Object.values(ranks)) entry.value = clamp(entry.value, entry.min, entry.max);
+}
+function clampSource(ranks, bounds) {
+  for (const entry of Object.values(ranks ?? {})) {
+    if (typeof entry?.value === "number") entry.value = clamp(entry.value, ...bounds);
+  }
+}
 const TRAITS = ["brawn", "finesse", "resolve", "wits", "panache"];
 const SKILLS = [
   "aim",
@@ -812,72 +835,224 @@ const SKILLS = [
   "warfare",
   "weaponry"
 ];
-const featuresSchema = () => ({
-  traits: new SchemaField$1(Object.fromEntries(TRAITS.map((t) => [t, ranked(2)]))),
-  skills: new SchemaField$1(Object.fromEntries(SKILLS.map((s) => [s, ranked(0)])))
+const woundsField = () => new SchemaField$1({ value: int(0), max: int(0) });
+const conceptSchema = () => ({
+  nation: new StringField$1(),
+  religion: new StringField$1(),
+  age: int(20),
+  reputation: new StringField$1(),
+  concept: new HTMLField$1({ initial: "<h3>Concept</h3><h3>Biography</h3>" })
 });
-const villainTraitsSchema = () => ({
-  traits: new SchemaField$1({
-    influence: new SchemaField$1({ value: int(5), min: int(0), max: int(20) }),
-    strength: new SchemaField$1({ value: int(5, 1), min: int(1, 1), max: int(20) })
-  })
+const detailsSchema = () => ({
+  ...conceptSchema(),
+  languages: new ArrayField$1(new StringField$1()),
+  equipment: new StringField$1()
 });
-class BruteModel extends foundry.abstract.TypeDataModel {
+class WoundedModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      wounds: new SchemaField$1({ value: int(0), min: int(0), max: int(20) }),
-      traits: new SchemaField$1({
-        strength: new SchemaField$1({ value: int(5, 1), min: int(1, 1), max: int(20, 1) })
-      }),
-      ability: new SchemaField$1({ name: new StringField$1(), description: new HTMLField$1() })
+      // Raises: kept on the actor, changed from the combat tracker, the toolbox and the roll cards.
+      initiative: new NumberField$1({ required: true, integer: false, min: 0, initial: 0 }),
+      wounds: woundsField(),
+      dwounds: woundsField()
     };
   }
-}
-class DangerPointsModel extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return { points: int(5) };
+  /** Number of wounds in each dramatic wound group. */
+  get woundsPerDramatic() {
+    return 5;
+  }
+  /** Whether the actor can be Hard To Kill. */
+  get hardToKill() {
+    return false;
+  }
+  /** Villains and monsters: no hero points, wounds grouped by Strength. */
+  get isVillain() {
+    return false;
+  }
+  /** One extra die from the first dramatic wound. */
+  get woundBonusDice() {
+    return this.dwounds.value >= 1 ? 1 : 0;
+  }
+  /** 10s explode from the third dramatic wound. */
+  get explodesTens() {
+    return this.dwounds.value >= 3;
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    this.dwounds.max = 4;
+  }
+  prepareDerivedData() {
+    super.prepareDerivedData();
+    if (this.hardToKill) this.dwounds.max += 1;
+    this.wounds.max = this.dwounds.max * this.woundsPerDramatic;
+    this.wounds.value = clamp(this.wounds.value, 0, this.wounds.max);
+    this.dwounds.value = clamp(this.dwounds.value, 0, this.dwounds.max);
+  }
+  /**
+   * The update that sets the wounds to `value`: marking wounds also marks the dramatic wounds they reach,
+   * never removes any.
+   */
+  woundUpdate(value) {
+    const wounds = clamp(value, 0, this.wounds.max);
+    const dwounds = Math.max(this.dwounds.value, Math.min(Math.trunc(wounds / this.woundsPerDramatic), this.dwounds.max));
+    return { "system.wounds.value": wounds, "system.dwounds.value": dwounds };
   }
 }
-class HeroModel extends foundry.abstract.TypeDataModel {
+class CharacterModel extends WoundedModel {
   static defineSchema() {
-    return { ...baseSchema$1(), ...detailsSchema(), ...featuresSchema() };
+    return { htk: new BooleanField$1({ required: true, initial: false }), ...super.defineSchema() };
+  }
+  get hardToKill() {
+    return this.htk;
   }
 }
-class MonsterModel extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return { ...baseSchema$1(), ...villainTraitsSchema(), fear: ranked(0) };
-  }
-}
-class PlayerModel extends foundry.abstract.TypeDataModel {
+class HeroModel extends CharacterModel {
   static defineSchema() {
     return {
-      ...baseSchema$1(),
+      ...super.defineSchema(),
       ...detailsSchema(),
-      ...featuresSchema(),
+      traits: new SchemaField$1(Object.fromEntries(TRAITS.map((t) => [t, rank(2, RANK_BOUNDS.heroTrait)]))),
+      skills: new SchemaField$1(Object.fromEntries(SKILLS.map((s) => [s, rank(0, RANK_BOUNDS.skill)])))
+    };
+  }
+  static migrateData(source) {
+    clampSource(source.traits, RANK_BOUNDS.heroTrait);
+    clampSource(source.skills, RANK_BOUNDS.skill);
+    return super.migrateData(source);
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    setBounds(this.traits, RANK_BOUNDS.heroTrait);
+    setBounds(this.skills, RANK_BOUNDS.skill);
+  }
+  prepareDerivedData() {
+    super.prepareDerivedData();
+    clampRanks(this.traits);
+    clampRanks(this.skills);
+  }
+}
+class PlayerModel extends HeroModel {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
       wealth: int(0),
       heropts: int(0),
-      vile: int(0),
       corruptionpts: int(0),
       redemption: new StringField$1()
     };
   }
 }
-class ShipModel extends foundry.abstract.TypeDataModel {
+class VillainousModel extends CharacterModel {
   static defineSchema() {
     return {
-      ...baseSchema$1(),
-      background: new StringField$1(),
+      ...super.defineSchema(),
+      traits: new SchemaField$1({
+        ...this.hasInfluence ? { influence: rank(5, RANK_BOUNDS.influence) } : {},
+        strength: rank(5, RANK_BOUNDS.strength)
+      })
+    };
+  }
+  static hasInfluence = true;
+  static migrateData(source) {
+    clampSource({ strength: source.traits?.strength }, RANK_BOUNDS.strength);
+    clampSource({ influence: source.traits?.influence }, RANK_BOUNDS.influence);
+    return super.migrateData(source);
+  }
+  get isVillain() {
+    return true;
+  }
+  get woundsPerDramatic() {
+    return this.traits.strength.value + 1;
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    Object.assign(this.traits.strength, { min: RANK_BOUNDS.strength[0], max: RANK_BOUNDS.strength[1] });
+    if (this.traits.influence) Object.assign(this.traits.influence, { min: RANK_BOUNDS.influence[0], max: RANK_BOUNDS.influence[1] });
+  }
+  prepareDerivedData() {
+    clampRanks(this.traits);
+    super.prepareDerivedData();
+    this.villainy = this.traits.strength.value + (this.traits.influence?.value ?? 0);
+  }
+}
+class VillainModel extends VillainousModel {
+  static defineSchema() {
+    return { ...super.defineSchema(), ...detailsSchema(), servants: new StringField$1(), redemption: new StringField$1() };
+  }
+}
+class MonsterModel extends VillainousModel {
+  static hasInfluence = false;
+  static defineSchema() {
+    return { ...super.defineSchema(), ...conceptSchema(), fear: rank(0, RANK_BOUNDS.fear) };
+  }
+  static migrateData(source) {
+    clampSource({ fear: source.fear }, RANK_BOUNDS.fear);
+    return super.migrateData(source);
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    Object.assign(this.fear, { min: RANK_BOUNDS.fear[0], max: RANK_BOUNDS.fear[1] });
+  }
+  prepareDerivedData() {
+    super.prepareDerivedData();
+    clampRanks({ fear: this.fear });
+  }
+}
+class ShipModel extends WoundedModel {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
       class: new StringField$1(),
       cargo: new HTMLField$1(),
       origin: new StringField$1(),
       crewstatus: new StringField$1(),
-      wealth: int(0)
+      wealth: int(0),
+      // The roster: every crew member (a world actor) with their role on this ship.
+      crew: new ArrayField$1(new SchemaField$1({ actorId: new StringField$1({ required: true }), role: new StringField$1({ required: true }) }))
     };
   }
+  /** Give a crew member a role on this ship, adding them to the crew if needed. */
+  async setCrewRole(actorId, role) {
+    const crew = this.crew.map((member2) => ({ ...member2 }));
+    const member = crew.find((m) => m.actorId === actorId);
+    if (member) member.role = role;
+    else crew.push({ actorId, role });
+    return this.parent.update({ "system.crew": crew });
+  }
+  async removeCrewMember(actorId) {
+    return this.parent.update({ "system.crew": this.crew.filter((member) => member.actorId !== actorId) });
+  }
 }
-class VillainModel extends foundry.abstract.TypeDataModel {
+class BruteModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
-    return { ...baseSchema$1(), ...detailsSchema(), ...villainTraitsSchema(), servants: new StringField$1() };
+    return {
+      wounds: woundsField(),
+      traits: new SchemaField$1({ strength: rank(5, RANK_BOUNDS.strength) }),
+      ability: new SchemaField$1({ name: new StringField$1(), description: new HTMLField$1() })
+    };
+  }
+  static migrateData(source) {
+    clampSource(source.traits, RANK_BOUNDS.strength);
+    return super.migrateData(source);
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    setBounds(this.traits, RANK_BOUNDS.strength);
+  }
+  prepareDerivedData() {
+    super.prepareDerivedData();
+    clampRanks(this.traits);
+    this.wounds.max = this.traits.strength.value;
+    this.wounds.value = clamp(this.wounds.value, 0, this.wounds.max);
+  }
+  /** The update that sets the wounds to `value`. */
+  woundUpdate(value) {
+    return { "system.wounds.value": clamp(value, 0, this.wounds.max) };
+  }
+}
+class DangerPointsModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return { points: int(5) };
   }
 }
 const { ApplicationV2, HandlebarsApplicationMixin: HandlebarsApplicationMixin$2 } = foundry.applications.api;
@@ -941,6 +1116,7 @@ function readRollForm(form) {
     useForHelpMe: num("useForHelpMe"),
     addOneToDice: bool("addOneToDice"),
     joieDeVivre: bool("joieDeVivreAdvantage"),
+    joieRank: num("joieRank"),
     explodeDice: bool("explodeDice"),
     increaseThreshold: bool("increaseThreshold")
   };
@@ -949,10 +1125,11 @@ function raisesPerCombo(threshold = 10, increased = false) {
   return threshold === 15 && !increased || threshold === 20 && increased ? 2 : 1;
 }
 function findComboIndices(dice, combo) {
-  const indices = [dice.indexOf(combo[0])];
-  indices.push(combo[0] === combo[1] ? dice.indexOf(combo[1], indices[0] + 1) : dice.indexOf(combo[1]));
-  if (combo.length > 2) {
-    indices.push(combo[0] === combo[2] ? dice.indexOf(combo[2], indices[1] + 1) : dice.indexOf(combo[2]));
+  const indices = [];
+  for (const value of combo) {
+    const index = dice.findIndex((die, i) => die === value && !indices.includes(i));
+    if (index === -1) return null;
+    indices.push(index);
   }
   return indices;
 }
@@ -1007,20 +1184,21 @@ async function spendHeroPoints(actor, options) {
 }
 async function rollDicePool({ actor, rolldata, options, title }) {
   const system = actor.system;
-  if (!VILLAIN_TYPES.includes(actor.type) && !await spendHeroPoints(actor, options)) return false;
   const skillDice = parseInt(rolldata.skilldice) || 0;
-  const woundBonus = system.dwounds?.value >= 1 && !rolldata.skipWoundBonus ? 1 : 0;
+  const woundBonus = rolldata.skipWoundBonus ? 0 : system.woundBonusDice ?? 0;
   const bonusDice = options.bonusDice + (options.flairDice ? 1 : 0) + (options.interpretationDice ? 1 : 0) + options.useForMe + options.useForHelpMe * 3;
   const poolSize = skillDice + options.trait + bonusDice + woundBonus;
   if (poolSize < 1) {
     ui.notifications.warn(game.i18n.localize("SVNSEA2E.NoDiceToRoll"));
     return false;
   }
+  if (!system.isVillain && !await spendHeroPoints(actor, options)) return false;
   const increased = options.increaseThreshold;
   const addOne = options.addOneToDice;
   const exploded = rolldata.explode || options.explodeDice;
   const roll = await new foundry.dice.Roll(`${poolSize}d10${exploded ? "x" : ""}`).evaluate();
-  const dice = diceResults(roll).map((d) => addOne ? d + 1 : d);
+  const joieRank = options.joieDeVivre ? rolldata.skillRank ?? 0 : 0;
+  const dice = diceResults(roll).map((d) => d <= joieRank ? 10 : addOne ? d + 1 : d).sort(ascending);
   let threshold = rolldata.threshold + (increased ? 5 : 0);
   const matches = threshold === 15 ? CONFIG.SVNSEA2E.match15 : threshold === 20 ? CONFIG.SVNSEA2E.match20 : CONFIG.SVNSEA2E.match10;
   let raises = 0;
@@ -1034,34 +1212,12 @@ async function rollDicePool({ actor, rolldata, options, title }) {
     }
   };
   takeTens();
-  if (options.joieDeVivre) {
-    for (let i = dice.length - 1; i >= 0; i--) {
-      if (dice[i] <= skillDice) {
-        raises++;
-        combos.push(dice[i]);
-        dice.splice(i, 1);
-      }
-    }
-  }
-  for (const pair of matches.two) {
-    let idx = findComboIndices(dice, pair);
-    while (idx[0] > -1 && idx[1] > -1) {
+  for (const combo of [...matches.two, ...matches.three]) {
+    let indices;
+    while (indices = findComboIndices(dice, combo)) {
       raises += raisesPerCombo(threshold, increased);
-      combos.push(`${dice[idx[0]]} + ${dice[idx[1]]}`);
-      dice.splice(idx[0], 1);
-      dice.splice(dice.indexOf(pair[1]), 1);
-      idx = findComboIndices(dice, pair);
-    }
-  }
-  for (const triple of matches.three) {
-    let idx = findComboIndices(dice, triple);
-    while (idx[0] > -1 && idx[1] > -1 && idx[2] > -1) {
-      raises += raisesPerCombo(threshold, increased);
-      combos.push(`${dice[idx[0]]} + ${dice[idx[1]]} + ${dice[idx[2]]}`);
-      dice.splice(idx[0], 1);
-      dice.splice(dice.indexOf(triple[1]), 1);
-      dice.splice(dice.indexOf(triple[2]), 1);
-      idx = findComboIndices(dice, triple);
+      combos.push(indices.map((i) => dice[i]).join(" + "));
+      for (const i of indices.sort((a, b) => b - a)) dice.splice(i, 1);
     }
   }
   const shownRolls = diceResults(roll);
@@ -1075,7 +1231,8 @@ async function rollDicePool({ actor, rolldata, options, title }) {
     rerolled = true;
     const shownIndex = shownRolls.indexOf(original);
     if (shownIndex > -1) shownRolls[shownIndex] = newResult;
-    if (addOne) dice[0] += 1;
+    if (newResult <= joieRank) dice[0] = 10;
+    else if (addOne) dice[0] += 1;
     shownRolls.sort(ascending);
     dice.sort(ascending);
   }
@@ -1153,12 +1310,13 @@ async function promptRoll(title, template, data, { cancel = false } = {}) {
 }
 async function rollSkill(actor, skill) {
   const system = actor.system;
-  const rank = system.skills[skill].value;
+  const rank2 = system.skills[skill].value;
   const rolldata = {
-    threshold: rank >= 4 ? 15 : 10,
-    explode: rank === 5 || system.dwounds.value >= 3,
-    reroll: rank > 2,
-    skilldice: rank
+    threshold: rank2 >= 4 ? 15 : 10,
+    explode: rank2 === 5 || system.explodesTens,
+    reroll: rank2 > 2,
+    skilldice: rank2,
+    skillRank: rank2
   };
   const traits = {};
   for (const [key, trait] of Object.entries(system.traits)) traits[CONFIG.SVNSEA2E.traits[key]] = trait.value;
@@ -1184,9 +1342,10 @@ async function rollTrait(actor, trait) {
   const system = actor.system;
   const rolldata = {
     threshold: 10,
-    explode: VILLAIN_TYPES.includes(actor.type) && system.dwounds?.value >= 3,
+    explode: system.explodesTens ?? false,
     reroll: false,
-    skilldice: 0
+    skilldice: 0,
+    skillRank: 0
   };
   const title = game.i18n.format("SVNSEA2E.TraitRollTitle", { trait: CONFIG.SVNSEA2E.traits[trait] });
   const result = await promptRoll(title, `${TEMPLATES}/chats/trait-roll-dialog.hbs`, {
@@ -1205,10 +1364,18 @@ async function rollFreeDice(actor) {
   );
   if (!result) return false;
   const diceCount = Math.max(parseInt(result.form.elements.diceNumber?.value) || 1, 1);
-  const { addOneToDice, joieDeVivre, explodeDice, increaseThreshold } = result.options;
+  const { addOneToDice, joieDeVivre, joieRank, explodeDice, increaseThreshold } = result.options;
   return rollDicePool({
     actor,
-    rolldata: { skilldice: diceCount, threshold: 10, explode: false, reroll: false, skipWoundBonus: true },
+    rolldata: {
+      skilldice: diceCount,
+      // Joie de Vivre needs the rank of the skill: the number of dice is not it.
+      skillRank: Math.max(joieRank, 0),
+      threshold: 10,
+      explode: false,
+      reroll: false,
+      skipWoundBonus: true
+    },
     options: {
       trait: 0,
       bonusDice: 0,
@@ -1244,8 +1411,6 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
       toggleSection: SvnSea2EActorSheet.#onToggleSection,
       toggleHtk: SvnSea2EActorSheet.#onToggleHtk,
       selectLanguages: SvnSea2EActorSheet.#onSelectLanguages,
-      initiativeUp: SvnSea2EActorSheet.#onInitiativeStep,
-      initiativeDown: SvnSea2EActorSheet.#onInitiativeStep,
       setRank: SvnSea2EActorSheet.#onSetRank,
       setWounds: SvnSea2EActorSheet.#onSetWounds,
       rollSkill: SvnSea2EActorSheet.#onRollSkill,
@@ -1266,37 +1431,20 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
     Object.assign(context, {
       actor,
       system,
-      owner: actor.isOwner,
-      limited: actor.limited,
       editable: this.isEditable,
       cssClass: actor.isOwner ? "editable" : "locked",
       config: CONFIG.SVNSEA2E,
       tabs: this._prepareTabs("primary"),
       isCorrupt: system.corruptionpts > 0,
       isPlayerCharacter: actor.type === ActorType.PLAYER,
-      isHero: actor.type === ActorType.HERO,
       isVillain: actor.type === ActorType.VILLAIN,
       isMonster: actor.type === ActorType.MONSTER,
-      isNotBrute: actor.type !== ActorType.BRUTE,
       hasSkills: system.skills !== void 0,
       hasLanguages: system.languages !== void 0,
       name: actor.name,
       img: actor.img,
-      initiative: system.initiative,
-      age: system.age,
-      nation: system.nation,
-      wealth: system.wealth,
-      heropts: system.heropts,
-      corruptionpts: system.corruptionpts,
-      wounds: system.wounds,
-      dwounds: system.dwounds,
-      htk: system.htk,
       traits: this._prepareTraits(),
-      selectedlangs: this._prepareLanguages(),
-      religion: system.religion,
-      reputation: system.reputation,
-      equipment: system.equipment,
-      redemption: system.redemption
+      selectedlangs: this._prepareLanguages()
     });
     if (typeof system.concept === "string") {
       context.enrichedConcept = await enrichHTML(system.concept, { secrets: actor.isOwner, relativeTo: actor });
@@ -1332,15 +1480,6 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
   /** @override */
   async _onRender(context, options) {
     await super._onRender(context, options);
-    const initiative = this.element.querySelector(".initiative-input");
-    if (initiative && this.isEditable) {
-      initiative.addEventListener("change", this.#onInitiativeChange.bind(this));
-      initiative.addEventListener("keydown", (event) => {
-        if (event.key !== "Enter") return;
-        event.preventDefault();
-        event.currentTarget.blur();
-      });
-    }
     if (this.isEditable) {
       for (const row of this.element.querySelectorAll("li.draggable")) {
         row.setAttribute("draggable", "true");
@@ -1377,19 +1516,14 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
   static async #onCreateItem(event, target) {
     if (!this.isEditable) return;
     const type = target.dataset.type;
-    await this.actor.createEmbeddedDocuments("Item", [
-      { name: game.i18n.localize(`SVNSEA2E.New${type}`), img: `systems/svnsea2e/icons/${type}.jpg`, type }
-    ]);
+    await this.actor.createEmbeddedDocuments("Item", [{ name: game.i18n.localize(`SVNSEA2E.New${type}`), type }]);
   }
   static #onEditItem(event, target) {
     this._getItem(target)?.sheet.render(true);
   }
   static async #onDeleteItem(event, target) {
     if (!this.isEditable) return;
-    const item = this._getItem(target);
-    if (!item) return;
-    if (item.type === ItemTypes.BACKGROUND && item.system.active) await this._removeBackgroundBonuses(item);
-    await item.delete();
+    await this._getItem(target)?.delete();
   }
   static #onThrowItem(event, target) {
     return this._getItem(target)?.sendToChat();
@@ -1421,11 +1555,7 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
   static async #onToggleBackground(event, target) {
     if (!this.isEditable) return;
     const item = this._getItem(target);
-    if (!item) return;
-    const active = !item.system.active;
-    if (active) await this._applyBackgroundBonuses(item);
-    else await this._removeBackgroundBonuses(item);
-    await item.update({ "system.active": active });
+    if (item) await this.actor.toggleBackground(item);
   }
   static #onToggleSection(event, target) {
     const section = target.dataset.section;
@@ -1434,21 +1564,15 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
     else this.#collapsedSections.delete(section);
     this.#setSectionCollapsed(target, collapsed);
   }
-  /** Hard To Kill: one more dramatic wound (and 5 more wounds for heroes). */
+  /** Hard To Kill: one more dramatic wound. The maxima are derived by the data model. */
   static async #onToggleHtk(event, target) {
     if (!this.isEditable) return;
     const system = this.actor.system;
-    const htk = !system.htk;
-    const dramatic = htk ? 5 : 4;
-    const perDramatic = this.actor.woundGroupSize;
-    const update = {
-      "system.htk": htk,
-      "system.wounds.max": perDramatic * dramatic,
-      "system.dwounds.max": dramatic
-    };
-    if (!htk) {
-      if (system.wounds.value > perDramatic * dramatic) update["system.wounds.value"] = perDramatic * dramatic;
-      if (system.dwounds.value > dramatic) update["system.dwounds.value"] = dramatic;
+    const update = { "system.htk": !system.htk };
+    if (system.htk) {
+      const dramatic = system.dwounds.max - 1;
+      update["system.wounds.value"] = Math.min(system.wounds.value, dramatic * system.woundsPerDramatic);
+      update["system.dwounds.value"] = Math.min(system.dwounds.value, dramatic);
     }
     await this.actor.update(update);
   }
@@ -1461,46 +1585,19 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
       title: game.i18n.localize("SVNSEA2E.ActorLangSelect")
     }).render(true);
   }
-  static #onInitiativeStep(event, target) {
-    if (!this.isEditable) return;
-    const step = target.dataset.action === "initiativeUp" ? 1 : -1;
-    return updateInitiative(this.actor.id, (this.actor.system.initiative || 0) + step);
-  }
-  #onInitiativeChange(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    const value = parseInt(event.currentTarget.value, 10);
-    return updateInitiative(this.actor.id, Number.isNaN(value) || value < 0 ? 0 : value);
-  }
   /**
-   * Click on a rank circle (trait, skill, corruption, fear). Clicking the first circle of a rank already
-   * at 1 clears it. Hero traits cannot go below 2, so their first circle sets the trait to 2.
+   * Click on a rank circle (trait, skill, corruption, fear). Clicking the first circle of a rank already at 1 clears
+   * it; a rank never goes below its minimum (2 for hero traits, 1 for Strength).
    */
   static async #onSetRank(event, target) {
     if (!this.isEditable) return;
-    const system = this.actor.system;
-    const { type, key, name } = target.dataset;
+    const name = target.dataset.name;
     let value = parseInt(target.dataset.value);
-    if (value === 1) {
-      let current = 0;
-      switch (type) {
-        case "skill":
-          current = system.skills[key].value;
-          break;
-        case "trait":
-          if (key === "influence" || key === "strength") current = system.traits[key].value;
-          else value = 2;
-          break;
-        case "corrupt":
-          current = system[key];
-          break;
-        case "fear":
-          current = system[key].value;
-          break;
-      }
-      if (current === 1) value = 0;
-    }
-    await this.actor.update({ [name]: value });
+    const rank2 = foundry.utils.getProperty(this.actor, name.replace(/\.value$/, ""));
+    const current = typeof rank2 === "object" ? rank2.value : rank2;
+    if (value === 1 && current === 1) value = 0;
+    value = Math.max(value, rank2?.min ?? 0);
+    if (value !== current) await this.actor.update({ [name]: value });
   }
   /** Click on a wound heart. */
   static async #onSetWounds(event, target) {
@@ -1508,19 +1605,12 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
     const clicked = parseInt(target.dataset.value);
     if (Number.isNaN(clicked)) return;
     const system = this.actor.system;
-    if (this.actor.type === ActorType.BRUTE) {
-      const value = system.wounds.value === 1 && clicked === 1 ? 0 : clicked;
-      return this.actor.update({ "system.wounds.value": value });
+    if (target.dataset.type === "dwounds") {
+      const dwounds = clicked === system.dwounds.value ? clicked - 1 : clicked;
+      return this.actor.update({ "system.dwounds.value": dwounds });
     }
-    let wounds = system.wounds.value;
-    let dwounds = system.dwounds.value;
-    if (target.dataset.type === "wounds") {
-      wounds = system.wounds.value === 1 && clicked === 1 ? 0 : clicked;
-      dwounds = Math.max(dwounds, Math.trunc(clicked / this.actor.woundGroupSize));
-    } else {
-      dwounds = clicked === dwounds ? dwounds - 1 : clicked;
-    }
-    await this.actor.update({ "system.wounds.value": wounds, "system.dwounds.value": dwounds });
+    const value = system.wounds.value === 1 && clicked === 1 ? 0 : clicked;
+    await this.actor.update(system.woundUpdate(value));
   }
   static #onRollSkill(event, target) {
     if (!this.isEditable) return;
@@ -1544,7 +1634,7 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
       const sorted = await this._onSortItem(event, item);
       return sorted?.length ? item : null;
     }
-    if (item.type !== ItemTypes.SORCERY && this._hasItem(item.type, item.name)) {
+    if (item.type !== ItemTypes.SORCERY && this.actor.hasItem(item.type, item.name)) {
       ui.notifications.error(game.i18n.format("SVNSEA2E.ItemExists", { type: item.type, name: item.name }));
       return null;
     }
@@ -1561,53 +1651,9 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
         );
         return null;
       }
-      if (item.system.active) await this._applyBackgroundBonuses(item);
     }
     const [created] = await this.actor.createEmbeddedDocuments("Item", [item.toObject()]);
     return created ?? null;
-  }
-  _hasItem(type, name) {
-    return this.actor.items.some((i) => i.type === type && i.name === name);
-  }
-  /* -------------------------------------------- */
-  /*  Backgrounds                                 */
-  /* -------------------------------------------- */
-  /** Add the background's advantages to the actor and raise its skills by one. */
-  async _applyBackgroundBonuses(background) {
-    const toCreate = [];
-    for (const name of background.system.advantages) {
-      const advantage = await findAdvantage(name);
-      if (!advantage) {
-        ui.notifications.error(game.i18n.format("SVNSEA2E.ItemDoesntExist", { name }));
-        continue;
-      }
-      if (this._hasItem(ItemTypes.ADVANTAGE, advantage.name) || toCreate.some((a) => a.name === advantage.name)) {
-        ui.notifications.error(game.i18n.format("SVNSEA2E.ItemExists", { type: advantage.type, name: advantage.name }));
-        continue;
-      }
-      const data = advantage.toObject();
-      delete data._id;
-      toCreate.push(data);
-    }
-    if (toCreate.length) await this.actor.createEmbeddedDocuments("Item", toCreate);
-    await this._shiftBackgroundSkills(background, 1);
-  }
-  /** Remove the background's advantages from the actor and lower its skills by one. */
-  async _removeBackgroundBonuses(background) {
-    await this._shiftBackgroundSkills(background, -1);
-    const names = background.system.advantages;
-    const ids = this.actor.items.filter((i) => i.type === ItemTypes.ADVANTAGE && names.includes(i.name)).map((i) => i.id);
-    if (ids.length) await this.actor.deleteEmbeddedDocuments("Item", ids);
-  }
-  async _shiftBackgroundSkills(background, delta) {
-    const skills = this.actor.system.skills;
-    if (!skills) return;
-    const update = {};
-    for (const key of background.system.skills) {
-      if (!skills[key]) continue;
-      update[`system.skills.${key}.value`] = clamp(skills[key].value + delta, 0, 5);
-    }
-    if (!foundry.utils.isEmpty(update)) await this.actor.update(update);
   }
 }
 const ACTOR_TEMPLATES = `${TEMPLATES}/actors`;
@@ -1683,7 +1729,6 @@ class VillainSheet extends SvnSea2EActorSheet {
   };
   _prepareItems(context) {
     const actor = this.actor;
-    context.villainy = actor.system.villainy;
     context.advantages = itemsOfType(actor, ItemTypes.ADVANTAGE);
     context.artifacts = itemsOfType(actor, ItemTypes.ARTIFACT);
     context.sorcery = itemsOfType(actor, ItemTypes.SORCERY);
@@ -1705,7 +1750,6 @@ class MonsterSheet extends SvnSea2EActorSheet {
   };
   _prepareItems(context) {
     const actor = this.actor;
-    context.fear = actor.system.fear;
     context.monsterqualities = itemsOfType(actor, ItemTypes.MONSTER_QUALITY);
     context.virtues = itemsOfType(actor, ItemTypes.VIRTUE);
     context.hubriss = itemsOfType(actor, ItemTypes.HUBRIS);
@@ -1715,7 +1759,6 @@ class BruteSheet extends SvnSea2EActorSheet {
   static DEFAULT_OPTIONS = { classes: ["brute"] };
   static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/brute.hbs`, scrollable: [".sheet-body"] } };
   _prepareItems(context) {
-    context.ability = this.actor.system.ability;
     context.advantages = itemsOfType(this.actor, ItemTypes.ADVANTAGE);
     context.duelstyles = itemsOfType(this.actor, ItemTypes.DUEL_STYLE);
   }
@@ -1727,32 +1770,12 @@ class DangerPointsSheet extends SvnSea2EActorSheet {
     actions: { adjustPoints: DangerPointsSheet.#onAdjustPoints }
   };
   static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/dangerpts.hbs` } };
-  _prepareItems(context) {
-    context.points = this.actor.system.points;
-  }
   static async #onAdjustPoints(event, target) {
     if (!this.isEditable) return;
     const points = Math.max(0, (parseInt(this.actor.system.points) || 0) + parseInt(target.dataset.delta));
     await this.actor.update({ "system.points": points });
   }
 }
-const CREW_ROLES = {
-  captain: "Captain",
-  firstmate: "FirstMate",
-  quartermaster: "QuaterMaster",
-  accountant: "Accountant",
-  boatswain: "Boatswain",
-  shipsmaster: "ShipsMaster",
-  captaintops: "CaptainTops",
-  surgeon: "Surgeon",
-  cook: "Cook",
-  mastergunner: "MasterGunner",
-  mastermariner: "MasterMariner",
-  midshipmen: "Midshipmen",
-  powdermonkey: "PowderMonkey",
-  ableseaman: "AbleSeaman",
-  seaman: "Seaman"
-};
 class ShipSheet extends SvnSea2EActorSheet {
   static DEFAULT_OPTIONS = {
     classes: ["ship"],
@@ -1775,31 +1798,21 @@ class ShipSheet extends SvnSea2EActorSheet {
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
     context.enrichedCargo = await enrichHTML(this.actor.system.cargo, { secrets: this.actor.isOwner, relativeTo: this.actor });
+    context.crew = this._prepareCrew();
     return context;
   }
   _prepareItems(context) {
-    const system = this.actor.system;
     context.adventures = itemsOfType(this.actor, ItemTypes.SHIP_ADVENTURE);
     context.backgrounds = itemsOfType(this.actor, ItemTypes.SHIP_BACKGROUND);
-    context.origin = system.origin;
-    context.class = system.class;
-    context.crewstatus = system.crewstatus;
-    context.cargo = system.cargo;
-    context.crew = this._prepareCrew();
   }
   /** The roster: every role with the crew members currently assigned to it. */
   _prepareCrew() {
     const crew = Object.fromEntries(
-      Object.entries(CREW_ROLES).map(([role, label]) => [
-        role,
-        { label: game.i18n.localize(`SVNSEA2E.${label}`), cssClass: role, role, actors: [] }
-      ])
+      Object.entries(CONFIG.SVNSEA2E.crewRoles).map(([role, label]) => [role, { label, cssClass: role, role, actors: [] }])
     );
-    const members = this.actor.getFlag(SYSTEM_ID, "shipsCrew")?.members ?? [];
-    for (const id of members) {
-      const member = game.actors.get(id);
-      const role = member?.getFlag(SYSTEM_ID, "crewMember")?.role;
-      if (role && crew[role]) crew[role].actors.push(member);
+    for (const { actorId, role } of this.actor.system.crew) {
+      const member = game.actors.get(actorId);
+      if (member && crew[role]) crew[role].actors.push(member);
     }
     return Object.values(crew);
   }
@@ -1819,22 +1832,13 @@ class ShipSheet extends SvnSea2EActorSheet {
     if (!this.isEditable || actor.pack) return null;
     const role = event.target.closest("[data-role]")?.dataset.role;
     if (!role) return null;
-    const members = this.actor.getFlag(SYSTEM_ID, "shipsCrew")?.members ?? [];
-    await actor.setCrewMemberRole(this.actor.id, role);
-    if (!members.includes(actor.id)) {
-      await this.actor.setFlag(SYSTEM_ID, "shipsCrew", { members: [...members, actor.id] });
-    } else {
-      this.render();
-    }
+    await this.actor.system.setCrewRole(actor.id, role);
     return actor;
   }
   static async #onRemoveCrew(event, target) {
     if (!this.isEditable) return;
     const actorId = target.closest("[data-actor-id]")?.dataset.actorId;
-    await game.actors.get(actorId)?.removeFromCrew();
-    const members = this.actor.getFlag(SYSTEM_ID, "shipsCrew")?.members;
-    if (!members) return;
-    await this.actor.setFlag(SYSTEM_ID, "shipsCrew", { members: members.filter((id) => id !== actorId) });
+    if (actorId) await this.actor.system.removeCrewMember(actorId);
   }
 }
 const DEFAULT_ITEM_ICONS = ["icons/svg/item-bag.svg", CONST.DEFAULT_TOKEN];
@@ -1842,21 +1846,13 @@ const CHAT_TEMPLATES = {
   [ItemTypes.BACKGROUND]: `${TEMPLATES}/items/parts/skill-throw-background.hbs`,
   default: `${TEMPLATES}/items/parts/skill-throw.hbs`
 };
-const ENRICHED_FIELDS = ["quirk", "bonus", "concern", "earnfavor", "reward", "endings", "steps"];
+const ENRICHED_FIELDS = ["quirk", "bonus", "concern", "earnfavor", "callupon", "reward", "endings", "steps"];
 class SvnSea2EItem extends Item {
   /** Use the system icon for new items that still have the default artwork. */
   async _preCreate(data, options, user) {
     if (await super._preCreate(data, options, user) === false) return false;
     if (!this.img || DEFAULT_ITEM_ICONS.includes(this.img)) {
       this.updateSource({ img: `${SYSTEM_PATH}/icons/${this.type}.jpg` });
-    }
-  }
-  /** @override */
-  prepareDerivedData() {
-    super.prepareDerivedData();
-    if (this.type === ItemTypes.SCHEME) {
-      const influence = this.system.influence;
-      influence.value = clamp(influence.value, influence.min, influence.max);
     }
   }
   /**
@@ -1963,12 +1959,20 @@ class AdvantageModel extends foundry.abstract.TypeDataModel {
     return {
       ...baseSchema(),
       cost: new SchemaField({
-        normal: new NumberField({ initial: 1, required: true }),
-        reducecost: new NumberField()
+        normal: new NumberField({ required: true, integer: true, min: 0, initial: 1 }),
+        reducecost: new NumberField({ integer: true, min: 0 })
       }),
       knack: new BooleanField({ initial: false }),
       innate: new BooleanField({ initial: false })
     };
+  }
+  /** Costs saved before they had to be whole numbers. */
+  static migrateData(source) {
+    for (const key of ["normal", "reducecost"]) {
+      const cost = source.cost?.[key];
+      if (typeof cost === "number") source.cost[key] = Math.max(Math.round(cost), 0);
+    }
+    return super.migrateData(source);
   }
 }
 class ArtifactModel extends foundry.abstract.TypeDataModel {
@@ -1995,9 +1999,19 @@ class DuelStyleModel extends foundry.abstract.TypeDataModel {
   }
 }
 class SchemeModel extends foundry.abstract.TypeDataModel {
+  static INFLUENCE_MAX = 40;
   static defineSchema() {
-    const int2 = (initial) => new NumberField({ required: true, integer: true, min: 0, initial });
-    return { ...baseSchema(), influence: new SchemaField({ value: int2(0), min: int2(0), max: int2(40) }) };
+    const value = new NumberField({ required: true, integer: true, min: 0, max: this.INFLUENCE_MAX, initial: 0 });
+    return { ...baseSchema(), influence: new SchemaField({ value }) };
+  }
+  static migrateData(source) {
+    const influence = source.influence;
+    if (typeof influence?.value === "number") influence.value = clamp(influence.value, 0, this.INFLUENCE_MAX);
+    return super.migrateData(source);
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    Object.assign(this.influence, { min: 0, max: SchemeModel.INFLUENCE_MAX });
   }
 }
 class SecretSocietyModel extends foundry.abstract.TypeDataModel {
@@ -2006,9 +2020,14 @@ class SecretSocietyModel extends foundry.abstract.TypeDataModel {
       ...baseSchema(),
       concern: new HTMLField(),
       earnfavor: new HTMLField(),
-      callupon: new StringField(),
-      favor: new HTMLField()
+      callupon: new HTMLField(),
+      favor: new NumberField({ required: true, integer: true, min: 0, initial: 0 })
     };
+  }
+  /** Up to v24 the favor was saved as text ("2", "" or even "<p>2</p>"). */
+  static migrateData(source) {
+    if (typeof source.favor === "string") source.favor = Math.max(parseInt(source.favor.replace(/<[^>]*>/g, "")) || 0, 0);
+    return super.migrateData(source);
   }
 }
 class SorceryModel extends foundry.abstract.TypeDataModel {
@@ -2074,7 +2093,6 @@ class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     Object.assign(context, {
       item,
       system,
-      owner: item.isOwner,
       editable: this.isEditable,
       cssClass: item.isOwner ? "editable" : "locked",
       config: CONFIG.SVNSEA2E,
@@ -2082,45 +2100,13 @@ class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
       itemType: CONFIG.SVNSEA2E.itemTypes[item.type],
       name: item.name,
       img: item.img,
-      type: item.type,
-      infosource: system.infosource,
       enriched: {}
     });
     const enrichOptions = { secrets: item.isOwner, relativeTo: item, rollData: item.actor?.getRollData() };
     for (const field of ["description", ...EDITOR_FIELDS[item.type] ?? []]) {
       context.enriched[field] = await enrichHTML(system[field], enrichOptions);
     }
-    switch (item.type) {
-      case ItemTypes.BACKGROUND:
-        context.selectedskills = system.skills.map((s) => CONFIG.SVNSEA2E.skills[s]);
-        context.selectedadvantages = system.advantages;
-        context.nation = system.nation;
-        break;
-      case ItemTypes.ADVANTAGE:
-        context.normalCost = system.cost.normal;
-        context.reducedCost = system.cost.reducecost;
-        context.knack = system.knack;
-        context.innate = system.innate;
-        break;
-      case ItemTypes.SCHEME:
-        context.influence = system.influence;
-        break;
-      case ItemTypes.SECRET_SOCIETY:
-        context.favor = system.favor;
-        break;
-      case ItemTypes.SORCERY:
-        context.sorceryType = system.sorctype;
-        context.sorceryDuration = system.sorcdur;
-        context.sorceryCategory = system.sorccat;
-        context.sorcerySubCategory = system.sorcsubcat;
-        break;
-      case ItemTypes.STORY:
-        context.storyStatus = system.status;
-        break;
-      case ItemTypes.ARTIFACT:
-        context.artifactType = system.artifactType;
-        break;
-    }
+    if (item.type === ItemTypes.BACKGROUND) context.selectedskills = system.skills.map((s) => CONFIG.SVNSEA2E.skills[s]);
     return context;
   }
   static #onSelectSkills(event, target) {
@@ -2291,7 +2277,6 @@ function registerSheets() {
 }
 Hooks.once("setup", () => {
   const lists = [
-    "actorTypes",
     "natTypes",
     "artifactTypes",
     "crewStatuses",
@@ -2300,16 +2285,15 @@ Hooks.once("setup", () => {
     "languages",
     "nations",
     "traits",
-    "shipRoles",
     "skills",
     "sorceryTypes",
     "sorceryCats",
     "sorcerySubcats",
     "storyStatuses"
   ];
-  for (const list of lists) {
+  for (const list of [...lists, "crewRoles"]) {
     const entries = Object.entries(CONFIG.SVNSEA2E[list]).map(([key, label]) => [key, game.i18n.localize(label)]);
-    entries.sort((a, b) => a[1].localeCompare(b[1]));
+    if (lists.includes(list)) entries.sort((a, b) => a[1].localeCompare(b[1]));
     CONFIG.SVNSEA2E[list] = Object.fromEntries(entries);
   }
 });

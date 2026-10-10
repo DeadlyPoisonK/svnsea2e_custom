@@ -1,7 +1,8 @@
 /**
  * Data models for every Item type.
- * The schemas are kept identical to the v23 (Foundry v13) release, so existing worlds need no data migration.
  */
+import { clamp } from '../helpers.js';
+
 const { HTMLField, SchemaField, NumberField, StringField, ArrayField, BooleanField } = foundry.data.fields;
 
 /** Fields shared by every item. `used` backs the "used this session" checkbox on the actor sheets. */
@@ -23,12 +24,21 @@ export class AdvantageModel extends foundry.abstract.TypeDataModel {
     return {
       ...baseSchema(),
       cost: new SchemaField({
-        normal: new NumberField({ initial: 1, required: true }),
-        reducecost: new NumberField(),
+        normal: new NumberField({ required: true, integer: true, min: 0, initial: 1 }),
+        reducecost: new NumberField({ integer: true, min: 0 }),
       }),
       knack: new BooleanField({ initial: false }),
       innate: new BooleanField({ initial: false }),
     };
+  }
+
+  /** Costs saved before they had to be whole numbers. */
+  static migrateData(source) {
+    for (const key of ['normal', 'reducecost']) {
+      const cost = source.cost?.[key];
+      if (typeof cost === 'number') source.cost[key] = Math.max(Math.round(cost), 0);
+    }
+    return super.migrateData(source);
   }
 }
 
@@ -58,10 +68,24 @@ export class DuelStyleModel extends foundry.abstract.TypeDataModel {
   }
 }
 
+/** A villain's scheme, with the Influence invested in it (0 to 40). */
 export class SchemeModel extends foundry.abstract.TypeDataModel {
+  static INFLUENCE_MAX = 40;
+
   static defineSchema() {
-    const int = (initial) => new NumberField({ required: true, integer: true, min: 0, initial });
-    return { ...baseSchema(), influence: new SchemaField({ value: int(0), min: int(0), max: int(40) }) };
+    const value = new NumberField({ required: true, integer: true, min: 0, max: this.INFLUENCE_MAX, initial: 0 });
+    return { ...baseSchema(), influence: new SchemaField({ value }) };
+  }
+
+  static migrateData(source) {
+    const influence = source.influence;
+    if (typeof influence?.value === 'number') influence.value = clamp(influence.value, 0, this.INFLUENCE_MAX);
+    return super.migrateData(source);
+  }
+
+  prepareBaseData() {
+    super.prepareBaseData();
+    Object.assign(this.influence, { min: 0, max: SchemeModel.INFLUENCE_MAX });
   }
 }
 
@@ -71,9 +95,15 @@ export class SecretSocietyModel extends foundry.abstract.TypeDataModel {
       ...baseSchema(),
       concern: new HTMLField(),
       earnfavor: new HTMLField(),
-      callupon: new StringField(),
-      favor: new HTMLField(),
+      callupon: new HTMLField(),
+      favor: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
     };
+  }
+
+  /** Up to v24 the favor was saved as text ("2", "" or even "<p>2</p>"). */
+  static migrateData(source) {
+    if (typeof source.favor === 'string') source.favor = Math.max(parseInt(source.favor.replace(/<[^>]*>/g, '')) || 0, 0);
+    return super.migrateData(source);
   }
 }
 

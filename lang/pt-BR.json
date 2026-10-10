@@ -358,6 +358,8 @@
   "SVNSEA2E.HtkOff": "HTK: DESATIVADO",
   "SVNSEA2E.RollDice": "Rolar Dados",
   "SVNSEA2E.DiceNumberLabel": "Número de Dados:",
+  "SVNSEA2E.JoieSkillRank": "Nível de perícia (Joie de Vivre)",
+  "SVNSEA2E.Servants": "Servos",
   "SVNSEA2E.ExtraDiceExploded": "dados explodidos",
   "SVNSEA2E.GenericRoll": "Rolagem Genérica",
   "SVNSEA2E.NoDiceToRoll": "Não há dados para rolar.",

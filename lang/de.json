@@ -349,6 +349,8 @@
   "SVNSEA2E.HtkOff": "HTK: AUS",
   "SVNSEA2E.RollDice": "Würfel werfen",
   "SVNSEA2E.DiceNumberLabel": "Anzahl der Würfel:",
+  "SVNSEA2E.JoieSkillRank": "Fertigkeitsstufe (Joie de Vivre)",
+  "SVNSEA2E.Servants": "Diener",
   "SVNSEA2E.ExtraDiceExploded": "explodierte Würfel",
   "SVNSEA2E.GenericRoll": "Allgemeiner Wurf",
   "SVNSEA2E.NoDiceToRoll": "Es gibt keine Würfel zu werfen.",

@@ -1,4 +1,4 @@
-import { TEMPLATES, VILLAIN_TYPES } from '../enums.js';
+import { TEMPLATES } from '../enums.js';
 import { readRollForm, rollDicePool } from './roll.js';
 
 const { DialogV2 } = foundry.applications.api;
@@ -37,9 +37,10 @@ export async function rollSkill(actor, skill) {
   const rank = system.skills[skill].value;
   const rolldata = {
     threshold: rank >= 4 ? 15 : 10,
-    explode: rank === 5 || system.dwounds.value >= 3,
+    explode: rank === 5 || system.explodesTens,
     reroll: rank > 2,
     skilldice: rank,
+    skillRank: rank,
   };
   const traits = {};
   for (const [key, trait] of Object.entries(system.traits)) traits[CONFIG.SVNSEA2E.traits[key]] = trait.value;
@@ -63,17 +64,15 @@ export async function rollSkill(actor, skill) {
   });
 }
 
-/**
- * Trait-only roll. Villains and monsters roll their traits this way too; their 10s explode
- * from the third dramatic wound.
- */
+/** Trait-only roll, also used by villains, monsters and brutes. Joie de Vivre does not apply: there is no skill. */
 export async function rollTrait(actor, trait) {
   const system = actor.system;
   const rolldata = {
     threshold: 10,
-    explode: VILLAIN_TYPES.includes(actor.type) && system.dwounds?.value >= 3,
+    explode: system.explodesTens ?? false,
     reroll: false,
     skilldice: 0,
+    skillRank: 0,
   };
   const title = game.i18n.format('SVNSEA2E.TraitRollTitle', { trait: CONFIG.SVNSEA2E.traits[trait] });
   const result = await promptRoll(title, `${TEMPLATES}/chats/trait-roll-dialog.hbs`, {
@@ -94,10 +93,18 @@ export async function rollFreeDice(actor) {
   );
   if (!result) return false;
   const diceCount = Math.max(parseInt(result.form.elements.diceNumber?.value) || 1, 1);
-  const { addOneToDice, joieDeVivre, explodeDice, increaseThreshold } = result.options;
+  const { addOneToDice, joieDeVivre, joieRank, explodeDice, increaseThreshold } = result.options;
   return rollDicePool({
     actor,
-    rolldata: { skilldice: diceCount, threshold: 10, explode: false, reroll: false, skipWoundBonus: true },
+    rolldata: {
+      skilldice: diceCount,
+      // Joie de Vivre needs the rank of the skill: the number of dice is not it.
+      skillRank: Math.max(joieRank, 0),
+      threshold: 10,
+      explode: false,
+      reroll: false,
+      skipWoundBonus: true,
+    },
     options: {
       trait: 0,
       bonusDice: 0,

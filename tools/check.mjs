@@ -64,11 +64,10 @@ const scan = (text) => {
 };
 scan(sourceText);
 templates.forEach((f) => scan(fs.readFileSync(f, 'utf8')));
-// Keys built at runtime: `SVNSEA2E.New${type}` and the crew role labels.
+// Keys built at runtime: `SVNSEA2E.New${type}`.
 for (const type of ['advantage', 'artifact', 'background', 'duelstyle', 'monsterquality', 'scheme', 'secretsociety', 'shipadventure', 'shipbackground', 'sorcery', 'story', 'virtue', 'hubris']) {
   usedKeys.add(`SVNSEA2E.New${type}`);
 }
-for (const [, label] of sourceText.matchAll(/^\s+\w+: '([A-Z]\w+)',$/gm)) usedKeys.add(`SVNSEA2E.${label}`);
 for (const [lang, strings] of Object.entries(langs)) {
   const missing = [...usedKeys].filter((key) => !(key in strings) && !key.endsWith('.'));
   if (missing.length) errors.push(`lang/${lang}.json: missing ${missing.length} keys: ${missing.join(', ')}`);

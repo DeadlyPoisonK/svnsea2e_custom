@@ -1,6 +1,10 @@
-import { ActorType, SYSTEM_ID, SYSTEM_PATH, VILLAIN_TYPES } from '../enums.js';
-import { clamp } from '../helpers.js';
+import { ItemTypes, SYSTEM_ID, SYSTEM_PATH } from '../enums.js';
+import { clamp, findAdvantage } from '../helpers.js';
 
+/**
+ * The rules computed from the actor's own data live in its data model (src/actor/models.js).
+ * The document only handles what involves its items: the bonuses granted by backgrounds.
+ */
 export class SvnSea2EActor extends Actor {
   /** Use the system icon for new actors that still have the default artwork. */
   async _preCreate(data, options, user) {
@@ -10,76 +14,93 @@ export class SvnSea2EActor extends Actor {
     }
   }
 
-  /** @override */
-  prepareDerivedData() {
-    super.prepareDerivedData();
-    const system = this.system;
-    switch (this.type) {
-      case ActorType.PLAYER:
-      case ActorType.HERO:
-        this._prepareHeroWounds(system);
-        this._clampRanks(system.traits);
-        this._clampRanks(system.skills);
-        break;
-      case ActorType.VILLAIN:
-      case ActorType.MONSTER:
-        this._prepareVillainData(system);
-        break;
-      case ActorType.BRUTE:
-        this._prepareBruteData(system);
-        break;
+  /* -------------------------------------------- */
+  /*  Backgrounds                                 */
+  /* -------------------------------------------- */
+
+  /**
+   * An active background grants its advantages and +1 to its skills however it is added: from the sheet, the items
+   * directory, a macro... Only the client that made the change applies them.
+   * @override
+   */
+  _onCreateDescendantDocuments(parent, collection, documents, data, options, userId) {
+    super._onCreateDescendantDocuments(parent, collection, documents, data, options, userId);
+    if (userId !== game.user.id || parent !== this) return;
+    const backgrounds = documents.filter((item) => item.type === ItemTypes.BACKGROUND && item.system.active);
+    if (backgrounds.length) this.#forEach(backgrounds, (background) => this.applyBackground(background));
+  }
+
+  /** Deleting an active background takes back what it granted. @override */
+  _onDeleteDescendantDocuments(parent, collection, documents, ids, options, userId) {
+    super._onDeleteDescendantDocuments(parent, collection, documents, ids, options, userId);
+    if (userId !== game.user.id || parent !== this) return;
+    const backgrounds = documents.filter((item) => item.type === ItemTypes.BACKGROUND && item.system.active);
+    if (backgrounds.length) this.#forEach(backgrounds, (background) => this.removeBackground(background));
+  }
+
+  /** Run an async task for each document, one after the other. */
+  async #forEach(documents, task) {
+    for (const document of documents) await task(document);
+  }
+
+  /** Activate or deactivate a background, adding or removing what it grants. */
+  async toggleBackground(background) {
+    const active = !background.system.active;
+    if (active) await this.applyBackground(background);
+    else await this.removeBackground(background);
+    await background.update({ 'system.active': active });
+  }
+
+  /**
+   * Add the background's advantages to the actor and raise its skills by one. The advantages are marked with the
+   * background that created them, so that removing it only removes those.
+   */
+  async applyBackground(background) {
+    const toCreate = [];
+    for (const name of background.system.advantages) {
+      const advantage = await findAdvantage(name);
+      if (!advantage) {
+        ui.notifications.error(game.i18n.format('SVNSEA2E.ItemDoesntExist', { name }));
+        continue;
+      }
+      if (this.hasItem(ItemTypes.ADVANTAGE, advantage.name) || toCreate.some((a) => a.name === advantage.name)) {
+        ui.notifications.error(game.i18n.format('SVNSEA2E.ItemExists', { type: advantage.type, name: advantage.name }));
+        continue;
+      }
+      const data = advantage.toObject();
+      delete data._id;
+      foundry.utils.setProperty(data, `flags.${SYSTEM_ID}.grantedBy`, background.id);
+      toCreate.push(data);
     }
+    if (toCreate.length) await this.createEmbeddedDocuments('Item', toCreate);
+    await this.#shiftSkills(background, 1);
+    if (!background.getFlag(SYSTEM_ID, 'tracksGrants')) await background.setFlag(SYSTEM_ID, 'tracksGrants', true);
   }
 
-  /** Keep every value/min/max entry within its bounds. */
-  _clampRanks(ranks) {
-    for (const rank of Object.values(ranks)) rank.value = clamp(rank.value, rank.min, rank.max);
+  /** Remove the advantages the background granted and lower its skills by one. */
+  async removeBackground(background) {
+    await this.#shiftSkills(background, -1);
+    // Backgrounds applied before v25 did not mark their advantages: remove them by name, as v24 did.
+    const granted = background.getFlag(SYSTEM_ID, 'tracksGrants')
+      ? (item) => item.getFlag(SYSTEM_ID, 'grantedBy') === background.id
+      : (item) => background.system.advantages.includes(item.name);
+    const ids = this.items.filter((item) => item.type === ItemTypes.ADVANTAGE && granted(item)).map((item) => item.id);
+    if (ids.length) await this.deleteEmbeddedDocuments('Item', ids);
   }
 
-  /** Heroes have 4 dramatic wounds (20 wounds), or 5 (25 wounds) when Hard To Kill. */
-  _prepareHeroWounds(system) {
-    system.dwounds.max = system.htk ? 5 : 4;
-    system.wounds.max = system.dwounds.max * 5;
-    this._clampWounds(system);
+  async #shiftSkills(background, delta) {
+    const skills = this.system.skills;
+    if (!skills) return;
+    const update = {};
+    for (const key of background.system.skills) {
+      const skill = skills[key];
+      if (skill) update[`system.skills.${key}.value`] = clamp(skill.value + delta, skill.min, skill.max);
+    }
+    if (!foundry.utils.isEmpty(update)) await this.update(update);
   }
 
-  /** Villains and monsters: dramatic wounds every Strength + 1 wounds; Hard To Kill adds one dramatic wound. */
-  _prepareVillainData(system) {
-    this._clampRanks(system.traits);
-    system.villainy = parseInt(system.traits.strength.value) + parseInt(system.traits.influence.value);
-    system.dwounds.max = system.htk ? 5 : 4;
-    system.wounds.max = (parseInt(system.traits.strength.value) + 1) * system.dwounds.max;
-    this._clampWounds(system);
-  }
-
-  /** A brute squad has as many wounds as its Strength. */
-  _prepareBruteData(system) {
-    const strength = system.traits.strength;
-    strength.value = clamp(strength.value, strength.min, strength.max);
-    system.wounds.max = strength.value;
-    if (system.wounds.value > system.wounds.max) system.wounds.value = system.wounds.max;
-  }
-
-  _clampWounds(system) {
-    system.wounds.value = clamp(system.wounds.value, system.wounds.min, system.wounds.max);
-    system.dwounds.value = clamp(system.dwounds.value, system.dwounds.min, system.dwounds.max);
-  }
-
-  /** Number of wounds in each dramatic wound group. */
-  get woundGroupSize() {
-    if (VILLAIN_TYPES.includes(this.type)) return parseInt(this.system.traits.strength.value) + 1;
-    return 5;
-  }
-
-  /* -------------------------------------------- */
-  /*  Ship crew                                   */
-  /* -------------------------------------------- */
-
-  async removeFromCrew() {
-    await this.unsetFlag(SYSTEM_ID, 'crewMember');
-  }
-
-  async setCrewMemberRole(shipId, role) {
-    return this.setFlag(SYSTEM_ID, 'crewMember', { shipId, role });
+  /** Whether the actor has an item of this type and name. */
+  hasItem(type, name) {
+    return this.items.some((item) => item.type === type && item.name === name);
   }
 }

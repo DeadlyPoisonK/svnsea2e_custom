@@ -351,6 +351,8 @@
   "SVNSEA2E.HtkOff": "HTK: DISATTIVO",
   "SVNSEA2E.RollDice": "Tira Dadi",
   "SVNSEA2E.DiceNumberLabel": "Numero di Dadi:",
+  "SVNSEA2E.JoieSkillRank": "Grado di abilità (Joie de Vivre)",
+  "SVNSEA2E.Servants": "Servitori",
   "SVNSEA2E.ExtraDiceExploded": "dadi esplosi",
   "SVNSEA2E.GenericRoll": "Tiro generico",
   "SVNSEA2E.NoDiceToRoll": "Non ci sono dadi da tirare.",

@@ -358,6 +358,8 @@
   "SVNSEA2E.HtkOff": "HTK: OFF",
   "SVNSEA2E.RollDice": "Roll Dice",
   "SVNSEA2E.DiceNumberLabel": "Number of Dice:",
+  "SVNSEA2E.JoieSkillRank": "Skill rank (Joie de Vivre)",
+  "SVNSEA2E.Servants": "Servants",
   "SVNSEA2E.ExtraDiceExploded": "exploded dice",
   "SVNSEA2E.GenericRoll": "Generic Roll",
   "SVNSEA2E.NoDiceToRoll": "There are no dice to roll.",

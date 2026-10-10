@@ -6,7 +6,7 @@
       <div class="form-group">
         <label for="{{item.id}}-status">{{localize "SVNSEA2E.Status"}}</label>
         <select class="status" id="{{item.id}}-status" name="system.status">
-          {{selectOptions config.storyStatuses selected=storyStatus localize=true}}
+          {{selectOptions config.storyStatuses selected=system.status localize=true}}
         </select>
       </div>
     </div>

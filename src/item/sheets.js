@@ -40,7 +40,6 @@ export class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     Object.assign(context, {
       item,
       system,
-      owner: item.isOwner,
       editable: this.isEditable,
       cssClass: item.isOwner ? 'editable' : 'locked',
       config: CONFIG.SVNSEA2E,
@@ -48,8 +47,6 @@ export class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
       itemType: CONFIG.SVNSEA2E.itemTypes[item.type],
       name: item.name,
       img: item.img,
-      type: item.type,
-      infosource: system.infosource,
       enriched: {},
     });
 
@@ -58,37 +55,7 @@ export class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
       context.enriched[field] = await enrichHTML(system[field], enrichOptions);
     }
 
-    switch (item.type) {
-      case ItemTypes.BACKGROUND:
-        context.selectedskills = system.skills.map((s) => CONFIG.SVNSEA2E.skills[s]);
-        context.selectedadvantages = system.advantages;
-        context.nation = system.nation;
-        break;
-      case ItemTypes.ADVANTAGE:
-        context.normalCost = system.cost.normal;
-        context.reducedCost = system.cost.reducecost;
-        context.knack = system.knack;
-        context.innate = system.innate;
-        break;
-      case ItemTypes.SCHEME:
-        context.influence = system.influence;
-        break;
-      case ItemTypes.SECRET_SOCIETY:
-        context.favor = system.favor;
-        break;
-      case ItemTypes.SORCERY:
-        context.sorceryType = system.sorctype;
-        context.sorceryDuration = system.sorcdur;
-        context.sorceryCategory = system.sorccat;
-        context.sorcerySubCategory = system.sorcsubcat;
-        break;
-      case ItemTypes.STORY:
-        context.storyStatus = system.status;
-        break;
-      case ItemTypes.ARTIFACT:
-        context.artifactType = system.artifactType;
-        break;
-    }
+    if (item.type === ItemTypes.BACKGROUND) context.selectedskills = system.skills.map((s) => CONFIG.SVNSEA2E.skills[s]);
     return context;
   }
 

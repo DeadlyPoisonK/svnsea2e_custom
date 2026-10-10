@@ -592,47 +592,6 @@
   border: 0 solid transparent;
 }
 
-/* Raises (initiative) */
-
-.svnsea2e .raise-tracking {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  min-width: 10em;
-  gap: 0.5rem;
-}
-
-.svnsea2e .raise-tracking label {
-  margin: 0;
-}
-
-.svnsea2e .raise-tracking .twodigit {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.svnsea2e .raise-tracking button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1.8rem;
-  height: 1.8rem;
-  margin: 0;
-  padding: 0;
-  font-size: 0.8em;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 1em;
-  border: 1px solid rgba(119, 18, 19, 0.5);
-  box-shadow: 1px 1px 4px var(--svnsea-red);
-}
-
-.svnsea2e .raise-tracking input {
-  text-align: center;
-  margin: 0;
-  height: 1.8rem;
-}
-
 /* Hard To Kill */
 
 .svnsea2e .htk-control {

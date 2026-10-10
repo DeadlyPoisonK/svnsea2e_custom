@@ -6,8 +6,8 @@
         <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="{{localize 'SVNSEA2E.ActorName'}}" /></h1>
         <div class="resources flex-group-left wound-title">{{localize "SVNSEA2E.Wounds"}}</div>
         <div class="resources flex-group-left wounds">
-          {{#for 1 wounds.max 1}}
-            <i data-action="setWounds" data-value="{{@index}}" data-type="wounds" class="fillable {{#iff wounds.value '>=' @index}}fa-solid{{else}}fa-regular{{/iff}} fa-heart fa-lg"></i>
+          {{#for 1 system.wounds.max 1}}
+            <i data-action="setWounds" data-value="{{@index}}" data-type="wounds" class="fillable {{#iff system.wounds.value '>=' @index}}fa-solid{{else}}fa-regular{{/iff}} fa-heart fa-lg"></i>
           {{/for}}
           <div class="flex-group">
             <button type="button" class="roll-throw" data-action="freeRoll">{{localize "SVNSEA2E.RollDice"}}</button>

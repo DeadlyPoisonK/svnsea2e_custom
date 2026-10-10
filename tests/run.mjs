@@ -9,8 +9,12 @@ import { pathToFileURL } from 'node:url';
 import { installMocks } from './foundry-mock.mjs';
 const repo = path.resolve(import.meta.dirname, '..');
 const { log, hooks, MockRoll, DialogV2, DocumentSheetConfig, settings } = installMocks(repo);
+const renderTemplate = (...a) => foundry.applications.handlebars.renderTemplate(...a);
 let failures = 0;
 const ok = (cond, msg) => { console.log(`${cond ? '✓' : '✗'} ${msg}`); if (!cond) failures++; };
+// Let the async work started by document hooks (background bonuses) finish.
+const settle = () => new Promise((r) => setTimeout(r, 0));
+const raisesOf = (msg) => Number(/>\s*(\d+) raises? -/i.exec(msg.content)?.[1]);
 
 await import(pathToFileURL(`${repo}/svnsea2e.mjs`).href);
 await Hooks.callAll('init');
@@ -18,7 +22,7 @@ ok(DocumentSheetConfig.registered.length === 20, `20 sheets registered (${Docume
 await Hooks.callAll('setup');
 ok(CONFIG.SVNSEA2E.skills.aim === 'Aim', 'config localized');
 await Hooks.callAll('ready');
-ok(settings.get('systemMigrationVersion') === '24.0', 'migration version stored');
+ok(settings.get('systemMigrationVersion') === '25.0', `newest migration version stored (${settings.get('systemMigrationVersion')})`);
 
 const make = async (type, data = {}) => { const a = await Actor.create({ name: type, type, ...data }); game.actors.set(a.id, a); return a; };
 const sheetClasses = {};
@@ -66,17 +70,14 @@ await pcSheet.render();
 await pcSheet.click('[data-action="setRank"][data-key="aim"][data-value="1"]');
 ok(pc.system.skills.aim.value === 0, 'skill aim back to 0');
 
-// Initiative
-await pcSheet.click('[data-action="initiativeUp"]');
-ok(pc.system.initiative === 1, 'initiative +1');
-await pcSheet.render();
-await pcSheet.click('[data-action="initiativeDown"]');
-await pcSheet.click('[data-action="initiativeDown"]');
-ok(pc.system.initiative === 0, 'initiative clamped at 0');
-const input = pcSheet.element.querySelector('.initiative-input');
-input.value = '4'; input.dispatchEvent(new window.Event('change'));
-await new Promise((r) => setTimeout(r, 10));
-ok(pc.system.initiative === 4, 'initiative input change');
+// Initiative (raises) is not edited from the sheet any more.
+ok(!pcSheet.element.querySelector('[data-action^="initiative"], .initiative-input'), 'no initiative controls on the sheet');
+
+// Bounds kept by the data model, whatever writes the value.
+await pc.update({ 'system.traits.wits.value': 0, 'system.skills.hide.value': 7 });
+ok(pc.system.traits.wits.value === 2 && pc.system.skills.hide.value === 5, 'hero trait never below 2, skill never above 5');
+ok(pc.system.traits.wits.max === 5 && pc.system.skills.hide.min === 0 && !('max' in pc._source.system.skills.hide), 'rank bounds are derived, not stored');
+await pc.update({ 'system.skills.hide.value': 0 });
 
 // Items
 await pcSheet.click('[data-action="createItem"][data-type="advantage"]');
@@ -109,6 +110,7 @@ ok(pcSheet.element.querySelector('li.item[data-item-id]').classList.contains('hi
 const worldAdv = await Item.create({ name: 'Linguist', type: 'advantage' }); game.items.set(worldAdv.id, worldAdv);
 const bg = await Item.create({ name: 'Sailor', type: 'background', system: { skills: ['sailing', 'athletics'], advantages: ['Linguist', 'Missing One'], nation: 'none' } });
 await pcSheet._onDropItem({}, bg);
+await settle();
 ok(pc.items.some((i) => i.name === 'Linguist'), 'background advantage added');
 ok(pc.system.skills.sailing.value === 1 && pc.system.skills.athletics.value === 1, 'background skills +1');
 ok(log.notifications.some(([, m]) => m.includes('Missing One')), 'missing advantage notified');
@@ -124,7 +126,25 @@ ok(pcBg.system.active && pc.system.skills.sailing.value === 1, 'background react
 await pcSheet.render();
 const delIndex = [...pcSheet.element.querySelectorAll('[data-action="deleteItem"]')].findIndex((el) => el.closest('[data-item-id]').dataset.itemId === pcBg.id);
 await pcSheet.click('[data-action="deleteItem"]', delIndex);
-ok(!pc.items.has(pcBg.id) && pc.system.skills.sailing.value === 0, 'deleting an active background removes its bonuses');
+await settle();
+ok(!pc.items.has(pcBg.id) && pc.system.skills.sailing.value === 0 && !pc.items.some((i) => i.name === 'Linguist'), 'deleting an active background removes its bonuses');
+
+// A background only takes back the advantages it created, however it is added or removed.
+{
+  const [own] = await pc.createEmbeddedDocuments('Item', [{ name: 'Linguist', type: 'advantage' }]);
+  const [viaMacro] = await pc.createEmbeddedDocuments('Item', [bg.toObject()]);
+  await settle();
+  ok(pc.system.skills.sailing.value === 1 && viaMacro.getFlag('svnsea2e', 'tracksGrants'), 'background added by a macro applies its bonuses');
+  await viaMacro.delete();
+  await settle();
+  ok(pc.items.has(own.id) && pc.system.skills.sailing.value === 0, 'the advantage the hero already had is kept');
+  // A background applied by v24 has no marks: its advantages go by name, as before.
+  const [legacy] = await pc.createEmbeddedDocuments('Item', [{ ...bg.toObject(), system: { ...bg.toObject().system, active: false } }]);
+  await legacy.update({ 'system.active': true });
+  await pc.deleteEmbeddedDocuments('Item', [legacy.id]);
+  await settle();
+  ok(!pc.items.has(own.id), 'legacy background removes its advantages by name');
+}
 
 // Wrong nation background
 pc._source.system.nation = 'castille'; pc.prepareData();
@@ -147,6 +167,43 @@ const before = log.chat.length;
 await pcSheet.click('[data-action="rollSkill"][data-label="aim"]');
 ok(log.chat.length === before && log.notifications.at(-1)[1].includes('hero'), 'not enough hero points blocks roll');
 DialogV2.prefill = null;
+
+// Roll engine: a triple [a, b, b] needs two dice of b (it used to count one die twice and drop the last one).
+await pc.update({ 'system.skills.aim.value': 4, 'system.traits.brawn.value': 2, 'system.dwounds.value': 0, 'system.wounds.value': 0 });
+DialogV2.prefill = (form) => { form.querySelector('[name="trait"]').value = '2'; };
+MockRoll.next = [1, 7, 1, 1, 1, 1, 1]; // 6 dice + the rank 3 reroll of a leftover 1
+await pcSheet.click('[data-action="rollSkill"][data-label="aim"]');
+ok(raisesOf(log.chat.at(-1)) === 1, `1 + 7 alone is no 15 (threshold 15): ${raisesOf(log.chat.at(-1))} raise(s), expected 1 from 7 + 1 + 1 + 1`);
+MockRoll.next = [1, 7, 7, 2, 2, 2, 3];
+await pcSheet.click('[data-action="rollSkill"][data-label="aim"]');
+ok(raisesOf(log.chat.at(-1)) === 2 && log.chat.at(-1).content.includes('1 + 7 + 7'), 'a real 1 + 7 + 7 still counts');
+
+// Joie de Vivre: dice up to the skill rank, before the +1, count as 10s.
+await pc.update({ 'system.skills.aim.value': 2 });
+DialogV2.prefill = (form) => { form.querySelector('[name="trait"]').value = '2'; form.querySelector('[name="joieDeVivreAdvantage"]').checked = true; form.querySelector('[name="addOneToDice"]').checked = true; };
+MockRoll.next = [1, 2, 3, 4];
+await pcSheet.click('[data-action="rollSkill"][data-label="aim"]');
+ok(raisesOf(log.chat.at(-1)) === 2, `Joie de Vivre with +1: the 1 and the 2 count as 10s (${raisesOf(log.chat.at(-1))})`);
+DialogV2.prefill = (form) => { form.querySelector('[name="diceNumber"]').value = '5'; form.querySelector('[name="joieDeVivreAdvantage"]').checked = true; form.querySelector('[name="joieRank"]').value = '1'; };
+MockRoll.next = [2, 2, 2, 2, 2];
+await pcSheet.click('[data-action="freeRoll"]');
+ok(raisesOf(log.chat.at(-1)) === 1, `free roll Joie uses the skill rank asked, not the number of dice (${raisesOf(log.chat.at(-1))})`);
+DialogV2.prefill = null;
+ok(!(await renderTemplate('systems/svnsea2e/templates/chats/trait-roll-dialog.hbs', { traitmax: 2 })).includes('joieDeVivre'), 'no Joie de Vivre on trait rolls');
+
+// Hero points are only spent when there is something to roll.
+await pc.update({ 'system.heropts': 1 });
+DialogV2.prefill = (form) => { form.querySelector('[name="trait"]').value = '2'; form.querySelector('[name="bonusDice"]').value = '-10'; form.querySelector('[name="useForMe"]').value = '1'; };
+await pcSheet.click('[data-action="rollSkill"][data-label="aim"]');
+ok(pc.system.heropts === 1 && log.notifications.at(-1)[1].includes('no dice'), 'no hero point spent on an empty pool');
+DialogV2.prefill = null;
+
+// Trait rolls of heroes explode from the third dramatic wound too.
+await pc.update({ 'system.dwounds.value': 3 });
+MockRoll.next = [1, 1, 1];
+await pcSheet.click('[data-action="rollTrait"][data-label="panache"]');
+ok(log.chat.at(-1).rolls[0].formula === '3d10x', `hero trait roll explodes at 3 dramatic wounds (${log.chat.at(-1).rolls[0].formula})`);
+await pc.update({ 'system.dwounds.value': 1, 'system.traits.brawn.value': 3 });
 
 // Trait roll & free roll
 MockRoll.next = [5, 5, 5];
@@ -182,8 +239,12 @@ MockRoll.next = [10, 10, 10, 10, 10, 1, 1, 1, 1, 1, 1];
 await vSheet.click('[data-action="rollTrait"][data-label="strength"]');
 ok(log.chat.at(-1).rolls[0].formula === '6d10', `villain roll formula ${log.chat.at(-1).rolls[0].formula} (5 strength + 1 wound die, no explode below 3 dramatic)`);
 
+ok(vSheet.element.querySelector('[name="system.servants"]') && 'redemption' in villain.system, 'villain servants shown, redemption kept');
+
 // ---------- Monster, Brute, Hero, Ship, Danger points ----------
 const monster = await make('monster');
+ok(!('influence' in monster.system.traits) && monster.system.villainy === 5 && monster.system.wounds.max === 24, 'monster: no influence, villainy = strength, 6 × 4 wounds');
+ok('concept' in monster.system && 'nation' in monster.system, 'monster keeps its concept tab data');
 const mSheet = new classes['Actor.monster']({ document: monster }); await mSheet.render();
 await mSheet.click('[data-action="setRank"][data-key="fear"][data-value="3"]');
 ok(monster.system.fear.value === 3, 'monster fear');
@@ -208,12 +269,16 @@ ok(dp.system.points === 0, 'danger points floor 0');
 const ship = await make('ship');
 const sSheet = new classes['Actor.ship']({ document: ship }); await sSheet.render();
 const header = sSheet.element.querySelector('[data-role="captain"] h3');
+ok(ship.system.wounds.max === 20 && ship.system.dwounds.max === 4 && !('htk' in ship.system), 'ship wounds 20/4, never Hard To Kill');
 await sSheet._onDropActor({ target: header }, pc);
-ok(ship.getFlag('svnsea2e', 'shipsCrew').members.includes(pc.id) && pc.getFlag('svnsea2e', 'crewMember').role === 'captain', 'crew added as captain');
+ok(ship.system.crew.length === 1 && ship.system.crew[0].actorId === pc.id && ship.system.crew[0].role === 'captain', 'crew added as captain');
+await sSheet._onDropActor({ target: sSheet.element.querySelector('[data-role="cook"] h3') }, pc);
+ok(ship.system.crew.length === 1 && ship.system.crew[0].role === 'cook', 'dropping again changes the role');
 await sSheet.render();
-ok(sSheet.element.querySelector(`[data-actor-id="${pc.id}"]`), 'crew row rendered');
+ok(sSheet.element.querySelector(`[data-role="cook"] ~ [data-actor-id="${pc.id}"]`), 'crew row rendered');
+ok([...sSheet.element.querySelectorAll('[data-role]')].map((e) => e.dataset.role).join() === Object.keys(CONFIG.SVNSEA2E.crewRoles).join(), 'roster in role order');
 await sSheet.click('[data-action="removeCrew"]');
-ok(ship.getFlag('svnsea2e', 'shipsCrew').members.length === 0, 'crew removed');
+ok(ship.system.crew.length === 0, 'crew removed');
 
 // ---------- Items ----------
 for (const type of ['advantage', 'artifact', 'background', 'duelstyle', 'monsterquality', 'scheme', 'secretsociety', 'shipadventure', 'shipbackground', 'sorcery', 'story', 'virtue', 'hubris']) {
@@ -226,6 +291,11 @@ for (const type of ['advantage', 'artifact', 'background', 'duelstyle', 'monster
 }
 const scheme = await Item.create({ name: 's', type: 'scheme', system: { influence: { value: 7, min: 0, max: 40 } } });
 ok((await scheme.getChatData()).metadatahtml.includes('7'), 'scheme influence in chat');
+ok((await Item.create({ name: 's2', type: 'scheme', system: { influence: { value: 55 } } })).system.influence.value === 40, 'scheme influence up to 40');
+const society = await Item.create({ name: 'ss', type: 'secretsociety', system: { favor: '<p>2</p>', callupon: '<p>call</p>' } });
+ok(society.system.favor === 2 && (await Item.create({ name: 'ss2', type: 'secretsociety', system: { favor: '' } })).system.favor === 0, 'favor text becomes a number');
+ok((await society.getChatData()).callupon.startsWith('<enriched>'), 'use favor is enriched in chat');
+ok((await Item.create({ name: 'a', type: 'advantage', system: { cost: { normal: 1.6, reducecost: -1 } } })).system.cost.normal === 2, 'advantage cost is a whole number');
 
 // ---------- Toolbox ----------
 const tb = game.svnsea2e.toolbox;
@@ -261,6 +331,22 @@ ok(trackerHtml.querySelectorAll('.combat-btn').length === 2, 'combat buttons add
 trackerHtml.querySelector('.combat-btn.add').click();
 await new Promise((r) => setTimeout(r, 10));
 ok(combatant.initiative === 3 && pc.system.initiative === 3, 'combat +1 updates combatant and actor');
+
+// ---------- Migration to v25: ship crew flags → system.crew ----------
+{
+  const oldShip = await make('ship', { flags: { svnsea2e: { shipsCrew: { members: [pc.id, villain.id, 'gone'] } } } });
+  await pc.setFlag('svnsea2e', 'crewMember', { shipId: oldShip.id, role: 'surgeon' });
+  await villain.setFlag('svnsea2e', 'crewMember', { shipId: oldShip.id, role: 'seaman' });
+  await settings.set('systemMigrationVersion', '24.0');
+  await game.svnsea2e.migrations.migrateWorldIfNeeded();
+  const crew = oldShip.system.crew.map((m) => `${m.actorId}:${m.role}`).join();
+  ok(crew === `${pc.id}:surgeon,${villain.id}:seaman`, `crew migrated (${crew})`);
+  ok(!oldShip.getFlag('svnsea2e', 'shipsCrew') && !pc.getFlag('svnsea2e', 'crewMember'), 'old crew flags removed');
+  ok(settings.get('systemMigrationVersion') === '25.0', 'migration recorded');
+  await oldShip.update({ 'system.crew': [] });
+  await game.svnsea2e.migrations.migrateWorldIfNeeded();
+  ok(oldShip.system.crew.length === 0, 'migration runs once');
+}
 
 // Actor directory button
 const dir = document.createElement('div'); dir.innerHTML = '<div class="directory-header"><search></search></div>';

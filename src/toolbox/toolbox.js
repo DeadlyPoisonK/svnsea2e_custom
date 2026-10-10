@@ -127,12 +127,9 @@ export class Toolbox extends HandlebarsApplicationMixin(ApplicationV2) {
 
     // Raises are also the initiative of the actor's combatants.
     if (column.key === 'raises') return updateInitiative(actor.id, value);
-    const update = { [`system.${column.path}`]: value };
     // Like the hearts of the sheet: marking wounds also marks the dramatic wounds they reach.
-    if (column.key === 'wounds' && delta > 0 && system.dwounds) {
-      update['system.dwounds.value'] = Math.max(system.dwounds.value, Math.trunc(value / actor.woundGroupSize));
-    }
-    await actor.update(update);
+    if (column.key === 'wounds') return actor.update(system.woundUpdate(value));
+    await actor.update({ [`system.${column.path}`]: value });
   }
 
   /** Choose the columns to show. */

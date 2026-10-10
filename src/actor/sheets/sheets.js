@@ -82,7 +82,6 @@ export class VillainSheet extends SvnSea2EActorSheet {
 
   _prepareItems(context) {
     const actor = this.actor;
-    context.villainy = actor.system.villainy;
     context.advantages = itemsOfType(actor, ItemTypes.ADVANTAGE);
     context.artifacts = itemsOfType(actor, ItemTypes.ARTIFACT);
     context.sorcery = itemsOfType(actor, ItemTypes.SORCERY);
@@ -106,7 +105,6 @@ export class MonsterSheet extends SvnSea2EActorSheet {
 
   _prepareItems(context) {
     const actor = this.actor;
-    context.fear = actor.system.fear;
     context.monsterqualities = itemsOfType(actor, ItemTypes.MONSTER_QUALITY);
     context.virtues = itemsOfType(actor, ItemTypes.VIRTUE);
     context.hubriss = itemsOfType(actor, ItemTypes.HUBRIS);
@@ -118,7 +116,6 @@ export class BruteSheet extends SvnSea2EActorSheet {
   static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/brute.hbs`, scrollable: ['.sheet-body'] } };
 
   _prepareItems(context) {
-    context.ability = this.actor.system.ability;
     context.advantages = itemsOfType(this.actor, ItemTypes.ADVANTAGE);
     context.duelstyles = itemsOfType(this.actor, ItemTypes.DUEL_STYLE);
   }
@@ -131,10 +128,6 @@ export class DangerPointsSheet extends SvnSea2EActorSheet {
     actions: { adjustPoints: DangerPointsSheet.#onAdjustPoints },
   };
   static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/dangerpts.hbs` } };
-
-  _prepareItems(context) {
-    context.points = this.actor.system.points;
-  }
 
   static async #onAdjustPoints(event, target) {
     if (!this.isEditable) return;

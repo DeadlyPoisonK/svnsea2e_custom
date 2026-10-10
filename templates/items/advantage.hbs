@@ -14,19 +14,19 @@
     <div class="tab attributes {{tabs.attributes.cssClass}}" data-group="primary" data-tab="attributes">
       <div class="form-group cost">
         <label for="{{item.id}}-cost" class="resource-label">{{localize "SVNSEA2E.Cost"}}</label>
-        <input name="system.cost.normal" id="{{item.id}}-cost" type="number" value="{{normalCost}}" step="1" />
+        <input name="system.cost.normal" id="{{item.id}}-cost" type="number" value="{{system.cost.normal}}" min="0" step="1" />
       </div>
       <div class="form-group">
         <label for="{{item.id}}-reducecost" class="resource-label">{{localize "SVNSEA2E.ReducedCost"}}</label>
-        <input name="system.cost.reducecost" id="{{item.id}}-reducecost" type="number" value="{{reducedCost}}" step="1" />
+        <input name="system.cost.reducecost" id="{{item.id}}-reducecost" type="number" value="{{system.cost.reducecost}}" min="0" step="1" />
       </div>
       <div class="form-group">
         <label for="{{item.id}}-knack" class="resource-label">{{localize "SVNSEA2E.Knack"}}</label>
-        <input type="checkbox" name="system.knack" id="{{item.id}}-knack" {{checked knack}} />
+        <input type="checkbox" name="system.knack" id="{{item.id}}-knack" {{checked system.knack}} />
       </div>
       <div class="form-group">
         <label for="{{item.id}}-innate" class="resource-label">{{localize "SVNSEA2E.Innate"}}</label>
-        <input type="checkbox" name="system.innate" id="{{item.id}}-innate" {{checked innate}} />
+        <input type="checkbox" name="system.innate" id="{{item.id}}-innate" {{checked system.innate}} />
       </div>
     </div>
   </section>

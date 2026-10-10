@@ -27,6 +27,3 @@ export const ItemTypes = {
   VIRTUE: 'virtue',
   HUBRIS: 'hubris',
 };
-
-/** Actor types whose wounds are grouped by Strength + 1 instead of 5. */
-export const VILLAIN_TYPES = [ActorType.VILLAIN, ActorType.MONSTER];

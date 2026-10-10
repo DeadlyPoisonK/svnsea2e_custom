@@ -1,6 +1,5 @@
 import { ActorType, ItemTypes, TEMPLATES } from '../../enums.js';
-import { clamp, enrichHTML, findAdvantage, isValidGlamorIsles } from '../../helpers.js';
-import { updateInitiative } from '../../combat.js';
+import { enrichHTML, isValidGlamorIsles } from '../../helpers.js';
 import { ChoiceSelector } from '../../apps/choice-selector.js';
 import { rollFreeDice, rollSkill, rollTrait } from '../../roll/dialogs.js';
 
@@ -29,8 +28,6 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
       toggleSection: SvnSea2EActorSheet.#onToggleSection,
       toggleHtk: SvnSea2EActorSheet.#onToggleHtk,
       selectLanguages: SvnSea2EActorSheet.#onSelectLanguages,
-      initiativeUp: SvnSea2EActorSheet.#onInitiativeStep,
-      initiativeDown: SvnSea2EActorSheet.#onInitiativeStep,
       setRank: SvnSea2EActorSheet.#onSetRank,
       setWounds: SvnSea2EActorSheet.#onSetWounds,
       rollSkill: SvnSea2EActorSheet.#onRollSkill,
@@ -51,40 +48,24 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
     const context = await super._prepareContext(options);
     const actor = this.actor;
     const system = actor.system;
+    // The templates read the stored and derived values from `system`; the context only adds what is computed for display.
     Object.assign(context, {
       actor,
       system,
-      owner: actor.isOwner,
-      limited: actor.limited,
       editable: this.isEditable,
       cssClass: actor.isOwner ? 'editable' : 'locked',
       config: CONFIG.SVNSEA2E,
       tabs: this._prepareTabs('primary'),
       isCorrupt: system.corruptionpts > 0,
       isPlayerCharacter: actor.type === ActorType.PLAYER,
-      isHero: actor.type === ActorType.HERO,
       isVillain: actor.type === ActorType.VILLAIN,
       isMonster: actor.type === ActorType.MONSTER,
-      isNotBrute: actor.type !== ActorType.BRUTE,
       hasSkills: system.skills !== undefined,
       hasLanguages: system.languages !== undefined,
       name: actor.name,
       img: actor.img,
-      initiative: system.initiative,
-      age: system.age,
-      nation: system.nation,
-      wealth: system.wealth,
-      heropts: system.heropts,
-      corruptionpts: system.corruptionpts,
-      wounds: system.wounds,
-      dwounds: system.dwounds,
-      htk: system.htk,
       traits: this._prepareTraits(),
       selectedlangs: this._prepareLanguages(),
-      religion: system.religion,
-      reputation: system.reputation,
-      equipment: system.equipment,
-      redemption: system.redemption,
     });
     if (typeof system.concept === 'string') {
       context.enrichedConcept = await enrichHTML(system.concept, { secrets: actor.isOwner, relativeTo: actor });
@@ -125,15 +106,6 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
   /** @override */
   async _onRender(context, options) {
     await super._onRender(context, options);
-    const initiative = this.element.querySelector('.initiative-input');
-    if (initiative && this.isEditable) {
-      initiative.addEventListener('change', this.#onInitiativeChange.bind(this));
-      initiative.addEventListener('keydown', (event) => {
-        if (event.key !== 'Enter') return;
-        event.preventDefault();
-        event.currentTarget.blur();
-      });
-    }
     // Item rows (and ship crew rows) can be dragged to other sheets, the hotbar or the canvas.
     if (this.isEditable) {
       for (const row of this.element.querySelectorAll('li.draggable')) {
@@ -176,9 +148,7 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
   static async #onCreateItem(event, target) {
     if (!this.isEditable) return;
     const type = target.dataset.type;
-    await this.actor.createEmbeddedDocuments('Item', [
-      { name: game.i18n.localize(`SVNSEA2E.New${type}`), img: `systems/svnsea2e/icons/${type}.jpg`, type },
-    ]);
+    await this.actor.createEmbeddedDocuments('Item', [{ name: game.i18n.localize(`SVNSEA2E.New${type}`), type }]);
   }
 
   static #onEditItem(event, target) {
@@ -187,11 +157,8 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
 
   static async #onDeleteItem(event, target) {
     if (!this.isEditable) return;
-    const item = this._getItem(target);
-    if (!item) return;
-    // Removing an active background also removes the skill ranks and advantages it granted.
-    if (item.type === ItemTypes.BACKGROUND && item.system.active) await this._removeBackgroundBonuses(item);
-    await item.delete();
+    // Deleting an active background also takes back what it granted (see SvnSea2EActor).
+    await this._getItem(target)?.delete();
   }
 
   static #onThrowItem(event, target) {
@@ -227,11 +194,7 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
   static async #onToggleBackground(event, target) {
     if (!this.isEditable) return;
     const item = this._getItem(target);
-    if (!item) return;
-    const active = !item.system.active;
-    if (active) await this._applyBackgroundBonuses(item);
-    else await this._removeBackgroundBonuses(item);
-    await item.update({ 'system.active': active });
+    if (item) await this.actor.toggleBackground(item);
   }
 
   static #onToggleSection(event, target) {
@@ -242,21 +205,16 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
     this.#setSectionCollapsed(target, collapsed);
   }
 
-  /** Hard To Kill: one more dramatic wound (and 5 more wounds for heroes). */
+  /** Hard To Kill: one more dramatic wound. The maxima are derived by the data model. */
   static async #onToggleHtk(event, target) {
     if (!this.isEditable) return;
     const system = this.actor.system;
-    const htk = !system.htk;
-    const dramatic = htk ? 5 : 4;
-    const perDramatic = this.actor.woundGroupSize;
-    const update = {
-      'system.htk': htk,
-      'system.wounds.max': perDramatic * dramatic,
-      'system.dwounds.max': dramatic,
-    };
-    if (!htk) {
-      if (system.wounds.value > perDramatic * dramatic) update['system.wounds.value'] = perDramatic * dramatic;
-      if (system.dwounds.value > dramatic) update['system.dwounds.value'] = dramatic;
+    const update = { 'system.htk': !system.htk };
+    if (system.htk) {
+      // Turning it off: the wounds marked in the lost dramatic wound go too.
+      const dramatic = system.dwounds.max - 1;
+      update['system.wounds.value'] = Math.min(system.wounds.value, dramatic * system.woundsPerDramatic);
+      update['system.dwounds.value'] = Math.min(system.dwounds.value, dramatic);
     }
     await this.actor.update(update);
   }
@@ -271,48 +229,20 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
     }).render(true);
   }
 
-  static #onInitiativeStep(event, target) {
-    if (!this.isEditable) return;
-    const step = target.dataset.action === 'initiativeUp' ? 1 : -1;
-    return updateInitiative(this.actor.id, (this.actor.system.initiative || 0) + step);
-  }
-
-  #onInitiativeChange(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    const value = parseInt(event.currentTarget.value, 10);
-    return updateInitiative(this.actor.id, Number.isNaN(value) || value < 0 ? 0 : value);
-  }
-
   /**
-   * Click on a rank circle (trait, skill, corruption, fear). Clicking the first circle of a rank already
-   * at 1 clears it. Hero traits cannot go below 2, so their first circle sets the trait to 2.
+   * Click on a rank circle (trait, skill, corruption, fear). Clicking the first circle of a rank already at 1 clears
+   * it; a rank never goes below its minimum (2 for hero traits, 1 for Strength).
    */
   static async #onSetRank(event, target) {
     if (!this.isEditable) return;
-    const system = this.actor.system;
-    const { type, key, name } = target.dataset;
+    const name = target.dataset.name;
     let value = parseInt(target.dataset.value);
-    if (value === 1) {
-      let current = 0;
-      switch (type) {
-        case 'skill':
-          current = system.skills[key].value;
-          break;
-        case 'trait':
-          if (key === 'influence' || key === 'strength') current = system.traits[key].value;
-          else value = 2;
-          break;
-        case 'corrupt':
-          current = system[key];
-          break;
-        case 'fear':
-          current = system[key].value;
-          break;
-      }
-      if (current === 1) value = 0;
-    }
-    await this.actor.update({ [name]: value });
+    // `name` is the stored value: a rank's `value`, or a plain number like the corruption points.
+    const rank = foundry.utils.getProperty(this.actor, name.replace(/\.value$/, ''));
+    const current = typeof rank === 'object' ? rank.value : rank;
+    if (value === 1 && current === 1) value = 0;
+    value = Math.max(value, rank?.min ?? 0);
+    if (value !== current) await this.actor.update({ [name]: value });
   }
 
   /** Click on a wound heart. */
@@ -321,24 +251,13 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
     const clicked = parseInt(target.dataset.value);
     if (Number.isNaN(clicked)) return;
     const system = this.actor.system;
-
-    // Brutes only have wounds.
-    if (this.actor.type === ActorType.BRUTE) {
-      const value = system.wounds.value === 1 && clicked === 1 ? 0 : clicked;
-      return this.actor.update({ 'system.wounds.value': value });
-    }
-
-    let wounds = system.wounds.value;
-    let dwounds = system.dwounds.value;
-    if (target.dataset.type === 'wounds') {
-      wounds = system.wounds.value === 1 && clicked === 1 ? 0 : clicked;
-      // Marking wounds also marks the dramatic wounds they reach (never removes any).
-      dwounds = Math.max(dwounds, Math.trunc(clicked / this.actor.woundGroupSize));
-    } else {
+    if (target.dataset.type === 'dwounds') {
       // Dramatic wounds never change normal wounds: some abilities heal or inflict one without the other.
-      dwounds = clicked === dwounds ? dwounds - 1 : clicked;
+      const dwounds = clicked === system.dwounds.value ? clicked - 1 : clicked;
+      return this.actor.update({ 'system.dwounds.value': dwounds });
     }
-    await this.actor.update({ 'system.wounds.value': wounds, 'system.dwounds.value': dwounds });
+    const value = system.wounds.value === 1 && clicked === 1 ? 0 : clicked;
+    await this.actor.update(system.woundUpdate(value));
   }
 
   static #onRollSkill(event, target) {
@@ -368,7 +287,7 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
       return sorted?.length ? item : null;
     }
 
-    if (item.type !== ItemTypes.SORCERY && this._hasItem(item.type, item.name)) {
+    if (item.type !== ItemTypes.SORCERY && this.actor.hasItem(item.type, item.name)) {
       ui.notifications.error(game.i18n.format('SVNSEA2E.ItemExists', { type: item.type, name: item.name }));
       return null;
     }
@@ -387,59 +306,11 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
         );
         return null;
       }
-      if (item.system.active) await this._applyBackgroundBonuses(item);
     }
 
+    // An active background applies its bonuses once created (see SvnSea2EActor).
     const [created] = await this.actor.createEmbeddedDocuments('Item', [item.toObject()]);
     return created ?? null;
-  }
-
-  _hasItem(type, name) {
-    return this.actor.items.some((i) => i.type === type && i.name === name);
-  }
-
-  /* -------------------------------------------- */
-  /*  Backgrounds                                 */
-  /* -------------------------------------------- */
-
-  /** Add the background's advantages to the actor and raise its skills by one. */
-  async _applyBackgroundBonuses(background) {
-    const toCreate = [];
-    for (const name of background.system.advantages) {
-      const advantage = await findAdvantage(name);
-      if (!advantage) {
-        ui.notifications.error(game.i18n.format('SVNSEA2E.ItemDoesntExist', { name }));
-        continue;
-      }
-      if (this._hasItem(ItemTypes.ADVANTAGE, advantage.name) || toCreate.some((a) => a.name === advantage.name)) {
-        ui.notifications.error(game.i18n.format('SVNSEA2E.ItemExists', { type: advantage.type, name: advantage.name }));
-        continue;
-      }
-      const data = advantage.toObject();
-      delete data._id;
-      toCreate.push(data);
-    }
-    if (toCreate.length) await this.actor.createEmbeddedDocuments('Item', toCreate);
-    await this._shiftBackgroundSkills(background, 1);
-  }
-
-  /** Remove the background's advantages from the actor and lower its skills by one. */
-  async _removeBackgroundBonuses(background) {
-    await this._shiftBackgroundSkills(background, -1);
-    const names = background.system.advantages;
-    const ids = this.actor.items.filter((i) => i.type === ItemTypes.ADVANTAGE && names.includes(i.name)).map((i) => i.id);
-    if (ids.length) await this.actor.deleteEmbeddedDocuments('Item', ids);
-  }
-
-  async _shiftBackgroundSkills(background, delta) {
-    const skills = this.actor.system.skills;
-    if (!skills) return;
-    const update = {};
-    for (const key of background.system.skills) {
-      if (!skills[key]) continue;
-      update[`system.skills.${key}.value`] = clamp(skills[key].value + delta, 0, 5);
-    }
-    if (!foundry.utils.isEmpty(update)) await this.actor.update(update);
   }
 }
 

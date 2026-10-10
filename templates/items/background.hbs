@@ -6,7 +6,7 @@
       <div class="form-group">
         <label for="{{item.id}}-nation">{{localize "SVNSEA2E.Nation"}}</label>
         <select id="{{item.id}}-nation" class="nation" name="system.nation">
-          {{selectOptions config.natTypes selected=nation localize=true}}
+          {{selectOptions config.natTypes selected=system.nation localize=true}}
         </select>
       </div>
     </div>
@@ -32,7 +32,7 @@
       <h3 class="advantages-title">{{localize "SVNSEA2E.Advantages"}}</h3>
       <div class="advantages flexrow flex-group flex-left">
         <ul class="tag-list">
-          {{#each selectedadvantages as |advantage|}}
+          {{#each system.advantages as |advantage|}}
             <li class="tag">{{advantage}}</li>
           {{/each}}
         </ul>

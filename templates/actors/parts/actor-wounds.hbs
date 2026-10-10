@@ -3,47 +3,38 @@
     <span class="flex-group corruption">
       <label>{{localize "SVNSEA2E.CorruptionPoints"}}</label>
       {{#for 1 10 1}}
-        <i data-action="setRank" data-name="system.corruptionpts" data-value="{{@index}}" data-type="corrupt" data-key="corruptionpts" class="fillable {{#iff corruptionpts '>=' @index}}fa-solid{{else}}fa-regular{{/iff}} fa-circle"></i>
+        <i data-action="setRank" data-name="system.corruptionpts" data-value="{{@index}}" class="fillable {{#iff system.corruptionpts '>=' @index}}fa-solid{{else}}fa-regular{{/iff}} fa-circle"></i>
       {{/for}}
     </span>
     {{!-- Hero Points --}}
     <div class="flex-group">
       <label for="{{actor.id}}-heropts" class="icon-label"><i class="fa-solid fa-sun" data-tooltip="{{localize "SVNSEA2E.HeroPoints"}}"></i></label>
       <span class="twodigit herospts">
-        <input type="number" name="system.heropts" value="{{heropts}}" id="{{actor.id}}-heropts" min="0" step="1" />
+        <input type="number" name="system.heropts" value="{{system.heropts}}" id="{{actor.id}}-heropts" min="0" step="1" />
       </span>
     </div>
     {{!-- Wealth --}}
     <div class="flex-group">
       <label for="{{actor.id}}-wealth" class="icon-label"><i class="fa-solid fa-coins" data-tooltip="{{localize "SVNSEA2E.WealthPts"}}"></i></label>
       <span class="twodigit wealth">
-        <input type="number" name="system.wealth" value="{{wealth}}" id="{{actor.id}}-wealth" min="0" step="1" />
+        <input type="number" name="system.wealth" value="{{system.wealth}}" id="{{actor.id}}-wealth" min="0" step="1" />
       </span>
     </div>
     {{!-- Hard To Kill --}}
     <a class="htk-control" data-action="toggleHtk" data-tooltip="{{localize "SVNSEA2E.HtkToggleTooltip"}}">
-      {{#if htk}}
+      {{#if system.htk}}
         <span class="htk-on"><i class="fa-solid fa-heart"></i> {{localize "SVNSEA2E.HtkOn"}}</span>
       {{else}}
         <span class="htk-off"><i class="fa-solid fa-heart-crack"></i> {{localize "SVNSEA2E.HtkOff"}}</span>
       {{/if}}
     </a>
-    {{!-- Initiative (raises) --}}
-    <div class="flex-group raise-tracking">
-      <label for="{{actor.id}}-initiative">{{localize "SVNSEA2E.Initiative"}}</label>
-      <span class="twodigit">
-        <button type="button" data-action="initiativeDown">-1</button>
-        <input class="initiative-input" type="number" value="{{initiative}}" id="{{actor.id}}-initiative" min="0" step="1" />
-        <button type="button" data-action="initiativeUp">+1</button>
-      </span>
-    </div>
   </div>
 {{/if}}
 
 {{#if isVillain}}
   <div class="flex-group-left htk-row">
     <a class="htk-control" data-action="toggleHtk" data-tooltip="{{localize "SVNSEA2E.HtkToggleVillainTooltip"}}">
-      {{#if htk}}
+      {{#if system.htk}}
         <span class="htk-on"><i class="fa-solid fa-heart"></i> {{localize "SVNSEA2E.HtkOn"}}</span>
       {{else}}
         <span class="htk-off"><i class="fa-solid fa-heart-crack"></i> {{localize "SVNSEA2E.HtkOff"}}</span>
@@ -55,13 +46,11 @@
 {{!-- Wound track: every group ends with a dramatic wound (red heart). --}}
 <div class="flex-group-left wounds">
   {{localize "SVNSEA2E.Wounds"}}
-  {{#for 1 wounds.max 1}}
+  {{#for 1 system.wounds.max 1 group=system.woundsPerDramatic}}
     {{#iff @remain '!=' 0}}
-      <i data-action="setWounds" data-value="{{@index}}" data-type="wounds" class="fillable {{#iff wounds.value '>=' @index}}fa-solid{{else}}fa-regular{{/iff}} fa-heart fa-lg"></i>
+      <i data-action="setWounds" data-value="{{@index}}" data-type="wounds" class="fillable {{#iff system.wounds.value '>=' @index}}fa-solid{{else}}fa-regular{{/iff}} fa-heart fa-lg"></i>
     {{else}}
-      {{#if isNotBrute}}
-        <i data-action="setWounds" data-value="{{@mod}}" data-type="dwounds" class="fillable {{#iff dwounds.value '>=' @mod}}fa-solid{{else}}fa-regular{{/iff}} fa-heart red fa-lg"></i>
-      {{/if}}
+      <i data-action="setWounds" data-value="{{@mod}}" data-type="dwounds" class="fillable {{#iff system.dwounds.value '>=' @mod}}fa-solid{{else}}fa-regular{{/iff}} fa-heart red fa-lg"></i>
     {{/iff}}
   {{/for}}
 </div>

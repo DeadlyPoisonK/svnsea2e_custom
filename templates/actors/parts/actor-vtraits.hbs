@@ -5,10 +5,16 @@
     {{> "systems/svnsea2e/templates/actors/parts/rank-circles.hbs" value=trait.value max=trait.max path=(concat "system.traits." trait.name ".value") type="trait" key=trait.name}}
   </div>
 {{/each}}
+{{#if isVillain}}
+  <div class="trait flexrow flex-group flex-left servants">
+    <label class="trait-name" for="{{actor.id}}-servants">{{localize "SVNSEA2E.Servants"}}</label>
+    <input type="text" id="{{actor.id}}-servants" name="system.servants" value="{{system.servants}}" placeholder="{{localize 'SVNSEA2E.Servants'}}" />
+  </div>
+{{/if}}
 {{#if isMonster}}
   <div class="trait flexrow flex-group flex-left">
     <span class="trait-name">{{localize "SVNSEA2E.Fear"}}</span>
-    {{> "systems/svnsea2e/templates/actors/parts/rank-circles.hbs" value=fear.value max=fear.max path="system.fear.value" type="fear" key="fear"}}
+    {{> "systems/svnsea2e/templates/actors/parts/rank-circles.hbs" value=system.fear.value max=system.fear.max path="system.fear.value" type="fear" key="fear"}}
   </div>
 {{/if}}
 {{#if hasLanguages}}

@@ -1,17 +1,42 @@
-import { SYSTEM_ID } from './enums.js';
+import { ActorType, SYSTEM_ID } from './enums.js';
 
 /**
  * Data migrations, oldest first. Each entry runs once per world, when the world was last migrated
  * with a system version older than `version`.
  *
+ * - `prepare()` runs before any document is migrated, to collect what the other steps need.
  * - `actor(actor)` / `item(item)` return an update object (empty when nothing changes).
  *
- * The v24 schema is identical to v23, so there is nothing to migrate yet; add entries here
- * when a future version changes the data model.
+ * Changes of shape that can be done while reading the data (renamed or retyped fields, values out of bounds) go
+ * in the `migrateData` of the data models instead: they also cover compendiums and imported documents.
  *
- * @type {{version: string, actor?: (actor: Actor) => object, item?: (item: Item) => object}[]}
+ * @type {{version: string, prepare?: () => void, actor?: (actor: Actor) => object, item?: (item: Item) => object}[]}
  */
-export const MIGRATIONS = [];
+export const MIGRATIONS = [
+  {
+    // The ship roster moves from two flags (the members on the ship, the role on each member) to `system.crew`.
+    version: '25.0',
+    prepare() {
+      this.roles = new Map(game.actors.map((actor) => [actor.id, actor.getFlag(SYSTEM_ID, 'crewMember')?.role]));
+    },
+    actor(actor) {
+      const flags = actor.flags[SYSTEM_ID] ?? {};
+      const update = {};
+      const remove = () => new foundry.data.operators.ForcedDeletion();
+      if ('crewMember' in flags) update[`flags.${SYSTEM_ID}.crewMember`] = remove();
+      if ('shipsCrew' in flags) {
+        update[`flags.${SYSTEM_ID}.shipsCrew`] = remove();
+        if (actor.type === ActorType.SHIP) {
+          const members = flags.shipsCrew?.members ?? [];
+          update['system.crew'] = members
+            .map((actorId) => ({ actorId, role: this.roles?.get(actorId) }))
+            .filter((member) => member.role);
+        }
+      }
+      return update;
+    },
+  },
+];
 
 /** Run the pending migrations, if any, on the active GM's client. */
 export async function migrateWorldIfNeeded() {
@@ -21,9 +46,11 @@ export async function migrateWorldIfNeeded() {
     (m) => !lastMigrated || foundry.utils.isNewerVersion(m.version, lastMigrated),
   );
   if (pending.length) await migrateWorld(pending);
-  if (lastMigrated !== game.system.version) {
-    await game.settings.set(SYSTEM_ID, 'systemMigrationVersion', game.system.version);
-  }
+  // Remember the newest version migrated to, even when it is not released yet, so that no migration runs twice.
+  const migrated = [game.system.version, lastMigrated, ...pending.map((m) => m.version)].filter(Boolean).reduce((a, b) =>
+    foundry.utils.isNewerVersion(b, a) ? b : a,
+  );
+  if (lastMigrated !== migrated) await game.settings.set(SYSTEM_ID, 'systemMigrationVersion', migrated);
 }
 
 async function migrateWorld(migrations) {
@@ -32,6 +59,7 @@ async function migrateWorld(migrations) {
     { permanent: true },
   );
 
+  for (const migration of migrations) migration.prepare?.();
   const actorUpdate = (actor) => collectUpdates(migrations, 'actor', actor);
   const itemUpdate = (item) => collectUpdates(migrations, 'item', item);
 
@@ -59,7 +87,7 @@ async function migrateActor(actor, actorUpdate, itemUpdate) {
 }
 
 function collectUpdates(migrations, kind, doc) {
-  return migrations.reduce((update, m) => Object.assign(update, m[kind]?.(doc) ?? {}), {});
+  return migrations.reduce((update, m) => Object.assign(update, m[kind]?.call(m, doc) ?? {}), {});
 }
 
 async function applyUpdate(doc, update) {

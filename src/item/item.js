@@ -1,5 +1,5 @@
 import { ItemTypes, SYSTEM_PATH, TEMPLATES } from '../enums.js';
-import { clamp, enrichHTML } from '../helpers.js';
+import { enrichHTML } from '../helpers.js';
 
 const DEFAULT_ITEM_ICONS = ['icons/svg/item-bag.svg', CONST.DEFAULT_TOKEN];
 
@@ -10,7 +10,7 @@ const CHAT_TEMPLATES = {
 };
 
 /** HTML fields enriched for the chat data, besides the description. */
-const ENRICHED_FIELDS = ['quirk', 'bonus', 'concern', 'earnfavor', 'reward', 'endings', 'steps'];
+const ENRICHED_FIELDS = ['quirk', 'bonus', 'concern', 'earnfavor', 'callupon', 'reward', 'endings', 'steps'];
 
 export class SvnSea2EItem extends Item {
   /** Use the system icon for new items that still have the default artwork. */
@@ -18,15 +18,6 @@ export class SvnSea2EItem extends Item {
     if ((await super._preCreate(data, options, user)) === false) return false;
     if (!this.img || DEFAULT_ITEM_ICONS.includes(this.img)) {
       this.updateSource({ img: `${SYSTEM_PATH}/icons/${this.type}.jpg` });
-    }
-  }
-
-  /** @override */
-  prepareDerivedData() {
-    super.prepareDerivedData();
-    if (this.type === ItemTypes.SCHEME) {
-      const influence = this.system.influence;
-      influence.value = clamp(influence.value, influence.min, influence.max);
     }
   }
 

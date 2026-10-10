@@ -1,10 +1,11 @@
-import { TEMPLATES, VILLAIN_TYPES } from '../enums.js';
+import { TEMPLATES } from '../enums.js';
 
 export const ROLL_CARD = `${TEMPLATES}/chats/roll-card.hbs`;
 
 /**
  * @typedef {object} RollData
  * @property {number} skilldice      Dice from the skill rank (or the free roll dice count).
+ * @property {number} [skillRank]    Rank of the skill rolled, for Joie de Vivre (0 for trait rolls).
  * @property {number} threshold      Target for each raise: 10, 15 or 20.
  * @property {boolean} explode       Whether 10s explode.
  * @property {boolean} reroll        Whether the lowest leftover die may be rerolled (skill rank 3+).
@@ -21,6 +22,7 @@ export const ROLL_CARD = `${TEMPLATES}/chats/roll-card.hbs`;
  * @property {number} useForHelpMe       Hero points given by other heroes (3 dice each).
  * @property {boolean} addOneToDice
  * @property {boolean} joieDeVivre
+ * @property {number} joieRank           Skill rank for Joie de Vivre, asked by the free roll dialog.
  * @property {boolean} explodeDice
  * @property {boolean} increaseThreshold
  */
@@ -39,6 +41,7 @@ export function readRollForm(form) {
     useForHelpMe: num('useForHelpMe'),
     addOneToDice: bool('addOneToDice'),
     joieDeVivre: bool('joieDeVivreAdvantage'),
+    joieRank: num('joieRank'),
     explodeDice: bool('explodeDice'),
     increaseThreshold: bool('increaseThreshold'),
   };
@@ -49,12 +52,13 @@ function raisesPerCombo(threshold = 10, increased = false) {
   return (threshold === 15 && !increased) || (threshold === 20 && increased) ? 2 : 1;
 }
 
-/** Indices of the values of `combo` inside `dice`, using a different die for repeated values. */
+/** Indices of the values of `combo` inside `dice`, each one a different die, or null when a value is missing. */
 function findComboIndices(dice, combo) {
-  const indices = [dice.indexOf(combo[0])];
-  indices.push(combo[0] === combo[1] ? dice.indexOf(combo[1], indices[0] + 1) : dice.indexOf(combo[1]));
-  if (combo.length > 2) {
-    indices.push(combo[0] === combo[2] ? dice.indexOf(combo[2], indices[1] + 1) : dice.indexOf(combo[2]));
+  const indices = [];
+  for (const value of combo) {
+    const index = dice.findIndex((die, i) => die === value && !indices.includes(i));
+    if (index === -1) return null;
+    indices.push(index);
   }
   return indices;
 }
@@ -131,11 +135,9 @@ async function spendHeroPoints(actor, options) {
  */
 export async function rollDicePool({ actor, rolldata, options, title }) {
   const system = actor.system;
-  if (!VILLAIN_TYPES.includes(actor.type) && !(await spendHeroPoints(actor, options))) return false;
-
   const skillDice = parseInt(rolldata.skilldice) || 0;
   // Every character with at least one dramatic wound gets one extra die.
-  const woundBonus = system.dwounds?.value >= 1 && !rolldata.skipWoundBonus ? 1 : 0;
+  const woundBonus = rolldata.skipWoundBonus ? 0 : (system.woundBonusDice ?? 0);
   const bonusDice =
     options.bonusDice +
     (options.flairDice ? 1 : 0) +
@@ -147,13 +149,18 @@ export async function rollDicePool({ actor, rolldata, options, title }) {
     ui.notifications.warn(game.i18n.localize('SVNSEA2E.NoDiceToRoll'));
     return false;
   }
+  if (!system.isVillain && !(await spendHeroPoints(actor, options))) return false;
 
   const increased = options.increaseThreshold;
   const addOne = options.addOneToDice;
   const exploded = rolldata.explode || options.explodeDice;
   const roll = await new foundry.dice.Roll(`${poolSize}d10${exploded ? 'x' : ''}`).evaluate();
 
-  const dice = diceResults(roll).map((d) => (addOne ? d + 1 : d));
+  // Joie de Vivre: the dice equal to or lower than the skill rank (before the +1) count as 10s.
+  const joieRank = options.joieDeVivre ? (rolldata.skillRank ?? 0) : 0;
+  const dice = diceResults(roll)
+    .map((d) => (d <= joieRank ? 10 : addOne ? d + 1 : d))
+    .sort(ascending);
   let threshold = rolldata.threshold + (increased ? 5 : 0);
   const matches =
     threshold === 15 ? CONFIG.SVNSEA2E.match15 : threshold === 20 ? CONFIG.SVNSEA2E.match20 : CONFIG.SVNSEA2E.match10;
@@ -173,37 +180,13 @@ export async function rollDicePool({ actor, rolldata, options, title }) {
 
   takeTens();
 
-  // Joie de Vivre: dice equal to or lower than the skill rank count as 10s.
-  if (options.joieDeVivre) {
-    for (let i = dice.length - 1; i >= 0; i--) {
-      if (dice[i] <= skillDice) {
-        raises++;
-        combos.push(dice[i]);
-        dice.splice(i, 1);
-      }
-    }
-  }
-
-  // Exact pairs and triples from the match tables.
-  for (const pair of matches.two) {
-    let idx = findComboIndices(dice, pair);
-    while (idx[0] > -1 && idx[1] > -1) {
+  // Exact pairs, then exact triples, from the match tables.
+  for (const combo of [...matches.two, ...matches.three]) {
+    let indices;
+    while ((indices = findComboIndices(dice, combo))) {
       raises += raisesPerCombo(threshold, increased);
-      combos.push(`${dice[idx[0]]} + ${dice[idx[1]]}`);
-      dice.splice(idx[0], 1);
-      dice.splice(dice.indexOf(pair[1]), 1);
-      idx = findComboIndices(dice, pair);
-    }
-  }
-  for (const triple of matches.three) {
-    let idx = findComboIndices(dice, triple);
-    while (idx[0] > -1 && idx[1] > -1 && idx[2] > -1) {
-      raises += raisesPerCombo(threshold, increased);
-      combos.push(`${dice[idx[0]]} + ${dice[idx[1]]} + ${dice[idx[2]]}`);
-      dice.splice(idx[0], 1);
-      dice.splice(dice.indexOf(triple[1]), 1);
-      dice.splice(dice.indexOf(triple[2]), 1);
-      idx = findComboIndices(dice, triple);
+      combos.push(indices.map((i) => dice[i]).join(' + '));
+      for (const i of indices.sort((a, b) => b - a)) dice.splice(i, 1);
     }
   }
 
@@ -219,7 +202,8 @@ export async function rollDicePool({ actor, rolldata, options, title }) {
     rerolled = true;
     const shownIndex = shownRolls.indexOf(original);
     if (shownIndex > -1) shownRolls[shownIndex] = newResult;
-    if (addOne) dice[0] += 1;
+    if (newResult <= joieRank) dice[0] = 10;
+    else if (addOne) dice[0] += 1;
     shownRolls.sort(ascending);
     dice.sort(ascending);
   }

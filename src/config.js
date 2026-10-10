@@ -26,15 +26,6 @@ SVNSEA2E.itemTypes = {
   virtue: 'SVNSEA2E.Virtue',
 };
 
-SVNSEA2E.actorTypes = {
-  brute: 'SVNSEA2E.Brute',
-  playercharacter: 'SVNSEA2E.PlayerCharacter',
-  monster: 'SVNSEA2E.Monster',
-  villain: 'SVNSEA2E.Villain',
-  ship: 'SVNSEA2E.Ship',
-  hero: 'SVNSEA2E.Hero',
-};
-
 SVNSEA2E.nations = {
   none: 'SVNSEA2E.Empty',
   aksum: 'SVNSEA2E.NationAksum',
@@ -233,19 +224,21 @@ SVNSEA2E.artifactTypes = {
   tatoo: 'SVNSEA2E.Tatoo',
 };
 
-SVNSEA2E.shipRoles = {
+/** Ship crew roles, in roster order (not sorted by label). */
+SVNSEA2E.crewRoles = {
   captain: 'SVNSEA2E.Captain',
   firstmate: 'SVNSEA2E.FirstMate',
   quartermaster: 'SVNSEA2E.QuaterMaster',
   accountant: 'SVNSEA2E.Accountant',
   boatswain: 'SVNSEA2E.Boatswain',
   shipsmaster: 'SVNSEA2E.ShipsMaster',
+  captaintops: 'SVNSEA2E.CaptainTops',
+  surgeon: 'SVNSEA2E.Surgeon',
+  cook: 'SVNSEA2E.Cook',
   mastergunner: 'SVNSEA2E.MasterGunner',
   mastermariner: 'SVNSEA2E.MasterMariner',
-  captaintops: 'SVNSEA2E.CaptainTops',
-  cook: 'SVNSEA2E.Cook',
-  surgeon: 'SVNSEA2E.Surgeon',
   midshipmen: 'SVNSEA2E.Midshipmen',
+  powdermonkey: 'SVNSEA2E.PowderMonkey',
   ableseaman: 'SVNSEA2E.AbleSeaman',
   seaman: 'SVNSEA2E.Seaman',
 };

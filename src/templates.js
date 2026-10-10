@@ -27,23 +27,19 @@ export function preloadHandlebarsTemplates() {
 
 export function registerHandlebarsHelpers() {
   /**
-   * {{#for start count step}} — iterates `count` times starting at `start`.
-   * Exposes @index, @first, @last and, for the wound track, @mod (dramatic wound number) and
-   * @remain (position inside the current dramatic wound group).
-   * The group size is wounds.max / dwounds.max when the current context has wounds, 5 otherwise.
+   * {{#for start count step group=n}} — iterates `count` times starting at `start`.
+   * Exposes @index and, for the wound track (`group` = wounds per dramatic wound, 5 by default),
+   * @mod (dramatic wound number) and @remain (position inside the current dramatic wound group).
    */
   Handlebars.registerHelper('for', function (from, count, step, options) {
     const start = parseInt(from);
     const end = start + parseInt(count);
-    let groupSize = 5;
-    if (this.wounds?.max && this.dwounds?.max > 0) groupSize = Math.floor(this.wounds.max / this.dwounds.max);
+    const groupSize = parseInt(options.hash.group) || 5;
 
     const data = Handlebars.createFrame(options.data);
     let out = '';
     for (let i = start; i < end; i += step) {
       data.index = i;
-      data.first = i === 0;
-      data.last = i === count;
       data.mod = Math.trunc(i / groupSize);
       data.remain = i % groupSize;
       out += options.fn(this, { data });
@@ -63,11 +59,5 @@ export function registerHandlebarsHelpers() {
     };
     if (!(operator in ops)) throw new Error(`Unknown operator ${operator}`);
     return ops[operator]() ? options.fn(this) : options.inverse(this);
-  });
-
-  Handlebars.registerHelper('toLowerCase', (str) => String(str ?? '').toLowerCase());
-  Handlebars.registerHelper('capitalize', (str) => {
-    str = String(str ?? '');
-    return str.charAt(0).toUpperCase() + str.slice(1);
   });
 }

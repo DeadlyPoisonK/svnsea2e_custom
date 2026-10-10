@@ -116,12 +116,12 @@ function registerSheets() {
 /** Localize and sort the configuration lists once translations are available. */
 Hooks.once('setup', () => {
   const lists = [
-    'actorTypes', 'natTypes', 'artifactTypes', 'crewStatuses', 'durations', 'itemTypes', 'languages', 'nations',
-    'traits', 'shipRoles', 'skills', 'sorceryTypes', 'sorceryCats', 'sorcerySubcats', 'storyStatuses',
+    'natTypes', 'artifactTypes', 'crewStatuses', 'durations', 'itemTypes', 'languages', 'nations',
+    'traits', 'skills', 'sorceryTypes', 'sorceryCats', 'sorcerySubcats', 'storyStatuses',
   ];
-  for (const list of lists) {
+  for (const list of [...lists, 'crewRoles']) {
     const entries = Object.entries(CONFIG.SVNSEA2E[list]).map(([key, label]) => [key, game.i18n.localize(label)]);
-    entries.sort((a, b) => a[1].localeCompare(b[1]));
+    if (lists.includes(list)) entries.sort((a, b) => a[1].localeCompare(b[1]));
     CONFIG.SVNSEA2E[list] = Object.fromEntries(entries);
   }
 });
