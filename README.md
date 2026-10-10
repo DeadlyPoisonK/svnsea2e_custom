@@ -68,7 +68,7 @@ src/
   combat.js / chat.js     iniciativa, botones del combat tracker y de la tarjeta de tirada
   actor/                  documento Actor, modelos de datos y hojas (sheets/)
   item/                   documento Item, modelos de datos y hojas
-  apps/choice-selector.js selector de idiomas, habilidades y ventajas de trasfondo
+  apps/choice-selector.js selector de habilidades y ventajas de trasfondo
   roll/                   motor de tiradas (roll.js) y diálogos (dialogs.js)
   toolbox/                caja de herramientas del DJ
 templates/                plantillas Handlebars

@@ -1731,53 +1731,6 @@ class DangerPointsModel extends foundry.abstract.TypeDataModel {
     return { points: int(5) };
   }
 }
-const { ApplicationV2, HandlebarsApplicationMixin: HandlebarsApplicationMixin$2 } = foundry.applications.api;
-class ChoiceSelector extends HandlebarsApplicationMixin$2(ApplicationV2) {
-  /**
-   * @param {object} config
-   * @param {foundry.abstract.Document} config.document  The document to update.
-   * @param {string} config.field                        Path of the array field, e.g. "system.languages".
-   * @param {Record<string, string>} config.choices      Available choices as {key: label}.
-   * @param {string} config.title
-   */
-  constructor({ document: document2, field, choices, title, ...options }) {
-    super(options);
-    this.document = document2;
-    this.field = field;
-    this.choices = choices;
-    this.selectorTitle = title;
-  }
-  static DEFAULT_OPTIONS = {
-    tag: "form",
-    // Up to v23.3 the selectors were Application V1 windows, always light.
-    classes: ["svnsea2e", "choice-selector", "themed", "theme-light"],
-    position: { width: 320, height: "auto" },
-    window: { contentClasses: ["standard-form"] },
-    form: { handler: ChoiceSelector.#onSubmit, closeOnSubmit: true }
-  };
-  static PARTS = {
-    form: { template: `${TEMPLATES}/apps/choice-selector.hbs`, scrollable: [".choice-list"] }
-  };
-  /** @override */
-  get title() {
-    return this.selectorTitle ?? super.title;
-  }
-  /** @override */
-  async _prepareContext(options) {
-    const chosen = foundry.utils.getProperty(this.document, this.field) ?? [];
-    return {
-      choices: Object.entries(this.choices).map(([key, label]) => ({
-        key,
-        label: game.i18n.localize(label),
-        chosen: chosen.includes(key)
-      }))
-    };
-  }
-  static async #onSubmit(event, form) {
-    const chosen = [...form.querySelectorAll('input[type="checkbox"]:checked')].map((input) => input.value);
-    await this.document.update({ [this.field]: chosen });
-  }
-}
 function readRollForm(form) {
   const el = form.elements;
   const num = (name) => parseInt(el[name]?.value) || 0;
@@ -1986,7 +1939,7 @@ async function rollFreeDice(actor) {
     kind: "free"
   });
 }
-const { HandlebarsApplicationMixin: HandlebarsApplicationMixin$1 } = foundry.applications.api;
+const { HandlebarsApplicationMixin: HandlebarsApplicationMixin$2 } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
 const ITEM_SECTIONS = {
   [ItemTypes.ADVANTAGE]: { label: "SVNSEA2E.Advantage", addTitle: "SVNSEA2E.AddAdvantage", cssClass: "advantage", used: true },
@@ -2011,7 +1964,7 @@ function itemSections(actor, types) {
     return section;
   });
 }
-class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
+class SvnSea2EActorSheet extends HandlebarsApplicationMixin$2(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
     // The sheets are designed for a light background; keep them light whatever the user's theme.
     classes: ["svnsea2e", "sheet", "actor", "themed", "theme-light"],
@@ -2027,7 +1980,6 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
       toggleUsed: SvnSea2EActorSheet.#onToggleUsed,
       toggleBackground: SvnSea2EActorSheet.#onToggleBackground,
       toggleSection: SvnSea2EActorSheet.#onToggleSection,
-      selectLanguages: SvnSea2EActorSheet.#onSelectLanguages,
       setRank: SvnSea2EActorSheet.#onSetRank,
       setWounds: SvnSea2EActorSheet.#onSetWounds,
       rollSkill: SvnSea2EActorSheet.#onRollSkill,
@@ -2062,7 +2014,7 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
       name: actor.name,
       img: actor.img,
       traits: this._prepareTraits(),
-      selectedlangs: this._prepareLanguages(),
+      languageChoices: this._prepareLanguages(),
       effects: prepareEffects(actor)
     });
     if (system.fear) context.fearLocked = this._isModified("system.fear.value");
@@ -2097,11 +2049,16 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
       locked: this._isModified(`system.traits.${name}.value`)
     }));
   }
-  /** Selected languages as {key: label}. */
+  /**
+   * Choices of the languages <multi-select> as {key: label}. Stored keys that are not in the configuration are kept
+   * as choices too, so that saving the sheet does not drop them.
+   */
   _prepareLanguages() {
     const languages = this.actor.system.languages;
     if (!languages) return {};
-    return Object.fromEntries(languages.map((lang) => [lang, CONFIG.SVNSEA2E.languages[lang]]));
+    const choices = { ...CONFIG.SVNSEA2E.languages };
+    for (const lang of languages) choices[lang] ??= lang;
+    return choices;
   }
   /* -------------------------------------------- */
   /*  Rendering                                   */
@@ -2194,15 +2151,6 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$1(ActorSheetV2) {
     if (collapsed) this.#collapsedSections.add(section);
     else this.#collapsedSections.delete(section);
     this.#setSectionCollapsed(target, collapsed);
-  }
-  static #onSelectLanguages(event, target) {
-    if (!this.isEditable) return;
-    new ChoiceSelector({
-      document: this.actor,
-      field: "system.languages",
-      choices: CONFIG.SVNSEA2E.languages,
-      title: game.i18n.localize("SVNSEA2E.ActorLangSelect")
-    }).render(true);
   }
   /**
    * Click on a rank circle (trait, skill, corruption, fear). Clicking the first circle of a rank already at 1 clears
@@ -2679,6 +2627,53 @@ class ShipAdventureModel extends SimpleItemModel {
 class ShipBackgroundModel extends SimpleItemModel {
 }
 class VirtueModel extends SimpleItemModel {
+}
+const { ApplicationV2, HandlebarsApplicationMixin: HandlebarsApplicationMixin$1 } = foundry.applications.api;
+class ChoiceSelector extends HandlebarsApplicationMixin$1(ApplicationV2) {
+  /**
+   * @param {object} config
+   * @param {foundry.abstract.Document} config.document  The document to update.
+   * @param {string} config.field                        Path of the array field, e.g. "system.skills".
+   * @param {Record<string, string>} config.choices      Available choices as {key: label}.
+   * @param {string} config.title
+   */
+  constructor({ document: document2, field, choices, title, ...options }) {
+    super(options);
+    this.document = document2;
+    this.field = field;
+    this.choices = choices;
+    this.selectorTitle = title;
+  }
+  static DEFAULT_OPTIONS = {
+    tag: "form",
+    // Up to v23.3 the selectors were Application V1 windows, always light.
+    classes: ["svnsea2e", "choice-selector", "themed", "theme-light"],
+    position: { width: 320, height: "auto" },
+    window: { contentClasses: ["standard-form"] },
+    form: { handler: ChoiceSelector.#onSubmit, closeOnSubmit: true }
+  };
+  static PARTS = {
+    form: { template: `${TEMPLATES}/apps/choice-selector.hbs`, scrollable: [".choice-list"] }
+  };
+  /** @override */
+  get title() {
+    return this.selectorTitle ?? super.title;
+  }
+  /** @override */
+  async _prepareContext(options) {
+    const chosen = foundry.utils.getProperty(this.document, this.field) ?? [];
+    return {
+      choices: Object.entries(this.choices).map(([key, label]) => ({
+        key,
+        label: game.i18n.localize(label),
+        chosen: chosen.includes(key)
+      }))
+    };
+  }
+  static async #onSubmit(event, form) {
+    const chosen = [...form.querySelectorAll('input[type="checkbox"]:checked')].map((input) => input.value);
+    await this.document.update({ [this.field]: chosen });
+  }
 }
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ItemSheetV2 } = foundry.applications.sheets;

@@ -59,7 +59,7 @@ export function installMocks(repo) {
   Handlebars.registerHelper('not', (v) => !v);
   Handlebars.registerHelper('ifThen', (c, a, b) => (c ? a : b));
   Handlebars.registerHelper('concat', (...a) => { a.pop(); return new Handlebars.SafeString(a.join('')); });
-  Handlebars.registerHelper('selectOptions', (choices, o) => new Handlebars.SafeString(Object.entries(choices ?? {}).map(([k, v]) => `<option value="${k}" ${k === o.hash.selected ? 'selected' : ''}>${v}</option>`).join('')));
+  Handlebars.registerHelper('selectOptions', (choices, o) => new Handlebars.SafeString(Object.entries(choices ?? {}).map(([k, v]) => `<option value="${k}" ${[o.hash.selected].flat().includes(k) ? 'selected' : ''}>${v}</option>`).join('')));
 
   // ---------- applications ----------
   class ApplicationV2 {

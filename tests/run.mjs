@@ -333,8 +333,15 @@ ok(pc.system.initiative === Number(card.querySelector('.initiative-tracker-add')
   ok(free.system.dice.join() === '1,2,3,4' && raisesOf(free) === 1, `free roll edited with one more die (${raisesOf(free)})`);
 }
 
-// Languages selector
-await pcSheet.click('[data-action="selectLanguages"]');
+// Languages: a <multi-select> of the configured languages, keeping stored keys that are not in the configuration.
+await pc.update({ 'system.languages': ['castille', 'oldtongue'] });
+await pcSheet.render();
+{
+  const select = pcSheet.element.querySelector('multi-select[name="system.languages"]');
+  const chosen = [...(select?.querySelectorAll('option[selected]') ?? [])].map((o) => o.value);
+  ok(select?.querySelectorAll('option').length === Object.keys(CONFIG.SVNSEA2E.languages).length + 1, 'languages multi-select lists every language');
+  ok(chosen.join() === 'castille,oldtongue', `languages selected (${chosen})`);
+}
 
 // ---------- Villain ----------
 const villain = await make('villain');

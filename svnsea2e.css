@@ -666,8 +666,7 @@
 }
 
 .svnsea2e .skill-selector,
-.svnsea2e .advantage-selector,
-.svnsea2e .language-selector {
+.svnsea2e .advantage-selector {
   cursor: pointer;
 }
 
@@ -677,6 +676,19 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+/* Languages: the chosen ones as tags on the left, then the list to add more (hidden when the sheet is locked). */
+.svnsea2e multi-select.language .tags.input-element-tags {
+  justify-content: flex-start;
+}
+
+.svnsea2e multi-select.language select {
+  width: 15rem;
+}
+
+.svnsea2e multi-select.language:disabled select {
+  display: none;
 }
 
 /* ---------- Item lists ---------- */

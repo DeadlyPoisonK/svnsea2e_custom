@@ -4,13 +4,13 @@ const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
 /**
  * A checkbox list that stores the chosen keys in an array field of a document
- * (actor languages, background skills, background advantages).
+ * (background skills and advantages).
  */
 export class ChoiceSelector extends HandlebarsApplicationMixin(ApplicationV2) {
   /**
    * @param {object} config
    * @param {foundry.abstract.Document} config.document  The document to update.
-   * @param {string} config.field                        Path of the array field, e.g. "system.languages".
+   * @param {string} config.field                        Path of the array field, e.g. "system.skills".
    * @param {Record<string, string>} config.choices      Available choices as {key: label}.
    * @param {string} config.title
    */

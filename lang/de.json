@@ -265,7 +265,6 @@
   "SVNSEA2E.SorceryRedTouch": "The Red Touch",
   "SVNSEA2E.AtLeastOptions": "Du musst mindestens {min} Optionen auswählen.",
   "SVNSEA2E.NoMoreThanOptions": "Du darfst maximal {max} Optionen auswählen.",
-  "SVNSEA2E.ActorLangSelect": "Akteur Sprachenauswahl",
   "SVNSEA2E.BackgroundSkillSelect": "Hintergrund Eigenschaftsauswahl",
   "SVNSEA2E.ItemExists": "Das {type}: {name} ist schon einem anderen Charakter zugeordnet.",
   "SVNSEA2E.ItemDoesntExist": "{name} existiert nicht in den Items dieser Welt.",

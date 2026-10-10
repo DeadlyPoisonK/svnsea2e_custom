@@ -1,9 +1,4 @@
 <h3 class="language-title">{{localize "SVNSEA2E.Languages"}}</h3>
-<div class="language flexrow flex-group flex-left">
-  <ul class="tag-list">
-    {{#each selectedlangs as |label key|}}
-      <li class="tag {{key}}">{{label}}</li>
-    {{/each}}
-  </ul>
-  {{#if editable}}<a class="language-selector" data-action="selectLanguages" data-tooltip="{{localize 'SVNSEA2E.ActorLangSelect'}}"><i class="fa-solid fa-pen-to-square"></i></a>{{/if}}
-</div>
+<multi-select class="language" name="system.languages">
+  {{selectOptions languageChoices selected=system.languages}}
+</multi-select>

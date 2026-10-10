@@ -275,7 +275,6 @@
   "SVNSEA2E.Patron": "Patron",
   "SVNSEA2E.AtLeastOptions": "Você deve escolher pelo menos {min} opções.",
   "SVNSEA2E.NoMoreThanOptions": "Você deve escolher até {max} opções.",
-  "SVNSEA2E.ActorLangSelect": "Seleção de Idioma do Ator",
   "SVNSEA2E.BackgroundSkillSelect": "Seleção de Perícia da Formação",
   "SVNSEA2E.ItemExists": "O {type}: {name} já está associado à personagem.",
   "SVNSEA2E.ItemDoesntExist": "{name} não existe entre os itens do mundo.",

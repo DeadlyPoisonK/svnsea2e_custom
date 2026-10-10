@@ -1,6 +1,5 @@
 import { ActorType, ItemTypes, TEMPLATES } from '../../enums.js';
 import { enrichHTML, isValidGlamorIsles, itemsOfType } from '../../helpers.js';
-import { ChoiceSelector } from '../../apps/choice-selector.js';
 import { rollFreeDice, rollSkill, rollTrait } from '../../roll/dialogs.js';
 import { EFFECT_ACTIONS, prepareEffects, withEffectsTab } from '../../effects.js';
 
@@ -63,7 +62,6 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
       toggleUsed: SvnSea2EActorSheet.#onToggleUsed,
       toggleBackground: SvnSea2EActorSheet.#onToggleBackground,
       toggleSection: SvnSea2EActorSheet.#onToggleSection,
-      selectLanguages: SvnSea2EActorSheet.#onSelectLanguages,
       setRank: SvnSea2EActorSheet.#onSetRank,
       setWounds: SvnSea2EActorSheet.#onSetWounds,
       rollSkill: SvnSea2EActorSheet.#onRollSkill,
@@ -102,7 +100,7 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
       name: actor.name,
       img: actor.img,
       traits: this._prepareTraits(),
-      selectedlangs: this._prepareLanguages(),
+      languageChoices: this._prepareLanguages(),
       effects: prepareEffects(actor),
     });
     if (system.fear) context.fearLocked = this._isModified('system.fear.value');
@@ -142,11 +140,16 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
     }));
   }
 
-  /** Selected languages as {key: label}. */
+  /**
+   * Choices of the languages <multi-select> as {key: label}. Stored keys that are not in the configuration are kept
+   * as choices too, so that saving the sheet does not drop them.
+   */
   _prepareLanguages() {
     const languages = this.actor.system.languages;
     if (!languages) return {};
-    return Object.fromEntries(languages.map((lang) => [lang, CONFIG.SVNSEA2E.languages[lang]]));
+    const choices = { ...CONFIG.SVNSEA2E.languages };
+    for (const lang of languages) choices[lang] ??= lang;
+    return choices;
   }
 
   /* -------------------------------------------- */
@@ -255,16 +258,6 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
     if (collapsed) this.#collapsedSections.add(section);
     else this.#collapsedSections.delete(section);
     this.#setSectionCollapsed(target, collapsed);
-  }
-
-  static #onSelectLanguages(event, target) {
-    if (!this.isEditable) return;
-    new ChoiceSelector({
-      document: this.actor,
-      field: 'system.languages',
-      choices: CONFIG.SVNSEA2E.languages,
-      title: game.i18n.localize('SVNSEA2E.ActorLangSelect'),
-    }).render(true);
   }
 
   /**
