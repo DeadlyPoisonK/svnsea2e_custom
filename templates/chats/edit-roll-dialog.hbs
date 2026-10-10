@@ -1,0 +1,80 @@
+<div class="roll-dialog edit-roll">
+  <p class="hint">{{localize "SVNSEA2E.EditRollHint"}}</p>
+  <fieldset>
+    <legend>{{localize "SVNSEA2E.Dice"}}</legend>
+    {{#unless free}}
+    <div class="form-group">
+      <label for="svnsea2e-edit-trait">{{localize "SVNSEA2E.NumberTraitDice"}}</label>
+      <input type="number" id="svnsea2e-edit-trait" name="trait" value="{{data.pool.trait}}" min="0" step="1" />
+    </div>
+    <div class="form-group">
+      <label for="svnsea2e-edit-skill">{{localize "SVNSEA2E.SkillDice"}}</label>
+      <input type="number" id="svnsea2e-edit-skill" name="skill" value="{{data.pool.skill}}" min="0" step="1" />
+    </div>
+    {{/unless}}
+    <div class="form-group">
+      <label for="svnsea2e-edit-bonus">{{#if free}}{{localize "SVNSEA2E.DiceNumberLabel"}}{{else}}{{localize "SVNSEA2E.BonusDice"}}{{/if}}</label>
+      <input type="number" id="svnsea2e-edit-bonus" name="bonus" value="{{data.pool.bonus}}" step="1" />
+    </div>
+    {{#unless free}}
+    <div class="form-group">
+      <label for="svnsea2e-edit-wound">{{localize "SVNSEA2E.WoundDice"}}</label>
+      <input type="number" id="svnsea2e-edit-wound" name="wound" value="{{data.pool.wound}}" min="0" step="1" />
+    </div>
+    <div class="form-group">
+      <label for="svnsea2e-edit-flair">{{localize "SVNSEA2E.FlairDice"}}</label>
+      <input type="checkbox" id="svnsea2e-edit-flair" name="flair" value="1" {{checked data.pool.flair}} />
+    </div>
+    <div class="form-group">
+      <label for="svnsea2e-edit-interpretation">{{localize "SVNSEA2E.InterpretationDice"}}</label>
+      <input type="checkbox" id="svnsea2e-edit-interpretation" name="interpretation" value="1" {{checked data.pool.interpretation}} />
+    </div>
+    {{/unless}}
+  </fieldset>
+  {{#unless free}}
+  <fieldset>
+    <legend>{{localize "SVNSEA2E.HeroPoints"}}</legend>
+    <div class="form-group">
+      <label for="svnsea2e-edit-heropoints">{{localize "SVNSEA2E.UseForMe"}}</label>
+      <input type="number" id="svnsea2e-edit-heropoints" name="heroPoints" value="{{data.pool.heroPoints}}" min="0" step="1" />
+    </div>
+    <div class="form-group">
+      <label for="svnsea2e-edit-helpers">{{localize "SVNSEA2E.UseForHelpMe"}}</label>
+      <input type="number" id="svnsea2e-edit-helpers" name="helpers" value="{{data.pool.helpers}}" min="0" step="1" />
+    </div>
+  </fieldset>
+  {{/unless}}
+  <fieldset>
+    <legend>{{localize "SVNSEA2E.RollOptions"}}</legend>
+    <div class="form-group">
+      <label for="svnsea2e-edit-threshold">{{localize "SVNSEA2E.Threshold"}}</label>
+      <select id="svnsea2e-edit-threshold" name="threshold">
+        {{selectOptions thresholds selected=threshold}}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="svnsea2e-edit-increase">{{localize "SVNSEA2E.IncreaseThreshold"}}</label>
+      <input type="checkbox" id="svnsea2e-edit-increase" name="increaseThreshold" value="1" {{checked data.increaseThreshold}} />
+    </div>
+    <div class="form-group">
+      <label for="svnsea2e-edit-addone">{{localize "SVNSEA2E.AddOneToDice"}}</label>
+      <input type="checkbox" id="svnsea2e-edit-addone" name="addOne" value="1" {{checked data.addOne}} />
+    </div>
+    <div class="form-group">
+      <label for="svnsea2e-edit-explode">{{localize "SVNSEA2E.ExplodeTens"}}</label>
+      <input type="checkbox" id="svnsea2e-edit-explode" name="explode" value="1" {{checked data.explode}} />
+    </div>
+    <div class="form-group">
+      <label for="svnsea2e-edit-reroll">{{localize "SVNSEA2E.SkillRank3"}}</label>
+      <input type="checkbox" id="svnsea2e-edit-reroll" name="reroll" value="1" {{checked data.reroll}} />
+    </div>
+    <div class="form-group">
+      <label for="svnsea2e-edit-joie">{{localize "SVNSEA2E.JoieDeVivre"}}</label>
+      <input type="checkbox" id="svnsea2e-edit-joie" name="joieDeVivre" value="1" {{checked data.joieDeVivre}} />
+    </div>
+    <div class="form-group">
+      <label for="svnsea2e-edit-joie-rank">{{localize "SVNSEA2E.JoieSkillRank"}}</label>
+      <input type="number" id="svnsea2e-edit-joie-rank" name="joieRank" value="{{data.joieRank}}" min="0" max="5" step="1" />
+    </div>
+  </fieldset>
+</div>

@@ -228,6 +228,123 @@ card.querySelector('.initiative-tracker-add').click();
 await new Promise((r) => setTimeout(r, 10));
 ok(pc.system.initiative === Number(card.querySelector('.initiative-tracker-add').dataset.raise), 'chat button sets initiative');
 
+// ---------- Roll messages (v25): the roll is kept in the message and "Edit Roll" counts it again ----------
+{
+  await pc.update({ 'system.skills.aim.value': 2, 'system.traits.brawn.value': 3, 'system.dwounds.value': 1, 'system.heropts': 1 });
+  const D = [9, 4, 6, 3, 2, 5];
+  const roll = async (prefill) => {
+    DialogV2.prefill = (form) => { form.querySelector('[name="trait"]').value = '3'; prefill?.(form); };
+    MockRoll.next = [...D];
+    await pcSheet.click('[data-action="rollSkill"][data-label="aim"]');
+    DialogV2.prefill = null;
+    return log.chat.at(-1);
+  };
+  const edit = async (message, prefill, next = []) => {
+    MockRoll.next = [...next];
+    DialogV2.prefill = prefill;
+    const result = await game.svnsea2e.rolls.editRoll(message);
+    DialogV2.prefill = null;
+    return result;
+  };
+  const shown = [];
+  game.dice3d = { showForRoll: async (r, user, sync, whisper, blind) => shown.push([r.formula, whisper, blind]) };
+  const summary = (m) => { const r = m.system.resolve(); return `${r.raises}|${r.combos.join(',')}|${r.unused.join(',')}`; };
+  const msg = await roll();
+  const s = msg.system;
+  ok(msg.type === 'roll' && s.kind === 'skill' && s.pool.trait === 3 && s.pool.skill === 2 && s.pool.wound === 1 && s.threshold === 10, 'roll message keeps the pool');
+  ok(s.dice.join() === D.join() && s.explosions.length === 0 && s.rerollFace === null && s.joieRank === 2, `roll message keeps the dice (${s.dice})`);
+  ok(raisesOf(msg) === 2 && summary(msg) === '2|4 + 6,2 + 3 + 5|9', `card drawn from the data (${summary(msg)})`);
+
+  // +1 after the roll: the same raises as a roll made with +1.
+  const withOne = await roll((form) => { form.querySelector('[name="addOneToDice"]').checked = true; });
+  await edit(msg, (form) => { form.elements.addOne.checked = true; });
+  ok(msg.system.addOne && summary(msg) === summary(withOne) && raisesOf(msg) === raisesOf(withOne), `edited +1 = rolled with +1 (${summary(msg)})`);
+  ok(msg.rolls.length === 1 && msg.system.dice.join() === D.join() && msg.system.edited && msg.content.includes('Roll edited'), 'nothing rolled again, marked as edited');
+  ok(shown.length === 0, 'Dice So Nice shows nothing');
+
+  // Threshold 15: 6 + 9 (2 raises), then 2 + 3 + 5 at 10 (1 raise), 4 left.
+  await edit(msg, (form) => { form.elements.addOne.checked = false; form.elements.threshold.value = '15'; });
+  ok(summary(msg) === '3|6 + 9,2 + 3 + 5|4' && msg.content.includes('Raise threshold: 15'), `edited threshold 15 (${summary(msg)})`);
+  await edit(msg, (form) => { form.elements.threshold.value = '10'; });
+
+  // Adding dice rolls only the new ones and keeps the others.
+  await edit(msg, (form) => { form.elements.bonus.value = '2'; }, [10, 1]);
+  ok(msg.system.dice.join() === [...D, 10, 1].join() && msg.rolls.length === 1 && shown.map((r) => r[0]).join() === '2d10', 'two dice added, only they are rolled and shown');
+  ok(summary(msg) === '4|10,1 + 9,4 + 6,2 + 3 + 5|', `added dice counted (${summary(msg)})`);
+  await edit(msg, (form) => { form.elements.bonus.value = '0'; form.elements.trait.value = '2'; });
+  ok(msg.system.dice.join() === D.slice(0, 5).join() && shown.length === 1, 'fewer dice: the last ones are dropped, nothing rolled');
+
+  // Explosions: a 10 explodes once 10s explode; the explosion is dropped when they stop exploding.
+  await edit(msg, (form) => { form.elements.trait.value = '3'; form.elements.bonus.value = '1'; }, [10]);
+  await edit(msg, (form) => { form.elements.explode.checked = true; }, [10, 7]);
+  ok(msg.system.explosions.join() === '10,7' && msg.content.includes('+2 exploded dice'), `10s explode, explosions roll on (${msg.system.explosions})`);
+  await edit(msg, (form) => { form.elements.explode.checked = false; });
+  ok(msg.system.explosions.length === 0 && !msg.content.includes('exploded'), 'no explosions once 10s do not explode');
+
+  // Rank 3 reroll: the lowest leftover die is rolled again once, and the face is kept by later edits.
+  await edit(msg, (form) => { form.elements.bonus.value = '0'; form.elements.reroll.checked = true; }, [8]);
+  ok(msg.system.rerollFace === 8 && msg.content.includes('Rerolled 2 and got 8'), `reroll rolled (${msg.system.rerollFace})`);
+  const shownBefore = shown.length;
+  await edit(msg, (form) => { form.elements.addOne.checked = true; });
+  ok(msg.system.rerollFace === 8 && shown.length === shownBefore, 'reroll kept, nothing rolled');
+  await edit(msg, (form) => { form.elements.addOne.checked = false; form.elements.reroll.checked = false; });
+  ok(msg.system.rerollFace === null, 'reroll dropped');
+
+  // Joie de Vivre: the dice that counted as 10 are marked on the card.
+  await edit(msg, (form) => { form.elements.joieDeVivre.checked = true; });
+  const joieCard = document.createElement('div'); joieCard.innerHTML = msg.content;
+  ok([...joieCard.querySelectorAll('.die.joie')].map((li) => li.textContent.trim()).join() === '2' && msg.content.includes('dice of 2 or less count as 10'), 'Joie de Vivre dice marked on the card');
+  ok(raisesOf(msg) === msg.system.resolve().raises, 'card and data agree');
+
+  // Hero points for the hero's own dice are spent or given back.
+  await edit(msg, (form) => { form.elements.heroPoints.value = '1'; }, [3]);
+  ok(pc.system.heropts === 0 && msg.system.pool.heroPoints === 1 && msg.system.dice.length === 7, 'hero point spent by the edit, its die rolled');
+  const before = msg.system.toObject();
+  await edit(msg, (form) => { form.elements.heroPoints.value = '2'; });
+  ok(pc.system.heropts === 0 && msg.system.pool.heroPoints === 1 && log.notifications.at(-1)[1].includes('hero'), 'not enough hero points: nothing changes');
+  await edit(msg, (form) => { form.elements.heroPoints.value = '0'; });
+  ok(pc.system.heropts === 1 && msg.system.dice.length === 6, 'hero point given back');
+  await edit(msg, (form) => { form.elements.trait.value = '0'; form.elements.skill.value = '0'; form.elements.wound.value = '0'; });
+  ok(log.notifications.at(-1)[1].includes('no dice') && msg.system.pool.trait === before.pool.trait, 'an empty pool is refused');
+
+  // "Edit Roll" in the context menu: author and GM only, and only for v25 roll messages.
+  const menu = [];
+  await Hooks.callAll('getChatMessageContextOptions', {}, menu);
+  const option = menu.find((o) => o.label === 'SVNSEA2E.EditRoll');
+  const li = (m) => ({ dataset: { messageId: m.id } });
+  const oldMessage = await ChatMessage.create({ author: game.user.id, content: '<div>v24 card</div>', rolls: [{}] });
+  ok(option?.visible(li(msg)) && !option.visible(li(oldMessage)), 'Edit Roll shown for roll messages only');
+  const gm = game.user;
+  game.user = { id: 'player2', isGM: false };
+  ok(!option.visible(li(msg)) && (await game.svnsea2e.rolls.editRoll(msg)) === false, 'another player cannot edit the roll');
+  game.user = { id: gm.id, isGM: false };
+  ok(option.visible(li(msg)), 'its author can');
+  msg.blind = true;
+  ok(!option.visible(li(msg)), 'not while the author cannot see it (blind roll)');
+  msg.blind = false;
+  game.user = gm;
+
+  // A Dice So Nice that fails does not break the edit; the dice of a private roll are shown to its recipients only.
+  game.dice3d = { showForRoll: () => { throw new Error('broken'); } };
+  ok((await edit(msg, (form) => { form.elements.bonus.value = '1'; }, [5])) === msg && msg.system.dice.length === 7, 'edit works with a broken Dice So Nice');
+  game.dice3d = { showForRoll: async (r, user, sync, whisper, blind) => shown.push([r.formula, whisper, blind]) };
+  msg.whisper = ['gm']; msg.blind = false;
+  await edit(msg, (form) => { form.elements.bonus.value = '2'; }, [5]);
+  ok(shown.at(-1)[1]?.join() === 'gm', 'new dice shown to the recipients of the message');
+  msg.whisper = [];
+  delete game.dice3d;
+
+  // Free roll: its dice are bonus dice, without wound die.
+  DialogV2.prefill = (form) => { form.querySelector('[name="diceNumber"]').value = '3'; };
+  MockRoll.next = [1, 2, 3];
+  await pcSheet.click('[data-action="freeRoll"]');
+  DialogV2.prefill = null;
+  const free = log.chat.at(-1);
+  ok(free.system.kind === 'free' && free.system.pool.bonus === 3 && free.system.pool.wound === 0, 'free roll stored');
+  await edit(free, (form) => { form.elements.bonus.value = '4'; }, [4]);
+  ok(free.system.dice.join() === '1,2,3,4' && raisesOf(free) === 1, `free roll edited with one more die (${raisesOf(free)})`);
+}
+
 // Languages selector
 await pcSheet.click('[data-action="selectLanguages"]');
 

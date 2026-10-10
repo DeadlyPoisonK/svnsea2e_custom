@@ -84,6 +84,7 @@ export async function rollSkill(actor, skill) {
     actor,
     rolldata,
     options: result.options,
+    kind: 'skill',
     title: game.i18n.format('SVNSEA2E.ApproachRollChatTitle', {
       trait: traitSelect.options[traitSelect.selectedIndex].text,
       skill: skillLabel,
@@ -108,7 +109,7 @@ export async function rollTrait(actor, trait) {
     bonus: effectDefaults(actor),
   });
   if (!result) return false;
-  return rollDicePool({ actor, rolldata, options: result.options, title });
+  return rollDicePool({ actor, rolldata, options: result.options, title, kind: 'trait' });
 }
 
 /** Free roll ("Roll Dice"): any number of dice, without skill, trait or wound bonus. */
@@ -125,7 +126,7 @@ export async function rollFreeDice(actor) {
   return rollDicePool({
     actor,
     rolldata: {
-      skilldice: diceCount,
+      skilldice: 0,
       // Joie de Vivre needs the rank of the skill: the number of dice is not it.
       skillRank: Math.max(joieRank, 0),
       threshold: 10,
@@ -135,7 +136,8 @@ export async function rollFreeDice(actor) {
     },
     options: {
       trait: 0,
-      bonusDice: 0,
+      // The free roll keeps its number of dice as bonus dice.
+      bonusDice: diceCount,
       flairDice: false,
       interpretationDice: false,
       useForMe: 0,
@@ -146,5 +148,6 @@ export async function rollFreeDice(actor) {
       increaseThreshold,
     },
     title: game.i18n.localize('SVNSEA2E.GenericRoll'),
+    kind: 'free',
   });
 }

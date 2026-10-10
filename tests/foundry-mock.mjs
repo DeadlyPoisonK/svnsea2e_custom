@@ -277,6 +277,35 @@ export function installMocks(repo) {
   Object.assign(Actor.prototype, effectsMixin);
   Object.assign(Item.prototype, effectsMixin);
 
+  // Chat messages: typed ones get their data model, like Foundry. `log.chat` keeps every message created.
+  class ChatMessage {
+    static implementation = ChatMessage;
+    static applyMode(d) { return { ...d, mode: 'applied' }; }
+    static getSpeaker({ actor } = {}) { return { actor: actor?.id }; }
+    static getSpeakerActor(speaker) { return game.actors.get(speaker?.actor) ?? null; }
+    static async create(data) { const message = new ChatMessage(data); log.chat.push(message); game.messages.set(message.id, message); return message; }
+    constructor(data) {
+      const { system, rolls, ...rest } = data;
+      Object.assign(this, rest);
+      this._id = `msg${++idCounter}`; this.type ??= 'base'; this.rolls = [...(rolls ?? [])];
+      this._systemSource = deepClone(system ?? {}); this._prepare();
+    }
+    _prepare() {
+      const model = CONFIG.ChatMessage.dataModels[this.type];
+      this.system = model ? new model(model.migrateData(deepClone({ ...model.initialData(), ...this._systemSource })), { parent: this }) : this._systemSource;
+    }
+    get id() { return this._id; }
+    get isAuthor() { return this.author === game.user.id; }
+    get isContentVisible() { return !this.blind || game.user.isGM; }
+    async update(changes) {
+      log.updates.push(['message', changes]);
+      const { system, ...rest } = changes;
+      Object.assign(this, rest);
+      if (system) { this._systemSource = deepClone(system); this._prepare(); }
+      return this;
+    }
+  }
+
   class MockRoll {
     static next = [];
     constructor(formula) { this.formula = formula; }
@@ -300,8 +329,8 @@ export function installMocks(repo) {
   globalThis.Hooks = { once: (n, f) => (hooks[n] ??= []).push(f), on: (n, f) => (hooks[n] ??= []).push(f), callAll: async (n, ...a) => { for (const f of hooks[n] ?? []) await f(...a); } };
   globalThis.Actor = Actor; globalThis.Item = Item; globalThis.ActiveEffect = ActiveEffect;
   globalThis.CONST = { DEFAULT_TOKEN: 'icons/svg/mystery-man.svg', CHAT_MESSAGE_STYLES: { OTHER: 0 } };
-  globalThis.CONFIG = { Actor: { dataModels: {} }, Item: { dataModels: {} }, ActiveEffect: { documentClass: ActiveEffect }, Combat: {} };
-  globalThis.ChatMessage = { implementation: { applyMode: (d) => ({ ...d, mode: 'applied' }), create: async (d) => { log.chat.push(d); return d; }, getSpeaker: ({ actor } = {}) => ({ actor: actor?.id }) } };
+  globalThis.CONFIG = { Actor: { dataModels: {} }, Item: { dataModels: {} }, ChatMessage: { dataModels: {} }, ActiveEffect: { documentClass: ActiveEffect }, Combat: {} };
+  globalThis.ChatMessage = ChatMessage;
   globalThis.ui = { notifications: { info: (m) => log.notifications.push(['info', m]), warn: (m) => log.notifications.push(['warn', m]), error: (m) => log.notifications.push(['error', m]) } };
   const settings = new Map();
   const en = JSON.parse(fs.readFileSync(path.join(repo, 'lang/en.json'), 'utf8'));
@@ -311,7 +340,7 @@ export function installMocks(repo) {
     system: { version: '24.0' },
     user: { id: 'gm', isGM: true },
     users: { activeGM: { isSelf: true } },
-    actors: new Collection(), items: new Collection(), packs: [], combats: new Collection(), scenes: new Collection(),
+    actors: new Collection(), items: new Collection(), packs: [], combats: new Collection(), scenes: new Collection(), messages: new Collection(),
   };
   globalThis.fromUuidSync = (uuid) => game.actors.get(uuid.split('.').pop());
   globalThis.fromUuid = async (uuid) => fromUuidSync(uuid);

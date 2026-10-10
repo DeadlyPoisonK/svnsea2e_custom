@@ -881,6 +881,11 @@
   text-align: center;
 }
 
+/* "Edit Roll" */
+.svnsea2e.roll-dialog .edit-roll .hint {
+  margin: 0 0 0.5rem;
+}
+
 /* "Roll Dice": a framed box with the dice count centered on top, as in v23.3. */
 .svnsea2e.roll-dialog .free-roll {
   padding: 10px;
@@ -1020,11 +1025,10 @@
 }
 
 /* ============================================================
-   Chat (system look: white messages with a red header)
+   Chat (system look: messages on Foundry's parchment, like the sheets, with a red header)
    ============================================================ */
 
 .chat-message.message {
-  background: white;
   color: #000;
   font-size: 1em;
   padding: 0;
@@ -1081,6 +1085,22 @@
 
 .chat-message .raise-combos-list .combo.unused {
   background: rgba(255, 0, 0, 0.1);
+}
+
+/* Dice that counted as 10 because of Joie de Vivre. */
+.chat-message .dice-rolls .roll.die.joie {
+  color: #5b2a86;
+  filter: sepia(0.5) hue-rotate(220deg);
+}
+
+.chat-message .chat-card .joie-de-vivre {
+  color: #5b2a86;
+}
+
+.chat-message .chat-card .roll-edited {
+  margin-top: 0.25rem;
+  font-style: italic;
+  color: #4b4a44;
 }
 
 /* Item card */

@@ -26,6 +26,7 @@ import { SvnSea2EItemSheet } from './item/sheets.js';
 import { SvnSea2EActiveEffect, onRenderActiveEffectConfig } from './effects.js';
 import { rollDicePool } from './roll/roll.js';
 import { rollFreeDice, rollSkill, rollTrait } from './roll/dialogs.js';
+import { editRoll, onGetChatMessageContextOptions, ROLL_MESSAGE, RollMessageModel } from './roll/message.js';
 
 Hooks.once('init', () => {
   console.log(`7th Sea 2E | Initializing 7th Sea Second Edition System\n${SVNSEA2E.ASCII}`);
@@ -34,7 +35,7 @@ Hooks.once('init', () => {
     applications: { SvnSea2EActor, SvnSea2EItem },
     config: SVNSEA2E,
     migrations,
-    rolls: { rollDicePool, rollSkill, rollTrait, rollFreeDice },
+    rolls: { rollDicePool, rollSkill, rollTrait, rollFreeDice, editRoll },
     updateInitiative,
     toolbox: new Toolbox(),
   };
@@ -56,6 +57,7 @@ Hooks.once('init', () => {
     [ActorType.SHIP]: actorModels.ShipModel,
     [ActorType.VILLAIN]: actorModels.VillainModel,
   });
+  CONFIG.ChatMessage.dataModels[ROLL_MESSAGE] = RollMessageModel;
   Object.assign(CONFIG.Item.dataModels, {
     [ItemTypes.ADVANTAGE]: itemModels.AdvantageModel,
     [ItemTypes.ARTIFACT]: itemModels.ArtifactModel,
@@ -154,3 +156,4 @@ Hooks.on('renderActorDirectory', (app, html) => {
 Hooks.on('renderCombatTracker', onRenderCombatTracker);
 Hooks.on('renderActiveEffectConfig', onRenderActiveEffectConfig);
 Hooks.on('renderChatMessageHTML', onRenderChatMessage);
+Hooks.on('getChatMessageContextOptions', onGetChatMessageContextOptions);
