@@ -97,4 +97,4 @@ Este fork existe gracias al trabajo original de **Jason "psychoph" Hardin**, **M
 
 ## Contacto
 
-Si encontrás un problema, algo roto, o tenés una sugerencia: hablame por Discord, `deadlypoison#2956`.
+Si encontrás un problema, algo roto, o tenés una sugerencia: hablame por Discord, `deadlypoison#2956`. 
