@@ -1,0 +1,22 @@
+{
+  "folder": "xxBsCdk02wgRofYn",
+  "name": "Reducir al villano",
+  "type": "sorcery",
+  "_id": "3cKAhs2qmOCbhIIQ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Glamour para reducir temporalmente la Fuerza del villano tanto como el nivel que tengas en este Glamour. El villano recupera la Fuerza sustraída con este Glamour al final del episodio.</p>",
+    "infosource": "7º Mar (básico), p. 215",
+    "used": false,
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "glamour",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

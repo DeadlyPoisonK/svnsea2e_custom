@@ -1,0 +1,17 @@
+{
+  "folder": "rxiPEUOSj58lttE0",
+  "name": "Impulsivo",
+  "type": "hubris",
+  "_id": "i5WIYMiUw110gjcn",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibes 1 punto de héroe cuando eliges actuar sin conocer toda la información disponible y te causa problemas.</p>",
+    "infosource": "El explorador · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Inquebrantable",
+  "type": "advantage",
+  "_id": "KlPAJJYQfaHJUB8c",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando tu héroe se propone algo, nada puede apartarlo de sus objetivos. Gasta un punto de héroe. Eres inmune a los efectos de la Presión hasta el final de la escena.</p>",
+    "infosource": "Khitai, p. 123 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

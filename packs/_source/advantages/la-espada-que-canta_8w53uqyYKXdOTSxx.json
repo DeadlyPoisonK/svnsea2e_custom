@@ -1,0 +1,24 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "La espada que canta",
+  "type": "advantage",
+  "_id": "8w53uqyYKXdOTSxx",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Estás entrenado en el famoso arte de la canción y el acero de Magreb. O bien creaste o te regalaron una «espada que canta» y puedes usarla en combate. Cada vez que uses tus niveles en Armas o Interpretar, puedes usar tus niveles en el otro para determinar efectos o dados (realizando Riesgos mientras estás en una pelea de espadas, impresionando a una multitud con una deslumbrante danza de espadas, usando maniobras de esgrima o cualquier efecto que dependa de tus niveles en Armas o Interpretar).</p><p>Puedes gastar 1 punto de héroe una vez por ronda para usar tanto tus niveles en Armas como tus niveles en Interpretar (ya sea al comienzo de una ronda para ganar dados adicionales, cuando realizas una maniobra de esgrima para aumentar su efectividad, etc.).</p><p><em>Solo si eres magrebí.</em></p>",
+    "infosource": "Tierras de Fuego y Oro, p. 178",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

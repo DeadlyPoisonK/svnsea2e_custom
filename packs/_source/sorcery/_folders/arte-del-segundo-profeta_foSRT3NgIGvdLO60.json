@@ -1,0 +1,15 @@
+{
+  "name": "Arte del Segundo Profeta",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "foSRT3NgIGvdLO60",
+  "description": "",
+  "sort": 1600000,
+  "color": "#006144",
+  "flags": {
+    "scene-packer": {
+      "hash": "26dddd1c84ba2727d038c287e71c5568952f7a87"
+    }
+  }
+}

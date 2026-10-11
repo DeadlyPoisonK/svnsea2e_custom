@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Afrontar la tormenta (Khitai)",
+  "type": "advantage",
+  "_id": "ake15I07wDqxaoI3",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cualquier Aumento que gastes para superar una Consecuencia creada por una Amenaza cuenta como 2 Aumentos.</p>",
+    "infosource": "Khitai, p. 115 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,19 @@
+{
+  "folder": "EukS0hh4uQes49gW",
+  "name": "Mascarada",
+  "type": "duelstyle",
+  "_id": "G5sPDd7BjproKw6u",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Maestro Practicante: Mascarada (o Raphael para sus alumnos) Mascarada, un poeta de Montaigne que ha viajado por el mundo, se hizo conocido por sus inmensamente populares libros de poesía y por el hecho de que siempre usa una máscara. Su notoriedad ha alcanzado tales alturas que el estilo de poesía anatolio Divan fue renombrado en su honor. Las palabras que dice hacen que la sangre fluya y las mejillas se sonrojen. Envuelto en sus versos, lo mundano se siente obsceno y sus seductoras metáforas rara vez son lo que parecen. Los cultos libros comerciales de su poesía alcanzan desde las costas de Inismore hasta el 8º Mar. Además de ser un maestro del arte escrito, Mascarada puede cautivar a una multitud. Su apariencia elegantemente vestida junto con su enigmática máscara atraen incluso a las audiencias más insensibles. Impulsado por un amante de cada lugar que ha visitado, los poemas de sus citas pasadas exploran las profundidades más oscuras e insondables del romance, y muchos consideran sus versos como clásicos modernos. Una Kavi que ha aprendido con Raphael usa una máscara hecha a mano, un regalo de su maestro, para cada duelo. Un practicante de Mascarada a menudo usa metáforas floridas que involucran plantas o animales para representar temas románticos.</p>",
+    "bonus": "<p><strong>Bonificación de la escuela.</strong></p><p>Un practicante de Mascarada gana 1 dado adicional durante los Kavitas de estilo hazadj (románticas).</p>",
+    "infosource": "El Imperio de la Media Luna, p. 202"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

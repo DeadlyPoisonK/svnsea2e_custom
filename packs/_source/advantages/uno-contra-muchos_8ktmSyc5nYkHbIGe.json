@@ -1,0 +1,24 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Uno contra muchos",
+  "type": "advantage",
+  "_id": "8ktmSyc5nYkHbIGe",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastes Aumentos para infligir Heridas a una banda de matones, puedes gastar 1 punto de héroe para duplicar el número de Heridas que infliges.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 177",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

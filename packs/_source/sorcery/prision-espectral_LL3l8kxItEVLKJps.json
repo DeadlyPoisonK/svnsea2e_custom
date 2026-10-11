@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Prisión espectral",
+  "type": "sorcery",
+  "_id": "LL3l8kxItEVLKJps",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Musgo de una lápida o de un mausoleo, hervido y derretido, mezclado con sal y huesos hasta conseguir una pasta densa y pegajosa. Dibuja un círculo, un cuadrado, un pentagrama o cualquier otra figura cerrada con este ungüento. Mientras la forma permanezca intacta y cerrada, ningún monstruo no muerto podrá cruzarla ni afectar a ninguna de las criaturas que se encuentren dentro del dibujo. El monstruo puede realizar otras acciones con normalidad (como un Riesgo social si es capaz de hablar o disparar una pistola si sabe cómo hacerlo), pero ningún efecto sobrenatural puede cruzar las líneas dibujadas. El propio monstruo tampoco puede romper la línea (tirando un simple objeto sobre ella, rompiendo la superficie en la que están dibujadas las líneas, etcétera), pero puede convencer a cualquier otro para que lo haga.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 208",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 106250,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

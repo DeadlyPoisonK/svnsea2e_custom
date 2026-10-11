@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Especialista (Khitai)",
+  "type": "advantage",
+  "_id": "77xzrNgUp6tl16G5",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige una habilidad en la que tengas al menos 3 rangos.</p><p>Cuando realizas acciones durante un Riesgo y esa habilidad no es tu Enfoque, no necesitas pagar un Aumento adicional por Improvisación si tu acción está relacionada con esa habilidad.</p>",
+    "infosource": "Khitai, p. 121 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Ceolmund, el Caballero Protector",
+  "type": "sorcery",
+  "_id": "4wzORPj4T0uFPajJ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Aunque todos los caballeros tienen relatos de sacrificio, ninguno es tan famoso como Ceolmund. Su relato más famoso es el de su muerte. Mientras permanecía de pie, recibiendo todos los golpes de sus amigos y gritándoles que se quedaran atrás, le dio un golpe mortal a su enemigo… y luego calló muerto, en el mismo lugar. Característica mayor: Brío Característica menor: Maña</p><h3>Naciones de Théah vol. 1, p. 48</h3><p><strong>Virtud:</strong> Apasionado (Los amantes). <strong>Hibris:</strong> Testarudo (Los tronos).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe siempre que seas el primero en enzarzarte en un combate para que otros no tengan que hacerlo o cuando resistas en la retaguardia para que los demás puedan huir.</p><p><strong>Glamour legendario — No morirás aquí:</strong> Activa este Glamour para permitir que un héroe aliado cercano ignore todos los efectos negativos de sus Heridas Dramáticas durante el resto de la secuencia de acción (el villano no obtiene dados adicionales si el héroe tiene 2 Heridas Dramáticas y no queda Indefenso con 4 Heridas Dramáticas). Además, a partir de entonces podrás gastar tus Aumentos de uno en uno para evitar las Heridas sufridas por tu aliado.</p>",
+    "infosource": "7º Mar (básico), p. 212",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

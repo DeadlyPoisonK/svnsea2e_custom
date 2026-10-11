@@ -1,0 +1,21 @@
+{
+  "folder": "N2qsFS6XbvuICS1X",
+  "name": "Golpe de gracia",
+  "type": "sorcery",
+  "_id": "4kFy1qY6y3IAybhd",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Derrota a un villano en combate singular. Gasta 1 punto de héroe cuando causes una tercera Herida Dramática a un oponente para causarle una cantidad de Heridas adicionales igual al nivel que tengas en Armas.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 201",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

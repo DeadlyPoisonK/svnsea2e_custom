@@ -1,0 +1,32 @@
+{
+  "folder": "HQe5z3Y1LzDB9lfT",
+  "name": "Razrushitel",
+  "type": "background",
+  "_id": "5EB50NvxVxQCqBJl",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>¿Por qué andar con cuidado si se puede ir directo al grano?</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 208",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando escoges un curso de acción que es ruidoso, directo y para nada sutil.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "perform",
+      "ride",
+      "warfare"
+    ],
+    "advantages": [
+      "Bola de demolición",
+      "La fuerza de diez"
+    ],
+    "nation": "ussura",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

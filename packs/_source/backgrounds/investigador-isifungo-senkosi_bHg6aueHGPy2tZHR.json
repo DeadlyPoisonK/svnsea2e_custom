@@ -1,0 +1,31 @@
+{
+  "folder": "Xe6peyLQK5b7alrc",
+  "name": "Investigador Isifungo Senkosi",
+  "type": "background",
+  "_id": "bHg6aueHGPy2tZHR",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>El zahmeireen es una herramienta para combatir el mal; no puedes dejar que caiga en las manos equivocadas.</p>",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando te comprometes a seguir un curso de acción peligroso o moralmente cuestionable para perseguir un artefacto de zahmeireen corrupto.</p>",
+    "skills": [
+      "athletics",
+      "convince",
+      "ride",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Arma de zahmeireen"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 174",
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

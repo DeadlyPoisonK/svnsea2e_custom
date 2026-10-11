@@ -1,0 +1,22 @@
+{
+  "folder": "li9WDKazVu5ySEdo",
+  "name": "Azote",
+  "type": "sorcery",
+  "_id": "2CBun15iE5Z1FsrA",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Tu arma es un anatema para cierto tipo de criatura. Al escoger esta Faceta, selecciona un tipo de monstruo (por ejemplo, no muerto, abonsam, drachen, etc.). Cuando causes Heridas a un monstruo de ese tipo, siempre causas 2 Heridas adicionales.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 199",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

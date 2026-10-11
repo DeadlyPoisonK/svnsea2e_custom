@@ -1,0 +1,24 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Tiro de despedida",
+  "type": "advantage",
+  "_id": "IQMKe5mehsbW8P0g",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando tengas una pistola, arco, ballesta, cuchillo arrojadizo o un arma de proyectil similar y no tengas Aumentos durante una secuencia de acción, gasta 1 punto de héroe y selecciona otro personaje presente en la escena. Ese personaje recibe una Herida Dramática, y puedes elegir entre quedarte Indefenso o abandonar inmediatamente la escena, sin poder regresar.</p>",
+    "infosource": "El Nuevo Mundo, p. 167",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

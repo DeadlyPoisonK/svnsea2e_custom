@@ -1,0 +1,31 @@
+{
+  "folder": "IzxDf7LBEx0QQz86",
+  "name": "Befleckte Seele",
+  "type": "background",
+  "_id": "dcMxiAptlEPBSgNL",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>En tu interior hay algo oscuro y malvado que siempre está tratando de salir. Pero el poder, incluso el que procede del mal, puede utilizarse para el bien.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 207",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando usas tu naturaleza monstruosa para resolver un problema y alguien te rechaza por ello.</p>",
+    "skills": [
+      "athletics",
+      "empathy",
+      "hide",
+      "ride",
+      "theft"
+    ],
+    "advantages": [
+      "Don oscuro"
+    ],
+    "nation": "eisen",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

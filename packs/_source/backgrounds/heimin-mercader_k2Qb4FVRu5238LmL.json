@@ -1,0 +1,32 @@
+{
+  "folder": "NUOxMdBqWbDQh6uy",
+  "name": "Heimin (Mercader)",
+  "type": "background",
+  "_id": "k2Qb4FVRu5238LmL",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Honestidad</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "infosource": "Khitai, p. 109 (traducción no oficial)",
+    "quirk": "<p>Gana un punto de héroe cuando demuestres que ser de «baja cuna» no te hace carecer de importancia ni de dignidad.</p>",
+    "skills": [
+      "athletics",
+      "convince",
+      "notice",
+      "ride"
+    ],
+    "advantages": [
+      "Trabajo en equipo (Khitai)",
+      "Espíritu valiente (Khitai)",
+      "Sentido de la orientación (Khitai)"
+    ],
+    "nation": "none",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

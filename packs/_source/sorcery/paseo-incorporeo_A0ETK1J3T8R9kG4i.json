@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Paseo incorpóreo",
+  "type": "sorcery",
+  "_id": "A0ETK1J3T8R9kG4i",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Un corazón humano molido y mezclado con hierbas y sedantes. Consumir este ungüento hace que caigas inconsciente de manera inmediata y obligará a tu espíritu a que salga de tu cuerpo. Como espíritu puedes moverte con libertad, siendo perfectamente consciente de lo que rodea a tu espíritu, pero no a tu cuerpo. Puedes volar y atravesar paredes, además de ser invisible. Mientras seas un espíritu estarás sujeto a cualquier efecto que afectaría a un no muerto y podrás ser detectado por cualquier efecto que permita detectar monstruos invisibles (como Ojos de fantasma). Tu espíritu es extremadamente frágil: puedes recibir Heridas con normalidad y si recibes Heridas Dramáticas mientras eres un espíritu, volverás inmediatamente a tu cuerpo y recibirás una Herida Dramática adicional. Además, morirás si no vuelves a tu cuerpo antes del siguiente amanecer o la siguiente puesta de sol (lo que suceda primero). También morirás si tu espíritu es destruido y no puedes volver a tu cuerpo (por ejemplo, si está atrapado en una Prisión espectral).</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 208",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 112500,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

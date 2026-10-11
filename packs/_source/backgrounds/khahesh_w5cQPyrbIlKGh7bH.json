@@ -1,0 +1,33 @@
+{
+  "folder": "3rpOB9OIylqQmszO",
+  "name": "Khahesh",
+  "type": "background",
+  "_id": "w5cQPyrbIlKGh7bH",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tienes una gran responsabilidad con el mundo, una que te han confiado los ahuras.</p><p><em>Ventajas en el libro: Hechicería (Khahesh-ahura), Hechicería (Khahesh-ahura).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 157",
+    "used": false,
+    "quirk": "<p>Gana 1 punto de héroe cuando tu conexión con los ahuras se haga conocida y complique un problema, en lugar de resolverlo.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "intimidate",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Muy leído"
+    ],
+    "nation": "persis",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

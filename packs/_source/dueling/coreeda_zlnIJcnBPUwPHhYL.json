@@ -1,0 +1,19 @@
+{
+  "folder": "xRskIATgzioWdrTl",
+  "name": "Coreeda",
+  "type": "duelstyle",
+  "_id": "zlnIJcnBPUwPHhYL",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Con diferencia el arte marcial más practicado en Kammerra, el Coreeda es único (o cuando menos, poco común) en el sentido de que es un estilo de lucha construido a partes iguales en torno a las técnicas de combate y al entretenimiento. La leyenda del Coreeda se remonta a la antigua historia del héroe Jandamarra. Jandamarra amaba la lucha, pero odiaba matar. Recibió en sueños la visita de uno de los antiguos de Kammerra, quien le dijo que observara a los machos de canguro rojo para aprender a luchar sin armas y sin matar.</p><p>El Coreeda es el resultado de la búsqueda de Jandamarra, un espectacular estilo de lucha que se inspira en los movimientos y ademanes de varios animales nativos de Kammerra. Un practicante de Coreeda rara vez se queda quieto, manteniéndose a poca altura del suelo y balanceándose de un lado a otro para ofrecer un blanco móvil a su adversario mientras busca su propia oportunidad. El Coreeda favorece golpear desde abajo, a diferencia de muchos otros estilos que prefieren un enfoque de combate desde una «posición elevada». Esto hace que el Coreeda resulte difícil de contrarrestar para la mayoría de los luchadores que no están acostumbrados a él: el ángulo de ataque preferido del Coreeda se considera una posición débil en otras disciplinas, por lo que rara vez lo tienen en cuenta. En la cultura de Kammerra, el Coreeda a menudo se contempla más como un deporte que como un estilo de lucha.</p><p>Los combates y torneos de Coreeda son habituales en festivales, fiestas, bodas y en todas esas reuniones sociales. Estas competiciones son amistosas pero intensas, y los vencedores suelen reclamar algún tipo de premio (un trofeo, dinero o simplemente un lugar de honor en un banquete) como muestra de su supremacía.</p><p>Los viajeros pueden notar algunas similitudes entre el Coreeda y un estilo de lucha jázaro llamado <em>bokh</em>, pero los dos se desarrollaron de forma independiente el uno del otro.</p>",
+    "infosource": "Khitai, p. 223 (traducción no oficial)",
+    "bonus": "<p><strong>Bonificación de escuela.</strong> Mientras no empuñes nada más que tus manos desnudas, tus maniobras de esgrima usan tus rangos en Pelear en lugar de tus rangos en Armas para determinar sus efectos. Además, tu maniobra Empujar es reemplazada por Patada de talón de Coreeda. Cuando realizas Patada de talón infliges dos Heridas, y la próxima vez que tu objetivo inflija Heridas esta ronda infligirá una Herida menos por cada rango que tengas en Pelear.</p><p><strong>Bonificación de maestría.</strong> Has dominado el estilo Coreeda de golpear desde abajo y puedes aprovechar los golpes inesperados desequilibrando a tu oponente. Cuando realizas la maniobra Embestida, tu oponente pierde de inmediato un número de Aumentos igual a la mitad de las Heridas que causa la maniobra.</p>",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

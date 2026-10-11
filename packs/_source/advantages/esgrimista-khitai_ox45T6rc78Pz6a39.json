@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Esgrimista (Khitai)",
+  "type": "advantage",
+  "_id": "ox45T6rc78Pz6a39",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Obtienes 1 dado adicional cuando realizas un Riesgo de Armas usando un cuchillo, daga, alfanje, espadín o arma similar en una mano.</p>",
+    "infosource": "Khitai, p. 118 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

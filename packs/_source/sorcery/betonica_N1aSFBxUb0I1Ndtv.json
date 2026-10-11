@@ -1,0 +1,21 @@
+{
+  "folder": "xu8eDKs9AYg0HUdE",
+  "name": "Betónica",
+  "type": "sorcery",
+  "_id": "N1aSFBxUb0I1Ndtv",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este extracto concede al que lo beba una fuerza sobrenatural. El objetivo obtiene 1 nivel en Músculo durante una escena. Preparar este extracto necesita 2 Requisitos.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 96",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

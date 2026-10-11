@@ -1,0 +1,23 @@
+{
+  "folder": "vIU7NVRxbdGwTGsF",
+  "name": "Academia de esgrima (Waglichina)",
+  "type": "advantage",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes elegir un estilo de Esgrima. Si adquieres&nbsp;esta ventaja otra vez, consigues un estilo de Esgrima&nbsp;adicional. Ver el cap&iacute;tulo &laquo;Duelos&raquo; (p&aacute;gina 234) para&nbsp;m&aacute;s informaci&oacute;n.</p>",
+    "infosource": "Variante creada por la mesa: Academia de esgrima con el estilo Waglichina (El Nuevo Mundo)",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "NSyWWQN5SMWq4SHz",
+  "sort": 3800000,
+  "ownership": {
+    "default": 0
+  }
+}

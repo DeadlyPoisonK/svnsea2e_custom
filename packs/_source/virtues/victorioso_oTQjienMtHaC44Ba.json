@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Victorioso",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud la primera vez que inflijas Heridas a un villano durante una pelea para obligarle a que reciba 1 Herida Dramática, además de las Heridas que normalmente infligirías.</p>",
+    "infosource": "La guerra · 7º Mar (básico), p. 157"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "oTQjienMtHaC44Ba",
+  "sort": 1600000,
+  "ownership": {
+    "default": 0
+  }
+}

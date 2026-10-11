@@ -1,0 +1,17 @@
+{
+  "folder": "y4NSZLM4Tpr3LrUL",
+  "name": "Ruin",
+  "type": "hubris",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibe 1 punto de héroe cuando te niegues a ayudar a alguien mientras no te suplique que lo hagas o cuando demuestres de cualquier otro modo tu naturaleza ruin y vengativa.</p>",
+    "infosource": "El Diablo Jonah · Naciones Piratas, p. 154"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "XelqTdhNO0svLMpF",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

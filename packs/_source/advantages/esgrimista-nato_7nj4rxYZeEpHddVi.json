@@ -1,0 +1,23 @@
+{
+  "folder": "aSM5k4zd4YYt1rg3",
+  "name": "Esgrimista nato",
+  "type": "advantage",
+  "_id": "7nj4rxYZeEpHddVi",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe debe saber dos estilos de esgrima para poder adquirir esta ventaja. Puedes gastar un punto de héroe para cambiar el estilo que hayas elegido en mitad de una ronda, pero siempre que cumplas los requisitos del nuevo estilo que vayas a adoptar (como el arma que estés usando). Solo puedes usar esta ventaja una vez por ronda.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 206",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1700000,
+  "ownership": {
+    "default": 0
+  }
+}

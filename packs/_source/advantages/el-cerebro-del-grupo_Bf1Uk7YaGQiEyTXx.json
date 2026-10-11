@@ -1,0 +1,24 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "El cerebro del grupo",
+  "type": "advantage",
+  "_id": "Bf1Uk7YaGQiEyTXx",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastes 1 punto de héroe para conceder dados adicionales a otro héroe durante un Riesgo, puede gastar un segundo punto de héroe. Si lo haces, otorgas a dicho héroe tantos dados adicionales como tu nivel en Conocimiento, siempre que describas como pueden tus conocimientos académicos ayudarle en su Riesgo.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 210",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

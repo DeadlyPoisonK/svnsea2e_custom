@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Mutar",
+  "type": "sorcery",
+  "_id": "bOWxJTxNeN0Gge6P",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Eres capaz de recurrir a los poderes de los monstruos para empoderarte. Genera 5 de Plaga. Elige una cualidad de monstruo cuando obtengas este poder. Manifiestas esa cualidad de monstruo hasta que la canceles o hasta el final de la escena.</p>",
+    "infosource": "Khitai, p. 202 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "used": false
+  },
+  "effects": [],
+  "sort": 150000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

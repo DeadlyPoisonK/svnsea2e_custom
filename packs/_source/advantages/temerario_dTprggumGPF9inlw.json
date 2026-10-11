@@ -1,0 +1,23 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Temerario",
+  "type": "advantage",
+  "_id": "dTprggumGPF9inlw",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Después de hacer Aumentos durante un Riesgo, puedes gastar de inmediato todos tus Aumentos para realizar una sola acción antes de que cualquier otro personaje pueda actuar en la ronda.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 177",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

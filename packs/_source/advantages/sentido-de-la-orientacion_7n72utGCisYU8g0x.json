@@ -1,0 +1,23 @@
+{
+  "folder": "TQzJbDDBg4ZBhZyS",
+  "name": "Sentido de la orientación",
+  "type": "advantage",
+  "_id": "7n72utGCisYU8g0x",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Nunca te pierdes mientras tengas un punto de referencia, aunque eso no es lo mismo que saber exactamente dónde estás. Si te dejan inconsciente y te despiertas en una mazmorra, no tienes por qué saber en qué ciudad estás, pero si consigues escapar de la celda nunca te desviarás en los serpenteantes túneles de la mazmorra.</p><p><em>También en Naciones Piratas, p. 150.</em></p>",
+    "infosource": "7º Mar (básico), p. 148",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  }
+}

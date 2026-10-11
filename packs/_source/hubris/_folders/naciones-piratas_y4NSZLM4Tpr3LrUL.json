@@ -1,0 +1,15 @@
+{
+  "name": "Naciones Piratas",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "52c50faae69f63c67fd724df718a6a41856733f7"
+    }
+  },
+  "_id": "y4NSZLM4Tpr3LrUL"
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "N2qsFS6XbvuICS1X",
+  "name": "Maestro de la espada",
+  "type": "sorcery",
+  "_id": "2W7ZAXoU9UXJH9V6",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Haz que un maestro de armas establecido repare en ti por tu habilidad. Siempre puedes volver a tirar un único dado en un Riesgo de Armas, pero debes quedarte con la segunda tirada.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 201",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

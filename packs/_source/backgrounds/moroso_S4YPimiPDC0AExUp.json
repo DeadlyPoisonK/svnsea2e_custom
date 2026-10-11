@@ -1,0 +1,32 @@
+{
+  "folder": "iQwE9i6UuITLrQEf",
+  "name": "Moroso",
+  "type": "background",
+  "_id": "S4YPimiPDC0AExUp",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>¿Qué sería de un romance sin un poco (o un mucho) de peligro?</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 208",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando permitas a otro personaje salirse con la suya porque estás interesado en él de manera romántica y eso te mete en problemas.</p>",
+    "skills": [
+      "convince",
+      "hide",
+      "perform",
+      "tempt",
+      "theft"
+    ],
+    "advantages": [
+      "Jugando con el peligro",
+      "Noción del tiempo"
+    ],
+    "nation": "vodacce",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

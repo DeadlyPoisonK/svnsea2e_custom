@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Liberarse (Khitai)",
+  "type": "advantage",
+  "_id": "iUnGnfoyhE1268tc",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para zafar tus manos de unos grilletes, aflojar la cuerda que te ata a una silla o liberarte de manera similar de ataduras que restrinjan tus movimientos.</p>",
+    "infosource": "Khitai, p. 116 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

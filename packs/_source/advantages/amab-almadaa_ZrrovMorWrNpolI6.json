@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Amab almadaa",
+  "type": "advantage",
+  "_id": "ZrrovMorWrNpolI6",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>Debes tener la ventaja de «Rima y verso».</strong></p><p>Gasta 1 punto de héroe cuando tengas menos aumentos que tu oponente durante el primer Bayt de un duelo de poesía. Puedes reasignar las habilidades que hayas elegido entre tus tres Bayts.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 159",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

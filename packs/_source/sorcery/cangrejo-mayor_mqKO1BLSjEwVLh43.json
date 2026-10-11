@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Cangrejo Mayor",
+  "type": "sorcery",
+  "_id": "mqKO1BLSjEwVLh43",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El cangrejo es un protector y un guardi&aacute;n. Este mohwoo es un s&iacute;mbolo de que el h&eacute;roe le da mucha importancia a la custodia de algo o alguien, a menudo excluyendo otras&nbsp;cosas. Podr&iacute;a ser algo f&iacute;sico, como la hija menor de la&nbsp;hero&iacute;na o su nuevo esposo, o algo m&aacute;s ef&iacute;mero, como el&nbsp;sentido del honor de un h&eacute;roe.</p>\n<hr>\n<p><br>Cuando activas este mohwoo, puedes evitar el asesinato&nbsp;de otro personaje gastando un &uacute;nico Aumento para<br>protegerlo, en lugar de todos los Aumentos (Libro b&aacute;sico,&nbsp;p&aacute;gina 181). Un qing solo puede activar este mohwoo una&nbsp;vez por episodio.</p>",
+    "infosource": "Naciones Piratas, p. 170",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 112500,
+  "ownership": {
+    "default": 0
+  }
+}

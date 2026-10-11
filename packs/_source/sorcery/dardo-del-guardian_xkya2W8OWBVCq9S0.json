@@ -1,0 +1,21 @@
+{
+  "folder": "8yRTt6IGKB0lpv51",
+  "name": "Dardo del Guardián",
+  "type": "sorcery",
+  "_id": "xkya2W8OWBVCq9S0",
+  "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
+  "system": {
+    "description": "<p>Apunta a un objetivo a distancia y este turru envía un haz de luz fino y concentrado para destruirlo. Si se dirige a un personaje, recibe Heridas igual a tu Maña; si se dirige a un objeto pequeño o particularmente frágil, se destruye inmediatamente. Un objeto más grande (como un vagón, una estatua o un edificio) se destruye parcialmente y es inutilizable o inseguro.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 185",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

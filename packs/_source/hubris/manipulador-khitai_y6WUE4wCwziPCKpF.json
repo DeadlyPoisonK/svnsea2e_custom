@@ -1,0 +1,17 @@
+{
+  "folder": "mISBGS3k1JGW0JWu",
+  "name": "Manipulador (Khitai)",
+  "type": "hubris",
+  "_id": "y6WUE4wCwziPCKpF",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Gana un punto de héroe cuando consigas que otro haga lo que realmente deberías estar haciendo tú mismo.</p>",
+    "infosource": "Mapache · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "oGKITcJ7tfpTOqvu",
+  "name": "Pochteca (Comerciante)",
+  "type": "background",
+  "_id": "lTQSPnc5tvD63UeP",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Utilizas tu posición como comerciante para viajar por Aztlán y hacer alianzas, así como para indagar en los secretos de quienes se oponen a ti.</p>",
+    "infosource": "El Nuevo Mundo, p. 163",
+    "quirk": "<p>Ganas 1 punto de héroe cuando sacrifiques o pongas en peligro un trato mercantil a favor de un secreto útil.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "hide",
+      "tempt",
+      "theft"
+    ],
+    "advantages": [
+      "Regatear",
+      "Cruzar la palma",
+      "Lingüista"
+    ],
+    "nation": "nahuaca",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "vxu1cHRUsVi9hzod",
+  "name": "Médicos",
+  "type": "advantage",
+  "_id": "aO5cC7cbPtg3LZfB",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Al final de la ronda, una unidad con este Mérito recupera Fuerza igual a la mitad del número de bajas sufridas.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 196",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Poeta (Khitai)",
+  "type": "background",
+  "_id": "mvEPImgztPHHWevc",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Alegría</p>",
+    "quirk": "<p>Gana un punto de héroe cuando tu empeño en proteger o agrandar tu reputación te meta en problemas.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "intimidate",
+      "perform",
+      "scholarship"
+    ],
+    "advantages": [
+      "Virtuoso (Khitai)",
+      "Petición sincera (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 106 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

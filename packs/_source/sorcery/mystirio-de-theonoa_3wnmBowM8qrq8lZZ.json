@@ -1,0 +1,21 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Mystírio de Theonoa",
+  "type": "sorcery",
+  "_id": "3wnmBowM8qrq8lZZ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p><em>Theonoa Dianoia, diosa de la artesanía y la sabiduría.</em></p><p>Theonoa se enorgullece de saber adónde moverse para inclinar el campo de batalla a su favor, independientemente de que ese campo de batalla sea literal o un banquete de estado formal. El mystírio que ella enseña muestra que sus adeptos siempre deben adaptarse. ¿Y su apokálypsi? Cuando no puedes ganar jugando según las reglas… cámbialas.</p><p>Puedes gastar Aumentos durante las secuencias de acción o dramáticas para modificar cuándo aparece una Oportunidad o Consecuencia. Gastar 1 Aumento te permite cambiar el momento en 1 (por ejemplo, si una Consecuencia ocurre en 3, puedes gastar 1 Aumento para hacer que ocurra en 4 o en 2). Un mystai puede influenciar cada evento solo una vez por ronda, pero puede influenciar tantos eventos diferentes como desee (siempre y cuando tenga Aumentos que gastar para hacerlo).</p><p>Puedes activar este apokálypsi cuando uses Conocimiento, Empatía o Tácticas de Guerra como Enfoque durante una secuencia dramática y conseguir tantos Aumentos como tu nivel en esa habilidad. Un mystai solo puede activar este apokálypsi una vez por episodio.</p><p>Puedes gastar Aumentos durante las secuencias de acción o dramáticas para modificar cuándo aparece una Oportunidad o Consecuencia. Gastar 1 Aumento te permite cambiar el momento en 1 (por ejemplo, si una Consecuencia ocurre en 3, puedes gastar 1 Aumento para hacer que ocurra en 4 o en 2). Un mystai puede influenciar cada evento solo una vez por ronda, pero puede influenciar tantos eventos diferentes como desee (siempre y cuando tenga Aumentos que gastar para hacerlo).</p>",
+    "infosource": "Naciones Piratas, p. 168",
+    "sorctype": "mystirios",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

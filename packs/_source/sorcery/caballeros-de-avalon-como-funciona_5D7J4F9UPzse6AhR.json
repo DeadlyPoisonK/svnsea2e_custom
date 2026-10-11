@@ -1,0 +1,22 @@
+{
+  "folder": "FxR2wVhya2ZvEU7l",
+  "name": "Caballeros de Ávalon: cómo funciona",
+  "type": "sorcery",
+  "_id": "5D7J4F9UPzse6AhR",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>No sois la reencarnación de aquellos famosos personajes, sino simplemente los siguientes que cogéis el testigo. Sois literalmente una encarnación del espíritu de esos caballeros.</p><p>Elige un caballero cuando adquieras la ventaja Hechicería; tú eres la única encarnación viviente de ese caballero y tu encarnación te conecta con dos características (una mayor y otra menor) que ofrecen efectos mágicos únicos llamados <strong>Glamoures.</strong></p><p>Cuando adquieras por primera vez la ventaja Hechicería debes elegir un Glamour mayor y dos Glamoures menores conectados con las características que encarna tu caballero, que empezarán todos a nivel 1. Cada vez que cojas la ventaja Hechicería puedes seleccionar nuevos Glamoures o aumentar el nivel de un Glamour mayor y dos Glamoures menores.</p><p>También hay disponible una lista de Glamoures de Suerte para todos los héroes que tengan la hechicería Glamour. La Suerte no está limitada por caballero: puedes comprar efectos tanto de una categoría mayor como de una categoría menor.</p>",
+    "infosource": "7º Mar (básico), p. 210",
+    "sorctype": "knight",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

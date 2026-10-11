@@ -1,0 +1,22 @@
+{
+  "folder": "zZYgf0jaGTPfG7RT",
+  "name": "Heroica",
+  "type": "sorcery",
+  "_id": "XFD3r7MSfwq2TtUL",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Glamour después de un Riesgo en el que hayas usado tu característica menor. Puedes volver a tirar tantos dados como tu nivel en este Glamour. Debes quedarte con el nuevo valor de cualquier dado que repitas, incluso si es menor.</p>",
+    "infosource": "7º Mar (básico), p. 214",
+    "used": false,
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "glamour",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

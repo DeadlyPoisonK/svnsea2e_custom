@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "No muerto",
+  "type": "monsterquality",
+  "_id": "O2pF3psIPXnG5gbn",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Estos cadáveres andantes, que normalmente solo buscan masacrar y alimentar su hambre insaciable, son una visión inquietante, pero no son una amenaza importante por sí solos, por lo que esta cualidad solo se puede aplicar a una banda de monstruos. Gasta 1 punto de peligro al final de una ronda para recuperar toda la Fuerza de esta banda.</p>",
+    "infosource": "7º Mar (básico), p. 198",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

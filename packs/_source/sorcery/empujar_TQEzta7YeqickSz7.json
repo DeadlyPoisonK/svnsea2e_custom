@@ -1,0 +1,22 @@
+{
+  "folder": "vLaujvVdVjmbDTQL",
+  "name": "Empujar",
+  "type": "sorcery",
+  "_id": "TQEzta7YeqickSz7",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este poder para alejar un objeto o personaje de ti, fuera del alcance de tu brazo. Esto no puede dañar o lastimar el objeto o la persona. No puedes levantarlos del suelo o empujarlos de un acantilado. Solo aleja el objeto o personaje de ti, y se detiene si algo bloquea su paso hacia atrás. Si usas este poder contra un personaje, aún puede moverse, pero no hacia ti: puede caminar en un círculo a tu alrededor, por ejemplo, pero no puede acercarse más. El efecto de este poder termina inmediatamente si te mueves hacia el objeto o personaje.</p><p>Con el último paso del Camino de los Parias, tu Maravilla puede protegerte a ti y a tus amigos mientras descansáis. Después de que estés bien descansado, puedes continuar por cualquier Camino que tengas por delante.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

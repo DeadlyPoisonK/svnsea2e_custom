@@ -1,0 +1,19 @@
+{
+  "folder": "EukS0hh4uQes49gW",
+  "name": "Goftār-e nik",
+  "type": "duelstyle",
+  "_id": "iiVYtRZSe0GiZABS",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Maestro Practicante: Asahn Ekhtiarzadeh Asahn.</p><p>Ekhtiarzadeh es un poeta guerrero favorecido por la corte del Sah Jalil en Siphon. De baja estatura, la voz de Asahn es enorme y resuena a través del viento. Exuda un aura de autenticidad y honestidad. La sinceridad de sus palabras y pensamientos es legendaria. Sus poemas se centran en la condición humana en tiempos difíciles y en hacer lo correcto y lo justo. Buenos pensamientos, buenas palabras y buenas obras. Una practicante de Goftār-e nik toma el camino moral superior en su poesía, exaltando las virtudes de la honestidad, la justicia y la acción positiva.</p>",
+    "bonus": "<p><strong>Bonificación de la escuela.</strong></p><p>Un practicante de Goftār-e nik gana 1 dado adicional durante los Kavitas de estilo ramal (religiosa/didáctica).</p>",
+    "infosource": "El Imperio de la Media Luna, p. 202"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

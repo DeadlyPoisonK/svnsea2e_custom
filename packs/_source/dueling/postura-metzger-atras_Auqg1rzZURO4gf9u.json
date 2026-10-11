@@ -1,0 +1,19 @@
+{
+  "folder": "PWCKDOvwS0ovE4Y9",
+  "name": "Postura Metzger (Atrás)",
+  "type": "duelstyle",
+  "_id": "Auqg1rzZURO4gf9u",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Postura Metzger (atrás): Realizas todas las acciones como si tuvieran tantos Aumentos adicionales como tu nivel de Ingenio. Estos Aumentos adicionales son solo para decidir cuándo realizas tus acciones y no los puedes gastar. Sin embargo, no puedes realizar la maniobra Parada, aunque todavía puedes gastar Aumentos en tu Acción para evitar Heridas como haría cualquiera que no sea espadachín.</p><p>Selecciona tu postura al principio de cada ronda. Si deseas cambiar de postura durante una ronda, debes gastar 1 Aumento para hacerlo.</p>",
+    "used": false,
+    "bonus": "",
+    "infosource": "7º Mar (básico), p. 237 (estilo Drexel)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

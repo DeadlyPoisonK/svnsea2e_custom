@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Vista de lince",
+  "type": "advantage",
+  "_id": "rQIApc2OLWXSawHN",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes ver perfectamente hasta una distancia de un kilómetro y medio mientras tengas una línea de visión despejada. Si usas un catalejo incluso puedes distinguir detalles, como la inscripción de un anillo. Si realizas un Riesgo que se base principalmente en tu visión, consigues 1 dado adicional.</p>",
+    "infosource": "7º Mar (básico), p. 150",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": -200000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Superviviente (Khitai)",
+  "type": "advantage",
+  "_id": "kYVgsG4KW9lHXwfh",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Si estás en la naturaleza, puedes recolectar o cazar y encontrar suficiente comida para ti y hasta otras 5 personas. En circunstancias extremas (perdido en medio de un desierto o abandonado en una tundra, por ejemplo) encuentras suficiente comida para ti y hasta otras 2 personas.</p>",
+    "infosource": "Khitai, p. 113 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

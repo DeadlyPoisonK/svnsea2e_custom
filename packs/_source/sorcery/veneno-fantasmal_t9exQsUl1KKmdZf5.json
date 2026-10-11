@@ -1,0 +1,22 @@
+{
+  "folder": "XxbatVafsy3T61pQ",
+  "name": "Veneno fantasmal",
+  "type": "sorcery",
+  "_id": "t9exQsUl1KKmdZf5",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Un potente veneno de criaturas naturales, como arañas o serpientes. Este ungüento se aplica en un arma después de hacer la mezcla, pero el arma debe estar enfundada hasta que está lista. Cuando se desenvaine se duplicarán todas las Heridas infligidas durante 1 ronda a un monstruo no muerto. El Veneno fantasmal no se puede aplicar a un arma <em>dracheneisen,</em> ya que el veneno se evapora: ambos materiales son anatemas para el otro.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 209",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

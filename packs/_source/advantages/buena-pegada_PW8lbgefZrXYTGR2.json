@@ -1,0 +1,24 @@
+{
+  "folder": "aSM5k4zd4YYt1rg3",
+  "name": "Buena pegada",
+  "type": "advantage",
+  "_id": "PW8lbgefZrXYTGR2",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe debe tener la ventaja «Boxeador» para poder adquirir esta ventaja. Cuando realices un Riesgo de Pelear para dar un puñetazo, patada, cabezazo o cualquier otra forma de dañar a otro personaje usando tu propio cuerpo, puedes decidir gastar todos tus Aumentos en tu primera acción para infligir una cantidad de Heridas a otro personaje igual a los Aumentos que gastes; además, el personaje al que golpees pierde la mitad de sus Aumentos actuales (redondeando hacia abajo).</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 205",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

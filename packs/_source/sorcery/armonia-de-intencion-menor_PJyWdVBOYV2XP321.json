@@ -1,0 +1,21 @@
+{
+  "folder": "GAjSxs0pSleA21VH",
+  "name": "Armonía de intención Menor",
+  "type": "sorcery",
+  "_id": "PJyWdVBOYV2XP321",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este Khidma le enseña al khadim a alinear su espíritu con el de sus aliados, lo que hace que el trabajo en equipo y la coordinación sean mucho más fáciles e intuitivos. A los aliados de un khadim que han experimentado la magia de este Khidma les resulta difícil describir la cercanía espiritual que se siente entre la pareja, como si sus mentes estuvieran en perfecta armonía entre sí.</p><p>Activa este Khidma durante una secuencia para permitir que otro personaje en la misma escena ignore los costes de Improvisar para cualquier acción que use tu Enfoque. Este efecto dura hasta el final de la ronda.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 182",
+    "sorctype": "mithaq",
+    "sorcdur": "none",
+    "sorccat": "thiqa",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,33 @@
+{
+  "folder": "y0DwOQKkcGKxRhrF",
+  "name": "Sirviente-soldado Sofa",
+  "type": "background",
+  "_id": "7vvUwCZnQdg9vPs5",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Te dieron una lanza rudimentaria y te enviaron a la batalla. Sobreviviste, aprendiste y ganaste tu libertad.</p><p><em>Ventajas en el libro: Esta es mi ciudad (NdT:V1).</em></p>",
+    "used": false,
+    "quirk": "<p>Gana 1 punto de héroe cuando resuelvas un problema aprovechándote de que otras personas te subestiman.</p>",
+    "skills": [
+      "brawl",
+      "hide",
+      "notice",
+      "theft",
+      "warfare"
+    ],
+    "advantages": [
+      "Esta es mi ciudad",
+      "Estómago de hierro",
+      "Uno contra muchos"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 176",
+    "nation": "manden"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

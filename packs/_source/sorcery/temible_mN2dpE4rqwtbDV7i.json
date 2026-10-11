@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Temible",
+  "type": "monsterquality",
+  "_id": "mN2dpE4rqwtbDV7i",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Es aterrador contemplar a este monstruo, y mucho más enfrentarse a él. El monstruo tiene nivel 1 de Miedo automáticamente, más un nivel adicional por cada 5 puntos de Fuerza. Gasta 1 punto de peligro para duplicar el nivel de Miedo del monstruo durante 1 ronda.</p>",
+    "infosource": "7º Mar (básico), p. 198",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "lNRPjAFXVNRwD8w9",
+  "name": "Palabras vinculantes Menor",
+  "type": "sorcery",
+  "_id": "NCiaTsYAnfXqG4Zv",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este Khidma es un remanente de los ritos antiguos y el estudio de los jinn del 8º Mar, que enseña a una khadim y sus aliados a buscar siempre comprender a su oposición. A través de la comprensión, se pueden hacer acuerdos. A través de acuerdos, se podría evitar la muerte de cualquiera de las partes involucradas.</p><p>Activa este Khidma para otorgar la capacidad de comunicarse con un monstruo, espíritu, fantasma, jinni o criatura similar a todos los personajes en la escena. Esta comunicación varía de una criatura a otra: puede simplemente permitir que el monstruo entienda tu habla ordinaria (y viceversa), o puede forjar un vínculo mental que transmite emociones y deseos primarios que trascienden el lenguaje. Este Khidma no garantiza tu seguridad ni obliga a las criaturas a ninguna acción o inacción, solo te permite comunicarte con ellas. Este efecto dura hasta el final de la escena.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 182",
+    "sorctype": "mithaq",
+    "sorcdur": "none",
+    "sorccat": "thiqa",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

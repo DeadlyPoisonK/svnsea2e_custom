@@ -1,0 +1,22 @@
+{
+  "folder": "4rsEYwOl0zAEkA41",
+  "name": "Alcance",
+  "type": "sorcery",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La Manifestación se puede aplicar a cualquier personaje o criatura válida que puedas ver. La Manifestación termina inmediatamente si tu línea de visión se interrumpe por más de unos momentos, incluso si el efecto normalmente persiste.</p>",
+    "infosource": "El Nuevo Mundo, p. 180",
+    "used": false,
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "turn",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "BFdPPh4tyMu5poUL",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

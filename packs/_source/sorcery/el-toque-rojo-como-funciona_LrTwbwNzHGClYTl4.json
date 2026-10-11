@@ -1,0 +1,22 @@
+{
+  "folder": "a9auYVTd6m9zGaNk",
+  "name": "El Toque Rojo: cómo funciona",
+  "type": "sorcery",
+  "_id": "LrTwbwNzHGClYTl4",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>La primera vez que compres la ventaja de Hechicería, elige una sola Alteración que tu héroe pueda usar. Cada vez que compres la ventaja de Hechicería, elige una Alteración adicional.</p><p>El Toque Rojo solo se puede aprender de otros rooi heks, y los rumores sugieren que Bonsam creó al primero de su tipo. Al aceptar el Toque Rojo, el espíritu del rooi heks queda contaminado por el mal, pero solo lo suficiente como para otorgarle el poder de afectar al mundo que lo rodea. Esta pincelada de oscuridad no es suficiente para arrebatarle el libre albedrío al personaje... todavía.</p><p>Cada héroe comienza sin corrupción, pero aquellos con el Toque Rojo adquieren una mancha maligna llamada Ruina, similar a la corrupción misma, pero menos dañina para el alma. Al interactuar con alguien con corrupción, los rooi heks pueden gastar 2 puntos de héroe para absolver a la persona de su culpa, eliminando 1 punto de corrupción del objetivo y ganando Ruina 2 sobre sí mismos. No puedes hacerle esto a la misma persona más de una vez por historia principal. A continuación, puede utilizar su Ruina para potenciar muchas de sus Alteraciones.</p><p>Si no se controla, solo hace falta un paso en falso para que el personaje se convierta en un villano. Un rooi heks es más propenso a ceder a su lado oscuro, así que su Ruina se añade a su total para los efectos de corrupción. Por ejemplo, un héroe con Ruina 3 que mata a un inocente gana 1 punto de corrupción y hace una tirada normalmente, pero se convierte en un villano si consigue un 4 o menos. La Ruina tiene un gran poder, pero también es un camino difícil de recorrer para cualquiera que intente aferrarse a su humanidad. Si un rooi heks alguna vez tiene Ruina 10 o más, de inmediato gana 1 punto de corrupción y pierde toda su Ruina.</p><p>Una rooi heks nunca debe buscar la corrupción, pero tiene sus formas de lidiar con su Ruina a través del uso de Alteraciones. Cualquier activación o efecto de Alteración que requiera gastar 1 punto de héroe puede pagarse obteniendo Ruina en igual cantidad. Lo contrario, sin embargo, no es cierto; un héroe no puede reducir su Ruina con puntos de héroe. Si uno desea aprovechar el poder del Toque Rojo, necesita un poco de oscuridad en su alma.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 193",
+    "sorctype": "redtouch",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

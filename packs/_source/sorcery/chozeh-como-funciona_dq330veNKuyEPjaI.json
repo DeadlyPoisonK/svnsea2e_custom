@@ -1,0 +1,22 @@
+{
+  "folder": "OBuVuToMnzlON0Sb",
+  "name": "Chozeh: cómo funciona",
+  "type": "sorcery",
+  "_id": "dq330veNKuyEPjaI",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Las doce promesas se dividen en cuatro estrofas: Los Prodigios, las Revelaciones, las Protecciones y las Perdidas. Con la excepción de las promesas perdidas, cada título de la estrofa proviene del poema que Saraya registró.</p><p>Al aprender Chozeh, te dedicas a entender una de las tres primeras estrofas. Una vez que has elegido una estrofa, meditas sobre su significado y realizas un acto de caridad basado en la promesa, sin usar magia, hacia otra persona. Estas acciones refuerzan el propósito y la importancia de cada promesa, asegurando una comprensión profunda que la protege contra el mal uso. Cuando escoges Hechicería durante la creación de tu héroe, estas acciones están en tu pasado. Sin embargo, si consigues una Hechicería adicional más adelante en el juego, estas acciones forman tu historia y sus pasos. Por ejemplo, si decides aprender los Prodigios, podrías:</p><ul><li>Entregar un mensaje de larga distancia a alguien.</li><li>Ayudar a un pueblo a construir un puente.</li></ul><p>Si decides aprender las Revelaciones, podrías:</p><ul><li>Ayudar a alguien a aclarar su propio pensamiento.</li><li>Convencer a alguien de su valía.</li></ul><p>Si decides aprender las Protecciones, podrías:</p><ul><li>Dar hospitalidad a un extraño.</li><li>Hacer todo lo posible para guiar a alguien que está perdido.</li></ul><p>La primera vez que compras esta Hechicería, aprendes dos Amuletos y una Escritura. Tus Amuletos deben ser de la misma estrofa, y solo puedes aprender una Escritura si ya conoces el Amuleto. Cada vez después de la primera, aprendes un Amuleto y una Escritura, o un Tatuaje. Para aprender un Tatuaje, ya debes conocer la Escritura.</p><p>Una vez que conozcas todos los Amuletos y Escrituras de una estrofa, puedes comenzar a aprender una nueva estrofa. No necesitas aprender los Tatuajes y puedes aprenderlos en cualquier momento.</p><p>Para usar este poder en el juego, primero debes crear el Amuleto, Escritura o Tatuaje. Luego debes activarlo.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 171",
+    "sorctype": "chozeh",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

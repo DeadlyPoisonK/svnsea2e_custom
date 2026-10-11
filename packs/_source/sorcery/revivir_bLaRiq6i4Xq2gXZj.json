@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Revivir",
+  "type": "sorcery",
+  "_id": "bLaRiq6i4Xq2gXZj",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Al morir, el espíritu de un personaje es liberado a los cielos; en lugar de permitirlo, atrapas su espíritu y lo devuelves a su cuerpo. Revive a un personaje que haya muerto en el último minuto. Ese personaje permanece Indefenso hasta que sea sanado por otros medios, y tú sufres de inmediato tantas Heridas como tu Plaga actual.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 202 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

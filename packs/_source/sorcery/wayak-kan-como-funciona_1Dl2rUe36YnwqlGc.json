@@ -1,0 +1,22 @@
+{
+  "folder": "3fNO2d3iK8VKBqNJ",
+  "name": "Wayak' Kan: cómo funciona",
+  "type": "sorcery",
+  "_id": "1Dl2rUe36YnwqlGc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cuando un héroe adquiere la ventaja de Hechicería, selecciona los Ahpulul que sabe cómo convocar; dos Baxan y un Pixan. Cada vez que adquiere la ventaja de Hechicería, el Ahez gana dos Baxan y un Pixan más.</p><p>Siempre que el Ahez desea llamar a un objeto o espíritu, recibe una Herida que no se puede curar hasta que el objeto sea devuelto a su hogar. Si convoca a un Ahpulul durante una secuencia, le costará un Aumento atravesar las barreras entre los mundos para traer al Ahpulul a su lado.</p><p>Los Baxan convocados permanecen con el héroe durante el resto de la escena antes de que simplemente se conviertan en humo y desaparezcan. No hay límite para la cantidad de Baxan que los Ahez pueden convocar en una sola escena. Un Pixan invocado generalmente desaparece al final de la escena, pero el jugador puede decidir mantener al Pixan cerca y convertirse en un Ahpul. En este punto, el DJ y el jugador deberían acordar qué quiere lograr el Pixan para que una vez que se cumpla su deseo, pueda regresar a casa.</p><p>Además de tener un Pixan listo para atender a tu llamada, convertirse en Ahpul tiene algunos otros beneficios únicos. Primero, la Herida infligida al convocar al Pixan se cura, ya que el Ahpul se vuelve uno con el Pixan. En segundo lugar, ser un Ahpul es tanto una marca de orgullo como una fuente de miedo entre los tzak k'anos. Cuando esté tratando con un tzak k'ano, un Ahpul considera Intimidar como un nivel más alto, pero Tentar como un nivel más bajo. Finalmente, los Ahpul se convierten en limpiadores del alma; cada vez que un Ahpul ayuda a otro héroe a completar una historia de redención, ese héroe consigue eliminar un segundo punto de corrupción.</p><p>Además de cumplir el deseo del Pixan, hay otras dos formas de perderlo. Cuando un jugador intenta convocar a un segundo Pixan, el primero desaparece. Los dioses solo pueden confiar cierta cantidad de poder a una persona. Si un jugador falla una tirada de corrupción, el Pixan también desaparece. Solo los puros de corazón se consideran dignos de convertirse en Ahpul.</p>",
+    "infosource": "El Nuevo Mundo, p. 171",
+    "sorctype": "wayak",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "zrOTu2Mah9eRQKyp",
+  "name": "Ghazi",
+  "type": "background",
+  "_id": "5LQ6bHVRIbTlHHDf",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>La diplomacia es debilidad. Muéstrale al mundo el poder de tu gente de la única manera posible: la batalla.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 156",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando tu insistencia en una solución marcial a un problema resulte contraproducente y te cause complicaciones.</p>",
+    "skills": [
+      "athletics",
+      "intimidate",
+      "notice",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Muy leído",
+      "Nunca te rindas"
+    ],
+    "nation": "anatol"
+  },
+  "effects": [],
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

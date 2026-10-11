@@ -1,0 +1,22 @@
+{
+  "folder": "f1ztwTMcX7isHIH6",
+  "name": "Destino",
+  "type": "sorcery",
+  "_id": "sS31H5dB4nJ18cav",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Desconoces la razón por la que obtuviste tu arma. Tal vez sacaste una espada de una piedra encantada, o tal vez solo la encontraste en un campo. En cualquier caso, su poder está a tus órdenes. Mientras uses esta arma en un Riesgo, puedes volver a tirar cualquier número de dados en los que saques un 1.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 199",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

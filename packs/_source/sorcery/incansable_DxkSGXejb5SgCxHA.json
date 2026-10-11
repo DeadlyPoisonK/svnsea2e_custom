@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Incansable",
+  "type": "monsterquality",
+  "_id": "DxkSGXejb5SgCxHA",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>La presa corre y el depredador la persigue. Este monstruo nunca se rinde en la caza y es inútil esconderse de él. Te encontrará. Cualquier intento de evitar o escapar de este monstruo cuesta 2 Aumentos, en lugar de 1. Gasta 1 punto de peligro para hacer que el monstruo entre en una escena, siempre y cuando sea posible físicamente.</p>",
+    "infosource": "7º Mar (básico), p. 198",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Carga rápida (Khitai)",
+  "type": "advantage",
+  "_id": "KetoFN5GAR06k6BN",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe. Recargas una sola arma de fuego que lleves encima o desenfundas otra arma de fuego ya cargada gastando tan solo un único Aumento en lugar de los 5 que costaría normalmente.</p>",
+    "infosource": "Khitai, p. 115 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

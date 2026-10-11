@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Destructivo",
+  "type": "monsterquality",
+  "_id": "2w1MZqAgQKpRo1Hl",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Ya tenga unas pinzas devastadoras que cortan manos, un ácido corrosivo que funde artefactos o un arma particularmente afilada que arranca ojos, el monstruo puede gastar 1 punto de peligro para destruir un objeto o una parte no vital del cuerpo de un héroe.</p>",
+    "infosource": "Naciones Piratas, p. 193",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

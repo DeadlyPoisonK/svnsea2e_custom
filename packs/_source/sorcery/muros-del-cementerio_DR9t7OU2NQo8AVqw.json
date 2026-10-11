@@ -1,0 +1,21 @@
+{
+  "folder": "MAYrwPAf96Az0kIK",
+  "name": "Muros del cementerio",
+  "type": "sorcery",
+  "_id": "DR9t7OU2NQo8AVqw",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Muchos creen que los muros de los cementerios se construyen<br>para mantener fuera a los vivos, pero la verdad es<br>que tambi&eacute;n mantienen dentro a los muertos. Mientras<br>Bawon G&eacute; lo posea, el s&egrave;vit&egrave; puede gastar 1 punto de<br>h&eacute;roe para asegurar un muro. Mientras el s&egrave;vit&egrave; pose&iacute;do<br>por G&eacute; se quede dentro de los l&iacute;mites del muro, nada inhumano<br>puede cruzarlo, ni para entrar ni para salir.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

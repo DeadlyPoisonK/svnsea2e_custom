@@ -1,0 +1,23 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Objeto distintivo",
+  "type": "advantage",
+  "_id": "oC9lWZpmIp6HNlF4",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige un objeto específico que sea importante para ti. Descríbelo, decide por qué es importante y puedes incluso darle un nombre. Siempre puedes gastar 1 punto de héroe para:</p><ul><li>Hacer que tu Objeto distintivo aparezca en la siguiente escena si lo has perdido o te lo han robado.</li><li>Conseguir 2 dados adicionales en un Riesgo cuando uses tu Objeto distintivo.</li><li>Si usas tu Objeto distintivo para atacar a un enemigo puedes infligirle tantas Heridas como Aumentos gastes más tu mayor característica.</li><li>Evitar tantas Heridas como Aumentos gastes, más tu mayor característica, cuando uses el Objeto distintivo.</li></ul><p>Siempre debes describir cómo te ayuda tu Objeto distintivo y tiene que tener sentido que el objeto te dé bonificaciones de este modo, a discreción del DJ.</p>",
+    "infosource": "7º Mar (básico), p. 152",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  }
+}

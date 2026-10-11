@@ -1,0 +1,22 @@
+{
+  "folder": "ey7m8TjScwWG6Ah5",
+  "name": "Sentir hechicería",
+  "type": "sorcery",
+  "_id": "AA6f7b1og2FCBWLF",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Glamour para detectar cuándo alguien (o algo) que posee Hechicería se encuentra dentro de un radio igual a tantos metros como tu nivel en este Glamour multiplicado por 3. Este efecto persiste durante el resto de la escena.</p>",
+    "infosource": "7º Mar (básico), p. 215",
+    "used": false,
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "glamour",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

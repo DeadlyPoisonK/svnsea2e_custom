@@ -1,0 +1,23 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "He estado esperando esto",
+  "type": "advantage",
+  "_id": "6j5DnQ3AWxCoXldQ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para meditar sobre una experiencia dura que se avecina, una prueba que sabes que pronto realizarás o un villano al que intentas enfrentarte pronto. Si el peligro está presente en la escena actual (por ejemplo, si estás cara a cara con el villano en cuestión), no puedes activar esta ventaja. Hasta el final de la sesión de juego, cada vez que gastes 1 punto de héroe para ganar dados adicionales o para darle a otro personaje dados adicionales durante un Riesgo directamente relacionado con la amenaza que has contemplado, puedes elegir que un segundo personaje en la misma escena gane el mismo beneficio del punto de héroe que gastaste. No puedes otorgarte dados adicionales con este efecto. Un jugador solo puede usar esta ventaja una vez por sesión.</p><p><em>Coste: 5 (3 si eres ashurita).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 160",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1500000,
+  "ownership": {
+    "default": 0
+  }
+}

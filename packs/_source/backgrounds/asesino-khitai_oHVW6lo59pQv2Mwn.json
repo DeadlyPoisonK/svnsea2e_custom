@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Asesino (Khitai)",
+  "type": "background",
+  "_id": "oHVW6lo59pQv2Mwn",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Respeto</p>",
+    "infosource": "Khitai, p. 104 (traducción no oficial)",
+    "quirk": "<p>Gana un punto de héroe cuando matar a alguien te resultaría ventajoso o más fácil, pero te niegas a hacerlo.</p>",
+    "skills": [
+      "aim",
+      "hide",
+      "notice",
+      "theft",
+      "weaponry"
+    ],
+    "advantages": [
+      "Acechador en las sombras (Khitai)",
+      "Desenfundado rápido (Khitai)"
+    ],
+    "nation": "none",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

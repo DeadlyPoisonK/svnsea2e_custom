@@ -1,0 +1,31 @@
+{
+  "folder": "NUOxMdBqWbDQh6uy",
+  "name": "Samurai (Guerrero)",
+  "type": "background",
+  "_id": "B2SNQ1N9vpe3guFB",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Paz</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando pudieras resolver fácilmente un problema mediante la violencia, pero insistas en encontrar otro camino.</p>",
+    "skills": [
+      "aim",
+      "ride",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Uno contra muchos (Khitai)",
+      "Esfuerzo desesperado (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 109 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

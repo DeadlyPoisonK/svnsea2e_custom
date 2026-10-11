@@ -1,0 +1,22 @@
+{
+  "folder": "U2PSSPaknua4R4bA",
+  "name": "Atrapado en el sendero",
+  "type": "sorcery",
+  "_id": "ffSiasylVb5FQ8E1",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Si un héroe entra en un portal, camina hacia su objeto y después se da cuenta de que no puede conectar con él y no tiene ningún otro objeto ensangrentado que lo lleve a casa, queda atrapado en el sendero para siempre, o al menos hasta que <em>algo</em> lo encuentre. Por esta razón, muchos sorciers crean y esconden objetos ensangrentados que puedan funcionar como salidas de emergencia, salvaguardando así el conocimiento de su existencia incluso a sus amigos cercanos y a su familia.</p><p>El poder de los sorciers de Porté proviene literalmente de su sangre. Cuando un sorcier desea colocar su marca en alguien o en algo, se pincha un dedo, coloca una gota de sangre sobre un objeto y se concentra, forjando un vínculo entre él y el trozo de sí mismo que ha usado para ungir el objeto. Luego gasta 1 punto de héroe y el objeto estará marcado.</p>",
+    "infosource": "7º Mar (básico), p. 220",
+    "sorctype": "porte",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

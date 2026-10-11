@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Afortunado (Khitai)",
+  "type": "virtue",
+  "_id": "0oOP6DRYHny29b7G",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud después de que otro personaje gaste Aumentos para una acción. Esa acción falla. El personaje aún pierde los Aumentos que gastó.</p>",
+    "infosource": "Gato · Khitai, p. 126 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

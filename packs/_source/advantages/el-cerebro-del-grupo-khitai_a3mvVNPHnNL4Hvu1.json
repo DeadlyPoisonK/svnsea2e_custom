@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "El cerebro del grupo (Khitai)",
+  "type": "advantage",
+  "_id": "a3mvVNPHnNL4Hvu1",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastas un punto de héroe para otorgar dados adicionales a otro héroe durante un Riesgo, puedes gastar un segundo punto de héroe. Si lo haces, concedes a ese héroe dados adicionales iguales a tus rangos en Conocimiento si describes cómo tus conocimientos académicos le ayudan en su Riesgo.</p>",
+    "infosource": "Khitai, p. 117 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

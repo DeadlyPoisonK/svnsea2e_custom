@@ -1,0 +1,15 @@
+{
+  "name": "Khahesh-ahura",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "7YB3a6kzBCVgRM2q",
+  "description": "",
+  "sort": 400000,
+  "color": "#df4b0c",
+  "flags": {
+    "scene-packer": {
+      "hash": "6e8436feef81d5070d3fb982807b80e544a5b804"
+    }
+  }
+}

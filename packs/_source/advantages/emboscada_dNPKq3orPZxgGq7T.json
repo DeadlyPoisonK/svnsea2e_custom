@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Emboscada",
+  "type": "advantage",
+  "_id": "dNPKq3orPZxgGq7T",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tienes un don para tomar a tu enemigo por sorpresa. Cuando actúas como General durante un Combate en masa, siempre cuenta como si tuvieras una sorpresa sobre tu oponente. Si el General contrario también tiene esta Ventaja, ambos reciben la penalización por sorpresa.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 159",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

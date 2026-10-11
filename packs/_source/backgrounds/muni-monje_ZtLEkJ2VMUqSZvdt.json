@@ -1,0 +1,31 @@
+{
+  "folder": "5tjKI2pyNkh7RQ3Z",
+  "name": "Muni (Monje)",
+  "type": "background",
+  "_id": "ZtLEkJ2VMUqSZvdt",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Honestidad</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando tu humildad impresione a alguien y te ayude a resolver un problema.</p>",
+    "skills": [
+      "brawl",
+      "convince",
+      "empathy",
+      "perform"
+    ],
+    "advantages": [
+      "Entrenamiento monástico",
+      "Noción del tiempo (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 111 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

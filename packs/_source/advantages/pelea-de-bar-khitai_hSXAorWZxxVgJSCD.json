@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Pelea de bar (Khitai)",
+  "type": "advantage",
+  "_id": "hSXAorWZxxVgJSCD",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Obtienes 1 dado adicional cuando realizas un Riesgo de Pelear para luchar usando una mesa volcada, un taburete de bar, un tablón de madera o algún otro arma improvisada.</p>",
+    "infosource": "Khitai, p. 117 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

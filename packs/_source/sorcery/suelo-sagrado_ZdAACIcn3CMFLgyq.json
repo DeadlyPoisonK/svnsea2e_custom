@@ -1,0 +1,21 @@
+{
+  "folder": "MAYrwPAf96Az0kIK",
+  "name": "Suelo sagrado",
+  "type": "sorcery",
+  "_id": "ZdAACIcn3CMFLgyq",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Aparte de los cementerios, el &aacute;mbito de G&eacute; tambi&eacute;n<br>incluye mantener los sitios sagrados de los lwa a salvo de<br>fuerzas exteriores. Mientras Bawon G&eacute; lo posea, el s&egrave;vit&egrave;<br>puede gastar 1 punto de h&eacute;roe para consagrar un &aacute;rea<br>peque&ntilde;a. No se puede usar Hechicer&iacute;a mientras se permanezca<br>en el Suelo Sagrado y cualquier punto de h&eacute;roe que<br>se use para utilizar tal poder regresa al hechicero.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "A la pelea (Khitai)",
+  "type": "advantage",
+  "_id": "2WLJg7qG7kwSFzfg",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><em>Debes tener la ventaja «Gorila».</em></p><p>Cuando realizas un Riesgo de Armas usando una espada grande, un hacha, una maza, un garrote, una lanza o un arma similar a dos manos, puedes gastar un punto de héroe para derrotar de inmediato a una banda de matones cuya Fuerza sea igual o inferior a tus rangos en Armas. Solo puedes activar esta ventaja en tu acción, aunque no te cuesta un Aumento hacerlo.</p>",
+    "infosource": "Khitai, p. 113 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

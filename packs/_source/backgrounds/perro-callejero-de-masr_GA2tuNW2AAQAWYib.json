@@ -1,0 +1,33 @@
+{
+  "folder": "ITG0hBu6GuSfmpnA",
+  "name": "Perro callejero de Masr",
+  "type": "background",
+  "_id": "GA2tuNW2AAQAWYib",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>En las sinuosas y abarrotadas calles de Masr, te miran como si no fueras mejor que un perro.</p>",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando resuelves un problema mintiendo, engañando o estafando a alguien que está en una posición privilegiada.</p>",
+    "skills": [
+      "athletics",
+      "empathy",
+      "notice",
+      "tempt",
+      "theft"
+    ],
+    "advantages": [
+      "Acechador en las sombras",
+      "¡Lo tengo!",
+      "Sentido de la orientación"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 175",
+    "nation": "khemet"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

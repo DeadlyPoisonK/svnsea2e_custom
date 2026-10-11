@@ -1,0 +1,22 @@
+{
+  "folder": "f1ztwTMcX7isHIH6",
+  "name": "Tesoro",
+  "type": "sorcery",
+  "_id": "cHIgyGfLmaJyCsIX",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>En su origen, tu arma pertenecía a otra persona, pero ya no. Tal vez la recuperaste de la bóveda de un príncipe malvado, o mataste a una bestia monstruosa del desierto y reclamaste el arma de su tesoro como tu recompensa. Una vez por sesión, puedes activar cualquier ventaja que poseas con la etiqueta Pericia sin gastar 1 punto de héroe.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 199",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

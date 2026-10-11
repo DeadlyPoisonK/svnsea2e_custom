@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Farzaneh, Ángel de la Venganza",
+  "type": "sorcery",
+  "_id": "tkamrWFhSh6ugtmf",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Farzaneh, el Ángel de la Venganza, fue la segunda ahura en nacer. Al comienzo de la creación, Farzaneh no prestó atención a las advertencias de su hermana, Dawna, y trató de destruir a un poderoso daeva por su cuenta. El daeva demostró ser más fuerte que Farzaneh, y arrancó la carne de sus alas antes de enviarla de regreso a casa, transformada en una imagen hecha jirones de su antiguo ser. En lugar de ceder a la desesperación, Farzaneh se apoderó de la ira dentro de ella y la canalizó hacia un nuevo propósito: la venganza.</p><p>A los usuarios de Khahesh-ahura empoderados por Farzaneh se les otorgan alas de hueso. Curiosamente, estos hechiceros son los únicos que sienten dolor, severo, al activar sus poderes de Legado, ya que las alas brotan de su carne.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 176",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

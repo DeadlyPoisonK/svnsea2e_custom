@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Acechador en las sombras",
+  "type": "advantage",
+  "_id": "kGo10VY240xh0uHy",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para moverte en silencio, desaparecer en la oscuridad o demostrar tu afinidad con las sombras de alguna otra forma.</p><p><em>Tierras de Fuego y Oro, p. 177: coste 2 (2 si eres khemetí).</em></p>",
+    "infosource": "El Nuevo Mundo, p. 165",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 6900000,
+  "ownership": {
+    "default": 0
+  }
+}

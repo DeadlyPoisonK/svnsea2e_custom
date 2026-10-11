@@ -1,0 +1,24 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Exterminio silencioso",
+  "type": "advantage",
+  "_id": "HBVysaPVaztZuaOi",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para derrotar de inmediato a una banda de matones, independientemente de su Fuerza, siempre que no estén al tanto de tu presencia antes de lanzar tu ataque.</p>",
+    "infosource": "El Nuevo Mundo, p. 167",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

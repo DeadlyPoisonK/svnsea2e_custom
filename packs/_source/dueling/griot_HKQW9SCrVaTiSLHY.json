@@ -1,0 +1,19 @@
+{
+  "folder": "EukS0hh4uQes49gW",
+  "name": "Griot",
+  "type": "duelstyle",
+  "_id": "HKQW9SCrVaTiSLHY",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Maestro Practicante: Hamadou Mbaye Hamadou.</p><p>Mbaye es un griot (poeta viajero) de Ifri, un devoto dīnista en peregrinación por las tribus del 8º Mar, así como por las ciudades de Sarmion. Es un hombre muy musculoso y humilde, con sonrisa contagiosa, pero que cuando se le insulta, convierte sus palabras en una tormenta que pocos pueden capear. Pero como un aguacero torrencial, perdona y vuelve su sonrisa. El estilo Griot surgió de las peregrinaciones de dīnistas de Ifri que viajaban a los lugares sagrados dentro del Imperio de la Media Luna. La especialidad de un practicante de Griot es el estilo panegírico. Él colma de elogios a su oponente, pero igualmente lo convierte en un ataque cortante. En su mayoría peregrinos y maestros, los poetas de Griot son excepcionalmente versados en textos religiosos y poesía.</p>",
+    "bonus": "<p><strong>Bonificación de la escuela.</strong></p><p>Una vez por Kavita, un practicante de Griot gana 1 dado adicional cuando entreteje en su Bayt un cumplido sobre su oponente.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 202"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

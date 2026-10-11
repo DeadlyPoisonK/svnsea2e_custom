@@ -1,0 +1,21 @@
+{
+  "folder": "hKSS5Yx1PWVKU58w",
+  "name": "Luz en las sombras",
+  "type": "sorcery",
+  "_id": "pgoLX3tMHmUOKbV8",
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+  "system": {
+    "description": "<p>Activa este turru para invocar suficiente luz ambiental para iluminar una habitación, o si estás fuera, tu área inmediata. La luz no se puede apagar hasta que quieras, o hasta el final de la escena.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 184",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

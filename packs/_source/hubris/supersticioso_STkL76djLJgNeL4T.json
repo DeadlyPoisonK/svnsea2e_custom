@@ -1,0 +1,17 @@
+{
+  "folder": "uRiLWm1i9xUID1Ha",
+  "name": "Supersticioso",
+  "type": "hubris",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibe 1 punto de héroe cuando te niegues a resolver un problema usando Hechicería, un artefacto o cualquier otro efecto místico en el que no confías.</p>",
+    "infosource": "El glifo · 7º Mar (básico), p. 158"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "STkL76djLJgNeL4T",
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  }
+}

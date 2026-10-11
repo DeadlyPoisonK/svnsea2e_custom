@@ -1,0 +1,15 @@
+{
+  "name": "Luz",
+  "sorting": "a",
+  "folder": "DMohupPGQDu5qKnD",
+  "type": "Item",
+  "_id": "qaTfK8X6olVOkxqK",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "360068bf146fd83e9ee04dc3488e8ae6427f2b87"
+    }
+  }
+}

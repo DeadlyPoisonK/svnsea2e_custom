@@ -1,0 +1,22 @@
+{
+  "folder": "qeCZ5JNoQShLPnz4",
+  "name": "Guiar",
+  "type": "sorcery",
+  "_id": "kq7gLuzkuWqiUtiC",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este poder para saber en qué dirección debes ir para que una escena llegue a un destino en particular. Dile al DJ lo que quieres encontrar («Quiero encontrar una fuente de agua limpia», «Quiero saber en qué dirección fueron los ladrones» o «Quiero ir a Iskandar» son todos ejemplos apropiados). El DJ te dice la dirección a tu destino directamente, «en línea recta», pero no te dice cómo de lejos está tu destino o qué otros obstáculos podrían estar en tu camino. El segundo paso te proporciona los medios para llegar a donde vas más rápido. Tu Maravilla te da la velocidad para llegar a tu destino lo más rápido posible, y apresura tu paso.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

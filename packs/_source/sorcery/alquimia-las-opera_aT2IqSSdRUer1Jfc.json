@@ -1,0 +1,22 @@
+{
+  "folder": "Blvpl18m1qGPsjC8",
+  "name": "Alquimia: las Opera",
+  "type": "sorcery",
+  "_id": "aT2IqSSdRUer1Jfc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Los frutos de cientos de años de estudio y experimentación son las <em>Opera,</em> las «Obras» que distinguen a la Alquimia como el mayor logro de la investigación científica. Son los misterios más celosamente guardados de la Orden, el grupo de boticarios que supervisa la iniciación y el entrenamiento de los nuevos aprendices. Los no iniciados no pueden duplicar estos misterios excepto en circunstancias muy especiales. Pero ¿cuáles son estos misterios?</p><p>Depende de cada boticario.</p><p>La Alquimia es, por encima de todo, un empeño personal. Aunque un boticario pertenezca a una Orden y siga una filosofía y un método concretos, sus hallazgos son profundamente individuales. Un boticario puede estar obsesionado con el secreto de la inmortalidad, mientras que otro puede buscar la combinación que le permita convertir el plomo en oro.</p><p>El resultado de esta ciencia tan idiosincrática es que solo se puede hablar de las Opera en términos generales: están los Juvenilia (trabajos menores) y los Magna Opera (trabajos mayores).</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 94",
+    "sorctype": "alquimia",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

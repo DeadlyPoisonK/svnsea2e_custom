@@ -1,0 +1,31 @@
+{
+  "folder": "nmlomi28Bss1o6oR",
+  "name": "Inmigrante théano",
+  "type": "background",
+  "_id": "pPlCXw5gvdsuWpzU",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tuviste que dejar Théah por algún tipo de desgracia y ahora estás intentando reconstruir tu vida en el Nuevo Mundo.</p>",
+    "infosource": "El Nuevo Mundo, p. 162",
+    "quirk": "<p>Ganas 1 punto de héroe cuando intentas resolver un problema de la forma en que se hubiera hecho en tu antiguo país, y eso te mete en problemas.</p>",
+    "skills": [
+      "brawl",
+      "convince",
+      "empathy",
+      "notice",
+      "sailing"
+    ],
+    "advantages": [
+      "Espíritu valiente",
+      "Pelea de bar"
+    ],
+    "nation": "none",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

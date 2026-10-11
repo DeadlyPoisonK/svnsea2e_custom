@@ -1,0 +1,22 @@
+{
+  "folder": "VxtfbGZzvag7ET35",
+  "name": "Sin miedo",
+  "type": "sorcery",
+  "_id": "TfHpkCpQY7ikmSjW",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este Glamour para reducir el nivel de Miedo de una criatura en tantos puntos como tu nivel en este Glamour y sufrir así sus efectos modificados hasta el final de la escena. Esto solo afecta al héroe que activa el Glamour.</p>",
+    "infosource": "7º Mar (básico), p. 216",
+    "sorctype": "knight",
+    "sorccat": "glamour",
+    "sorcsubcat": "minor",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

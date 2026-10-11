@@ -1,0 +1,21 @@
+{
+  "folder": "hKSS5Yx1PWVKU58w",
+  "name": "La paz del Guardián",
+  "type": "sorcery",
+  "_id": "eY6wN8cM1MQC5XZh",
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+  "system": {
+    "description": "<p>Activa este turru para dar a otra persona una sensación de calma, simplemente tocándola. Una asesina a menudo usa esta magia para dar paz a sus víctimas y que sus muertes sean menos traumáticas.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 184",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

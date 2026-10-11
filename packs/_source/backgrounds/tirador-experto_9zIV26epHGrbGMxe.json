@@ -1,0 +1,33 @@
+{
+  "folder": "HcoQbtuS43eGOy8Z",
+  "name": "Tirador experto",
+  "type": "background",
+  "_id": "9zIV26epHGrbGMxe",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Avistas a lo lejos un capitán enemigo dando órdenes a su tripulación para abrir fuego. Nadie podría acertar ese disparo… Nadie salvo tú.</p>",
+    "infosource": "Naciones Piratas, p. 146",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando gastes todos tus Aumentos en disparar a un objetivo y sufras Consecuencias debido a ello.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "intimidate",
+      "notice",
+      "sailing"
+    ],
+    "advantages": [
+      "Casado con el mar",
+      "Francotirador",
+      "Uno con el barco"
+    ],
+    "nation": "aragosta",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

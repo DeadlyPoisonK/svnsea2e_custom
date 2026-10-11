@@ -1,0 +1,31 @@
+{
+  "folder": "yeVte1kxkn01Z33J",
+  "name": "Asaltante a camello",
+  "type": "background",
+  "_id": "Wb7JCRgTinq2UwsE",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Sobre tu amado camello, no hay ningún desafío al que no estés preparado para enfrentarte.</p><p><em>Ventajas en el libro: Compañero de confianza (Camello), Jinete consumado (NdT:V2).</em></p>",
+    "infosource": "Tierras de Fuego y Oro, p. 175",
+    "quirk": "<p>Ganas 1 punto de héroe cuando te metas en problemas para salvar a tu amado camello o cuando este te rescate.</p>",
+    "skills": [
+      "athletics",
+      "intimidate",
+      "ride",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Compañero de confianza",
+      "Jinete consumado"
+    ],
+    "nation": "maghreb",
+    "active": true
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

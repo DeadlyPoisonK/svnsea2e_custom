@@ -1,0 +1,32 @@
+{
+  "folder": "gd4oUJpI8AMIWALS",
+  "name": "Churikuna",
+  "type": "background",
+  "_id": "bS4Lr8zsqNCPyL0s",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Eres uno de los sacerdotes de la muerte de Suway e invocas el poder de los Venerables Difuntos para cumplir sus deseos.</p>",
+    "infosource": "El Nuevo Mundo, p. 162",
+    "quirk": "<p>Ganas 1 punto de héroe cuando sigues órdenes sin cuestionarlas.</p>",
+    "skills": [
+      "convince",
+      "intimidate",
+      "perform",
+      "scholarship",
+      "warfare"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Sentido de la orientación"
+    ],
+    "nation": "kuraq",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

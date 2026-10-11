@@ -1,0 +1,23 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Sangre de soberanos",
+  "type": "advantage",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Eres miembro de la nobleza de tu reino natal. Cuando realices un Riesgo en el que tu estatus noble sería un beneficio directo e inmediato, gasta 1 punto de héroe para obtener Aumentos adicionales iguales a tus niveles en Donaire.</p><p><em>Coste: 5 (3 si eres khemetí).</em></p>",
+    "infosource": "Tierras de Fuego y Oro, p. 178",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "jjxCGY5tCe65uwTo",
+  "sort": 6800000,
+  "ownership": {
+    "default": 0
+  }
+}

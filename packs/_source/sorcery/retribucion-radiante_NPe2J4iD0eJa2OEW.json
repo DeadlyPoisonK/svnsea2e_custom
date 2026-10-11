@@ -1,0 +1,21 @@
+{
+  "folder": "8yRTt6IGKB0lpv51",
+  "name": "Retribución radiante",
+  "type": "sorcery",
+  "_id": "NPe2J4iD0eJa2OEW",
+  "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
+  "system": {
+    "description": "<p>Este turru crea una pequeña bomba de energía luminosa que se puede lanzar o plantar. Esta bomba inflige 2 Heridas, más un número de Heridas igual a tu Músculo, y causa la destrucción de la mayoría de los objetos hechos de madera, piedra o materiales más débiles dentro de un radio de 3 metros. Se puede activar inmediatamente o retrasar un número de acciones igual al número de veces que tengas la ventaja Hechicería.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 185",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

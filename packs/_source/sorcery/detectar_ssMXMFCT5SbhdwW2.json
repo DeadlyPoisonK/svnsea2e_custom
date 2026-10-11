@@ -1,0 +1,22 @@
+{
+  "folder": "aKUid9pbLLTS3ZqR",
+  "name": "Detectar",
+  "type": "sorcery",
+  "_id": "ssMXMFCT5SbhdwW2",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Tu Maravilla reacciona a la Hechicería usada recientemente en el área. Si se activó en las últimas 24 horas, puedes identificar exactamente dónde se usó la Hechicería y qué tipo de Hechicería era (Porté, Hexenwerk, Chozeh, un artefacto syrneth, etc.), pero no quién o cómo. Tu Maravilla no reacciona a tu propia Hechicería. Este poder no requiere activación: un héroe con este poder a menudo se topa con una bocanada de magia antes de sospechar de su presencia o de buscarla activamente.</p><p>Con el segundo paso, tu Maravilla obtiene la habilidad de Absorber la magia usada cerca de ti. Este Camino te muestra que la Hechicería se puede usar para medios malignos. Tu propósito dentro de este Camino es asegurarte de que no se use de esa manera.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 167",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "path",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

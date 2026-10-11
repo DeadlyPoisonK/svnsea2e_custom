@@ -1,0 +1,23 @@
+{
+  "name": "Tú te vienes conmigo",
+  "type": "advantage",
+  "_id": "VOmFYjqld0XjSckd",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para hacer que todo el daño que inflijas esta ronda aumente tanto como Heridas Dramáticas tengas.</p><p><em>Coste: 5 (3 si eres vestenio).</em></p>",
+    "infosource": "7º Mar (básico), p. 155",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "folder": "BsRq7OrECMmGFFR9",
+  "sort": 12500,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

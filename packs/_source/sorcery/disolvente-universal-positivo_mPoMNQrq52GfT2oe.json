@@ -1,0 +1,21 @@
+{
+  "folder": "dRivclZirteK4bLL",
+  "name": "Disolvente universal positivo",
+  "type": "sorcery",
+  "_id": "mPoMNQrq52GfT2oe",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este preparado puede disolver organismos vivos, dañándolos gravemente. Cualquier material orgánico que entre en contacto con el preparado (tocándolo, ingiriéndolo o siendo rociado con él) sufre 1 Herida cada acción que esté en contacto con él. Un personaje al que se le arroje este disolvente puede gastar una acción para eliminar el efecto. Preparar esta sustancia necesita 1 Requisito.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 96",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

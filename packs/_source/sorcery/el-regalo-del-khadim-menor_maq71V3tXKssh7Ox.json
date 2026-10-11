@@ -1,0 +1,21 @@
+{
+  "folder": "FiSRmstJ9IMmLMTQ",
+  "name": "El regalo del khadim Menor",
+  "type": "sorcery",
+  "_id": "maq71V3tXKssh7Ox",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Aunque tal vez no sea tan potente como para conceder cualquier deseo imaginable, un khadim tiene la habilidad innegable de entregar a su aliado precisamente lo que necesita en ese mismo momento.</p><p>Activa este Khidma para activar una Oportunidad para otro personaje en la misma escena que tú. Puedes activar este Khidma en cualquier momento, incluso en respuesta a la creación de la Oportunidad, pero debes gastar un Aumento para hacerlo (incluso si no es tu acción).</p>",
+    "infosource": "El Imperio de la Media Luna, p. 182",
+    "sorctype": "mithaq",
+    "sorcdur": "none",
+    "sorccat": "thiqa",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

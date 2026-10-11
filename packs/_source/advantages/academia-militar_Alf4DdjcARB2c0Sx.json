@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Academia militar",
+  "type": "advantage",
+  "_id": "Alf4DdjcARB2c0Sx",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Has asistido a una de las academias militares formales de Khitai, aprendiendo táctica y estrategia; todo lo necesario para liderar soldados en la batalla. Colabora con el DJ para determinar el motivo de tu asistencia a un lugar de aprendizaje tan prestigioso. ¿Desciendes de una larga estirpe de célebres oficiales del ejército, o eras un simple soldado de a pie cuando tu comandante reparó en ti y te sacó de la oscuridad? Cuando realizas un Riesgo usando Percepción, Equitación, Tácticas de guerra o Armas como tu Enfoque y gastas un punto de héroe (para obtener un dado adicional, ayudar a un aliado en la misma ronda o hacer que tus 10 exploten), puedes volver a tirar cualquier dado cuyo resultado esté por debajo de tus rangos en esa habilidad. Debes conservar el nuevo resultado, incluso si es menor.</p>",
+    "infosource": "Khitai, p. 121 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

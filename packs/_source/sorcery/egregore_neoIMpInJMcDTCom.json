@@ -1,0 +1,21 @@
+{
+  "folder": "HRfj3yaZPnrijrS5",
+  "name": "Egregore",
+  "type": "sorcery",
+  "_id": "neoIMpInJMcDTCom",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Los m&aacute;s cercanos a Mareaux suelen encontrar la voz de<br>este dentro de su cabeza. Mientras Mareaux lo posea,<br>el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe para incluir a<br>alguien en su constructo mental. Todos los que tengan<br>acceso a este constructo pueden comunicarse con libertad<br>(aunque no verbalmente), siempre y cuando Mareaux<br>posea al s&egrave;vit&egrave;. Despu&eacute;s de que Mareaux se marche, la<br>red deja de funcionar.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "gros",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

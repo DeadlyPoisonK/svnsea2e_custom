@@ -1,0 +1,33 @@
+{
+  "folder": "kFgELUK3901UeCsS",
+  "name": "Poeta",
+  "type": "background",
+  "_id": "KHttbANUQE6skevE",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Sabes manejar tus palabras tan hábilmente como cualquier esgrimista blande una espada.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 155",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando tu insistencia en proteger o expandir tu reputación te meta en problemas.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "intimidate",
+      "perform",
+      "scholarship"
+    ],
+    "advantages": [
+      "Lingüista",
+      "Reputación",
+      "Rima y verso"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

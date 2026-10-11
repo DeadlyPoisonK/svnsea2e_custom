@@ -1,0 +1,22 @@
+{
+  "folder": "o690w5aSkrQJLvTs",
+  "name": "Devorar",
+  "type": "sorcery",
+  "_id": "YgImBLNvPTCB9Hd3",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 2 de Tranquilidad. Inflige hasta 10 Heridas a un espíritu o criatura sobrenatural similar, y luego tira 1d10. Si obtienes un resultado igual o inferior al número de Heridas que decidiste infligir, sufres el mismo número de Heridas y aumentas la Furia de la escena en la misma cantidad. Si dejas Indefensa a la criatura objetivo usando este poder, la Tranquilidad de la escena pasa a ser inmediatamente 10.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 195 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 100196,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

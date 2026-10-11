@@ -1,0 +1,21 @@
+{
+  "folder": "N2qsFS6XbvuICS1X",
+  "name": "Uno contra muchos",
+  "type": "sorcery",
+  "_id": "7VqeB1hfQlfGfnIO",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Derrota a una banda de matones sin ayuda. Cada vez que una banda de matones te inflija Heridas, puedes gastar 1 punto de héroe para reducir el número de Heridas a 1.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 201",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

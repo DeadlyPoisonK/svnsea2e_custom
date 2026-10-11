@@ -1,0 +1,17 @@
+{
+  "folder": "y4NSZLM4Tpr3LrUL",
+  "name": "Condenado",
+  "type": "hubris",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Activa tu Hibris cuando recibas 1 o más Heridas Dramáticas. Recibes 1 punto de héroe por cada Herida Dramática que acabas de recibir.</p>",
+    "infosource": "El ahogado · Naciones Piratas, p. 154"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "h7WYeZhH7n82PV4K",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

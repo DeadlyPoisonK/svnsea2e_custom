@@ -1,0 +1,21 @@
+{
+  "folder": "M2w2fUYPETSk5d0o",
+  "name": "Velocidad",
+  "type": "sorcery",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El halcón representa la velocidad y la rapidez, capaz de elevarse alto y surcar los vientos. Los Talismanes a menudo incluyen hojas y plumas capturadas del aire.</p><p><em>Talismán: </em>Cuando se activa un Talismán de Velocidad, el portador se mueve con una rapidez sobrenatural. No tiene que pagar el coste de Improvisar acciones durante el resto de la ronda.</p><p><em>Inscripción: </em>Un Talismán de Velocidad inscrito en un barco u otro medio de transporte le da la capacidad de moverse al doble de velocidad durante el período de activación de 24 horas. Esto no se puede usar en caballos u otros seres vivos sin consecuencias mortales.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 187",
+    "sorctype": "heka",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "giMmGgrlZhKmsvAb",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

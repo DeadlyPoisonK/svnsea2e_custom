@@ -1,0 +1,33 @@
+{
+  "folder": "M57WOXC69CG2ZoLB",
+  "name": "Dasusuo",
+  "type": "background",
+  "_id": "7KqjGbVZjM3FKPDt",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Los abonsam son criaturas malvadas de increíble poder. Tú usas ese poder para proteger a los demás.</p><p><em>Ventajas en el libro: Hechicería (Melbur), Hechicería (Melbur).</em></p>",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando te pongas en peligro para salvar a una persona inocente de caer bajo la influencia de los abonsam o una fuerza sobrenatural oscura similar.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "notice",
+      "perform",
+      "tempt"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Sentido de la orientación"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 174",
+    "nation": "aksum"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Sonrisa encantadora (Khitai)",
+  "type": "advantage",
+  "_id": "6XkuLmJNbr0NgHxB",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para evitar que otro personaje desenvaine un arma, comience una pelea o recurra de cualquier otro modo a la violencia. Esta ventaja no surte efecto si otros personajes presentes en la escena ya están luchando o si tu objetivo siente que su vida corre grave peligro.</p>",
+    "infosource": "Khitai, p. 115 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

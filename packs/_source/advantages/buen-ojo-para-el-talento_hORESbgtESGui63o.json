@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Buen ojo para el talento",
+  "type": "advantage",
+  "_id": "hORESbgtESGui63o",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastes Riqueza para contratar a una banda de matones, la Fuerza de esta es 1 punto más.</p>",
+    "infosource": "Naciones Piratas, p. 150",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

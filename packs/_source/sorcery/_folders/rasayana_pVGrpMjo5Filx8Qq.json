@@ -1,0 +1,15 @@
+{
+  "name": "Rasāyana",
+  "sorting": "a",
+  "folder": "Blvpl18m1qGPsjC8",
+  "type": "Item",
+  "_id": "pVGrpMjo5Filx8Qq",
+  "description": "",
+  "sort": 300000,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "1d50a8b04dc38a12f084829da5a1f3a041aee8fa"
+    }
+  }
+}

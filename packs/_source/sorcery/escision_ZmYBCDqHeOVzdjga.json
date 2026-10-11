@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Escisión",
+  "type": "sorcery",
+  "_id": "ZmYBCDqHeOVzdjga",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Invocas una copia de un personaje para que actúe en tu nombre. Genera 3 de Plaga. La copia es un monstruo con una Fuerza igual a la mitad de tu Discordia. La copia comprende las órdenes que se le dan y sigue tus instrucciones lo mejor que puede. La copia dura hasta que sea despedida, destruida o termine la escena.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 203 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

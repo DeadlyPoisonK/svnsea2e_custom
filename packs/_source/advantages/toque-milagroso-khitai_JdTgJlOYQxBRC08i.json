@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Toque milagroso (Khitai)",
+  "type": "advantage",
+  "_id": "JdTgJlOYQxBRC08i",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe en tu acción. Otro héroe al que puedas alcanzar recupera 1 Herida Dramática. Un héroe solo puede activar esta ventaja una vez por ronda.</p>",
+    "infosource": "Khitai, p. 121 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

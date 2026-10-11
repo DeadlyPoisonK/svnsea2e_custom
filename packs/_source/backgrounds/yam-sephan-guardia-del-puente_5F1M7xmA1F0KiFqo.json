@@ -1,0 +1,32 @@
+{
+  "folder": "5tjKI2pyNkh7RQ3Z",
+  "name": "Yam Sephan (Guardia del puente)",
+  "type": "background",
+  "_id": "5F1M7xmA1F0KiFqo",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Respeto</p>",
+    "quirk": "<p>Gana un punto de héroe cuando derrotes a una criatura con una cualidad de monstruo.</p>",
+    "skills": [
+      "aim",
+      "hide",
+      "notice",
+      "ride",
+      "scholarship"
+    ],
+    "advantages": [
+      "Nervios de acero (Khitai)",
+      "Derrota temeraria (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 111 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "VxtfbGZzvag7ET35",
+  "name": "Vigilia sin fin",
+  "type": "sorcery",
+  "_id": "m2xCY46DvrOyCwLH",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Elige un área del suelo que no tenga más de 3 metros de diámetro. Hasta que no pase un amanecer o un anochecer por cada nivel que tengas en este Glamour, y mientras no te marches del terreno elegido, no puedes morir, quedar tullido o Indefenso.</p><p>Todavía puedes recibir Heridas Dramáticas, pero no las sufrirás hasta que no termine el efecto; lo que también ocurre si te marchas del área. Cuando el Glamour expira, si has recibido más Heridas Dramáticas de las que normalmente puedes, caes muerto en el sitio.</p>",
+    "infosource": "7º Mar (básico), p. 216",
+    "sorctype": "knight",
+    "sorccat": "glamour",
+    "sorcsubcat": "major",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

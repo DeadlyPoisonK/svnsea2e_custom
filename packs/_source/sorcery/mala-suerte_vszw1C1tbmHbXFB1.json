@@ -1,0 +1,21 @@
+{
+  "folder": "a9auYVTd6m9zGaNk",
+  "name": "Mala Suerte",
+  "type": "sorcery",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>Algunos dicen que el mero hecho de estar en presencia de alguien que posee el Toque Rojo trae mala suerte para todos. Mala Suerte hace que esto ya no sea una cuestión de opinión, sino de hechos. Al gastar Ruina 1, los rooi heks se convierten en un faro de terrible suerte y todos los que actúan en la escena (héroes, villanos, el propio rooi heks, <em>absolutamente todos</em>) pierden 1 dado en todos los Riesgos. Por cada Ruina 2 <em>adicional </em>que gaste el rooi heks, todos los personajes en la escena pierden un dado adicional en todos los Riesgos. Un rooi heks que activa Mala Suerte también puede gastar 1 (y solo 1) punto de héroe antes de tirar los dados en un Riesgo para hacer que un personaje no solo sea inmune a los efectos de Mala Suerte, sino que se vea potenciado por ella. En lugar de perder dados por los Riesgos que toma, gana el mismo número de dados de bonificación. Solo un personaje puede ser afectado de esta manera en un momento dado, y el efecto dura hasta el final de la ronda.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 194",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "vszw1C1tbmHbXFB1",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

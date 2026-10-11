@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Pæga, el Olvidado",
+  "type": "sorcery",
+  "_id": "p4zfvj5XOhWEyUI9",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>No hay historias sobre Pæga. No se mencionan sus hazañas ni sus batallas. Ni siquiera se menciona su sexo. La única razón por la que la gente de Ávalon conoce su nombre es porque estaba grabado en uno de los lugares de la mesa de Elilodd. Algunos dicen que Pæga traicionó a Elilodd y fue expulsado de su Círculo. Otros piensan que Pæga era el espía más leal de Elilodd y eligió ser olvidado.</p><p>Característica mayor: Maña Característica menor: Donaire</p><h3>Naciones de Théah vol. 1, p. 50</h3><p><strong>Virtud:</strong> Sutil (La noche sin luna). <strong>Hibris:</strong> Ambicioso (El mago).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando renuncies sutilmente a reclamar la autoría de tus acciones o reveles tus verdaderas intenciones antes desconocidas.</p><p><strong>Glamour legendario — Oscuridad:</strong> Cuando actives este Glamour puedes dejar en penumbra durante una escena un área del tamaño de una sala de baile o patio. Las sombras se hacen más oscuras y la luz se apaga sutilmente. Mientras estés dentro de esta zona oscurecida puedes usar un Aumento para: Quedarte en las sombras y ver y oír cualquier cosa que tenga lugar en otra sombra del área. Viajar entre sombras que estén en tu línea de visión (desapareces en una y apareces en otra). Envolverte con las sombras y ser imposible de detectar por métodos normales. Oscurecer aún más una sombra y que todo aquel que esté dentro deba gastar un Aumento adicional para llevar a cabo cualquier acción relacionada con la vista.</p>",
+    "infosource": "7º Mar (básico), p. 213",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

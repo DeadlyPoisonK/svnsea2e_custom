@@ -1,0 +1,21 @@
+{
+  "folder": "FAUpm3Eb4Xb9dJKz",
+  "name": "Yad",
+  "type": "sorcery",
+  "_id": "0Qg1Ay8LfFvhaud1",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Yad es la promesa de sentidos claros. Cada uno de los cinco sentidos se fortalece y agudiza. Este es el poder de percibir el mundo de manera más vibrante y rica que nunca, y el poder de ignorarlo todo por completo.</p><p><strong>Amuleto:</strong> Cuando activas un Amuleto Yad, uno de tus cinco sentidos se agudiza hasta que puedes percibir a grandes distancias o notar diferencias antes imperceptibles. Elige uno de tus sentidos para realzar mucho más allá de la capacidad humana. Este efecto dura una escena.</p><p><strong>Escritura:</strong> Cuando activas una Escritura Yad, tus sentidos caen bajo tu control. Desvaneces todas las distracciones, ganando concentración. Esta concentración te permite bloquear el Miedo y la Presión durante el resto de la escena.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 173",
+    "sorctype": "chozeh",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

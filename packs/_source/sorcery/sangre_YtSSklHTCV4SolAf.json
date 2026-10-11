@@ -1,0 +1,21 @@
+{
+  "folder": "YTcrjQkDWcQTDfXz",
+  "name": "Sangre",
+  "type": "sorcery",
+  "_id": "YtSSklHTCV4SolAf",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Si bien la apariencia de un abonsam de Trato de la Sangre puede variar (uno puede tener heridas abiertas que nunca dejan de soltar sangre, mientras que otro puede olfatear o lamer la sangre de un campo de batalla), es un ser excepcionalmente poderoso. Puede manipular la sangre en cualquier criatura viviente, permitiéndole sanar, controlar, sangrar o incluso inculcar una rabia tan fuerte en un ser vivo que solo puede ser saciada a través de violencia brutal.</p><ul><li>Desangra por completo a una criatura viviente, haciendo que sangre en abundancia por cada orificio y matándolo de inmediato.</li><li>Toma el control de la sangre dentro de otra criatura viviente. La próxima vez que esa criatura gaste un Aumento para tomar una acción, puedes seleccionar la acción tomada siempre que el objetivo sea capaz de dicha acción (por ejemplo, no puedes obligar a alguien que no sabe esgrima a usar una maniobra de esgrima). Obviamente, ignorará las acciones suicidas como saltar de un acantilado o apuñalarse.</li><li>Encontrar la ubicación exacta de cualquier persona viva que desees, con precisión exacta tanto en cuanto a la ubicación de la persona como a la persona misma.</li><li>Hacer que las heridas de un enemigo vivo sangren con más abundancia de lo normal. Hasta el final de la ronda, cada vez que un enemigo sufra Heridas, el número de Heridas sufridas aumenta en 1.</li><li>Curar rápidamente una lesión grave, eliminando 1 Herida Dramática de una criatura viva.</li><li>Causar una sed de sangre insaciable en una criatura, haciendo que ataque sin distinción al objetivo más cercano con su próxima acción.</li><li>Conocer la ubicación de toda criatura viviente dentro de su entorno inmediato. Puedes detectar de inmediato cualquier criatura viva que se esconda sin gastar un Aumento.</li></ul>",
+    "infosource": "Tierras de Fuego y Oro, p. 190",
+    "sorctype": "melbur",
+    "sorcdur": "none",
+    "sorccat": "patron",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

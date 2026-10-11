@@ -1,0 +1,21 @@
+{
+  "folder": "MAYrwPAf96Az0kIK",
+  "name": "Ventanas del alma",
+  "type": "sorcery",
+  "_id": "foh8rdt7ojWuZsLH",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Cuando la muerte llega antes de tiempo, algunas veces<br>Bawon G&eacute; averigua qu&eacute; la provoc&oacute; y se asegura de arreglar<br>las cosas. Mientras Bawon G&eacute; lo posea, el s&egrave;vit&egrave; puede tocar<br>un cad&aacute;ver y gastar 1 punto de h&eacute;roe para ver, a trav&eacute;s de los<br>ojos del cad&aacute;ver, los &uacute;ltimos momentos de su vida.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

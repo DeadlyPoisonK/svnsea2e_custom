@@ -1,0 +1,32 @@
+{
+  "folder": "IIghUIYTAidR9gR1",
+  "name": "Grajo del Atabeano",
+  "type": "background",
+  "_id": "fCKGHfn2VUetczpP",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Puede que no seas de la realeza, pero los callejones de Fuerte Libertad son tu reino y sus pillos olvidados son tus súbditos.</p>",
+    "infosource": "Naciones Piratas, p. 146",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando uses tu reputación o tu estatus para ayudar a otro personaje.</p>",
+    "skills": [
+      "intimidate",
+      "sailing",
+      "theft",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Buen ojo para el talento",
+      "Lobo de mar"
+    ],
+    "nation": "none",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

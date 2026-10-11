@@ -1,0 +1,21 @@
+{
+  "folder": "a9auYVTd6m9zGaNk",
+  "name": "Confusión",
+  "type": "sorcery",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>El Toque Rojo nubla la mente, incluso cuando esa mente es inmortal o inhumana. Hexenwerk puede manipular a los muertos, mientras que los rahuri pueden hablar con sus antepasados con la esperanza de conseguir su guía. Un rooi heks puede tocar a otro personaje y gastar 1 punto de héroe para activar Confusión.</p><p>La próxima vez que ese personaje reciba información de una fuente sobrenatural (como un sidhe que le debe un favor, o hablar con un animal usando un Don de Matushka), la información será confusa, incoherente, desconcertante o de alguna otra manera incomprensible o incompleta. La información aún debe ser <em>precisa</em>, pero no tiene que ser <em>verdadera</em>. Se debe explotar la desorientación, las medias verdades o las cuestiones de «perspectiva», pero la información dada no puede ser una absoluta mentira.</p><p>Mientras que el jugador controla la información obtenida, los personajes (ni los rooi heks, ni su víctima) son conscientes de cuándo o cómo se produce el efecto. La rooi heks sabe que ha infligido una maldición de desinformación a su víctima, pero no la «notifican» cuando ocurre y no tiene control sobre qué información le transmiten.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 195",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "mbcfQ2v0TYfgIcBh",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

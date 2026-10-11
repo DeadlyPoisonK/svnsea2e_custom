@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Inspirar generosidad (Khitai)",
+  "type": "advantage",
+  "_id": "WeFNte3r1DMviJ6f",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para convencer a otro personaje de que te dé un objeto barato, te compre un objeto caro o adquiera un objeto caro para ti por medios no del todo legales.</p>",
+    "infosource": "Khitai, p. 116 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

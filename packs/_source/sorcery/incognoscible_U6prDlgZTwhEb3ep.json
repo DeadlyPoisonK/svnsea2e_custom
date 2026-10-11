@@ -1,0 +1,21 @@
+{
+  "folder": "fAgf1ip8yOiUWsc3",
+  "name": "Incognoscible",
+  "type": "sorcery",
+  "_id": "U6prDlgZTwhEb3ep",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Mareaux ha estudiado las sombras del mundo y se<br>ha dado cuenta de sus secretos. Mientras Mareaux lo<br>posea, el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe para<br>mirar dentro de las sombras y ver un lugar que en<br>ese momento no puede alcanzar. El s&egrave;vit&egrave; puede usar<br>este poder para leer un libro escondido en el caj&oacute;n<br>de un escritorio u observar un acto il&iacute;cito que se est&aacute;<br>llevando a cabo bajo el amparo de la noche. El s&egrave;vit&egrave;<br>debe saber d&oacute;nde mirar y el &aacute;rea debe estar completamente<br>en sombras. El s&egrave;vit&egrave; no puede ver nada en la luz<br>usando Incognoscible.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

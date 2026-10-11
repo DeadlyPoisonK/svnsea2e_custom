@@ -1,0 +1,22 @@
+{
+  "folder": "yjYco7UI3IiAcsg3",
+  "name": "Sanar",
+  "type": "sorcery",
+  "_id": "77G8rBmLdBNLSYtG",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 5 de Furia. Toca a un personaje amistoso y cura un número de Heridas igual a la Tranquilidad de la escena o una Herida Dramática.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 195 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

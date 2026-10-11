@@ -1,0 +1,21 @@
+{
+  "folder": "MFTwVHrNXSZkgFyG",
+  "name": "Clavo",
+  "type": "sorcery",
+  "_id": "n0aOw3ce9z2qoY2r",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Para muchos, llega un momento en que su presencia&nbsp;ha sido demasiado larga. Badagris fabricar&aacute; con mucho&nbsp;gusto los clavos del ata&uacute;d para esa gente y les clavar&aacute; la&nbsp;puntilla para rematarlos.</p>\n<p>Mientras Badagris lo posea, el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe al provocar la tercera Herida Dram&aacute;tica de otro personaje para dejarlo inmediatamente Indefenso. Un s&egrave;vit&egrave; solo puede activar este Gros una vez por sesi&oacute;n.</p>",
+    "infosource": "Naciones Piratas, p. 161",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "gros",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

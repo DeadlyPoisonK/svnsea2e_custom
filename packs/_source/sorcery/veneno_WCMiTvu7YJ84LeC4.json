@@ -1,0 +1,22 @@
+{
+  "folder": "piYhdrGNp0ZAVmW9",
+  "name": "Veneno",
+  "type": "sorcery",
+  "_id": "WCMiTvu7YJ84LeC4",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este brebaje hace que quien lo beba empiece a sangrar por la boca y la nariz a medida que la mezcla le abrasa las entrañas. Un personaje expuesto a esta poción sufre tantas Heridas como su Potencia.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 198 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

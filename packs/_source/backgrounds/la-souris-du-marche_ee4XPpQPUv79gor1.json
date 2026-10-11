@@ -1,0 +1,32 @@
+{
+  "folder": "uITHHwDfWOeygkix",
+  "name": "La souris du marché",
+  "type": "background",
+  "_id": "ee4XPpQPUv79gor1",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Te conoces estas calles como la palma de tu mano.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 204",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando compartas tus ganancias mal obtenidas con alguien que lo necesite más que tú.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "hide",
+      "notice",
+      "scholarship"
+    ],
+    "advantages": [
+      "Esta es mi ciudad",
+      "Hurto"
+    ],
+    "nation": "montaigne",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

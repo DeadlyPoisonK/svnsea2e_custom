@@ -1,0 +1,22 @@
+{
+  "folder": "3DBtzP6wWtTujRJe",
+  "name": "Efigie",
+  "type": "sorcery",
+  "_id": "2znRdVK90hbTgvAf",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Milagro para crear una efigie de arcilla de un animal que pueda caber en la palma de tu mano. Tu efigie es indistinguible de un animal real de su tipo. Tu creación dura hasta el final de la escena y luego vuelve a convertirse en arcilla. Mientras tu efigie está activa, puedes ver a través de sus ojos y darle instrucciones mentales simples como decirle a dónde ir, en qué dirección mirar, etc. Debes tener una bola de arcilla, barro o un material similar para activar este Milagro.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 166",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "miracle",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

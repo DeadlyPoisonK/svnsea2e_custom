@@ -1,0 +1,32 @@
+{
+  "folder": "8AjTGHJtL0XNoqWh",
+  "name": "Capitán de barco",
+  "type": "background",
+  "_id": "XvatZAFEAMk7QJdE",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Das órdenes a una tripulación y surcas los mares por cualquier bandera que hondees.</p>",
+    "infosource": "7º Mar (básico), p. 138",
+    "quirk": "<p>Ganas 1 punto de héroe cuando seas el último de tu tripulación en ponerse a salvo.</p>",
+    "skills": [
+      "aim",
+      "convince",
+      "notice",
+      "sailing",
+      "warfare"
+    ],
+    "advantages": [
+      "Casado con el mar",
+      "Liderazgo",
+      "Uno con el barco"
+    ],
+    "nation": "none",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  }
+}

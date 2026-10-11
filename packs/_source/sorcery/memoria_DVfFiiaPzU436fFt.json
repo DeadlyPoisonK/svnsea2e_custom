@@ -1,0 +1,21 @@
+{
+  "folder": "lViId2hAgZrG1OcT",
+  "name": "Memoria",
+  "type": "sorcery",
+  "_id": "DVfFiiaPzU436fFt",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Beber este elixir te permite aumentar en gran medida tu memoria. Puedes recordar todo lo que veas y escuches durante una escena con un detalle perfecto, lo que te permite memorizar documentos, rostros y conversaciones aunque solo escuches o veas durante un instante. Preparar este elixir necesita 1 Requisito.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 95",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

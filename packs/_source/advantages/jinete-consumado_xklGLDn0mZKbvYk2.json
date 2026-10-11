@@ -1,0 +1,23 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Jinete consumado",
+  "type": "advantage",
+  "_id": "xklGLDn0mZKbvYk2",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para realizar una maniobra especial con tu caballo. Puedes espolearla para que haga un salto increíble, llamarla para que acuda a tu lado (a una distancia máxima a la que pueda físicamente llegar hasta ti) o controlarla para que esquive el ataque de un enemigo o golpee con sus pezuñas y dientes (evitando o infligiendo tantas Heridas como tu nivel en Equitación).</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 209",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 8500000,
+  "ownership": {
+    "default": 0
+  }
+}

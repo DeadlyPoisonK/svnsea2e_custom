@@ -1,0 +1,22 @@
+{
+  "folder": "sdfKDBOxOuchgCWx",
+  "name": "Bestia Litet Merke",
+  "type": "sorcery",
+  "_id": "YOd4o1NVhDzKRwbD",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>El objetivo de la runa puede hablar y comprender a los monstruos y animales durante una escena. Esto no le garantiza que dichas criaturas tengan algo útil o valioso que decir; siguen siendo animales o monstruos, después de todo, y quizás no les interese dialogar.</p><p>La runa de Coraje se suele asociar a menudo con la legitimidad de un soberano, noble o gobernante. La runa da nombre a los héroes que se convirtieron antaño en gobernantes de la tierra y los que tienen un noble corazón. La gente común la usa para asegurarse la verdad y la honestidad en los tratos de negocios.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 191",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

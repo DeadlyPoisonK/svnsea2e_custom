@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Parshand, Ángel de la Guerra",
+  "type": "sorcery",
+  "_id": "sbw5OWyDKil9KqaM",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Parshand, el Ángel de la Guerra, es el mejor soldado entre los ahura. Entrando en batalla con una espada en llamas elaborada por su hermano Salar, Parshand no conoce igual en su habilidad con las armas. Parshand es el único ahura que se ha involucrado en cada batalla de la Lucha Eterna, y se cuentan pocas historias de este ángel que no impliquen cierta cantidad de violencia.</p><p>A los usuarios de Khahesh-ahura empoderados por Parshand se les otorgan alas de rayo, que se arquean en la parte posterior de la hechicera, buscando conectarse a tierra en las superficies a su alrededor.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 177",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

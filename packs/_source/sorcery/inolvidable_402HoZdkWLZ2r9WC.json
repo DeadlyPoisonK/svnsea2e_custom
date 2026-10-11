@@ -1,0 +1,21 @@
+{
+  "folder": "fAgf1ip8yOiUWsc3",
+  "name": "Inolvidable",
+  "type": "sorcery",
+  "_id": "402HoZdkWLZ2r9WC",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>En la luz suceden cosas que Mareaux nunca olvidar&aacute;.<br>Mientras Mareaux lo posea, el s&egrave;vit&egrave; puede gastar 1 punto<br>de h&eacute;roe para fijar algo en la memoria y no olvidarlo nunca<br>jam&aacute;s. Esto le da al s&egrave;vit&egrave; un recuerdo perfecto, incluso si<br>una hechicer&iacute;a o trauma eliminaran el recuerdo.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

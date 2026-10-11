@@ -1,0 +1,22 @@
+{
+  "folder": "N2qsFS6XbvuICS1X",
+  "name": "Héroe de leyenda",
+  "type": "sorcery",
+  "_id": "btzXKWDmbHOpMVsJ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Consigue 5 Leyendas. Obtén una de las siguientes ventajas a tu elección: Voluntad indómita, Reputación o Espíritu Valiente.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 201",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

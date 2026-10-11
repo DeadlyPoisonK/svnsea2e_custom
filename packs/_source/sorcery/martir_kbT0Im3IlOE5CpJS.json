@@ -1,0 +1,21 @@
+{
+  "folder": "f1ztwTMcX7isHIH6",
+  "name": "Mártir",
+  "type": "sorcery",
+  "_id": "kbT0Im3IlOE5CpJS",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Siempre se deben hacer sacrificios, y con la prerrogativa de un héroe, debes asegurarte de que eres tú quien lo haga. Tu arma siempre parece caer en manos de aquellos que lo entienden, y te pones en peligro para lograr grandes cosas. Una vez por sesión, puedes causarte una sola Herida Dramática para ganar puntos de héroe iguales a tus niveles en Armas.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 199",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

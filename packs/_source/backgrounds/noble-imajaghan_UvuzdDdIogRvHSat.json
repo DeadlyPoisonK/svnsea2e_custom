@@ -1,0 +1,32 @@
+{
+  "folder": "yeVte1kxkn01Z33J",
+  "name": "Noble Imajaghan",
+  "type": "background",
+  "_id": "UvuzdDdIogRvHSat",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Como noble terrateniente de Magreb, es tu responsabilidad cuidar y proteger a los que están a tu cargo.</p>",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando te metas en problemas por enfrentarte a la multitud, defender a un individuo o un grupo pequeño contra una muchedumbre o hablar en contra de quienes son «superiores» a ti.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "intimidate",
+      "scholarship",
+      "warfare"
+    ],
+    "advantages": [
+      "Liderazgo",
+      "Me opongo a ti"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 175",
+    "nation": "maghreb"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

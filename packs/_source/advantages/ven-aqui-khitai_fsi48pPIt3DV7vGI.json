@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Ven aquí (Khitai)",
+  "type": "advantage",
+  "_id": "fsi48pPIt3DV7vGI",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para atraer a otro personaje a una habitación privada y más tarde salir de dicha habitación sin él, eliminándolo de la escena. Podrán rescatarlo mucho después de que te hayas marchado.</p>",
+    "infosource": "Khitai, p. 114 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

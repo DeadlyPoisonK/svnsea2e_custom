@@ -1,0 +1,22 @@
+{
+  "folder": "s58HmWKf7mntMtzg",
+  "name": "Sanderis: tratos",
+  "type": "sorcery",
+  "_id": "OJBDvu6FMdyh9e6z",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cada vez que un héroe adquiere la Hechicería Sanderis, su dievas consigue un Trato, y por cada Trato el losejas puede elegir dos Favores menores, que puede invocar siempre gastando 1 punto de héroe y solicitando su efecto a su dievas (si un losejas desea invocar un Favor durante una secuencia de acción, le cuesta además 1 Aumento). Estos Favores se incluyen en el trueque que</p>",
+    "infosource": "7º Mar (básico), p. 223",
+    "sorctype": "sanderis",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

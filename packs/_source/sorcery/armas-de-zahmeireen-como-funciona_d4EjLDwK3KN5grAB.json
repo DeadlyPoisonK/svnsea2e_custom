@@ -1,0 +1,22 @@
+{
+  "folder": "muzyLY336YqYFOYV",
+  "name": "Armas de zahmeireen: cómo funciona",
+  "type": "sorcery",
+  "_id": "d4EjLDwK3KN5grAB",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cuando compras la ventaja Zahmeireen, obtienes un arma forjada del misterioso metal de Mbey. Selecciona un Origen para describir cómo obtuviste tu espada y dos Facetas a las que puedes recurrir al usar tu arma. El Origen de tu arma de zahmeireen no se puede cambiar; sin embargo, puedes cambiar una o ambas de sus facetas completando una historia de tres pasos.</p><p>Además, tu arma de zahmeireen puede obtener más bonificaciones al completar Leyendas. Tu héroe no comienza con ninguna Leyenda. Las Leyendas se ganan durante el curso de juego, y un héroe puede tener cualquier número de leyendas siempre y cuando todas estén terminadas. Algunos Orígenes, Facetas y Leyendas otorgan dados de bonificación bajo ciertas circunstancias. Estas circunstancias, que son deliberadamente vagas, son objeto de debate: la DJ toma la decisión final sobre si el Origen, la Faceta o la Leyenda de un arma zahmeireen aplica o no a un caso determinado, pero debería ser generosa.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 198",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

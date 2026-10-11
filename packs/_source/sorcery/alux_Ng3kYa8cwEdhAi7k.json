@@ -1,0 +1,21 @@
+{
+  "folder": "uETcMjSzbDU1pecb",
+  "name": "Alux",
+  "type": "sorcery",
+  "_id": "Ng3kYa8cwEdhAi7k",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Los Alux, espíritus de la naturaleza generalmente benévolos, aparecen como tzak k'anos que llegan hasta la rodilla. Están más que felices de hacer recados y realizar tareas simples para un Ahez siempre que sean tratados con respeto. Se considera de mala educación llamarlos Alux o darles órdenes. En cambio, los Ahez deberían tratar a los espíritus como amigos y preguntar en lugar de mandar.</p><p>Siempre que un Alux esté siguiendo a un héroe, este puede gastar 1 punto de héroe para asignarle una tarea simple al Alux. No son capaces de (o tal vez simplemente no están dispuestos) cumplir tareas complejas u órdenes elaboradas. Después de emitir la orden, el Alux se irá rápidamente y regresará solo cuando complete la tarea. Sin embargo, mientras el Alux esté cerca, debe ser tratado con la máxima cortesía y educación. Un Alux irritado comenzará a recibir órdenes, a menudo en secreto, de los enemigos del héroe.</p>",
+    "infosource": "El Nuevo Mundo, p. 174",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "pixan"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

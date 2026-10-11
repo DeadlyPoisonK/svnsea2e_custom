@@ -1,0 +1,21 @@
+{
+  "folder": "9uzBkZY6TGPQw0sf",
+  "name": "Constructo sencillo",
+  "type": "sorcery",
+  "_id": "r2l7mvzOb5y97lfz",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este dispositivo imita el movimiento y comportamiento de una criatura pequeña. El constructo puede llevar a cabo cualquiera de las siguientes órdenes: atacar, transportar, defender, traer, seguir, proteger, ir y buscar.</p><p>Si el constructo realiza una acción que requiera un Riesgo, tira 4 dados. Si el constructo sufre 4 Heridas, queda dañado y es necesario repararlo para que pueda funcionar de nuevo. Preparar este dispositivo necesita 2 Requisitos.</p><p>Aunque los procesos alquímicos llamados Juvenilia son muy poderosos, la mayor parte de los boticarios los consideran meros desvíos del verdadero objetivo del Gran Arte. En este sentido, todos estos efectos palidecen cuando se los compara con los Magna Opera (<em>Magnum Opus</em> en singular), los «Grandes Trabajos» que todos los practicantes de la Alquimia aspiran a dominar.</p><p>Completar un Magnum Opus requiere una historia de cinco pasos, tal y como se describe en las páginas 159 a 163 del <strong>Libro básico.</strong> En este caso, la recompensa dependerá de la visión particular que tu héroe tenga sobre el objetivo definitivo de la Alquimia. Puede ser cualquier efecto, pero en general, este reemplazará a los que se puedan crear con Juvenilia. Algunos ejemplos pueden ser la creación de un reactivo alquímico único que encarne (o viole) las leyes de la Naturaleza y te permita usar los efectos de un Juvenilia sin gastar Aumentos; la destilación de una mezcla alquímica que no esté sujeta a las reglas de transporte normales de los Juvenilia; la creación de un objeto alquímico permanente que no requiera ningún tipo de mantenimiento; o el descubrimiento de un nuevo elemento primordial que conduzca a la creación de un sexto Juvenilia.</p><p>A continuación tienes algunos ejemplos de Magna Opera procedentes de las leyendas que se cuentan entre los boticarios.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 97",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

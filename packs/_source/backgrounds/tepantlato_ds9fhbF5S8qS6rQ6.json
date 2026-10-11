@@ -1,0 +1,31 @@
+{
+  "folder": "oGKITcJ7tfpTOqvu",
+  "name": "Tepantlato",
+  "type": "background",
+  "_id": "ds9fhbF5S8qS6rQ6",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tienes el deber de defender a los acusados a través de tu dominio de las leyes.</p>",
+    "infosource": "El Nuevo Mundo, p. 163",
+    "quirk": "<p>Ganas 1 punto de héroe cuando convenzas a tus aliados de que resuelvan un problema con diplomacia y palabras, en lugar de con violencia y espadas.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "hide",
+      "perform",
+      "scholarship"
+    ],
+    "advantages": [
+      "Levantaos, hermanos y hermanas",
+      "Un inocente malentendido"
+    ],
+    "nation": "nahuaca",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Guardia",
+  "type": "monsterquality",
+  "_id": "oPttYRpyf2p0vryi",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Algunas criaturas están ligadas a un lugar, objeto o incluso a una persona específica. La forma de su vinculación varía, pero la característica común es que un monstruo guardián tiene que defender el objeto en cuestión por todos los medios necesarios. Cuidado aquellos que se atrevan a poner en peligro al objeto. Si este monstruo es un villano, tira 5 dados adicionales en cualquier Riesgo que asuma mientras realiza su función de Guardia. Si se trata de una banda de monstruos, inflige el doble de Heridas mientras realiza su función de Guardia.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 58",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

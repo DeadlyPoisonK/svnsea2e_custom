@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "La tormenta me sirve (Khitai)",
+  "type": "advantage",
+  "_id": "IPL0v8INSQJ0yteJ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe tiene un don para aprovechar su entorno, siempre capaz de utilizarlo para lograr sus propios objetivos. Gasta un punto de héroe. Durante una ronda, una Amenaza en la escena obtiene el elemento Dominio, contigo como su amo. Si la Amenaza ya tenía este elemento, te conviertes en el amo de la Amenaza y el amo anterior pierde el beneficio durante una ronda. Mientras seas el amo de una Amenaza de este modo, puedes gastar un Aumento en respuesta a que la Amenaza realice una acción. Si lo haces, el intento de acción de la Amenaza falla, aunque de todos modos pierde cualquier Aumento que acabara de gastar. Un héroe solo puede activar esta ventaja una vez por escena.</p>",
+    "infosource": "Khitai, p. 123 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

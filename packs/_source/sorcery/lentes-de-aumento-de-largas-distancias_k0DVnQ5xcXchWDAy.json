@@ -1,0 +1,21 @@
+{
+  "folder": "9uzBkZY6TGPQw0sf",
+  "name": "Lentes de aumento de largas distancias",
+  "type": "sorcery",
+  "_id": "k0DVnQ5xcXchWDAy",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este dispositivo permite al que lo lleve percibir detalles e irregularidades que de otra forma se le pasarían por alto. Siempre que tengas una línea de visión clara, puedes ver perfectamente hasta una distancia de aproximadamente un kilómetro y medio. También obtienes un dado adicional si utilizas este dispositivo al realizar un Riesgo que dependa principalmente de tu visión</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 97",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

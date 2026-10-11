@@ -1,0 +1,21 @@
+{
+  "folder": "pVGrpMjo5Filx8Qq",
+  "name": "Polvo anestésico",
+  "type": "sorcery",
+  "_id": "9mcprcFqC3xWuqbt",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Puedes preparar un compuesto que vuelve inmune al objetivo a todo tipo de dolor físico. Hasta el final de la escena, el personaje puede gastar un punto de héroe para ignorar todos los efectos negativos de las Heridas Dramáticas (el villano no consigue dados adicionales si tienes 2 Heridas Dramáticas y no quedas Indefenso cuando tengas 4 Heridas Dramáticas). Preparar este compuesto necesita 1 Requisito.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 95",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Nazanin",
+  "type": "sorcery",
+  "_id": "B0X5pKF3SMgLorYT",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado y selecciona otro personaje. Hasta el final de la escena, ese personaje no puede moverse de su posición actual a menos que se encuentre en peligro mortal inmediato (como si su entorno se incendiara) o que sea movido físicamente por alguna otra fuerza (como otro personaje levantándolo y cargándolo).</p>",
+    "infosource": "El Imperio de la Media Luna, p. 179",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

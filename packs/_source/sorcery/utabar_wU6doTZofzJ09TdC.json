@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Utabar",
+  "type": "sorcery",
+  "_id": "wU6doTZofzJ09TdC",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado para preguntarle al DJ sobre un curso de acción específico que planeas tomar en la próxima hora. El DJ debe informarte si el resultado será bueno, malo, bueno y malo, o neutral. Esta capacidad no tiene en cuenta ninguna circunstancia potencial que pueda cambiar el resultado del curso de acción previsto.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 180",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

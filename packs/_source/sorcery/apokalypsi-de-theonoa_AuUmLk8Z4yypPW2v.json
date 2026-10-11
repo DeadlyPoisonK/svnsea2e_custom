@@ -1,0 +1,21 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Apokálypsi de Theonoa",
+  "type": "sorcery",
+  "_id": "AuUmLk8Z4yypPW2v",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Puedes activar este apokálypsi cuando uses Conocimiento, Empatía o Tácticas de Guerra como Enfoque durante una secuencia dramática y conseguir tantos Aumentos como tu nivel en esa habilidad. Un mystai solo puede activar este apokálypsi una vez por episodio.</p><p>El mystírio de este querido dios es de mera clemencia y entrega. Sin embargo, el apokálypsi cuenta la historia completa: cada dolor que Caledon cura, cada hogar al que le da su protección y cada unión que bendice se llevan algo de él. No puede seguir haciéndolo por siempre.</p>",
+    "infosource": "Naciones Piratas, p. 168",
+    "sorctype": "mystirios",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Mystírio de Caledon",
+  "type": "sorcery",
+  "_id": "M36BWqYvOklLesBf",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p><em>Caledon, dios de la medicina, del hogar y la familia.</em></p><p>El mystírio de este querido dios es de mera clemencia y entrega. Sin embargo, el apokálypsi cuenta la historia completa: cada dolor que Caledon cura, cada hogar al que le da su protección y cada unión que bendice se llevan algo de él. No puede seguir haciéndolo por siempre.</p><p>Todos los héroes que estén en una escena contigo y que se encuentren bajo Presión (incluido tú mismo) pueden recibir, de cualquier otro héroe de la escena, el Aumento adicional que se requiere para realizar una acción.</p><p>Activa este apokálypsi para permitirles al resto de héroes en la escena que se curen todas las Heridas que tengan en el tramo actual de la Espiral de la Muerte y 1 Herida Dramática, pero tú recibes 1 Herida Dramática. Un mystai solo puede activar este apokálypsi una vez por episodio.</p><p>Todos los héroes que estén en una escena contigo y que se encuentren bajo Presión (incluido tú mismo) pueden recibir, de cualquier otro héroe de la escena, el Aumento adicional que se requiere para realizar una acción.</p>",
+    "infosource": "Naciones Piratas, p. 168",
+    "sorctype": "mystirios",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

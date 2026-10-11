@@ -1,0 +1,22 @@
+{
+  "folder": "u4dyc8vAl5yaaJP8",
+  "name": "Sangre Stort Merke",
+  "type": "sorcery",
+  "_id": "uCNHOhJMVl7SwNxR",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Gasta los puntos de héroe que quieras para dárselos a cualquier otro personaje en la misma escena.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 193",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,33 @@
+{
+  "folder": "iQwE9i6UuITLrQEf",
+  "name": "Capitano",
+  "type": "background",
+  "_id": "VhjBz3YgIAPqyEQy",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Subido en un barco, con el viento a tu espalda y una tripulación cantando salomas, no hay nada que no puedas hacer.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 208",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando tomes un rumbo de acción peligroso porque tus bravatas y tu ego te impiden apartarte de él.</p>",
+    "skills": [
+      "aim",
+      "convince",
+      "empathy",
+      "intimidate",
+      "sailing"
+    ],
+    "advantages": [
+      "Casado con el mar",
+      "¡Oh, capitán! ¡Mi capitán!",
+      "Uno con el barco"
+    ],
+    "nation": "vodacce",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

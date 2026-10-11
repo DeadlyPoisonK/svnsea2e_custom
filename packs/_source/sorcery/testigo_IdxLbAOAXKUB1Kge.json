@@ -1,0 +1,21 @@
+{
+  "folder": "COvFX4cO6Vx1BswB",
+  "name": "Testigo",
+  "type": "sorcery",
+  "_id": "IdxLbAOAXKUB1Kge",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Cuando actives esta Manifestación, toca a una criatura muerta, una criatura no muerta u otro personaje que posea Wañuy Ñaqay. Durante el resto de la escena, puedes ver y oír como si fueras esa criatura. Si usas esta Manifestación en un cadáver, también puedes ver y escuchar normalmente (aunque, obviamente, el cadáver no puede).</p><p>Este efecto dura hasta el final de la escena o hasta que eliges terminarlo, pero acaba inmediatamente si tú o la criatura utilizada quedáis Indefensos o si el cadáver que usas es destruido (por ejemplo, si lo queman, desfiguran o desmiembran).</p><p>La víctima de tu Testigo no es consciente de la magia que la influencia y no hay efecto visual sobre ella. Durante el tiempo que dura Testigo, tus ojos brillan con una luz fantasmal, brillante y antinatural en tonos de verde o violeta.</p>",
+    "infosource": "El Nuevo Mundo, p. 179",
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "manifestation",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

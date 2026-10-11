@@ -1,0 +1,21 @@
+{
+  "folder": "FAUpm3Eb4Xb9dJKz",
+  "name": "Daath",
+  "type": "sorcery",
+  "_id": "b1ITfm4LWyrtbtak",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Daath es la promesa de una mente clara. Todos tienen más conocimientos y recuerdos alojados en su cabeza de los que pueden acceder y usar de manera confiable. Esta claridad organiza todo el pensamiento, controlando todos tus recursos mentales.</p><p><strong>Amuleto: </strong>Cuando activas un Amuleto Daath, tu mente se despeja y los pensamientos se desenredan. Haz tres preguntas de sí o no al DJ. Estas preguntas deben referirse al conocimiento que tu personaje tiene o podría discutirse que debería tener. Esto no es una forma de adivinación. Debes hacer las tres preguntas a la vez.</p><p><strong>Escritura: </strong>Cuando activas una Escritura Daath, tu mente se agudiza y te das cuenta de toda la información que has absorbido sin saberlo. Haz tantas preguntas al DJ sobre la escena actual como niveles tengas en Percepción. Puedes guardar una pregunta para hacerla más adelante en la escena.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 174",
+    "sorctype": "chozeh",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

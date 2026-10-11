@@ -1,0 +1,22 @@
+{
+  "folder": "Blvpl18m1qGPsjC8",
+  "name": "El laboratorium",
+  "type": "sorcery",
+  "_id": "CFAOT11mU2znBfqI",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Todos los experimentos de la Alquimia (que suelen ser peligrosos) deben llevarse a cabo en un lugar seguro y controlado. Debido a ello, un boticario posee un laboratorium, un lugar subterráneo bien iluminado y ventilado donde puede realizar sus investigaciones lejos de miradas indiscretas. Estos lugares suelen contar con equipo caro y modificado, metales raros y otras sustancias químicas, además de tomos voluminosos, escritos a mano y casi siempre codificados, en los que los boticarios anotan sus investigaciones y resultados.</p><p>Para los no iniciados, un laboratorium puede parecer un lugar desorganizado y descuidado. Naturalmente, esta disposición sin sentido y aparentemente caótica tiene un propósito. Es otra capa más de misterio que usa el boticario, no solo para proteger su trabajo, sino para asegurarse que los legos en la materia no puedan percibir los misterios de su ciencia sagrada.</p><p>Los frutos de cientos de años de estudio y experimentación son las <em>Opera,</em> las «Obras» que distinguen a la Alquimia como el mayor logro de la investigación científica. Son los misterios más celosamente guardados de la Orden, el grupo de boticarios que supervisa la iniciación y el entrenamiento de los nuevos aprendices. Los no iniciados no pueden duplicar estos misterios excepto en circunstancias muy especiales. Pero ¿cuáles son estos misterios?</p><p>Depende de cada boticario.</p><p>La Alquimia es, por encima de todo, un empeño personal. Aunque un boticario pertenezca a una Orden y siga una filosofía y un método concretos, sus hallazgos son profundamente individuales. Un boticario puede estar obsesionado con el secreto de la inmortalidad, mientras que otro puede buscar la combinación que le permita convertir el plomo en oro.</p><p>El resultado de esta ciencia tan idiosincrática es que solo se puede hablar de las Opera en términos generales: están los Juvenilia (trabajos menores) y los Magna Opera (trabajos mayores).</p><p>Los Juvenilia, o «trabajos menores», suelen ser efectos temporales que solo duran unos momentos (por lo general, una ronda o escena). Cada efecto requiere que el usuario gaste un Aumento para activarlo durante la secuencia de acción o dramática.</p><p>Crear un objeto alquímico requiere el gasto de un punto de héroe y el uso de un laboratorium. Ciertos efectos pueden tener uno o más requisitos, a discreción del director de juego. Un boticario puede tratar de crear el efecto de un Juvenilia que no conozca, pero para hacerlo se necesita un requisito adicional para poder prepararlo correctamente. La mayor parte de los requisitos se pueden conseguir con un Riesgo o un paso de una historia.</p><p>A continuación tienes una lista de requisitos habituales. A menos que se indique expresamente, cada requisito solo se puede solicitar una vez para una preparación en concreto.</p><ul><li>Un componente raro o difícil de conseguir. <em>Se puede escoger más de una vez.</em></li><li>La asistencia de un ayudante que debes contratar. <em>Se puede escoger más de una vez.</em></li><li>Una gran cantidad de materias primas (de hecho, te cuestan 1 punto de Riqueza).</li><li>Ponerte en peligro tú y tu(s) ayudante(s).</li><li>La guía de un mentor.</li><li>Adquirir un tratado alquímico específico sobre la materia.</li><li>Varios intentos fallidos antes de que funcione (lo que, de hecho, aumenta en un nivel el tiempo necesario para realizar el compuesto: minutos > horas > días > semanas). <em>Se puede escoger más de una vez.</em></li><li>Un proceso que crea un compuesto inestable (lo que requiere un Aumento adicional para que funcione como es debido).</li></ul><p>Un boticario puede almacenar dos objetos alquímicos en su laboratorio y llevar uno entre sus pertenencias cada vez que adquiera la ventaja de Hechicería. Si un boticario transporta más de los que puede, el DJ puede gastar 1 punto de peligro para crear un inconveniente adecuado, como que los compuestos alquímicos exploten o que se activen en el momento más inoportuno.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 94",
+    "sorctype": "alquimia",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

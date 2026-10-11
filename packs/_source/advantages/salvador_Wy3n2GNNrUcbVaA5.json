@@ -1,0 +1,23 @@
+{
+  "folder": "vcoxSAwP9VR8RQf9",
+  "name": "Salvador",
+  "type": "advantage",
+  "_id": "Wy3n2GNNrUcbVaA5",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>No basta con detener a un villano: tienes que cambiarlo. La mejor arma contra la maldad es tomar a un agente del mal y convertirlo en una fuerza del bien. Cuando realices un Riesgo con el objetivo directo de redimir a un villano y llevarlo por el camino del heroísmo, puedes gastar 1 punto de héroe en lugar de un Aumento para cualquier acción. Si una acción requiriese varios Aumentos (por improvisar, no tener la habilidad, estar bajo Presión, etcétera), solo necesitas gastar 1 punto de héroe para realizarla.</p><p>Como no gastas Aumentos en estas acciones, sigue siendo tu turno: mientras te queden puntos de héroe, puedes realizar una acción tras otra siempre que todas estén directamente relacionadas con la redención de un villano.</p>",
+    "infosource": "Heroes & Villains, p. 205 (traducción no oficial)",
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

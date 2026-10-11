@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Jugando con el peligro (Khitai)",
+  "type": "advantage",
+  "_id": "0NrOCSwsPoQnm9hc",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Activa esta ventaja cuando realices un Riesgo de Tentar. El DJ debe comprar todos tus dados no utilizados. Un héroe solo puede activar esta ventaja una vez por sesión de juego.</p>",
+    "infosource": "Khitai, p. 120 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

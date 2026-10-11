@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Profecía",
+  "type": "sorcery",
+  "_id": "ESlrR2dl0Lp1XZ6O",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Cometes el pecado de atisbar el futuro. Hazle al DJ tantas preguntas de sí o no como tu Plaga actual. Estas preguntas deben estar relacionadas con el futuro (como los objetivos de un villano); este poder no puede proporcionar información sobre el presente ni sobre el pasado.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 202 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

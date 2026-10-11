@@ -1,0 +1,18 @@
+{
+  "folder": "OFzjAcydrY68u0XJ",
+  "name": "Kulachniy Boi",
+  "type": "duelstyle",
+  "_id": "wrTEkbtzBHrRXoyf",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>La técnica de lucha con las manos desnudas más extendidas por Ussura es la del kulachniy boi («boxeo con puños»), que se centra en dar puñetazos. Los luchadores del kulachniy boi practican sus artes con propósitos prácticos y ceremoniosos. Durante las festividades ussuras, los luchadores luchan por deporte, pues no tienen intención de provocar daños permanentes al contrario. Al fin y al cabo, todo el mundo tiene derecho a divertirse.</p><p>Pero todo cambia cuando un luchador del kulachniy boi sale al mundo, donde sus conocimientos pueden significar la diferencia entre la vida y la muerte. Se conocen como rukavitsa a unos guantes especialmente fabricados con brazales de metal que proporcionan al luchador del kulachniy boi la capacidad de infligir aún más daño, sin que parezca que va armado.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 152",
+    "bonus": "<p><strong>Hierro y terciopelo.</strong></p><p>Cuando lleva unos rukavitsa bajo las mangas, un luchador de kulachniy boi puede utilizar sus niveles en Pelear en lugar de en Armas para llevar a cabo maniobras de espadachín. Mientras lleve los rukavitsa, el luchador obtiene un Aumento gratuito para mantener oculta su arma.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

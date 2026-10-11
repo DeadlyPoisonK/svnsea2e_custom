@@ -1,0 +1,21 @@
+{
+  "folder": "oW9cn4Z4Q7clboIP",
+  "name": "Curación",
+  "type": "sorcery",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El símbolo de la Vida se utiliza para la magia de curación y purificación, y a menudo es inscrito en el agua junto a medios más permanentes. Los Talismanes suelen ser pequeñas botellas de agua purificada con un pictograma pintado.</p><p><em>Talismán: </em>La activación de un Talismán de Curación hace que el ka interior restaure vida al portador. Puede eliminar dos Heridas.</p><p><em>Inscripción: </em>Una Inscripción de Curación hecha en una estructura o sitio contaminado elimina todos los venenos e impurezas del área, igual a tres metros cuadrados por número de veces que el practicante de Heka ha elegido la ventaja Hechicería.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 187",
+    "sorctype": "heka",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "FznvhDNwg2lOIcfD",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

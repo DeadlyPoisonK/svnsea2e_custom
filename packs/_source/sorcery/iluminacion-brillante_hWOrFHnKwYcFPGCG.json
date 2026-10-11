@@ -1,0 +1,21 @@
+{
+  "folder": "KpycPQTwWNzMCwcL",
+  "name": "Iluminación brillante",
+  "type": "sorcery",
+  "_id": "hWOrFHnKwYcFPGCG",
+  "img": "icons/magic/light/beam-strike-village-yellow.webp",
+  "system": {
+    "description": "<p>Este turru lleva tu conciencia al plano de más allá, dándote la oportunidad de obtener una mayor comprensión de tu lugar en el mundo. Habla con el DJ sobre lo que quieres saber, lo que quieres hacer y cómo tus acciones pueden afectar tu futuro y el mundo en general. Esta discusión debería brindarte una comprensión de tus acciones y de tus posibles opciones para los próximos pasos y planes futuros.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 185",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "advanced"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

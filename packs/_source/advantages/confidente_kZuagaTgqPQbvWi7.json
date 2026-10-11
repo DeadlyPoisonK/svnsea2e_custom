@@ -1,0 +1,24 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Confidente",
+  "type": "advantage",
+  "_id": "kZuagaTgqPQbvWi7",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>Debes tener la ventaja «Compañero de confianza».</strong></p><p>Elige un trasfondo básico para tu compañero. Siempre que realice un Riesgo usando una habilidad de ese trasfondo, tira 2 dados adicionales. Él obtiene las ventajas del trasfondo, y tú debes pagar cualquier efecto que requiera el gasto de un punto de héroe. Tu compañero puede recibir 10 Heridas antes de quedar Indefenso, aunque aun así necesitará que lo rescates.</p>",
+    "infosource": "El Nuevo Mundo, p. 165",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

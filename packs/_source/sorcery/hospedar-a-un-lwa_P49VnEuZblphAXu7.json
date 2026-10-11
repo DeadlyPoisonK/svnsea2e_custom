@@ -1,0 +1,22 @@
+{
+  "folder": "F9YCVhFxgTHwmxhb",
+  "name": "Hospedar a un lwa",
+  "type": "sorcery",
+  "_id": "P49VnEuZblphAXu7",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Una vez se invita a un lwa, este permanece dentro del cuerpo del sèvitè hasta el amanecer del siguiente día. No existen formas conocidas de expulsar a un lwa invitado y no hay noticias de un lwa que saliera de un huésped antes de tiempo. Una vez se hace el pacto, el sèvitè debe hacer de huésped del lwa hasta el siguiente amanecer, con el alma apartada para dejar espacio al lwa.</p><p>A los lwa no les gusta compartir un huésped. De hecho, un sèvitè solo puede estar conducido por un único lwa cada vez. El lwa conductor bloqueará cualquier intento de convocar un segundo lwa y luego le negará al sèvitè acceder a su Grand Met. Esto no solo despoja al sèvitè de cualquier poder que le concediera el lwa, sino que también lo deja sin Virtud y sin peculiaridades hasta el amanecer. Sin embargo, es interesante saber que un lwa puede poseer a varios sèvitès al mismo tiempo. Algunos especulan que se debe a que el lwa no habita del todo en un sèvitè. Solo una parte del lwa llega al interior de un sèvitè, lo cual le deja muchísimo poder para pasar el día en otras almas.</p><p>La siguiente sección solo recoge unos pocos de los cientos de lwa que se veneran. Estos cinco son de lejos los más populares y destacados en Jaragua, pero no debe considerarse como una lista cerrada y completa.</p>",
+    "infosource": "Naciones Piratas, p. 160",
+    "sorctype": "kapsevi",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

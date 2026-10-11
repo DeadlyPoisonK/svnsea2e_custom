@@ -1,0 +1,22 @@
+{
+  "folder": "wmUeO7cH0sKrVnf8",
+  "name": "Trepar",
+  "type": "sorcery",
+  "_id": "z88BQIoNOKsZGWSC",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Ya sea mediante garras o extremidades adhesivas, eres capaz de desplazarte por superficies que a otros les resultarían imposibles. Hasta el final de la ronda, puedes tratar cualquier superficie física (incluidos muros y techos) como si fuera terreno llano a efectos de movimiento. Luego, genera 2 de Discordia.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 207 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Utabar, Ángel de la Sabiduría",
+  "type": "sorcery",
+  "_id": "Me1aZHXW5odAW1PV",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Utabar, el Ángel de la Sabiduría, es el más tranquilo de los ahura. Mientras muchos de sus hermanos y hermanas se lanzan a entrar en acción ante la menor provocación, Utabar se queda atrás e intenta recopilar información sobre la situación. Sin embargo, esto no significa que sea un pacifista. Una vez que Utabar ha aprendido todo lo que puede, se apresura a desatar su furia si lo considera justificado.</p><p>A los usuarios de Khahesh-ahura empoderados por Utabar se les otorgan alas líquidas. Estas pueden tomar la forma de alas más clásicas hechas de agua, pero otras pueden arrojar pequeñas cascadas desde su espalda, cayendo al suelo.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 177",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

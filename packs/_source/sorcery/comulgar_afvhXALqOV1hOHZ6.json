@@ -1,0 +1,22 @@
+{
+  "folder": "FsybWQHPKvw1ZnzZ",
+  "name": "Comulgar",
+  "type": "sorcery",
+  "_id": "afvhXALqOV1hOHZ6",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Comunícate con una entidad sobrenatural aprovechando el poder de tu linaje. Genera 2 de Discordia. Obtienes la capacidad de conversar con monstruos hasta el final de la escena. Esto no significa que la criatura sea cooperativa, solo que podéis entenderos mutuamente.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 206 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

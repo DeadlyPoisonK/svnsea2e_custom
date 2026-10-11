@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Escurridizo",
+  "type": "monsterquality",
+  "_id": "DWovUTKn8BGJ9kNE",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Debido a la viscosidad o a una planificación astuta, este monstruo puede gastar 1 punto de peligro en cualquier momento para escapar de una escena. Esta capacidad se puede usar una vez por episodio.</p><p><strong>NACIONES PIRATAS</strong> 193</p>",
+    "infosource": "Naciones Piratas, p. 193",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

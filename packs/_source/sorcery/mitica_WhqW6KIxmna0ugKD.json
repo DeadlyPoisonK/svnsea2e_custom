@@ -1,0 +1,22 @@
+{
+  "folder": "zZYgf0jaGTPfG7RT",
+  "name": "Mítica",
+  "type": "sorcery",
+  "_id": "WhqW6KIxmna0ugKD",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Glamour después de un Riesgo en el que hayas usado tu característica mayor. Puedes volver a tirar tantos dados como tu nivel en este Glamour. Puedes elegir con qué valor te quedas entre la tirada anterior y la nueva.</p>",
+    "infosource": "7º Mar (básico), p. 214",
+    "used": false,
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "glamour",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "U2PSSPaknua4R4bA",
+  "name": "Usar una marca",
+  "type": "sorcery",
+  "_id": "wwi4eqzVmn7aOcF8",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Un sorcier puede, concentrándose durante un momento, saber la dirección general y la distancia hacia cualquiera de sus marcas. Usar Porté durante una secuencia de acción requiere 1 Aumento. El sorcier elige una marca y luego el DJ le informa de la distancia aproximada y de la dirección general («esa marca está a unos 400 kilómetros, aproximadamente al norte»). Si un sorcier se acerca a aproximadamente 30 metros de cualquiera de sus marcas, lo sabe de manera inmediata, pero no puede señalar su localización de forma detallada.</p><p>Para Atraer o Caminar hacia una de las marcas, un sorcier debe derramar su propia sangre. Aunque crear una marca solo requiere una gota (y por ello no provoca un daño importante), abrir un portal es diferente. Es un asunto de sangre.</p><p>El sorcier prácticamente se abre las venas, lo que le provoca 1 Herida Dramática. Si esta Herida Dramática hace que el sorcier quede Indefenso, se queda Indefenso en cuanto complete su Hechicería. Si un sorcier desea abrir un portal durante una secuencia de acción, le cuesta un único Aumento, además de la Herida Dramática.</p><p>Un sorcier puede Atraer una marca menor hacia sí mismo, lo que le permite abrir un portal, alargar el brazo y coger el objeto marcado.</p><p>Un sorcier también puede Caminar hacia una marca mayor, lo que le permite abrir un portal, entrar y aparecer en otro similar que se encuentra a un metro y medio de su marca mayor. Si no hay espacio suficiente para el sorcier al otro lado, no puede caminar y debe elegir inmediatamente otra marca mayor hacia la que caminar (pero no necesita sufrir otra Herida Dramática) o quedarse perdido en el Lugar Entre Mundos.</p><p>Es posible que un sorcier traiga a otra gente consigo cuando camine a través de un portal. El sorcier debe gastar 1 punto de héroe por cada personaje que desee llevar consigo. Por supuesto, cuanto mayor sea el grupo que el sorcier desea llevar consigo al Lugar Entre Mundos, más atención atraerá.</p>",
+    "infosource": "7º Mar (básico), p. 221",
+    "sorctype": "porte",
+    "sorccat": "mark",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

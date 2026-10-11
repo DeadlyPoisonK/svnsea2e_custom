@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Sentido de la orientación (Khitai)",
+  "type": "advantage",
+  "_id": "v1QnHjM6HH4o7SZI",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Mientras tengas algún punto de referencia, nunca te pierdes. Eso no es lo mismo que saber con exactitud dónde estás: si caes inconsciente y despiertas en una mazmorra, no tienes por qué saber en qué ciudad te encuentras, pero si logras escapar de tu celda, nunca te desorientarás en los serpenteantes túneles que forman la mazmorra.</p>",
+    "infosource": "Khitai, p. 112 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

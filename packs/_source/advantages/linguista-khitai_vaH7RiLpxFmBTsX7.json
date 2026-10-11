@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Lingüista (Khitai)",
+  "type": "advantage",
+  "_id": "vaH7RiLpxFmBTsX7",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Hablas, lees y escribes todos los idiomas de Khitai. Incluso las lenguas muertas.</p>",
+    "infosource": "Khitai, p. 113 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

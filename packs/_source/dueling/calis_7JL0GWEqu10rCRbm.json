@@ -1,0 +1,19 @@
+{
+  "folder": "xRskIATgzioWdrTl",
+  "name": "Calis",
+  "type": "duelstyle",
+  "_id": "7JL0GWEqu10rCRbm",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>El Calis se originó en las islas Kiwa y careció de un método formal y unificado de entrenamiento o práctica hasta hace poco. El Calis es una recopilación de técnicas y maniobras inventadas por granjeros, pescadores y otra gente común de Kiwa para protegerse de amenazas tanto locales como extranjeras. Los humildes orígenes del estilo propiciaron una falta de especialización: en lugar de centrarse en una sola arma, el Calis enseñaba técnicas usando una variedad de objetos y herramientas comunes que resultaban fáciles de adquirir para un plebeyo de Kiwa.</p><p>A los practicantes de Calis se les enseña a luchar con hojas, cuchillos, varas y con las manos desnudas, pero son más reconocibles por el uso de pares de garrotes de madera sencillos llamados eskrima. Esta notoriedad ha llevado al enfoque reciente del estilo en el empuñamiento de eskrima, especialmente por parte de las recién formadas escuelas formales de Calis y sus maestros en busca de renombre.</p><p>Los espadachines de Fusō (siempre a la caza de técnicas nuevas y eficaces) han desarrollado un estilo de lucha basado en los movimientos y principios del Calis, usando un par de tonfas en lugar de las eskrima de Kiwa.</p>",
+    "infosource": "Khitai, p. 222 (traducción no oficial)",
+    "bonus": "<p><strong>Bonificación de escuela.</strong> Mientras empuñes un par de armas ligeras (más comúnmente cuchillos o eskrima), tu maniobra Contraataque es reemplazada por Contraataque de Calis. Contraataque de Calis previene un número de Heridas igual a tus rangos en Armas y el rasgo que usaste para tu Enfoque y causa un número de Heridas igual a tus rangos en Armas y Atletismo. Debes realizar Contraataque de Calis en respuesta a la maniobra que causó las Heridas que estás previniendo, y puedes hacerlo incluso si no es tu acción. Puedes realizar esta maniobra una vez por ronda, excepto como se indica a continuación. <strong>Bonificación de maestría.</strong> Las eskrima te resultan tan naturales como extensiones de tu propio cuerpo. Después de tirar los dados para un Riesgo usando Armas y cuando estés usando el estilo Calis, puedes realizar Contraataque de Calis un número de veces igual a los dados que hayan obtenido el número repetido más alto. Por ejemplo, si sacaste tres 7 (más que cualquier otro resultado en los dados) en tu Riesgo de Armas, puedes realizar Contraataque de Calis hasta 3 veces esta ronda.</p>",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

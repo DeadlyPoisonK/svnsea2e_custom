@@ -1,0 +1,17 @@
+{
+  "folder": "rxiPEUOSj58lttE0",
+  "name": "Muerto/Malaventurado",
+  "type": "hubris",
+  "_id": "gZhLe3Yj4MAk5AgC",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibes 1 punto de héroe cuando tu DJ gasta un punto de peligro y afecta a tu personaje.</p>",
+    "infosource": "El Gran Ciclo · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

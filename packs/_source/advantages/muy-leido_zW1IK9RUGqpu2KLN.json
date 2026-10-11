@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Muy leído",
+  "type": "advantage",
+  "_id": "zW1IK9RUGqpu2KLN",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Has pasado una cantidad inusual de tiempo entre libros, pergaminos, tablillas y otros registros de la historia (ficticios o no). Siempre sabes dónde encontrar información sobre un tema histórico en particular. Sabes qué textos consultar (incluso textos raros o únicos) y qué bibliotecas los tienen. Si no existe dicho texto (porque nunca se ha escrito), entonces conoces la ubicación de la siguiente mejor opción (como un experto de renombre en el tema).</p>",
+    "infosource": "El Imperio de la Media Luna, p. 159",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

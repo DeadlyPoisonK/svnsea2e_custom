@@ -1,0 +1,22 @@
+{
+  "folder": "FSvZPlEy3X5a8iK3",
+  "name": "Creación y activación de Talismanes e Inscripciones",
+  "type": "sorcery",
+  "_id": "sOCrVM0iqYG7qBbH",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Un Talismán es una pequeña estatua, ficha o colgante creado con materiales naturales e inscrito con un pictograma representativo. El Talismán se puede dar a otra persona para su beneficio y se desintegra después de su uso. Para crear una Inscripción, debes escribir o inscribir el pictograma representativo en un objeto o estructura. Una vez que se utiliza la Inscripción, el pictograma desaparece. No se pueden destruir los Talismanes o Inscripciones sin usar magia.</p><p>Como practicante de Heka, comienzas cada escena con un Talismán o Inscripción por cada instancia de la Ventaja de Hechicería que tengas. No es necesario determinar qué Talismanes o Inscripciones tienes preparados, esto solo permite que la Hechicería se active una vez por cada nivel de ventaja que tengas. Si te quedas sin Talismanes o Inscripciones en una escena determinada, puedes crear más. En tu turno, gasta 1 punto de héroe para crear un Talismán o Inscripción, o, para replicar el uso de ka, sufre una Herida Dramática. Puedes crear cualquier Talismán o Inscripción que conozcas, pero tú determinas cuál en el momento de la creación. Un Talismán o Inscripción pierde su poder después de un día de 24 horas, pero puede ser recreado o reinscrito. Para activar un Talismán o Inscripción, el practicante de Heka debe infundirlo con algo de su ka, limitando la cantidad de magia que puede realizar antes de agotarse o morir. Esto solo toma un momento de concentración, pero el hechicero puede notar la pérdida de energía, por pequeña que sea. Si estás fuera de una escena dramática o de acción, puedes activar un Talismán o Inscripción sin problemas. Si el efecto es duradero, continúa hasta que comience una escena. Dentro de secuencia dramática o de acción, activar un Talismán o Inscripción cuesta un Aumento o una Herida. Un Talismán tiene un efecto inmediato o a corto plazo. Las Inscripciones suelen ser más poderosas y, si su efecto es duradero, duran toda la escena.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 186",
+    "sorctype": "heka",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

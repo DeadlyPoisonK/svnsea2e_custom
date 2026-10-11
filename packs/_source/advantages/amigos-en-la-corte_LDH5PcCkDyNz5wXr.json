@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Amigos en la corte",
+  "type": "advantage",
+  "_id": "LDH5PcCkDyNz5wXr",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando estés en un baile, un banquete o un acto similar de la alta sociedad, gasta 1 punto de héroe para revelar que tienes un amigo cercano que también está presente.</p>",
+    "infosource": "7º Mar (básico), p. 149",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  }
+}

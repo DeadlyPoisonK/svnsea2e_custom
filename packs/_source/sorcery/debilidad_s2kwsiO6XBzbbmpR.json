@@ -1,0 +1,22 @@
+{
+  "folder": "piYhdrGNp0ZAVmW9",
+  "name": "Debilidad",
+  "type": "sorcery",
+  "_id": "s2kwsiO6XBzbbmpR",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un personaje que beba esta poción es más susceptible al daño. Hasta el final de la escena, cada vez que el bebedor sufra Heridas, aumenta el número de Heridas infligidas en una cantidad igual a la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 199 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

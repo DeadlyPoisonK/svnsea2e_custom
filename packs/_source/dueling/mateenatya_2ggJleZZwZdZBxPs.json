@@ -1,0 +1,19 @@
+{
+  "folder": "xRskIATgzioWdrTl",
+  "name": "Mateenatya",
+  "type": "duelstyle",
+  "_id": "2ggJleZZwZdZBxPs",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Conocida colectivamente como <em>rathinatya</em> (literalmente «danza del soldado»), la tradición marcial de Agnivarsa se remonta a la noche de los tiempos.</p><p>Muchos eruditos consideran que el rathinatya es el arte marcial más antiguo del mundo que ha sobrevivido, y todavía hoy lo practican en muy diversas formas y estilos desde la nobleza de Agnivarsa hasta los soldados insurrectos. Los críticos sostienen que el rathinatya carece de un estilo o metodología unificadora, y que las afirmaciones de que es el arte marcial más antiguo del mundo son engañosas debido a esto. Hay algo de fundamento en esta crítica: el rathinatya enseña lucha libre básica, esgrima, combate con lanza y tiro con arco. En generaciones recientes, sin embargo, han cobrado relevancia escuelas especializadas centradas en aspectos particulares del rathinatya.</p><p>El Mateenatya es un método de combate fundado por el héroe moderno de Agnivarsa, Mateen, que utiliza movimientos acrobáticos en combinación con un escudo y una espada curva de un solo filo. En el curso de las aventuras de Mateen, resultó gravemente herido y perdió un brazo. Esto lo sumió en una profunda depresión durante años, en la que se convirtió en un borracho y un holgazán, cayendo rápidamente en la pobreza. Cuando una joven espadachina encontró a Mateen y le pidió ser su alumna, Mateen vio una oportunidad de cambiar su suerte y aceptó, siempre que ella pagara por su sabiduría. Para su propia sorpresa, Mateen encontró una gran satisfacción en la labor de mentor. Recuperó el propósito, dejó de beber y comenzó a aceptar a más estudiantes, cuidando siempre de que fueran serios y estuvieran comprometidos a aprender de él a pesar de faltarle un miembro. Mateen ya no puede empuñar el escudo por el que es conocido su estilo, pero su destreza con la espada sigue siendo impecable y su juego de pies y habilidad acrobática no tienen parangón.</p>",
+    "infosource": "Khitai, p. 225 (traducción no oficial)",
+    "bonus": "<p><strong>Bonificación de escuela.</strong> Cuando empuñas un escudo y un arma de una mano (más típicamente una espada curva de estilo sable o un garrote tipo bastón), obtienes una maniobra especial llamada Salto de Mateen. Cuando realizas Salto de Mateen, puedes realizar de inmediato una acción de Atletismo como si acabaras de gastar un único Aumento. Esta acción puede ser cualquier cosa que normalmente pudieras lograr con una acción de Atletismo, como superar una Consecuencia, activar una Oportunidad o moverte a una Zona adyacente. Luego, inflige tantas Heridas como tus rangos en Atletismo.</p><p><strong>Bonificación de maestría.</strong> Tu maestría en Mateenatya es casi perfecta y has aprendido a controlar el impulso de tu cuerpo a la perfección durante un duelo. Cuando realizas Salto de Mateen, puedes optar por infligir las Heridas de la maniobra antes de tu acción gratuita de Atletismo, en lugar de después. Los maestros de Mateenatya son algunos de los hostigadores más hábiles del mundo, golpeando a su oponente y luego desvaneciéndose sin dar ocasión a su enemigo para contratacar.</p>",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "ccPqyXbxMB2UEXTa",
+  "name": "Limpiar",
+  "type": "sorcery",
+  "_id": "2ckQHrbFZKx0pWlD",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Sousson cree que a menudo la prevenci&oacute;n es la mejor<br>medicina. Mientras Sousson lo posea, el s&egrave;vit&egrave; puede<br>gastar 1 punto de h&eacute;roe para eliminar cualquier contaminante<br>de un objeto, un material o una sustancia. Puede<br>usarse en s&aacute;banas infectadas con la peste o en agua que<br>porte bacterias da&ntilde;inas.</p>",
+    "infosource": "Naciones Piratas, p. 165",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

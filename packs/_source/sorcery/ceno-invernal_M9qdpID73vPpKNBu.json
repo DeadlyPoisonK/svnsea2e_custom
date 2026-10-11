@@ -1,0 +1,22 @@
+{
+  "folder": "XxbatVafsy3T61pQ",
+  "name": "Ceño invernal",
+  "type": "sorcery",
+  "_id": "M9qdpID73vPpKNBu",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Agua bendita, un tallo de rosa con espinas y un par de gotas de sangre de hexe. El agua bendita se solidifica, formando una espada de hielo imposiblemente delgada y afilada. Cuando realices un ataque contra un monstruo no muerto usando esta espada puedes gastar Aumentos con normalidad para infligir Heridas, pero estas provocarán que el monstruo quede aturdido durante el resto de esa ronda, lo que significa que no puede realizar ninguna acción (pero todavía puede gastar Aumentos para defenderse, si es un villano). La hoja se hará añicos después de un único uso.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 209",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

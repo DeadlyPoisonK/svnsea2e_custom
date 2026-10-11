@@ -1,0 +1,21 @@
+{
+  "folder": "FxGE3VwgEoqXw1Op",
+  "name": "Lucidité",
+  "type": "sorcery",
+  "_id": "8olKXofJ028mZ7eP",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Los relatos cuentan que Papa Ahron, al ser el lwa m&aacute;s<br>viejo y sabio, sabe d&oacute;nde est&aacute;n sus hijos en todo momento.<br>Que cuando cierra los ojos, ve a trav&eacute;s de los de ellos.<br>Mientras Papa Ahron lo posea, el s&egrave;vit&egrave; puede gastar 1<br>punto de h&eacute;roe para crear una conexi&oacute;n con otra persona<br>pose&iacute;da por Papa Ahron. El s&egrave;vit&egrave; sabe m&aacute;s o menos hacia<br>d&oacute;nde se encuentra el otro pose&iacute;do, detecta su humor en<br>ese momento y puede ver a trav&eacute;s de sus ojos.</p>",
+    "infosource": "Naciones Piratas, p. 164",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

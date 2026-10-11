@@ -1,0 +1,22 @@
+{
+  "folder": "piYhdrGNp0ZAVmW9",
+  "name": "Fortuna",
+  "type": "sorcery",
+  "_id": "XB0scQhHMJhBN4jc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Llamado «suerte en una botella», este elixir proporciona una enorme ventaja al personaje que lo bebe. Un personaje que beba esta poción puede volver a tirar tantos dados en un Riesgo como la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 199 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

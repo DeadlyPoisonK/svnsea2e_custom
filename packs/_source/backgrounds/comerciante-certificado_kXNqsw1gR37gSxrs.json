@@ -1,0 +1,32 @@
+{
+  "folder": "nmlomi28Bss1o6oR",
+  "name": "Comerciante certificado",
+  "type": "background",
+  "_id": "kXNqsw1gR37gSxrs",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tienes licencia para promover el comercio entre Théah y el Nuevo Mundo, transportando productos exóticos a través del océano.</p>",
+    "infosource": "El Nuevo Mundo, p. 162",
+    "quirk": "<p>Ganas 1 punto de héroe cuando uses tus conexiones mercantiles para forjar vínculos más estrechos entre tu nación de origen y una potencia extranjera.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "sailing",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Casado con el mar",
+      "Cruzar la palma",
+      "Sentido de la orientación"
+    ],
+    "nation": "none",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

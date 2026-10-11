@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Apasionado",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para evitar que otro héroe sufra Heridas, pero tú sufrirás 1 Herida Dramática en su lugar.</p>",
+    "infosource": "Los amantes · 7º Mar (básico), p. 156"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "UbqM0SNl3UZstfNO",
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  }
+}

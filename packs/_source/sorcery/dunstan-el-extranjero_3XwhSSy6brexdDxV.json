@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Dunstan, el Extranjero",
+  "type": "sorcery",
+  "_id": "3XwhSSy6brexdDxV",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>A Dunstan lo suelen nombrar los caballeros de Inismore o de las Marcas Altas que pretenden demostrar que no todos los caballeros tienen que ser avaloneses. Dunstan provenía de «una tierra donde el sol nunca se pone y el suelo arde». Tenía una piel y un pelo oscuros que lo diferenciaban de los demás… aunque ninguno de los demás caballeros lo trató como a menos que un hermano. Característica mayor: Músculo Característica menor: Ingenio</p><h3>Naciones de Théah vol. 1, p. 49</h3><p><strong>Virtud:</strong> Amigable (El camino). <strong>Hibris:</strong> Manipulador (La bruja).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando te hagas amigo de alguien que ha sido desterrado o que los demás eviten o rechacen.</p><p><strong>Glamour legendario — Confusión feérica:</strong> Puedes activar este Glamour durante cualquier escena de acción o dramática para confundir a algunos oponentes. Cualquier villano que sea objeto de la Confusión durante esta ronda deberá gastar Aumentos adicionales como si cada acción que llevara a cabo fuera improvisada. Si tu Enfoque utiliza la habilidad de Pelear o Armas, la cantidad de oponentes afectados es igual a tu Músculo; para el resto de Enfoques, igual a tu Ingenio. Tienes que afectar a todos los objetivos posibles; si el número de oponentes no es suficiente tendrás que afectar a tus aliados o incluso a ti mismo.</p>",
+    "infosource": "7º Mar (básico), p. 212",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

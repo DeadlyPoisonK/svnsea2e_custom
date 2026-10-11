@@ -1,0 +1,22 @@
+{
+  "folder": "o690w5aSkrQJLvTs",
+  "name": "Visión",
+  "type": "sorcery",
+  "_id": "QwuJSDeFzghGknT5",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La Visión es un poder que todos los chamanes aprenden. Usar la Visión no requiere puntos de héroe y genera 2 de Furia o 2 de Tranquilidad (a elección del chamán). Para usar cualquier otro poder de chamán, este debe activar primero la Visión para ver el mundo espiritual que le rodea; este efecto dura hasta el final de la escena. Este poder puede usarse incluso si el chamán es ciego y le permite a un chamán totalmente ciego «ver» su entorno.</p>",
+    "infosource": "Khitai, p. 195 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "used": false
+  },
+  "effects": [],
+  "sort": 100098,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

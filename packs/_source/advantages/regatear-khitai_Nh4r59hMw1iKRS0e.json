@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Regatear (Khitai)",
+  "type": "advantage",
+  "_id": "Nh4r59hMw1iKRS0e",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para convencer a alguien de que te haga un buen trato, te conceda un descuento razonable o asegurarle a alguien que te conozca que «eres de fiar».</p>",
+    "infosource": "Khitai, p. 114 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

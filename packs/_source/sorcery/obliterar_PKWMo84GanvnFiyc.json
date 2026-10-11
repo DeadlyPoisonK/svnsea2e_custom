@@ -1,0 +1,21 @@
+{
+  "folder": "COvFX4cO6Vx1BswB",
+  "name": "Obliterar",
+  "type": "sorcery",
+  "_id": "PKWMo84GanvnFiyc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa esta Manifestación cuando te enfrentes a una banda de matones no muertos (como una banda de monstruos con la cualidad de no muerto). La banda se reduce a 0 de fuerza y se destruye de inmediato.</p><p>Puedes destruir varias bandas de matones de esta manera, gastando 1 punto de héroe adicional por banda, pero solo puedes activar esta Manifestación una vez por escena.</p>",
+    "infosource": "El Nuevo Mundo, p. 178",
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "manifestation",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

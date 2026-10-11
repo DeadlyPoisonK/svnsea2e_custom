@@ -1,0 +1,21 @@
+{
+  "folder": "JMAGvB9WVghinr6q",
+  "name": "Rapha",
+  "type": "sorcery",
+  "_id": "gzOWpn0IFNAym4P5",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Rapha es la promesa de la salud. Este es el poder de purificar y sanar, eliminando la contaminación y el dolor del mundo. <strong>Amuleto: </strong>Cuando activas un Amuleto Rapha y lo tocas para comer o beber, elimina todos los venenos e impurezas. El Amuleto solo puede limpiar un objeto.</p><p><strong>Escritura: </strong>Cuando activas una Escritura Rapha, las palabras de sanación brotan de tus labios. Canta u ora por alguien que necesite ser sanado. Esa persona elimina 4 Heridas.</p><p>Las Promesas Perdidas no están completamente perdidas; existen órdenes académicas que las estudian. Las palabras clave se han transmitido a través de las familias y se han extendido gracias a rumores. El texto completo, sin embargo, es muy discutido. Si deseas usar estas promesas, necesitas este texto completo para poder comprender el propósito de las promesas. Debes ir en una búsqueda para encontrar las verdaderas líneas que faltan.</p><p>Esta misión es una historia de seis pasos. Dos pasos te dan una ventaja adicional de Hechicería. Los otros cuatro pasos descubren líneas de la estrofa, un paso por línea. Una vez que hayas completado esta misión, puedes usar las Promesas Perdidas. Asegúrate de proteger tus hallazgos. Las Promesas Perdidas son poderosas y una vez que hayas recreado la estrofa que falta, otros podrían hacer lo mismo.</p><p>No emprendas esta búsqueda hasta que hayas completado al menos una estrofa conocida.</p><p>Las Promesas Perdidas son las siguientes:</p>",
+    "infosource": "El Imperio de la Media Luna, p. 174",
+    "sorctype": "chozeh",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

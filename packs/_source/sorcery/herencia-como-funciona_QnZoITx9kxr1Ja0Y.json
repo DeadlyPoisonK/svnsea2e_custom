@@ -1,0 +1,22 @@
+{
+  "folder": "qqH2k3Zx8nE4CpWP",
+  "name": "Herencia: cómo funciona",
+  "type": "sorcery",
+  "_id": "QnZoITx9kxr1Ja0Y",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El uso de Herencias se basa en la acumulación y el gasto de Discordia. La Discordia representa la magia de tu linaje en conflicto con tu cuerpo humano. Los mortales no fueron concebidos para albergar este tipo de poder durante mucho tiempo, y la Discordia generada clama por ser gastada. Cada Herencia o bien genera una cantidad específica de Discordia o bien gasta toda la Discordia de un vástago. Un vástago acumula su Discordia mediante el uso de habilidades menores que a menudo aumentan sus capacidades naturales, y una vez que su Discordia es lo bastante alta, se gasta en un estallido de poder a menudo con resultados increíbles.</p><p>La primera vez que adquieres la ventaja Hechicería, elige dos Herencias. Estas Herencias deben ser una Herencia general o una Herencia de tu nación natal. Cada vez posterior que adquieras la ventaja Hechicería, elige dos Herencias adicionales. Nunca puedes elegir una Herencia de otra nación. Por ejemplo, un vástago de Fusō nunca podrá elegir la Herencia Modificar.</p><p>Debes gastar un punto de héroe cada vez que actives una Herencia; durante una secuencia de acción también debes gastar un Aumento.</p><p>Es difícil para un vástago retener el poder durante mucho tiempo, ya que sus naturalezas humana e inhumana combaten entre sí e intentan regresar al equilibrio. Al final de una ronda en una secuencia de acción o secuencia dramática, tu Discordia se reduce a la mitad de su valor actual (redondeando hacia arriba).</p>",
+    "infosource": "Khitai, p. 205 (traducción no oficial)",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

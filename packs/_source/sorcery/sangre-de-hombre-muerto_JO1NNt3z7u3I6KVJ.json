@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Sangre de hombre muerto",
+  "type": "sorcery",
+  "_id": "JO1NNt3z7u3I6KVJ",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Una mezcla de sangre de un cadáver reciente y varias hierbas, venenos, raíces y otras cosas similares. Si introduces este ungüento en el cuerpo de un no muerto (inyectándoselo, haciendo que se lo coma, etcétera), el monstruo afectado quedará Indefenso durante el resto de la escena. Ten en cuenta que se debe ingerir una cantidad relativamente grande para que sea efectivo, por lo que no es muy útil aplicarlo simplemente a un arma y usarlo para atacar.</p><p>Los efectos de un ungüento menor duran hasta el final de la ronda, a menos que se indique lo contrario.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 208",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 103125,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "TQzJbDDBg4ZBhZyS",
+  "name": "Superviviente",
+  "type": "advantage",
+  "_id": "0FHcR5tbNBJTD4RD",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Si te encuentras en la naturaleza, puedes forrajear o cazar y encontrar comida suficiente para ti y otras cinco personas. Bajo circunstancias extremas (perdido en medio de un desierto o abandonado en la tundra ussura, por ejemplo), encuentras comida suficiente para ti y otras dos personas.</p>",
+    "infosource": "7º Mar (básico), p. 148",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  }
+}

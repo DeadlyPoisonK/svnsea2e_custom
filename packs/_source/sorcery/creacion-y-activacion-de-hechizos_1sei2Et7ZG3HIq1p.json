@@ -1,0 +1,22 @@
+{
+  "folder": "FSvZPlEy3X5a8iK3",
+  "name": "Creación y activación de Hechizos",
+  "type": "sorcery",
+  "_id": "1sei2Et7ZG3HIq1p",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Un Hechizo es el nivel más poderoso de Heka: la capacidad de crear un efecto mágico con solo una frase hablada. Como tal, su creación requiere más tiempo y esfuerzo. La hechicera debe escribir una frase única, diferente para cada practicante de Heka, que represente su comprensión del elemento y el pictograma que desea usar.</p><p>Activar un Hechizo solo requiere que la practicante de Heka diga su frase única. Al activar un Hechizo, puede usar el efecto del Talismán o de la Inscripción de ese pictograma. Cuando un Hechizo está activo, el uso de otros Talismanes o Inscripciones cuesta dos Heridas Dramáticas en lugar de un Aumento. Usar demasiada magia exige una gran parte del ka del practicante Heka, lo que puede resultar mortal.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 186",
+    "sorctype": "heka",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

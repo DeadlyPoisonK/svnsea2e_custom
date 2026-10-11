@@ -1,0 +1,15 @@
+{
+  "name": "Espagiria",
+  "sorting": "a",
+  "folder": "Blvpl18m1qGPsjC8",
+  "type": "Item",
+  "_id": "xu8eDKs9AYg0HUdE",
+  "description": "",
+  "sort": 500000,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "c8bb588e1e64364ccd726f7210f82745eff5f3c2"
+    }
+  }
+}

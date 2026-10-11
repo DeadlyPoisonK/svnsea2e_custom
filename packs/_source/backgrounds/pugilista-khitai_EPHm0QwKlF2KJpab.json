@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Pugilista (Khitai)",
+  "type": "background",
+  "_id": "EPHm0QwKlF2KJpab",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Respeto</p>",
+    "quirk": "<p>Gana un punto de héroe cuando participes en un combate por un premio o apuestes algo importante a tu destreza en combate.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "empathy",
+      "intimidate",
+      "perform"
+    ],
+    "advantages": [
+      "Boxeador (Khitai)",
+      "Mirar fijamente (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 106 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

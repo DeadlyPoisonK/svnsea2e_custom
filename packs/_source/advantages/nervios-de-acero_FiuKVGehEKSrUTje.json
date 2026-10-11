@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Nervios de acero",
+  "type": "advantage",
+  "_id": "FiuKVGehEKSrUTje",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>En cualquier momento que gastes 1 punto de héroe para darte a ti mismo dados adicionales en un Riesgo contra una criatura o personaje con una cualidad de monstruo, puedes volver a repetir la tirada además de los efectos normales de tu punto de héroe.</p><p><em>Coste: 3 (2 si eres jaraguano).</em></p>",
+    "infosource": "Naciones Piratas, p. 151",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": 2
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Glorioso",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando seas el centro de atención. Para el siguiente Riesgo, cuando determines tus Aumentos, cada dado cuenta como 1 Aumento.</p>",
+    "infosource": "El sol · 7º Mar (básico), p. 158"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "d9HlLARcrNB3BJgy",
+  "sort": 1200000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "9x8lmsGTSiAFkW8U",
+  "name": "Lamèci",
+  "type": "sorcery",
+  "_id": "BoElFTVa6fVA4QGc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Algunas veces una persona no muere cuando llega su hora, sino<br>que deambula entre los vivos trayendo miseria y pena a sus<br>familiares y amigos m&aacute;s cercanos. Cuando esto sucede, la familia<br>suele rezarle a Bawon G&eacute; para que se lleve a su ser querido antes<br>de que llegue su hora. Mientras G&eacute; lo posea, el s&egrave;vit&egrave; puede<br>gastar 1 punto de h&eacute;roe para matar a un personaje Indefenso<br>que est&eacute; dispuesto a ello. Esto no provoca Corrupci&oacute;n.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "gros",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

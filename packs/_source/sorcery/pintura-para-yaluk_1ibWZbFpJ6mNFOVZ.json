@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Pintura para Yaluk",
+  "type": "sorcery",
+  "_id": "1ibWZbFpJ6mNFOVZ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Todos los tzak k'anos piensan en Yaluk como su abuelo marchito. Las leyendas cuentan cómo, ya entrado en años, Yaluk fue al templo y durante 260 días no hizo nada más que escalar lentamente hasta la cima. Cuando puso su pie en el último escalón, un rayo cayó del cielo despejado y quemó la carne de Yaluk con el más hermoso diseño.</p><p>Mientras use Pintura para Yaluk, el héroe puede gastar 1 punto de héroe para ganar 2 dados adicionales en cualquier Riesgo que implique sabiduría, planificación o firmeza.</p>",
+    "infosource": "El Nuevo Mundo, p. 173",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 275000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

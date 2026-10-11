@@ -1,0 +1,22 @@
+{
+  "folder": "ubbm9ln1dtOMG7jG",
+  "name": "Caminar por el viento",
+  "type": "sorcery",
+  "_id": "0CkGpLaduijgGtHd",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Tanto tú como cualquier cosa que estés tocando directamente con tu piel os convertís en aire. Probablemente deberás pedirle a un amigo que vigile tu equipo. Mientras caminas por el viento, eres invisible e intangible, pero si hablas o emites algún tipo de ruido, puedes ser escuchado. Además, alguien puede detectar una ligera brisa cuando pasas a su lado. Puedes desplazarte igual que una corriente de aire, lo que significa que no puedes atravesar líquidos u objetos sólidos, pero puedes moverte por grietas o pequeños agujeros.</p><p>Caminar por el viento es una tarea peligrosa. Debes cuidar de permanecer unido y no quedar atrapado en los pulmones de nadie o en un contenedor pequeño e irrompible. Si lo haces, no puedes volver a tu forma corpórea. Si permaneces en forma de viento más de 15 minutos, empezarás a deshacerte. Puedes asumir esta forma durante una escena y por cada escena adicional sufrirás 2 Heridas. Estas Heridas se reciben al comienzo de la escena y no se curarán hasta que no vuelvas a ser corpóreo. Si sufres una Herida Dramática mientras estás caminando por el viento, te volverás corpóreo inmediatamente, a menos que estés atrapado. Mientras estés atrapado, continuarás sufriendo Heridas hasta que te liberes, momento en que volverás a ser corpóreo de nuevo.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 148",
+    "used": false,
+    "sorctype": "tura",
+    "sorcdur": "none",
+    "sorccat": "gift",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

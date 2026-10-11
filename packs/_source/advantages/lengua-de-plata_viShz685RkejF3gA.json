@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Lengua de plata",
+  "type": "advantage",
+  "_id": "viShz685RkejF3gA",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando actúas primero en una secuencia de acción y gastas tu primera acción para presumir sobre cómo vas a derrotar a tu oponente de formas particularmente coloridas e ingeniosas, la primera vez que infliges Heridas a tu oponente este debe gastar 2 Aumentos por cada Herida que reduzca.</p>",
+    "infosource": "El Nuevo Mundo, p. 166",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 8300000,
+  "ownership": {
+    "default": 0
+  }
+}

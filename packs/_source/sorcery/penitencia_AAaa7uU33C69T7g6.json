@@ -1,0 +1,22 @@
+{
+  "folder": "Nk9XzMl8LirAadwj",
+  "name": "Penitencia",
+  "type": "sorcery",
+  "_id": "AAaa7uU33C69T7g6",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La próxima vez que recibas Heridas después de activar este poder, devolverás a tu atacante un número de Heridas igual a las que recibiste. Solo puedes usar este poder una vez por ronda.</p><p>En el último paso, tu Maravilla te permite dar el regalo más grande que al-Musawwir haya dado: la vida. Incluso si alguien es asesinada, puede volver a levantarse y continuar mostrando la Misericordia que al-Musawwir le ha otorgado.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "path",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

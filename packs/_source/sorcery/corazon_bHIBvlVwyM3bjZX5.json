@@ -1,0 +1,22 @@
+{
+  "folder": "UAD1q5zNVMpOyhGo",
+  "name": "Corazón",
+  "type": "sorcery",
+  "_id": "bHIBvlVwyM3bjZX5",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>Gasta 1 punto de h&eacute;roe para enmascarar&nbsp;cualquier se&ntilde;al de vida en un personaje Indefenso.&nbsp;La frecuencia card&iacute;aca del objetivo se ralentiza,&nbsp;sus ojos se nublan y sus m&uacute;sculos se endurecen.&nbsp;Tambi&eacute;n se vuelve susceptible a la sugesti&oacute;n y se le&nbsp;puede indicar que haga acciones simples siguiendo&nbsp;las instrucciones del rooi heks.</p>",
+    "used": false,
+    "infosource": "Tierras de Fuego y Oro, p. 194",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "zZYgf0jaGTPfG7RT",
+  "name": "Suerte loca",
+  "type": "sorcery",
+  "_id": "uR9H9APpdQDVgDT4",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Glamour para tirar un número de dados igual a su nivel. Puedes pasarles estos dados a otros héroes, que pueden quedárselos para todas las tiradas del resto de la escena. Por ejemplo, si decides darle un 8 a un espadachín, durante el resto de la escena ese héroe siempre añade ese dado a todos los Riesgos.</p>",
+    "infosource": "7º Mar (básico), p. 214",
+    "used": false,
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "glamour",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

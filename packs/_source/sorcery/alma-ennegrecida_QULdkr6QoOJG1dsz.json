@@ -1,0 +1,21 @@
+{
+  "folder": "SmDxtX5jHsO7PhTE",
+  "name": "Alma ennegrecida",
+  "type": "sorcery",
+  "_id": "QULdkr6QoOJG1dsz",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El calor de la batalla ha cubierto el cuerpo de Badagris&nbsp;de cicatrices, lo que la ayuda a permanecer imp&aacute;vida y sin&nbsp;amedrentarse mientras soporta el dolor de las heridas.&nbsp;</p>\n<p>Mientras Badagris lo posea, el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe para superar temporalmente los efectos de estar Indefenso. En lugar de poder realizar solo una &uacute;nica acci&oacute;n, el s&egrave;vit&egrave; puede actuar con normalidad durante una ronda entera mientras est&aacute; Indefenso. Adem&aacute;s, durante esta ronda, el s&egrave;vit&egrave; gana dos dados adicionales para cualquier Riesgo que intente. Sin embargo, el esfuerzo de Alma Ennegrecida es agotador para Badagris y solo puede invocar estos efectos una vez por episodio.</p>",
+    "infosource": "Naciones Piratas, p. 161",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

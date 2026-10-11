@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "La cuota del diablo",
+  "type": "advantage",
+  "_id": "SBxFp6gLfkzAGZpr",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Te cortaste una parte de ti mismo y la lanzaste al mar para ofrecérsela al Diablo Jonah. A cambio se te concedió un don, un artefacto único (y a menudo horripilante) con extrañas propiedades. Pero el precio fue más que un trozo de carne. Jonah también se llevó una astilla de tu alma.</p><p>Elige la parte de tu cuerpo que has perdido. En su lugar, posees un artefacto mágico, un don de Jonah con capacidades únicas. Puedes gastar 1 punto de héroe para activar la capacidad especial de tu objeto, que seguirá funcionando durante el resto de la escena.</p><p>Deberías hablar con tu DJ para elegir un artefacto apropiado, pero algunos ejemplos son:</p><ul><li>Un pincho de color plata y bronce cubierto con extraños símbolos y fabricado con un material muy duro. Es tan grueso como una pica, remplaza una pierna y se te mete dentro del muñón. Nunca se mancha y puede destrozar hasta las puertas más gruesas. Puedes atravesar de una patada el equivalente a 30 centímetros de madera sólida sin esfuerzo y, si gastas 1 Aumento para darle una patada a otro personaje, recibe 1 Herida más de las que normalmente recibiría.</li><li>Un catalejo de huesos huecos y adornado con gemas azules. Solo la persona a la que se le ha dado el don puede ver a través de él como si fuera un catalejo normal, pero también le deja ver a través de los costados de un barco o los muros de un edificio para ver lo que sucede en el interior.</li><li>Un par de botas hechas de… cuero seco. Nunca se mojan y el portador puede caminar por el agua o superficies mojadas como si fuera tierra seca. Por supuesto, si el portador se cae en el agua, las botas seguirán flotando mientras él se sumerge en el agua y posiblemente se ahogue.</li></ul><p><em>Coste: 4 (2 si eres aragostano).</em></p>",
+    "infosource": "Naciones Piratas, p. 152",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": 2
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

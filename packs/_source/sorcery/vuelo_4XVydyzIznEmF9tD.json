@@ -1,0 +1,21 @@
+{
+  "folder": "tRWGOFtYaF1huSvr",
+  "name": "Vuelo",
+  "type": "sorcery",
+  "_id": "4XVydyzIznEmF9tD",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado y, durante el resto de la escena, tus alas te dan el poder de volar.</p><p>Una usuaria de Khahesh-ahura solo puede seleccionar un único Legado Inusual, determinado por el ahura que potencia sus alas. Los ahuras te otorgan la capacidad de canalizar una parte de su aspecto único.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 179",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "common"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

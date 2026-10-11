@@ -1,0 +1,22 @@
+{
+  "folder": "U2PSSPaknua4R4bA",
+  "name": "Mantener marcas",
+  "type": "sorcery",
+  "_id": "NwEviZRNUzptpSPH",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Un sorcier solo puede mantener su conexión con un determinado número de marcas al mismo tiempo. Una vez se coloca una marca, esta permanece hasta que pasa algo explícito que la elimina (como que la marca se haya descubierto y se haya lavado a propósito) o el objeto se destruya. El contacto o lavarla de manera accidental normalmente no es suficiente para eliminar una marca. Si un sorcier marcara la pared de una taberna con una marca mayor, por ejemplo, la rutina de limpieza que hagan los empleados de la taberna no eliminaría la marca. Sin embargo, si se descubre la marca, se podría eliminar fácil y rápidamente.</p><p>Cada vez que se adquiere la ventaja Hechicería se puede mantener una conexión con 2 marcas menores y 1 marca mayor. Si el sorcier ya se encuentra en su número máximo de marcas y desea colocar otra, debe romper su conexión con una que ya exista. Cortar una conexión solo lleva unos minutos de concentración, pero requiere 1 Aumento si se realiza durante una escena de acción.</p>",
+    "infosource": "7º Mar (básico), p. 221",
+    "sorctype": "porte",
+    "sorccat": "mark",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

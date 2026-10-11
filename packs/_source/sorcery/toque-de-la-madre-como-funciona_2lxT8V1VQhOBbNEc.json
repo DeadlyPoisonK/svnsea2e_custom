@@ -1,0 +1,22 @@
+{
+  "folder": "eBKgP8ASWYjWGFk7",
+  "name": "Toque de la madre: cómo funciona",
+  "type": "sorcery",
+  "_id": "2lxT8V1VQhOBbNEc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Te encuentras con Matushka porque ella te busca y quiere enseñarte una lección. Quizás se trata de cómo ser amable con una pobre anciana o cómo ser humilde. Cuando adquieres la ventaja Hechicería, Matushka te ha dado una lección para que la aprendas. Esa lección incluye dos partes: Dones sobrenaturales y Restricciones.</p><p><strong>Don: </strong>Tu lección incluye un poder sobrenatural. Puedes usar tu poder gastando 1 punto de héroe.</p><p><strong>Restricción:</strong> Esto es un límite en tu comportamiento. Mientras mantengas tu restricción, puedes usar el don de tu lección. Tu restricción también incluye el precio que debes pagar si la rompes.</p><p>Cuando construyas tu lección, ganas dos dones y una restricción. Cada vez que adquieres la ventaja Hechicería, consigues otros dos dones y una restricción adicionales.</p>",
+    "infosource": "7º Mar (básico), p. 217",
+    "sorctype": "darm",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

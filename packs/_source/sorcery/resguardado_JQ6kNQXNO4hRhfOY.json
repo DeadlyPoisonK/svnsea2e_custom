@@ -1,0 +1,22 @@
+{
+  "folder": "li9WDKazVu5ySEdo",
+  "name": "Resguardado",
+  "type": "sorcery",
+  "_id": "JQ6kNQXNO4hRhfOY",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Tu arma es efectiva para negar los poderes mágicos que ejercen contra ti. Gasta 1 punto de héroe cuando seas el objetivo de un efecto mágico (una Hechicería, un artefacto syrneth, etc.) para ignorar el efecto en ti. Aún se pueden producir otros efectos, pero la magia no te afecta de ninguna manera.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 200",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

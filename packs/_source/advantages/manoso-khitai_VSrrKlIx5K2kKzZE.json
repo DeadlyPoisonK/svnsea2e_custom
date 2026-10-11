@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Mañoso (Khitai)",
+  "type": "advantage",
+  "_id": "VSrrKlIx5K2kKzZE",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe. Puedes reparar un objeto roto, amañar un arma de fuego dañada, taponar un barco con vías de agua o realizar milagros similares, haciendo que el objeto funcione con normalidad durante el resto de la escena. Al final de la escena, o si el objeto sufre algún daño adicional, deja de funcionar de inmediato hasta que sea reparado (un barco comienza a hundirse, por ejemplo). Si no tiene la capacidad de soportar impactos, queda completamente destruido.</p>",
+    "infosource": "Khitai, p. 115 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

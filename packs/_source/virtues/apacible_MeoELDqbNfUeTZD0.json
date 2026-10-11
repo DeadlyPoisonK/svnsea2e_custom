@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Apacible",
+  "type": "virtue",
+  "_id": "MeoELDqbNfUeTZD0",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando otro héroe sufra Heridas para evitar que sufra esas Heridas. En su lugar, tú sufres una Herida Dramática.</p>",
+    "infosource": "Gorrión · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 1300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

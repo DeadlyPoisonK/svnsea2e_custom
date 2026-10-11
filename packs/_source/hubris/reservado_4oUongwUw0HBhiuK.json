@@ -1,0 +1,17 @@
+{
+  "folder": "mISBGS3k1JGW0JWu",
+  "name": "Reservado",
+  "type": "hubris",
+  "_id": "4oUongwUw0HBhiuK",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Gana un punto de héroe cuando aceptes guardar los secretos peligrosos o importantes de alguien, o cuando cumplas la promesa de hacerlo.</p>",
+    "infosource": "Mangosta · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

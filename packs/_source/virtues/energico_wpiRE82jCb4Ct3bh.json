@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Enérgico",
+  "type": "virtue",
+  "_id": "wpiRE82jCb4Ct3bh",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para moverte de inmediato a cualquier Zona de la escena actual.</p>",
+    "infosource": "Conejo · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

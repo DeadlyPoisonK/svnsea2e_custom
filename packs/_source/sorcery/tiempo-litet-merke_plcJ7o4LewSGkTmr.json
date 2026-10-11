@@ -1,0 +1,22 @@
+{
+  "folder": "0NnSXX8vlRijAPqF",
+  "name": "Tiempo Litet Merke",
+  "type": "sorcery",
+  "_id": "plcJ7o4LewSGkTmr",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>El personaje elegido debe realizar una acción de inmediato, gastando los Aumentos normales para hacerlo. Si esta litet merke se combina con la stort merke de Tiempo, el personaje realiza la acción antes de perder sus Aumentos.</p><p>La runa Tormenta representa lo impredecible y el cambio repentino. La runa da nombre los héroes que se convirtieron en villanos y se redimieron. Mucha gente usa la runa para solicitar la lluvia en épocas de sequía.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 193",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

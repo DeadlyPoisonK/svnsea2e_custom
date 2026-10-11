@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Buen bebedor (Khitai)",
+  "type": "advantage",
+  "_id": "DDBTwaQk5KVSQ8DN",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Ignoras todos los efectos negativos del alcohol, aunque aún puedes emborracharte. Si alguien intenta emborracharte, vencerte en un concurso de bebida o aprovecharse de que tu héroe tenga resaca, puedes gastar un punto de héroe para frustrar automáticamente dicho intento (te emborrachas pero no pierdes el control sobre ti mismo, ganas el concurso de bebida, no tienes resaca sin importar lo borracho que estuvieras la noche anterior, etc.).</p>",
+    "infosource": "Khitai, p. 112 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

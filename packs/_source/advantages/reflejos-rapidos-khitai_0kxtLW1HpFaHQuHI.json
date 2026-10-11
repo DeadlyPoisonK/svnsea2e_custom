@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Reflejos rápidos (Khitai)",
+  "type": "advantage",
+  "_id": "0kxtLW1HpFaHQuHI",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige una habilidad. Cuando uses esa habilidad como tu Enfoque, siempre realizas acciones como si tuvieras un Aumento adicional a efectos de determinar el orden de acción. Un héroe puede comprar esta ventaja varias veces. Cada vez que lo haga, elegirá una habilidad diferente.</p>",
+    "infosource": "Khitai, p. 119 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

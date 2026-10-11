@@ -1,0 +1,24 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Arma de zahmeireen",
+  "type": "advantage",
+  "_id": "BVAogVNB1lzSTWch",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Posees un arma de zahmeireen encantada, una de las espadas fabricadas con el legendario metal extraído de Mbey (consulta la sección <strong>Zahmeireen</strong> , página 196).</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 178",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Numerario",
+  "type": "advantage",
+  "_id": "zjwsY8xfU8ppyvTR",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes esperar refugio, un lugar donde quedarte y comida caliente en cualquier universidad. También tienes acceso a muchas de las bibliotecas de la universidad simplemente con pedirlo. Finalmente, también consigues 2 dados para cualquier Riesgo social contra personajes que sean miembros de una institución de enseñanza superior o que respete tal nivel de educación.</p>",
+    "infosource": "7º Mar (básico), p. 152",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

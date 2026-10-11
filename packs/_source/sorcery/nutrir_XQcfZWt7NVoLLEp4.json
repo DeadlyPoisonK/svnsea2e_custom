@@ -1,0 +1,22 @@
+{
+  "folder": "KnMqpe46crPBBvU0",
+  "name": "Nutrir",
+  "type": "sorcery",
+  "_id": "XQcfZWt7NVoLLEp4",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este poder para alimentar a cualquier número de personas en la escena por una comida. Necesitas una pequeña cantidad de comida para activar este poder, al menos lo suficiente como para alimentar a una persona normalmente. La activación de este poder consume todos los alimentos que poseas actualmente.</p><p>El segundo paso tiene que ver con la protección. Proteger a aquellos que no pueden protegerse a sí mismos es el núcleo del Camino de los Justos. Tu Maravilla te permite dar tu fuerza a los demás o incluso te fortalece.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 168",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

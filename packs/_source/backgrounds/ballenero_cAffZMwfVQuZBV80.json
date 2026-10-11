@@ -1,0 +1,33 @@
+{
+  "folder": "XzKHQPMm9soeOONA",
+  "name": "Ballenero",
+  "type": "background",
+  "_id": "cAffZMwfVQuZBV80",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Surcas los mares helados de Ussura con lanzas y barcos persiguiendo la vida marina más peligrosa.</p>",
+    "infosource": "7º Mar (básico), p. 145",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando te enfrentes a una criatura que podría tragarse a un hombre entero.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "notice",
+      "sailing",
+      "weaponry"
+    ],
+    "advantages": [
+      "Buen bebedor",
+      "Mecenas",
+      "Uno con el barco"
+    ],
+    "nation": "ussura"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

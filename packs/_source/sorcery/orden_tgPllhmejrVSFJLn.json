@@ -1,0 +1,21 @@
+{
+  "folder": "tRWGOFtYaF1huSvr",
+  "name": "Orden",
+  "type": "sorcery",
+  "_id": "tgPllhmejrVSFJLn",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado para dar una orden de una palabra a otro personaje. Por ejemplo, «siéntate», «salta» o «grita». El personaje obedece esta orden lo mejor que puede en su siguiente acción. Las órdenes obviamente suicidas o imposibles son ignoradas; si le dices a alguien en una cornisa que «salte», es probable que salte en vertical en lugar de saltar por el borde. Un personaje objetivo de Orden puede gastar 1 punto de héroe para ignorar esta compulsión.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 179",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "common"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

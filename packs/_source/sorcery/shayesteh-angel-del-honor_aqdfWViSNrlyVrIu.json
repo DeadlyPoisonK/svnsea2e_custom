@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Shayesteh, Ángel del Honor",
+  "type": "sorcery",
+  "_id": "aqdfWViSNrlyVrIu",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Shayesteh, el Ángel del Honor, es conocida por ser la más silenciosa de todos los ahura. Shayesteh es la encarnación del juego limpio, y cuando fue desafiada a un duelo a muerte por un poderoso daeva, se negó a actuar hasta que su enemigo hubiera golpeado primero. La ahura ignoró el ataque del daeva y mató a su enemigo de un solo golpe.</p><p>A los usuarios de Khahesh-ahura empoderados por Shayetesh se les otorgan alas de sombras. Si bien puede que no parezca que la hechicera haya desarrollado alas en absoluto, su naturaleza es clara al mirar su sombra.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 177",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

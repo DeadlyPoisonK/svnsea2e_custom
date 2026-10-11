@@ -1,0 +1,23 @@
+{
+  "folder": "aSM5k4zd4YYt1rg3",
+  "name": "Gatillo fácil",
+  "type": "advantage",
+  "_id": "xqIbiaeum1ukEiyR",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe debe tener la ventaja «Francotirador» para poder adquirir esta ventaja. Cuando realices un Riesgo de Apuntar usando un mosquete de cañón largo, un arco largo o una ballesta, puedes gastar un punto de héroe para infligir una Herida Dramática adicional la primera vez que gastes un Aumento para infligir una Herida. Para que puedas utilizar esta ventaja tu víctima no debe ser consciente de tu presencia. Solo puedes activar esta ventaja una vez por escena.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 205",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 8600000,
+  "ownership": {
+    "default": 0
+  }
+}

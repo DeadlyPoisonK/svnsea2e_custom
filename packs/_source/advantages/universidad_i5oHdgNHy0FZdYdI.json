@@ -1,0 +1,23 @@
+{
+  "folder": "s1n9pHqJXetLrKa5",
+  "name": "Universidad",
+  "type": "advantage",
+  "_id": "i5oHdgNHy0FZdYdI",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Fuiste a una de las universidades regladas de Théah y estás familiarizado con muchos campos académicos de estudio como las matemáticas, la arquitectura y la astronomía. Cuando realices un Riesgo usando Conocimiento, Empatía o Percepción, todos tus dados ganan un +1 a su valor.</p>",
+    "infosource": "7º Mar (básico), p. 154",
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "QOYhUFu4kdBAfERt",
+  "name": "Pánico",
+  "type": "sorcery",
+  "_id": "vsPHuk3pJX8KENtg",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 3 de Furia. Los espíritus intervienen y entorpecen los esfuerzos de un enemigo. Una criatura a la que puedas ver pierde 1 dado de su Riesgo, más 1 dado adicional por cada 5 rangos en tu Enfoque (rasgo + habilidad).</p>",
+    "used": false,
+    "infosource": "Khitai, p. 196 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

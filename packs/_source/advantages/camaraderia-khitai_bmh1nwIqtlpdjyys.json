@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Camaradería (Khitai)",
+  "type": "advantage",
+  "_id": "bmh1nwIqtlpdjyys",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cada vez que gastas un punto de héroe para ayudar a un aliado, este obtiene 4 dados en lugar de 3.</p>",
+    "infosource": "Khitai, p. 119 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

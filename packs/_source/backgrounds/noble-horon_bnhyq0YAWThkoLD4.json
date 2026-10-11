@@ -1,0 +1,32 @@
+{
+  "folder": "y0DwOQKkcGKxRhrF",
+  "name": "Noble Horon",
+  "type": "background",
+  "_id": "bnhyq0YAWThkoLD4",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Eres el alma de Mandén, proporcionando lo que su gente necesita para sobrevivir.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 176",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando desafías a tus superiores, te niegas a obedecer órdenes o te opones a la autoridad para hacer lo que crees que es correcto.</p>",
+    "skills": [
+      "athletics",
+      "convince",
+      "empathy",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Rico",
+      "Sangre de oro"
+    ],
+    "nation": "manden"
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

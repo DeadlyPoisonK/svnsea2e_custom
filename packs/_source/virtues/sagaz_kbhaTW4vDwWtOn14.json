@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Sagaz",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para saber la especialidad de la banda de matones a la que te enfrentas o para descubrir el nivel y las ventajas de un villano.</p>",
+    "infosource": "El mendigo · 7º Mar (básico), p. 157"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "kbhaTW4vDwWtOn14",
+  "sort": 1500000,
+  "ownership": {
+    "default": 0
+  }
+}

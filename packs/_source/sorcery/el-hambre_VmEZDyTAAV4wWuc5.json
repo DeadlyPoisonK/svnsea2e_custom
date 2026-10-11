@@ -1,0 +1,21 @@
+{
+  "folder": "SmDxtX5jHsO7PhTE",
+  "name": "El hambre",
+  "type": "sorcery",
+  "_id": "VmEZDyTAAV4wWuc5",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Las llamas de la forja requieren una atenci&oacute;n constante:<br>un fuego bien alimentado produce el acero m&aacute;s fuerte.<br>Mientras Badagris lo posea, el s&egrave;vit&egrave; puede gastar 1 punto<br>de h&eacute;roe para consumir cualquier cosa y obtener alimento.<br>Polvo. Metal. Madera. Cualquier cosa que pueda entrar en<br>el s&egrave;vit&egrave; lo alimentar&aacute;.</p>",
+    "infosource": "Naciones Piratas, p. 161",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

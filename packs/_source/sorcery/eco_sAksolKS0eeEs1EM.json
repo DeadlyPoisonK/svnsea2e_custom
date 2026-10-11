@@ -1,0 +1,22 @@
+{
+  "folder": "4rsEYwOl0zAEkA41",
+  "name": "Eco",
+  "type": "sorcery",
+  "_id": "sAksolKS0eeEs1EM",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La Manifestación tiene como objetivo una segunda criatura, banda o personaje adicional al que normalmente podría afectar. Los efectos de la Manifestación se repiten con exactitud; si eliges Eco Sanguijuela, por ejemplo, debes elegir el mismo efecto para ambas víctimas.</p>",
+    "infosource": "El Nuevo Mundo, p. 180",
+    "used": false,
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "turn",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

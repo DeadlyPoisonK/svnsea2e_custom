@@ -1,0 +1,24 @@
+{
+  "name": "Tacaño",
+  "type": "advantage",
+  "_id": "LBssdNg7V2BnXLGN",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe sabe cómo vivir con lo justo, y así guardar por si llega una época de vacas flacas. Por cada vez que adquieras esta ventaja, puedes ahorrar 1 punto de Riqueza entre sesiones de juego. Esto no crea más Riqueza, sólo te permite ahorrar puntos de Riqueza ya existentes.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 209",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "folder": "o08gPvZy5dFhOVGH",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

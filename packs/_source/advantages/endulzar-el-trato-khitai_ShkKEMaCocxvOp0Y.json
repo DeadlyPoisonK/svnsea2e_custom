@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Endulzar el trato (Khitai)",
+  "type": "advantage",
+  "_id": "ShkKEMaCocxvOp0Y",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de Riqueza para sobornar con éxito a un personaje durante una secuencia de acción o secuencia dramática sin gastar un Aumento. Puedes hacer esto una vez por secuencia.</p>",
+    "infosource": "Khitai, p. 120 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

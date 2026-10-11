@@ -1,0 +1,32 @@
+{
+  "folder": "AWlM6bJmJQhh7Se4",
+  "name": "Ardhadevata (Semidiós)",
+  "type": "background",
+  "_id": "hPH2qDjFkbLFuwQb",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Respeto</p><p><em>Ventajas en el libro (en inglés): Magic (Heritage), Magic (Heritage), Large or Small.</em></p><p>Elige además la ventaja «Grande (Khitai)» o «Pequeño (Khitai)» y añádela a mano.</p>",
+    "quirk": "<p>Gana un punto de héroe cuando alguien te conceda lo que quieres o acepte reunirse contigo debido a tu herencia o linaje.</p>",
+    "skills": [
+      "aim",
+      "hide",
+      "intimidate",
+      "tempt",
+      "theft"
+    ],
+    "advantages": [
+      "Hechicería (Khitai)",
+      "Hechicería (2)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 108 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

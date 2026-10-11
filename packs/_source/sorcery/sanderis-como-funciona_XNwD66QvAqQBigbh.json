@@ -1,0 +1,22 @@
+{
+  "folder": "s58HmWKf7mntMtzg",
+  "name": "Sanderis: cómo funciona",
+  "type": "sorcery",
+  "_id": "XNwD66QvAqQBigbh",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cada losejas tiene un demonio personal, un dievas, que ve y escucha todo lo que hace el losejas, y muchas veces lo que no hace. Los dievai tienen una percepción perfecta sobre lo que rodea a sus losejai, aunque es importante indicar que un dievas no puede leerle la mente al losejas y tampoco experimenta sus emociones.</p><p>Cada dievas tiene el mismo objetivo: ver su contrato invalidado, conseguir la libertad y que, por tanto, se le permita establecer un nuevo contrato con alguien que no esté tan versado en las reglas, alguien a quien pueda manipular y usar. Cada Trato que hace un dievas aspira a esa meta, cada precio que exigen a sus losejai es para conseguir ese propósito.</p><p>Un losejas considera que el contrato con su dievas es una carga. No son socios, son carceleros. La relación entre un dievas y un losejas es de destrucción mutua y ambas partes lo saben. Pero ninguno de los dos vive ignorante del otro y ambos intentan también cumplir otros objetivos. Un héroe losejas siempre quiere mantener a su dievas dentro de unos límites razonables y asegurarse de que no provoca caos, destrucción ni sufrimiento. Sin embargo, no hay que rechazar el poder de un dievas, e incluso hay veces en las que es necesario recurrir a este poder para, literalmente, hacer un trato con el diablo que conoces en lugar de con el que no conoces.</p>",
+    "infosource": "7º Mar (básico), p. 222",
+    "sorctype": "sanderis",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

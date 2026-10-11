@@ -10,8 +10,12 @@
 <h3 class="advantages-title">{{localize "SVNSEA2E.Advantages"}}</h3>
 <div class="advantages flexrow flex-group flex-left">
   <ul class="tag-list">
-    {{#each system.advantages as |advantage|}}
-      <li class="tag">{{advantage}}</li>
+    {{#each advantageLinks as |advantage|}}
+      {{#if advantage.link}}
+        <li class="tag">{{{advantage.link}}}</li>
+      {{else}}
+        <li class="tag missing" data-tooltip="{{advantage.missing}}"><i class="fa-solid fa-link-slash"></i> {{advantage.name}}</li>
+      {{/if}}
     {{/each}}
   </ul>
   {{#if editable}}<a class="advantage-selector" data-action="selectAdvantages" data-tooltip="{{localize 'SVNSEA2E.BackgroundAdvantageSelect'}}"><i class="fa-solid fa-pen-to-square"></i></a>{{/if}}

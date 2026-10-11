@@ -1,0 +1,31 @@
+{
+  "folder": "nmlomi28Bss1o6oR",
+  "name": "Atleta",
+  "type": "background",
+  "_id": "YraKwqt09RaFcUk8",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Eres conocido a lo largo de Aztlán como un famoso jugador de pelota, luchador o alguna figura pública similar.</p>",
+    "infosource": "El Nuevo Mundo, p. 162",
+    "quirk": "<p>Ganas 1 punto de héroe cuando uses tu fama o reputación como una oportunidad para inspirar a otro personaje.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "brawl",
+      "intimidate",
+      "perform"
+    ],
+    "advantages": [
+      "Lengua de plata",
+      "Reflejos rápidos"
+    ],
+    "nation": "none",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

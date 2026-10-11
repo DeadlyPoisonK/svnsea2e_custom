@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Tortuga Mayor",
+  "type": "sorcery",
+  "_id": "Z9wjILXwhojIUzoD",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La Tortuga es precavida y sabia, solo se mueve cuando su camino es seguro. Este Mohwo es indicativo de un individuo atento y cuidadoso que sabe que hacer algo bien es mas importante que hacerlo rapido.</p>\n<hr>\n<p>Despues de activar este mohwoo puedes negar las heridas que te han inflingido en un unico ataque. Un qing solo puede activar este mohwoo una vez por escena</p>",
+    "infosource": "Naciones Piratas, p. 171",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100196,
+  "ownership": {
+    "default": 0
+  }
+}

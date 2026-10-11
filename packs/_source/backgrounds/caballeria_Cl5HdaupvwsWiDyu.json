@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Caballería",
+  "type": "background",
+  "_id": "Cl5HdaupvwsWiDyu",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Lealtad</p>",
+    "quirk": "<p>Gana un punto de héroe cuando apliques tus habilidades de equitación a una situación inusual.</p>",
+    "skills": [
+      "athletics",
+      "empathy",
+      "ride",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Jinete consumado (Khitai)",
+      "Calmar a la bestia (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 104 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

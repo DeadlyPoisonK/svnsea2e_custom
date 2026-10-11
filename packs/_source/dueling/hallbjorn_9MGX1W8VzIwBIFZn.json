@@ -1,0 +1,18 @@
+{
+  "folder": "9c8i6URJvxaqZFe5",
+  "name": "Hallbjorn",
+  "type": "duelstyle",
+  "_id": "9MGX1W8VzIwBIFZn",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Este estilo fue creado por Hallbjorn Ulfsen, un legendario incursor vestenio que se retiró del mar para unirse a una Casa de Esgrima vestenia. Este guerrero dominó el uso del escudo no solo para defenderse de los ataques enemigos, sino también para usarlo como arma. Un espadachín que ha dominado este estilo crea aberturas de las que pueden aprovecharse otros espadachines, al tiempo que golpea a sus enemigos con el escudo.</p><p>Al contrario que los escudos utilizados por los soldados en otras naciones, el escudo redondo vestenio está hecho de madera, y aunque está reforzado con metal, no es tan resistente como los demás. Esto se debe a su diseño, ya que los escudos más ligeros permiten a los practicantes de Hallbjorn utilizar de forma más sencilla el escudo para sus ataques, y es la razón por la que los escudos no suelen durar mucho tiempo. Es por esto que muchos espadachines de Hallbjorn también saben fabricar escudos.</p><p>Un espadachín que use este estilo nunca usa un escudo fabricado por otra persona y cree que mediante la fabricación de su propio escudo insufla en él parte de su ferocidad. Los escudos de Hallbjorn están decorados con imágenes o diseños rúnicos basados en la vida del espadachín, y de hecho se podría contemplar toda su historia si se reunieran todos los escudos que ha usado a lo largo de su vida.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 195",
+    "bonus": "<p><strong>Golpe Hallbjorn.</strong></p><p>Cuando uses un arma pesada en una mano (por lo general un hacha, pero también puede ser una espada larga o martillo) y un escudo en la otra, tienes acceso a una maniobra especial llamada Golpe Hallbjorn.</p><p>Cuando realices el Golpe Hallbjorn infliges tantas Heridas como tu nivel en Músculo. La próxima vez que tu objetivo reciba Heridas esta ronda sufrirá una cantidad adicional de Heridas igual a tu nivel en Músculo. Puedes realizar el Golpe Hallbjorn solo una vez por ronda.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

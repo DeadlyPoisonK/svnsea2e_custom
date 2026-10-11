@@ -1,0 +1,22 @@
+{
+  "folder": "3DBtzP6wWtTujRJe",
+  "name": "Purificar",
+  "type": "sorcery",
+  "_id": "Tvw9PykIUljQb0be",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Milagro para hacer que el agua sea limpia y saludable para beber durante una escena. Puedes elegir activar esta Maravilla en una fuente de agua (como un manantial natural o un lago) o en un recipiente para beber (un odre o una copa). La fuente o recipiente limpia cualquier líquido que contenga de cualquier impureza, y lo hace potable sin efectos secundarios.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 167",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "miracle",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

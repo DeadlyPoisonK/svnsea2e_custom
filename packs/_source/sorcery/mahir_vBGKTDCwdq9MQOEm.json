@@ -1,0 +1,22 @@
+{
+  "folder": "Oz7TQTAkyShWiFfG",
+  "name": "Mahir",
+  "type": "sorcery",
+  "_id": "vBGKTDCwdq9MQOEm",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Mahir es la promesa de rapidez. La velocidad para actuar antes de que lo terrible pueda suceder, para correr hacia adelante y rescatar a alguien del borde del abismo. La velocidad para llevar mensajes a través de la tierra, difundiendo la comunicación y la comunidad.</p><p><strong>Amuleto:</strong> Cuando activas un Amuleto Mahir, la energía cosquillea a través de tus extremidades. Puedes hacer una acción inmediatamente sin gastar un Aumento, incluso si no es tu turno. Si esta acción cuesta varios Aumentos (debido a Improvisar, por ejemplo), debes gastar los Aumentos adicionales cuando realices la acción.</p><p><strong>Escritura:</strong> Cuando activas una Escritura Mahir, el mundo se ralentiza a tu alrededor. Añade dos dados adicionales a cualquier Riesgo de Maña durante el resto de la escena. Si Maña ya es parte de tu Enfoque, puedes tirar inmediatamente los 2 dados adicionales y agregar el resultado a tus Aumentos.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 173",
+    "sorctype": "chozeh",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

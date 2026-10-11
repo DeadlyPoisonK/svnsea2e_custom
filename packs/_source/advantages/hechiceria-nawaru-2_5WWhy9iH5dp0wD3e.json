@@ -1,0 +1,23 @@
+{
+  "folder": "vIU7NVRxbdGwTGsF",
+  "name": "Hechicería (Nawaru) (2)",
+  "type": "advantage",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando el Guardián del Primer Jardín ata un collar a un asesino, se le imbuye con el poder no solo de manipular la luz, sino también de tocar otro plano, un plano más allá de la vida, con su conciencia. Además de una muerte, cada nudo en su collar representa un turru potencial<em>, </em>un poder al que puede acceder el asesino (o el hatapu que lleva un collar de asesino). Un turru no se aprende, se recuerda; recuerda la vida que le dio sabiduría y la muerte que lo llevó al plano más allá de ese tiempo. Como tal, cada Asesino «aprende» sus turrus en un orden diferente, y pocos asesinos jóvenes comparten los mismos poderes.</p><p>Cuando compras la ventaja de Hechicería, eliges un turru menor y uno mayor de entre los de la lista. La cuarta vez que adquieres Hechicería, puedes elegir uno menor, uno mayor y uno de los tres turrus avanzados: <em>Iluminación brillante, Forma de esplendor</em> o <em>Cólera de los cielos</em>.</p><p>Cuando elijas cada turru, toma algunas notas sobre lo que te permitió aprenderlo: la vida que viviste y la muerte que experimentaste. ¿El encarcelamiento y la muerte en un pozo oscuro te enseñaron a invocar la luz? ¿Fue una vida dedicada a la contemplación silenciosa lo que te permitió calmar la mente de otro con un toque? No es necesario dar demasiados detalles, solo los suficientes para recordarte que siempre hay un precio por el poder.</p><p>Usar un turru cuesta 1 punto de héroe. Los turrus menores y mayores se pueden usar una vez por escena, mientras que los turrus avanzados se pueden usar una vez por episodio.</p>",
+    "infosource": "Variante creada por la mesa: Hechicería (El Imperio de la Media Luna, p. 183)",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "5WWhy9iH5dp0wD3e",
+  "sort": 1200000,
+  "ownership": {
+    "default": 0
+  }
+}

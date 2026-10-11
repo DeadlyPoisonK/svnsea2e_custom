@@ -1,0 +1,22 @@
+{
+  "folder": "Nk9XzMl8LirAadwj",
+  "name": "Camino de los Misericordiosos",
+  "type": "sorcery",
+  "_id": "SoeOQmRKOnZkZnDS",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El Camino de los Misericordiosos te muestra cómo sanar a los heridos. Cuidar a los que sufren es tu don como alharis. Tomar este Camino te muestra que al-Musawwir te observa y se preocupa por ti.</p><p>El Misericordioso ayudará a los débiles. Ese es el primer paso para seguir este Camino. Usando tu Maravilla, puedes curar huesos rotos y otras lesiones.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

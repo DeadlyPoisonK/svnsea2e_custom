@@ -1,0 +1,17 @@
+{
+  "folder": "cM8cp2HgmMlzFy4Z",
+  "name": "Adaptable",
+  "type": "virtue",
+  "_id": "1U6o1fUauOANOXVQ",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando te ejerzan Presión. No necesitas gastar un Aumento adicional para realizar una acción diferente.</p>",
+    "infosource": "El río · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "8AjTGHJtL0XNoqWh",
+  "name": "Soldado",
+  "type": "background",
+  "_id": "g2lvK3zetIgJoojI",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Sabes cómo luchar y cómo matar, y te has ganado la vida haciéndolo bajo estandartes y para otros señores.</p>",
+    "infosource": "7º Mar (básico), p. 141",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando te ciñas al plan independientemente del peligro que te suponga.</p>",
+    "skills": [
+      "aim",
+      "intimidate",
+      "notice",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Buen bebedor",
+      "Camorrista"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1600000,
+  "ownership": {
+    "default": 0
+  }
+}

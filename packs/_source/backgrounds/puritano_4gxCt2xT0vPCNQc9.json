@@ -1,0 +1,32 @@
+{
+  "folder": "tAhhyNh3KAvPVDKe",
+  "name": "Puritano",
+  "type": "background",
+  "_id": "4gxCt2xT0vPCNQc9",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Eres un objecionista reformado que busca «purificar» la Iglesia de Ávalon de todas las prácticas vaticanas.</p>",
+    "infosource": "7º Mar (básico), p. 142",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando expongas la corrupción, la hipocresía o la inefectividad dentro de la Iglesia vaticana.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "intimidate",
+      "ride",
+      "scholarship"
+    ],
+    "advantages": [
+      "Enfoque dinámico",
+      "Reputación"
+    ],
+    "nation": "avalon"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

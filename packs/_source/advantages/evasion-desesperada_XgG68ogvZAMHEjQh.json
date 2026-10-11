@@ -1,0 +1,23 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Evasión desesperada",
+  "type": "advantage",
+  "_id": "XgG68ogvZAMHEjQh",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando sufres Heridas, puedes gastar inmediatamente un Aumento para activar esta ventaja. No recibes las Heridas. Sin embargo, la próxima vez que sufras Heridas en esta ronda, el número de Heridas que recibes se duplica y no puede reducirse de ninguna manera.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 159",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 5400000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Don oscuro",
+  "type": "advantage",
+  "_id": "z0OCCDvCnCjiof4p",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige una cualidad de monstruo. Puedes gastar 1 punto de héroe para conseguir los beneficios de villano de dicha cualidad durante una ronda. Siempre que actives tu Don oscuro, obtienes 1 punto de corrupción, pero no hagas ninguna tirada de corrupción. Si el uso de esta ventaja aumenta tu corrupción hasta 10, te conviertes de inmediato en un monstruo (no en un villano, sino en un <em>monstruo</em>). Mientras esté activa, la manifestación de tu Don oscuro es visible para todo aquel que te vea: tus ojos brillan, unas alas correosas surgen de tu espalda, tu piel se vuelve aceitosa y negra como la noche, etc. Todo aquel que te vea sabrá lo que eres realmente: un monstruo.</p><p>Un héroe sólo puede adquirir esta ventaja tras la creación del héroe si se adentra en Eisen.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 210",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

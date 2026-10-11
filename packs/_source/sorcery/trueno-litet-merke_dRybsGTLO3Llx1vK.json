@@ -1,0 +1,22 @@
+{
+  "folder": "VRdpGqhOjOfLZVLx",
+  "name": "Trueno Litet Merke",
+  "type": "sorcery",
+  "_id": "dRybsGTLO3Llx1vK",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>El personaje que elegiste es inmune al Miedo hasta el final de la ronda.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 193",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

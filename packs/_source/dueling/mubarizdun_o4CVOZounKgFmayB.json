@@ -1,0 +1,18 @@
+{
+  "folder": "e1trSwu912DnmVrS",
+  "name": "Mubarizdun",
+  "type": "duelstyle",
+  "_id": "o4CVOZounKgFmayB",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Mubarizdun es el estilo elegido por la mayoría de los soldados de élite en todo el Imperio de la Media Luna. Es un estilo relativamente nuevo y sus inicios se remontan directamente a la General Imperial Sepideh. Inventó el estilo para que lo usara la unidad más de élite de su ejército, los Mubar. Esta unidad tuvo el honor de ser la primera en ser declarada en el campo de batalla y desafió al general de los ejércitos opuestos a seleccionar a su mejor guerrero para enfrentar a uno de ellos. Una vez seleccionada, esta soldado eligió a su oponente entre las filas de los Mubar. Estos dos soldados lucharon hasta la muerte, con el objetivo de socavar la moral del bando perdedor. Las historias dicen que los soldados de Mubar nunca perdieron uno de estos duelos.</p><p>Si bien los ejércitos modernos dentro del Imperio de la Media Luna emplean soldados entrenados en Mubarizdun, la estrategia ha caído en desgracia en los últimos tiempos. Sin embargo, los esgrimistas todavía entrenan en el estilo y lo usan con gran efecto en otras partes del imperio. Blandiendo espadas, mazas o hachas en ambas manos, un esgrimista Mubarizdun desmoraliza a sus oponentes gritando insultos entre sus golpes.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 205",
+    "bonus": "<p><strong>Estupor de Mubarizdun.</strong></p><p>Cuando empuñas un arma pesada con las dos manos, puedes realizar una maniobra especial llamada Estupor de Mubarizdun. Cuando realizas Estupor de Mubarizdun, infliges una Herida. La próxima vez que un enemigo (villanos, banda de matones, etc.) que te vio ejecutar Estupor de Mubarizdun inflija Heridas en esta ronda, inflige una Herida menos por cada nivel que tengas en Intimidar. Puedes realizar Estupor de Mubarizdun solo una vez por ronda.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

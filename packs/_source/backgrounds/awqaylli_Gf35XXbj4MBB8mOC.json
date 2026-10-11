@@ -1,0 +1,31 @@
+{
+  "folder": "gd4oUJpI8AMIWALS",
+  "name": "Awqaylli",
+  "type": "background",
+  "_id": "Gf35XXbj4MBB8mOC",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Actúas como la mano dura de Suway, protegiendo a sus sacerdotes y destruyendo a sus enemigos, incluidos los demás dioses.</p>",
+    "infosource": "El Nuevo Mundo, p. 162",
+    "quirk": "<p>Ganas 1 punto de héroe al derrotar a un enemigo más poderoso que tú.</p>",
+    "skills": [
+      "athletics",
+      "hide",
+      "notice",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Academia de esgrima (Waglichina)",
+      "Hechicería"
+    ],
+    "nation": "kuraq",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

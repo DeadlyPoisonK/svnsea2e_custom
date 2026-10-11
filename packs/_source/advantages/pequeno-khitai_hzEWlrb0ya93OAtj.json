@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Pequeño (Khitai)",
+  "type": "advantage",
+  "_id": "hzEWlrb0ya93OAtj",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando realizas un Riesgo que se beneficiaría de tu pequeño tamaño (usar Esconder para meterte en un espacio diminuto y escapar de una patrulla de guardias o usar Atletismo para deslizarte entre los barrotes de una celda), puedes volver a tirar un dado.</p>",
+    "infosource": "Khitai, p. 113 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

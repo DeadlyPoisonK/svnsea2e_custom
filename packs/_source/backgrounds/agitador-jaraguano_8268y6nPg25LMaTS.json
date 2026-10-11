@@ -1,0 +1,32 @@
+{
+  "folder": "1QfGlHgem6ssE584",
+  "name": "Agitador jaraguano",
+  "type": "background",
+  "_id": "8268y6nPg25LMaTS",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Jaragua necesita aliados, dinero y comercio. Tú sabes cómo conseguir lo que necesita tu nación.</p>",
+    "infosource": "Naciones Piratas, p. 147",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando consigas un nuevo aliado para Jaragua.</p>",
+    "skills": [
+      "brawl",
+      "empathy",
+      "hide",
+      "tempt",
+      "theft"
+    ],
+    "advantages": [
+      "Contactos",
+      "Hacer más atractiva la oferta"
+    ],
+    "nation": "jaragua",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

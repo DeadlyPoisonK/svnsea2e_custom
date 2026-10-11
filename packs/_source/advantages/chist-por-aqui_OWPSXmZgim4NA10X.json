@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Chist, por aquí",
+  "type": "advantage",
+  "_id": "OWPSXmZgim4NA10X",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Mientras no te detecten, puedes gastar 1 punto de héroe para atraer a un solo personaje hasta tu posición y noquearlo. Otros personajes que se encuentren en la misma área no se dan cuenta de tu presencia.</p>",
+    "infosource": "7º Mar (básico), p. 149",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  }
+}

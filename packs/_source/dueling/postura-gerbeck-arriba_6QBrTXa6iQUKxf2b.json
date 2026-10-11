@@ -1,0 +1,19 @@
+{
+  "folder": "PWCKDOvwS0ovE4Y9",
+  "name": "Postura Gerbeck (Arriba)",
+  "type": "duelstyle",
+  "_id": "6QBrTXa6iQUKxf2b",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Postura Gerbeck (arriba): Las maniobras que infligen Heridas infligen 1 Herida adicional, pero realizas todas las acciones como si tuvieras 1 Aumento menos (mínimo 1).</p><p>Selecciona tu postura al principio de cada ronda. Si deseas cambiar de postura durante una ronda, debes gastar 1 Aumento para hacerlo.</p>",
+    "used": false,
+    "bonus": "",
+    "infosource": "7º Mar (básico), p. 237 (estilo Drexel)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

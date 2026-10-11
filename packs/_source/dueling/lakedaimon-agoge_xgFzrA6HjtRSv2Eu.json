@@ -1,0 +1,18 @@
+{
+  "folder": "xHKlTiVU5lOVZ9t2",
+  "name": "Lakedaimon Agoge",
+  "type": "duelstyle",
+  "_id": "xgFzrA6HjtRSv2Eu",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>«La grandeza nace de la adversidad». Este simple lema sirve como principio rector a los docentes de Lakedaimon Agoge. Se esfuerzan por empujar a sus alumnos a ser dignos de su herencia divina, descendientes de la diosa Potnia Agrotera. Tallan su propia lanza. Forjan su espada, codo con codo con el maestro herrero de Lakedaimon. Duermen abrazados a su arco.</p><p>Todos los graduados de Lakedaimon Agoge aprenden este prototípico estilo de duelo numanari, aunque ya se ha extendido más allá de los graduados supervivientes de la escuela. Los agoges numanaris se han puesto de moda en cierto sentido entre los jóvenes de la élite social de Théah, aunque la mayoría de ellos pierden el interés unos pocos días después debido a los rigurosos métodos de entrenamiento. Euthalia, una de las docentes de Lakedaimon Agoge más duras y más respetadas, se ha autoasignado la tarea de marcharse de las islas y viajar por el continente de Théah. Ha fundado una nueva escuela en la ciudad vodaccia de Joppa para probar el espíritu heroico de los théanos y buscar estudiantes que ella considere dignos de ser llamados numanaris.</p><p>&lt;strong&gt;Armas de Agoge.&lt;/strong&gt; Lakedaimon Agoge le enseña a sus estudiantes a elegir un arma y convertirla en una extensión de sí mismos. Sin embargo, con el tiempo, también se anima a los estudiantes a que añadan armas adicionales a su arsenal una vez han dominado la primera.</p><p>Si deseas dominar una segunda arma, adquiere la ventaja «Dominio de arma de Agoge», página 150.</p>",
+    "infosource": "Naciones Piratas, p. 174",
+    "bonus": "<p><strong>Embate Agoge.</strong></p><p>Cuando aprendas el estilo de esgrima Lakedaimon Agoge, elige un arma entre la lanza, la espada o el arco. Cuando uses tu arma con el estilo Lakedaimon Agoge, consigues el siguiente beneficio:</p><ul><li>Si eliges la espada, realizas tu primera acción de la ronda como si tuvieras 1 Aumento adicional.</li><li>Si eliges la lanza, puedes volver a tirar 1 dado para un Riesgo de Atletismo que realices si describes cómo usas la lanza para ayudarte.</li><li>Si eliges el arco, puedes usar Apuntar (en lugar de Armas) para determinar los efectos de tus maniobras cuando uses este arma a distancia.</li></ul><p>Cuando esgrimas el arma elegida, tu maniobra de Embestida queda remplazada por Embate Agoge, que inflige tantas Heridas como tu nivel en Armas más el número de Aumentos que gastes, pero debes usar tu siguiente acción de esta ronda en recuperarte y volver a tu guardia, para lo cual tienes que gastar 1 Aumento.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

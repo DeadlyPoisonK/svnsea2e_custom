@@ -1,0 +1,22 @@
+{
+  "folder": "3EpaCwzuxyYpuD7B",
+  "name": "Alquimia (Khitai): cómo funciona",
+  "type": "sorcery",
+  "_id": "CxPvr7Nm1AItCPV0",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La alquimia se basa en el concepto de crear pociones consumibles con distintos niveles de Potencia. La Potencia de una poción determina lo poderoso que será el efecto de la poción; cuanto mayor sea la Potencia, más poderoso será el efecto.</p><p>Para elaborar pociones, un alquimista debe realizar un Riesgo especial. Este Riesgo puede realizarse gratis al comienzo de cada sesión de juego, y durante una sesión de juego cuando la historia permita que tenga lugar dicho Riesgo: un alquimista no elaborará pociones en medio de un combate, pero durante el tiempo de inactividad o mientras otros héroes están ocupados con sus propios asuntos, un alquimista podría realizar dicho Riesgo. Para realizar este Riesgo, un alquimista necesita tener acceso a un laboratorio (aunque no tiene por qué ser el suyo propio). El alquimista puede gastar 1 punto de héroe y tirar rasgo + Conocimiento para hacerlo, pero puede obtener varias bonificaciones para añadir dados adicionales al Riesgo. Por ejemplo, tener un ayudante le otorga al alquimista un dado adicional (2 si el ayudante es especialmente competente), tener un laboratorio decente le otorgará un dado adicional (2 si está bien equipado) o disponer de unas horas para elaborar puede otorgarle un dado adicional (2 si el alquimista puede dedicar todo el día). Estas bonificaciones no son excluyentes: un alquimista con un ayudante talentoso en un laboratorio bien provisto con un día entero para preparar pociones es capaz de elaborar mejores pociones que quien intente preparar una a la vera del camino con unas pocas hierbas sobre una hoguera.</p><p>Tras realizar el Riesgo de elaboración, un alquimista gasta 1 Aumento para crear una poción con Potencia 1, y puede invertir Aumentos adicionales para aumentar la Potencia de la poción (con una Potencia máxima de 5). Un alquimista puede mantener hasta 3 pociones por cada vez que haya adquirido la ventaja Hechicería; por ejemplo, un alquimista que haya adquirido la ventaja Hechicería 3 veces puede mantener hasta 9 pociones durante una sesión de juego. Todas las pociones se degradan, pierden su eficacia o quedan inservibles al final de cada sesión de juego.</p><p>La alquimia es única en el sentido de que un alquimista puede entregar libremente una poción que elabore a otro personaje. Ese personaje puede entonces usar la poción para obtener el beneficio. Si bien solo un alquimista puede crear una poción, cualquiera puede obtener el beneficio bebiendo la mezcla y gastando uno o más puntos de héroe. ¡Esto significa cualquiera! ¡Si un villano es capaz de arrebatar de algún modo una poción a un héroe, puede bebérsela y obtener el beneficio!</p><p>La primera vez que adquieres la ventaja Hechicería, elige dos pociones. Estas recetas alquímicas deben ser una poción general o una poción de tu nación natal. Cada vez posterior que adquieras la ventaja Hechicería, elige dos pociones adicionales. Nunca puedes elegir una poción de otra nación. Por ejemplo, un alquimista de Shenzhou nunca podrá elegir la poción de Invulnerabilidad.</p><p>Un personaje debe gastar un punto de héroe cada vez que active una poción; durante una secuencia de acción también debe gastar un Aumento.</p>",
+    "infosource": "Khitai, p. 198 (traducción no oficial)",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

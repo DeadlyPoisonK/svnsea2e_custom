@@ -1,0 +1,22 @@
+{
+  "folder": "PCjzE8oTk3HQG27I",
+  "name": "Piedra Stort Merke",
+  "type": "sorcery",
+  "_id": "wJUdApa7oVJbRxfX",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Elige a un personaje que esté contigo en la escena. La próxima vez en esta ronda que el personaje sufra Heridas, la cantidad de Heridas se reduce a la mitad (redondeando hacia arriba). La próxima vez en esta ronda que el personaje inflija Heridas, se reducen a la mitad (redondeando hacia arriba). Los efectos de esta merke acaban al final de la ronda, haya sufrido o infligido Heridas el personaje, o no.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 192",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

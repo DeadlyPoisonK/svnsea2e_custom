@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Mirar fijamente (Khitai)",
+  "type": "advantage",
+  "_id": "ckSZENG3HLrk7VNb",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para intimidar a un personaje y hacer que se retracte de una amenaza, te deje entrar a algún lugar al que no debería o simplemente se asuste de ti.</p>",
+    "infosource": "Khitai, p. 117 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

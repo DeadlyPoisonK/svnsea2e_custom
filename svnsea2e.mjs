@@ -417,7 +417,10 @@ let packAdvantages = null;
 async function getPackAdvantages() {
   if (!packAdvantages) {
     const found = [];
-    for (const pack of game.packs) {
+    const packs = [...game.packs].sort(
+      (a, b) => (b.metadata.packageName === SYSTEM_ID) - (a.metadata.packageName === SYSTEM_ID)
+    );
+    for (const pack of packs) {
       if (pack.documentName !== "Item") continue;
       const index = await pack.getIndex({ fields: ["type"] });
       for (const entry of index) {
@@ -436,12 +439,21 @@ async function getAllAdvantageNames() {
   for (const entry of await getPackAdvantages()) names.add(entry.name);
   return [...names].sort((a, b) => a.localeCompare(b));
 }
-async function findAdvantage(name) {
-  const worldItem = game.items.find((i) => i.type === ItemTypes.ADVANTAGE && i.name === name);
-  if (worldItem) return worldItem;
+const findWorldAdvantage = (name) => game.items.find((i) => i.type === ItemTypes.ADVANTAGE && i.name === name);
+async function findPackAdvantageUuid(name) {
+  const entries = await getPackAdvantages();
   const lower = name.toLowerCase();
-  const entry = (await getPackAdvantages()).find((e) => e.name.toLowerCase() === lower);
-  return entry ? fromUuid(entry.uuid) : null;
+  const entry = entries.find((e) => e.name === name) ?? entries.find((e) => e.name.toLowerCase() === lower);
+  return entry?.uuid ?? null;
+}
+async function findAdvantageUuid(name) {
+  return findWorldAdvantage(name)?.uuid ?? findPackAdvantageUuid(name);
+}
+async function findAdvantage(name) {
+  const worldItem = findWorldAdvantage(name);
+  if (worldItem) return worldItem;
+  const uuid = await findPackAdvantageUuid(name);
+  return uuid ? fromUuid(uuid) : null;
 }
 const SYSTEM_KEY = /^system\.(?:(?:traits|skills)\.\w+\.value|fear\.value|dwounds\.max|htk|rollBonus\.[\w.]+)$/;
 const changePhase = (change) => SYSTEM_KEY.test(change.key ?? "") ? "initial" : change.phase;
@@ -2703,6 +2715,11 @@ const ITEM_LAYOUTS = {
 const PARTIAL_TABS = /* @__PURE__ */ new Set(["attributes", "details"]);
 const TAB_LABELS = { earnfavor: "SVNSEA2E.EarnFavor", callupon: "SVNSEA2E.UseFavor" };
 const tabLabel = (id) => TAB_LABELS[id] ?? `SVNSEA2E.${id[0].toUpperCase()}${id.slice(1)}`;
+async function advantageLink(name) {
+  const uuid = await findAdvantageUuid(name);
+  if (uuid) return { name, link: await enrichHTML(`@UUID[${uuid}]{${name}}`) };
+  return { name, missing: game.i18n.format("SVNSEA2E.ItemDoesntExist", { name }) };
+}
 class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
   static DEFAULT_OPTIONS = {
     classes: ["svnsea2e", "sheet", "item", "themed", "theme-light"],
@@ -2757,7 +2774,10 @@ class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     for (const tab2 of context.bodyTabs.filter((t) => t.editor)) {
       context.enriched[tab2.id] = await enrichHTML(system[tab2.id], enrichOptions);
     }
-    if (item.type === ItemTypes.BACKGROUND) context.selectedskills = system.skills.map((s) => CONFIG.SVNSEA2E.skills[s]);
+    if (item.type === ItemTypes.BACKGROUND) {
+      context.selectedskills = system.skills.map((s) => CONFIG.SVNSEA2E.skills[s]);
+      context.advantageLinks = await Promise.all(system.advantages.map((name) => advantageLink(name)));
+    }
     return context;
   }
   static #onSelectSkills(event, target) {

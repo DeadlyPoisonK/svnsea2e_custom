@@ -1,0 +1,24 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Ataque corporal",
+  "type": "advantage",
+  "_id": "z7AJ2i14jPArXkAw",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastes un Aumento para infligir Heridas o para realizar una maniobra durante un Riesgo de Pelear, puedes gastar puntos de héroe para aumentar la cantidad de Heridas que infliges. Cada punto de héroe que gastes con esta ventaja inflige 2 Heridas adicionales.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 210",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

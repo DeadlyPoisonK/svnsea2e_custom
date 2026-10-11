@@ -1,0 +1,21 @@
+{
+  "folder": "8yRTt6IGKB0lpv51",
+  "name": "Espejismo reluciente",
+  "type": "sorcery",
+  "_id": "Er4zQAf6oi1hNAuA",
+  "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
+  "system": {
+    "description": "<p>Activa este turru para crear ilusiones perfectas de cualquier cosa con la que estés familiarizado, incluidas copias de ti mismo. Las ilusiones solo se dispersan mediante interacción física o tu orden, y puedes mantener a la vez una cantidad de ilusiones igual a tu Ingenio.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 185",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

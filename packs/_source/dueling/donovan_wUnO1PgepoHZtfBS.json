@@ -1,0 +1,18 @@
+{
+  "folder": "PWCKDOvwS0ovE4Y9",
+  "name": "Donovan",
+  "type": "duelstyle",
+  "_id": "wUnO1PgepoHZtfBS",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Este estilo de esgrima creado por Donovan Durant, el guardaespaldas más famoso de toda Théah, es único tanto en la aplicación como en la ocupación de su creador. Donovan era muy particular respecto a quién elegía como cliente, solo decidía proteger a aquellos que él creía que realmente necesitaban protección. Antes de retirarse se decía que solo uno de sus protegidos había muerto bajo su protección: el primero. Juró que nunca dejaría que eso volviera a pasar y mantuvo su promesa. Tras retirarse, fundó la academia Donovan en Carleon, una escuela que quizás tenga los requisitos de entrada más rígidos de todos. Donovan aceptaba personalmente a cada uno de los estudiantes después de un riguroso proceso de entrevista y solo aquellos que según Donovan Durant comparten su compromiso por la protección pueden estudiar en esta academia.</p>",
+    "infosource": "7º Mar (básico), p. 237",
+    "bonus": "<p><strong>Bastión de Donovan.</strong></p><p>Cuando esgrimes un arma pesada (una espada larga, una maza, etcétera) en una mano y nada en la otra, tu maniobra de Parada se remplaza por Bastión de Donovan. Esta bonificación evita que se inflijan tantas Heridas como tu nivel de Armas, ya sea a ti o a un aliado que se encuentre dentro de tu alcance. Además, cuando realizas esta maniobra, puedes gastar 1 punto de héroe para trabar el arma de tu oponente con la tuya. Ambos perdéis todos los Aumentos que os queden y no podéis realizar más acciones en esta ronda.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 150000,
+  "ownership": {
+    "default": 0
+  }
+}

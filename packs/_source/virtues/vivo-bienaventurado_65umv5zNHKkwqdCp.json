@@ -1,0 +1,17 @@
+{
+  "folder": "cM8cp2HgmMlzFy4Z",
+  "name": "Vivo/Bienaventurado",
+  "type": "virtue",
+  "_id": "65umv5zNHKkwqdCp",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para volver a lanzar cualquier número de dados cuando corras un Riesgo.</p>",
+    "infosource": "El Gran Ciclo · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  }
+}

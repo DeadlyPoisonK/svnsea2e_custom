@@ -1,0 +1,18 @@
+{
+  "folder": "e1trSwu912DnmVrS",
+  "name": "Yurusiyya",
+  "type": "duelstyle",
+  "_id": "K10Aj3RI3OVfE86t",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Debido a lo difícil que es criar caballos dentro del Imperio de la Media Luna, aquellos que cuidan de los animales reciben respeto. Los que han dominado Yurusiyya llevan ese respeto a otro nivel. Un esgrimista Yurusiyya cree que la equitación es la vocación más alta, domina las artes ecuestres y usa sus habilidades para potenciar su capacidad en combate. Un esgrimista Yurusiyya solo monta un caballo con el que tiene una conexión y cree que su caballo es una extensión de su alma.</p><p>No hay academias formales que enseñen Yurusiyya. Un maestro Yurusiyya interesado en encontrar un aprendiz recorre el Imperio de la Media Luna en busca de un estudiante digno. Muchos esgrimistas Yurusiyya afirman que sus caballos tomaron la decisión. Mientras el elegido por su caballo muestre aptitud para el estilo, entonces la esgrimista no cuestiona la elección de su caballo.</p><p>Los esgrimistas que usan Yurusiyya son considerados algunos de los mejores jinetes del mundo. Si bien suelen ser arqueros a caballo, estos esgrimistas dominan todas las formas de combate desde la silla de montar.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 205",
+    "bonus": "<p><strong>Bombardeo de Yurusiyya.</strong></p><p>Mientras empuña un arco, una esgrimista Yurusiyya puede usar sus niveles de Apuntar en lugar de Armas al realizar maniobras de esgrimista. Además, mientras montas a caballo, la maniobra Embestida se reemplaza con Bombardeo de Yurusiyya. Cuando realices Bombardeo de Yurusiyya, gasta todos tus Aumentos. Infliges una cantidad de Heridas igual a tus niveles en Armas más los Aumentos que gastaste más tus niveles en Equitación. Puedes dividir estas Heridas entre cualquier número de objetivos involucrados en la escena.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

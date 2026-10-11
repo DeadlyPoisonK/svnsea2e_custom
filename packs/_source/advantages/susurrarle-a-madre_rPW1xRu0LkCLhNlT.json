@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Susurrarle a madre",
+  "type": "advantage",
+  "_id": "rPW1xRu0LkCLhNlT",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe y vierte un poco de tu propia sangre en tu mano (normalmente el Susurrador se muerde el labio o la lengua, o se hace un corte pequeño y poco profundo en la palma de la mano). Ahueca las manos delante de la boca y susurra el nombre de un hermano o una hermana, o elige dirigirte a Madre. Puedes decir una frase simple o una pregunta y la otra persona te escuchará. Luego te colocas las manos ahuecadas en la oreja y puedes escuchar la respuesta que susurra (responder no requiere gastar 1 punto de héroe, aunque sería bastante sospechoso que estuvieras hablando con alguien y de repente te detuvieras a susurrarle a tus manos). Es posible tener conversaciones más largas, pero requieren 1 punto de héroe adicional por cada intercambio de más.</p><p><em>Solo si eres bucanero.</em></p>",
+    "infosource": "Naciones Piratas, p. 153",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

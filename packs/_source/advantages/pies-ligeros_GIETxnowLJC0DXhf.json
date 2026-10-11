@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Pies ligeros",
+  "type": "advantage",
+  "_id": "GIETxnowLJC0DXhf",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para moverte de inmediato a una Zona adyacente. Puedes activar esta ventaja antes o después de realizar una acción, pero solo en tu acción.</p>",
+    "infosource": "Khitai, p. 115 (traducción no oficial)",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false,
+    "used": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

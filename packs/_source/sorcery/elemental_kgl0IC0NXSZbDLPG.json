@@ -1,0 +1,22 @@
+{
+  "folder": "li9WDKazVu5ySEdo",
+  "name": "Elemental",
+  "type": "sorcery",
+  "_id": "kgl0IC0NXSZbDLPG",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Puede enfundar tu hoja en fuego, rayos u otro efecto elemental. Cada vez que uses esta arma contra un ser que se vería afectado por su efecto, infliges 1 Herida adicional. Gasta 1 punto de héroe para activar esta habilidad hasta el final de la ronda. Si una criatura es especialmente susceptible al elemento (como golpear a un demonio de fuego con una espada de zahmeireen encantada con hielo), infliges 1 Herida adicional. Además, mientras este efecto está activo, previene 1 Herida cada vez que el elemento elegido te inflija Heridas.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 199",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "ikl5WVrAvCjFUgZB",
+  "name": "Hexenwerk: los apóstatas (cómo funciona)",
+  "type": "sorcery",
+  "_id": "xw9KkXVddpoIOXRM",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El Hexenwerk de un apóstata funciona exactamente igual que el Hexenwerk normal. Cada vez que adquieres la ventaja Hechicería, aprendes la receta de un ungüento mayor y dos ungüentos menores. A la hora de escoger los ungüentos puedes elegirlos de la lista del Hexenwerk o de la de los apóstatas.</p><p>Elaborar un ungüento requiere tiempo (al menos una hora) y espacio (una cocina o laboratorio). Un hexe gasta 1 punto de héroe y combina los materiales para crear 1 ungüento mayor, siempre que conozca su receta. Además, también crea 2 ungüentos menores por cada vez que haya adquirido la ventaja Hechicería. El hexe puede crear varias dosis del mismo ungüento menor o una dosis de diferentes ungüentos.</p><p>Tras ser creado, el ungüento puede ser utilizado por cualquiera. Activar un ungüento cuesta un único Aumento si se hace durante una secuencia de acción, pero no requiere nada más. Los ungüentos son inestables; al final de cada episodio un héroe sólo puede conservar un ungüento mayor o uno menor sin utilizar; el resto se estropean, se filtran de sus propios recipientes o quedan inservibles por alguna otra razón.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 52",
+    "sorctype": "hex",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

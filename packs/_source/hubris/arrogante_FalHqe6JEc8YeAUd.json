@@ -1,0 +1,17 @@
+{
+  "folder": "uRiLWm1i9xUID1Ha",
+  "name": "Arrogante",
+  "type": "hubris",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibe 1 punto de héroe cuando tu héroe demuestre desdén o desprecio o subestime a un villano o a alguien que podría dañar a tus amigos.</p>",
+    "infosource": "La torre · 7º Mar (básico), p. 157"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "FalHqe6JEc8YeAUd",
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  }
+}

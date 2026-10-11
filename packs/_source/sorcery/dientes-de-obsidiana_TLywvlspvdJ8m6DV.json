@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Dientes de obsidiana",
+  "type": "sorcery",
+  "_id": "TLywvlspvdJ8m6DV",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Cuando Zipacna habla, sale humo y hollín de su boca. Esto le ha dado una reputación de maligno, pero no podría estar más lejos de la verdad. Los pocos que conocen a Zipacna dicen que podría ser el más heroico de los dioses. Cuando Kisin trató de destruir a la humanidad, fue Zipacna quien mordió la lanza de Kisin, destruyéndola para salvar a la humanidad. Mientras use los Dientes de obsidiana de Zipacna, un héroe puede gastar 1 punto de héroe para morder cualquier objeto, incluso mágico, destruyéndolo en el proceso. El héroe recibe una Herida Dramática si el objeto que muerde es mágico o único de alguna manera (por ejemplo, si está hecho de <em>dracheneisen</em>, es un artefacto syrneth o un objeto distintivo).</p>",
+    "infosource": "El Nuevo Mundo, p. 172",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 262500,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

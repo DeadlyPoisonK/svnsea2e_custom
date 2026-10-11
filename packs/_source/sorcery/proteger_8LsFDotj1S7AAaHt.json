@@ -1,0 +1,22 @@
+{
+  "folder": "KnMqpe46crPBBvU0",
+  "name": "Proteger",
+  "type": "sorcery",
+  "_id": "8LsFDotj1S7AAaHt",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este poder y elige otro personaje en la escena. La próxima vez que ese personaje reciba Heridas, reduce las Heridas que recibe en un número igual a tu Brío. El tercer paso es una lección complicada. La violencia no siempre es la respuesta, pero a veces es inevitable. Ser capaz de controlar esa violencia y apuntarla en una dirección que no perjudique a aquellos que no pueden protegerse a sí mismos es esencial para seguir este Camino. Tu Maravilla puede atraer la atención de cualquier persona hacia ti y alejarla de los demás.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 168",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "4U6I0mscCu3etLYC",
+  "name": "Khadim",
+  "type": "background",
+  "_id": "210i5fdKEW97XucE",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>La única manera de sobrevivir es confiar. Lo sabes mejor que la mayoría.</p><p><em>Ventajas en el libro: Hechicería (Mithaq Alqadim), Hechicería (Mithaq Alqadim).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 158",
+    "quirk": "<p>Ganas 1 punto de héroe cuando recuperas tu thiqa de manos de otro personaje.</p>",
+    "skills": [
+      "empathy",
+      "notice",
+      "perform",
+      "ride",
+      "theft"
+    ],
+    "advantages": [
+      "Estómago de hierro",
+      "Hechicería",
+      "Hechicería (2)"
+    ],
+    "nation": "tribes",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

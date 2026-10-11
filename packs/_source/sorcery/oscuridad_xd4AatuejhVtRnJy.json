@@ -1,0 +1,22 @@
+{
+  "folder": "UmOykxAiB4ACTBDv",
+  "name": "Oscuridad",
+  "type": "sorcery",
+  "_id": "xd4AatuejhVtRnJy",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Un dievas con el Trato de la Oscuridad puede manipular las sombras y la oscuridad, estirándolas o encogiéndolas. Puede ver y escuchar a través de las sombras, usarlas como portales e incluso darle a una sombra una forma física y usarla para causar daño a otra criatura.</p><ul><li>Provocar un eclipse para sumir un área grande (como una ciudad entera) en la oscuridad absoluta.</li><li>Convocar a una bestia sombría, un monstruo aterrador hecho de pura oscuridad, para que aceche y mate a una criatura de tu elección.</li><li>Hacer que una habitación se vuelva tan oscura como la noche.</li><li>Observar un área o a otro personaje a través de las sombras. Puedes ver y escuchar todo como si estuvieras sumido en las sombras de ese lugar y todos tus sentidos funcionan con normalidad.</li><li>Abrir un portal de sombras para viajar inmediatamente una distancia corta a otro lugar en las sombras que puedas ver.</li><li>Hacer que una criatura sea atacada por su propia sombra, infligiendo 1 Herida cada vez que realiza una acción durante esta ronda.</li><li>Que las sombras te rodeen para que seas imposible de detectar. Cualquier intento de localizarte con medios mundanos falla automáticamente (no se necesitan Aumentos para evitarlo).</li></ul>",
+    "infosource": "7º Mar (básico), p. 224",
+    "sorctype": "sanderis",
+    "sorccat": "deal",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

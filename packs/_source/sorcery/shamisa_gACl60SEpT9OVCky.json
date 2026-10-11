@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Shamisa",
+  "type": "sorcery",
+  "_id": "gACl60SEpT9OVCky",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado cuando le hagas una pregunta a otro personaje. Ese personaje debe responder a la pregunta con la verdad dando lo mejor de sus capacidades. Puedes saber si la información de ese personaje es incorrecta, pero no sabes cuál es la verdad. Por ejemplo, si le preguntas a un personaje dónde está un tesoro específico y cree que está en manos del sultán, te responde: «El sultán lo tiene». Sin embargo, si ese tesoro fue robado recientemente por un ladrón, sabes que el sultán no tiene el tesoro pero no sabes quién lo tiene.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 180",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

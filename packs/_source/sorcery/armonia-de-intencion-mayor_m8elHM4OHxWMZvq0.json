@@ -1,0 +1,21 @@
+{
+  "folder": "GAjSxs0pSleA21VH",
+  "name": "Armonía de intención Mayor",
+  "type": "sorcery",
+  "_id": "m8elHM4OHxWMZvq0",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este Khidma le enseña al khadim a alinear su espíritu con el de sus aliados, lo que hace que el trabajo en equipo y la coordinación sean mucho más fáciles e intuitivos. A los aliados de un khadim que han experimentado la magia de este Khidma les resulta difícil describir la cercanía espiritual que se siente entre la pareja, como si sus mentes estuvieran en perfecta armonía entre sí.</p><p>Activa este Khidma después de que tú y la portadora de tu thiqa tiréis los dados para un Riesgo. Si ambos usáis la misma habilidad o la misma característica en vuestro Enfoque, podéis compartir dados de tu reserva para sumar Aumentos. Solo puedes tomar dados de la portadora de tu thiqa con su consentimiento; si desea tomar tus dados, no necesita tu consentimiento.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 182",
+    "sorctype": "mithaq",
+    "sorcdur": "none",
+    "sorccat": "thiqa",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

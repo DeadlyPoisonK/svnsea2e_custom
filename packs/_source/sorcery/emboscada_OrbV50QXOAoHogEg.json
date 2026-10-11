@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Emboscada",
+  "type": "monsterquality",
+  "_id": "OrbV50QXOAoHogEg",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Esta criatura espera escondida o disfrazada a personas incautas o indefensas. Cuando está en su lugar de emboscada, ¡este monstruo es realmente mortal! Gasta 1 punto de peligro para duplicar el número de Heridas infligidas por el monstruo en su primer ataque exitoso en una secuencia si pasa desapercibido.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 58",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

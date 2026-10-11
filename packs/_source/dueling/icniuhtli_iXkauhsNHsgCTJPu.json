@@ -1,0 +1,18 @@
+{
+  "folder": "jraBR9ng5ywEQ4lN",
+  "name": "Icniuhtli",
+  "type": "duelstyle",
+  "_id": "iXkauhsNHsgCTJPu",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>El Icniuhtli remonta sus raíces a través de generaciones de la Alianza Nahuacana. El estilo se originó y siempre ha sido más popular entre los Ocēlōmeh, aunque otras organizaciones militares también lo utilizan. Estos guerreros, vestidos con armaduras ligeras y empuñando lanzas, entran y salen del combate creando espacios para que los demás los aprovechen. Si bien son peligrosos por separado, aquellos que trabajan como parte de un equipo son mortales y un grupo especializado de guerreros Icniuhtli es realmente devastador. Múltiples maestros de Icniuhtli coordinan perfectamente sus ataques para abrumar por completo a sus enemigos.</p><p>Aunque guerreros de toda la Alianza practican Icniuhtli, ninguno es tan competente como Tlaloc, un devoto de Mīlllahco. Él, junto con sus hermanos y hermanas, forman un escuadrón de los más selectos Ocēlōmeh conocidos por la Alianza. Algunos dicen que su vínculo familiar es lo que los hace tan peligrosos, mientras que otros atribuyen su habilidad a un vínculo místico con un tótem antiguo. Cualquiera que sea el caso, la unidad de Tlaloc acude a las misiones más peligrosas e importantes. Su coordinación es tan perfecta que, aun en el fragor de la batalla, los miembros de su séquito no necesitan hablar para coordinar sus ataques. Cada miembro sabe a nivel instintivo dónde debe estar para aprovechar las fintas y aperturas. Tlaloc nunca ha sufrido una derrota en combate, incluso cuando ha luchado contra números abrumadores.</p>",
+    "infosource": "El Nuevo Mundo, p. 182",
+    "bonus": "<p><strong>Astucia de Jaguar.</strong></p><p>Cuando empuñas una lanza en una o ambas manos, obtienes una maniobra especial llamada «Astucia de Jaguar». Cuando realizas esta maniobra, infliges una Herida y la siguiente fuente de Heridas en tu objetivo esta ronda inflige una Herida adicional. Además, puedes seleccionar un aliado para que realice una acción de inmediato, gastando Aumentos como de costumbre. Si el aliado seleccionado usa la acción que le otorgas para infligir Heridas a tu objetivo, el objetivo sufre tantas Heridas adicionales como tu nivel de Ingenio. Un héroe puede realizar la maniobra Astucia de Jaguar una vez por ronda.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

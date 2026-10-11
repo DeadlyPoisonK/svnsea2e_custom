@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Espía (Khitai)",
+  "type": "background",
+  "_id": "nZZ1LpwIoXstGUFJ",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Honestidad</p>",
+    "infosource": "Khitai, p. 107 (traducción no oficial)",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Gana un punto de héroe cada vez que asumas un gran riesgo para desvelar un secreto.</p>",
+    "skills": [
+      "hide",
+      "perform",
+      "scholarship",
+      "theft",
+      "weaponry"
+    ],
+    "advantages": [
+      "Hurto (Khitai)",
+      "Contactos (Khitai)"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

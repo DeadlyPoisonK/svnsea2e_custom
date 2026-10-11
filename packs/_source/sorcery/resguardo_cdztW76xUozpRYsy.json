@@ -1,0 +1,22 @@
+{
+  "folder": "QOYhUFu4kdBAfERt",
+  "name": "Resguardo",
+  "type": "sorcery",
+  "_id": "cdztW76xUozpRYsy",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 2 de Furia si se activa de inmediato; genera 2 de Tranquilidad si te tomas una hora para activarlo como un ritual. Hasta el final de la ronda, tus aliados quedan protegidos por un escudo espiritual; reduce en 1 las Heridas infligidas a todos los aliados en tu Zona actual.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 196 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

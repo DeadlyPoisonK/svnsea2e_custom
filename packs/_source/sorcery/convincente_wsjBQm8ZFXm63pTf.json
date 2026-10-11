@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Convincente",
+  "type": "monsterquality",
+  "_id": "wsjBQm8ZFXm63pTf",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Un monstruo convincente tiene la capacidad de alterar la percepción, los deseos inmediatos e incluso las motivaciones de su objetivo. En cualquier momento, la criatura puede sugerir un camino de acción. Si el héroe accede, el jugador recibe 1 punto de héroe. Si el héroe se niega a seguir el camino de acción sugerido, el DJ gana 1 punto de peligro. Esta habilidad no le permite al monstruo controlar al ser que está siendo convencido como si fuera un autómata, pero cualquier sugerencia hecha por el monstruo es vista de la manera más favorable. Así, una criatura convencida se niega a obedecer una sugerencia de suicidio, como: «Deberías tirarte de ese puente» o «Deberías pegarte un tiro en la cabeza», pero algo como: «¡Este hombre mató a tu esposo, ahora es el momento para tomar venganza! ¡Deberías <em>matarlo</em>!» es aceptable, incluso si pone en peligro al convencido.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 58",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

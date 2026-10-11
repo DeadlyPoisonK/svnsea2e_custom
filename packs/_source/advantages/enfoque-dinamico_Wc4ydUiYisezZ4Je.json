@@ -1,0 +1,23 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Enfoque dinámico",
+  "type": "advantage",
+  "_id": "Wc4ydUiYisezZ4Je",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para cambiar tu Enfoque durante una secuencia de acción o una secuencia dramática.</p><p><em>Naciones Piratas, p. 151: coste 3 (2 si eres bucanero).</em></p>",
+    "infosource": "7º Mar (básico), p. 151",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  }
+}

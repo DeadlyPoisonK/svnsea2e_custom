@@ -1,0 +1,22 @@
+{
+  "folder": "2M2vfXkTX0aej1QO",
+  "name": "Puntos de héroe y hebras",
+  "type": "sorcery",
+  "_id": "rQ64KwWXMK192DPa",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cuando una strega usa un Tessere, gasta 1 punto de héroe y coge al menos 1 hebra (algunos Tesse dan la opción de coger hebras adicionales, pero el mínimo siempre es 1). El número de hebras de la strega aumenta el efecto de un Tessere, pero también hace que el precio final sea más alto. Al destino no le gusta que las streghe lo toqueteen y siempre se asegura de cobrarse su precio.</p><p>Tener hebras del destino es tanto beneficioso como perjudicial. Es beneficioso porque cuantas más hebras tengas, más fuerte es tu magia, y es perjudicial porque soltarlas se vuelve más doloroso.</p>",
+    "infosource": "7º Mar (básico), p. 229",
+    "sorctype": "sorte",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "uETcMjSzbDU1pecb",
+  "name": "Garrote de guerra de Holcan",
+  "type": "sorcery",
+  "_id": "mX9DFO6VqRzCWE2V",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Holcan fue un combatiente de tal destreza que su nombre se convirtió en sinónimo de la profesión de guerrero. Tras su muerte, Holcan viajó más allá de las aguas de los muertos para conquistar tierras inimaginables y convertirse en uno con su garrote. Ahora, un Ahez puede recurrir a él en tiempos de grandes luchas y conflictos para tener el honor de empuñar su garrote de guerra en la batalla. Mientras empuñe el Garrote de guerra de Holcan, el héroe puede gastar 1 punto de héroe para conocer cualquier maniobra que no sea específica de un estilo de esgrima durante el resto de la escena. Si el héroe ya puede realizar maniobras, su habilidad de Armas se considera 1 nivel más alto al calcular los efectos de la maniobra (como las Heridas infligidas por la maniobra de Estocada). Sin embargo, mientras un héroe lleva el Garrote de guerra de Holcan, no puede curar ni reducir las Heridas que reciba.</p>",
+    "infosource": "El Nuevo Mundo, p. 175",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "pixan"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

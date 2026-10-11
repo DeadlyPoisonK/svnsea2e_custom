@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Guardaespaldas (Khitai)",
+  "type": "advantage",
+  "_id": "Os9n4ynFSAL91jUc",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes gastar un punto de héroe cuando un aliado vaya a sufrir Heridas. Gasta Aumentos para evitar esas Heridas a ese aliado.</p>",
+    "infosource": "Khitai, p. 114 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

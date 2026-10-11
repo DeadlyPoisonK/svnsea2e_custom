@@ -1,0 +1,22 @@
+{
+  "folder": "e7zC6zFneGTjKAV7",
+  "name": "Estrella Stort Merke",
+  "type": "sorcery",
+  "_id": "0nOY2tHdvDoX30gR",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Elige a un personaje que esté contigo en la escena (no puedes ser tú mismo). Dicho personaje obtiene la cualidad Cambiaformas, como si fuera un monstruo. Cada vez que el personaje realice una acción mientras esté bajo esa forma, sufre 1 Herida. Si sufre una Herida Dramática, su forma se rompe y pierde esta cualidad.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 191",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

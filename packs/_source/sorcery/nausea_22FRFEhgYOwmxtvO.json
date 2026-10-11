@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Náusea",
+  "type": "sorcery",
+  "_id": "22FRFEhgYOwmxtvO",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Haces que tus enemigos huelan algo indeciblemente fétido, provocándoles náuseas. Genera 2 de Plaga. Aplica Presión a todos los personajes en una Zona para que tengan arcadas, caigan al suelo o permanezcan inmóviles mientras se ven sobrecogidos por la descomposición.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 202 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "3DBtzP6wWtTujRJe",
+  "name": "Restablecer",
+  "type": "sorcery",
+  "_id": "qE8o50tIQjn60kGC",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Milagro para curar permanentemente la ceguera, la mudez, la sordera, la parálisis o cualquier enfermedad similar del objetivo. Hasta el final de la escena, sufres la enfermedad del objetivo; si curas la ceguera de una persona, por ejemplo, estás ciego hasta el final de la escena.</p><p>Tu Camino determina la forma en que demuestras tu propia fe. Tu Camino le habla a otros sobre las enseñanzas de al-Musawwir y sus Profetas, que tú colocas por encima del resto. Cada Camino tiene tres pasos que te enseñan nueva sabiduría y, a través de la sabiduría, te otorgan poder. Todos los Caminos requieren que lleves tu Maravilla para usar cada habilidad. A menos que se especifique lo contrario, todos los poderes otorgados por un Camino requieren que gastes 1 punto de héroe para activarlos.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 167",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "miracle",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

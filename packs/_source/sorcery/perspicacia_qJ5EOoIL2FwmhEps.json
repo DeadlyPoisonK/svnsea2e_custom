@@ -1,0 +1,21 @@
+{
+  "folder": "oW9cn4Z4Q7clboIP",
+  "name": "Perspicacia",
+  "type": "sorcery",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El ojo de los dioses sobre las aguas del Iteru representa la perspicacia y el mundo de los sueños. Estos Talismanes siempre son azules, con una piedra en el centro para actuar como la pupila del ojo.</p><p><em>Talismán: </em>Cuando se activa un Talismán de Perspicacia, la portadora obtiene claridad sobre una situación. Puede hacerle tres preguntas de sí o no al DJ, todas relacionadas con la información que el personaje podría o debería tener. Las tres preguntas deben hacerse al mismo tiempo.</p><p><em>Inscripción: </em>Una Inscripción de Perspicacia activada en un objeto o estructura proporciona información sobre su pasado y propósito. El practicante Heka puede hacerle tres preguntas de sí o no al DJ sobre la estructura u objeto, todas relacionadas con la información que el personaje podría o debería tener. Otra vez, las tres preguntas deben hacerse al mismo tiempo.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 187",
+    "sorctype": "heka",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "qJ5EOoIL2FwmhEps",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

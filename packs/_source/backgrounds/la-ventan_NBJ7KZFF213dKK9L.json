@@ -1,0 +1,32 @@
+{
+  "folder": "LwLTj4fFc1wG4Kux",
+  "name": "La Ventan",
+  "type": "background",
+  "_id": "NBJ7KZFF213dKK9L",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tu linaje está maldito por el estigma del hombre jaguar y guardar tu secreto te mantiene vivo.</p>",
+    "infosource": "El Nuevo Mundo, p. 163",
+    "quirk": "<p>Ganas 1 punto de héroe cuando tu antiguo linaje entre en juego y te cause problemas.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "hide",
+      "notice",
+      "scholarship"
+    ],
+    "advantages": [
+      "Calmar a la bestia",
+      "Extranjero (nahuacano)",
+      "Más allá de la vista"
+    ],
+    "nation": "tzakkan",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

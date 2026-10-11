@@ -1,0 +1,22 @@
+{
+  "folder": "mxQIZuRsY1rrCcPr",
+  "name": "Escudo",
+  "type": "sorcery",
+  "_id": "7ywlBQFUDPgwBccW",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 3 de Furia. Interpones a los espíritus en la trayectoria de un ataque, reduciendo su efectividad. Reduce las Heridas que se te inflijan mediante un ataque cuerpo a cuerpo o a distancia en una cantidad igual al valor actual de Tranquilidad de la escena.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 197 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

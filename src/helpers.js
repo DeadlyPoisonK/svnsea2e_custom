@@ -1,4 +1,4 @@
-import { ItemTypes } from './enums.js';
+import { ItemTypes, SYSTEM_ID } from './enums.js';
 
 export const clamp = (value, min, max) => Math.min(Math.max(Number(value) || 0, Number(min) || 0), Number(max));
 
@@ -26,13 +26,17 @@ export const isValidGlamorIsles = (actor) => GLAMOR_NATIONS.includes(actor.syste
 let packAdvantages = null;
 
 /**
- * Index entries ({name, uuid}) of every advantage in the Item compendiums.
+ * Index entries ({name, uuid}) of every advantage in the Item compendiums, the system's first: they win over a copy
+ * with the same name in a module or world compendium.
  * Built once from the lightweight compendium indexes instead of loading every document.
  */
 async function getPackAdvantages() {
   if (!packAdvantages) {
     const found = [];
-    for (const pack of game.packs) {
+    const packs = [...game.packs].sort(
+      (a, b) => (b.metadata.packageName === SYSTEM_ID) - (a.metadata.packageName === SYSTEM_ID),
+    );
+    for (const pack of packs) {
       if (pack.documentName !== 'Item') continue;
       const index = await pack.getIndex({ fields: ['type'] });
       for (const entry of index) {
@@ -56,14 +60,31 @@ export async function getAllAdvantageNames() {
   return [...names].sort((a, b) => a.localeCompare(b));
 }
 
+const findWorldAdvantage = (name) => game.items.find((i) => i.type === ItemTypes.ADVANTAGE && i.name === name);
+
+/** UUID of the compendium advantage with this name: an exact match first, then a case-insensitive one. */
+async function findPackAdvantageUuid(name) {
+  const entries = await getPackAdvantages();
+  const lower = name.toLowerCase();
+  const entry = entries.find((e) => e.name === name) ?? entries.find((e) => e.name.toLowerCase() === lower);
+  return entry?.uuid ?? null;
+}
+
 /**
- * Find an advantage by name: an exact match among world items first, then a case-insensitive match in the compendiums.
+ * UUID of the advantage with this name, found as {@link findAdvantage} does.
+ * @returns {Promise<string|null>}
+ */
+export async function findAdvantageUuid(name) {
+  return findWorldAdvantage(name)?.uuid ?? findPackAdvantageUuid(name);
+}
+
+/**
+ * Find an advantage by name: an exact match among world items first, then in the compendiums.
  * @returns {Promise<Item|null>}
  */
 export async function findAdvantage(name) {
-  const worldItem = game.items.find((i) => i.type === ItemTypes.ADVANTAGE && i.name === name);
+  const worldItem = findWorldAdvantage(name);
   if (worldItem) return worldItem;
-  const lower = name.toLowerCase();
-  const entry = (await getPackAdvantages()).find((e) => e.name.toLowerCase() === lower);
-  return entry ? fromUuid(entry.uuid) : null;
+  const uuid = await findPackAdvantageUuid(name);
+  return uuid ? fromUuid(uuid) : null;
 }

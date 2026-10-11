@@ -1,0 +1,19 @@
+{
+  "folder": "xRskIATgzioWdrTl",
+  "name": "Okada-ryu Kenjutsu",
+  "type": "duelstyle",
+  "_id": "3d8mfhZfCpvO6q0r",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>En Fusō, la espada y el samurái están ambos idealizados hasta un nivel casi sobrehumano. Los duelos por el honor del dojo son extremadamente comunes entre escuelas rivales, y las enseñanzas de una escuela en particular a menudo se expanden más allá de las técnicas estrictamente marciales hacia la filosofía y el estilo de vida.</p><p>El dojo más popular para el <em>kenjutsu</em> de Fusō (literalmente «el arte de la espada») fue fundado hace generaciones por Okada Kanna, una samurái del Clan del Dragón entrenada personalmente por el legendario espadachín Shinmen Takezo. Con el tiempo, Okada fundó su propio dojo y comenzó a aceptar estudiantes, ampliando las enseñanzas que había aprendido de su propio maestro.</p><p>El mayor y más destacado rival del Okada-ryu es el Naito-ryu, fundado hace apenas un puñado de años por Naito Shiori del Clan del Cuervo. Los dos estilos son muy similares en cuanto a sus técnicas de lucha (Shiori fue alumna del Okada-ryu, al fin y al cabo), y la rivalidad surge de ideologías enfrentadas. Los estudiantes de Okada-ryu tienden a ser mayores y más tradicionales, otorgando gran importancia al decoro y al ritual.</p><p>A los estudiantes de Naito-ryu a menudo se les tacha de bocazas groseros, debido a su costumbre de lanzar insultos a sus oponentes durante los duelos.</p>",
+    "infosource": "Khitai, p. 226 (traducción no oficial)",
+    "bonus": "<p><strong>Bonificación de escuela.</strong> Cuando empuñas una única espada curva (tradicionalmente una katana de Fusō, aunque algunos practicantes se han adaptado al uso de diferentes hojas), obtienes dos maniobras especiales: Golpe Iaijutsu y Envainar. Cuando realizas Golpe Iaijutsu, desenvainas tu espada con la velocidad del rayo y atacas en un único movimiento fluido. Golpe Iaijutsu solo puede realizarse como tu primera maniobra en una secuencia, o después de realizar la maniobra Envainar.</p><p>Golpe Iaijutsu inflige un número de Heridas igual a tus rangos en Armas más 3. No puedes volver a realizar Golpe Iaijutsu hasta que realices la maniobra Envainar.</p><p>Cuando realizas la maniobra Envainar, devuelves tu espada a la vaina y adoptas una postura de guardia, con la mano en la empuñadura, preparado para golpear de nuevo. La maniobra Envainar te impide realizar ninguna maniobra hasta que realices la maniobra Golpe Iaijutsu.</p><p><strong>Bonificación de maestría.</strong> Tu maestría en Okada-ryu te permite defenderte incluso cuando tu hoja está envainada. Cuando otro personaje te cause Heridas, puedes realizar Golpe Iaijutsu incluso si no es tu acción. Cuando lo haces, Golpe Iaijutsu también previene 2 Heridas. La próxima vez que otro personaje te inflija Heridas después de haber realizado la maniobra Envainar, reduce las Heridas que sufras en 1.</p>",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

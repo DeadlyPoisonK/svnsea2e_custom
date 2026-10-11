@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Elegante",
+  "type": "virtue",
+  "_id": "N547h55eagGEPJ78",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para impresionar de inmediato a otro personaje la primera vez que lo conozcas. Si normalmente se mostraría hostil hacia ti, se muestra neutral. Si normalmente se mostraría neutral, se muestra amistoso. Si normalmente se mostraría amistoso, ¡te colma de elogios e incluso puede hacerte regalos!</p>",
+    "infosource": "Mariposa · Khitai, p. 126 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

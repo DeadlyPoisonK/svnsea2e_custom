@@ -652,6 +652,17 @@
   background: rgba(0, 0, 0, 0.1);
 }
 
+.svnsea2e .tag .content-link {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.svnsea2e .tag.missing {
+  color: var(--color-level-error, #b00);
+  border: 1px dashed currentColor;
+}
+
 .svnsea2e .secretsociety .tag {
   flex: 0.25 0.25 0.625rem;
 }

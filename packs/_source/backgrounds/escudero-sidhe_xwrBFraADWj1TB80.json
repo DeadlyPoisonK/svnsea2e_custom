@@ -1,0 +1,32 @@
+{
+  "folder": "AEu4K3KpRllY507s",
+  "name": "Escudero sidhe",
+  "type": "background",
+  "_id": "xwrBFraADWj1TB80",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Los sidhe han regresado a Ávalon y te corresponde a ti que dicho retorno sea lo más pacífico posible.</p><p><em>Ventajas en el libro: Hechicería (Glamour).</em></p>",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando te apartes de tus objetivos para tender un puente entre los sidhe y los mortales, algo que conduzca al entendimiento entre los dos pueblos.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "ride",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Un inocente malentendido",
+      "Hechicería"
+    ],
+    "active": true,
+    "infosource": "Naciones de Théah vol. 1, p. 203",
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

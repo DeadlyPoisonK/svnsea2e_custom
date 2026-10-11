@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Casado con el mar",
+  "type": "advantage",
+  "_id": "9pULuk3NdeNMr1ZJ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tienes acceso a un barco. Si tus aliados y tú ya tenéis acceso a un barco, entonces este gana un Trasfondo adicional. Ver el capítulo de «Navegación» para más información.</p><p><em>Naciones Piratas, p. 150: coste 2 (1 si eres aragostano).</em></p>",
+    "infosource": "7º Mar (básico), p. 149",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  }
+}

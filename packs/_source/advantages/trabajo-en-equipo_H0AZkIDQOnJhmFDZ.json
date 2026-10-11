@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Trabajo en equipo",
+  "type": "advantage",
+  "_id": "H0AZkIDQOnJhmFDZ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes gastar 2 Aumentos para crear una Oportunidad y activar la Oportunidad en beneficio de otro héroe voluntario, que no necesita gastar su propio Aumento.</p>",
+    "infosource": "7º Mar (básico), p. 150",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": -100000,
+  "ownership": {
+    "default": 0
+  }
+}

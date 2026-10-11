@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Sæwine, la Marinera",
+  "type": "sorcery",
+  "_id": "DcXmNEBkY5b9XFSv",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Sæwine, la comandante de la flota de Elilodd, rara vez era vista en la corte. Sus relatos siempre suceden en cortes extrañas y extranjeras, cenando con aliados del rey Elilodd y capturando los barcos de sus enemigos. Se decía de ella que era la pareja de cualquier hombre en tierra o en mar y fue la primera caballera que el rey Elilodd aceptó en su corte.</p><p>Característica mayor: Donaire Característica menor: Maña</p><h3>Naciones de Théah vol. 1, p. 51</h3><p><strong>Virtud:</strong> Sagaz (El mendigo). <strong>Hibris:</strong> Temperamental.</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando las cosas se vuelvan más complicadas porque alguien te reconozca de algún lugar al que hayas viajado con anterioridad.</p><p><strong>Glamour legendario — La llamada del mar:</strong> Puedes invocar a la reina Maab y que responda. Por un punto de héroe te dirá la dirección y la distancia aproximada de cualquier barco que navegue por las aguas del mismo mar en el que estés. O puedes activar este Glamour para aumentar o reducir la intensidad del clima en una zona de diez millas náuticas (18,5 km) a tu alrededor. Los patrones climáticos normales regresarán cuando el sol alcance su cenit. Puedes convertir una ligera llovizna en una tormenta o un rayo de luz a través de las nubes en un día despejado. En el mar puedes calmar unas aguas tempestuosas para hacerlas navegables o hacer que un mar en calma deje de estarlo. Si el nuevo clima te resulta particularmente ventajoso (como para tener una navegación tranquila u ocultar tu llegada), obtienes 2 dados adicionales.</p>",
+    "infosource": "7º Mar (básico), p. 213",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

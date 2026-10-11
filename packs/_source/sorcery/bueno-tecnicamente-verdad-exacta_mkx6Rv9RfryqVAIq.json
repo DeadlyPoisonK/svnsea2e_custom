@@ -1,0 +1,22 @@
+{
+  "folder": "s58HmWKf7mntMtzg",
+  "name": "«Bueno, técnicamente…»: verdad exacta",
+  "type": "sorcery",
+  "_id": "mkx6Rv9RfryqVAIq",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Los losejai suelen hablar de manera directa y clara. Normalmente intentan evitar el lenguaje poético o florido, dado que creen que esas cosas confunden la conversación que tienen entre manos. Lo que importa es la palabra como tal. Esto recibe el nombre de Tiksli Tiesa o «verdad exacta».</p><p>Verdad exacta es lo que dice la ley. Las reglas como tal. El significado establecido preciso, directo y claro. Los losejai no dejan nada a la interpretación; dictan con precisión lo que quieren decir, lo que desean, lo que darán y lo que esperan.</p><p>Y lo han aprendido de los dievai.</p><p>Un dievas es una criatura inteligente, pero una criatura honesta a su propio modo que se atiene a los términos de sus acuerdos y sus contratos. Pero un dievas también es malvado y cruel. Tiene sus propios deseos, objetivos y planes. El poder que esgrime es considerable, pero también es su única moneda de cambio. Y la guarda con celo.</p><p>Un dievas siempre cumple sus promesas, pero solo en el sentido más estricto y literal, y a veces convertirá un Favor en algo que el losejas no quería.</p><p>Lo que esto significa para ti, seas DJ o jugador, es esto. En cualquier otro lugar de este libro le aconsejamos al DJ que sea generoso con la información que da, pero aquí no es así. Sé claro y explícito con lo que quieres y también con lo que no quieres. El DJ está autorizado, y se le anima, a tergiversar tus palabras, siempre y cuando el acuerdo siga siendo técnicamente válido. De todas formas, no puede redefinir las palabras. No puedes coger a un Obi-Wan y decirle a Luke que Darth Vader traicionó y asesinó a su padre, porque técnicamente eso no es verdad. Pero podrías decirle que su padre era un gran caballero Jedi y que cayó durante la guerra. «Lo que te dije es técnicamente verdad. Cayó… en el Lado Oscuro».</p>",
+    "infosource": "7º Mar (básico), p. 223",
+    "sorctype": "sanderis",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

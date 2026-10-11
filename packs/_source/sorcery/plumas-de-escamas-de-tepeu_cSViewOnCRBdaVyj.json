@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Plumas de escamas de Tepeu",
+  "type": "sorcery",
+  "_id": "cSViewOnCRBdaVyj",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Antes de que nacieran los tzak k'anos, Tepeu, la Serpiente Emplumada Soberana, trató de crear la humanidad a su imagen. La primera creación de Tepeu, Vucub-Caquix, se corrompió rápidamente y le demostró a Tepeu que no era digno de crear la humanidad por sí solo. Sin embargo, eso no disuadió a Tepeu. Reunió a otros y después de varios intentos más, ayudó a crear a los tzak k'anos. Cuando está adornado con Plumas de escamas de Tepeu, un héroe puede gastar 1 punto de héroe para volver a tirar toda su reserva de dados una vez, manteniendo los nuevos resultados.</p>",
+    "infosource": "El Nuevo Mundo, p. 174",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

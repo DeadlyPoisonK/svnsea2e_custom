@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Elemental",
+  "type": "monsterquality",
+  "_id": "VCPosO4eRj3VxCxT",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Es una criatura de poder elemental bruto, como un demonio cuya sangre literalmente arde en sus venas o un hambriento fantasma invernal que puede congelar a un hombre con solo tocarlo. Elige un elemento, como fuego, hielo, rayo, etcétera.</p><p>Si este monstruo es un villano, cuando esté expuesto a ese elemento o lo use para atacar a los héroes, tira 5 dados adicionales en cualquier Riesgo. Si es una banda de monstruos, inflige el doble de Heridas cuando usa su elemento.</p><p>Además, ignora cualquier Herida infligida por el elemento del monstruo (por ejemplo, si un héroe le lanza aceite a un monstruo de fuego y sale ardiendo).</p>",
+    "infosource": "7º Mar (básico), p. 197",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

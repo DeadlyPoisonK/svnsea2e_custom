@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Leofric, el Amado",
+  "type": "sorcery",
+  "_id": "xSupZvZt9IxwLTET",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Aunque todos los caballeros eran amados por el pueblo, solo Leofric hizo los mayores sacrificios por la gente de Ávalon. Cuando las Cortes Sidhe estaban gobernadas por los sidhe oscuros, fue Leofric quien montó guardia en las puertas para proteger a los que había en su interior de los sidhe. Su sacrificio cambió la guerra y permitió que los sidhe luminosos recuperaran su trono y salvó a Ávalon de la magia destructiva de los sidhe oscuros. Característica mayor: Brío Característica menor: Ingenio</p><h3>Naciones de Théah vol. 1, p. 50</h3><p><strong>Virtud:</strong> Frugal (El glifo). <strong>Hibris:</strong> Arrogante (La torre).</p><p><strong>Peculiaridad:</strong> Gana un punto de héroe cuando alguien importante para ti esté en problemas y tú permanezcas a su lado y compartas el peligro.</p><p><strong>Glamour legendario — Iluminado:</strong> Activa este Glamour para impregnar el área a tu alrededor con una luz ambiental mágica perfecta para la escena, ni muy tenue ni muy brillante, que se extiende por decenas de metros. Todos los sidhe oscuros del área sufren 5 Heridas de inmediato y tiran dos dados menos para cualquier Riesgo mientras estén en el área iluminada.</p>",
+    "infosource": "7º Mar (básico), p. 212",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

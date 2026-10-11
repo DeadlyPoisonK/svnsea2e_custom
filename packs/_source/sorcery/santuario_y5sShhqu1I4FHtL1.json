@@ -1,0 +1,22 @@
+{
+  "folder": "vLaujvVdVjmbDTQL",
+  "name": "Santuario",
+  "type": "sorcery",
+  "_id": "y5sShhqu1I4FHtL1",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este poder para crear una zona segura para descansar. Durante la noche, tú y tus aliados podéis dormir en paz sin ser molestados. Esto proporciona una zona insonorizada que protege de los animales y de cualquier persona que pueda estar cazándote. Cualquier intento de localizarte mientras Santuario está activo falla automáticamente, a menos que se haga por medios sobrenaturales. Si te rastrean por medio de un efecto mágico, los costes para activarlo (tanto en caso de utilizar Aumentos como si se usan puntos de héroe o de peligro) se duplican. Una vez que alguien se despierta dentro de la zona, el poder termina.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

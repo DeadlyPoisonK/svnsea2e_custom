@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Hijo del Corazón",
+  "type": "sorcery",
+  "_id": "CAct3E6wLtJLMut8",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>El coraz&oacute;n a&uacute;n latiente de un monstruo, arrancado mientras todav&iacute;a bombea sangre negra, hervido con cenizas de huesos, ra&iacute;ces de mandr&aacute;gora y la lengua atada de un ahorcado, todo cosido despu&eacute;s dentro de un fardo de carne, v&iacute;sceras y trapos hasta dar forma a una criatura grotesca.&nbsp;Crear una dosis de Abominaci&oacute;n siempre genera 1 punto de corrupci&oacute;n.</p>\n<p>Cuando rompes el sello del fardo, el monstruo cuyo coraz&oacute;n usaste vuelve a la vida con todas sus cualidades originales y bajo la forma de tu Abominaci&oacute;n. Le encomiendas una &uacute;nica tarea, y la Abominaci&oacute;n intentar&aacute; cumplirla a toda costa, sin importar lo que se interponga en su camino. Si la tarea es un acto malvado, ganas 1 punto de corrupci&oacute;n adicional al darle la orden, y otro m&aacute;s si la Abominaci&oacute;n llega a cumplirla. Cuando la tarea se completa, el contrato se rompe: la Abominaci&oacute;n intentar&aacute; huir del lugar por cualquier medio y, si consigue escapar, quedar&aacute; libre y suelta en el mundo. Si la Abominaci&oacute;n queda Indefensa o es destruida antes de cumplir su tarea, su coraz&oacute;n estalla violentamente e inflige 1 Herida Dram&aacute;tica a todo el que se encuentre a su lado.</p>",
+    "used": false,
+    "infosource": "Creado por la mesa (no aparece en los manuales)",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

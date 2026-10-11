@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Academia de esgrima (Khitai)",
+  "type": "advantage",
+  "_id": "hTqGNC2QiHsU9PZU",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe ha estudiado esgrima con un maestro de artes marciales. Colabora con el DJ para idear detalles sobre tu maestro y determinar la relación de tu héroe con él. ¿Tienes algún rival en particular de tus días de entrenamiento, o todos en tu clase estaban muy unidos y aún siguen en contacto a día de hoy? Puedes elegir un estilo de esgrima del capítulo de Esgrima y obtener la Bonificación de escuela correspondiente. Además, puedes adquirir de nuevo esta ventaja en el futuro como si fuera una ventaja de 3 puntos para aprender otro estilo de esgrima.</p>",
+    "infosource": "Variante creada por la mesa: Academia de esgrima con el estilo Khitai (El Nuevo Mundo)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

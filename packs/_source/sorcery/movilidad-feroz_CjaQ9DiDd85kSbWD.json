@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Movilidad feroz",
+  "type": "sorcery",
+  "_id": "CjaQ9DiDd85kSbWD",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Se muele el diente de un monstruo, una rana disecada y la pluma de un cuervo hasta reducirlo todo a polvo, momento en que se le añade leche de cabra. Cuando una persona se beba la pócima, obtiene la capacidad de correr y saltar como una bestia salvaje. Un hexe puede utilizar este ungüento para completar cualquier tarea atlética que normalmente no podría llevar a cabo. Un ejemplo podría ser utilizar el ungüento para atravesar de un salto una grieta de seis metros. No se le permite a un hexe completar una tarea que el monstruo no sería capaz de realizar por sí mismo.</p>",
+    "used": false,
+    "infosource": "Naciones de Théah vol. 2, p. 52",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "3uHWVTNF7udgvwFC",
+  "name": "El toque de Tură: cómo funciona",
+  "type": "sorcery",
+  "_id": "YRJbNnfKRa4qga8n",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Tură nunca busca a nadie, sino que aguarda a que vengan a él. Puedes encontrarte con Tură de forma accidental mientras exploras las montañas o quizás uno de los malditos te haya hablado del lugar donde se oculta. Cuando adquieres la ventaja Hechicería, Tură te concede dos dones y una tarea. También deja una marca negra del tamaño de la huella de un dedo grande sobre tu rostro, cuello o manos. Una vez que se tiene la Marca de Tură, él puede concederte más dones y tareas en tus sueños. Se trata de un poder sobrenatural. Mientras que el poder de Matushka se centra en arreglar la tierra y su fauna, los dones de Tură se encargan del cielo y el clima. Puedes usar tu poder gastando 1 Punto de Héroe. Tu héroe obtiene una historia especial («la Tarea de Tură»), que describe lo que Tură quiere exactamente de ti. Puedes completar los pasos de las demás historias de la forma habitual, pero el héroe no puede conseguir nuevas historias hasta que no complete la Tarea de Tură. Una vez concluida, puedes conseguir nuevas historias de la forma habitual.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 148",
+    "used": false,
+    "sorctype": "tura",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "LwLTj4fFc1wG4Kux",
+  "name": "Sacerdote de la visión",
+  "type": "background",
+  "_id": "rM5Qw5Txfe0u0n1M",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Se te ha proporcionado un gran poder para guiar a tu pueblo, pero todo poder viene con un sacrificio.</p>",
+    "infosource": "El Nuevo Mundo, p. 163",
+    "quirk": "<p>Ganas 1 punto de héroe cuando los consejos que le brindes a otro causen problemas.</p>",
+    "skills": [
+      "convince",
+      "intimidate",
+      "notice",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Noción del tiempo"
+    ],
+    "nation": "tzakkan",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

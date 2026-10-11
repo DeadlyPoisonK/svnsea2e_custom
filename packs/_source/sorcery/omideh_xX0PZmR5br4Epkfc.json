@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Omideh",
+  "type": "sorcery",
+  "_id": "xX0PZmR5br4Epkfc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado para ignorar los efectos del Miedo en ti y en tus aliados. Cada personaje afectado por este Legado recibe 2 dados adicionales en todos los Riesgos mientras dure el efecto Miedo.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 179",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

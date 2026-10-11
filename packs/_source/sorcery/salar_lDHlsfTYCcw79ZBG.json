@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Salar",
+  "type": "sorcery",
+  "_id": "lDHlsfTYCcw79ZBG",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado para crear un objeto portátil de metal. Este artículo puede ser único; por ejemplo, podrías crear una llave para abrir una puerta específica. El objeto creado dura hasta el final de la escena y luego se disipa en el aire.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 179",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

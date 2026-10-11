@@ -1,0 +1,32 @@
+{
+  "folder": "zs32dqYrmZlqCpWg",
+  "name": "Macher",
+  "type": "background",
+  "_id": "k7PsH2dhkqjeQCN7",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Entra, coge lo que buscas y sal. Pero asegúrate de que TODO EL MUNDO sale.</p><p><em>Ventajas en el libro: Especialista (Esconderse).</em></p>",
+    "infosource": "Naciones de Théah vol. 2, p. 207",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando decides revelarte ante un enemigo para poder ayudar a otro personaje a salir de un problema.</p>",
+    "skills": [
+      "athletics",
+      "convince",
+      "hide",
+      "notice",
+      "theft"
+    ],
+    "advantages": [
+      "Especialista",
+      "Trabajo en equipo"
+    ],
+    "nation": "sarmatia",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

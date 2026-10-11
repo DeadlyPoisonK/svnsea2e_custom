@@ -1,0 +1,22 @@
+{
+  "folder": "Mxa9nYJzv3JTmlII",
+  "name": "Modificar",
+  "type": "sorcery",
+  "_id": "YAMiHRF8l5R7o6gF",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Canalizando el poder de tu linaje eres capaz de cambiar partes específicas de tu cuerpo. Puedes transformar cualquier parte de tu cuerpo en la de una bestia natural, como los ojos de un gato o las garras de un oso. Si este cambio te beneficia en un Riesgo, obtén 2 dados adicionales. Luego, genera 2 de Discordia.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 207 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Timonel (Khitai)",
+  "type": "advantage",
+  "_id": "0WWt4k3RGdegnMDg",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Obtén un dado adicional cuando realices un Riesgo para gobernar un barco a través de aguas traicioneras, desviar el rumbo de tu carruaje para esquivar el fuego enemigo o cuando tu pericia al mando de un vehículo resulte útil.</p>",
+    "infosource": "Khitai, p. 120 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

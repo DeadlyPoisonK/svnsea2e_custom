@@ -1,0 +1,19 @@
+{
+  "folder": "EukS0hh4uQes49gW",
+  "name": "Chamsin",
+  "type": "duelstyle",
+  "_id": "xeQXit1CGb1q0F8L",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Maestro Practicante: Ruach.</p><p>Ruach es uno de los poetas más notorios del Imperio de la Media Luna, tanto que nunca revela su verdadero nombre y usa un velo para ocultar su verdadera identidad. Su lealtad es profunda para la gente de Sarmion, pero no se lleva bien con los tontos. Entrenó como chavra y prefiere la velocidad y los ataques desde todos los ángulos posibles. Su agilidad y destreza en la batalla solo se ven eclipsadas por su lengua afilada. Así, el estilo Chamsin combina insultos elegantes pero brutales. Los ataques llegan pronto para hacer retroceder a sus oponentes.</p>",
+    "bonus": "<p><strong>Bonificación de la escuela.</strong></p><p>Un practicante de Chamsin gana 1 dado adicional para usar en el primer Bayt.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 201"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

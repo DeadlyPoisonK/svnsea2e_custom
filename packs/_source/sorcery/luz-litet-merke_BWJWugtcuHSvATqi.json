@@ -1,0 +1,22 @@
+{
+  "folder": "qaTfK8X6olVOkxqK",
+  "name": "Luz Litet Merke",
+  "type": "sorcery",
+  "_id": "BWJWugtcuHSvATqi",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>El personaje elegido puede realizar de inmediato una acción sin gastar un Aumento, pero dicha acción debe usar las habilidades de Percepción o Empatía (no tiene que pagar los costes por Improvisar).</p><p>La runa Piedra se relaciona con la resistencia y la perseverancia, y a veces se utiliza para representar la obstinación. La runa da nombre a los héroes que luchan a pesar de todo sin desfallecer. La gente común la usa como encantamiento para asegurarse buenas cosechas y ganado saludable.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 192",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

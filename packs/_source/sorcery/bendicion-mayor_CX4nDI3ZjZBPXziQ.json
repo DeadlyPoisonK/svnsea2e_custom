@@ -1,0 +1,22 @@
+{
+  "folder": "1n4xl0pm4vNYsfMx",
+  "name": "Bendición Mayor",
+  "type": "sorcery",
+  "_id": "CX4nDI3ZjZBPXziQ",
+  "img": "icons/magic/perception/eye-ringed-green.webp",
+  "system": {
+    "description": "<p>Puedes concederle una Bendici&oacute;n a otro personaje.<br>Esto requiere un beso (sea casto o no). Besar a alguien<br>durante una secuencia de acci&oacute;n cuesta 1 Aumento.<br><br>Gasta 1 punto de h&eacute;roe y coge una o m&aacute;s hebras para darle a<br>otro h&eacute;roe o villano una Bendici&oacute;n mayor. A diferencia de la<br>Bendici&oacute;n menor, un h&eacute;roe o un villano puede repartir estos<br>dados adicionales entre todos los Riesgos que desee, hasta el<br>final de la escena o hasta que se quede sin dados adicionales.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 230",
+    "sorctype": "sorte",
+    "sorcdur": "none",
+    "sorccat": "tesse",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

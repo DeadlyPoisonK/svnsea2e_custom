@@ -1,0 +1,31 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Espadachín (Khitai)",
+  "type": "background",
+  "_id": "G2p86nFiNrqgG2Xm",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Respeto</p>",
+    "quirk": "<p>Gana un punto de héroe cuando recurras al filo de tu espada para proteger a otra persona o en defensa de un noble ideal.</p>",
+    "skills": [
+      "athletics",
+      "hide",
+      "intimidate",
+      "perform",
+      "weaponry"
+    ],
+    "advantages": [
+      "Academia de esgrima (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 107 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

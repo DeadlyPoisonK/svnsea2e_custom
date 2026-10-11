@@ -1,0 +1,18 @@
+{
+  "folder": "jraBR9ng5ywEQ4lN",
+  "name": "Tzolran",
+  "type": "duelstyle",
+  "_id": "246sqtBTSr7ybQLE",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Tzolran es un estilo de lucha ágil que combina distracciones y oportunidades para derrotar a un enemigo. Tzolran, que originalmente era un juego practicado por soldados aburridos, se trata de usar todo lo que tengas a tu alcance para distraer a tu oponente, manteniéndote cerca del suelo y moviéndote hacia adelante y hacia atrás para derribar a tu objetivo. Se jugaba con un palo, pero aquellos que practican este estilo en combate suelen utilizar un cuchillo.</p><p>En el juego original, dos competidores comenzaban espalda contra espalda. Una vez que iniciaba el juego, los dos combatientes se agachaban rápidamente y se giraban para enfrentarse, manteniéndose agachados. Se arrojaban tierra, hojas y cualquier cosa cercana.</p><p>Los combatientes se lanzaban de un lado a otro, tanto para confundir a su oponente como para esquivar los ataques entrantes. Una vez que un combatiente era golpeado, la ronda terminaba y volvían a colocarse espalda contra espalda, dejando que el polvo se asentara. El primer combatiente en conseguir asestar tres golpes ganaba el juego.</p><p>Xriisateh Tzolran, de quien este estilo recibe su nombre, fue quien utilizó por primera vez estas tácticas en el campo de batalla. Desde entonces, muchos han seguido su ejemplo con increíble éxito.</p>",
+    "infosource": "El Nuevo Mundo, p. 184",
+    "bonus": "<p><strong>Truco del polvo.</strong></p><p>Mientras uses un arma pequeña (como un cuchillo, un estilete, un garrote o algo similar) en una mano y nada en la otra, obtienes una maniobra especial llamada «Truco del polvo». Cuando realizas esta maniobra, agarras arena o escombros de algún tipo y los arrojas a los ojos de tu objetivo, tomándolo desprevenido. La próxima vez que ese personaje inflija Heridas, reduces tantas Heridas como niveles tengas en Maña y creas una Oportunidad. Activar esta Oportunidad hace que la siguiente fuente de Heridas en ese objetivo inflija dos Heridas adicionales. Un héroe solo puede realizar Truco del polvo una vez por ronda.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "folder": "rxiPEUOSj58lttE0",
+  "name": "Parroquial",
+  "type": "hubris",
+  "_id": "9bAr8BjPPdmPzoFa",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibes 1 punto de héroe cuando te niegas a reconocer la percepción de otro personaje y te causa problemas.</p>",
+    "infosource": "El observador del cielo · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,18 @@
+{
+  "folder": "SHTZehac4c9ek4Nd",
+  "name": "Armas Combinadas",
+  "type": "duelstyle",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Muchas unidades en un ejército funcionan mejor como equipo, y Armas Combinadas encarna este hecho al abrir fuego sobre una unidad enemiga para ablandarla antes de que una unidad aliada se estrelle contra ella con una carga. Cuando ordenes Armas Combinadas, provoca un Impacto y tu unidad tira dados igual a su Fuerza. Si el objetivo recibe Impactos de nuevo en esta ronda, sufre tantos Impactos adicionales como el número de Aumentos obtenidos.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 192",
+    "bonus": ""
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_id": "B7wzy5lNNF9WFZNy",
+  "sort": 100000
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "b9hdE9sU4pMZcmYu",
+  "name": "Mutágeno",
+  "type": "sorcery",
+  "_id": "w9GqEptZ8LYv3cnU",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Haces que un enemigo se retuerza de dolor, obligándolo a doblarse sobre sí mismo. Genera 1 de Plaga. Inflige 1 Herida a un personaje. Cada vez que se use este poder contra el mismo objetivo, inflige una Herida adicional (es decir, la tercera vez que se use este poder contra el mismo objetivo inflige 3 Heridas).</p>",
+    "used": false,
+    "infosource": "Khitai, p. 204 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Sandalias de los bahlam",
+  "type": "sorcery",
+  "_id": "pOHwwSvUWYMT6Lol",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Algunas comunidades tzak k'anas prefirieron quedarse solas y estaban dispuestas a hacer lo que fuera necesario para permanecer aisladas del resto de las tribus. A estas personas las protegerían los bahlam, los dioses jaguar. Acechando en los límites de las aldeas, en lo alto de los árboles, los bahlam advertían a la tribu si se acercaban forasteros o invasores. Mientras use las Sandalias de los bahlam, un héroe puede gastar 1 punto de héroe para actuar primero en cualquier escena. El héroe sigue gastando Aumentos de forma normal, pero realiza su primera acción antes que nadie.</p>",
+    "infosource": "El Nuevo Mundo, p. 174",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 268750,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

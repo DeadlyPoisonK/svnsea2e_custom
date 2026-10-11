@@ -1,0 +1,23 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Francotirador",
+  "type": "advantage",
+  "_id": "dbvC22rf4fY6EhOc",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Ganas 1 dado adicional cuando realices un Riesgo de Apuntar usando un mosquete de cañón largo, un arco largo o una ballesta.</p>",
+    "infosource": "7º Mar (básico), p. 151",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "folder": "CXYgWftEL3IgByAi",
+  "name": "Haimon",
+  "type": "background",
+  "_id": "IaC1W6gfEu4Xq60z",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tu gloria se encuentra aquí, delante de tus ojos. Nada te impedirá reclamarla.</p>",
+    "infosource": "Naciones Piratas, p. 148",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando aceptes una tarea peligrosa por la única razón de que te aportará gloria.</p>",
+    "skills": [
+      "athletics",
+      "sailing",
+      "tempt",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Hazte con tu gloria",
+      "Superviviente",
+      "Voluntad indómita"
+    ],
+    "nation": "numa"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

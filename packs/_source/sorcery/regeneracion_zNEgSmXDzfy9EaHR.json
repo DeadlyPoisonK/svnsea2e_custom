@@ -1,0 +1,22 @@
+{
+  "folder": "piYhdrGNp0ZAVmW9",
+  "name": "Regeneración",
+  "type": "sorcery",
+  "_id": "zNEgSmXDzfy9EaHR",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este elixir ayuda a sanar las heridas de un personaje con el paso del tiempo. Un personaje que beba esta poción cura 1 Herida al comienzo de cada una de sus acciones. Este efecto dura un número de rondas igual a la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 199 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

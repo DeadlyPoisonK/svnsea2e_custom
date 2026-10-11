@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Valiente (Khitai)",
+  "type": "virtue",
+  "_id": "R9O3kwnVd2ddADi0",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando reúnas dados para un Riesgo. Ignoras todos los efectos negativos de las Heridas Dramáticas durante la ronda (los villanos no obtienen dados adicionales si tienes 2 Heridas Dramáticas, y no quedas Indefenso con 4 Heridas Dramáticas). Al final de la ronda, si tienes 5 o más Heridas Dramáticas, mueres de inmediato.</p>",
+    "infosource": "Tigre · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

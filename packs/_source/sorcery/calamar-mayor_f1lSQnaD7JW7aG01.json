@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Calamar Mayor",
+  "type": "sorcery",
+  "_id": "f1lSQnaD7JW7aG01",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El calamar tiene un agarre irrompible y morira antes de soltar a su presa. Esto a menudo se aplica a un heroe que tiene el mohwoo del calamar, pero de una manera menos literal. Este tipo de heroe a menudo se encari&ntilde;a rapidamente con alguien y tiene dificultades para dejarlo marchar o para admitir que esta equivocado. A menudo sus enemigos lo describen como cabezota y sus amigos como empecinado.</p>\n<hr>\n<p>Activa este mohwoo cuando inflinjas Heridas durante un Riesgo usando Pelear. Esas Heridas solo se pueden negar mediante medios sobretanurales (Como Hechiceria, Artefactos o algo similar). Un qing solo puede usar este mohwoo una vez por escena.</p>",
+    "infosource": "Naciones Piratas, p. 171",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 150000,
+  "ownership": {
+    "default": 0
+  }
+}

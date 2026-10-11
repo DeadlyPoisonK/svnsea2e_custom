@@ -1,0 +1,21 @@
+{
+  "folder": "v7pSzN10zcgUKOap",
+  "name": "Agonía Mayor",
+  "type": "sorcery",
+  "_id": "7VnUyBclWt215WYl",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El conocimiento de cómo separar la propia alma da una idea de la condición mortal. Aunque cercenar por completo el alma de un individuo que no quiere es casi imposible, no es difícil… tirar de ella un poco. Que alguien tire de tu alma es desagradable, por decirlo con suavidad.</p><p>Activa este Khidma y el portador de tu thiqa aumenta el efecto de tu Agonía. El portador de tu thiqa puede elegir un segundo personaje para afligir con Agonía, o puede aumentar el poder de tu Agonía. Si elige aumentar el poder de tu Agonía, el personaje que selecciones debe superar los efectos de Agonía dos veces distintas en su próxima acción. Puede elegir superar Agonía de diferentes formas si lo desea: pagando 3 Aumentos en total para realizar esa acción, o sufriendo 6 Heridas, o pagando 2 Aumentos en total y sufriendo 3 Heridas.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 181",
+    "sorctype": "mithaq",
+    "sorcdur": "none",
+    "sorccat": "thiqa",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

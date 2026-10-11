@@ -1,0 +1,21 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Æsc, el de los Bosques",
+  "type": "sorcery",
+  "_id": "Ktj3SLP24oQ65UAW",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Æsc rara vez moró en el castillo del rey Elilodd, ya que prefería vivir en los bosques que rodeaban sus tierras. Æsc solía estar en contacto con criaturas, tanto mundanas como sobrenaturales, para llevar sus problemas a la corte.</p><p>Característica mayor: Brío Característica menor: Donaire</p><h3>Naciones de Théah vol. 1, p. 48</h3><p><strong>Virtud:</strong> Astuto (El bufón). <strong>Hibris:</strong> Confuso (La noche sin luna).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando rechaces una invitación para participar en un acto social civilizado y, en su lugar, pases toda la noche bajo las estrellas.</p><p><strong>Glamour legendario — Transformación:</strong> Activa este Glamour para adoptar durante una escena la forma de un mamífero típico de los bosques (oso, ciervo, zorro, jabalí, lobo, conejo o comadreja). Mantienes todas tus habilidades, conocimientos y aptitudes (aunque pueden verse limitadas por las capacidades físicas de tu nueva forma). Si la forma del animal es particularmente ventajosa para algo (como correr grandes distancias en forma de ciervo), obtienes 2 dados adicionales. Mientras estés en dicha forma puedes hablar con las criaturas nativas de los bosques. Las solicitudes poco razonables o difíciles pueden conllevar un Riesgo para convencerlas, con Consecuencias que incluyan hostilidad o el requisito de llevar a cabo un favor que solo un humano puede realizar. Si es necesario, los animales a los que se les pide realizar una tarea pueden ser considerados una banda de matones.</p>",
+    "infosource": "7º Mar (básico), p. 211",
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "knight",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

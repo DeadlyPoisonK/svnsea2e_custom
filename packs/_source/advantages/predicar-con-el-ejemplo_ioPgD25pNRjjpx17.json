@@ -1,0 +1,24 @@
+{
+  "name": "Predicar con el ejemplo",
+  "type": "advantage",
+  "_id": "ioPgD25pNRjjpx17",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe después de realizar un Riesgo, y elige a cualquier personaje que consiguiera menos Aumentos que tú. Ese personaje puede cambiar su Enfoque para que coincida con el tuyo, y gana dos Aumentos adicionales.</p><p><em>Coste: 5 (3 si eres aksumita).</em></p>",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": false,
+    "innate": false,
+    "infosource": "Tierras de Fuego y Oro, p. 178"
+  },
+  "effects": [],
+  "folder": "yECDvkOZsan9lVBP",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

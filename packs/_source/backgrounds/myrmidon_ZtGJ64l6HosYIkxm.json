@@ -1,0 +1,32 @@
+{
+  "folder": "CXYgWftEL3IgByAi",
+  "name": "Myrmidon",
+  "type": "background",
+  "_id": "ZtGJ64l6HosYIkxm",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Théah ha olvidado el nombre de Numa durante demasiado tiempo. Es hora de que les recuerdes quién es el Padre del Mundo.</p>",
+    "infosource": "Naciones Piratas, p. 148",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando impresiones a la tripulación de un barco extranjero con tu osadía.</p>",
+    "skills": [
+      "athletics",
+      "intimidate",
+      "sailing",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Casado con el mar",
+      "El favorito del océano"
+    ],
+    "nation": "numa"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

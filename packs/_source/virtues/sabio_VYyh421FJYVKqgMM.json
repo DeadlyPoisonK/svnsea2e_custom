@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Sabio",
+  "type": "virtue",
+  "_id": "VYyh421FJYVKqgMM",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para hacerle al DJ una pregunta de sí o no acerca de otro personaje. El DJ debe responder con sinceridad y debe ser generoso (por ejemplo, si la respuesta no es claramente un sí o un no, debe decírtelo y explicártelo con mayor detalle).</p>",
+    "infosource": "Serpiente · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "lViId2hAgZrG1OcT",
+  "name": "Inteligencia",
+  "type": "sorcery",
+  "_id": "FXbJoio9liCzG1ZY",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Beber este elixir te permite desbloquear tus procesos mentales más poderosos. Ganas 1 nivel en Ingenio durante una escena. Preparar este elixir necesita 2 Requisitos.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 95",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

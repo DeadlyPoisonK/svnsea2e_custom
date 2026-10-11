@@ -1,0 +1,15 @@
+{
+  "name": "Agonía",
+  "sorting": "a",
+  "folder": "sUWTdl5qMbYmk0j8",
+  "type": "Item",
+  "_id": "v7pSzN10zcgUKOap",
+  "description": "",
+  "sort": 600000,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "527e106c3a1288bedb99400a8b3658f4b97fad47"
+    }
+  }
+}

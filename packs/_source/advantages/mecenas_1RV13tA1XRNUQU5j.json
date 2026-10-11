@@ -1,0 +1,23 @@
+{
+  "name": "Mecenas",
+  "type": "advantage",
+  "_id": "1RV13tA1XRNUQU5j",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tienes un mecenas, ya sea un individuo o una organización, que aprecia tu trabajo y te proporciona un trabajo fijo. Empiezas cada sesión con Riqueza 1. Puedes gastar 1 punto de héroe para pedirle un favor a tu mecenas. Este favor suele ser político o mercantil de algún modo: tu mecenas podría darte una carta de presentación, mover hilos para colarte en una fiesta exclusiva, etcétera. Tu mecenas te puede pedir favores o tener otras expectativas para ti, como que produzcas bienes o arte en su beneficio si eres un artista o que ayudes al populacho en su nombre si eres un caballero.</p>",
+    "infosource": "7º Mar (básico), p. 152",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "folder": "bxjpDobMNO20CU8R",
+  "flags": {},
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Taparrabos elaborado de Xaman",
+  "type": "sorcery",
+  "_id": "0ARQoAyrtU2Mzg6T",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El mejor comerciante que jamás haya existido fue Xaman. Los cuentos dicen que era tan rico que incluso su taparrabos estaba confeccionado de oro y plata. Xaman también era tan excepcionalmente generoso que sus amigos a menudo eran tan ricos como él. Caritativo, amable y honorable, Xaman era lo que todos los comerciantes deberían esforzarse por ser. Mientras use el Taparrabos elaborado de Xaman, un héroe puede gastar 1 punto de héroe en cualquier cosa en la que normalmente gastaría un punto de Riqueza.</p>",
+    "infosource": "El Nuevo Mundo, p. 174",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 293750,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

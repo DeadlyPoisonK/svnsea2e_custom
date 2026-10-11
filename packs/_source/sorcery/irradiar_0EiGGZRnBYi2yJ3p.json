@@ -1,0 +1,22 @@
+{
+  "folder": "3DBtzP6wWtTujRJe",
+  "name": "Irradiar",
+  "type": "sorcery",
+  "_id": "0EiGGZRnBYi2yJ3p",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Milagro para proporcionar iluminación a tu alrededor o alrededor de tu Maravilla durante una escena. La iluminación es tan brillante como una lámpara de aceite y puedes atenuarla o aumentarla como desees hasta el final de la escena.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 167",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "miracle",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

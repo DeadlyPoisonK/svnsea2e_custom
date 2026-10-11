@@ -1,0 +1,21 @@
+{
+  "folder": "xu8eDKs9AYg0HUdE",
+  "name": "Celidonia",
+  "type": "sorcery",
+  "_id": "iBerMWFwzJBAYFNW",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este extracto impide al que lo beba luchar o recurrir a la violencia. Hasta el final de la escena, el objetivo se encuentra bajo Presión para llevar a cabo cualquier acción agresiva, como infligir Heridas a otro personaje.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 96",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

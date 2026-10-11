@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Fiable",
+  "type": "virtue",
+  "_id": "AkqmZYUO0yT4QvfK",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para cancelar los efectos de Miedo y Presión sobre ti y tus aliados.</p>",
+    "infosource": "Elefante · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

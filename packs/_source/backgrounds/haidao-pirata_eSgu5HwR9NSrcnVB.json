@@ -1,0 +1,32 @@
+{
+  "folder": "oV6tWUZgX7fd5HWW",
+  "name": "Haidao (Pirata)",
+  "type": "background",
+  "_id": "eSgu5HwR9NSrcnVB",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Alegría</p>",
+    "quirk": "<p>Gana un punto de héroe cuando robes a los ricos y poderosos para dárselo a los pobres y desfavorecidos.</p>",
+    "skills": [
+      "aim",
+      "intimidate",
+      "scholarship",
+      "tempt",
+      "theft"
+    ],
+    "advantages": [
+      "Pasado turbio",
+      "Buen bebedor (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 111 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

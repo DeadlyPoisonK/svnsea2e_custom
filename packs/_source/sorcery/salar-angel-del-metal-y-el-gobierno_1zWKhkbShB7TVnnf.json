@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Salar, Ángel del Metal y el Gobierno",
+  "type": "sorcery",
+  "_id": "1zWKhkbShB7TVnnf",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Salar, el Ángel del Metal y el Gobierno, el herrero de los ahura, trae la corona y la maza. Cada arma y pieza de armadura utilizada por sus hermanos y hermanas fue elaborada en su fragua. Salar es el ahura menos propenso a involucrarse en la Lucha Eterna. En épocas pasadas enseñó a la humanidad la obediencia a un líder elegido, pero desde entonces se ha mantenido alejado. Si bien sus hermanos y hermanas pueden amarlo, ninguno podría decir que es cercano a Salar.</p><p>A los usuarios de Khahesh-ahura empoderados por Salar se les otorgan alas de hierro. Estas alas aparecen como si hubieran sido creadas por el mayor herrero que existe y están libres de cualquier imperfección.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 177",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

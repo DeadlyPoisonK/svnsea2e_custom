@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "La Primera Armadura",
+  "type": "sorcery",
+  "_id": "LALzKb7kXDSPdPqW",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El primer tzak k'ano en ponerse una armadura fue Qaholom. Ya cansado de ver guerrero tras guerrero dejar su aldea para no regresar nunca, Qaholom se puso manos a la obra. Con capas de algodón, tela y cuero, Qaholom creó una armadura acolchada para su propia protección.</p><p>Una vez que terminó su trabajo, atemperó su creación con sangre para que lo protegiera contra enemigos inhumanos.</p><p>Mientras vista la Primera Armadura, un héroe puede gastar 1 punto de héroe para prevenir todas las Heridas recibidas de una sola fuente o ataque, siempre que esa fuente o ataque cause una Herida Dramática. Un héroe solo puede activar la Primera Armadura una vez por ronda.</p>",
+    "infosource": "El Nuevo Mundo, p. 173",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 265625,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

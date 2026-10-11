@@ -1,0 +1,22 @@
+{
+  "folder": "OBuVuToMnzlON0Sb",
+  "name": "La promesa dual",
+  "type": "sorcery",
+  "_id": "i6bfRbAPliWyGprK",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Chozeh es más que una promesa hecha por Elohah a Sarmion. También es una promesa de cada practicante a Elohah y su comunidad. Este doble compromiso potencia la magia.</p><p>Los practicantes de Chozeh deben hacer y mantener las siguientes promesas:</p><ul><li>Promover la paz. Chozeh no fue dado para perpetuar el conflicto, sino para terminarlo.</li><li>Ayudar a otros. Chozeh fortalece a unos pocos para que puedan fortalecer el conjunto.</li><li>Defensa propia. Chozeh no requiere sacrificio, sino supervivencia.</li></ul><p>Si un practicante usa una palabra para romper una o más de estas promesas, su conexión con esa palabra también se rompe. Puede seguir usando Amuletos, Escrituras o Tatuajes con esa palabra, pero cada activación genera 1 punto de corrupción.</p><p>La gente puede sorprenderse al encontrar a un sarmion no yachidi ejerciendo los poderes de Chozeh, pero para el pueblo de Sarmion esto no es extraño. Sarmion, como nación unida, entiende que el verdadero conocimiento de lo divino proviene de trabajar con sus hermanos y aprender de ellos. Finalmente, el poder de Chozeh fue otorgado por Elohah para proteger a la gente de Sarmion, ya sea yachidi, dīnista o de cualquier otra fe.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 173",
+    "sorctype": "chozeh",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

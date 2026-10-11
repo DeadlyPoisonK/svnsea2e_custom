@@ -1,0 +1,31 @@
+{
+  "folder": "yhr5tiU5LZn3tiW4",
+  "name": "Sin-Dong (Prodigio)",
+  "type": "background",
+  "_id": "Aqw20LgwHvTLbxWQ",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Sabiduría</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando persuadas a alguien de que confíe en ti o siga tus instrucciones aprovechando tu condición de graduado de los exámenes.</p>",
+    "skills": [
+      "notice",
+      "perform",
+      "scholarship",
+      "warfare"
+    ],
+    "advantages": [
+      "Espíritu valiente (Khitai)",
+      "La última palabra (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 110 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

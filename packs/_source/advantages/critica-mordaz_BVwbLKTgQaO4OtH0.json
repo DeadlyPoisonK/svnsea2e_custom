@@ -1,0 +1,24 @@
+{
+  "folder": "aSM5k4zd4YYt1rg3",
+  "name": "Crítica mordaz",
+  "type": "advantage",
+  "_id": "BVwbLKTgQaO4OtH0",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe cuando realices un Riesgo de Intimidar o Convencer para reducir a la mitad la Fuerza de cualquier banda de matones en la escena (redondeando hacia abajo).</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 206",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

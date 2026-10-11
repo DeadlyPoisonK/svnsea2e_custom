@@ -1,0 +1,33 @@
+{
+  "folder": "pz1cTXqfxYJssm9B",
+  "name": "Rooi Heks",
+  "type": "background",
+  "_id": "sNTObVcpavLcqIwy",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tienes el Toque Rojo, la magia secreta corruptora de los ori. ¿Qué harás con ella?</p><p><em>Ventajas en el libro: Hechicería (Toque Rojo), Hechicería (Toque Rojo), Las viejas tradiciones (IML).</em></p>",
+    "used": false,
+    "quirk": "<p>Gana 1 punto de héroe cuando convenzas a otro personaje de no realizar una acción que hubiera resultado en corrupción.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "hide",
+      "intimidate",
+      "tempt"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Las viejas tradiciones"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 176",
+    "nation": "mbey"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

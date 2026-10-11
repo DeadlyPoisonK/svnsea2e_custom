@@ -1,0 +1,21 @@
+{
+  "folder": "FxGE3VwgEoqXw1Op",
+  "name": "Cruce de caminos",
+  "type": "sorcery",
+  "_id": "MTq8kV10ywWPO3jh",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Entre sus muchos poderes, Papa Ahron tambi&eacute;n act&uacute;a como<br>guardi&aacute;n de los lwa. &Eacute;l solo decide cu&aacute;ndo se permite que un<br>mortal hable con los lwa y le quitar&aacute; la voz r&aacute;pidamente si<br>dice las palabras equivocadas. Mientras Papa Ahron lo posea,<br>el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe para hacerle a los lwa<br>una &uacute;nica pregunta y conseguir un conocimiento sobrenatural<br>sobre el mundo. Los lwa est&aacute;n obligados a responder<br>con honestidad, ya que mentirle a Papa Ahron es una ofensa<br>seria. El DJ debe dar una respuesta directa a la pregunta que<br>se ha formulado, pero no es necesario desarrollarla.</p>",
+    "infosource": "Naciones Piratas, p. 164",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

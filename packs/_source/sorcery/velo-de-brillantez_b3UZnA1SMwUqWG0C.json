@@ -1,0 +1,21 @@
+{
+  "folder": "8yRTt6IGKB0lpv51",
+  "name": "Velo de brillantez",
+  "type": "sorcery",
+  "_id": "b3UZnA1SMwUqWG0C",
+  "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
+  "system": {
+    "description": "<p>Activa este turru para protegerte a ti y a tus compañeros. Creas un velo de luz brillante que se puede usar como un muro de 6 metros de ancho y alto, o como una esfera de 3 metros de diámetro, para proteger a un grupo grande de ataques. El velo puede absorber un número total de Heridas igual a tu Brío, más una Herida adicional por cada vez que tengas la ventaja Hechicería.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 185",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

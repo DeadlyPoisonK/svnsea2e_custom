@@ -1,0 +1,23 @@
+{
+  "folder": "vxu1cHRUsVi9hzod",
+  "name": "Escuadrón de apoyo",
+  "type": "advantage",
+  "_id": "fBNNp7Ar1zyBwKIf",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando a una unidad con este Mérito se le ordena adoptar la Estrategia de Armas Combinadas, sus 10 explotan.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 196",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

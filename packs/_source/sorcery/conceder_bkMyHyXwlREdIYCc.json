@@ -1,0 +1,22 @@
+{
+  "folder": "4rsEYwOl0zAEkA41",
+  "name": "Conceder",
+  "type": "sorcery",
+  "_id": "bkMyHyXwlREdIYCc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Dale a otro personaje uno de tus Símbolos de la Muerte. El personaje puede activar la Manifestación una vez antes del final de la escena o hasta que te devuelva tu Símbolo. Debes elegir cualquier Giro adicional cuando uses Conceder y todos los costes de la Manifestación los pagas tú, ahora, en lugar del otro personaje en el momento de la activación. Mientras ese personaje lleve tu Símbolo de la Muerte, puede ser considerado una criatura no muerta para cualquier efecto (como ser afectado por Manifestaciones de otros churikuna, recibir Heridas de objetos o armas de <em>dracheneisen</em>, o ser influenciado por ungüentos de la Hechicería Hexenwerk). El efecto dura todo el tiempo que dure la Manifestación o hasta que el personaje te devuelva tu Símbolo de la Muerte. Recuerda que has regalado uno de tus Símbolos de la Muerte, por lo que activar cualquier Manifestación adicional requiere puntos de héroe adicionales.</p>",
+    "infosource": "El Nuevo Mundo, p. 180",
+    "used": false,
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "turn",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

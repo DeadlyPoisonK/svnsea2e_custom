@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Allanamiento de morada",
+  "type": "advantage",
+  "_id": "8TUh8eEID4nUotQB",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes gastar 1 punto de héroe para localizar un modo de entrar en un edificio o en un área restringida. Puedes llevar contigo hasta un personaje, pero el resto tiene que encontrar su propio modo de entrar o esperar hasta que les abras un camino.</p>",
+    "infosource": "7º Mar (básico), p. 149",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  }
+}

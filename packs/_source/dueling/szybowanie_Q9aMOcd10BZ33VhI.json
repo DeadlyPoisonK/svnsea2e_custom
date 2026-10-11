@@ -1,0 +1,18 @@
+{
+  "folder": "OFzjAcydrY68u0XJ",
+  "name": "Szybowanie",
+  "type": "duelstyle",
+  "_id": "Q9aMOcd10BZ33VhI",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>A lomos de sus caballos, los legendarios húsares alados son enemigos terribles. Llevan a cabo terribles cargas apuntando con sus lanzas al enemigo. Su armadura provoca el miedo en los que los ven y tratan de que su montura se convierta en su compañera durante el combate. El vínculo entre un húsar y su caballo es inquebrantable.</p><p>Una húsar particularmente perspicaz llamada Kyra Mikita se dio cuenta que no todas las situaciones permitían hacer uso del caballo, por lo que desarrolló el estilo de esgrima Szybowanie. Da igual el arma que se esté utilizando, pues el estilo se centra en conseguir ventajas durante el combate. De tal manera, basándose en la ventaja que se consigue al combatir desde una altura superior (sea o no desde un caballo), siempre que le resulta posible utiliza el poderoso ataque llamado la Acometida del águila.</p><p>Los practicantes del Szybowanie maniobran continuamente por el campo de batalla para conseguir la posición más ventajosa posible.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 103",
+    "bonus": "<p><strong>Acometida del águila.</strong></p><p>Cuando combates desde una altura superior (sea o no sobre un caballo), obtienes una maniobra especial llamada Acometida del águila, en la que te abalanzas sobre tu oponente al tiempo que asestas un poderoso ataque. La Acometida del águila inflige una cantidad de Heridas igual a tu nivel en Armas + tu nivel en Equitación. El espadachín debe gastar 1 Punto de Héroe y sólo puede realizar la Acometida del águila una vez por asalto.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  }
+}

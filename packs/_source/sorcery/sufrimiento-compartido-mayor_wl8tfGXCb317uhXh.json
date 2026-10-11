@@ -1,0 +1,21 @@
+{
+  "folder": "dzgDFTY5K4alPhkl",
+  "name": "Sufrimiento compartido Mayor",
+  "type": "sorcery",
+  "_id": "wl8tfGXCb317uhXh",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El vínculo entre una khadim y el poseedor de su thiqa permite que las lesiones se transfieran para que la khadim pueda proteger a su aliado del daño. De esta manera, las heridas físicas y el dolor se transfieren.</p><p>Activa este Khidma cuando el portador de tu thiqa sufra Heridas. No recibe las Heridas y tú recibes la mitad de Heridas, redondeando hacia abajo, de las que él habría recibido.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 183",
+    "sorctype": "mithaq",
+    "sorcdur": "none",
+    "sorccat": "thiqa",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Mono de la pólvora",
+  "type": "advantage",
+  "_id": "5Hwb4L5SG2LbrtvZ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando realices un Riesgo de Apuntar para disparar los cañones de un barco, consigues 2 dados adicionales.</p>",
+    "infosource": "Naciones Piratas, p. 151",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

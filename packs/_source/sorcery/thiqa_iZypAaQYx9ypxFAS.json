@@ -1,0 +1,22 @@
+{
+  "folder": "sUWTdl5qMbYmk0j8",
+  "name": "Thiqa",
+  "type": "sorcery",
+  "_id": "iZypAaQYx9ypxFAS",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Otorgar tu thiqa a otro personaje le da las siguientes habilidades:</p><ul><li>Un personaje que lleva tu thiqa puede gastar tus puntos de héroe como si fueran propios (como para activar ventajas o su propia Hechicería).</li><li>Un personaje que lleva tu thiqa puede convocarte a su lado sin esfuerzo. En una secuencia, esto requiere un Aumento. Fuera de una secuencia, esto no requiere que se gaste ningún recurso.</li><li>Un personaje que lleve tu thiqa puede pedirte que gastes un Aumento adicional para realizar cualquier acción que no supere.</li><li>Un personaje que lleva tu thiqa puede gastar 1 punto de héroe para escalar el efecto de un Khidma que actives de menor a mayor.</li></ul>",
+    "infosource": "El Imperio de la Media Luna, p. 181",
+    "sorctype": "mithaq",
+    "sorccat": "thiqa",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

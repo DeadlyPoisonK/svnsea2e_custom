@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Ancla Mayor",
+  "type": "sorcery",
+  "_id": "bdxrgknndBFPum7a",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p><br>El ancla representa a un qing que se enfrenta a los desaf&iacute;os para que otros no tengan que hacerlo. Es fiable y sacrificado. Se lanza literalmente a las profundidades para que otros no tengan que perderse, independientemente de qui&eacute;nes sean los otros. Choca con el cangrejo, cuya motivaci&oacute;n de ser un&nbsp;guardi&aacute;n suele ser personal.</p>\n<hr>\n<p>Activa este mohwoo y elige a otro individuo. Est&aacute;s vinculado con la persona que has elegido y ambos siempre&nbsp;sab&eacute;is la direcci&oacute;n en la que se encuentra el otro y a cu&aacute;nta&nbsp;distancia est&aacute;, lo que solo requiere un momento de concentraci&oacute;n. Este efecto dura hasta el siguiente amanecer o&nbsp;anochecer, lo que suceda primero.</p>",
+    "infosource": "Naciones Piratas, p. 171",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  }
+}

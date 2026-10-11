@@ -1,0 +1,22 @@
+{
+  "folder": "hiSpUPzBQTgsOxb9",
+  "name": "Bendecir",
+  "type": "sorcery",
+  "_id": "YwgCsY6timlOO6oU",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 2 de Furia. Imbuye a tus aliados con ayuda espiritual. Obtienes un número de Aumentos igual al valor de Furia de la escena que puedes distribuir entre tus aliados, pero sufres de inmediato tantas Heridas como el valor de Furia de la escena.</p>",
+    "infosource": "Khitai, p. 196 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "used": false
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

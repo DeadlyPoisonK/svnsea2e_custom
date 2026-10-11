@@ -1,0 +1,23 @@
+{
+  "folder": "BsRq7OrECMmGFFR9",
+  "name": "Academia de esgrima",
+  "type": "advantage",
+  "_id": "Hx5tqXJhkHZNched",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes elegir un estilo de Esgrima. Si adquieres esta ventaja otra vez, consigues un estilo de Esgrima adicional. Ver el capítulo «Duelos» (página 234) para más información.</p>",
+    "infosource": "7º Mar (básico), p. 154",
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  }
+}

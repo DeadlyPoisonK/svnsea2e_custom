@@ -1,5 +1,5 @@
 import { ItemTypes, TEMPLATES } from '../enums.js';
-import { enrichHTML, getAllAdvantageNames } from '../helpers.js';
+import { enrichHTML, findAdvantageUuid, getAllAdvantageNames } from '../helpers.js';
 import { ChoiceSelector } from '../apps/choice-selector.js';
 import { EFFECT_ACTIONS, prepareEffects, withEffectsTab } from '../effects.js';
 
@@ -29,6 +29,16 @@ const ITEM_LAYOUTS = {
 const PARTIAL_TABS = new Set(['attributes', 'details']);
 const TAB_LABELS = { earnfavor: 'SVNSEA2E.EarnFavor', callupon: 'SVNSEA2E.UseFavor' };
 const tabLabel = (id) => TAB_LABELS[id] ?? `SVNSEA2E.${id[0].toUpperCase()}${id.slice(1)}`;
+
+/**
+ * A background advantage as a link to the item it grants (world or compendium), or flagged as missing when no
+ * advantage has that name: applying the background would skip it.
+ */
+async function advantageLink(name) {
+  const uuid = await findAdvantageUuid(name);
+  if (uuid) return { name, link: await enrichHTML(`@UUID[${uuid}]{${name}}`) };
+  return { name, missing: game.i18n.format('SVNSEA2E.ItemDoesntExist', { name }) };
+}
 
 /** The sheet of every item type, laid out by ITEM_LAYOUTS. */
 export class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
@@ -94,7 +104,10 @@ export class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
       context.enriched[tab.id] = await enrichHTML(system[tab.id], enrichOptions);
     }
 
-    if (item.type === ItemTypes.BACKGROUND) context.selectedskills = system.skills.map((s) => CONFIG.SVNSEA2E.skills[s]);
+    if (item.type === ItemTypes.BACKGROUND) {
+      context.selectedskills = system.skills.map((s) => CONFIG.SVNSEA2E.skills[s]);
+      context.advantageLinks = await Promise.all(system.advantages.map((name) => advantageLink(name)));
+    }
     return context;
   }
 

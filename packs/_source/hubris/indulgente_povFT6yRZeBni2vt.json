@@ -1,0 +1,17 @@
+{
+  "folder": "mISBGS3k1JGW0JWu",
+  "name": "Indulgente",
+  "type": "hubris",
+  "_id": "povFT6yRZeBni2vt",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Gana un punto de héroe cuando perdones a alguien por los males que te haya hecho a ti o a otros.</p>",
+    "infosource": "Gorrión · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

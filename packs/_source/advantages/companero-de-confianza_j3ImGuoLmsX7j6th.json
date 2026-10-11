@@ -1,0 +1,23 @@
+{
+  "folder": "s1n9pHqJXetLrKa5",
+  "name": "Compañero de confianza",
+  "type": "advantage",
+  "_id": "j3ImGuoLmsX7j6th",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tienes un pequeño grupo de individuos que te son fieles o un único aliado de confianza que caminaría sobre fuego por ti (un guardaespaldas, un caballo, etcétera). Si tus aliados te ayudan directamente en un Riesgo, consigues 1 dado adicional si describes específicamente cómo te ayudan. Si les envías a cumplir alguna misión y necesitan realizar un Riesgo (a discreción del DJ), tiran 5 dados. Estos compañeros pueden recibir 5 Heridas antes de quedar Indefensos y es más que probable que requieran tu ayuda para que los rescates.</p>",
+    "infosource": "7º Mar (básico), p. 153",
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "lNRPjAFXVNRwD8w9",
+  "name": "Palabras vinculantes Mayor",
+  "type": "sorcery",
+  "_id": "1MnW4JQfb1dSv7Tv",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este Khidma es un remanente de los ritos antiguos y el estudio de los jinn del 8º Mar, que enseña a una khadim y sus aliados a buscar siempre comprender a su oposición. A través de la comprensión, se pueden hacer acuerdos. A través de acuerdos, se podría evitar la muerte de cualquiera de las partes involucradas.</p><p>Activa este Khidma para obligar a un monstruo, espíritu, fantasma, jinni o criatura similar a obedecer tu voluntad. Enuncias una sola tarea explícita para que la criatura la complete, y la criatura no puede rechazarte. Para realizar cualquier acción que no obedezca tu orden, la criatura debe gastar un Aumento adicional. Para realizar cualquier acción directamente opuesta a tu orden, la criatura debe gastar 1 punto de peligro. Ten en cuenta que la criatura es completamente consciente de la compulsión a la que la has sometido, y es casi seguro que no le agradará ser esclavizada.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 182",
+    "sorctype": "mithaq",
+    "sorcdur": "none",
+    "sorccat": "thiqa",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

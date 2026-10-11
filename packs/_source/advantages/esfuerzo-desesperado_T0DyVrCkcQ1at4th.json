@@ -1,0 +1,24 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Esfuerzo desesperado",
+  "type": "advantage",
+  "_id": "T0DyVrCkcQ1at4th",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando no te quedan Aumentos en una secuencia de acción, puedes gastar 1 punto de héroe para realizar una sola acción. Ignoras la improvisación para esta acción, y puedes realizar cualquier acción que normalmente se te permitiría gastando un (y solo un) Aumento. Un jugador solo puede usar esta ventaja una vez por sesión.</p>",
+    "infosource": "El Nuevo Mundo, p. 166",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

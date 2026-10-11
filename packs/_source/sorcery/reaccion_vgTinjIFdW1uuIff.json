@@ -1,0 +1,21 @@
+{
+  "folder": "a9auYVTd6m9zGaNk",
+  "name": "Reacción",
+  "type": "sorcery",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>La naturaleza corruptora de un rooi heks se extiende a otros practicantes de Hechicería, y con el tiempo, un rooi heks puede aprender a dirigir y magnificar este efecto.</p><p>Reacción hace que la siguiente instancia de una Hechicería cueste el doble de su precio: una losejas que activa un Favor mayor genera 2 puntos de corrupción, una strega debe pagar el doble del número ordinario de hebras, etc. Si no hay un costo asociado a la Hechicería, entonces el poder cuesta el doble de la cantidad de puntos de héroe que requiere activarlo.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 195",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "vgTinjIFdW1uuIff",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

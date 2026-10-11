@@ -1,0 +1,32 @@
+{
+  "folder": "zs32dqYrmZlqCpWg",
+  "name": "Mówca",
+  "type": "background",
+  "_id": "BS19PZ6CfeKtMSSD",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Dentro de todo el mundo hay bondad, aunque algunas personas necesitan un poco de ayuda para encontrarla.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 207",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando resuelves con éxito un problema convenciendo a otro personaje de que escuche la voz de su conciencia.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "hide",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Un inocente malentendido",
+      "Petición sincera"
+    ],
+    "nation": "sarmatia",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

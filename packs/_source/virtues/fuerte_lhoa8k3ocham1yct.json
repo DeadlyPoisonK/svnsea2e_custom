@@ -1,0 +1,17 @@
+{
+  "folder": "cM8cp2HgmMlzFy4Z",
+  "name": "Fuerte",
+  "type": "virtue",
+  "_id": "lhoa8k3ocham1yct",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando el DJ gaste 1 punto de peligro. El punto de peligro no tiene ningún efecto, pero aun así se gasta.</p>",
+    "infosource": "El Ceiba · El Nuevo Mundo, p. 169"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

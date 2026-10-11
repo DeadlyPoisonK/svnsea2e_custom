@@ -1,0 +1,22 @@
+{
+  "folder": "zsCxGJcpdbI5Sxwj",
+  "name": "Faro",
+  "type": "sorcery",
+  "_id": "QKCU71CRymYqvret",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un objetivo al que tocas brilla como un faro para todos los monstruos, atrayendo su atención. Durante un número de turnos igual a tu Plaga actual, todos los monstruos de la escena actual solo pueden moverse hacia el faro o atacarlo. Si el objetivo del faro es un monstruo, puede actuar con normalidad (no tiene que atacarse a sí mismo).</p>",
+    "used": false,
+    "infosource": "Khitai, p. 203 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

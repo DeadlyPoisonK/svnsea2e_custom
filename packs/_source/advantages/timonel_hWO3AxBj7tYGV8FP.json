@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Timonel",
+  "type": "advantage",
+  "_id": "hWO3AxBj7tYGV8FP",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Consigue 1 dado adicional cuando realices un Riesgo para conducir un barco por aguas traicioneras, evitar fuego enemigo o cuando tu dominio del timón sea útil durante otra situación peligrosa.</p>",
+    "infosource": "Naciones Piratas, p. 151",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

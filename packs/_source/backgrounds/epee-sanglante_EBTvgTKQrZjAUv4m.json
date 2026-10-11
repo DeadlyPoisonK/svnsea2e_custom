@@ -1,0 +1,32 @@
+{
+  "folder": "uITHHwDfWOeygkix",
+  "name": "Épée sanglante",
+  "type": "background",
+  "_id": "EBTvgTKQrZjAUv4m",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Has aprendido el arte de la espada y la sangre, ganándote el título de Épée Sanglante y la admiración y el miedo de tus iguales.</p><p><em>Ventajas en el libro: Academia de esgrima (De Vore), Hechicería (Porté).</em></p>",
+    "infosource": "Naciones de Théah vol. 1, p. 204",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando evites un conflicto usando el miedo que tiene tu oponente en tus capacidades, da igual que lo que piense de ti sea correcto.</p>",
+    "skills": [
+      "athletics",
+      "intimidate",
+      "notice",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Academia de esgrima",
+      "Hechicería"
+    ],
+    "nation": "montaigne",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

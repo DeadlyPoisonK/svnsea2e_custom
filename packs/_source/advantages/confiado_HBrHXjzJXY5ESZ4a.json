@@ -1,0 +1,24 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Confiado",
+  "type": "advantage",
+  "_id": "HBrHXjzJXY5ESZ4a",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Activa esta ventaja después de que el director de juego compre dados sin usar durante un riesgo de Empatía. Obtienes 2 puntos de héroe por cada dado que adquiera el director de juego. Un héroe sólo puede activar esta ventaja una vez por sesión de juego.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 210",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

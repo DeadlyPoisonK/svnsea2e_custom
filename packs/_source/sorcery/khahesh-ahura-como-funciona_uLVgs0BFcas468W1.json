@@ -1,0 +1,22 @@
+{
+  "folder": "7YB3a6kzBCVgRM2q",
+  "name": "Khahesh-ahura: cómo funciona",
+  "type": "sorcery",
+  "_id": "uLVgs0BFcas468W1",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Todos y cada uno de los usuarios de Khahesh-ahura han sido imbuidos con el legado de uno de los principales ahura, los arcángeles de la leyenda ahurayasna. Cuando adquieres la ventaja de Hechicería por primera vez, seleccionas uno de los ahura. Continúas el Legado de ese ser. Puede haber cualquier número de seres empoderados por un solo ahura. Un ahura puede dar poder a cien usuarios de Khahesh-ahura en una generación, o ninguno.</p><p>La primera vez que compres la ventaja Hechicería, selecciona dos Legados. Estos Legados deben ser Legados Comunes o Inusuales asociados a tu ahura. Desde entonces, cada vez que compres la ventaja Hechicería, seleccionas dos nuevos Legados. Sin embargo, nunca puedes seleccionar un Legado Inusual de otro ahura. Por ejemplo, si seleccionas ser empoderado por Nazanin, el Ángel del Tiempo, puedes seleccionar cualquier Legado Común o Legado Inusual de Nazanin. No puedes seleccionar ningún otro Legado Inusual. Debes gastar 1 punto de héroe cada vez que actives un Legado, y cada Legado solo se puede activar una vez por escena. Cuando esto sucede, tus alas se materializan automáticamente. Debido a esto, la Khahesh-ahura es una de las magias menos sutiles del mundo conocido. Es imposible canalizar tu legado angelical sin darlo a conocer a todos los que te rodean. Además, en cualquier momento puedes materializar tus alas sin gastar puntos de héroe. Esto no tiene ningún beneficio mecánico y simplemente muestra tu naturaleza hechicera a quienes te rodean.</p><p>El arte de Khahesh-ahura se ha transmitido a lo largo de los siglos en Persis, y cualquiera que sepa cómo manifestar alas puede enseñar a una de sus compañeras a hacer lo mismo. Mientras tengas sangre yasnavana en algún lugar de tu linaje, tienes el potencial de dominar la Hechicería encerrada dentro de ti, esperando ser desatada. Sin embargo, un potencial usuario de Khahesh-ahura no puede ser entrenado para invocar un aspecto específico. En cambio, la primera vez que una nueva hechicera invoca sus alas, es empoderada por el ahura que más estrechamente se identifica con la mortal. Es común que un estudiante reciba su poder de un ahura diferente al de su maestro.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 175",
+    "sorctype": "khahesh",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

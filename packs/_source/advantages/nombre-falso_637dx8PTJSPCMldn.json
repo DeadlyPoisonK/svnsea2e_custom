@@ -1,0 +1,23 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Nombre falso",
+  "type": "advantage",
+  "_id": "637dx8PTJSPCMldn",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para emplear una identidad alternativa hasta el final de la escena. Elige cualquier trasfondo que no corresponda a una nación para tu identidad alternativa. Mientras operas bajo tu nombre falso, una vez por ronda durante una secuencia dramática, puedes cambiar tu Enfoque a cualquier habilidad del trasfondo de tu identidad alternativa. Un héroe solo puede tener una identidad alternativa a la vez; si vuelves a comprar esta ventaja, inventas un nuevo nombre falso y pierdes el antiguo.</p><p><em>Coste: 2 (1 si eres ashurita).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 159",
+    "cost": {
+      "normal": 2,
+      "reducecost": 1
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  }
+}

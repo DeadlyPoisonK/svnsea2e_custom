@@ -1,0 +1,22 @@
+{
+  "folder": "PCjzE8oTk3HQG27I",
+  "name": "Piedra Litet Merke",
+  "type": "sorcery",
+  "_id": "bzNNon0QRuzudEv9",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>El personaje elegido puede gastar un punto de héroe para ignorar cualquier penalización procedente de Consecuencias (Heridas, penalizadores a los dados, etcétera) hasta el final de la ronda.</p><p>La runa Sangre se relaciona con la familia, el parentesco y el poder de la comunidad. La runa da nombre a los héroes que proceden de grandes linajes o aquellos cuyas familias llevan a cabo grandes hazañas. La gente común la usa para proteger a la comunidad y a sus seres queridos.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 192",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

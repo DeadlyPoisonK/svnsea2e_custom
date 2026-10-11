@@ -1,0 +1,22 @@
+{
+  "folder": "OBuVuToMnzlON0Sb",
+  "name": "Crear Tatuajes",
+  "type": "sorcery",
+  "_id": "w4vjIP9XGVTfmZrc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Un Tatuaje da fácil acceso a las promesas, pero conlleva un coste social, ya que algunos grupos religiosos creen que los tatuajes son tabú, especialmente cuando el tatuaje altera más que la piel.</p><p>Crear un Tatuaje es un proceso más complicado. Primero, debes encontrar a alguien que pueda hacerte el Tatuaje en tu brazo o pierna. Mientras la palabra esté presente, el diseño puede ser tan ornamentado o simple como desees. Una vez que el Tatuaje está completo, debes activarlo por primera vez a través de una oración, una canción o simplemente tu voluntad. Esta primera activación une el Tatuaje a tu ser. Ya que te estás cambiando a un nivel fundamental, esta primera activación te causa una Herida Dramática.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 172",
+    "sorctype": "chozeh",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Colosal",
+  "type": "monsterquality",
+  "_id": "elcJPzMKAiKcVVCK",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>En realidad es demasiado grande para que un solo héroe se encargue de él. Este monstruo derrota a ejércitos, barcos y puertos enteros. El monstruo puede recibir 8 Heridas Dramáticas antes de quedarse Indefenso.</p>",
+    "infosource": "Naciones Piratas, p. 193",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

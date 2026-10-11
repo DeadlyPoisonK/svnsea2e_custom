@@ -1,0 +1,33 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Historiador",
+  "type": "background",
+  "_id": "yNB3hUtxXLaPsFmS",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Sabiduría</p><p><em>Ventajas en el libro (en inglés): Specialist (Scholarship).</em></p>",
+    "quirk": "<p>Gana un punto de héroe cada vez que entregues un artefacto de valor a una universidad, museo o lugar de exposición pública.</p>",
+    "skills": [
+      "athletics",
+      "empathy",
+      "notice",
+      "scholarship",
+      "theft"
+    ],
+    "advantages": [
+      "Noción del tiempo (Khitai)",
+      "Especialista (Khitai)",
+      "Lingüista (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 105 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

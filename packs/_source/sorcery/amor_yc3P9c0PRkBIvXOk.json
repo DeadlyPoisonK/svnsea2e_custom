@@ -1,0 +1,22 @@
+{
+  "folder": "UmOykxAiB4ACTBDv",
+  "name": "Amor",
+  "type": "sorcery",
+  "_id": "yc3P9c0PRkBIvXOk",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Los dievai con el Trato del Amor conocen la pasión del corazón de los théanos. Lo más probable es que su apariencia dependa de los gustos de su losejas, pues buscan una forma que atraiga y seduzca a su sujeto mientras tuercen ese deseo de algún modo (una mujer hermosa, perfecta en todos los sentidos, salvo en el tono rojo sangre de su piel o un adonis cuyo cabello está hecho de serpientes furiosas y chillonas).</p><ul><li>Provocar que una persona se enamore locamente de alguien. La palabra clave es «locamente»: la víctima se obsesiona con el objeto de su deseo y literalmente no hará nada más que estar con él.</li><li>Hacer que todas las criaturas que se encuentren a 150 metros o menos de ti se suman en un loco frenesí, atacando a todos y a todo lo que les rodea. Es imposible calmarlas y se debe lidiar con ellas físicamente.</li><li>Conocer la respuesta de una única pregunta sobre la conexión emocional entre dos personas cualquiera, simplemente con mirarlas.</li></ul><p>El DJ debe responder esta pregunta con honestidad, pero normalmente con menos de cinco palabras.</p><ul><li>Manipular los fuegos de la pasión de otra criatura, intensificando su estado emocional y poniéndola en un modo de «lucha o huida» u obligarla a que se calme y quede en un estado casi dócil.</li><li>Conocer el mayor miedo de un personaje o la cosa que ama o desea por encima de todo.</li><li>Descubrir si otro personaje te está mintiendo.</li></ul><p>Esto solo atañe a lo que el personaje cree que es verdad, no a la verdad real: si alguien te dice que tu padre está muerto, tú solo sabes si esa persona cree honestamente que es verdad.</p><ul><li>Obligar a otro personaje a que se rinda ante sus instintos básicos, incluso si de otro modo no lo haría.</li></ul>",
+    "infosource": "7º Mar (básico), p. 227",
+    "sorctype": "sanderis",
+    "sorccat": "deal",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

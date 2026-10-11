@@ -1,0 +1,17 @@
+{
+  "folder": "rxiPEUOSj58lttE0",
+  "name": "Desinformado",
+  "type": "hubris",
+  "_id": "4QWNYKSJRM2KoXIt",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibes 1 punto de héroe cuando insistes en actuar sobre una base de información que no es confiable y resulta mal.</p>",
+    "infosource": "El erudito · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

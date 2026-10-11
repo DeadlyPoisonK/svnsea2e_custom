@@ -1,0 +1,22 @@
+{
+  "folder": "ubbm9ln1dtOMG7jG",
+  "name": "Leer el viento",
+  "type": "sorcery",
+  "_id": "BzZZ3CuuAEMvnYjV",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La brisa te muestra imágenes de cualquier cosa que haya podido tocar hasta el más leve de los vientos. Puede ser una forma rápida de saber si alguien te sigue, que te quieren emboscar más adelante o que hay algo interesante en las cercanías. Sin embargo, si te concentras puedes centrarse en uno o dos sucesos que haya cerca o lejos, lo que se considera un Riesgo de Percepción. Por cada Aumento, puedes hacer una pregunta sobre lo que sucede en dichas localizaciones. Cada una de estas preguntas implica un sentido, o sea, algo que sea visible, audible o que se pueda oler, pero no dos sentidos o más al mismo tiempo.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 148",
+    "used": false,
+    "sorctype": "tura",
+    "sorcdur": "none",
+    "sorccat": "gift",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "4rsEYwOl0zAEkA41",
+  "name": "Persistente",
+  "type": "sorcery",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El efecto de tu Manifestación continúa más allá de lo que normalmente es posible. Si la Manifestación es instantánea (como Obliterar), este Giro no tiene efecto. Si tu Manifestación termina después de una ronda, persiste durante una ronda adicional. Si tu Manifestación termina al final de una escena, persiste durante una escena adicional.</p>",
+    "infosource": "El Nuevo Mundo, p. 180",
+    "used": false,
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "turn",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "L7HW9axZj2uOV338",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

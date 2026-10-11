@@ -1,0 +1,22 @@
+{
+  "folder": "eZEr7laiGgwaVocD",
+  "name": "Hipnosis",
+  "type": "sorcery",
+  "_id": "G8qnOH5JpuFrRZ1W",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Haces contacto visual con un enemigo e introduces tus pensamientos en su mente. Aplica Presión a un personaje para que siga una única orden que le des (las órdenes manifiestamente imposibles o suicidas se ignoran). Para superar esta Presión, el objetivo debe gastar tantos Aumentos adicionales como tu Plaga actual.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 203 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

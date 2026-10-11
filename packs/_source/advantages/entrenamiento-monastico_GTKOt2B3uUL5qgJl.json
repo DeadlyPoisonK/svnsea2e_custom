@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Entrenamiento monástico",
+  "type": "advantage",
+  "_id": "GTKOt2B3uUL5qgJl",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Te educaste en uno de los muchos monasterios de Khitai, centrándote tanto en actividades académicas y teológicas como en la humildad y la perfección corporal. Colabora con el DJ para determinar las circunstancias que te llevaron a abrazar la vida monacal. ¿Eras un huérfano adoptado por un sacerdote errante que no tenía adónde ir, o eres el octavo hijo de una familia ya desbordada que te envió allí por el bien de todos? Cuando realizas un Riesgo usando Atletismo, Empatía, Interpretar o Conocimiento como tu Enfoque y gastas un punto de héroe (ya sea para obtener un dado adicional, ayudar a un aliado en la misma ronda o hacer que tus 10 exploten), puedes volver a tirar cualquier dado cuyo resultado esté por debajo de tus rangos en esa habilidad. Debes conservar el nuevo resultado, incluso si es menor.</p>",
+    "infosource": "Khitai, p. 121 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

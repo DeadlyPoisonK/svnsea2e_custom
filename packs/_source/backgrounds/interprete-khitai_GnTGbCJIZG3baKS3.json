@@ -1,0 +1,31 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Intérprete (Khitai)",
+  "type": "background",
+  "_id": "GnTGbCJIZG3baKS3",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Alegría</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando uses tus dotes para complacer al público para algo más importante que ganar unas cuantas monedas.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "perform",
+      "scholarship"
+    ],
+    "advantages": [
+      "Virtuoso (Khitai)",
+      "Inspirar generosidad (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 106 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

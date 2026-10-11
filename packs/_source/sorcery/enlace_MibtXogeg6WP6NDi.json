@@ -1,0 +1,22 @@
+{
+  "folder": "SpTam7S7whbJOyQm",
+  "name": "Enlace",
+  "type": "sorcery",
+  "_id": "MibtXogeg6WP6NDi",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Eres capaz de comunicarte telepáticamente entre varios personajes. Puedes enlazar las mentes de un número de criaturas igual a tu Discordia actual, permitiendo una perfecta comunicación no verbal. La comunicación a través de este Enlace no requiere un idioma común y también puede incluir estados emocionales, pero no permite a ningún participante leer la mente de otro. Luego, tu Discordia pasa a ser 0.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 207 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Mirar fijamente",
+  "type": "advantage",
+  "_id": "JcLQ4l2DBHoqUJI0",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para intimidar a un personaje y que retire una amenaza, te deje entrar donde no deberías o que se quite de tu camino de cualquier otro modo.</p><p><em>Coste: 2 (1 si eres eiseno).</em></p>",
+    "infosource": "7º Mar (básico), p. 150",
+    "cost": {
+      "normal": 2,
+      "reducecost": 1
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Omuhelo",
+  "type": "duelstyle",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Llamado así por uno de los rituales que implica un combate singular en el que se utiliza este estilo de lucha, Omuhelo es una forma muy atlética de combate tradicional de mano abierta. El estilo de duelo implica paradas de mano rápidas con una sola mano y otras inversiones, así como muchos tipos de golpes y patadas de barrido. Los duelistas han adaptado este estilo para usar un arma, por lo común un palo robusto, aunque algunos usan espadas en una mano. Un duelista rara vez utiliza el arma, en su lugar se centra en luchar con los pies.</p><p>Un duelista que practica el estilo Omuhelo pasa parte de su entrenamiento aprendiendo sobre su propia ascendencia e incluso realiza largos viajes para hablar con familiares lejanos o visitar lugares de la juventud de sus bisabuelos. Se dice que las inversiones practicadas en el estilo Omuhelo conectan a los duelistas con el mundo inverso donde residen los muertos y los conectan con sus antepasados. Comprender quiénes son esos antepasados y saber qué esperar de esta potencial conexión es importante para los duelistas.</p><p>El estilo Omuhelo es muy atractivo de ver. Muchos duelistas participan individualmente en festivales para demostrar su habilidad o tomar parte en duelos que no se extienden más allá de la etapa de exhibición. Su apariencia llamativa y memorable convierten este estilo en uno de los más conocidos de Théah.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 206",
+    "bonus": "<p><strong>Patada de Gacela.</strong></p><p>Cuando tienes al menos una mano libre, obtienes una maniobra especial llamada Patada de Gacela. Patada de Gacela, una patada giratoria invertida, rompe el equilibrio de tu oponente. Patada de Gacela causa un número de Heridas igual a tus niveles en Atletismo (mínimo 1), y la próxima vez que tu objetivo inflija Heridas en esta ronda causa una Herida menos por cada nivel que tengas en Armas. Solo se puede realizar Patada de Gacela una vez por ronda.</p>"
+  },
+  "effects": [],
+  "folder": "PUYV4r6swGJd7KsV",
+  "flags": {},
+  "_id": "6Mn6JocpOFap8Iws",
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  }
+}

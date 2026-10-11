@@ -1,0 +1,32 @@
+{
+  "folder": "AWlM6bJmJQhh7Se4",
+  "name": "Shoorveer Jati (Caballero)",
+  "type": "background",
+  "_id": "UGd19UNCMkardZkB",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Paz</p><p><em>Ventajas en el libro (en inglés): Duelist Academy (Mateenatya).</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando des un paso al frente en solitario para enfrentarte a probabilidades abrumadoras.</p>",
+    "skills": [
+      "athletics",
+      "intimidate",
+      "ride",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Academia de esgrima (Khitai)",
+      "Uno contra muchos (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 108 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "HRfj3yaZPnrijrS5",
+  "name": "Nuit Jumeaux",
+  "type": "sorcery",
+  "_id": "cM8iHwhg3XxsWXP5",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Mareaux guarda misterios. Mientras Mareaux lo posea,<br>el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe para dotar de<br>consciencia a su propia sombra, que se vuelve semicorp&oacute;rea<br>y obedece &oacute;rdenes simples. La sombra puede<br>explorar, escuchar a escondidas y otras actividades<br>similares, pero no puede coger objetos ni interactuar<br>con otra gente. Si realiza una acci&oacute;n peligrosa, tiene<br>Fuerza 5 (tira 5 dados) y gasta Aumentos con normalidad.<br>Si recibe una &uacute;nica Herida, regresa instant&aacute;neamente<br>al s&egrave;vit&egrave; y se niega a que la reanimen hasta el<br>siguiente atardecer.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "gros",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
