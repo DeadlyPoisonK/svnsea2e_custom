@@ -109,7 +109,7 @@ export async function rollDicePool({ actor, rolldata, options, title, kind = 'fr
   const faces = roll.dice[0].results.map((r) => r.result);
   data.dice = faces.slice(0, poolSize);
   data.explosions = faces.slice(poolSize);
-  // Only the rank 3 reroll may be missing. It is not attached to the message, as up to v24.
+  // Only the rank 3 reroll may be missing. It is not attached to the message, as up to v23.
   await completeDice(data);
 
   const chatData = ChatMessage.implementation.applyMode({

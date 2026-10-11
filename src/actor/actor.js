@@ -80,7 +80,7 @@ export class SvnSea2EActor extends Actor {
   /** Remove the advantages the background granted and lower its skills by one. */
   async removeBackground(background) {
     await this.#shiftSkills(background, -1);
-    // Backgrounds applied before v25 did not mark their advantages: remove them by name, as v24 did.
+    // Backgrounds applied before v24.0 did not mark their advantages: remove them by name.
     const granted = background.getFlag(SYSTEM_ID, 'tracksGrants')
       ? (item) => item.getFlag(SYSTEM_ID, 'grantedBy') === background.id
       : (item) => background.system.advantages.includes(item.name);

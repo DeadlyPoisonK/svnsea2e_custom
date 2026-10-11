@@ -22,7 +22,7 @@ ok(DocumentSheetConfig.registered.length === 20, `20 sheets registered (${Docume
 await Hooks.callAll('setup');
 ok(CONFIG.SVNSEA2E.skills.aim === 'Aim', 'config localized');
 await Hooks.callAll('ready');
-ok(settings.get('systemMigrationVersion') === '25.0', `newest migration version stored (${settings.get('systemMigrationVersion')})`);
+ok(settings.get('systemMigrationVersion') === '24.0.1', `newest migration version stored (${settings.get('systemMigrationVersion')})`);
 
 const make = async (type, data = {}) => { const a = await Actor.create({ name: type, type, ...data }); game.actors.set(a.id, a); return a; };
 const sheetClasses = {};
@@ -145,7 +145,7 @@ ok(!pc.items.has(pcBg.id) && pc.system.skills.sailing.value === 0 && !pc.items.s
   await viaMacro.delete();
   await settle();
   ok(pc.items.has(own.id) && pc.system.skills.sailing.value === 0, 'the advantage the hero already had is kept');
-  // A background applied by v24 has no marks: its advantages go by name, as before.
+  // A background applied by v23 has no marks: its advantages go by name, as before.
   const [legacy] = await pc.createEmbeddedDocuments('Item', [{ ...bg.toObject(), system: { ...bg.toObject().system, active: false } }]);
   await legacy.update({ 'system.active': true });
   await pc.deleteEmbeddedDocuments('Item', [legacy.id]);
@@ -231,7 +231,7 @@ card.querySelector('.initiative-tracker-add').click();
 await new Promise((r) => setTimeout(r, 10));
 ok(pc.system.initiative === Number(card.querySelector('.initiative-tracker-add').dataset.raise), 'chat button sets initiative');
 
-// ---------- Roll messages (v25): the roll is kept in the message and "Edit Roll" counts it again ----------
+// ---------- Roll messages (v24.0): the roll is kept in the message and "Edit Roll" counts it again ----------
 {
   await pc.update({ 'system.skills.aim.value': 2, 'system.traits.brawn.value': 3, 'system.dwounds.value': 1, 'system.heropts': 1 });
   const D = [9, 4, 6, 3, 2, 5];
@@ -308,12 +308,12 @@ ok(pc.system.initiative === Number(card.querySelector('.initiative-tracker-add')
   await edit(msg, (form) => { form.elements.trait.value = '0'; form.elements.skill.value = '0'; form.elements.wound.value = '0'; });
   ok(log.notifications.at(-1)[1].includes('no dice') && msg.system.pool.trait === before.pool.trait, 'an empty pool is refused');
 
-  // "Edit Roll" in the context menu: author and GM only, and only for v25 roll messages.
+  // "Edit Roll" in the context menu: author and GM only, and only for v24.0 roll messages.
   const menu = [];
   await Hooks.callAll('getChatMessageContextOptions', {}, menu);
   const option = menu.find((o) => o.label === 'SVNSEA2E.EditRoll');
   const li = (m) => ({ dataset: { messageId: m.id } });
-  const oldMessage = await ChatMessage.create({ author: game.user.id, content: '<div>v24 card</div>', rolls: [{}] });
+  const oldMessage = await ChatMessage.create({ author: game.user.id, content: '<div>v23 card</div>', rolls: [{}] });
   ok(option?.visible(li(msg)) && !option.visible(li(oldMessage)), 'Edit Roll shown for roll messages only');
   const gm = game.user;
   game.user = { id: 'player2', isGM: false };
@@ -634,7 +634,7 @@ ok(settings.get('toolboxActors').length === 0, 'toolbox remove');
   tokenActors.clear();
 }
 
-// ---------- Migration to v25: ship crew flags → system.crew ----------
+// ---------- Migration to v24.0: ship crew flags → system.crew ----------
 {
   const oldShip = await make('ship', { flags: { svnsea2e: { shipsCrew: { members: [pc.id, villain.id, 'gone'] } } } });
   await pc.setFlag('svnsea2e', 'crewMember', { shipId: oldShip.id, role: 'surgeon' });
@@ -644,13 +644,13 @@ ok(settings.get('toolboxActors').length === 0, 'toolbox remove');
   const crew = oldShip.system.crew.map((m) => `${m.actorId}:${m.role}`).join();
   ok(crew === `${pc.id}:surgeon,${villain.id}:seaman`, `crew migrated (${crew})`);
   ok(!oldShip.getFlag('svnsea2e', 'shipsCrew') && !pc.getFlag('svnsea2e', 'crewMember'), 'old crew flags removed');
-  ok(settings.get('systemMigrationVersion') === '25.0', 'migration recorded');
+  ok(settings.get('systemMigrationVersion') === '24.0.1', 'migration recorded');
   await oldShip.update({ 'system.crew': [] });
   await game.svnsea2e.migrations.migrateWorldIfNeeded();
   ok(oldShip.system.crew.length === 0, 'migration runs once');
 }
 
-// ---------- Migration to v25: Hard To Kill toggle → active effect ----------
+// ---------- Migration to v24.0: Hard To Kill toggle → active effect ----------
 {
   const htkEffects = (doc) => doc.effects.filter((e) => e.system.changes.some((c) => c.key === 'system.htk'));
   const withAdvantage = await make('playercharacter', { name: 'Tough', system: { htk: true } });
@@ -665,7 +665,7 @@ ok(settings.get('toolboxActors').length === 0, 'toolbox remove');
   tokenActor._source.system.htk = true; tokenActor.prepareData();
   game.actors.delete(tokenActor.id);
   game.scenes.set('scene', { tokens: [{ actorLink: false, actor: tokenActor }] });
-  ok(withAdvantage.system.dwounds.max === 5 && withoutAdvantage.system.wounds.max === 30, 'v24 Hard To Kill toggles on');
+  ok(withAdvantage.system.dwounds.max === 5 && withoutAdvantage.system.wounds.max === 30, 'v23 Hard To Kill toggles on');
 
   await settings.set('systemMigrationVersion', '24.0');
   await game.svnsea2e.migrations.migrateWorldIfNeeded();

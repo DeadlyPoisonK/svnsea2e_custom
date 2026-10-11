@@ -3,7 +3,7 @@ import { ROLL_MESSAGE } from './roll/message.js';
 
 /**
  * Button of the roll cards: set the actor's raises to those of this roll, even when another roll set them this round.
- * The roll messages of v25 count their raises again (they may have been edited) and are followed by later edits.
+ * The roll messages of v24.0 count their raises again (they may have been edited) and are followed by later edits.
  */
 export function registerChatListeners() {
   document.addEventListener('click', (event) => {

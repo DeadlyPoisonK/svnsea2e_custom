@@ -104,7 +104,7 @@ export class SecretSocietyModel extends foundry.abstract.TypeDataModel {
     };
   }
 
-  /** Up to v24 the favor was saved as text ("2", "" or even "<p>2</p>"). */
+  /** Up to v23 the favor was saved as text ("2", "" or even "<p>2</p>"). */
   static migrateData(source) {
     if (typeof source.favor === 'string') source.favor = Math.max(parseInt(source.favor.replace(/<[^>]*>/g, '')) || 0, 0);
     return super.migrateData(source);

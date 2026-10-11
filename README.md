@@ -12,7 +12,7 @@ Lo subí porque mis amigos me pidieron permiso para compartirlo entre ellos. Pre
 
 ## Versiones
 
-- **v25.x → Foundry VTT 14.** Aprovecha lo nuevo de v14. Al abrir un mundo de la v23 o la v24, el sistema lo migra solo, una vez.
+- **v24.x → Foundry VTT 14.** Reescrito sobre ApplicationV2, sin APIs deprecadas, y aprovechando lo nuevo de v14. Al abrir un mundo de la v23, el sistema lo migra solo, una vez.
   - **Efectos activos:** pestaña "Efectos" al final de todas las hojas. Los efectos de una ventaja, virtud o arcano pasan al personaje que la tiene y cambian la hoja o las tiradas (dados extra, +1, umbral 15…). Compendio "7th Sea Effects" con ejemplos.
   - **Hard To Kill** ya no es un interruptor: es un efecto en la ventaja Duro de Matar. La migración lo pone donde estaba encendido.
   - **Editar tirada:** en el menú de un mensaje de tirada, para corregir umbral, +1, explosiones, dados o Joie de Vivre sin volver a tirar (solo se tiran los dados añadidos). Lo ven el autor y el DJ.
@@ -22,9 +22,8 @@ Lo subí porque mis amigos me pidieron permiso para compartirlo entre ellos. Pre
   - **Datos que se perdían:** la Redención del villano, el Concepto del monstruo y la tripulación del barco ahora se guardan. Los actores con iniciativa guardada en un formato antiguo y las ventajas con coste reducido escrito ("2 si eres castellano") vuelven a cargar; el coste reducido pasa a ser texto libre.
   - Las tarjetas del chat usan el fondo de pergamino.
   - **Compendios en español** (carpeta "7º Mar"): ventajas, trasfondos, duelos, hechicería, virtudes e hibris de todos los libros, con su fuente y página. Antes venían en el módulo aparte `7-sea-modules`, que ya no hace falta. Las ventajas de un trasfondo se aplican desde el compendio sin importarlas al mundo, y en su hoja son enlaces a la ventaja (en rojo si no existe ninguna con ese nombre).
-- **v24.x → Foundry VTT 14.** Reescrito sobre ApplicationV2, sin APIs deprecadas. Los datos no cambiaron: los mundos de la v23 se abren sin migrar nada.
-  - **Bugs corregidos:** los puntos de héroe gastados en una tirada ahora se descuentan; borrar un trasfondo activo quita sus habilidades y ventajas; el selector de ventajas del trasfondo lista también las de los compendios; los personajes de Inismore pueden tomar trasfondos de las Islas del Glamour; la influencia de los esquemas ya no sale como `[object Object]` en el chat; el interruptor de Hard To Kill muestra su estado real; la iniciativa no baja de 0.
-  - **Mejoras:** las secciones plegadas de las hojas se mantienen al redibujar; la toolbox recuerda sus actores y permite quitarlos; las tiradas privadas y a ciegas respetan los modos de mensaje de v14 y Dice So Nice anima solo; los ítems se pueden arrastrar a otras hojas o a la barra de macros; traducciones completadas en los 6 idiomas.
+  - **Bugs corregidos:** los puntos de héroe gastados en una tirada ahora se descuentan; borrar un trasfondo activo quita sus habilidades y ventajas; el selector de ventajas del trasfondo lista también las de los compendios; los personajes de Inismore pueden tomar trasfondos de las Islas del Glamour; la influencia de los esquemas ya no sale como `[object Object]` en el chat.
+  - **Mejoras:** las secciones plegadas de las hojas se mantienen al redibujar; la toolbox recuerda sus actores y permite quitarlos; las tiradas privadas y a ciegas respetan los modos de mensaje de v14 y Dice So Nice anima solo; los ítems se pueden arrastrar a otras hojas o a la barra de macros; se puede tomar un trasfondo de otra nación (solo avisa, para personajes de nacionalidad mixta); traducciones completadas en los 6 idiomas.
   - **Se conservó:** el motor de tiradas da los mismos resultados que en la v23.3, y las hojas mantienen su aspecto (tema claro en las hojas, oscuro en la toolbox).
 - **v23.3 → Foundry VTT 13.** Última versión para v13. Se instala desde su release: `https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.3/system.json`.
 
@@ -34,12 +33,12 @@ Base tomada de `Detailing-the-Realm/svnsea2e` v`4.0.0` (compatibilidad Foundry `
 
 Cambios propios agregados sobre esa base:
 
-- **Hard To Kill (HtK):** 5 heridas dramáticas para héroes y villanos (en el villano, un grupo de heridas más). Fue un toggle en la hoja hasta la v24; desde la v25 es un efecto activo de la ventaja. No existe en el oficial.
+- **Hard To Kill (HtK):** 5 heridas dramáticas para héroes y villanos (en el villano, un grupo de heridas más). Fue un toggle en la hoja hasta la v23.3; desde la v24.0 es un efecto activo de la ventaja. No existe en el oficial.
 - **Tirada de dados libre ("Roll Dice"):** botón nuevo en la hoja de personaje que abre un diálogo para elegir cantidad de dados y tirarlos al chat, sin depender de una habilidad. No existe en el oficial.
 - **Sistema de tiradas de habilidad mejorado:** la tarjeta de resultado en el chat (roll-card) ahora muestra los dados no usados ("UnusedDices") y el conteo de dados explotados ("+N dados explotados"), además de lo que ya mostraba el oficial (combos, rerolls, umbral). Textos en español.
 - **Tirar ítems al chat:** se agregó la acción `throwItem` (→ `item.sendToChat()`, antes `_onItemThrow` → `item.ItemThrow()`) a los ítems de Advantages, Dueling Styles, Backgrounds, Virtue, Hubris, Stories, Artifacts y Sorcery en las hojas de personaje. En el oficial esos ítems solo mostraban la imagen (`item-image`) sin poder tirarlos al chat; ahora se puede hacer clic en el ícono de cada uno para enviarlo.
 - **Uso de Virtudes/Hubris:** casilla de "usado" agregada a cada Virtud y Hubris en la pestaña Fate, para marcarlas como gastadas en la sesión. El oficial no tenía forma de trackear esto en la hoja.
-- **Aumentos en el combat tracker:** la iniciativa es la cantidad de aumentos. Hasta la v24 se editaba en la hoja; desde la v25 la pone la primera tirada de la ronda y se ajusta con ±1 en el tracker.
+- **Aumentos en el combat tracker:** la iniciativa es la cantidad de aumentos. Hasta la v23.3 se editaba en la hoja; desde la v24.0 la pone la primera tirada de la ronda y se ajusta con ±1 en el tracker.
 - Íconos e imágenes propias agregadas (`icons/`) para varias habilidades/estilos de duelo.
 
 Y probablemente algún que otro ajuste menor que ya ni recuerdo — si notás algo raro o distinto avisame.

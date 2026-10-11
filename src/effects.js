@@ -60,7 +60,7 @@ export function getEffectKeys() {
   return (effectKeys = keys);
 }
 
-/** The effect that makes a character Hard To Kill, as created by the v25 migration. */
+/** The effect that makes a character Hard To Kill, as created by the v24.0 migration. */
 export function hardToKillEffectData() {
   return {
     name: game.i18n.localize('SVNSEA2E.HardToKill'),

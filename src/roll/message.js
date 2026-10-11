@@ -12,7 +12,7 @@ const face = () => new NumberField({ required: true, nullable: false, integer: t
 
 /**
  * A roll of the system in the chat (ChatMessage type "roll"): the pool, the options and the dice rolled. The card in
- * `content` is drawn from these data when the roll is made and every time it is edited. Messages of v24 and before
+ * `content` is drawn from these data when the roll is made and every time it is edited. Messages of v23 and before
  * are plain messages with only the card: they are shown as they are and cannot be edited.
  */
 export class RollMessageModel extends foundry.abstract.TypeDataModel {
@@ -144,7 +144,7 @@ export async function renderRollCard(data, actorUuid) {
   });
 }
 
-/** Whether the user may edit this message: rolls of v25 and later, by their author or the GM, when they see them. */
+/** Whether the user may edit this message: rolls of v24.0 and later, by their author or the GM, when they see them. */
 export function canEditRoll(message, user = game.user) {
   return message?.type === ROLL_MESSAGE && (user.isGM || message.isAuthor) && message.isContentVisible;
 }

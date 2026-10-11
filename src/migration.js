@@ -18,9 +18,10 @@ import { hardToKillEffectData } from './effects.js';
  *   afterActor?: (actor: Actor) => Promise<void>, afterItem?: (item: Item) => Promise<void>}[]}
  */
 export const MIGRATIONS = [
+  // 24.0.1 and not 24.0: the worlds opened with the development builds of 24.0 already store "24.0".
   {
     // The ship roster moves from two flags (the members on the ship, the role on each member) to `system.crew`.
-    version: '25.0',
+    version: '24.0.1',
     prepare() {
       this.roles = new Map(game.actors.map((actor) => [actor.id, actor.getFlag(SYSTEM_ID, 'crewMember')?.role]));
     },
@@ -44,7 +45,7 @@ export const MIGRATIONS = [
   {
     // Hard To Kill: an active effect that overrides `system.htk` replaces the toggle of the sheet. The effect goes on
     // the actor's Hard To Kill advantage, or on the actor when it has none, and the stored `htk` goes back to false.
-    version: '25.0',
+    version: '24.0.1',
     async afterActor(actor) {
       if (!('htk' in actor.system)) return;
       const advantages = actor.items.filter((item) => isHardToKill(item));

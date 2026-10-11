@@ -610,9 +610,10 @@ function onRenderActiveEffectConfig(app, html) {
   for (const input of inputs) input.setAttribute("list", id);
 }
 const MIGRATIONS = [
+  // 24.0.1 and not 24.0: the worlds opened with the development builds of 24.0 already store "24.0".
   {
     // The ship roster moves from two flags (the members on the ship, the role on each member) to `system.crew`.
-    version: "25.0",
+    version: "24.0.1",
     prepare() {
       this.roles = new Map(game.actors.map((actor) => [actor.id, actor.getFlag(SYSTEM_ID, "crewMember")?.role]));
     },
@@ -634,7 +635,7 @@ const MIGRATIONS = [
   {
     // Hard To Kill: an active effect that overrides `system.htk` replaces the toggle of the sheet. The effect goes on
     // the actor's Hard To Kill advantage, or on the actor when it has none, and the stored `htk` goes back to false.
-    version: "25.0",
+    version: "24.0.1",
     async afterActor(actor) {
       if (!("htk" in actor.system)) return;
       const advantages = actor.items.filter((item) => isHardToKill(item));
@@ -2614,7 +2615,7 @@ class SecretSocietyModel extends foundry.abstract.TypeDataModel {
       favor: new NumberField({ required: true, integer: true, min: 0, initial: 0 })
     };
   }
-  /** Up to v24 the favor was saved as text ("2", "" or even "<p>2</p>"). */
+  /** Up to v23 the favor was saved as text ("2", "" or even "<p>2</p>"). */
   static migrateData(source) {
     if (typeof source.favor === "string") source.favor = Math.max(parseInt(source.favor.replace(/<[^>]*>/g, "")) || 0, 0);
     return super.migrateData(source);

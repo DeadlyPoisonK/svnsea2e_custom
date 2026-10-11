@@ -142,7 +142,7 @@ class WoundedModel extends foundry.abstract.TypeDataModel {
 }
 
 /**
- * Heroes, villains and monsters can be Hard To Kill. `htk` stays false in the stored data since v25: an active effect
+ * Heroes, villains and monsters can be Hard To Kill. `htk` stays false in the stored data since v24.0: an active effect
  * (normally on the Hard To Kill advantage) turns it on.
  */
 class CharacterModel extends WoundedModel {

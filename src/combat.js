@@ -113,7 +113,7 @@ export class SvnSea2ECombatant extends Combatant {
   }
 }
 
-/** The actor of a roll card: v25 cards keep its UUID (the token's actor when unlinked), older ones its id. */
+/** The actor of a roll card: v24.0 cards keep its UUID (the token's actor when unlinked), older ones its id. */
 export function actorFrom(ref) {
   if (!ref) return null;
   if (typeof ref !== 'string') return ref;
@@ -141,7 +141,7 @@ async function updateCombatants(updates, options) {
 /**
  * Set the initiative (raises) of an actor: on its combatants in the active combats, which copy it to the actor, or
  * on the actor alone when it is not in a combat.
- * @param {Actor|string} actorRef   The actor, its UUID or (v24 cards and macros) the id of a world actor.
+ * @param {Actor|string} actorRef   The actor, its UUID or (v23 cards and macros) the id of a world actor.
  * @param {number|string} value
  * @param {object} [options]
  * @param {ChatMessage} [options.message]   The roll that sets them, to follow its edits.
