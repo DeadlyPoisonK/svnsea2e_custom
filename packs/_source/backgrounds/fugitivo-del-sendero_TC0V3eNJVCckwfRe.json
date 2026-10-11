@@ -1,0 +1,32 @@
+{
+  "folder": "uITHHwDfWOeygkix",
+  "name": "Fugitivo del sendero",
+  "type": "background",
+  "_id": "TC0V3eNJVCckwfRe",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>No lo recuerdas, pero una vez estuviste atrapado en el sendero durante un tiempo indecible. Escapaste, pero no recuerdas tu vida antes de aquello… aún.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 204",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe siempre que tu pasado venga a perseguirte y eso te cause problemas.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "intimidate",
+      "notice",
+      "tempt"
+    ],
+    "advantages": [
+      "Enfoque dinámico",
+      "Espíritu valiente"
+    ],
+    "nation": "montaigne",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Tú te vienes conmigo (Khitai)",
+  "type": "advantage",
+  "_id": "ApjmiU6YpZUQlejI",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>El dolor es un motivador increíble. Gasta un punto de héroe. Todas las Heridas que causes esta ronda aumentan en un número igual a las Heridas Dramáticas que tengas.</p>",
+    "infosource": "Khitai, p. 122 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

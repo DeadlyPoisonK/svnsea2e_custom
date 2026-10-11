@@ -1,0 +1,22 @@
+{
+  "folder": "k1HL2jkmGetnNNuC",
+  "name": "Camino de los Humildes",
+  "type": "sorcery",
+  "_id": "T9G7Nb4G2DhEe7AG",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El Camino de los Humildes te muestra que hay muchas cosas más importantes que tú, y eso es maravilloso. Mantener la compostura incluso en una situación aterradora puede llevar a al-Musawwir a abrir tu Camino.</p><p>El primer paso en el Camino de los Humildes causa que tu Maravilla provoque un aura tranquilizante. Puedes dirigirla a alguien y calmarlo para que puedas discutir razonablemente lo que le molesta.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 168",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "ey7m8TjScwWG6Ah5",
+  "name": "Simbiosis con el barco",
+  "type": "sorcery",
+  "_id": "yOj3m4idOxDepOP2",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Cuando estés a bordo de un barco, coge el timón y activa este Glamour. A ambos se os considera una única entidad. Cuando realices un Riesgo de cualquier tipo mientras estés a bordo, añade tus niveles de este Glamour como dados adicionales. Este Glamour termina en cuanto dejas el timón del barco. Cuando sufres una Herida Dramática, el barco sufre un Impacto Crítico, y viceversa.</p>",
+    "infosource": "7º Mar (básico), p. 215",
+    "used": false,
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "glamour",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

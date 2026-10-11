@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Parientes lejanos",
+  "type": "advantage",
+  "_id": "WWHf69zY18JViAQu",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para revelar que tienes un primo lejano que vive cerca y que puede ayudarte con materiales, información o refugio.</p><p><em>Coste: 2 (1 si eres ussuro).</em></p>",
+    "infosource": "7º Mar (básico), p. 150",
+    "cost": {
+      "normal": 2,
+      "reducecost": 1
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

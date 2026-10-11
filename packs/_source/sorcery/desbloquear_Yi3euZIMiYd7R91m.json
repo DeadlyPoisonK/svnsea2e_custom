@@ -1,0 +1,22 @@
+{
+  "folder": "k1HL2jkmGetnNNuC",
+  "name": "Desbloquear",
+  "type": "sorcery",
+  "_id": "Yi3euZIMiYd7R91m",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este poder para desbloquear con un toque de tu Maravilla todas y cada una de las puertas, cerraduras, pestillos, ventanas o cualquier cosa similar. Este poder dura hasta el final de la escena.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 168",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "path",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Dawna, Ángel de la Victoria",
+  "type": "sorcery",
+  "_id": "6t4HGCX2Mzis2kuB",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Dawna, el Ángel de la Victoria, es la mayor de todos los ahura. Todos sus hermanos y hermanas la admiran y siguen su ejemplo, porque mientras ella dé la orden, la victoria está asegurada. Dawna fue la primera ahura que empoderó a un mortal con Khahesh-ahura, permitiendo a Ziba la Amada levantarse y derrocar al tirano Aždahâ, que había sido empoderado por el daeva Namirha.</p><p>A los usuarios de Khahesh-ahura empoderados por Dawna se les otorgan alas gloriosas y radiantes. Estas alas aparecen como energía pura que brota de la parte posterior del usuario de Khahesh-ahura, y pueden ser cegadoras a la vista.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 176",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

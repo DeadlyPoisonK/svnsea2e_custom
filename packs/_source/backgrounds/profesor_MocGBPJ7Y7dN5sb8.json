@@ -1,0 +1,32 @@
+{
+  "folder": "8AjTGHJtL0XNoqWh",
+  "name": "Profesor",
+  "type": "background",
+  "_id": "MocGBPJ7Y7dN5sb8",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Enseñas a otros en una prestigiosa institución de enseñanza.</p>",
+    "infosource": "7º Mar (básico), p. 141",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando uses conocimientos sacados de un texto enrevesado para resolver un problema complejo.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "perform",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Numerario",
+      "Trabajo en equipo"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

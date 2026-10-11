@@ -1,0 +1,22 @@
+{
+  "folder": "hiSpUPzBQTgsOxb9",
+  "name": "Auxilio",
+  "type": "sorcery",
+  "_id": "hCeV2ZnyHkCL1M28",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 3 de Furia. Después de que un aliado cause 0 Heridas con un ataque (el enemigo usa la maniobra Parada, gasta Aumentos para reducir el daño, etc.), invoca a los elementos para aumentar el poder de su golpe. El ataque inflige de inmediato Heridas adicionales iguales al valor actual de Tranquilidad de la escena.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 196 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "li9WDKazVu5ySEdo",
+  "name": "Lacerante",
+  "type": "sorcery",
+  "_id": "LtPyHFi5NUDHpdvX",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Esta hoja es excepcionalmente mortal y golpea con más fuerza de lo normal. Para evitar una Herida causada por esta arma, el objetivo debe gastar 2 Aumentos.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 200",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

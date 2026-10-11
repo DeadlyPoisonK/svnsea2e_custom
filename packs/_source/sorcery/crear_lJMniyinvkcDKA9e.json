@@ -1,0 +1,22 @@
+{
+  "folder": "qeCZ5JNoQShLPnz4",
+  "name": "Crear",
+  "type": "sorcery",
+  "_id": "lJMniyinvkcDKA9e",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este poder para invocar una herramienta o un arma simple (como un martillo o una espada) durante una escena. El objeto funciona exactamente como la herramienta o el arma y es cálido al tacto. Si se usa para golpear un objetivo, el artículo hace 1 Herida adicional. Sólo funciona en tus manos; si otro personaje recoge el objeto, este desaparece.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Torbellino de acero (Khitai)",
+  "type": "advantage",
+  "_id": "iJyszNgwARsCRfOF",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><em>Debes tener la ventaja «Esgrimista».</em></p><p>Cuando realizas un Riesgo de Armas usando un estoque, daga, alfanje o arma similar en una mano, puedes gastar un punto de héroe para reducir la Fuerza de todas las bandas de matones de tu Zona (consulta la página 139) en tantos puntos como tus rangos en Armas. Solo puedes activar esta ventaja al inicio de una ronda, antes de que ningún personaje haya realizado una acción.</p>",
+    "infosource": "Khitai, p. 113 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

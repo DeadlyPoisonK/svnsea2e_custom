@@ -1,0 +1,19 @@
+{
+  "folder": "EukS0hh4uQes49gW",
+  "name": "Damu",
+  "type": "duelstyle",
+  "_id": "YpQwJxr4KDIXXnd7",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Maestra Practicante: Ranya.</p><p>Ranya es una profesora-poeta errante. Viaja entre la gente común y difunde la historia de Persis. Una Kavi improbable que aún no ha perdido un solo duelo. Su séquito está formado por sirvientes contratados que pagan sus pérdidas mientras la estudian al alcance del oído. Los rivales se convierten en discípulos. Ella es estricta pero cariñosa; un agarre suave contiene más arena que un puño cerrado. Un practicante de Damu presenta ideas y temas de manera simple, entendida por todos. Dentro de la simplicidad de sus Bayts, transmite declaraciones profundas con un flujo fácil de entender pero difícil de dominar. Las parábolas de los niños a menudo se escriben en estilo Damu.</p>",
+    "bonus": "<p><strong>Bonificación de la escuela.</strong></p><p>Un practicante de Damu gana 1 dado adicional en el Bayt final cuando llega el clímax de sus historias.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 201"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

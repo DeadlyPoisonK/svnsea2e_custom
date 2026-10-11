@@ -1,0 +1,22 @@
+{
+  "folder": "o690w5aSkrQJLvTs",
+  "name": "Entorpecer",
+  "type": "sorcery",
+  "_id": "NZJREzBw7ZNrOvLg",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 2 de Furia. Los espíritus maldicen a tus enemigos. Todos los enemigos en tu Zona actual pierden 1 Aumento.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 195 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 112500,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

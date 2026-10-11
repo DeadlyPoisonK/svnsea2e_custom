@@ -1,0 +1,21 @@
+{
+  "folder": "uETcMjSzbDU1pecb",
+  "name": "Camazotz",
+  "type": "sorcery",
+  "_id": "7WxXLzhEwMSQ1082",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Los Camazotz son enormes criaturas parecidas a murciélagos del inframundo de Xibalbá con tendencias vampíricas. Los Camazotz son espíritus malévolos y, aunque con mucho gusto beberán la sangre utilizada en rituales, prefieren la sangre adquirida por medio de un ataque. Solo un Ahez desesperado se atrevería a convocar a un Camazotz, uno a quien no le importe qué tipo de infierno se desate sobre sus enemigos.</p><p>Después de que se invoca un Camazotz, la criatura perseguirá o cazará al Ahez, y a todos los que rodean al Ahez, hasta que se vaya. Cada vez que alguien en la misma escena que el Camazotz recibe una o más Heridas, la criatura se abalanza sobre él y le provoca una Herida adicional. El héroe puede gastar 1 punto de héroe para proteger a todos en la escena del Camazotz durante una sola ronda.</p>",
+    "infosource": "El Nuevo Mundo, p. 174",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "pixan"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "a9auYVTd6m9zGaNk",
+  "name": "Denegar",
+  "type": "sorcery",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>Denegar, que tal vez sea el poder más aterrador que un rooi heks puede ejercer contra otro hechicero, simplemente cierra las puertas del poder que otros practicantes de magia usan para alimentar sus dones. Cuando un hechicero en la misma escena y a la vista de un rooi heks activa un poder de Hechicería, los rooi heks pueden elegir activar Denegar de inmediato.</p><p>El rooi heks apuesta cualquier cantidad de puntos de héroe y Ruina, aprovechando su poder sobrenatural contra el de su enemigo. Si la cantidad total de puntos de héroe y Ruina gastados excede el número de veces que su objetivo ha comprado la ventaja de Hechicería, el poder no se activa. Cualquier coste asociado con el poder se paga (un punto de peligro, corrupción añadida, hebras del destino, etc.) pero el efecto no se manifiesta.</p><p>Si la cantidad total de puntos de héroe y Ruina gastados no excede el número de veces que su objetivo ha comprado la ventaja de Hechicería, el poder del enemigo se activa con normalidad. El rooi heks debe decidir cuántos puntos de héroe o Ruina desea apostar antes de conocer el resultado, y no puede gastar puntos de héroe o Ruina adicionales para superar una activación fallida de Denegar.</p><p>Cualquier efecto sobrenatural que no se origine en la ventaja de Hechicería (como los efectos de la ventaja Buscador de Soryana o una cualidad de monstruo específica) requiere 3 puntos de héroe o Ruina para que Denegar tenga éxito.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 195",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "4n4ZRTRilPzY4fPz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

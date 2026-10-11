@@ -1,0 +1,23 @@
+{
+  "folder": "BsRq7OrECMmGFFR9",
+  "name": "La fuerza de diez",
+  "type": "advantage",
+  "_id": "eIGDUG9vCM1satOq",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando lleves a cabo una proeza de fuerza bruta (levantar el rastrillo de un castillo, mantener una puerta cerrada contra un ariete que empuja al otro lado, etcétera), gasta 1 punto de héroe para aumentar, en ese Riesgo, todos los valores de tus dados tanto como tu Músculo o Brío, lo que sea mayor. Por ejemplo, si estás intentando evitar que una pared en ruinas colapse para que tus amigos puedan escapar, gasta 1 punto de héroe para sumarle tu Músculo al número de cada uno de tus dados.</p><p><em>Coste: 5 (3 si eres ussuro).</em></p>",
+    "infosource": "7º Mar (básico), p. 154",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

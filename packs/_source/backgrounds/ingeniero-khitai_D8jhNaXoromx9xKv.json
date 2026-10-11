@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Ingeniero (Khitai)",
+  "type": "background",
+  "_id": "D8jhNaXoromx9xKv",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Sabiduría</p><p><em>Ventajas en el libro (en inglés): Specialist (Scholarship).</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando uses tus conocimientos tecnológicos para resolver un problema.</p>",
+    "skills": [
+      "aim",
+      "convince",
+      "notice",
+      "scholarship",
+      "warfare"
+    ],
+    "advantages": [
+      "Especialista (Khitai)",
+      "Mañoso (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 104 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

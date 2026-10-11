@@ -1,0 +1,23 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Frase recurrente",
+  "type": "advantage",
+  "_id": "z3dPg74K2sIcvOZ7",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe tiene un latiguillo, adagio o grito de batalla que utiliza con frecuencia. Decide cuál es tu frase recurrente (como «Tengo un mal presentimiento sobre esto» o «Siempre pagamos nuestras deudas»). Siempre que lleves a cabo un Riesgo después de pronunciar tu frase recurrente, si es apropiada a la situación, obtienes 1 dado adicional.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 209",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 8800000,
+  "ownership": {
+    "default": 0
+  }
+}

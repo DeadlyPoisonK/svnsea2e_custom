@@ -1,0 +1,22 @@
+{
+  "folder": "U2PSSPaknua4R4bA",
+  "name": "Marcas mayores",
+  "type": "sorcery",
+  "_id": "nfHVVREUuNsOukeU",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Los lugares, las personas y los objetos grandes (normalmente algo demasiado grande como para cogerlo con una mano, como un barco, un carro o un cofre del tesoro) solo pueden llevar una marca mayor, lo que le permite al sorcier caminar también hacia el objeto, lugar o persona. Los objetos más pequeños también pueden llevar marcas mayores, pero es más común que un sorcier coloque una marca mayor en lugares estables o edificios. Un familiar de sangre directo de primer grado (como un hermano, una hija o una madre) siempre se considera que tiene una marca mayor sobre sí mismo sin ningún coste para el sorcier, siempre y cuando estén vivos.</p>",
+    "infosource": "7º Mar (básico), p. 221",
+    "sorctype": "porte",
+    "sorccat": "mark",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

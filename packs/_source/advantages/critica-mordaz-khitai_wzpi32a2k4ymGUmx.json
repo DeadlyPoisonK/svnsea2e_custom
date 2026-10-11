@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Crítica mordaz (Khitai)",
+  "type": "advantage",
+  "_id": "wzpi32a2k4ymGUmx",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe cuando uses Intimidar o Convencer como tu Enfoque durante un Riesgo. Reduces a la mitad la Fuerza de una banda de matones cualquiera en la escena.</p>",
+    "infosource": "Khitai, p. 119 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

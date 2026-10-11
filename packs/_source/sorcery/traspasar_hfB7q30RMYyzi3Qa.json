@@ -1,0 +1,22 @@
+{
+  "folder": "mxQIZuRsY1rrCcPr",
+  "name": "Traspasar",
+  "type": "sorcery",
+  "_id": "hfB7q30RMYyzi3Qa",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 2 de Furia si se activa de inmediato; genera 2 de Tranquilidad si te tomas una hora para activarlo como un ritual. Trasladas tu forma al mundo espiritual hasta que canceles el efecto o hasta el final de la escena. Puedes volar, atravesar paredes y aparecer como una imagen espectral de ti mismo ante quienes están en el mundo físico. Te afecta cualquier habilidad que normalmente afectaría a un espíritu. Sufres Heridas de la forma habitual, y si sufres una Herida Dramática regresas al mundo físico.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 196 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

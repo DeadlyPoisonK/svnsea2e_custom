@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Filacteria",
+  "type": "sorcery",
+  "_id": "tQdgl2jpnXyUBH6z",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Una de las artes oscuras más peligrosas: eres capaz de separar una brizna de tu alma y vincularla a un objeto mundano; mientras este objeto esté intacto, no puedes morir de verdad. Genera 5 de Plaga y reduce de forma permanente un rasgo en 1. Siempre que fueras a morir, puedes elegir en su lugar que tu cuerpo desaparezca de su ubicación actual y reaparezca al alcance del brazo de tu filacteria. Luego tu filacteria queda destruida (no recuperas el rasgo gastado). Si tu filacteria es destruida de cualquier otra forma, sufres de inmediato una Herida Dramática.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 202 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

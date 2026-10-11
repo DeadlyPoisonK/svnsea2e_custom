@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Inmunidad al veneno",
+  "type": "advantage",
+  "_id": "zZtp4FAx7ipd4Y3u",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>El veneno nunca te afecta, aparte de un ligero malestar.</p><p>Si normalmente el veneno te mataría, solo te hará vomitar, pero no tiene otros efectos secundarios.</p><p><em>Coste: 2 (1 si eres vodaccio).</em></p>",
+    "infosource": "7º Mar (básico), p. 149",
+    "cost": {
+      "normal": 2,
+      "reducecost": 1
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

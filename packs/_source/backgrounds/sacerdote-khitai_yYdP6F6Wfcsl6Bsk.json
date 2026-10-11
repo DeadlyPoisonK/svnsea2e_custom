@@ -1,0 +1,31 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Sacerdote (Khitai)",
+  "type": "background",
+  "_id": "yYdP6F6Wfcsl6Bsk",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Honestidad</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando te pongas en peligro para proteger o reforzar tu ideología espiritual.</p>",
+    "skills": [
+      "intimidate",
+      "perform",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Entrenamiento monástico",
+      "Lingüista (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 106 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

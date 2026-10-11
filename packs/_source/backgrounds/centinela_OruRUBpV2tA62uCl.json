@@ -1,0 +1,32 @@
+{
+  "folder": "LqX12z9pCb5EOaxG",
+  "name": "Centinela",
+  "type": "background",
+  "_id": "OruRUBpV2tA62uCl",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>En La Bucca tienes dos opciones. Ser rápido o estar muerto. Prefieres la primera.</p>",
+    "infosource": "Naciones Piratas, p. 147",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando golpees a otro personaje hasta quedar en tablas.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "intimidate",
+      "notice",
+      "weaponry"
+    ],
+    "advantages": [
+      "Carga rápida",
+      "Reflejos rápidos"
+    ],
+    "nation": "labucca",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

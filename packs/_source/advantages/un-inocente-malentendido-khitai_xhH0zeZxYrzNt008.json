@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Un inocente malentendido (Khitai)",
+  "type": "advantage",
+  "_id": "xhH0zeZxYrzNt008",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe. Puedes editar, matizar o alterar de algún modo algo que tú u otro héroe acabáis de decir, «reinterpretando» las palabras como el más amable de los cumplidos.</p>",
+    "infosource": "Khitai, p. 117 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

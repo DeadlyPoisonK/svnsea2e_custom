@@ -1,8 +1,5 @@
-var we = Object.defineProperty;
-var Ve = (i, e, t) => e in i ? we(i, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : i[e] = t;
-var ie = (i, e, t) => (Ve(i, typeof e != "symbol" ? e + "" : e, t), t);
-const h = {};
-h.ASCII = `
+const SVNSEA2E = {};
+SVNSEA2E.ASCII = `
 ==================================================
   _____ _   _       ____
  |___  | |_| |__   / ___|  ___  __ _
@@ -10,7 +7,7 @@ h.ASCII = `
    / / | |_| | | |  ___) |  __/ (_| |
   /_/   \\__|_| |_| |____/ \\___|\\__,_|
 ==================================================`;
-h.itemTypes = {
+SVNSEA2E.itemTypes = {
   advantage: "SVNSEA2E.Advantage",
   artifact: "SVNSEA2E.Artifact",
   background: "SVNSEA2E.Background",
@@ -25,15 +22,7 @@ h.itemTypes = {
   hubris: "SVNSEA2E.Hubris",
   virtue: "SVNSEA2E.Virtue"
 };
-h.actorTypes = {
-  brute: "SVNSEA2E.Brute",
-  playercharacter: "SVNSEA2E.PlayerCharacter",
-  monster: "SVNSEA2E.Monster",
-  villain: "SVNSEA2E.Villain",
-  ship: "SVNSEA2E.Ship",
-  hero: "SVNSEA2E.Hero"
-};
-h.nations = {
+SVNSEA2E.nations = {
   none: "SVNSEA2E.Empty",
   aksum: "SVNSEA2E.NationAksum",
   anatol: "SVNSEA2E.NationAnatol",
@@ -64,7 +53,7 @@ h.nations = {
   vesten: "SVNSEA2E.NationVesten",
   vodacce: "SVNSEA2E.NationVodacce"
 };
-h.languages = {
+SVNSEA2E.languages = {
   amizagh: "SVNSEA2E.LanguageAmizagh",
   awkari: "SVNSEA2E.LanguageAwkari",
   avalon: "SVNSEA2E.LanguageAvalonian",
@@ -96,7 +85,7 @@ h.languages = {
   xweda: "SVNSEA2E.LanguageXweda",
   zeeg: "SVNSEA2E.LanguageZeeg"
 };
-h.traits = {
+SVNSEA2E.traits = {
   brawn: "SVNSEA2E.TraitBrawn",
   finesse: "SVNSEA2E.TraitFinesse",
   resolve: "SVNSEA2E.TraitResolve",
@@ -105,7 +94,7 @@ h.traits = {
   influence: "SVNSEA2E.TraitInfluence",
   strength: "SVNSEA2E.TraitStrength"
 };
-h.skills = {
+SVNSEA2E.skills = {
   aim: "SVNSEA2E.SkillAim",
   athletics: "SVNSEA2E.SkillAthletics",
   brawl: "SVNSEA2E.SkillBrawl",
@@ -123,14 +112,14 @@ h.skills = {
   warfare: "SVNSEA2E.SkillWarfare",
   weaponry: "SVNSEA2E.SkillWeaponry"
 };
-h.storyStatuses = {
+SVNSEA2E.storyStatuses = {
   none: "SVNSEA2E.Empty",
   abandoned: "SVNSEA2E.StatusAbandoned",
   complete: "SVNSEA2E.StatusComplete",
   inprogress: "SVNSEA2E.StatusInProgress",
   future: "SVNSEA2E.StatusFuture"
 };
-h.sorceryTypes = {
+SVNSEA2E.sorceryTypes = {
   none: "SVNSEA2E.Empty",
   hex: "SVNSEA2E.SorceryHexenwerk",
   knight: "SVNSEA2E.SorceryAvalonKnight",
@@ -156,11 +145,11 @@ h.sorceryTypes = {
   melbur: "SVNSEA2E.SorceryMelbur",
   redtouch: "SVNSEA2E.SorceryRedTouch"
 };
-h.durations = {
+SVNSEA2E.durations = {
   none: "SVNSEA2E.Empty",
   scene: "SVNSEA2E.Scene"
 };
-h.sorceryCats = {
+SVNSEA2E.sorceryCats = {
   none: "SVNSEA2E.Empty",
   ahura: "SVNSEA2E.Ahura",
   ahpulul: "SVNSEA2E.Ahpulul",
@@ -192,7 +181,7 @@ h.sorceryCats = {
   patron: "SVNSEA2E.Patron",
   unguents: "SVNSEA2E.Unguents"
 };
-h.sorcerySubcats = {
+SVNSEA2E.sorcerySubcats = {
   none: "SVNSEA2E.Empty",
   advanced: "SVNSEA2E.Advanced",
   common: "SVNSEA2E.Common",
@@ -204,13 +193,13 @@ h.sorcerySubcats = {
   great: "SVNSEA2E.Great",
   small: "SVNSEA2E.Small"
 };
-h.crewStatuses = {
+SVNSEA2E.crewStatuses = {
   none: "SVNSEA2E.Empty",
   happy: "SVNSEA2E.Happy",
   dissatisfied: "SVNSEA2E.Dissatisfied",
   mutinous: "SVNSEA2E.Mutinous"
 };
-h.artifactTypes = {
+SVNSEA2E.artifactTypes = {
   deathtoken: "SVNSEA2E.DeathToken",
   syrneth: "SVNSEA2E.Syrneth",
   thiqa: "SVNSEA2E.Thiqa",
@@ -220,23 +209,24 @@ h.artifactTypes = {
   wonder: "SVNSEA2E.Wonder",
   tatoo: "SVNSEA2E.Tatoo"
 };
-h.shipRoles = {
+SVNSEA2E.crewRoles = {
   captain: "SVNSEA2E.Captain",
   firstmate: "SVNSEA2E.FirstMate",
   quartermaster: "SVNSEA2E.QuaterMaster",
   accountant: "SVNSEA2E.Accountant",
   boatswain: "SVNSEA2E.Boatswain",
   shipsmaster: "SVNSEA2E.ShipsMaster",
+  captaintops: "SVNSEA2E.CaptainTops",
+  surgeon: "SVNSEA2E.Surgeon",
+  cook: "SVNSEA2E.Cook",
   mastergunner: "SVNSEA2E.MasterGunner",
   mastermariner: "SVNSEA2E.MasterMariner",
-  captaintops: "SVNSEA2E.CaptainTops",
-  cook: "SVNSEA2E.Cook",
-  surgeon: "SVNSEA2E.Surgeon",
   midshipmen: "SVNSEA2E.Midshipmen",
+  powdermonkey: "SVNSEA2E.PowderMonkey",
   ableseaman: "SVNSEA2E.AbleSeaman",
   seaman: "SVNSEA2E.Seaman"
 };
-h.match10 = {
+SVNSEA2E.match10 = {
   two: [
     [1, 9],
     [2, 8],
@@ -255,7 +245,7 @@ h.match10 = {
     [3, 3, 4]
   ]
 };
-h.match15 = {
+SVNSEA2E.match15 = {
   two: [
     [4, 11],
     [5, 10],
@@ -282,7 +272,7 @@ h.match15 = {
     [5, 5, 5]
   ]
 };
-h.match20 = {
+SVNSEA2E.match20 = {
   two: [
     [10, 10],
     [11, 9]
@@ -307,33 +297,10 @@ h.match20 = {
     [6, 7, 7]
   ]
 };
-const Ie = function () {
-  game.settings.register("svnsea2e", "systemMigrationVersion", {
-    name: "System Migration Version",
-    scope: "world",
-    config: !1,
-    type: String,
-    default: 0
-  });
-}, ke = async function () {
-  const i = [
-    // Actor Sheet Partials
-    "systems/svnsea2e/templates/actors/parts/actor-name.hbs",
-    "systems/svnsea2e/templates/actors/parts/actor-traits.hbs",
-    "systems/svnsea2e/templates/actors/parts/actor-concept.hbs",
-    "systems/svnsea2e/templates/actors/parts/actor-advantages.hbs",
-    "systems/svnsea2e/templates/actors/parts/actor-sorcery.hbs",
-    "systems/svnsea2e/templates/actors/parts/actor-inventory.hbs",
-    "systems/svnsea2e/templates/actors/parts/actor-fate.hbs",
-    "systems/svnsea2e/templates/actors/parts/actor-villainy.hbs",
-    "systems/svnsea2e/templates/actors/parts/actor-vtraits.hbs",
-    "systems/svnsea2e/templates/actors/parts/actor-wounds.hbs",
-    // Item Sheet Partials
-    "systems/svnsea2e/templates/items/parts/item-header.hbs",
-    "systems/svnsea2e/templates/items/parts/item-description.hbs"
-  ];
-  return loadTemplates(i);
-}, l = {
+const SYSTEM_ID = "svnsea2e";
+const SYSTEM_PATH = `systems/${SYSTEM_ID}`;
+const TEMPLATES = `${SYSTEM_PATH}/templates`;
+const ActorType = {
   PLAYER: "playercharacter",
   HERO: "hero",
   VILLAIN: "villain",
@@ -341,7 +308,8 @@ const Ie = function () {
   BRUTE: "brute",
   SHIP: "ship",
   DANGERPOINTS: "dangerpts"
-}, p = {
+};
+const ItemTypes = {
   ADVANTAGE: "advantage",
   ARTIFACT: "artifact",
   BACKGROUND: "background",
@@ -355,3122 +323,2553 @@ const Ie = function () {
   STORY: "story",
   VIRTUE: "virtue",
   HUBRIS: "hubris"
-}, {
-  HTMLField: Oe,
-  SchemaField: j,
-  NumberField: D,
-  StringField: _e
-} = foundry.data.fields, Ce = {
-  wounds: new j({
-    value: new D({ required: !0, integer: !0, min: 0, initial: 0 }),
-    min: new D({ required: !0, integer: !0, min: 0, initial: 0 }),
-    max: new D({ required: !0, integer: !0, min: 0, initial: 20 })
-  }),
-  traits: new j({
-    strength: new j({
-      value: new D({ required: !0, integer: !0, min: 1, initial: 5 }),
-      min: new D({ required: !0, integer: !0, min: 1, initial: 1 }),
-      max: new D({ required: !0, integer: !0, min: 1, initial: 20 })
-    })
-  }),
-  ability: new j({
-    name: new _e(),
-    description: new Oe()
-  })
 };
-class Te extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return Ce;
-  }
-}
-const {
-  NumberField: Me
-} = foundry.data.fields, De = {
-  points: new Me({ required: !0, integer: !0, min: 0, initial: 5 })
-};
-class xe extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return De;
-  }
-}
-const {
-  HTMLField: Fe,
-  SchemaField: _,
-  NumberField: N,
-  StringField: x,
-  ArrayField: Le,
-  BooleanField: Bh
-} = foundry.data.fields, F = () => ({
-  htk: new Bh({ required: !0, initial: !1 }),
-  initiative: new N({ required: !0, integer: !1, min: 0, initial: 0 }),
-  wounds: new _({
-    value: new N({ required: !0, integer: !0, min: 0, initial: 0 }),
-    min: new N({ required: !0, integer: !0, min: 0, initial: 0 }),
-    max: new N({ required: !0, integer: !0, min: 0, initial: 20 })
-  }),
-  dwounds: new _({
-    value: new N({ required: !0, integer: !0, min: 0, initial: 0 }),
-    min: new N({ required: !0, integer: !0, min: 0, initial: 0 }),
-    max: new N({ required: !0, integer: !0, min: 0, initial: 4 })
-  })
-}), X = () => ({
-  nation: new x(),
-  religion: new x(),
-  age: new N({ required: !0, integer: !0, min: 0, initial: 20 }),
-  reputation: new x(),
-  languages: new Le(new x()),
-  equipment: new x(),
-  concept: new Fe({ initial: "<h3>Concept</h3><h3>Biography</h3>" })
-}), he = () => ({
-  traits: new _({
-    brawn: g(2),
-    finesse: g(2),
-    resolve: g(2),
-    wits: g(2),
-    panache: g(2)
-  }),
-  skills: new _({
-    aim: g(0),
-    athletics: g(0),
-    brawl: g(0),
-    convince: g(0),
-    empathy: g(0),
-    hide: g(0),
-    intimidate: g(0),
-    notice: g(0),
-    perform: g(0),
-    ride: g(0),
-    sailing: g(0),
-    scholarship: g(0),
-    tempt: g(0),
-    theft: g(0),
-    warfare: g(0),
-    weaponry: g(0)
-  })
-}), ge = () => ({
-  traits: new _({
-    influence: new _({
-      value: new N({ required: !0, integer: !0, min: 0, initial: 5 }),
-      min: new N({ required: !0, integer: !0, min: 0, initial: 0 }),
-      max: new N({ required: !0, integer: !0, min: 0, initial: 20 })
-    }),
-    strength: new _({
-      value: new N({ required: !0, integer: !0, min: 1, initial: 5 }),
-      min: new N({ required: !0, integer: !0, min: 1, initial: 1 }),
-      max: new N({ required: !0, integer: !0, min: 0, initial: 20 })
-    })
-  })
-}), g = (i = 0) => new _({
-  value: new N({ required: !0, integer: !0, min: 0, initial: i }),
-  min: new N({ required: !0, integer: !0, min: 0, initial: 0 }),
-  max: new N({ required: !0, integer: !0, min: 0, initial: 5 })
-}), Re = {
-  ...F(),
-  ...X(),
-  ...he()
-};
-class He extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return Re;
-  }
-}
-foundry.data.fields;
-const $e = {
-  ...F(),
-  ...ge(),
-  fear: g()
-};
-class Ge extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return $e;
-  }
-}
-const {
-  NumberField: P,
-  StringField: je
-} = foundry.data.fields, Pe = {
-  ...F(),
-  ...X(),
-  ...he(),
-  wealth: new P({ required: !0, integer: !0, min: 0, initial: 0 }),
-  heropts: new P({ required: !0, integer: !0, min: 0, initial: 0 }),
-  vile: new P({ required: !0, integer: !0, min: 0, initial: 0 }),
-  corruptionpts: new P({ required: !0, integer: !0, min: 0, initial: 0 }),
-  redemption: new je()
-};
-class qe extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return Pe;
-  }
-}
-const {
-  NumberField: ze,
-  StringField: q,
-  HTMLField: Be
-} = foundry.data.fields, Ue = {
-  ...F(),
-  background: new q(),
-  class: new q(),
-  cargo: new Be(),
-  origin: new q(),
-  crewstatus: new q(),
-  wealth: new ze({ required: !0, integer: !0, min: 0, initial: 0 })
-};
-class Ye extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return Ue;
-  }
-}
-const {
-  StringField: ne
-} = foundry.data.fields, We = {
-  ...F(),
-  ...X(),
-  ...ge(),
-  servants: new ne(),
-  servants: new ne()
-};
-class Ke extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return We;
-  }
-}
-const {
-  HTMLField: Qe,
-  StringField: Je
-} = foundry.data.fields, V = () => ({
-  description: new Qe(),
-  infosource: new Je(),
-  used: new foundry.data.fields.BooleanField({ initial: !1 })
-}), {
-  HTMLField: Ss,
-  SchemaField: Xe,
-  NumberField: re,
-  StringField: hs,
-  FilePathField: gs,
-  ArrayField: Es,
-  BooleanField: oe
-} = foundry.data.fields, Ze = {
-  ...V(),
-  cost: new Xe({
-    normal: new re({ initial: 1, required: !0 }),
-    reducecost: new re()
-  }),
-  knack: new oe({ initial: !1 }),
-  innate: new oe({ initial: !1 }),
-  used: new oe({ initial: !1 })
-};
-class et extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return Ze;
-  }
-}
-const {
-  StringField: tt
-} = foundry.data.fields, st = {
-  ...V(),
-  artifactType: new tt()
-};
-class at extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return st;
-  }
-}
-const {
-  HTMLField: it,
-  StringField: U,
-  ArrayField: le
-} = foundry.data.fields, nt = {
-  ...V(),
-  quirk: new it(),
-  skills: new le(new U()),
-  advantages: new le(new U()),
-  nation: new U(),
-  active: new oe({ initial: !0 })
-};
-class rt extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return nt;
-  }
-}
-const {
-  HTMLField: ot
-} = foundry.data.fields, lt = {
-  ...V(),
-  bonus: new ot()
-};
-class ct extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return lt;
-  }
-}
-const ut = {
-  ...V()
-};
-class dt extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return ut;
-  }
-}
-const {
-  SchemaField: mt,
-  NumberField: Y
-} = foundry.data.fields, pt = {
-  ...V(),
-  influence: new mt({
-    value: new Y({ required: !0, integer: !0, min: 0, initial: 0 }),
-    min: new Y({ required: !0, integer: !0, min: 0, initial: 0 }),
-    max: new Y({ required: !0, integer: !0, min: 0, initial: 40 })
-  })
-};
-class St extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return pt;
-  }
-}
-const ht = {
-  ...V()
-};
-class gt extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return ht;
-  }
-}
-const Et = {
-  ...V()
-};
-class ft extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return Et;
-  }
-}
-foundry.data.fields;
-const yt = {
-  ...V()
-};
-class At extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return yt;
-  }
-}
-const Nt = {
-  ...V()
-};
-class bt extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return Nt;
-  }
-}
-const {
-  HTMLField: W,
-  StringField: vt
-} = foundry.data.fields, wt = {
-  ...V(),
-  concern: new W(),
-  earnfavor: new W(),
-  callupon: new vt(),
-  favor: new W()
-};
-class Vt extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return wt;
-  }
-}
-const {
-  StringField: z
-} = foundry.data.fields, It = {
-  ...V(),
-  sorctype: new z(),
-  sorcdur: new z(),
-  sorccat: new z(),
-  sorcsubcat: new z()
-};
-class kt extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return It;
-  }
-}
-const {
-  HTMLField: K,
-  StringField: Ot
-} = foundry.data.fields, _t = {
-  ...V(),
-  reward: new K(),
-  endings: new K(),
-  steps: new K(),
-  status: new Ot({ initial: "current" })
-};
-class Ct extends foundry.abstract.TypeDataModel {
-  static defineSchema() {
-    return _t;
-  }
-}
-
-class ce extends Actor {
-  /**
-   * Augment the basic actor data with additional dynamic data.
-   */
-  prepareData() {
-    super.prepareData();
-    const e = this.system;
-    this.type === l.PLAYER && this._preparePlayerCharacterData(e), this.type === l.HERO && this._prepareHeroData(e), (this.type === l.VILLAIN || this.type === l.MONSTER) && this._prepareVillainData(e), this.type === l.BRUTE && this._prepareBruteData(e), this.type === l.SHIP && this._prepareShipData(e);
-  }
-  /**
-   * Keep the value within the minimum and maxium values
-   */
-  _validateMinMaxData(e, t, s) {
-    return parseInt(e) > parseInt(s) ? s : parseInt(e) < parseInt(t) ? t : e;
-  }
-  /**
-   * Prepare Character type specific data
-   */
-  _preparePlayerCharacterData(e) {
-    this._prepareWounds(e), this._prepareTraits(e), this._prepareSkills(e);
-  }
-  /**
-   * Prepare Hero type specific data
-   */
-  _prepareHeroData(e) {
-    this._prepareWounds(e), this._prepareTraits(e), this._prepareSkills(e);
-  }
-  /**
-   * Prepare Villain type specific data
-   */
-  _prepareVillainData(e) {
-    this._prepareTraits(e),
-     e.villainy = parseInt(e.traits.strength.value) + parseInt(e.traits.influence.value);
-     const dwMax = e.htk ? 5 : 4;
-    e.dwounds.max = dwMax; 
-    e.wounds.max = (parseInt(e.traits.strength.value) + 1) * dwMax; 
-    
-    e.wounds.value = this._validateMinMaxData(
-      e.wounds.value,
-      e.wounds.min,
-      e.wounds.max
-    );
-    if (e.dwounds) {
-      e.dwounds.value = this._validateMinMaxData(
-        e.dwounds.value,
-        e.dwounds.min,
-        e.dwounds.max
-      );
-    }
-  }
-  /**
-   * Prepare Brute type specific data
-   */
-  _prepareBruteData(e) {
-    e.traits.strength.value = this._validateMinMaxData(
-      e.traits.strength.value,
-      e.traits.strength.min,
-      e.traits.strength.max
-    ), e.wounds.max = e.traits.strength.value, parseInt(e.wounds.max) < parseInt(e.wounds.value) && (e.wounds.value = e.wounds.max);
-  }
-  /**
-   * Prepare Ship type specific data
-   */
-  _prepareShipData(e) {
-  }
-  /**
-   * Remove a member from the crew
-   */
-  async removeFromCrew() {
-    await this.unsetFlag("svnsea2e", "crewMember");
-  }
-  /**
-   * Set a crew member's role
-   */
-  async setCrewMemberRole(e, t) {
-    return this.setFlag("svnsea2e", "crewMember", {
-      shipId: e,
-      role: t
-    });
-  }
-  /**
-   *
-   */
-  _prepareTraits(e) {
-    for (const t of Object.values(e.traits))
-      t.value = this._validateMinMaxData(t.value, t.min, t.max);
-  }
-  /**
-   *
-   */
-  _prepareSkills(e) {
-    for (const t of Object.values(e.skills))
-      t.value = this._validateMinMaxData(t.value, t.min, t.max);
-  }
-  /**
-   * Establish the wound values based on the min and max for the actor type
-   */
-  _prepareWounds(e) {
-    // Si la base de datos se llegara a desincronizar, esto la fuerza a obedecer la regla
-    if (e.htk === true) {
-      e.wounds.max = 25;
-      e.dwounds.max = 5;
-    } else {
-      e.wounds.max = 20;
-      e.dwounds.max = 4;
-    }
-
-    // Validamos para que el valor numérico no rompa las barras
-    e.wounds.value = this._validateMinMaxData(
-      e.wounds.value,
-      e.wounds.min,
-      e.wounds.max
-    );
-
-    if (e.dwounds) {
-      e.dwounds.value = this._validateMinMaxData(
-        e.dwounds.value,
-        e.dwounds.min,
-        e.dwounds.max
-      );
-    }
-  }
-}
-
-
-class Tt extends FormApplication {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      id: "language-selector",
-      classes: ["svnsea2e"],
-      title: game.i18n.localize("SVNSEA2E.ActorLangSelect"),
-      template: "systems/svnsea2e/templates/apps/language-selector.hbs",
-      width: 320,
-      height: "auto",
-      choices: {},
-      minimum: 0,
-      maximum: null
-    });
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  getData() {
-    const e = this.object.system.languages, t = foundry.utils.duplicate(this.options.choices);
-    for (const [s, a] of Object.entries(t))
-      t[s] = {
-        label: a,
-        chosen: e ? e.includes(s) : !1
-      };
-    return {
-      choices: t
-    };
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  _updateObject(e, t) {
-    const s = {}, a = [];
-    for (const [n, r] of Object.entries(t))
-      r && a.push(n);
-    if (s["system.languages"] = a, this.options.minimum && a.length < this.options.minimum)
-      return ui.notifications.error(
-        game.i18n.format("SVNSEA2E.AtLeastOptions", {
-          min: this.options.minimum
-        })
-      );
-    if (this.options.maximum && a.length > this.options.maximum)
-      return ui.notifications.error(
-        game.i18n.format("SVNSEA2E.AtLeastOptions", {
-          max: this.options.maximum
-        })
-      );
-    this.object.update(s);
-  }
-}
-
-function Q(i, e) {
-  const t = parseFloat(e);
-  if (isNaN(t)) return;
-
-  // 1. Actualizar el Combat Tracker activo
-  const activeCombats = game.combats.filter((a) => a.active);
-  
-  activeCombats.forEach((combat) => {
-    const updates = [];
-
-    combat.combatants.forEach((r) => {
-      // Comprobación segura: usamos actorId o verificamos que r.actor exista antes de pedir su .id
-      if (r.actorId === i || (r.actor && r.actor.id === i)) {
-        updates.push({ _id: r.id, initiative: t });
-      }
-    });
-
-    // Actualización en lote (Mejor rendimiento y recomendado en Foundry v10+)
-    if (updates.length > 0) {
-      combat.updateEmbeddedDocuments("Combatant", updates);
-    }
+function registerSystemSettings() {
+  game.settings.register(SYSTEM_ID, "systemMigrationVersion", {
+    name: "System Migration Version",
+    scope: "world",
+    config: false,
+    type: String,
+    default: ""
   });
-
-  // 2. Actualizar el Actor principal en la barra lateral usando .get() que es mucho más rápido
-  const baseActor = game.actors.get(i);
-  if (baseActor) {
-    baseActor.update({ "system.initiative": t });
-  }
+  game.settings.register(SYSTEM_ID, "toolboxActors", {
+    name: "Toolbox actors",
+    scope: "client",
+    config: false,
+    type: Array,
+    default: []
+  });
+  game.settings.register(SYSTEM_ID, "toolboxColumns", {
+    name: "Toolbox columns",
+    scope: "client",
+    config: false,
+    type: Object,
+    default: {}
+  });
 }
-
-const Ee = (i, e) => Object.entries(i.skills).map(([t, s]) => ({
-  ...s,
-  name: t,
-  label: e.SVNSEA2E.skills[t]
-})).sort((t, s) => t.label.localeCompare(s.label)), m = (actor, type) => actor.items.filter((i) => i.type === type).sort((a, b) => a.name.localeCompare(b.name));
-async function Mt() {
-  let i = game.packs.filter((a) => a.metadata.type === "Item");
-  const e = async (a, n) => await a.getDocument(n._id), t = async (a) => {
-    const n = await a.getIndex();
-    return await Promise.all(
-      n.filter((r) => r.type === "advantage").map((r) => e(a, r))
+const PARTIALS = [
+  "actors/parts/actor-name.hbs",
+  "actors/parts/actor-traits.hbs",
+  "actors/parts/actor-concept.hbs",
+  "actors/parts/actor-advantages.hbs",
+  "actors/parts/actor-sorcery.hbs",
+  "actors/parts/actor-inventory.hbs",
+  "actors/parts/actor-fate.hbs",
+  "actors/parts/actor-villainy.hbs",
+  "actors/parts/actor-vtraits.hbs",
+  "actors/parts/actor-wounds.hbs",
+  "actors/parts/actor-languages.hbs",
+  "actors/parts/item-list.hbs",
+  "actors/parts/item-row.hbs",
+  "actors/parts/rank-circles.hbs",
+  "parts/sheet-tabs.hbs",
+  "parts/effects-tab.hbs",
+  "items/parts/item-header.hbs",
+  "items/parts/item-editor.hbs",
+  // Chosen by item type in templates/items/item.hbs.
+  "items/parts/header-artifact.hbs",
+  "items/parts/header-background.hbs",
+  "items/parts/header-scheme.hbs",
+  "items/parts/header-secretsociety.hbs",
+  "items/parts/header-sorcery.hbs",
+  "items/parts/header-story.hbs",
+  "items/parts/tab-attributes.hbs",
+  "items/parts/tab-details.hbs"
+];
+function preloadHandlebarsTemplates() {
+  return foundry.applications.handlebars.loadTemplates(PARTIALS.map((p) => `${TEMPLATES}/${p}`));
+}
+function registerHandlebarsHelpers() {
+  Handlebars.registerHelper("for", function(from, count2, step, options) {
+    const start = parseInt(from);
+    const end = start + parseInt(count2);
+    const groupSize = parseInt(options.hash.group) || 5;
+    const data = Handlebars.createFrame(options.data);
+    let out = "";
+    for (let i = start; i < end; i += step) {
+      data.index = i;
+      data.mod = Math.trunc(i / groupSize);
+      data.remain = i % groupSize;
+      out += options.fn(this, { data });
+    }
+    return out;
+  });
+  Handlebars.registerHelper("iff", function(a, operator, b, options) {
+    const ops = {
+      "==": () => a == b,
+      "!=": () => a != b,
+      ">=": () => a >= b,
+      "<=": () => a <= b,
+      ">": () => a > b,
+      "<": () => a < b
+    };
+    if (!(operator in ops)) throw new Error(`Unknown operator ${operator}`);
+    return ops[operator]() ? options.fn(this) : options.inverse(this);
+  });
+}
+const clamp = (value, min, max) => Math.min(Math.max(Number(value) || 0, Number(min) || 0), Number(max));
+const enrichHTML = (html, options = {}) => foundry.applications.ux.TextEditor.implementation.enrichHTML(html ?? "", options);
+const skillsToSheetData = (system) => Object.entries(system.skills).map(([name, skill]) => ({ ...skill, name, label: CONFIG.SVNSEA2E.skills[name] })).sort((a, b) => a.label.localeCompare(b.label));
+const itemsOfType = (actor, type) => actor.items.filter((item) => item.type === type).sort((a, b) => a.name.localeCompare(b.name));
+const GLAMOR_NATIONS = ["highland", "avalon", "inismore"];
+const isValidGlamorIsles = (actor) => GLAMOR_NATIONS.includes(actor.system.nation);
+let packAdvantages = null;
+async function getPackAdvantages() {
+  if (!packAdvantages) {
+    const found = [];
+    const packs = [...game.packs].sort(
+      (a, b) => (b.metadata.packageName === SYSTEM_ID) - (a.metadata.packageName === SYSTEM_ID)
     );
-  };
-  return (await Promise.all(i.map((a) => t(a)))).flatMap((a) => a);
+    for (const pack of packs) {
+      if (pack.documentName !== "Item") continue;
+      const index = await pack.getIndex({ fields: ["type"] });
+      for (const entry of index) {
+        if (entry.type === ItemTypes.ADVANTAGE) found.push({ name: entry.name, uuid: entry.uuid });
+      }
+    }
+    packAdvantages = found;
+  }
+  return packAdvantages;
 }
-const Dt = ["highland", "avalon", "insmore"], xt = (i) => Dt.includes(i.system.nation), B = function (i, e) {
-  const t = [];
-  return t.push(i.indexOf(e[0])), e[0] === e[1] ? t.push(i.indexOf(e[1], t[0] + 1)) : t.push(i.indexOf(e[1])), e.length > 2 && (e[0] === e[2] ? t.push(i.indexOf(e[2], t[1] + 1)) : t.push(i.indexOf(e[2]))), t;
-}, J = function (i = 10, e = !1) {
-  let t = 1;
-  return (i === 15 && !e || i === 20 && e) && t++, t;
-}, ue = function (i, e = 10, t = !1) {
-  // 1. Clonamos y ordenamos los dados de mayor a menor para optimizar
-  let dice = [...i].map(Number).sort((a, b) => b - a);
-  const a = { rolls: [], combos: [], raises: 0 };
-
-  // Función interna recursiva: Busca la mejor combinación posible
-  function findCombo(target, exactOnly) {
-    let bestOvershoot = Infinity;
-    let found = null;
-
-    function dfs(index, currentSum, currentCombo, usedIndices) {
-      // Si encontramos la suma exacta, detenemos la búsqueda de esta rama (es perfecto)
-      if (currentSum === target) {
-        found = { combo: currentCombo, indices: usedIndices };
-        return true;
-      }
-      // Si nos pasamos, pero es el menor "desperdicio" hasta ahora, lo guardamos temporalmente
-      if (!exactOnly && currentSum > target && currentSum < bestOvershoot) {
-        bestOvershoot = currentSum;
-        found = { combo: currentCombo, indices: usedIndices };
-        return false; // Seguimos buscando a ver si hay algo más cercano
-      }
-      // Podar rama: si nos pasamos del objetivo o ya no quedan dados, retrocedemos
-      if (currentSum >= target || index >= dice.length) return false;
-
-      // Probar INCLUYENDO el dado actual
-      if (dfs(index + 1, currentSum + dice[index], [...currentCombo, dice[index]], [...usedIndices, index])) return true;
-      // Probar EXCLUYENDO el dado actual
-      if (dfs(index + 1, currentSum, currentCombo, usedIndices)) return true;
-
-      return false;
-    }
-
-    dfs(0, 0, [], []); // Iniciar búsqueda
-
-    if (found) {
-      // Remover los dados usados del pool (de atrás hacia adelante para no romper los índices)
-      for (let j = found.indices.length - 1; j >= 0; j--) {
-        dice.splice(found.indices[j], 1);
-      }
-      return found.combo;
-    }
-    return null;
-  }
-
-  let combo;
-  // PASO A: Buscar todas las combinaciones EXACTAS (ej. 1+1+1+1+1+5 = 10)
-  while ((combo = findCombo(e, true)) !== null) {
-    a.combos.push(combo.sort((x, y) => x - y).join(" + "));
-    a.raises += J(e, t);
-  }
-
-  // PASO B: Si ya no hay exactas, buscar las que se pasen por lo mínimo (ej. 4+4+3 = 11)
-  while ((combo = findCombo(e, false)) !== null) {
-    a.combos.push(combo.sort((x, y) => x - y).join(" + "));
-    a.raises += J(e, t);
-  }
-
-  // Sincronizar el arreglo original 'i' para que la función principal sepa qué dados sobraron realmente
-  i.length = 0;
-  i.push(...dice);
-
-  a.rolls = dice;
-  return a;
-}, Ft = function (i) {
-  var n, r, o, d;
-  const e = (n = i.flairDice) != null && n.checked ? 1 : 0, t = (r = i.interpretationDice) != null && r.checked ? 1 : 0, s = parseInt(((o = i.useForMe) == null ? void 0 : o.value) || 0), a = parseInt(((d = i.useForHelpMe) == null ? void 0 : d.value) || 0) * 3;
-  return parseInt(i.bonusDice.value) + e + t + s + a;
-}, Lt = function (i, e) {
-  var a;
-  const t = parseInt(((a = i.useForMe) == null ? void 0 : a.value) || 0), s = e.system.heropts || 0;
-  return t > s ? (ui.notifications.error(game.i18n.format("SVNSEA2E.NotEnoughHero", {})), !1) : (t > 0 && e.update({
-    data: { heropts: s - t }
-  }), !0);
+function invalidateAdvantageCache(item) {
+  if (item.pack) packAdvantages = null;
+}
+async function getAllAdvantageNames() {
+  const names = new Set(game.items.filter((i) => i.type === ItemTypes.ADVANTAGE).map((i) => i.name));
+  for (const entry of await getPackAdvantages()) names.add(entry.name);
+  return [...names].sort((a, b) => a.localeCompare(b));
+}
+const findWorldAdvantage = (name) => game.items.find((i) => i.type === ItemTypes.ADVANTAGE && i.name === name);
+async function findPackAdvantageUuid(name) {
+  const entries = await getPackAdvantages();
+  const lower = name.toLowerCase();
+  const entry = entries.find((e) => e.name === name) ?? entries.find((e) => e.name.toLowerCase() === lower);
+  return entry?.uuid ?? null;
+}
+async function findAdvantageUuid(name) {
+  return findWorldAdvantage(name)?.uuid ?? findPackAdvantageUuid(name);
+}
+async function findAdvantage(name) {
+  const worldItem = findWorldAdvantage(name);
+  if (worldItem) return worldItem;
+  const uuid = await findPackAdvantageUuid(name);
+  return uuid ? fromUuid(uuid) : null;
+}
+const SYSTEM_KEY = /^system\.(?:(?:traits|skills)\.\w+\.value|fear\.value|dwounds\.max|htk|rollBonus\.[\w.]+)$/;
+const changePhase = (change) => SYSTEM_KEY.test(change.key ?? "") ? "initial" : change.phase;
+const HERO_TRAITS = ["brawn", "finesse", "resolve", "wits", "panache"];
+const ROLL_OPTIONS = {
+  addOne: "SVNSEA2E.AddOneToDice",
+  explode: "SVNSEA2E.ExplodeTens",
+  joieDeVivre: "SVNSEA2E.JoieDeVivre",
+  increaseThreshold: "SVNSEA2E.IncreaseThreshold"
 };
-async function de({
-  rolldata: i = {},
-  actor: e = {},
-  data: t = {},
-  form: s = {},
-  template: a,
-  title: n
-}) {
-  var ae;
-  if (e.type !== l.VILLAIN && e.type !== l.MONSTER && !Lt(s, e))
-    return console.error("not enought hero point"), !1;
-  const r = parseInt(i.skilldice);
-  
-  // ==========================================
-  // MOTOR DE HERIDAS DRAMÁTICAS CORREGIDO
-  // ==========================================
-  let dwBonus = 0;
-  if (t.dwounds && t.dwounds.value >= 1 && !i.skipWoundBonus) {
-      dwBonus = 1; // Aplica a TODOS (Players y Villanos ganan 1 dado extra)
+function rollBonusData() {
+  return {
+    dice: 0,
+    skills: Object.fromEntries(Object.keys(CONFIG.SVNSEA2E.skills).map((skill) => [skill, 0])),
+    ...Object.fromEntries(Object.keys(ROLL_OPTIONS).map((option) => [option, false]))
+  };
+}
+let effectKeys = null;
+function getEffectKeys() {
+  if (effectKeys) return effectKeys;
+  const { traits, skills } = CONFIG.SVNSEA2E;
+  const format = (key, name) => game.i18n.format(`SVNSEA2E.EffectKey${key}`, { name });
+  const keys = {};
+  for (const trait of [...HERO_TRAITS, "strength", "influence"]) keys[`system.traits.${trait}.value`] = format("Trait", traits[trait]);
+  keys["system.fear.value"] = format("Trait", game.i18n.localize("SVNSEA2E.Fear"));
+  for (const [skill, label] of Object.entries(skills)) keys[`system.skills.${skill}.value`] = format("Skill", label);
+  keys["system.dwounds.max"] = game.i18n.localize("SVNSEA2E.EffectKeyDramaticWounds");
+  keys["system.htk"] = game.i18n.localize("SVNSEA2E.HardToKill");
+  keys["system.rollBonus.dice"] = game.i18n.localize("SVNSEA2E.EffectKeyDice");
+  for (const [skill, label] of Object.entries(skills)) keys[`system.rollBonus.skills.${skill}`] = format("SkillDice", label);
+  for (const [option, label] of Object.entries(ROLL_OPTIONS)) {
+    keys[`system.rollBonus.${option}`] = format("Roll", game.i18n.localize(label));
   }
-
-  // Sumamos los dados de Habilidad + Rasgo + Bonos del Formulario + BONO DE HERIDA
-  const o = r + parseInt(s.trait.value) + Ft(s) + dwBonus; 
-  // ==========================================
-
-  const d = s.increaseThreshold !== void 0 ? s.increaseThreshold.checked : 0, 
-        f = s.addOneToDice !== void 0 ? s.addOneToDice.checked : !1,
-        manualExplode = s.explodeDice !== void 0 ? s.explodeDice.checked : !1, 
-        willExplode = i.explode || manualExplode,
-        y = new Roll(`${o}d10${willExplode ? "x" : ""}`);
-        
-  await y.evaluate();
-  const c = pe(y).map((u) => f ? u + 1 : u), C = willExplode;
-  d && (i.threshold += 5);
-  const w = i.threshold === 15 ? CONFIG.SVNSEA2E.match15 : i.threshold === 20 ? CONFIG.SVNSEA2E.match20 : CONFIG.SVNSEA2E.match10;
-  let b = 0, v = [];
-  if (i.threshold === 10) {
-    let u = c.length;
-    for (; u--;)
-      if (c[u] >= 10)
-        b++, v.push(c[u]), c.splice(u, 1);
-      else if (c[u] < 10)
-        break;
+  return effectKeys = keys;
+}
+function hardToKillEffectData() {
+  return {
+    name: game.i18n.localize("SVNSEA2E.HardToKill"),
+    img: "icons/svg/regen.svg",
+    description: game.i18n.localize("SVNSEA2E.HardToKillDescription"),
+    system: { changes: [{ key: "system.htk", type: "override", value: "true", phase: "initial" }] },
+    flags: { [SYSTEM_ID]: { hardToKill: true } }
+  };
+}
+class SvnSea2EActiveEffect extends ActiveEffect {
+  /** The effects of an inactive background do not apply: like its skills and advantages, they need it active. */
+  get isSuppressed() {
+    if (this.parent?.type === ItemTypes.BACKGROUND && !this.parent.system.active) return true;
+    return super.isSuppressed;
   }
-  if ((ae = s.joieDeVivreAdvantage) != null && ae.checked) {
-    let u = c.length;
-    for (; u--;)
-      c[u] <= r && (b++, v.push(c[u]), c.splice(u, 1));
+  /** @override */
+  shouldApplyChange(change, options) {
+    return changePhase(change) === options?.phase;
   }
-  for (let u = 0; u < w.two.length; u++) {
-    let k = B(c, w.two[u]);
-    for (; k[0] > -1 && k[1] > -1;)
-      b += J(i.threshold, d), v.push(
-        c[k[0]].toString() + " + " + c[k[1]].toString()
-      ), c.splice(k[0], 1), c.splice(c.indexOf(w.two[u][1]), 1), k = B(c, w.two[u]);
+}
+const CHANGE_SIGNS = { add: "+", subtract: "−", multiply: "×", override: "=", upgrade: "≥", downgrade: "≤" };
+function describeChanges(effect) {
+  const keys = getEffectKeys();
+  return effect.system.changes.filter((change) => change.key).map((change) => {
+    const value = String(change.value ?? "");
+    const sign = CHANGE_SIGNS[change.type] ?? change.type;
+    if (change.type === "add") return `${keys[change.key] ?? change.key} ${value.startsWith("-") ? "" : sign}${value}`;
+    return `${keys[change.key] ?? change.key} ${sign}${change.type === "subtract" ? "" : " "}${value}`;
+  }).join(", ");
+}
+function effectRow(effect) {
+  return {
+    id: effect.id,
+    name: effect.name,
+    img: effect.img,
+    disabled: effect.disabled,
+    suppressed: effect.isSuppressed,
+    active: effect.active,
+    duration: effect.isTemporary ? effect.duration.label : "",
+    changes: describeChanges(effect)
+  };
+}
+function prepareEffects(document2) {
+  const sections = { temporary: [], passive: [], inactive: [] };
+  for (const effect of document2.effects) {
+    const section = !effect.active ? "inactive" : effect.isTemporary ? "temporary" : "passive";
+    sections[section].push(effectRow(effect));
   }
-  for (let u = 0; u < w.three.length; u++)
-    for (var O = B(c, w.three[u]); O[0] > -1 && O[1] > -1 && O[2] > -1;)
-      b += J(i.threshold, d), v.push(
-        c[O[0]].toString() + " + " + c[O[1]].toString() + " + " + c[O[2]].toString()
-      ), c.splice(O[0], 1), c.splice(c.indexOf(w.three[u][1]), 1), c.splice(c.indexOf(w.three[u][2]), 1), O = B(c, w.three[u]);
-  let L = c.length, R = !1, H = "";
-  const T = pe(y);
-  if (L > 0 && i.reroll) {
-    const u = f ? c[0] - 1 : c[0];
-    c[0] = Math.floor(Math.random() * 10) + 1, H = game.i18n.format("SVNSEA2E.Reroll", {
-      roll1: u,
-      roll2: c[0]
-    }), R = !0;
-    for (let k = 0; k < T.length; k++)
-      if (T[k] == u) {
-        T[k] = c[0];
-        break;
+  const labels = { temporary: "SVNSEA2E.EffectsTemporary", passive: "SVNSEA2E.EffectsPassive", inactive: "SVNSEA2E.EffectsInactive" };
+  const context = {
+    sections: Object.entries(sections).map(([id, effects]) => ({ id, label: labels[id], effects }))
+  };
+  if (document2.documentName === "Actor") {
+    context.isActor = true;
+    context.inherited = [];
+    for (const item of document2.items) {
+      for (const effect of item.effects) {
+        if (effect.transfer) context.inherited.push({ ...effectRow(effect), itemId: item.id, itemName: item.name });
       }
-    f && (c[0] = c[0] + 1), T.sort(me), c.sort(me);
+    }
+    context.inherited.sort((a, b) => a.name.localeCompare(b.name));
   }
-  if (i.threshold == 10) {
-    let u = c.length;
-    for (; u--;)
-      if (c[u] >= 10)
-        b++, v.push(c[u]), c.splice(u, 1), L = c.length;
-      else if (c[u] < 10)
-        break;
+  return context;
+}
+function getEffect(sheet, target) {
+  const row = target.closest("[data-effect-id]");
+  if (!row) return null;
+  const parent = row.dataset.itemId ? sheet.document.items.get(row.dataset.itemId) : sheet.document;
+  return parent?.effects.get(row.dataset.effectId) ?? null;
+}
+async function onCreateEffect(event, target) {
+  if (!this.isEditable) return;
+  const document2 = this.document;
+  const data = { name: game.i18n.localize("SVNSEA2E.NewEffect"), origin: document2.uuid };
+  if (target.dataset.section === "temporary") data.duration = { value: 1, units: "rounds" };
+  if (target.dataset.section === "inactive") data.disabled = true;
+  const [effect] = await document2.createEmbeddedDocuments("ActiveEffect", [data]);
+  effect?.sheet.render(true);
+}
+function onEditEffect(event, target) {
+  getEffect(this, target)?.sheet.render(true);
+}
+async function onToggleEffect(event, target) {
+  if (!this.isEditable) return;
+  const effect = getEffect(this, target);
+  if (effect) await effect.update({ disabled: !effect.disabled });
+}
+async function onDeleteEffect(event, target) {
+  if (!this.isEditable) return;
+  await getEffect(this, target)?.delete();
+}
+async function onOpenEffectSource(event, target) {
+  const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+  if (!item) return;
+  item.sheet.tabGroups.primary = "effects";
+  await item.sheet.render(true);
+}
+const EFFECT_ACTIONS = {
+  createEffect: onCreateEffect,
+  editEffect: onEditEffect,
+  toggleEffect: onToggleEffect,
+  deleteEffect: onDeleteEffect,
+  openEffectSource: onOpenEffectSource
+};
+const EFFECTS_TAB = { id: "effects", label: "SVNSEA2E.Effects" };
+function withEffectsTab(config) {
+  return config ? { ...config, tabs: [...config.tabs, EFFECTS_TAB] } : config;
+}
+function onRenderActiveEffectConfig(app, html) {
+  const inputs = html.querySelectorAll('input[name^="system.changes."][name$=".key"]');
+  if (!inputs.length) return;
+  const id = `${SYSTEM_ID}-effect-keys-${app.id}`;
+  if (!html.querySelector(`#${CSS.escape(id)}`)) {
+    const list = document.createElement("datalist");
+    list.id = id;
+    for (const [key, label] of Object.entries(getEffectKeys())) list.append(new Option(label, key));
+    html.append(list);
   }
-  let S = ue(c, i.threshold, d);
-  if (v.push(...S.combos), b += S.raises, S.rolls.length > 0 && (!d && i.threshold == 15 || d && i.threshold == 20)) {
-    let u = ue(
-      S.rolls,
-      i.threshold - 5,
-      d
-    );
-    v.push(...u.combos), b += u.raises, S = u;
-  }
-  let G = i.threshold.toString();
-  d && (G = i.threshold.toString() + " " + game.i18n.localize("SVNSEA2E.GMIncreasedThreshold"));
-  const E = S.rolls.length, A = {
-    actor: e,
-    raisetxt: b > 1 ? game.i18n.localize("SVNSEA2E.Raises") : game.i18n.localize("SVNSEA2E.Raise"),
-    unusedDiceTxt: E > 1 ? game.i18n.localize("SVNSEA2E.UnusedDice") : game.i18n.localize("SVNSEA2E.UnusedDie"),
-    data: t,
-    exploded: C,
-    explosions: game.i18n.format("SVNSEA2E.RollsExploded"),
-    extraDice: T.length - o,
-    hasAddOneToDice: f,
-    addOneToDiced: game.i18n.format("SVNSEA2E.AddOneToDiced"),
-    labels: t.labels,
-    rolls: T,
-    raises: b,
-    rCombos: game.i18n.localize("SVNSEA2E.RaiseCombos"),
-    combos: v.map((u) => `${u}`),
-    rerolled: R,
-    reroll: H,
-    unusedDice: E,
-    unusedRolls: S.rolls,
-    dicesNumber: o,
-    threshold: game.i18n.format("SVNSEA2E.RollThreshold", {
-      threshold: G
-    })
-  }, ve = await renderTemplate(a, A), te = game.settings.get("core", "rollMode"), se = {
-    user: game.user.id,
-    type: CONST.CHAT_MESSAGE_STYLES.OTHER,
-    content: ve,
-    image: e.img,
-    speaker: {
-      actor: e.id,
-      token: e.token,
-      alias: e.name
+  for (const input of inputs) input.setAttribute("list", id);
+}
+const MIGRATIONS = [
+  // 24.0.1 and not 24.0: the worlds opened with the development builds of 24.0 already store "24.0".
+  {
+    // The ship roster moves from two flags (the members on the ship, the role on each member) to `system.crew`.
+    version: "24.0.1",
+    prepare() {
+      this.roles = new Map(game.actors.map((actor) => [actor.id, actor.getFlag(SYSTEM_ID, "crewMember")?.role]));
     },
-    flavor: n,
-    blind: te === "blindroll",
-    // Toggle default roll mode
-    whisper: ["gmroll", "blindroll"].includes(te) ? ChatMessage.getWhisperRecipients("GM") : void 0
-  };
-  return game.dice3d ? game.dice3d.showForRoll(y).then(() => {
-    ChatMessage.create(se);
-  }) : ChatMessage.create(se), y;
-}
-function me(i, e) {
-  return i - e;
-}
-function pe(i) {
-  return i.terms[0].results.map((e) => e.result).sort((e, t) => e - t);
-}
-class M extends ActorSheet {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      width: 1050,
-      height: 750
-    });
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  getData(e) {
-    const t = super.getData(e), s = t.document, a = s.system, { isOwner: n, limited: r } = this.document, o = {
-      owner: n,
-      limited: r,
-      options: this.options,
-      editable: this.isEditable,
-      cssClass: n ? "editable" : "locked",
-      isCorrupt: a.corruptionpts > 0,
-      isPlayerCharacter: s.type === l.PLAYER,
-      isHero: s.type === l.HERO,
-      isVillain: s.type === l.VILLAIN,
-      isMonster: s.type === l.MONSTER,
-      isNotBrute: s.type !== l.BRUTE,
-      hasSkills: typeof a.skills < "u",
-      hasLanguages: typeof a.languages < "u",
-      config: CONFIG.SVNSEA2E,
-      dtypes: ["String", "Number", "Boolean"],
-      // Core Actor data:
-      name: s.name,
-      img: s.img,
-      initiative: a.initiative,
-      age: a.age,
-      nation: a.nation,
-      wealth: a.wealth,
-      heropts: a.heropts,
-      corruptionpts: a.corruptionpts,
-      wounds: a.wounds,
-      woundsRemaining: (() => {
-        if (!a.wounds) return 0;
-        let divisor = 5;
-        if (s.type === l.VILLAIN || s.type === l.MONSTER) {
-          divisor = parseInt(a.traits?.strength?.value || 0) + 1;
-        }
-        const totalWounds = (a.dwounds?.value || 0) + (a.wounds.value || 0);
-        return Math.max(0, (a.wounds.max || 0) - totalWounds);
-      })(),
-      dwounds: a.dwounds,
-      htk: a.htk,
-      traits: this._prepareTraits(s),
-      selectedlangs: this._prepareLanguages(s),
-      // Concept tab.
-      religion: a.religion,
-      reputation: a.reputation,
-      concept: a.concept,
-      arcana: a.arcana,
-      // Inventory Tab
-      equipment: a.equipment,
-      // Fate Tab
-      redemption: a.redemption
-    };
-    return s.type === l.PLAYER ? this._prepareCharacterItems(t, o) : s.type === l.HERO ? this._prepareHeroItems(t, o) : s.type === l.VILLAIN ? this._prepareVillainItems(t, o) : s.type === l.MONSTER ? this._prepareMonsterItems(t, o) : s.type === l.SHIP ? (this._prepareShipItems(t, o), this._processFlags(a, s.flags, o)) : s.type === l.DANGERPOINTS ? o.points = a.points : s.type === l.BRUTE && (o.ability = a.ability, this._prepareBruteItems(t, o)), o;
-  }
-  /* -------------------------------------------- */
-  _prepareButtonTitles(e) {
-    for (const t of Object.values(e))
-      t.editlabel = game.i18n.format("SVNSEA2E.EditLabel", {
-        label: e.name
-      }), t.deletelabel = game.i18n.format("SVNSEA2E.DeleteLabel", {
-        label: e.name
-      });
-  }
-  /* -------------------------------------------- */
-  /**
-   * Returns a sheet-friendly list of traits with the localized label.
-   *
-   * @param actor
-   * @returns {(*&{name: *, label: *})[]|*[]}
-   * @private
-   */
-  _prepareTraits(e) {
-    return [l.SHIP, l.DANGERPOINTS].includes(e.type) ? [] : Object.entries(e.system.traits).map(([t, s]) => ({
-      ...s,
-      name: t,
-      label: CONFIG.SVNSEA2E.traits[t]
-    }));
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  activateListeners(e) {
-    if (super.activateListeners(e), !!this.options.editable && (
-      // ... listeners existentes ...
-      e.find(".language-selector").on("click", this._onLanguageSelector.bind(this)),
-      e.find(".add-1-initiative").on("click", this._onAddInitiative.bind(this)),
-      e.find(".minus-1-initiative").on("click", this._onMinusInitiative.bind(this)),
-      e.find(".item-create").on("click", this._onItemCreate.bind(this)),
-      e.find(".item-edit").on("click", this._onItemEdit.bind(this)),
-      e.find(".item-delete").on("click", this._onItemDelete.bind(this)),
-      e.find(".item-throw").on("click", this._onItemThrow.bind(this)),
-      e.find(".item h4.item-name").on("click", (t) => this._onItemSummary(t)),
-      e.find(".htk-control").click(this._onToggleHtK.bind(this)),
-      e.find(".item-check").on("click", this._onItemCheck.bind(this)),
-      e.find(".item-toggle").on("click", this._onToggleBackground.bind(this)),
-      e.find(".item-header").click(this._onToggleSection.bind(this)),
-      e.find(".roll-throw").on("click", this._onRollThrow.bind(this)),
-      e.find('.initiative-input').on('change', this._onInitiativeChange.bind(this)),
-      e.find('.initiative-input').on('keydown', (event) => {
-        if (event.key === "Enter") {
-          event.preventDefault(); // Evita que el formulario haga submit
-          this._onInitiativeChange(event); // Fuerza la actualización
-          event.currentTarget.blur(); // Quita el foco del input
-        }
-      }),
-
-      // Lógica original para Heroes y Villanos (.rollable)
-      this.actor.type === l.PLAYER || this.actor.type === l.HERO ?
-        e.find(".rollable").on("click", this._onHeroRoll.bind(this)) :
-        (this.actor.type === l.VILLAIN || this.actor.type === l.MONSTER) && e.find(".rollable").on("click", this._onVillainRoll.bind(this)),
-
-      // --- NUEVO LISTENER PARA TRAITS (.rollableT) ---
-      // Esto buscará cualquier elemento con la clase "rollableT" y ejecutará _onTraitRoll
-      e.find(".rollableT").on("click", this._onTraitRoll.bind(this)),
-      // -----------------------------------------------
-
-      // ... resto de listeners ...
-      e.find(".fillable.fa-circle").on("click", (t) => this._processCircle(t)),
-      this.actor.type === l.BRUTE ?
-        e.find(".fillable.fa-heart").on("click", (t) => this._processBruteWounds(t)) :
-        e.find(".fillable.fa-heart").on("click", this._processWounds.bind(this)),
-      this.actor.isOwner
-    )) {
-      const t = (s) => this._onDragItemStart(s);
-      e.find("li.item").each((s, a) => {
-        a.classList.contains("inventory-header") || (a.setAttribute("draggable", !0), a.addEventListener("dragstart", t, !1));
-      });
-    }
-  }
-  _onItemThrow(e) {
-    e.preventDefault();
-    const t = e.currentTarget.closest(".item"),
-      itemId = t.dataset.itemId;
-    const item = this.actor.items.get(itemId);
-
-    if (item) return item.ItemThrow();
-  }
-  async _onItemCheck(e) {
-    // 1. Detenemos al navegador. Solo la Base de Datos dictará si está marcado.
-    e.preventDefault();
-
-    const li = e.currentTarget.closest(".item");
-    const item = this.actor.items.get(li.dataset.itemId);
-
-    if (item) {
-      // 2. Guardamos en la BD. Al completarse, Foundry recargará la hoja y dibujará el tick.
-      await item.update({ "system.used": !item.system.used });
-    }
-  }
-  async _onRollThrow(e) {
-    e.preventDefault();
-
-    // Ruta a tu plantilla simple (la que subiste roll-throw.hbs)
-    const template = "systems/svnsea2e/templates/items/parts/roll-throw.hbs";
-
-    // Renderizamos el diálogo pequeño
-    const htmlContent = await renderTemplate(template, {});
-
-    return new Promise((resolve) => {
-      new Dialog({
-        title: game.i18n.localize("SVNSEA2E.Roll"), // "Tirada" o título genérico
-        content: htmlContent,
-        buttons: {
-          roll: {
-            icon: '<i class="fas fa-dice-d20"></i>',
-            label: game.i18n.localize("SVNSEA2E.Roll"),
-            callback: async (html) => {
-              // 1. Obtener número de dados del input
-              let numDice = parseInt(html.find("#dice-number").val(), 10);
-              if (isNaN(numDice) || numDice < 1) numDice = 1;
-
-              // 1b. Leer las casillas de Advantages / Danger Points del diálogo
-              const addOneToDiceChecked = html.find("#addOneToDice").is(":checked");
-              const joieDeVivreChecked = html.find("#joieDeVivreAdvantage").is(":checked");
-              const explodeDiceChecked = html.find("#explodeDice").is(":checked");
-              const increaseThresholdChecked = html.find("#increaseThreshold").is(":checked");
-
-              // 2. Ejecutar la función 'de' (la lógica interna de tiradas)
-              // NOTA: 'de' espera un formulario complejo, así que creamos un objeto 'fakeForm'
-              // con valores en 0/false para que solo cuente los dados que pusimos manuales,
-              // salvo las casillas de Advantages/Danger Points que sí se leen del diálogo.
-              await de({
-                rolldata: {
-                  skilldice: numDice, // Aquí van tus dados manuales
-                  threshold: 10,      // Dificultad estándar
-                  explode: false,     // La explosión manual se maneja vía explodeDice
-                  reroll: false,
-                  skipWoundBonus: true
-                },
-                actor: this.actor,
-                data: this.actor.system,
-                template: "systems/svnsea2e/templates/chats/roll-card.hbs",
-                title: "Tirada Genérica", // Título en el chat
-
-                // Objeto que simula ser el formulario de Skills/Traits
-                form: {
-                  trait: { value: 0 },
-                  flairDice: { checked: false },
-                  interpretationDice: { checked: false },
-                  useForMe: { value: 0 },
-                  useForHelpMe: { value: 0 },
-                  bonusDice: { value: 0 },
-                  increaseThreshold: { checked: increaseThresholdChecked },
-                  addOneToDice: { checked: addOneToDiceChecked },
-                  joieDeVivreAdvantage: { checked: joieDeVivreChecked },
-                  explodeDice: { checked: explodeDiceChecked }
-                }
-              });
-              resolve();
-            }
-          },
-          cancel: {
-            label: game.i18n.localize("Cancel"),
-            callback: () => resolve()
-          }
-        },
-        default: "roll"
-      }).render(true);
-    });
-  }
-  _onToggleSection(event) {
-    event.preventDefault();
-
-    // El elemento header al que hicimos click
-    const header = $(event.currentTarget);
-
-    // Buscar todos los elementos 'li' (items) que están DEBAJO de este header
-    // Y detenerse cuando encontremos el SIGUIENTE header (.item-header) o se acabe la lista.
-    const items = header.nextUntil(".item-header");
-
-    // Alternar visibilidad (slide up / slide down)
-    items.slideToggle(200);
-
-    // Opcional: Si quisieras rotar un icono de flecha, aquí añadirías la clase
-    // header.find("i").toggleClass("fa-rotate-90");
-  }
-  async _onToggleBackground(event) {
-    event.preventDefault();
-    const li = event.currentTarget.closest(".item");
-    const item = this.actor.items.get(li.dataset.itemId);
-
-    if (!item) return;
-
-    // 1. Determinar el nuevo estado
-    const isCurrentlyActive = item.system.active;
-    const newState = !isCurrentlyActive;
-
-    // 2. Ejecutar la lógica (sin notificaciones)
-    if (newState === true) {
-      await this._processBackgroundDrop(item);
-    } else {
-      await this._processBackgroundDelete(item.system);
-    }
-
-    // 3. Guardar el nuevo estado visual
-    await item.update({ "system.active": newState });
-  }
-  _onAddInitiative(e) {
-    e.preventDefault();
-    const t = (this.actor.system.initiative || 0) + 1;
-    console.log("new initiative", t), Q(this.actor.id, t);
-  }
-  async _onInitiativeChange(event) {
-    event.preventDefault();
-    event.stopPropagation();
-
-    const input = event.currentTarget;
-    let newInitiative = parseInt(input.value, 10);
-
-    // Validación: asegurar que sea un número y no menor a 0
-    if (isNaN(newInitiative) || newInitiative < 0) {
-      newInitiative = 0;
-    }
-
-    // Usamos la función global 'Q' de tu sistema actual.
-    // 'Q' se encarga de: 
-    // 1. Actualizar 'system.initiative' en el Actor.
-    // 2. Buscar si el actor está en el Combat Tracker y actualizarlo ahí también.
-    Q(this.actor.id, newInitiative);
-
-    // Quitar el foco para confirmar visualmente el cambio
-    input.blur();
-  }
-  _onMinusInitiative(e) {
-    e.preventDefault();
-    const t = (this.actor.system.initiative || 0) - 1;
-    Q(this.actor.id, t);
-  }
-  /* -------------------------------------------- */
-  /**
-   * Prepare the Languages that the Actor has selected for use with the LanguageSelector application
-   * @param {Object} actor       The actor
-   * @private
-   */
-  _prepareLanguages(e) {
-    if ([l.PLAYER, l.HERO, l.VILLAIN].includes(e.type))
-      return console.log(e), console.log(e.system), console.log(e.system.languages), e.system.languages.reduce(
-        (t, s) => ({
-          ...t,
-          [s]: CONFIG.SVNSEA2E.languages[s]
-        }),
-        {}
-      );
-  }
-  /* -------------------------------------------- */
-  /**
-   * Process the effects of clicking on a circle
-   * @param {Object} event      event sent
-   * @private
-   */
-  async _processCircle(e) {
-    const t = this.document, s = t.system, a = e.target.dataset;
-    let n = {}, r = parseInt(a.value), o = 0;
-    if (r === 1) {
-      switch (a.type) {
-        case "skill":
-          o = s.skills[a.key].value;
-          break;
-        case "trait":
-          a.key === "influence" || a.key === "strength" ? o = s.traits[a.key].value : r = 2;
-          break;
-        case "corrupt":
-          o = s[a.key];
-          break;
-        case "fear":
-          o = s[a.key].value;
-          break;
-      }
-      o === 1 && (r = 0);
-    }
-    return n[a.name] = r, t.update(n);
-  }
-  /* -------------------------------------------- */
-  /**
-   * When a wound heart is click properly set the values
-   * @param {Object} event      event sent
-   * @private
-   */
-  _processBruteWounds(e) {
-    const t = this.document, s = t.system;
-    let a = {};
-    a["system.wounds.value"] = e.target.dataset.value, s.wounds.value == 1 && e.target.dataset.value == 1 && (a["system.wounds.value"] = 0), t.update(a);
-  }
-
-
-  /* -------------------------------------------- */
-  /**
-   * When a wound heart is click properly set the values
-   * @param {Object} event      event sent
-   * @private
-   */
-
-  _processWounds(event) {
-    event.preventDefault();
-    const actor = this.document;
-    if (!actor) return;
-    const system = actor.system;
-    const dataset = event.currentTarget.dataset;
-
-    let updateObj = {};
-    let wounds = system.wounds.value;
-    let dwounds = system.dwounds.value;
-    const clickValue = parseInt(dataset.value);
-
-    if (isNaN(clickValue)) return;
-
-    // --- LÓGICA MATEMÁTICA DINÁMICA ---
-    let divisor = 5; // Por defecto para Héroes
-    if (actor.type === "villain" || actor.type === "monster") {
-      // Para Villanos la división de la herida dramática es (Fuerza + 1)
-      divisor = parseInt(system.traits.strength.value) + 1;
-    }
-
-    if (dataset.type === 'wounds') {
-      wounds = clickValue;
-      // Calculamos dramáticas automáticamente
-      const dwestimate = Math.trunc(wounds / divisor);
-      if (dwestimate > dwounds) dwounds = dwestimate;
-      if (clickValue === 1 && system.wounds.value === 1) wounds = 0;
-    } else {
-      if (clickValue > dwounds) {
-        dwounds = clickValue;
-      } else if (clickValue === dwounds) {
-        dwounds = dwounds - 1; 
-      } else {
-        dwounds = clickValue;
-      }
-      // Las heridas dramáticas no deben modificar las normales (hay habilidades
-      // que curan/causan una sin afectar la otra).
-    }
-
-    updateObj['system.wounds.value'] = wounds;
-    updateObj['system.dwounds.value'] = dwounds;
-
-    // Seguro para HTK
-    if (system.htk === true) {
-      if (actor.type === "villain" || actor.type === "monster") {
-        if (system.dwounds.max !== 5) updateObj['system.dwounds.max'] = 5;
-        if (system.wounds.max !== divisor * 5) updateObj['system.wounds.max'] = divisor * 5;
-      } else {
-        if (system.dwounds.max !== 5) updateObj['system.dwounds.max'] = 5;
-        if (system.wounds.max !== 25) updateObj['system.wounds.max'] = 25;
-      }
-    } else {
-      // Failsafe para cuando no lo tienen activo
-      if (actor.type === "villain" || actor.type === "monster") {
-        if (system.dwounds.max !== 4) updateObj['system.dwounds.max'] = 4;
-        if (system.wounds.max !== divisor * 4) updateObj['system.wounds.max'] = divisor * 4;
-      }
-    }
-    actor.update(updateObj);
-  }
-
-
-  /* -------------------------------------------- */
-  /**
-   * Handle spawning the languageSelector application which allows a checkbox of multiple language options
-   * @param {Event} event   The click event which originated the selection
-   * @private
-   */
-  _onLanguageSelector(e) {
-    e.preventDefault();
-    const t = e.currentTarget, s = {
-      title: game.i18n.localize("SVNSEA2E.Languages"),
-      choices: CONFIG.SVNSEA2E[t.dataset.options]
-    };
-    new Tt(this.actor, s).render(!0);
-  }
-  /* -------------------------------------------- */
-  /**
-   * Handle creating a new Owned Item for the actor using initial data defined in the HTML dataset.
-   * @param {Event} event          The originating click event.
-   * @returns {Promise<Item5e[]>}  The newly created item.
-   * @private
-   */
-  _onItemCreate(e) {
-    e.preventDefault();
-    const t = e.currentTarget, s = t.dataset.type, a = {
-      name: game.i18n.localize(`SVNSEA2E.New${s}`),
-      img: `systems/svnsea2e/icons/${s}.jpg`,
-      type: s,
-      data: foundry.utils.deepClone(t.dataset)
-    };
-    return delete a.data.type, this.actor.createEmbeddedDocuments("Item", [a]);
-  }
-  /* -------------------------------------------- */
-  /**
-   * Handle editing an existing Owned Item for the Actor.
-   * @param {Event} event    The originating click event.
-   * @returns {ItemSheet5e}  The rendered item sheet.
-   * @private
-   */
-  _onItemEdit(e) {
-    e.preventDefault();
-    const t = e.currentTarget.closest(".item");
-    return this.actor.items.get(t.dataset.itemId).sheet.render(!0);
-  }
-  /* -------------------------------------------- */
-  /**
-   * Handle deleting a new Owned Item for the actor using initial data defined in the HTML dataset
-   * @param {Event} event   The originating click event
-   * @private
-   */
-  async _onItemDelete(e) {
-    e.preventDefault();
-    const t = e.currentTarget.closest(".item"), s = this.actor.items.get(t.dataset.itemId);
-    if (s)
-      return s.system.type === "background" && await this._processBackgroundDelete(s.system.data), s.delete();
-  }
-  /* -------------------------------------------- */
-  /**
-   * Handle rolling of an item from the Actor sheet, obtaining the Item instance and dispatching to it's roll method
-   * @private
-   */
-  async _onItemSummary(e) {
-    e.preventDefault();
-    const t = $(e.currentTarget).closest(".item"), a = await this.actor.items.get(t.data("itemId")).getChatData({ secrets: this.actor.owner });
-    if (t.hasClass("expanded")) {
-      const n = t.children(".item-summary");
-      n.slideUp(200, () => n.remove());
-    } else {
-      const n = $(`<div class="item-summary">${a.description}</div>`), r = $(
-        `<div class="item-metdata">${a.metadatahtml}</div>`
-      );
-      n.append(r), t.append(n.hide()), n.slideDown(200);
-    }
-    t.toggleClass("expanded");
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  async _onDrop(e) {
-    e.preventDefault();
-    let t;
-    try {
-      t = JSON.parse(e.dataTransfer.getData("text/plain"));
-    } catch {
-      return !1;
-    }
-    if (!t)
-      return !1;
-    if (t.type === "Item")
-      return this._onDropItem(e, t);
-    if (t.type === "Actor")
-      return this._onDropActor(e, t);
-  }
-  /* -------------------------------------------- */
-  /**
-   * Handle dropping an Actor on the sheet to trigger a Polymorph workflow
-   * @param {DragEvent} event   The drop event
-   * @param {Object} data       The data transfer
-   * @return {Object}           OwnedItem data _getIndexeso create
-   * @private
-   */
-  async _onDropActor(e, t) {
-  }
-  /* -------------------------------------------- */
-  /**
-   * Handle dropping of an item reference or item data onto an Actor Sheet
-   * @param {DragEvent} event     The concluding DragEvent which contains drop data
-   * @param {Object} data         The data transfer extracted from the event
-   * @return {Object}             OwnedItem data to create
-   * @private
-   */
-  async _onDropItem(e, t) {
-    if (!this.actor.isOwner)
-      return !1;
-    const s = await Item.implementation.fromDropData(t), a = this.actor;
-    if (t.actorId === a.id || a.isToken && t.tokenId === a.token.id)
-      return this._onSortItem(e, s);
-    const r = await this._doesActorHaveItem(s.type, s.name);
-    if (s.type !== "sorcery" && r)
-      return ui.notifications.error(
-        game.i18n.format("SVNSEA2E.ItemExists", {
-          type: s.type,
-          name: s.name
-        })
-      );
-    if (s.type === "background") {
-      if (
-        // If the background is nation specific the actor must be of the same nation.
-        s.system.nation !== "none" && s.system.nation !== this.actor.system.nation || // Glamour Isles backgrounds applies to Highland, Avalon, and Inismore.
-        s.system.nation === "gisles" && !xt(this.actor)
-      )
-        return ui.notifications.error(
-          game.i18n.format("SVNSEA2E.WrongNation", {
-            bgnation: game.i18n.localize(
-              CONFIG.SVNSEA2E.nations[s.system.nation]
-            ),
-            anation: game.i18n.localize(
-              CONFIG.SVNSEA2E.nations[this.actor.system.nation]
-            ),
-            name: s.name
-          })
-        );
-      await this._processBackgroundDrop(s);
-    }
-    return await this.actor.createEmbeddedDocuments("Item", [s]);
-  }
-  async _updateBackgroundSkills(e, t) {
-    const s = this.actor.system, a = e.system.skills.reduce((n, r) => {
-      const o = s.skills[r].value + t, d = Math.max(Math.min(o, 5), 0);
-      return { ...n, [`system.skills.${r}.value`]: d };
-    }, {});
-    await this.actor.update(a);
-  }
-  /* -------------------------------------------- */
-  /**
-   * Process for modifying the character sheet when a background is dropped on it.
-   * Backgrounds increase skills and add advantages
-   * @param item for the item that has been dropped on the character sheet
-   */
-  async _processBackgroundDrop(e) {
-    const t = e.system;
-    for (const s of t.advantages) {
-      const a = game.items.find(
-        (f) => f.name === s
-      ), r = (await Mt()).find(
-        (f) => f.name.toLowerCase() === s.toLowerCase()
-      ), o = a || r || null;
-      if (!o) {
-        ui.notifications.error(
-          game.i18n.format("SVNSEA2E.ItemDoesntExist", {
-            name: s
-          })
-        );
-        continue;
-      }
-      const d = await this._doesActorHaveItem(
-        "advantage",
-        o.name
-      );
-      if (o.type !== "sorcery" && d) {
-        ui.notifications.error(
-          game.i18n.format("SVNSEA2E.ItemExists", {
-            type: o.type,
-            name: o.name
-          })
-        );
-        continue;
-      }
-      await this.actor.createEmbeddedDocuments("Item", [
-        foundry.utils.duplicate(o)
-      ]);
-    }
-    await this._updateBackgroundSkills(e, 1);
-  }
-  /* -------------------------------------------- */
-  /**
-   * Process for modifying the character sheet when a background is dropped on it.
-   * Backgrounds increase skills and add advantages
-   * @param itemData data for the item that is being deleted
-   */
-  async _processBackgroundDelete(itemData) {
-    // 1. CORRECCIÓN: Usar 'this.actor.system' en lugar de 'this.actor.data.data'
-    const actorSystem = this.actor.system;
-    const updateData = {};
-
-    // Restar puntos a las habilidades
-    for (let n = 0; n < itemData.skills.length; n++) {
-      const skillKey = itemData.skills[n];
-      // Aseguramos que el valor no baje de 0
-      const newValue = Math.max(0, actorSystem.skills[skillKey].value - 1);
-
-      // 2. CORRECCIÓN: La ruta de actualización es 'system.skills...'
-      updateData[`system.skills.${skillKey}.value`] = newValue;
-    }
-
-    // Ejecutar actualización de habilidades
-    if (!foundry.utils.isEmpty(updateData)) {
-      await this.actor.update(updateData);
-    }
-
-    // Borrar las ventajas asociadas
-    const currentAdvantages = await this._getAdvantages(); // Esta función devuelve los items
-    const advantagesToDelete = [];
-
-    for (let n = 0; n < itemData.advantages.length; n++) {
-      const advName = itemData.advantages[n];
-
-      for (let r = 0; r < currentAdvantages.length; r++) {
-        // 3. CORRECCIÓN: Usar 'name' directo, no 'data.name'
-        if (currentAdvantages[r].name === advName) {
-          advantagesToDelete.push(currentAdvantages[r].id);
+    actor(actor) {
+      const flags = actor.flags[SYSTEM_ID] ?? {};
+      const update = {};
+      const remove = () => new foundry.data.operators.ForcedDeletion();
+      if ("crewMember" in flags) update[`flags.${SYSTEM_ID}.crewMember`] = remove();
+      if ("shipsCrew" in flags) {
+        update[`flags.${SYSTEM_ID}.shipsCrew`] = remove();
+        if (actor.type === ActorType.SHIP) {
+          const members = flags.shipsCrew?.members ?? [];
+          update["system.crew"] = members.map((actorId) => ({ actorId, role: this.roles?.get(actorId) })).filter((member) => member.role);
         }
       }
+      return update;
     }
-
-    if (advantagesToDelete.length > 0) {
-      await this.actor.deleteEmbeddedDocuments("Item", advantagesToDelete);
-    }
-  }
-  /* -------------------------------------------- */
-  /**
-   * Determine if the actor as any item records associated with it.
-   * @private
-   */
-  async _doesActorHaveItem(e, t) {
-    return !!this.actor.items.find(
-      (a) => a.name === t && a.type === e
-    );
-  }
-  /* -------------------------------------------- */
-  /**
-   * Retrive the names of advantages
-   * @private
-   */
-  async _getAdvantageNames() {
-    return this.actor.items.filter((e) => e.type === "advantage").map((e) => e.name);
-  }
-  /* -------------------------------------------- */
-  /**
-   * Retrieve all advantages the character has assigned
-   * @private
-   */
-  async _getAdvantages() {
-    return this.actor.items.filter((e) => e.type === "advantage");
-  }
-  /* -------------------------------------------- */
-  /**
-   * Handle clickable rolls.
-   * @param {Event} event   The originating click event
-   * @private
-   */
-
-
-  async _onHeroRoll(e) {
-    e.preventDefault();
-    const s = e.currentTarget.dataset, a = this.actor, n = this.actor.system;
-    let r = n.skills[s.label].value, o = {
-      threshold: 10,
-      explode: !1,
-      reroll: !1,
-      skilldice: r
-    };
-    r > 2 && (o.reroll = !0), r >= 4 && (o.threshold = 15), (r === 5 || n.dwounds.value >= 3) && (o.explode = !0);
-    const d = {};
-    for (const b of Object.keys(n.traits))
-      d[CONFIG.SVNSEA2E.traits[b]] = n.traits[b].value;
-    const f = n.dwounds.value >= 1 ? 1 : 0, y = "systems/svnsea2e/templates/chats/skill-roll-dialog.hbs", c = { data: n, traits: d, initialBonusDice: f }, C = await renderTemplate(y, c), w = game.i18n.format("SVNSEA2E.ApproachPromptTitle", {
-      skill: CONFIG.SVNSEA2E.skills[s.label]
-    });
-    return new Promise((b) => {
-      new Dialog(
-        {
-          title: w,
-          content: C,
-          buttons: {
-            roll: {
-              icon: '<img src="systems/svnsea2e/icons/d10.svg" class="d10">',
-              label: game.i18n.localize("SVNSEA2E.Roll"),
-              callback: (v) => de({
-                rolldata: o,
-                actor: a,
-                data: n,
-                form: v[0].querySelector("form"),
-                template: "systems/svnsea2e/templates/chats/roll-card.hbs",
-                title: game.i18n.format("SVNSEA2E.ApproachRollChatTitle", {
-                  trait: v[0].querySelector("form").trait[v[0].querySelector("form").trait.selectedIndex].text,
-                  skill: CONFIG.SVNSEA2E.skills[s.label]
-                })
-              })
-            }
-          }
-        },
-        {}
-      ).render(!0);
-    });
-  }
-
-  async _onToggleHtK(event) {
-    event.preventDefault();
-
-    const currentStatus = this.actor.system.htk;
-    const newStatus = !currentStatus;
-
-    let updateData = {
-      "system.htk": newStatus
-    };
-
-    if (this.actor.type === "villain" || this.actor.type === "monster") {
-      // Dinámico para Villanos: divisor * 5 (HTK) o divisor * 4 (Normal)
-      const divisor = parseInt(this.actor.system.traits.strength.value) + 1;
-      
-      if (newStatus === true) {
-        updateData["system.wounds.max"] = divisor * 5;
-        updateData["system.dwounds.max"] = 5;
-      } else {
-        updateData["system.wounds.max"] = divisor * 4;
-        updateData["system.dwounds.max"] = 4;
-
-        if (this.actor.system.wounds.value > divisor * 4) {
-          updateData["system.wounds.value"] = divisor * 4;
+  },
+  {
+    // Hard To Kill: an active effect that overrides `system.htk` replaces the toggle of the sheet. The effect goes on
+    // the actor's Hard To Kill advantage, or on the actor when it has none, and the stored `htk` goes back to false.
+    version: "24.0.1",
+    async afterActor(actor) {
+      if (!("htk" in actor.system)) return;
+      const advantages = actor.items.filter((item) => isHardToKill(item));
+      const stored = actor.isToken ? actor.token.delta?._source.system?.htk : actor._source.system.htk;
+      if (stored === true) {
+        if (!hasHardToKillEffect(actor) && !advantages.some(hasHardToKillEffect)) {
+          const holder = actor.isToken ? actor : advantages[0] ?? actor;
+          await holder.createEmbeddedDocuments("ActiveEffect", [hardToKillEffectData()]);
         }
-        if (this.actor.system.dwounds.value > 4) {
-          updateData["system.dwounds.value"] = 4;
+        await actor.update({ "system.htk": false });
+      } else if (!actor.isToken) {
+        for (const advantage of advantages.filter((a) => !hasHardToKillEffect(a))) {
+          await advantage.createEmbeddedDocuments("ActiveEffect", [{ ...hardToKillEffectData(), disabled: true }]);
         }
       }
-    } else {
-      // Estático para Héroes (25 / 20)
-      if (newStatus === true) {
-        updateData["system.wounds.max"] = 25;
-        updateData["system.dwounds.max"] = 5;
-      } else {
-        updateData["system.wounds.max"] = 20;
-        updateData["system.dwounds.max"] = 4;
-
-        if (this.actor.system.wounds.value > 20) {
-          updateData["system.wounds.value"] = 20;
-        }
-        if (this.actor.system.dwounds.value > 4) {
-          updateData["system.dwounds.value"] = 4;
-        }
+    },
+    async afterItem(item) {
+      if (isHardToKill(item) && !hasHardToKillEffect(item)) {
+        await item.createEmbeddedDocuments("ActiveEffect", [hardToKillEffectData()]);
       }
     }
-
-    await this.actor.update(updateData);
   }
-
-
-
-
-  /**
-   * Maneja el clic en un Rasgo (Trait) para tirar solo dados de Rasgo.
-   * Reemplaza a tu antiguo _onHeroRollT
-   */
-  /* Dentro de SvnSea2EActorSheet */
-
-
-  async _onTraitRoll(e) {
-    e.preventDefault();
-    const s = e.currentTarget.dataset,
-      a = this.actor,
-      n = this.actor.system;
-    let r = {
-      threshold: 10,
-      explode: !1,
-      reroll: !1,
-      skilldice: 0
-    };
-    const o = "systems/svnsea2e/templates/chats/trait-roll-dialog.hbs", 
-          d = (n.dwounds && n.dwounds.value >= 1) ? 1 : 0, 
-          f = {
-      data: n,
-      traitmax: n.traits[s.label].value,
-      initialBonusDice: d
-    }, y = await renderTemplate(o, f), c = game.i18n.format("SVNSEA2E.TraitRollTitle", {
-      trait: CONFIG.SVNSEA2E.traits[s.label]
-    });
-    return new Promise(() => {
-      new Dialog(
-        {
-          title: c,
-          content: y,
-          buttons: {
-            roll: {
-              icon: '<img src="systems/svnsea2e/icons/d10.svg" class="d10">',
-              label: game.i18n.localize("SVNSEA2E.Roll"),
-              callback: (C) => de({
-                rolldata: r,
-                actor: a,
-                data: n,
-                form: C[0].querySelector("form"),
-                template: "systems/svnsea2e/templates/chats/roll-card.hbs",
-                title: c
-              })
-            }
-          }
-        },
-        {}
-      ).render(!0);
-    });
-  }
-
-  /* -------------------------------------------- */
-  /**
-   * Handle clickable rolls.
-   * @param {Event} event   The originating click event
-   * @private
-   */
-  async _onVillainRoll(e) {
-    e.preventDefault();
-    const s = e.currentTarget.dataset, a = this.actor, n = this.actor.system;
-    let r = {
-      threshold: 10,
-      explode: (n.dwounds && n.dwounds.value >= 3) ? !0 : !1,
-      reroll: !1,
-      skilldice: 0
-    };
-    const o = "systems/svnsea2e/templates/chats/trait-roll-dialog.hbs", d = n.dwounds.value >= 1 ? 1 : 0, f = {
-      data: n,
-      traitmax: n.traits[s.label].value,
-      initialBonusDice: d
-    }, y = await renderTemplate(o, f), c = game.i18n.format("SVNSEA2E.TraitRollTitle", {
-      trait: CONFIG.SVNSEA2E.traits[s.label]
-    });
-    return new Promise(() => {
-      new Dialog(
-        {
-          title: c,
-          content: y,
-          buttons: {
-            roll: {
-              icon: '<img src="systems/svnsea2e/icons/d10.svg" class="d10">',
-              label: game.i18n.localize("SVNSEA2E.Roll"),
-              callback: (C) => de({
-                rolldata: r,
-                actor: a,
-                data: n,
-                form: C[0].querySelector("form"),
-                template: "systems/svnsea2e/templates/chats/roll-card.hbs",
-                title: c
-              })
-            }
-          }
-        },
-        {}
-      ).render(!0);
-    });
-  }
-
-  /* -------------------------------------------- */
-
+];
+const HARD_TO_KILL_NAMES = ["hard to kill", "duro de matar"];
+const isHardToKill = (item) => item.type === ItemTypes.ADVANTAGE && HARD_TO_KILL_NAMES.includes(item.name.trim().toLowerCase());
+const hasHardToKillEffect = (document2) => document2.effects.some((effect) => effect.system.changes.some((change) => change.key === "system.htk"));
+async function migrateWorldIfNeeded() {
+  if (!game.users.activeGM?.isSelf) return;
+  const lastMigrated = game.settings.get(SYSTEM_ID, "systemMigrationVersion");
+  const pending = MIGRATIONS.filter(
+    (m) => !lastMigrated || foundry.utils.isNewerVersion(m.version, lastMigrated)
+  );
+  if (pending.length) await migrateWorld(pending);
+  const migrated = [game.system.version, lastMigrated, ...pending.map((m) => m.version)].filter(Boolean).reduce(
+    (a, b) => foundry.utils.isNewerVersion(b, a) ? b : a
+  );
+  if (lastMigrated !== migrated) await game.settings.set(SYSTEM_ID, "systemMigrationVersion", migrated);
 }
-class Rt extends M {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["svnsea2e", "sheet", "actor", "brute"],
-      template: "systems/svnsea2e/templates/actors/brute.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentS: "ability"
-        }
-      ]
-    });
-  }
-
-  // NUEVO: Le enseñamos a la hoja de Brutos a recolectar Ventajas y Estilos
-  _prepareBruteItems(e, t) {
-    t.advantages = m(e, "advantage");
-    t.duelstyles = m(e, "duelstyle");
-  }
-}
-class Ht extends M {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["svnsea2e", "sheet", "actor"],
-      template: "systems/svnsea2e/templates/actors/dangerpts.hbs",
-      tabs: [
-        {
-          contentSelector: ".sheet-body"
-        }
-      ],
-      width: 450,
-      height: 250
-    });
-  }
-  /**
-   * Activate event listeners using the prepared sheet HTML
-   *
-   * @param {JQuery} html The prepared HTML object ready to be rendered into the DOM
-   */
-  activateListeners(e) {
-    super.activateListeners(e),
-      e.find(".dpminus").on("click", this._decreaseDP.bind(this, 1)),
-      e.find(".dpmminus").on("click", this._decreaseDP.bind(this, 2)),
-      e.find(".dpplus").on("click", this._increaseDP.bind(this, 1)),
-      e.find(".dppplus").on("click", this._increaseDP.bind(this, 2));
-  }
-  _decreaseDP(e, t) {
-    let s = 0;
-    this.actor.system.points > e && (s = parseInt(this.actor.system.points) - parseInt(e)), this.actor.update({
-      system: {
-        points: s
-      }
-    }).then(this.render(!1));
-  }
-  _increaseDP(e, t) {
-    const s = parseInt(this.actor.system.points) + parseInt(e);
-    this.actor.update({
-      system: {
-        points: s
-      }
-    }).then(this.render(!1));
-  }
-}
-class HeroSheet extends M {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["svnsea2e", "sheet", "actor", "hero"],
-      template: "systems/svnsea2e/templates/actors/hero.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "traits"
-        }
-      ]
-    });
-  }
-  /**
-   * Organize and classify Items for Character sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareHeroItems(e, t) {
-    t.skills = Ee(e.document.system, CONFIG), t.advantages = m(e, "advantage"), t.backgrounds = m(e, "background"), t.sorcery = m(e, "sorcery"), t.secretsocieties = m(e, "secretsociety"), t.stories = m(e, "story"), t.duelstyles = m(e, "duelstyle"), t.artifacts = m(e, "artifact"), t.virtues = m(e, "virtue"), t.hubriss = m(e, "hubris");
-  }
-}
-class Gt extends M {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["svnsea2e", "sheet", "actor", "monster"],
-      template: "systems/svnsea2e/templates/actors/monster.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "features"
-        }
-      ]
-    });
-  }
-  /**
-   * Organize and classify Items for Character sheets.
-   *
-   * @param {Object} actor The actor data to prepare.
-   * @param {Object} sheetData The sheet to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareMonsterItems(e, t) {
-    t.fear = e.document.system.fear, t.monsterqualities = m(e, "monsterquality"), t.virtues = m(e, "virtue"), t.hubriss = m(e, "hubris");
-  }
-}
-class jt extends M {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["svnsea2e", "sheet", "actor", "pc"],
-      template: "systems/svnsea2e/templates/actors/playercharacter.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "traits"
-        }
-      ]
-    });
-  }
-  /**
-   * Organize and classify Items for Character sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareCharacterItems(e, t) {
-    t.skills = Ee(e.document.system, CONFIG), t.advantages = m(e, "advantage"), t.backgrounds = m(e, "background"), t.sorcery = m(e, "sorcery"), t.secretsocieties = m(e, "secretsociety"), t.stories = m(e, "story"), t.duelstyles = m(e, "duelstyle"), t.artifacts = m(e, "artifact"), t.virtues = m(e, "virtue"), t.hubriss = m(e, "hubris");
-  }
-}
-class Pt extends M {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["svnsea2e", "sheet", "actor", "ship"],
-      template: "systems/svnsea2e/templates/actors/ship.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "roster"
-        }
-      ]
-    });
-  }
-  /**
-   * Organize and classify Items for Character sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareShipItems(e, t) {
-    const s = e.document.system;
-    t.adventures = m(e, "shipadventure"), t.backgrounds = m(e, "shipbackground"), t.origin = s.origin, t.class = s.class, t.crewstatus = s.crewstatus, t.cargo = s.cargo;
-  }
-  /**
-   * Process any flags that the actor might have that would affect the sheet .
-   *
-   * @param {Obejct} data The data object to update with any flag data.
-   * @param {Object} flags The set of flags for the Actor
-   */
-  _processFlags(e, t, s) {
-    let a = t.svnsea2e;
-    a || (a = {}), a.shipsCrew || (a.shipsCrew = {}), a.shipsCrew.members || (a.shipsCrew.members = []);
-    const n = {
-      captain: {
-        label: game.i18n.localize("SVNSEA2E.Captain"),
-        cssClass: "captain",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "captain"
-        }
-      },
-      firstmate: {
-        label: game.i18n.localize("SVNSEA2E.FirstMate"),
-        cssClass: "firstmate",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "firstmate"
-        }
-      },
-      quartermaster: {
-        label: game.i18n.localize("SVNSEA2E.QuaterMaster"),
-        cssClass: "quartermaster",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "quartermaster"
-        }
-      },
-      accountant: {
-        label: game.i18n.localize("SVNSEA2E.Accountant"),
-        cssClass: "accountant",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "accountant"
-        }
-      },
-      boatswain: {
-        label: game.i18n.localize("SVNSEA2E.Boatswain"),
-        cssClass: "boatswain",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "boatswain"
-        }
-      },
-      shipsmaster: {
-        label: game.i18n.localize("SVNSEA2E.ShipsMaster"),
-        cssClass: "shipsmaster",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "shipsmaster"
-        }
-      },
-      captaintops: {
-        label: game.i18n.localize("SVNSEA2E.CaptainTops"),
-        cssClass: "captaintops",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "captaintops"
-        }
-      },
-      surgeon: {
-        label: game.i18n.localize("SVNSEA2E.Surgeon"),
-        cssClass: "surgeon",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "surgeon"
-        }
-      },
-      cook: {
-        label: game.i18n.localize("SVNSEA2E.Cook"),
-        cssClass: "cook",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "cook"
-        }
-      },
-      mastergunner: {
-        label: game.i18n.localize("SVNSEA2E.MasterGunner"),
-        cssClass: "mastergunner",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "mastergunner"
-        }
-      },
-      mastermariner: {
-        label: game.i18n.localize("SVNSEA2E.MasterMariner"),
-        cssClass: "mastermariner",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "mastermariner"
-        }
-      },
-      midshipmen: {
-        label: game.i18n.localize("SVNSEA2E.Midshipmen"),
-        cssClass: "midshipmen",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "midshipmen"
-        }
-      },
-      powdermonkey: {
-        label: game.i18n.localize("SVNSEA2E.PowderMonkey"),
-        cssClass: "powdermonkey",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "powdermonkey"
-        }
-      },
-      ableseaman: {
-        label: game.i18n.localize("SVNSEA2E.AbleSeaman"),
-        cssClass: "ableseaman",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "ableseaman"
-        }
-      },
-      seaman: {
-        label: game.i18n.localize("SVNSEA2E.Seaman"),
-        cssClass: "seaman",
-        actors: [],
-        dataset: {
-          type: "shipsCrew",
-          role: "seaman"
-        }
-      }
-    }, [
-      r,
-      o,
-      d,
-      f,
-      y,
-      c,
-      C,
-      w,
-      b,
-      v,
-      O,
-      L,
-      R,
-      H,
-      T
-    ] = a.shipsCrew.members.reduce(
-      (S, G) => {
-        const E = game.actors.get(G);
-        if (!E)
-          return S;
-        const A = E.getFlag("svnsea2e", "crewMember") || null;
-        return A && (A.role === "ableseaman" ? S[0].push(E) : A.role === "accountant" ? S[1].push(E) : A.role === "boatswain" ? S[2].push(E) : A.role === "captain" ? S[3].push(E) : A.role === "captaintops" ? S[4].push(E) : A.role === "cook" ? S[5].push(E) : A.role === "firstmate" ? S[6].push(E) : A.role === "mastergunner" ? S[7].push(E) : A.role === "mastermariner" ? S[8].push(E) : A.role === "midshipmen" ? S[9].push(E) : A.role === "powdermonkey" ? S[10].push(E) : A.role === "quartermaster" ? S[11].push(E) : A.role === "seaman" ? S[12].push(E) : A.role === "shipsmaster" ? S[13].push(E) : A.role === "surgeon" && S[14].push(E)), S;
-      },
-      [[], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
-    );
-    n.ableseaman.actors = r, n.accountant.actors = o, n.boatswain.actors = d, n.captain.actors = f, n.captaintops.actors = y, n.cook.actors = c, n.firstmate.actors = C, n.mastergunner.actors = w, n.mastermariner.actors = b, n.midshipmen.actors = v, n.powdermonkey.actors = O, n.quartermaster.actors = L, n.seaman.actors = R, n.shipsmaster.actors = H, n.surgeon.actors = T, s.crew = Object.values(n);
-  }
-  /**
-   * Activate event listeners using the prepared sheet HTML
-   *
-   * @param {HTML} html The prepared HTML object ready to be rendered into the DOM
-   */
-  activateListeners(e) {
-    if (super.activateListeners(e), !this.options.editable)
-      return;
-    e.find(".roster .item-delete").click(this._onRemoveFromCrew.bind(this));
-    const t = (s) => this._onDragCrewStart(s);
-    e.find(".roster li.item").each((s, a) => {
-      a.setAttribute("draggable", !0), a.addEventListener("dragstart", t, !1);
-    }), e.find(".roster .items-list").each((s, a) => {
-      a.addEventListener("dragover", this._onCrewDragOver.bind(this), !1);
-    }), e.find(".roster li.item-header").each((s, a) => {
-      a.addEventListener("dragenter", this._onCrewDragEnter, !1), a.addEventListener("dragleave", this._onCrewDragLeave, !1);
-    });
-  }
-  /** @override */
-  async _onDrop(e) {
-    e.preventDefault();
-    let t;
-    try {
-      t = JSON.parse(e.dataTransfer.getData("text/plain"));
-    } catch {
-      return !1;
-    }
-    if (!t)
-      return !1;
-    if (t.type === "Item")
-      return this._onDropItem(e, t);
-    if (t.type === "Actor")
-      return this._onCrewDrop(e, t);
-  }
-  /**
-   * Handles drop events for the Crew list
-   *
-   * @param {Event}  event The originating drop event
-   * @param {object} data  The data transfer object.
-   */
-  async _onCrewDrop(e, t) {
-    if (e.preventDefault(), $(e.target).css("background", ""), !t.uuid)
-      return !1;
-    const s = this.actor.getFlag("svnsea2e", "shipsCrew");
-    let a;
-    s ? a = foundry.utils.duplicate(s) : a = {
-      members: []
-    };
-    const n = await Actor.implementation.fromDropData(t);
-    if (!n)
-      return !1;
-    a.members ? a.members.includes(n.id) || a.members.push(n.id) : a.members = [n.id];
-    const r = e.target.dataset.role;
-    return await n.setCrewMemberRole(this.actor.id, r), this.actor.update({
-      "flags.svnsea2e.shipsCrew": a
-    }).then(this.render(!1)), !1;
-  }
-  /**
-   * Handles dragenter for the crews tab
-   * @param {Event} event The originating dragenter event
-   */
-  _onCrewDragEnter(e) {
-    $(e.target).css("background", "rgba(0,0,0,0.3)");
-  }
-  /**
-   * Handles dragleave for the crews tab
-   * @param {Event} event The originating dragleave event
-   */
-  _onCrewDragLeave(e) {
-    $(e.target).css("background", "");
-  }
-  /**
-   * Handle dragging crew members on the sheet.
-   *
-   * @param {Event} event Originating dragstart event
-   */
-  _onDragCrewStart(e) {
-    const t = e.currentTarget.dataset.actorId, s = game.actors.get(t), a = {
-      type: "Actor",
-      id: s.id,
-      data: s.data
-    };
-    this.actor.isToken && (a.tokenId = t), e.dataTransfer.setData("text/plain", JSON.stringify(a));
-  }
-  /**
-   * Handles ondragover for crew drag-n-drop
-   *
-   * @param {Event} event Orgininating ondragover event
-   */
-  _onCrewDragOver(e) {
-    e.preventDefault(), e.dataTransfer.dropEffect = "move";
-  }
-  /**
-   * Handles updating this crew's role on the ship.
-   *
-   * @param {Event} event The originating click event
-   */
-  async _onChangeCrewRole(e) {
-    e.preventDefault();
-    const t = e.currentTarget.parentElement.dataset.actorId;
-    await game.actors.get(t).setCrewMemberRole(this.actor.id);
-  }
-  /**
-   * Remove an actor from the crew.
-   *
-   * @param {Event} event The originating click event
-   */
-  async _onRemoveFromCrew(e) {
-    e.preventDefault();
-    const t = $(e.currentTarget).parents(".item").data("actorId"), s = game.actors.get(t);
-    await s.removeFromCrew();
-    const a = this.actor.getFlag("svnsea2e", "shipsCrew");
-    if (!a)
-      return;
-    const n = a.members.filter((r) => r !== s.id);
-    await this.actor.update({
-      "flags.svnsea2e.shipsCrew.members": n
-    });
-  }
-}
-class qt extends M {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["svnsea2e", "sheet", "actor", "villain"],
-      template: "systems/svnsea2e/templates/actors/villain.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "traits"
-        }
-      ]
-    });
-  }
-  /**
-   * Organize and classify Items for Character sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareVillainItems(e, t) {
-    t.villainy = e.document.system.villainy, t.advantages = m(e, "advantage"), t.artifacts = m(e, "artifact"), t.sorcery = m(e, "sorcery"), t.schemes = m(e, "scheme"), t.virtues = m(e, "virtue"), t.hubriss = m(e, "hubris"), t.monsterqualities = m(e, "monsterquality"); t.duelstyles = m(e, "duelstyle");
-  }
-}
-class Se extends Item {
-  /**
-   * Augment the basic Item data model with additional dynamic data.
-   */
-  prepareData() {
-    super.prepareData();
-    const e = this.system;
-    this.type === p.SCHEME ? this._prepareSchemeData(e) : e.type === p.ADVANTAGE && this._prepareAdvantageData(e);
-  }
-  /**
-   * Prepare an object of chat data used to display a card for the Item in the chat log
-   * @param {Object} htmlOptions    Options used by the TextEditor.enrichHTML function
-   * @return {Object}               An object of chat data to render
-   */
-  async getChatData(e) {
-    const t = foundry.utils.duplicate(this.system);
-    t.metadatahtml = "", t.description = await TextEditor.enrichHTML(t.description, {
-      htmlOptions: e,
-      async: !0
-    });
-    const s = this[`_${this.type}ChatData`];
-    return s && s.bind(this)(t, e), t;
-  }
-  /**
-   * Prepare chat data for an advantage
-   * @param {Object} data    Options used by the TextEditor.enrichHTML function
-   * @return {Object}               An object of chat data to render
-   */
-  _advantageChatData(e, t) {
-    const s = e.cost.normal === 1 ? game.i18n.localize("SVNSEA2E.Point") : game.i18n.localize("SVNSEA2E.Points");
-    return e.metadatahtml = `<ul class="details-list"><li class="tag">${e.cost.normal} ${s}</li>`, e.metadatahtml += e.cost.specreq ? '<li class="tag">' + e.cost.specreq + "</li>" : "", e.metadatahtml += e.knack ? '<li class="tag">' + game.i18n.localize("SVNSEA2E.Knack") + "</li>" : "", e.metadatahtml += e.innate ? '<li class="tag">' + game.i18n.localize("SVNSEA2E.Innate") + "</li>" : "", e.metadatahtml += "</ul>", e;
-  }
-  _artifactChatData(e, t) {
-    const s = e.artifactType === "none" ? "" : CONFIG.SVNSEA2E.artifactTypes[e.artifactType];
-    return e.metadatahtml = `<ul class="details-list"><li class="tag">${s}</li></ul>`, e;
-  }
-  _backgroundChatData(e, t) {
-    let s = "";
-    e.skills.forEach(
-      (n) => s += `<li class="tag">${CONFIG.SVNSEA2E.skills[n]}</li>`
-    );
-    let a = "";
-    for (let n = 0; n < e.advantages.length; n++)
-      a += `<li class="tag">${e.advantages[n]}</li>`;
-    return e.metadatahtml = `<h5>${game.i18n.localize("SVNSEA2E.Quirk")}</h5>
-    <p>${e.quirk}</p>
-    <h5>${game.i18n.localize("SVNSEA2E.Skills")}</h5>
-    <ul class="skills-list">
-    ${s}
-    </ul>
-    <h5>${game.i18n.localize("SVNSEA2E.Advantages")}</h5>
-    <ul class="advantages-list">
-    ${a}
-    </ul>
-`, e;
-  }
-  _duelstyleChatData(e, t) {
-    return e.metadatahtml = `
-    <h5>${game.i18n.format("SVNSEA2E.Bonus")}</h5>
-    <p>${e.bonus}</p>
-      `, e;
-  }
-  _schemeChatData(e, t) {
-    return e.metadatahtml = "<p>" + game.i18n.format("SVNSEA2E.ChatInfluence", {
-      influence: e.influence.toString()
-    }) + "</p>", e;
-  }
-  _secretsocietyChatData(e, t) {
-    return e.metadatahtml = `
-    <h5>${game.i18n.localize("SVNSEA2E.Concern")}</h5>
-    <p>${e.concern}</p>
-    <h5>${game.i18n.localize("SVNSEA2E.EarnFavor")}</h5>
-    <p>${e.earnfavor}</p>
-    <h5>${game.i18n.localize("SVNSEA2E.UseFavor")}</h5>
-    <p>${e.callupon}</p>
-`, e;
-  }
-  _sorceryChatData(e, t) {
-    return e.metadatahtml = `
-    <ul class="tag-list">
-    <li class="tag">${CONFIG.SVNSEA2E.sorceryTypes[e.sorctype]}</li>
-    <li class="tag">${CONFIG.SVNSEA2E.sorcerySubcats[e.sorcsubcat]} ${CONFIG.SVNSEA2E.sorceryCats[e.sorccat]}</li>
-    <li class="tag">${game.i18n.localize("SVNSEA2E.Duration")}: ${CONFIG.SVNSEA2E.durations[e.sorcdur]}</li>
-    </ul>
-`, e;
-  }
-  _storyChatData(e, t) {
-    return e.metadatahtml = `
-    <h5>${game.i18n.localize("SVNSEA2E.Status")}</h5>
-    <p>${CONFIG.SVNSEA2E.storyStatuses[e.status]}</p>
-    <h5>${game.i18n.localize("SVNSEA2E.Endings")}</h5>
-    <p>${e.endings}</p>
-    <h5>${game.i18n.localize("SVNSEA2E.Steps")}</h5>
-    <p>${e.steps}</p>
-    <h5>${game.i18n.localize("SVNSEA2E.Reward")}</h5>
-    <p>${e.reward}</p>
-`, e;
-  }
-  _validateMinMaxData(e, t, s) {
-    return e > s ? s : e < t ? t : e;
-  }
-  /**
-   * Prepare advantage type specific data
-   */
-  _prepareAdvantageData(e) {
-    e.cost.norm = this._validateMinMaxData(
-      e.cost.norm,
-      e.cost.min,
-      e.cost.max
-    );
-  }
-  /**
-   * Prepare scheme type specific data
-   */
-  _prepareSchemeData(e) {
-    e.influence.value = this._validateMinMaxData(
-      e.influence.value,
-      e.influence.min,
-      e.influence.max
-    );
-  }
-
-  async ItemThrow() {
-    const itemData = await this.getChatData();
-
-    // Mapeo de plantillas (ajustado a las rutas de tu sistema)
-    const templates = {
-      "advantage": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
-      "background": 'systems/svnsea2e/templates/items/parts/skill-throw-background.hbs',
-      "sorcery": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
-      "secretsociety": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
-      "story": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
-      "duelstyle": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
-      "artifact": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
-      "virtue": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
-      "hubris": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
-      "scheme": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
-      "monsterquality": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs'
-    };
-
-    const template = templates[this.type] || templates["advantage"];
-
-    const chatData = {
-      user: game.user.id,
-      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      content: await renderTemplate(template, {
-        ...itemData,
-        name: this.name,
-        img: this.img,
-        item: this // Para compatibilidad con {{item.name}} en tus .hbs [cite: 5]
-      }),
-      type: CONST.CHAT_MESSAGE_STYLES.OTHER,
-      roll: true
-    };
-
-    return ChatMessage.create(chatData);
-  }
-}
-
-class zt extends FormApplication {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      id: "skill-selector",
-      classes: ["svnsea2e"],
-      title: game.i18n.localize("SVNSEA2E.BackgroundSkillSelect"),
-      template: "systems/svnsea2e/templates/apps/skill-selector.hbs",
-      width: 320,
-      height: "auto",
-      choices: {},
-      minimum: 0,
-      maximum: null
-    });
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  getData() {
-    const e = this.object.system.skills, t = foundry.utils.duplicate(this.options.choices);
-    for (const [s, a] of Object.entries(t))
-      t[s] = {
-        label: a,
-        chosen: e ? e.includes(s) : !1
-      };
-    return {
-      choices: t
-    };
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  _updateObject(e, t) {
-    const s = {}, a = [];
-    for (const [n, r] of Object.entries(t))
-      r && a.push(n);
-    if (s["system.skills"] = a, this.options.minimum && a.length < this.options.minimum)
-      return ui.notifications.error(
-        game.i18n.format("SVNSEA2E.AtLeastOptions", {
-          min: this.options.minimum
-        })
-      );
-    if (this.options.maximum && a.length > this.options.maximum)
-      return ui.notifications.error(
-        game.i18n.format("SVNSEA2E.AtLeastOptions", {
-          max: this.options.maximum
-        })
-      );
-    this.object.update(s);
-  }
-}
-class Bt extends FormApplication {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      id: "advantage-selector",
-      classes: ["svnsea2e"],
-      title: game.i18n.localize("SVNSEA2E.BackgroundAdvantageSelect"),
-      template: "systems/svnsea2e/templates/apps/advantage-selector.hbs",
-      width: 320,
-      height: "auto",
-      choices: {},
-      minimum: 0,
-      maximum: null
-    });
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  getData() {
-    const e = this.object.system.advantages, t = foundry.utils.duplicate(this.options.choices);
-    for (const [s, a] of Object.entries(t))
-      t[s] = {
-        label: a,
-        chosen: e ? e.includes(a) : !1
-      };
-    return {
-      choices: t
-    };
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  _updateObject(e, t) {
-    const s = {}, a = [];
-    for (const [n, r] of Object.entries(t))
-      r && a.push(n);
-    if (s["system.advantages"] = a, this.options.minimum && a.length < this.options.minimum)
-      return ui.notifications.error(
-        game.i18n.format("SVNSEA2E.AtLeastOptions", {
-          min: this.options.minimum
-        })
-      );
-    if (this.options.maximum && a.length > this.options.maximum)
-      return ui.notifications.error(
-        game.i18n.format("SVNSEA2E.AtLeastOptions", {
-          max: this.options.maximum
-        })
-      );
-    this.object.update(s);
-  }
-}
-class I extends ItemSheet {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["svnsea2e", "sheet", "item"],
-      width: 600,
-      height: 700
-    });
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  getData(e) {
-    const s = super.getData(e).document, a = s.system, { isOwner: n } = this.document, r = {
-      owner: n,
-      itemType: h.itemTypes[s.type],
-      options: this.options,
-      editable: this.isEditable,
-      cssClass: n ? "editable" : "locked",
-      config: CONFIG.SVNSEA2E,
-      dtypes: ["String", "Number", "Boolean"],
-      name: s.name,
-      img: s.img,
-      type: s.type,
-      infosource: a.infosource,
-      description: a.description,
-      quirk: a.quirk
-    };
-    return s.type === "background" ? (r.selectedskills = a.skills.map(
-      (o) => CONFIG.SVNSEA2E.skills[o]
-    ), r.selectedadvantages = a.advantages, r.nation = a.nation) : s.type === "advantage" ? (r.normalCost = a.cost.normal, r.reducedCost = a.cost.reducecost, r.knack = a.knack, r.innate = a.innate) : s.type === "duelstyle" ? r.bonus = a.bonus : s.type === "scheme" ? r.influence = a.influence : s.type === "secretsociety" ? (r.concern = a.concern, r.favor = a.favor, r.earnFavor = a.earnfavor, r.callUpon = a.callupon) : s.type === "sorcery" ? (r.sorceryType = a.sorctype, r.sorceryDuration = a.sorcdur, r.sorceryCategory = a.sorccat, r.sorcerySubCategory = a.sorcsubcat) : s.type === "story" ? (r.storyStatus = a.status, r.reward = a.reward, r.endings = a.endings, r.steps = a.steps) : s.type === "artifact" && (r.artifactType = a.artifactType), r;
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  setPosition(e = {}) {
-    const t = super.setPosition(e), s = this.element.find(".sheet-body"), a = t.height - 192;
-    return s.css("height", a), t;
-  }
-  /* -------------------------------------------- */
-  /** @override */
-  activateListeners(e) {
-    super.activateListeners(e), e.find(".skill-selector").on("click", this._onSkillSelector.bind(this)), e.find(".advantage-selector").on("click", this._onAdvantageSelector.bind(this));
-  }
-  /* -------------------------------------------- */
-  _advCompare(e, t) {
-    for (const s in e)
-      if (e[s] === t)
-        return !0;
-    return !1;
-  }
-  async _getAllAdvantages() {
-    const e = [];
-    
-    // PASO 1: Buscar en los Items sueltos del mundo
-    // CORRECCIÓN: Usar .contents en lugar de .directory.documents
-    const t = game.items.contents; 
-    
-    // Verificamos que 't' exista antes de intentar leer su .length
-    if (t) {
-      for (let r = 0; r < t.length; r++) {
-        if (t[r].type === "advantage") {
-          e.push(t[r].name);
-        }
-      }
-    }
-      
-    // PASO 2: Buscar en los Compendios (Packs)
-    const s = Array.from(game.packs); 
-    const a = foundry.utils.duplicate(e);
-    
-    for (var n = 0; n < s.length; n++) {
-      const r = s[n];
-      if (r.metadata.type === "Item" || r.metadata.entity === "Item") {
-        const o = await r.getIndex();
-        for (let d = 0; d < o.length; d++) {
-          const doc = await r.getDocument(o[d]._id);
-          if (doc && doc.type === "advantage" && !a.includes(doc.name)) {
-            e.push(doc.name);
-          }
-        }
-      }
-    }
-    
-    return e;
-  }
-  /* -------------------------------------------- */
-  /**
-   * Handle spawning the skillSelector application which allows a checkbox of multiple skill options
-   * @param {Event} event   The click event which originated the selection
-   * @private
-   */
-  _onSkillSelector(e) {
-    e.preventDefault();
-    const t = e.currentTarget, s = {
-      title: game.i18n.localize("SVNSEA2E.Skills"),
-      choices: CONFIG.SVNSEA2E[t.dataset.options]
-    };
-    new zt(this.item, s).render(!0);
-  }
-  /* -------------------------------------------- */
-  /**
-   * Handle spawning the advantageSelector application which allows a checkbox of multiple advantage options
-   * @param {Event} event   The click event which originated the selection
-   * @private
-   */
-  async _onAdvantageSelector(e) {
-    e.preventDefault();
-    const t = {
-      title: game.i18n.localize("SVNSEA2E.Advantages"),
-      choices: await this._getAllAdvantages()
-    };
-    new Bt(this.item, t).render(!0);
-  }
-}
-class Ut extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/advantage.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-class Yt extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/artifact.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-class Wt extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/background.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-class Kt extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/duelstyle.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-class Qt extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/monsterquality.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-class Jt extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/scheme.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-class Xt extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/secretsociety.hbs",
-      width: 800,
-      height: 700,
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-class Zt extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/shipadventure.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-class es extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/shipbackground.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-class ts extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/sorcery.hbs",
-      width: 750,
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-class ss extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/story.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-function as() {
-  // Listener original para el botón de iniciativa
-  $(document).on("click", ".initiative-tracker-add", is);
-
-  // NUEVO: Listener manual para nuestro acordeón de dados
-  $(document).on("click", ".svnsea-dice-total", function (e) {
-    e.preventDefault();
-    // Busca la caja de detalles justo debajo del título y la desliza
-    $(this).siblings(".svnsea-dice-tooltip").slideToggle(200);
-  });
-}
-function is(i) {
-  i.stopPropagation(); 
-  i.preventDefault();
-  console.log("7th Sea 2E | Add to initiative tracker");
-  const e = i.currentTarget.dataset;
-  Q(e.actor, e.raise);
-}
-class ns extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/arcana.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-class rs extends I {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      template: "systems/svnsea2e/templates/items/arcana.hbs",
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "description"
-        }
-      ]
-    });
-  }
-}
-const fe = async function () {
+async function migrateWorld(migrations2) {
   ui.notifications.info(
     `Applying 7th Sea 2E System Migration for version ${game.system.version}. Please be patient and do not close your game or shut down your server.`,
-    {
-      permanent: !0
-    }
+    { permanent: true }
   );
-  for (const e of game.actors.values())
+  for (const migration of migrations2) migration.prepare?.();
+  const actorUpdate = (actor) => collectUpdates(migrations2, "actor", actor);
+  const itemUpdate = (item) => collectUpdates(migrations2, "item", item);
+  const migrateItem = async (item) => {
+    await applyUpdate(item, itemUpdate(item));
+    await runSteps(migrations2, "afterItem", item);
+  };
+  const migrateActor = async (actor) => {
+    await applyUpdate(actor, actorUpdate(actor));
+    const itemUpdates = actor.items.map((item) => ({ ...itemUpdate(item), _id: item.id })).filter((u) => Object.keys(u).length > 1);
+    if (itemUpdates.length) await actor.updateEmbeddedDocuments("Item", itemUpdates);
+    await runSteps(migrations2, "afterActor", actor);
+  };
+  for (const actor of game.actors) await migrateActor(actor);
+  for (const item of game.items) await migrateItem(item);
+  for (const scene of game.scenes) {
+    for (const token of scene.tokens) {
+      if (!token.actorLink && token.actor) await runSteps(migrations2, "afterActor", token.actor);
+    }
+  }
+  for (const pack of game.packs) {
+    if (pack.metadata.packageType !== "world" || !["Actor", "Item"].includes(pack.documentName)) continue;
+    const wasLocked = pack.locked;
+    await pack.configure({ locked: false });
+    for (const doc of await pack.getDocuments()) {
+      if (pack.documentName === "Actor") await migrateActor(doc);
+      else await migrateItem(doc);
+    }
+    await pack.configure({ locked: wasLocked });
+  }
+  ui.notifications.info(`7th Sea 2E System Migration to version ${game.system.version} completed!`, { permanent: true });
+}
+function collectUpdates(migrations2, kind, doc) {
+  return migrations2.reduce((update, m) => Object.assign(update, m[kind]?.call(m, doc) ?? {}), {});
+}
+async function runSteps(migrations2, kind, doc) {
+  for (const m of migrations2) {
+    if (!m[kind]) continue;
     try {
-      const t = Z(e);
-      foundry.utils.isEmpty(t) || (console.log(`Migrating Actor entity ${e.name}`), await e.update(t, {
-        enforceTypes: !1
-      }));
-    } catch (t) {
-      console.error(t);
+      await m[kind].call(m, doc);
+    } catch (err) {
+      console.error(`7th Sea 2E | Migration of ${doc.documentName} ${doc.name} failed`, err);
     }
-  for (const e of game.items.values())
-    try {
-      const t = ee(e);
-      foundry.utils.isEmpty(t) || (console.log(`Migrating Item entity ${e.name}`), await e.update(t, {
-        enforceTypes: !1
-      }));
-    } catch (t) {
-      console.error(t);
-    }
-  const i = game.packs.filter((e) => e.metadata.package === "world" && ["Actor", "Item", "Scene"].includes(e.metadata.entity));
-  for (let e of i)
-    await ye(e);
-  game.settings.set("svnsea2e", "systemMigrationVersion", game.system.version), ui.notifications.info(
-    `7th Sea 2E System Migration to version ${game.system.version} completed!`,
-    {
-      permanent: !0
-    }
-  );
-}, ye = async function (i) {
-  const e = i.metadata.entity;
-  if (["Actor", "Item", "Scene"].includes(e)) {
-    await i.migrate();
-    for (let t of i)
-      try {
-        let s = null;
-        e === "Item" ? s = ee(t.data) : e === "Actor" ? s = Z(t.data) : e === "Scene" && (s = Ae(t.data)), foundry.utils.isEmpty(s) || (expandObject(s), s._id = t._id, await i.updateEntity(s), console.log(
-          `Migrated ${e} entity ${t.name} in Compendium ${i.collection}`
-        ));
-      } catch (s) {
-        console.error(s);
-      }
-    console.log(
-      `Migrated all ${e} entities from Compendium ${i.collection}`
-    );
   }
-}, Z = function (i) {
-  const e = {};
-  return i.type === l.PLAYER && i.system.wealth == null && (e.wealth = 0), i.type !== l.DANGERPOINTS && i.type !== l.BRUTE && i.system.wounds.max != 20 && (e["wounds.max"] = 20), (i.type === l.PLAYER || i.type === l.HERO || i.type === l.VILLAIN) && i.system.nation === "rahuris" && (e.nation = "rahuri"), (i.type === l.VILLAIN || i.type === l.MONSTER) && i.system.traits.strength.max != 10 && (e["traits.strength.max"] = 20, e["traits.influence.max"] = 20, e["traits.influence.min"] = 0), i.type === l.BRUTE && (e["traits.strength.max"] = 20), i.type === l.DANGERPOINTS && i.system.points < 5 && (e.points = 5), i.type === l.MONSTER && i.system.fear.max != 5 && (e["fear.value"] = 0, e["fear.min"] = 0, e["fear.max"] = 5), i.type === l.SHIP && i.system.crewstatus == null && (i.system.crewstatus == null && (e.crewstatus = ""), aactor.system.wealth == null && (e.wealth = "0")), (i.type === l.PLAYER || i.type === l.HERO || i.type === l.VILLAIN) && i.system.arcana && (Ne(i), be(i), i.update({ data: { arcana: null } })), e;
-}, ee = function (i) {
-  const e = {};
-  return i.type === "secretsociety" && typeof i.system.favor > "u" && (e.favor = 0), i.type === "story" && typeof i.system.status > "u" && (e.status = ""), e;
-}, Ae = function (i) {
-  return {};
-}, Ne = function (i) {
-  const e = i.system.arcana.virtue;
-  if (e.name) {
-    const t = {
-      name: e.name,
-      img: "systems/svnsea2e/icons/virtue.jpg",
-      type: "virtue",
-      data: {
-        description: e.description
-      }
-    };
-    i.document.createEmbeddedDocuments("Item", [t]);
+}
+async function applyUpdate(doc, update) {
+  if (foundry.utils.isEmpty(update)) return;
+  try {
+    console.log(`7th Sea 2E | Migrating ${doc.documentName} ${doc.name}`);
+    await doc.update(update, { diff: false });
+  } catch (err) {
+    console.error(err);
   }
-}, be = function (i) {
-  const e = i.system.arcana.hubris;
-  if (e.name) {
-    const t = {
-      name: e.name,
-      img: "systems/svnsea2e/icons/hubris.jpg",
-      type: "hubris",
-      data: {
-        description: e.description
-      }
-    };
-    i.document.createEmbeddedDocuments("Item", [t]);
-  }
-}, os = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+}
+const migrations = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  migrateActorData: Z,
-  migrateCompendium: ye,
-  migrateHubris: be,
-  migrateItemData: ee,
-  migrateSceneData: Ae,
-  migrateVirtue: Ne,
-  migrateWorld: fe
-}, Symbol.toStringTag, { value: "Module" })), ls = "system.svnsea2e", cs = {
-  characterChange: "characterChanged"
+  MIGRATIONS,
+  migrateWorldIfNeeded
+}, Symbol.toStringTag, { value: "Module" }));
+const raisesRound = (combat) => Math.max(combat.round ?? 0, 1);
+const actsFirstOnTies = (combatant) => {
+  const actor = combatant.actor;
+  return !!(actor?.system?.isVillain || actor?.type === ActorType.BRUTE);
 };
-function us() {
-  game.svnsea2e.toolbox.refresh(), game.socket.emit(ls, {
-    type: cs.characterChange
+function compareTurns(a, ia, b, ib) {
+  ia = Number.isFinite(ia) ? ia : -Infinity;
+  ib = Number.isFinite(ib) ? ib : -Infinity;
+  return ib - ia || Number(actsFirstOnTies(b)) - Number(actsFirstOnTies(a)) || (a.name ?? "").localeCompare(b.name ?? "") || (a.id > b.id ? 1 : -1);
+}
+class SvnSea2ECombat extends Combat {
+  /** @override Called unbound by Combat#setupTurns. */
+  _sortCombatants(a, b) {
+    return compareTurns(a, a.initiative, b, b.initiative);
+  }
+  /**
+   * Set the raises of some combatants (updates with `_id` and `initiative`).
+   * @param {object[]} updates
+   * @param {object} [options]
+   * @param {boolean} [options.keepTurn=true]   Keep the turn on the current combatant. Without it the turn keeps its
+   *   place: at the beginning of the round, the first one, on whoever has the most raises.
+   */
+  async updateRaises(updates, { keepTurn = true } = {}) {
+    if (!updates.length) return;
+    const options = { turnEvents: false };
+    if (!keepTurn && this.turn !== null) options.combatTurn = this.turn;
+    await this.updateEmbeddedDocuments("Combatant", updates, options);
+  }
+  /**
+   * The turn that keeps the current combatant after these changes of initiative, or null when nothing moves. Foundry
+   * keeps the turn index, so the turn would jump to whoever takes that place in the new order.
+   * @param {object[]} updates   Combatant changes with `_id`.
+   */
+  turnKeepingCurrent(updates) {
+    const current = this.combatant;
+    if (!current || this.turn === null || !updates.some((u) => "initiative" in u)) return null;
+    const values = new Map(updates.filter((u) => "initiative" in u).map((u) => [u._id, u.initiative]));
+    const value = (c) => values.has(c.id) ? values.get(c.id) : c.initiative;
+    const order = this.combatants.contents.sort((a, b) => compareTurns(a, value(a), b, value(b)));
+    const turn = order.findIndex((c) => c.id === current.id);
+    return turn === this.turn ? null : turn;
+  }
+  /** @override The raises come from the rolls of the system: Foundry's d20 initiative is not rolled. */
+  async rollInitiative() {
+    return this;
+  }
+  /** @override A new round clears the raises; the active GM does it, as a player may advance the round. */
+  _onUpdate(changed, options, userId) {
+    super._onUpdate(changed, options, userId);
+    if ("round" in changed && options.direction > 0 && changed.round > 1 && game.user.isActiveGM) this.clearRaises();
+  }
+  /** Clear the raises of every combatant. Their marks of having rolled belong to the past round: they no longer count. */
+  async clearRaises() {
+    const updates = this.combatants.filter((c) => c.initiative !== null).map((c) => ({ _id: c.id, initiative: null }));
+    await this.updateRaises(updates, { keepTurn: false });
+  }
+}
+class SvnSea2ECombatant extends Combatant {
+  /** @override Any change of raises (rolls, buttons, the tracker's own field) keeps the turn on the same combatant. */
+  static async _preUpdateOperation(documents, operation, user) {
+    const combat = operation.parent ?? documents[0]?.parent;
+    if (combat?.turnKeepingCurrent && operation.combatTurn === void 0) {
+      const turn = combat.turnKeepingCurrent(operation.updates ?? []);
+      if (turn !== null) operation.combatTurn = turn;
+    }
+    return super._preUpdateOperation(documents, operation, user);
+  }
+  /** The roll that set the raises of the current round, if any: `{round, message, raises}`. */
+  get raisesRoll() {
+    const roll = this.getFlag(SYSTEM_ID, "roll");
+    return roll && this.parent && roll.round === raisesRound(this.parent) ? roll : null;
+  }
+  /** @override Keep the copy of the raises on the actor (the token's actor when unlinked). */
+  _onUpdate(changed, options, userId) {
+    super._onUpdate(changed, options, userId);
+    if (userId !== game.user.id || !("initiative" in changed)) return;
+    const actor = this.actor;
+    const value = changed.initiative ?? 0;
+    if (actor?.isOwner && "initiative" in actor.system && actor.system.initiative !== value) {
+      actor.update({ "system.initiative": value });
+    }
+  }
+}
+function actorFrom(ref) {
+  if (!ref) return null;
+  if (typeof ref !== "string") return ref;
+  return ref.includes(".") ? fromUuidSync(ref) : game.actors.get(ref);
+}
+function combatantsOf(actor) {
+  return game.combats.filter((combat) => combat.active).flatMap((combat) => combat.combatants.filter((c) => c.isOwner && c.actor && (c.actor === actor || c.actor.uuid === actor.uuid)));
+}
+async function updateCombatants(updates, options) {
+  const byCombat = /* @__PURE__ */ new Map();
+  for (const [combatant, update] of updates) {
+    const combat = combatant.parent;
+    if (!byCombat.has(combat)) byCombat.set(combat, []);
+    byCombat.get(combat).push({ _id: combatant.id, ...update });
+  }
+  for (const [combat, list] of byCombat) await combat.updateRaises(list, options);
+}
+async function updateInitiative(actorRef, value, { message } = {}) {
+  const actor = actorFrom(actorRef);
+  let initiative = parseFloat(value);
+  if (!actor || Number.isNaN(initiative)) return;
+  initiative = Math.max(0, initiative);
+  const combatants = combatantsOf(actor);
+  if (!combatants.length) {
+    if (actor.isOwner && "initiative" in actor.system) await actor.update({ "system.initiative": initiative });
+    return;
+  }
+  await updateCombatants(
+    combatants.map((c) => {
+      const update = { initiative };
+      if (message) update[`flags.${SYSTEM_ID}.roll`] = { round: raisesRound(c.parent), message: message.id, raises: initiative };
+      return [c, update];
+    })
+  );
+}
+async function setRaisesFromRoll(actor, message) {
+  if (!actor || !message) return;
+  const raises = message.system.resolve().raises;
+  const combatants = combatantsOf(actor).filter((c) => !c.raisesRoll);
+  await updateCombatants(
+    combatants.map((c) => [
+      c,
+      { initiative: raises, [`flags.${SYSTEM_ID}.roll`]: { round: raisesRound(c.parent), message: message.id, raises } }
+    ]),
+    { keepTurn: false }
+  );
+}
+async function updateRaisesFromEdit(actor, message) {
+  if (!actor || !message) return;
+  const raises = message.system.resolve().raises;
+  const updates = [];
+  for (const combatant of combatantsOf(actor)) {
+    const roll = combatant.raisesRoll;
+    if (roll?.message !== message.id || roll.raises === raises) continue;
+    const initiative = Math.max(0, (combatant.initiative ?? 0) + raises - roll.raises);
+    updates.push([combatant, { initiative, [`flags.${SYSTEM_ID}.roll`]: { ...roll, raises } }]);
+  }
+  await updateCombatants(updates);
+}
+function onRenderCombatTracker(app, html) {
+  for (const action of ["rollAll", "rollNPC"]) {
+    const button = html.querySelector(`[data-action="${action}"]`);
+    if (!button) continue;
+    const spacer = document.createElement("div");
+    spacer.className = "spacer";
+    button.replaceWith(spacer);
+  }
+  const combat = app.viewed;
+  if (!combat) return;
+  for (const row of html.querySelectorAll(".combatant[data-combatant-id]")) {
+    const combatant = combat.combatants.get(row.dataset.combatantId);
+    const initiative = row.querySelector(".token-initiative");
+    if (!initiative || initiative.querySelector(".combat-btn, .no-raises")) continue;
+    initiative.querySelector('[data-action="rollInitiative"]')?.remove();
+    if (!Number.isFinite(combatant?.initiative)) {
+      const empty = document.createElement("span");
+      empty.className = "no-raises";
+      empty.textContent = "–";
+      initiative.append(empty);
+    }
+    if (!combatant?.actor || !combatant.isOwner) continue;
+    const makeButton = (delta) => {
+      const button = document.createElement("a");
+      button.className = `combat-btn ${delta > 0 ? "add" : "sub"}`;
+      button.dataset.tooltip = delta > 0 ? "+1 Raise" : "-1 Raise";
+      button.innerHTML = `<i class="fa-solid fa-${delta > 0 ? "plus" : "minus"}"></i>`;
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        combat.updateRaises([{ _id: combatant.id, initiative: Math.max(0, (combatant.initiative || 0) + delta) }]);
+      });
+      button.addEventListener("dblclick", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+      });
+      return button;
+    };
+    initiative.prepend(makeButton(-1));
+    initiative.append(makeButton(1));
+  }
+}
+function onGetCombatTrackerContextOptions(app, options) {
+  const index = options.findIndex((option) => option.label === "COMBATANT.ACTIONS.Reroll");
+  if (index >= 0) options.splice(index, 1);
+}
+function raisesPerCombo(threshold, increased) {
+  return threshold === 15 && !increased || threshold === 20 && increased ? 2 : 1;
+}
+function findComboIndices(dice, combo) {
+  const indices = [];
+  for (const value of combo) {
+    const index = dice.findIndex((die, i) => die.value === value && !indices.includes(i));
+    if (index === -1) return null;
+    indices.push(index);
+  }
+  return indices;
+}
+function groupDice(dice, target, increased) {
+  const pool = [...dice].sort((a, b) => b.value - a.value);
+  const result = { left: pool, combos: [], raises: 0 };
+  const findCombo = (exactOnly) => {
+    let bestOvershoot = Infinity;
+    let found = null;
+    const dfs = (index, sum, used) => {
+      if (sum === target) {
+        found = used;
+        return true;
+      }
+      if (!exactOnly && sum > target && sum < bestOvershoot) {
+        bestOvershoot = sum;
+        found = used;
+        return false;
+      }
+      if (sum >= target || index >= pool.length) return false;
+      if (dfs(index + 1, sum + pool[index].value, [...used, index])) return true;
+      return dfs(index + 1, sum, used);
+    };
+    dfs(0, 0, []);
+    if (!found) return null;
+    const combo = found.map((i) => pool[i].value);
+    for (let j = found.length - 1; j >= 0; j--) pool.splice(found[j], 1);
+    return combo;
+  };
+  for (const exactOnly of [true, false]) {
+    let combo;
+    while ((combo = findCombo(exactOnly)) !== null) {
+      result.combos.push(combo.sort((a, b) => a - b).join(" + "));
+      result.raises += raisesPerCombo(target, increased);
+    }
+  }
+  return result;
+}
+const byValue = (a, b) => a.value - b.value;
+function resolveDice(input, tables = SVNSEA2E) {
+  const { addOne, joieRank = 0, reroll, rerollFace = null } = input;
+  const increased = !!input.increaseThreshold;
+  const valueOf = (face2) => face2 <= joieRank ? 10 : addOne ? face2 + 1 : face2;
+  const dice = input.faces.map((face2) => ({ face: face2, value: valueOf(face2) })).sort(byValue);
+  const target = input.threshold + (increased ? 5 : 0);
+  const matches = target === 15 ? tables.match15 : target === 20 ? tables.match20 : tables.match10;
+  let raises = 0;
+  const combos = [];
+  const takeTens = () => {
+    if (target !== 10) return;
+    for (let i = dice.length - 1; i >= 0 && dice[i].value >= 10; i--) {
+      raises++;
+      combos.push(String(dice[i].value));
+      dice.splice(i, 1);
+    }
+  };
+  takeTens();
+  for (const combo of [...matches.two, ...matches.three]) {
+    let indices;
+    while (indices = findComboIndices(dice, combo)) {
+      raises += raisesPerCombo(target, increased);
+      combos.push(indices.map((i) => dice[i].value).join(" + "));
+      for (const i of indices.sort((a, b) => b - a)) dice.splice(i, 1);
+    }
+  }
+  let rerolled = null;
+  if (dice.length > 0 && reroll) {
+    if (rerollFace === null) return { needsReroll: true, target };
+    rerolled = { from: dice[0].face, to: rerollFace };
+    dice[0] = { face: rerollFace, value: valueOf(rerollFace) };
+    dice.sort(byValue);
+  }
+  takeTens();
+  let grouped = groupDice(dice, target, increased);
+  combos.push(...grouped.combos);
+  raises += grouped.raises;
+  if (grouped.left.length > 0 && (!increased && target === 15 || increased && target === 20)) {
+    const lower = groupDice(grouped.left, target - 5, increased);
+    combos.push(...lower.combos);
+    raises += lower.raises;
+    grouped = lower;
+  }
+  const faces = [...input.faces];
+  if (rerolled) faces[faces.indexOf(rerolled.from)] = rerolled.to;
+  return {
+    needsReroll: false,
+    target,
+    raises,
+    combos,
+    unused: grouped.left.map((die) => die.value),
+    faces: faces.sort((a, b) => a - b),
+    rerolled
+  };
+}
+function explosionDice(dice, explosions) {
+  let pending = dice.filter((face2) => face2 === 10).length;
+  const used = [];
+  for (const face2 of explosions) {
+    if (pending === 0) break;
+    used.push(face2);
+    pending += face2 === 10 ? 0 : -1;
+  }
+  return { used, missing: pending };
+}
+const ROLL_MESSAGE = "roll";
+const ROLL_CARD = `${TEMPLATES}/chats/roll-card.hbs`;
+const EDIT_DIALOG = `${TEMPLATES}/chats/edit-roll-dialog.hbs`;
+const { ArrayField: ArrayField$2, BooleanField: BooleanField$2, NumberField: NumberField$2, SchemaField: SchemaField$2, StringField: StringField$2 } = foundry.data.fields;
+const count = (options = {}) => new NumberField$2({ required: true, nullable: false, integer: true, min: 0, initial: 0, ...options });
+const face = () => new NumberField$2({ required: true, nullable: false, integer: true, min: 1, max: 10 });
+class RollMessageModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      kind: new StringField$2({ required: true, choices: ["skill", "trait", "free"], initial: "free" }),
+      pool: new SchemaField$2({
+        skill: count(),
+        trait: count(),
+        // The free roll keeps its number of dice here. Negative to take dice away.
+        bonus: new NumberField$2({ required: true, nullable: false, integer: true, initial: 0 }),
+        flair: new BooleanField$2(),
+        interpretation: new BooleanField$2(),
+        heroPoints: count(),
+        // Hero points given by other heroes: 3 dice each.
+        helpers: count(),
+        wound: count()
+      }),
+      threshold: new NumberField$2({ required: true, nullable: false, integer: true, choices: [10, 15], initial: 10 }),
+      increaseThreshold: new BooleanField$2(),
+      addOne: new BooleanField$2(),
+      explode: new BooleanField$2(),
+      reroll: new BooleanField$2(),
+      joieDeVivre: new BooleanField$2(),
+      joieRank: count({ max: 5 }),
+      // Faces in the order they were rolled. Explosions apart: they only count while `explode` is on.
+      dice: new ArrayField$2(face()),
+      explosions: new ArrayField$2(face()),
+      rerollFace: new NumberField$2({ required: true, nullable: true, integer: true, min: 1, max: 10, initial: null }),
+      edited: new BooleanField$2()
+    };
+  }
+  /** Number of dice of the pool, without explosions. */
+  get poolSize() {
+    return poolSize(this);
+  }
+  /** The raises, sets and leftover dice of the roll. */
+  resolve() {
+    return resolveRoll(this);
+  }
+}
+function poolSize({ pool }) {
+  return pool.skill + pool.trait + pool.bonus + pool.wound + (pool.flair ? 1 : 0) + (pool.interpretation ? 1 : 0) + pool.heroPoints + pool.helpers * 3;
+}
+function resolveRoll(data) {
+  return resolveDice({
+    faces: [...data.dice, ...data.explode ? explosionDice(data.dice, data.explosions).used : []],
+    threshold: data.threshold,
+    increaseThreshold: data.increaseThreshold,
+    addOne: data.addOne,
+    joieRank: data.joieDeVivre ? data.joieRank : 0,
+    reroll: data.reroll,
+    rerollFace: data.rerollFace
   });
 }
-class ds extends FormApplication {
-  /**
-   * Constructor
-   * @param {ApplicationOptions} options
-   */
-  constructor(t = {}) {
-    super(t);
-    /**
-     * Settings
-     */
-    ie(this, "object", {});
-    this._initialize();
+async function rollD10s(count2) {
+  const roll = await new foundry.dice.Roll(`${count2}d10`).evaluate();
+  return { roll, faces: roll.dice[0].results.map((r) => r.result) };
+}
+async function completeDice(data) {
+  const rolls = [];
+  const roll = async (count2) => {
+    const result = await rollD10s(count2);
+    rolls.push(result.roll);
+    return result.faces;
+  };
+  const size = poolSize(data);
+  if (data.dice.length > size) data.dice = data.dice.slice(0, size);
+  else if (data.dice.length < size) data.dice = [...data.dice, ...await roll(size - data.dice.length)];
+  if (data.explode) {
+    let missing;
+    while ((missing = explosionDice(data.dice, data.explosions).missing) > 0) data.explosions = [...data.explosions, ...await roll(missing)];
+    data.explosions = explosionDice(data.dice, data.explosions).used;
+  } else data.explosions = [];
+  const needs = resolveRoll({ ...data, rerollFace: null }).needsReroll;
+  if (!needs) data.rerollFace = null;
+  else if (data.rerollFace === null) [data.rerollFace] = await roll(1);
+  return rolls;
+}
+async function renderRollCard(data, actorUuid) {
+  const i18n = game.i18n;
+  const result = resolveRoll(data);
+  const joieRank = data.joieDeVivre ? data.joieRank : 0;
+  const explosions = data.explode ? explosionDice(data.dice, data.explosions).used.length : 0;
+  let threshold = String(result.target);
+  if (data.increaseThreshold) threshold += ` ${i18n.localize("SVNSEA2E.GMIncreasedThreshold")}`;
+  return foundry.applications.handlebars.renderTemplate(ROLL_CARD, {
+    actorUuid,
+    raises: result.raises,
+    raisetxt: i18n.localize(result.raises > 1 ? "SVNSEA2E.Raises" : "SVNSEA2E.Raise"),
+    unusedDice: result.unused.length,
+    unusedDiceTxt: i18n.localize(result.unused.length > 1 ? "SVNSEA2E.UnusedDice" : "SVNSEA2E.UnusedDie"),
+    dice: result.faces.map((face2) => ({ face: face2, joie: face2 <= joieRank })),
+    combos: result.combos,
+    unusedRolls: result.unused,
+    reroll: result.rerolled && i18n.format("SVNSEA2E.Reroll", { roll1: result.rerolled.from, roll2: result.rerolled.to }),
+    exploded: data.explode,
+    extraDice: explosions,
+    addOne: data.addOne,
+    joie: joieRank > 0 && i18n.format("SVNSEA2E.JoieDiceCount", { rank: joieRank }),
+    threshold: i18n.format("SVNSEA2E.RollThreshold", { threshold }),
+    edited: data.edited
+  });
+}
+function canEditRoll(message, user = game.user) {
+  return message?.type === ROLL_MESSAGE && (user.isGM || message.isAuthor) && message.isContentVisible;
+}
+async function editRoll(message) {
+  if (!canEditRoll(message)) return false;
+  const source = message.system.toObject();
+  const content = await foundry.applications.handlebars.renderTemplate(EDIT_DIALOG, {
+    data: source,
+    free: source.kind === "free",
+    thresholds: { 10: "10", 15: "15" },
+    threshold: String(source.threshold)
+  });
+  const form = await foundry.applications.api.DialogV2.wait({
+    window: { title: game.i18n.localize("SVNSEA2E.EditRoll"), icon: "fa-solid fa-pen-to-square" },
+    classes: ["svnsea2e", "roll-dialog", "themed", "theme-light"],
+    position: { width: 420 },
+    content,
+    buttons: [
+      { action: "save", label: game.i18n.localize("Save"), icon: "fa-solid fa-floppy-disk", default: true, callback: (event, button) => button.form },
+      { action: "cancel", label: game.i18n.localize("Cancel"), callback: () => null }
+    ],
+    rejectClose: false
+  });
+  if (!form) return false;
+  const data = { ...source, ...readEditForm(form), edited: true };
+  if (poolSize(data) < 1) {
+    ui.notifications.warn(game.i18n.localize("SVNSEA2E.NoDiceToRoll"));
+    return false;
   }
-  /**
-   * Assign the default options
-   * @override
-   */
-  static get defaultOptions() {
-    const t = $(window).width();
-    return $(window).height(), foundry.utils.mergeObject(super.defaultOptions, {
-      id: "svnsea-toolbox",
-      classes: ["toolbox"],
-      template: "systems/svnsea2e/templates/toolbox/toolbox.hbs",
-      title: game.i18n.localize("SVNSEA2E.Toolbox"),
-      left: t - 650,
-      top: 20,
-      width: 300,
-      closeOnSubmit: !1,
-      submitOnClose: !1,
-      submitOnChange: !0,
-      minimizable: !0,
-      resizable: !0,
-      dragDrop: [{ dropSelector: ".items" }]
-    });
+  const actor = ChatMessage.implementation.getSpeakerActor(message.speaker);
+  if (!await settleHeroPoints(actor, data.pool.heroPoints - source.pool.heroPoints)) return false;
+  const rolls = await completeDice(data);
+  await message.update({
+    system: data,
+    content: await renderRollCard(data, actor?.uuid ?? message.speaker.actor),
+    // Dice So Nice (6.x) shows only the rolls added to a message, and hides the card until they land.
+    ...rolls.length ? { rolls: [...message.rolls, ...rolls].map((roll) => JSON.stringify(roll)) } : {}
+  });
+  await updateRaisesFromEdit(actor, message);
+  return message;
+}
+async function settleHeroPoints(actor, spent) {
+  if (!spent || !actor || actor.system.isVillain || !("heropts" in actor.system)) return true;
+  const available = actor.system.heropts || 0;
+  if (spent > available) {
+    ui.notifications.error(game.i18n.localize("SVNSEA2E.NotEnoughHero"));
+    return false;
   }
-  /**
-   * Refresh data (used from socket)
-   */
-  async refresh() {
-    game.user.isGM && (this.object.showActors = this.object.items.map(
-      (t) => game.actors.find((s) => `Actor.${s.id}` === t)
-    ), this.render(!1));
+  await actor.update({ "system.heropts": available - spent });
+  return true;
+}
+function readEditForm(form) {
+  const el = form.elements;
+  const num = (name, min = 0) => Math.max(parseInt(el[name]?.value) || 0, min);
+  const bool = (name) => !!el[name]?.checked;
+  return {
+    pool: {
+      skill: num("skill"),
+      trait: num("trait"),
+      bonus: num("bonus", -Infinity),
+      flair: bool("flair"),
+      interpretation: bool("interpretation"),
+      heroPoints: num("heroPoints"),
+      helpers: num("helpers"),
+      wound: num("wound")
+    },
+    threshold: num("threshold") === 15 ? 15 : 10,
+    increaseThreshold: bool("increaseThreshold"),
+    addOne: bool("addOne"),
+    explode: bool("explode"),
+    reroll: bool("reroll"),
+    joieDeVivre: bool("joieDeVivre"),
+    joieRank: Math.min(num("joieRank"), 5)
+  };
+}
+function onGetChatMessageContextOptions(app, options) {
+  options.push({
+    label: "SVNSEA2E.EditRoll",
+    icon: "fa-solid fa-pen-to-square",
+    visible: (li) => canEditRoll(game.messages.get(li.dataset.messageId)),
+    onClick: (event, li) => editRoll(game.messages.get(li.dataset.messageId))
+  });
+}
+function registerChatListeners() {
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest?.(".initiative-tracker-add");
+    if (!button) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const message = game.messages.get(button.closest("[data-message-id]")?.dataset.messageId);
+    if (message?.type === ROLL_MESSAGE) updateInitiative(button.dataset.actor, message.system.resolve().raises, { message });
+    else updateInitiative(button.dataset.actor, button.dataset.raise);
+  });
+}
+function onRenderChatMessage(message, html) {
+  const color = message.author?.color;
+  if (!color) return;
+  html.style.setProperty("--svnsea-author-color", color.css);
+  html.style.setProperty("--svnsea-author-text", isLight(color) ? "#000" : "#fff");
+}
+function isLight(color) {
+  const [r, g, b] = color.rgb.map((c) => c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.179;
+}
+const { ApplicationV2: ApplicationV2$1, DialogV2: DialogV2$1, HandlebarsApplicationMixin: HandlebarsApplicationMixin$3 } = foundry.applications.api;
+const { getProperty } = foundry.utils;
+const COLUMNS = [
+  { key: "raises", path: "initiative", icon: "fa-star-of-life", label: "SVNSEA2E.Initiative" },
+  { key: "heropts", path: "heropts", icon: "fa-sun", label: "SVNSEA2E.HeroPoints" },
+  { key: "wounds", path: "wounds.value", max: "wounds.max", icon: "fa-heart", label: "SVNSEA2E.Wounds" },
+  { key: "dwounds", path: "dwounds.value", max: "dwounds.max", icon: "fa-heart-crack", label: "SVNSEA2E.DramaWounds" },
+  { key: "points", path: "points", icon: "fa-skull", label: "SVNSEA2E.DangerPoints", fixed: true }
+];
+class Toolbox extends HandlebarsApplicationMixin$3(ApplicationV2$1) {
+  static DEFAULT_OPTIONS = {
+    id: "svnsea-toolbox",
+    classes: ["svnsea2e", "toolbox", "themed", "theme-dark"],
+    window: {
+      title: "SVNSEA2E.Toolbox",
+      minimizable: true,
+      resizable: true,
+      controls: [{ icon: "fa-solid fa-gear", label: "SVNSEA2E.ToolboxConfigure", action: "configure" }]
+    },
+    position: { top: 20, width: 420, height: "auto" },
+    actions: {
+      adjust: Toolbox.#onAdjust,
+      configure: Toolbox.#onConfigure,
+      openSheet: Toolbox.#onOpenSheet,
+      removeActor: Toolbox.#onRemoveActor
+    }
+  };
+  static PARTS = {
+    items: { template: `${TEMPLATES}/toolbox/toolbox.hbs` }
+  };
+  /** UUIDs of the actors shown in the toolbox. */
+  get actorUuids() {
+    return game.settings.get(SYSTEM_ID, "toolboxActors") ?? [];
   }
-  /**
-   * Initialize the values
-   * @private
-   */
-  _initialize() {
-    this.object = {
-      items: []
-    };
+  async _setActorUuids(uuids) {
+    await game.settings.set(SYSTEM_ID, "toolboxActors", uuids);
+    this.render();
   }
-  /**
-   * @override
-   */
-  render(t = !1, s = {}) {
-    if (game.user.isGM)
-      return this.position.height = "auto", super.render(t, s);
+  /** Keys of the optional columns the GM chose to show. */
+  get columnKeys() {
+    const chosen = game.settings.get(SYSTEM_ID, "toolboxColumns") ?? {};
+    return COLUMNS.filter((column) => column.fixed || chosen[column.key] !== false).map((column) => column.key);
   }
-  /**
-   * Construct and return the data object used to render the HTML template for this form application.
-   * @param options
-   * @return {Object}
-   * @override
-   */
-  async getData(t = null) {
-    return {
-      ...await super.getData(t)
-    };
-  }
-  /**
-   * Listen to html elements
-   * @param {jQuery} html HTML content of the sheet.
-   * @override
-   */
-  activateListeners(t) {
-    super.activateListeners(t);
-  }
-  /**
-   * This method is called upon form submission after form data is validated
-   * @param event    The initial triggering submission event
-   * @param formData The object of validated form data with which to update the object
-   * @returns        A Promise which resolves once the update operation has completed
-   * @override
-   */
-  async _updateObject(t, s) {
-    this.render(!1);
+  /** Whether a change to this actor should refresh the toolbox. */
+  shows(actor) {
+    return this.rendered && this.actorUuids.includes(actor.uuid);
   }
   /** @override */
-  async _onDrop(t) {
-    if (!game.user.isGM)
-      return;
-    t.preventDefault();
-    let s;
-    try {
-      s = JSON.parse(t.dataTransfer.getData("text/plain"));
-    } catch {
-      return !1;
-    }
-    if (!s)
-      return !1;
-    if (s.type === "Actor")
-      return this._onDropActor(t, s);
+  render(options, _options) {
+    if (!game.user.isGM) return this;
+    return super.render(options, _options);
   }
-  /**
-   * Handle dropping an Actor on the sheet to trigger a Polymorph workflow
-   * @param {DragEvent} event   The drop event
-   * @param {Object} data       The data transfer
-   * @return {Object}           OwnedItem data _getIndexeso create
-   * @private
-   */
-  async _onDropActor(t, s) {
-    this.object.items.push(s.uuid), this.refresh();
+  /** @override */
+  _initializeApplicationOptions(options) {
+    options = super._initializeApplicationOptions(options);
+    options.position.left ??= Math.max(window.innerWidth - 770, 0);
+    return options;
+  }
+  /** @override */
+  async _prepareContext(options) {
+    const actors = this.actorUuids.map((uuid) => fromUuidSync(uuid)).filter((actor) => actor);
+    const keys = this.columnKeys;
+    const columns = COLUMNS.filter(
+      (column) => keys.includes(column.key) && actors.some((actor) => getProperty(actor.system, column.path) !== void 0)
+    );
+    const rows = actors.map((actor) => ({
+      uuid: actor.uuid,
+      name: actor.name,
+      cells: columns.map((column) => {
+        const value = getProperty(actor.system, column.path);
+        if (value === void 0) return null;
+        const max = column.max && getProperty(actor.system, column.max);
+        return { key: column.key, label: column.label, text: max ? `${value}/${max}` : `${value}` };
+      })
+    }));
+    return { columns, rows };
+  }
+  /** @override */
+  _onRender(context, options) {
+    super._onRender(context, options);
+    const dropZone = this.element.querySelector(".items");
+    dropZone?.addEventListener("dragover", (event) => event.preventDefault());
+    dropZone?.addEventListener("drop", this.#onDrop.bind(this));
+  }
+  async #onDrop(event) {
+    event.preventDefault();
+    const data = foundry.applications.ux.TextEditor.implementation.getDragEventData(event);
+    if (data?.type !== "Actor" || !data.uuid) return;
+    const uuids = this.actorUuids;
+    if (!uuids.includes(data.uuid)) await this._setActorUuids([...uuids, data.uuid]);
+  }
+  /** +1 / -1 on a value; the updateActor hook re-renders the toolbox. */
+  static async #onAdjust(event, target) {
+    const actor = fromUuidSync(target.closest("[data-uuid]").dataset.uuid);
+    const column = COLUMNS.find((c) => c.key === target.dataset.key);
+    if (!actor || !column) return;
+    const system = actor.system;
+    const delta = Number(target.dataset.delta);
+    const max = column.max ? getProperty(system, column.max) : Infinity;
+    const value = clamp(getProperty(system, column.path) + delta, 0, max);
+    if (column.key === "raises") return updateInitiative(actor, value);
+    if (column.key === "wounds") return actor.update(system.woundUpdate(value));
+    await actor.update({ [`system.${column.path}`]: value });
+  }
+  /** Choose the columns to show. */
+  static async #onConfigure() {
+    const keys = this.columnKeys;
+    const content = COLUMNS.filter((column) => !column.fixed).map(
+      (column) => `<label class="checkbox">
+          <input type="checkbox" name="${column.key}" ${keys.includes(column.key) ? "checked" : ""} />
+          <i class="fa-solid ${column.icon}"></i> ${game.i18n.localize(column.label)}
+        </label>`
+    ).join("");
+    const chosen = await DialogV2$1.wait({
+      window: { title: "SVNSEA2E.ToolboxConfigure" },
+      classes: ["svnsea2e", "toolbox-config"],
+      content: `<p>${game.i18n.localize("SVNSEA2E.ToolboxColumns")}</p><div class="toolbox-columns">${content}</div>`,
+      buttons: [
+        {
+          action: "save",
+          label: game.i18n.localize("SVNSEA2E.Save"),
+          icon: "fa-solid fa-floppy-disk",
+          default: true,
+          callback: (event, button) => Object.fromEntries(COLUMNS.filter((c) => !c.fixed).map((c) => [c.key, button.form.elements[c.key].checked]))
+        }
+      ],
+      rejectClose: false
+    });
+    if (!chosen) return;
+    await game.settings.set(SYSTEM_ID, "toolboxColumns", chosen);
+    this.render();
+  }
+  static #onOpenSheet(event, target) {
+    fromUuidSync(target.closest("[data-uuid]").dataset.uuid)?.sheet.render(true);
+  }
+  static async #onRemoveActor(event, target) {
+    const uuid = target.closest("[data-uuid]").dataset.uuid;
+    await this._setActorUuids(this.actorUuids.filter((u) => u !== uuid));
   }
 }
-Hooks.once("init", async function () {
+class SvnSea2EActor extends Actor {
+  /** Use the system icon for new actors that still have the default artwork. */
+  async _preCreate(data, options, user) {
+    if (await super._preCreate(data, options, user) === false) return false;
+    if (!this.img || this.img === CONST.DEFAULT_TOKEN) {
+      this.updateSource({ img: `${SYSTEM_PATH}/icons/${this.type}.jpg` });
+    }
+  }
+  /* -------------------------------------------- */
+  /*  Backgrounds                                 */
+  /* -------------------------------------------- */
+  /**
+   * An active background grants its advantages and +1 to its skills however it is added: from the sheet, the items
+   * directory, a macro... Only the client that made the change applies them.
+   * @override
+   */
+  _onCreateDescendantDocuments(parent, collection, documents, data, options, userId) {
+    super._onCreateDescendantDocuments(parent, collection, documents, data, options, userId);
+    if (userId !== game.user.id || parent !== this) return;
+    const backgrounds = documents.filter((item) => item.type === ItemTypes.BACKGROUND && item.system.active);
+    if (backgrounds.length) this.#forEach(backgrounds, (background) => this.applyBackground(background));
+  }
+  /** Deleting an active background takes back what it granted. @override */
+  _onDeleteDescendantDocuments(parent, collection, documents, ids, options, userId) {
+    super._onDeleteDescendantDocuments(parent, collection, documents, ids, options, userId);
+    if (userId !== game.user.id || parent !== this) return;
+    const backgrounds = documents.filter((item) => item.type === ItemTypes.BACKGROUND && item.system.active);
+    if (backgrounds.length) this.#forEach(backgrounds, (background) => this.removeBackground(background));
+  }
+  /** Run an async task for each document, one after the other. */
+  async #forEach(documents, task) {
+    for (const document2 of documents) await task(document2);
+  }
+  /** Activate or deactivate a background, adding or removing what it grants. */
+  async toggleBackground(background) {
+    const active = !background.system.active;
+    if (active) await this.applyBackground(background);
+    else await this.removeBackground(background);
+    await background.update({ "system.active": active });
+  }
+  /**
+   * Add the background's advantages to the actor and raise its skills by one. The advantages are marked with the
+   * background that created them, so that removing it only removes those.
+   */
+  async applyBackground(background) {
+    const toCreate = [];
+    for (const name of background.system.advantages) {
+      const advantage = await findAdvantage(name);
+      if (!advantage) {
+        ui.notifications.error(game.i18n.format("SVNSEA2E.ItemDoesntExist", { name }));
+        continue;
+      }
+      if (this.hasItem(ItemTypes.ADVANTAGE, advantage.name) || toCreate.some((a) => a.name === advantage.name)) {
+        ui.notifications.error(game.i18n.format("SVNSEA2E.ItemExists", { type: advantage.type, name: advantage.name }));
+        continue;
+      }
+      const data = advantage.toObject();
+      delete data._id;
+      foundry.utils.setProperty(data, `flags.${SYSTEM_ID}.grantedBy`, background.id);
+      toCreate.push(data);
+    }
+    if (toCreate.length) await this.createEmbeddedDocuments("Item", toCreate);
+    await this.#shiftSkills(background, 1);
+    if (!background.getFlag(SYSTEM_ID, "tracksGrants")) await background.setFlag(SYSTEM_ID, "tracksGrants", true);
+  }
+  /** Remove the advantages the background granted and lower its skills by one. */
+  async removeBackground(background) {
+    await this.#shiftSkills(background, -1);
+    const granted = background.getFlag(SYSTEM_ID, "tracksGrants") ? (item) => item.getFlag(SYSTEM_ID, "grantedBy") === background.id : (item) => background.system.advantages.includes(item.name);
+    const ids = this.items.filter((item) => item.type === ItemTypes.ADVANTAGE && granted(item)).map((item) => item.id);
+    if (ids.length) await this.deleteEmbeddedDocuments("Item", ids);
+  }
+  async #shiftSkills(background, delta) {
+    const skills = this.system.skills;
+    if (!skills) return;
+    const update = {};
+    for (const key of background.system.skills) {
+      const skill = skills[key];
+      const stored = this._source.system.skills[key]?.value;
+      if (skill) update[`system.skills.${key}.value`] = clamp(stored + delta, skill.min, skill.max);
+    }
+    if (!foundry.utils.isEmpty(update)) await this.update(update);
+  }
+  /** Whether the actor has an item of this type and name. */
+  hasItem(type, name) {
+    return this.items.some((item) => item.type === type && item.name === name);
+  }
+}
+const { HTMLField: HTMLField$1, SchemaField: SchemaField$1, NumberField: NumberField$1, StringField: StringField$1, ArrayField: ArrayField$1, BooleanField: BooleanField$1 } = foundry.data.fields;
+const int = (initial = 0, { min = 0, max } = {}) => new NumberField$1({ required: true, integer: true, min, max, initial });
+const rank = (initial, [min, max]) => new SchemaField$1({ value: int(initial, { min, max }) });
+const RANK_BOUNDS = {
+  heroTrait: [2, 5],
+  skill: [0, 5],
+  strength: [1, 20],
+  influence: [0, 20],
+  fear: [0, 5]
+};
+function setBounds(ranks, [min, max]) {
+  for (const entry of Object.values(ranks)) Object.assign(entry, { min, max });
+}
+function clampRanks(ranks) {
+  for (const entry of Object.values(ranks)) entry.value = clamp(entry.value, entry.min, entry.max);
+}
+function clampSource(ranks, bounds) {
+  for (const entry of Object.values(ranks ?? {})) {
+    if (typeof entry?.value === "number") entry.value = clamp(entry.value, ...bounds);
+  }
+}
+const TRAITS = ["brawn", "finesse", "resolve", "wits", "panache"];
+const SKILLS = [
+  "aim",
+  "athletics",
+  "brawl",
+  "convince",
+  "empathy",
+  "hide",
+  "intimidate",
+  "notice",
+  "perform",
+  "ride",
+  "sailing",
+  "scholarship",
+  "tempt",
+  "theft",
+  "warfare",
+  "weaponry"
+];
+const woundsField = () => new SchemaField$1({ value: int(0), max: int(0) });
+const conceptSchema = () => ({
+  nation: new StringField$1(),
+  religion: new StringField$1(),
+  age: int(20),
+  reputation: new StringField$1(),
+  concept: new HTMLField$1({ initial: "<h3>Concept</h3><h3>Biography</h3>" })
+});
+const detailsSchema = () => ({
+  ...conceptSchema(),
+  languages: new ArrayField$1(new StringField$1()),
+  equipment: new StringField$1()
+});
+class WoundedModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      // Raises: kept on the actor, changed from the combat tracker, the toolbox and the roll cards.
+      initiative: new NumberField$1({ required: true, integer: false, min: 0, initial: 0 }),
+      wounds: woundsField(),
+      dwounds: woundsField()
+    };
+  }
+  /** Raises saved by old versions as {value, min, max}, or below 0. */
+  static migrateData(source) {
+    if ("initiative" in source) {
+      const raises = Number(source.initiative?.value ?? source.initiative);
+      source.initiative = Number.isFinite(raises) ? Math.max(raises, 0) : 0;
+    }
+    return super.migrateData(source);
+  }
+  /** Number of wounds in each dramatic wound group. */
+  get woundsPerDramatic() {
+    return 5;
+  }
+  /** Whether the actor can be Hard To Kill. */
+  get hardToKill() {
+    return false;
+  }
+  /** Villains and monsters: no hero points, wounds grouped by Strength. */
+  get isVillain() {
+    return false;
+  }
+  /** One extra die from the first dramatic wound. */
+  get woundBonusDice() {
+    return this.dwounds.value >= 1 ? 1 : 0;
+  }
+  /** 10s explode from the third dramatic wound. */
+  get explodesTens() {
+    return this.dwounds.value >= 3;
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    this.dwounds.max = 4;
+  }
+  prepareDerivedData() {
+    super.prepareDerivedData();
+    if (this.hardToKill) this.dwounds.max += 1;
+    this.wounds.max = this.dwounds.max * this.woundsPerDramatic;
+    this.wounds.value = clamp(this.wounds.value, 0, this.wounds.max);
+    this.dwounds.value = clamp(this.dwounds.value, 0, this.dwounds.max);
+  }
+  /**
+   * The update that sets the wounds to `value`: marking wounds also marks the dramatic wounds they reach,
+   * never removes any.
+   */
+  woundUpdate(value) {
+    const wounds = clamp(value, 0, this.wounds.max);
+    const dwounds = Math.max(this.dwounds.value, Math.min(Math.trunc(wounds / this.woundsPerDramatic), this.dwounds.max));
+    return { "system.wounds.value": wounds, "system.dwounds.value": dwounds };
+  }
+}
+class CharacterModel extends WoundedModel {
+  static defineSchema() {
+    return { htk: new BooleanField$1({ required: true, initial: false }), ...super.defineSchema() };
+  }
+  get hardToKill() {
+    return this.htk;
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    this.rollBonus = rollBonusData();
+  }
+}
+class HeroModel extends CharacterModel {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
+      ...detailsSchema(),
+      traits: new SchemaField$1(Object.fromEntries(TRAITS.map((t) => [t, rank(2, RANK_BOUNDS.heroTrait)]))),
+      skills: new SchemaField$1(Object.fromEntries(SKILLS.map((s) => [s, rank(0, RANK_BOUNDS.skill)])))
+    };
+  }
+  static migrateData(source) {
+    clampSource(source.traits, RANK_BOUNDS.heroTrait);
+    clampSource(source.skills, RANK_BOUNDS.skill);
+    return super.migrateData(source);
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    setBounds(this.traits, RANK_BOUNDS.heroTrait);
+    setBounds(this.skills, RANK_BOUNDS.skill);
+  }
+  prepareDerivedData() {
+    super.prepareDerivedData();
+    clampRanks(this.traits);
+    clampRanks(this.skills);
+  }
+}
+class PlayerModel extends HeroModel {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
+      wealth: int(0),
+      heropts: int(0),
+      corruptionpts: int(0),
+      redemption: new StringField$1()
+    };
+  }
+}
+class VillainousModel extends CharacterModel {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
+      traits: new SchemaField$1({
+        ...this.hasInfluence ? { influence: rank(5, RANK_BOUNDS.influence) } : {},
+        strength: rank(5, RANK_BOUNDS.strength)
+      })
+    };
+  }
+  static hasInfluence = true;
+  static migrateData(source) {
+    clampSource({ strength: source.traits?.strength }, RANK_BOUNDS.strength);
+    clampSource({ influence: source.traits?.influence }, RANK_BOUNDS.influence);
+    return super.migrateData(source);
+  }
+  get isVillain() {
+    return true;
+  }
+  get woundsPerDramatic() {
+    return this.traits.strength.value + 1;
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    Object.assign(this.traits.strength, { min: RANK_BOUNDS.strength[0], max: RANK_BOUNDS.strength[1] });
+    if (this.traits.influence) Object.assign(this.traits.influence, { min: RANK_BOUNDS.influence[0], max: RANK_BOUNDS.influence[1] });
+  }
+  prepareDerivedData() {
+    clampRanks(this.traits);
+    super.prepareDerivedData();
+    this.villainy = this.traits.strength.value + (this.traits.influence?.value ?? 0);
+  }
+}
+class VillainModel extends VillainousModel {
+  static defineSchema() {
+    return { ...super.defineSchema(), ...detailsSchema(), servants: new StringField$1(), redemption: new StringField$1() };
+  }
+}
+class MonsterModel extends VillainousModel {
+  static hasInfluence = false;
+  static defineSchema() {
+    return { ...super.defineSchema(), ...conceptSchema(), fear: rank(0, RANK_BOUNDS.fear) };
+  }
+  static migrateData(source) {
+    clampSource({ fear: source.fear }, RANK_BOUNDS.fear);
+    return super.migrateData(source);
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    Object.assign(this.fear, { min: RANK_BOUNDS.fear[0], max: RANK_BOUNDS.fear[1] });
+  }
+  prepareDerivedData() {
+    super.prepareDerivedData();
+    clampRanks({ fear: this.fear });
+  }
+}
+class ShipModel extends WoundedModel {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
+      class: new StringField$1(),
+      cargo: new HTMLField$1(),
+      origin: new StringField$1(),
+      crewstatus: new StringField$1(),
+      wealth: int(0),
+      // The roster: every crew member (a world actor) with their role on this ship.
+      crew: new ArrayField$1(new SchemaField$1({ actorId: new StringField$1({ required: true }), role: new StringField$1({ required: true }) }))
+    };
+  }
+  /** Give a crew member a role on this ship, adding them to the crew if needed. */
+  async setCrewRole(actorId, role) {
+    const crew = this.crew.map((member2) => ({ ...member2 }));
+    const member = crew.find((m) => m.actorId === actorId);
+    if (member) member.role = role;
+    else crew.push({ actorId, role });
+    return this.parent.update({ "system.crew": crew });
+  }
+  async removeCrewMember(actorId) {
+    return this.parent.update({ "system.crew": this.crew.filter((member) => member.actorId !== actorId) });
+  }
+}
+class BruteModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      wounds: woundsField(),
+      traits: new SchemaField$1({ strength: rank(5, RANK_BOUNDS.strength) }),
+      ability: new SchemaField$1({ name: new StringField$1(), description: new HTMLField$1() })
+    };
+  }
+  static migrateData(source) {
+    clampSource(source.traits, RANK_BOUNDS.strength);
+    return super.migrateData(source);
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    setBounds(this.traits, RANK_BOUNDS.strength);
+    this.rollBonus = rollBonusData();
+  }
+  prepareDerivedData() {
+    super.prepareDerivedData();
+    clampRanks(this.traits);
+    this.wounds.max = this.traits.strength.value;
+    this.wounds.value = clamp(this.wounds.value, 0, this.wounds.max);
+  }
+  /** The update that sets the wounds to `value`. */
+  woundUpdate(value) {
+    return { "system.wounds.value": clamp(value, 0, this.wounds.max) };
+  }
+}
+class DangerPointsModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return { points: int(5) };
+  }
+}
+function readRollForm(form) {
+  const el = form.elements;
+  const num = (name) => parseInt(el[name]?.value) || 0;
+  const bool = (name) => !!el[name]?.checked;
+  return {
+    trait: num("trait"),
+    bonusDice: num("bonusDice"),
+    flairDice: bool("flairDice"),
+    interpretationDice: bool("interpretationDice"),
+    useForMe: num("useForMe"),
+    useForHelpMe: num("useForHelpMe"),
+    addOneToDice: bool("addOneToDice"),
+    joieDeVivre: bool("joieDeVivreAdvantage"),
+    joieRank: num("joieRank"),
+    explodeDice: bool("explodeDice"),
+    increaseThreshold: bool("increaseThreshold")
+  };
+}
+async function spendHeroPoints(actor, options) {
+  const spent = options.useForMe;
+  const available = actor.system.heropts || 0;
+  if (spent > available) {
+    ui.notifications.error(game.i18n.localize("SVNSEA2E.NotEnoughHero"));
+    return false;
+  }
+  if (spent > 0) await actor.update({ "system.heropts": available - spent });
+  return true;
+}
+async function rollDicePool({ actor, rolldata, options, title, kind = "free" }) {
+  const system = actor.system;
+  const data = {
+    kind,
+    pool: {
+      skill: parseInt(rolldata.skilldice) || 0,
+      trait: options.trait || 0,
+      bonus: options.bonusDice || 0,
+      flair: !!options.flairDice,
+      interpretation: !!options.interpretationDice,
+      heroPoints: options.useForMe || 0,
+      helpers: options.useForHelpMe || 0,
+      // Every character with at least one dramatic wound gets one extra die.
+      wound: rolldata.skipWoundBonus ? 0 : system.woundBonusDice ?? 0
+    },
+    threshold: rolldata.threshold === 15 ? 15 : 10,
+    increaseThreshold: !!options.increaseThreshold,
+    addOne: !!options.addOneToDice,
+    explode: !!(rolldata.explode || options.explodeDice),
+    reroll: !!rolldata.reroll,
+    joieDeVivre: !!options.joieDeVivre,
+    // Joie de Vivre: the dice up to the skill rank count as 10s. Kept without it too, for "Edit Roll".
+    joieRank: Math.min(Math.max(rolldata.skillRank ?? 0, 0), 5),
+    dice: [],
+    explosions: [],
+    rerollFace: null
+  };
+  const poolSize$1 = poolSize(data);
+  if (poolSize$1 < 1) {
+    ui.notifications.warn(game.i18n.localize("SVNSEA2E.NoDiceToRoll"));
+    return false;
+  }
+  if (!system.isVillain && !await spendHeroPoints(actor, options)) return false;
+  const roll = await new foundry.dice.Roll(`${poolSize$1}d10${data.explode ? "x" : ""}`).evaluate();
+  const faces = roll.dice[0].results.map((r) => r.result);
+  data.dice = faces.slice(0, poolSize$1);
+  data.explosions = faces.slice(poolSize$1);
+  await completeDice(data);
+  const chatData = ChatMessage.implementation.applyMode({
+    type: ROLL_MESSAGE,
+    author: game.user.id,
+    speaker: ChatMessage.implementation.getSpeaker({ actor }),
+    flavor: title,
+    content: await renderRollCard(data, actor.uuid),
+    system: data,
+    rolls: [roll]
+  });
+  const message = await ChatMessage.implementation.create(chatData);
+  await setRaisesFromRoll(actor, message);
+  return roll;
+}
+const { DialogV2 } = foundry.applications.api;
+const renderTemplate = (path, data) => foundry.applications.handlebars.renderTemplate(path, data);
+async function promptRoll(title, template, data, { cancel = false } = {}) {
+  const content = await renderTemplate(template, data);
+  const buttons = [
+    {
+      action: "roll",
+      label: game.i18n.localize("SVNSEA2E.Roll"),
+      icon: "fa-solid fa-dice-d10",
+      default: true,
+      callback: (event, button) => ({ options: readRollForm(button.form), form: button.form })
+    }
+  ];
+  if (cancel) buttons.push({ action: "cancel", label: game.i18n.localize("Cancel"), callback: () => null });
+  return DialogV2.wait({
+    window: { title },
+    // Up to v23.3 these were Application V1 dialogs, always light.
+    classes: ["svnsea2e", "roll-dialog", "themed", "theme-light"],
+    position: { width: 400 },
+    content,
+    buttons,
+    rejectClose: false
+  });
+}
+function effectDefaults(actor, { skill, dice = true } = {}) {
+  const bonus = actor.system.rollBonus;
+  if (!bonus) return { dice: 0 };
+  const relevant = (key) => {
+    if (!key?.startsWith("system.rollBonus.")) return false;
+    if (key.startsWith("system.rollBonus.skills.")) return dice && key === `system.rollBonus.skills.${skill}`;
+    return dice || key !== "system.rollBonus.dice";
+  };
+  const names = /* @__PURE__ */ new Set();
+  for (const effect of actor.allApplicableEffects()) {
+    if (effect.active && effect.system.changes.some((change) => relevant(change.key))) names.add(effect.name);
+  }
+  return {
+    ...bonus,
+    dice: dice ? bonus.dice + (skill ? bonus.skills[skill] ?? 0 : 0) : 0,
+    effects: [...names].sort((a, b) => a.localeCompare(b)).join(", ")
+  };
+}
+async function rollSkill(actor, skill) {
+  const system = actor.system;
+  const rank2 = system.skills[skill].value;
+  const rolldata = {
+    threshold: rank2 >= 4 ? 15 : 10,
+    explode: rank2 === 5 || system.explodesTens,
+    reroll: rank2 > 2,
+    skilldice: rank2,
+    skillRank: rank2
+  };
+  const traits = {};
+  for (const [key, trait] of Object.entries(system.traits)) traits[CONFIG.SVNSEA2E.traits[key]] = trait.value;
+  const skillLabel = CONFIG.SVNSEA2E.skills[skill];
+  const result = await promptRoll(
+    game.i18n.format("SVNSEA2E.ApproachPromptTitle", { skill: skillLabel }),
+    `${TEMPLATES}/chats/skill-roll-dialog.hbs`,
+    { data: system, traits, bonus: effectDefaults(actor, { skill }) }
+  );
+  if (!result) return false;
+  const traitSelect = result.form.elements.trait;
+  return rollDicePool({
+    actor,
+    rolldata,
+    options: result.options,
+    kind: "skill",
+    title: game.i18n.format("SVNSEA2E.ApproachRollChatTitle", {
+      trait: traitSelect.options[traitSelect.selectedIndex].text,
+      skill: skillLabel
+    })
+  });
+}
+async function rollTrait(actor, trait) {
+  const system = actor.system;
+  const rolldata = {
+    threshold: 10,
+    explode: system.explodesTens ?? false,
+    reroll: false,
+    skilldice: 0,
+    skillRank: 0
+  };
+  const title = game.i18n.format("SVNSEA2E.TraitRollTitle", { trait: CONFIG.SVNSEA2E.traits[trait] });
+  const result = await promptRoll(title, `${TEMPLATES}/chats/trait-roll-dialog.hbs`, {
+    data: system,
+    traitmax: system.traits[trait].value,
+    bonus: effectDefaults(actor)
+  });
+  if (!result) return false;
+  return rollDicePool({ actor, rolldata, options: result.options, title, kind: "trait" });
+}
+async function rollFreeDice(actor) {
+  const result = await promptRoll(
+    game.i18n.localize("SVNSEA2E.Roll"),
+    `${TEMPLATES}/items/parts/roll-throw.hbs`,
+    { bonus: effectDefaults(actor, { dice: false }) },
+    { cancel: true }
+  );
+  if (!result) return false;
+  const diceCount = Math.max(parseInt(result.form.elements.diceNumber?.value) || 1, 1);
+  const { addOneToDice, joieDeVivre, joieRank, explodeDice, increaseThreshold } = result.options;
+  return rollDicePool({
+    actor,
+    rolldata: {
+      skilldice: 0,
+      // Joie de Vivre needs the rank of the skill: the number of dice is not it.
+      skillRank: Math.max(joieRank, 0),
+      threshold: 10,
+      explode: false,
+      reroll: false,
+      skipWoundBonus: true
+    },
+    options: {
+      trait: 0,
+      // The free roll keeps its number of dice as bonus dice.
+      bonusDice: diceCount,
+      flairDice: false,
+      interpretationDice: false,
+      useForMe: 0,
+      useForHelpMe: 0,
+      addOneToDice,
+      joieDeVivre,
+      explodeDice,
+      increaseThreshold
+    },
+    title: game.i18n.localize("SVNSEA2E.GenericRoll"),
+    kind: "free"
+  });
+}
+const { HandlebarsApplicationMixin: HandlebarsApplicationMixin$2 } = foundry.applications.api;
+const { ActorSheetV2 } = foundry.applications.sheets;
+const ITEM_SECTIONS = {
+  [ItemTypes.ADVANTAGE]: { label: "SVNSEA2E.Advantage", addTitle: "SVNSEA2E.AddAdvantage", cssClass: "advantage", used: true },
+  [ItemTypes.DUEL_STYLE]: { label: "SVNSEA2E.DuelingStyles", addTitle: "SVNSEA2E.AddDuelStyle", cssClass: "duelingstyle", used: true },
+  [ItemTypes.BACKGROUND]: { label: "SVNSEA2E.Backgrounds", addTitle: "SVNSEA2E.AddBackground", cssClass: "background", used: true, toggle: true },
+  [ItemTypes.SECRET_SOCIETY]: { label: "SVNSEA2E.SecretSociety", addTitle: "SVNSEA2E.AddSecretSociety", cssClass: "secretsociety", favor: true },
+  [ItemTypes.MONSTER_QUALITY]: { label: "SVNSEA2E.MonsterQualities", addTitle: "SVNSEA2E.AddMonsterQuality", used: true },
+  [ItemTypes.SCHEME]: { label: "SVNSEA2E.Schemes", addTitle: "SVNSEA2E.AddScheme", used: true },
+  [ItemTypes.VIRTUE]: { label: "SVNSEA2E.Virtue", addTitle: "SVNSEA2E.AddVirtue", cssClass: "story", used: true },
+  [ItemTypes.HUBRIS]: { label: "SVNSEA2E.Hubris", addTitle: "SVNSEA2E.AddHubris", cssClass: "story", used: true },
+  [ItemTypes.STORY]: { label: "SVNSEA2E.Stories", addTitle: "SVNSEA2E.AddStory", cssClass: "story" },
+  [ItemTypes.ARTIFACT]: { label: "SVNSEA2E.Artifacts", addTitle: "SVNSEA2E.AddArtifact", cssClass: "artifacts", used: true },
+  [ItemTypes.SORCERY]: { addTitle: "SVNSEA2E.Sorcery", cssClass: "sorcery", used: true },
+  [ItemTypes.SHIP_ADVENTURE]: { label: "SVNSEA2E.Adventures", addTitle: "SVNSEA2E.AddShipAdventure", cssClass: "story", rowClass: "adventure", noThrow: true },
+  [ItemTypes.SHIP_BACKGROUND]: { label: "SVNSEA2E.Backgrounds", addTitle: "SVNSEA2E.AddShipBackground", cssClass: "story", rowClass: "background", noThrow: true }
+};
+function itemSections(actor, types) {
+  return types.map((entry) => {
+    const [type, options] = Array.isArray(entry) ? entry : [entry, {}];
+    const section = { type, ...ITEM_SECTIONS[type], ...options, items: itemsOfType(actor, type) };
+    section.rowClass ??= section.cssClass;
+    return section;
+  });
+}
+class SvnSea2EActorSheet extends HandlebarsApplicationMixin$2(ActorSheetV2) {
+  static DEFAULT_OPTIONS = {
+    // The sheets are designed for a light background; keep them light whatever the user's theme.
+    classes: ["svnsea2e", "sheet", "actor", "themed", "theme-light"],
+    position: { width: 1050, height: 750 },
+    window: { resizable: true },
+    form: { submitOnChange: true },
+    actions: {
+      createItem: SvnSea2EActorSheet.#onCreateItem,
+      editItem: SvnSea2EActorSheet.#onEditItem,
+      deleteItem: SvnSea2EActorSheet.#onDeleteItem,
+      throwItem: SvnSea2EActorSheet.#onThrowItem,
+      itemSummary: SvnSea2EActorSheet.#onItemSummary,
+      toggleUsed: SvnSea2EActorSheet.#onToggleUsed,
+      toggleBackground: SvnSea2EActorSheet.#onToggleBackground,
+      toggleSection: SvnSea2EActorSheet.#onToggleSection,
+      setRank: SvnSea2EActorSheet.#onSetRank,
+      setWounds: SvnSea2EActorSheet.#onSetWounds,
+      rollSkill: SvnSea2EActorSheet.#onRollSkill,
+      rollTrait: SvnSea2EActorSheet.#onRollTrait,
+      freeRoll: SvnSea2EActorSheet.#onFreeRoll,
+      ...EFFECT_ACTIONS
+    }
+  };
+  /** Item list sections collapsed by the user, kept across re-renders. */
+  #collapsedSections = /* @__PURE__ */ new Set();
+  /* -------------------------------------------- */
+  /*  Context                                     */
+  /* -------------------------------------------- */
+  /** @override */
+  async _prepareContext(options) {
+    const context = await super._prepareContext(options);
+    const actor = this.actor;
+    const system = actor.system;
+    Object.assign(context, {
+      actor,
+      system,
+      editable: this.isEditable,
+      cssClass: actor.isOwner ? "editable" : "locked",
+      config: CONFIG.SVNSEA2E,
+      tabs: this._prepareTabs("primary"),
+      isCorrupt: system.corruptionpts > 0,
+      isPlayerCharacter: actor.type === ActorType.PLAYER,
+      isVillain: actor.type === ActorType.VILLAIN,
+      isMonster: actor.type === ActorType.MONSTER,
+      hasSkills: system.skills !== void 0,
+      hasLanguages: system.languages !== void 0,
+      name: actor.name,
+      img: actor.img,
+      traits: this._prepareTraits(),
+      languageChoices: this._prepareLanguages(),
+      effects: prepareEffects(actor)
+    });
+    if (system.fear) context.fearLocked = this._isModified("system.fear.value");
+    if (typeof system.concept === "string") {
+      context.enrichedConcept = await enrichHTML(system.concept, { secrets: actor.isOwner, relativeTo: actor });
+    }
+    this._prepareItems(context);
+    return context;
+  }
+  /** @override */
+  _getTabsConfig(group) {
+    return withEffectsTab(super._getTabsConfig(group));
+  }
+  /** @override */
+  _prepareTabs(group) {
+    return this._getTabsConfig(group) ? super._prepareTabs(group) : {};
+  }
+  /** Add the actor's items, grouped by type, to the context. */
+  _prepareItems(context) {
+  }
+  /** Whether an active effect changes this value: the sheet shows the result, but cannot edit it. */
+  _isModified(path) {
+    return foundry.utils.hasProperty(this.actor.overrides ?? {}, path);
+  }
+  /** Traits with their localized label. */
+  _prepareTraits() {
+    if (!this.actor.system.traits) return [];
+    return Object.entries(this.actor.system.traits).map(([name, trait]) => ({
+      ...trait,
+      name,
+      label: CONFIG.SVNSEA2E.traits[name],
+      locked: this._isModified(`system.traits.${name}.value`)
+    }));
+  }
+  /**
+   * Choices of the languages <multi-select> as {key: label}. Stored keys that are not in the configuration are kept
+   * as choices too, so that saving the sheet does not drop them.
+   */
+  _prepareLanguages() {
+    const languages = this.actor.system.languages;
+    if (!languages) return {};
+    const choices = { ...CONFIG.SVNSEA2E.languages };
+    for (const lang of languages) choices[lang] ??= lang;
+    return choices;
+  }
+  /* -------------------------------------------- */
+  /*  Rendering                                   */
+  /* -------------------------------------------- */
+  /** @override */
+  async _onRender(context, options) {
+    await super._onRender(context, options);
+    if (this.isEditable) {
+      for (const row of this.element.querySelectorAll("li.draggable")) {
+        row.setAttribute("draggable", "true");
+        row.addEventListener("dragstart", this.#onDragRow.bind(this));
+      }
+    }
+    for (const section of this.#collapsedSections) {
+      const header = this.element.querySelector(`.item-header[data-section="${section}"]`);
+      if (header) this.#setSectionCollapsed(header, true);
+    }
+  }
+  /** Rows of items, effects (of the actor or of one of its items) and ship crew members. */
+  #onDragRow(event) {
+    const { itemId, effectId, actorId } = event.currentTarget.dataset;
+    const item = itemId ? this.actor.items.get(itemId) : null;
+    const dragged = effectId ? (item ?? this.actor).effects.get(effectId) : item ?? game.actors.get(actorId);
+    if (dragged) event.dataTransfer.setData("text/plain", JSON.stringify(dragged.toDragData()));
+  }
+  /** Hide or show the item rows that follow a section header, up to the next header. */
+  #setSectionCollapsed(header, collapsed) {
+    header.classList.toggle("collapsed", collapsed);
+    let row = header.nextElementSibling;
+    while (row && !row.classList.contains("item-header")) {
+      row.classList.toggle("hidden", collapsed);
+      row = row.nextElementSibling;
+    }
+  }
+  /* -------------------------------------------- */
+  /*  Actions                                     */
+  /* -------------------------------------------- */
+  /** The embedded item of the row containing `target`. */
+  _getItem(target) {
+    const row = target.closest("[data-item-id]");
+    return row ? this.actor.items.get(row.dataset.itemId) : null;
+  }
+  static async #onCreateItem(event, target) {
+    if (!this.isEditable) return;
+    const type = target.dataset.type;
+    await this.actor.createEmbeddedDocuments("Item", [{ name: game.i18n.localize(`SVNSEA2E.New${type}`), type }]);
+  }
+  static #onEditItem(event, target) {
+    this._getItem(target)?.sheet.render(true);
+  }
+  static async #onDeleteItem(event, target) {
+    if (!this.isEditable) return;
+    await this._getItem(target)?.delete();
+  }
+  static #onThrowItem(event, target) {
+    return this._getItem(target)?.sendToChat();
+  }
+  /** Expand or collapse the item description below its row. */
+  static async #onItemSummary(event, target) {
+    const row = target.closest(".item");
+    const item = this._getItem(target);
+    if (!row || !item) return;
+    if (row.classList.contains("expanded")) {
+      row.querySelector(".item-summary")?.remove();
+    } else {
+      const data = await item.getChatData({ secrets: this.actor.isOwner });
+      const summary = document.createElement("div");
+      summary.className = "item-summary";
+      summary.innerHTML = `${data.description}<div class="item-metdata">${data.metadatahtml}</div>`;
+      row.append(summary);
+    }
+    row.classList.toggle("expanded");
+  }
+  /** "Used this session" checkbox of advantages, virtues, hubris... */
+  static async #onToggleUsed(event, target) {
+    event.preventDefault();
+    if (!this.isEditable) return;
+    const item = this._getItem(target);
+    if (item) await item.update({ "system.used": !item.system.used });
+  }
+  /** Activate or deactivate a background, adding or removing the skills and advantages it grants. */
+  static async #onToggleBackground(event, target) {
+    if (!this.isEditable) return;
+    const item = this._getItem(target);
+    if (item) await this.actor.toggleBackground(item);
+  }
+  static #onToggleSection(event, target) {
+    const section = target.dataset.section;
+    const collapsed = !this.#collapsedSections.has(section);
+    if (collapsed) this.#collapsedSections.add(section);
+    else this.#collapsedSections.delete(section);
+    this.#setSectionCollapsed(target, collapsed);
+  }
+  /**
+   * Click on a rank circle (trait, skill, corruption, fear). Clicking the first circle of a rank already at 1 clears
+   * it; a rank never goes below its minimum (2 for hero traits, 1 for Strength).
+   */
+  static async #onSetRank(event, target) {
+    const name = target.dataset.name;
+    if (!this.isEditable || this._isModified(name)) return;
+    let value = parseInt(target.dataset.value);
+    const rank2 = foundry.utils.getProperty(this.actor, name.replace(/\.value$/, ""));
+    const current = typeof rank2 === "object" ? rank2.value : rank2;
+    if (value === 1 && current === 1) value = 0;
+    value = Math.max(value, rank2?.min ?? 0);
+    if (value !== current) await this.actor.update({ [name]: value });
+  }
+  /** Click on a wound heart. */
+  static async #onSetWounds(event, target) {
+    if (!this.isEditable) return;
+    const clicked = parseInt(target.dataset.value);
+    if (Number.isNaN(clicked)) return;
+    const system = this.actor.system;
+    if (target.dataset.type === "dwounds") {
+      const dwounds = clicked === system.dwounds.value ? clicked - 1 : clicked;
+      return this.actor.update({ "system.dwounds.value": dwounds });
+    }
+    const value = system.wounds.value === 1 && clicked === 1 ? 0 : clicked;
+    await this.actor.update(system.woundUpdate(value));
+  }
+  static #onRollSkill(event, target) {
+    if (!this.isEditable) return;
+    return rollSkill(this.actor, target.dataset.label);
+  }
+  static #onRollTrait(event, target) {
+    if (!this.isEditable) return;
+    return rollTrait(this.actor, target.dataset.label);
+  }
+  static #onFreeRoll(event, target) {
+    if (!this.isEditable) return;
+    return rollFreeDice(this.actor);
+  }
+  /* -------------------------------------------- */
+  /*  Drag and drop                               */
+  /* -------------------------------------------- */
+  /** @override */
+  async _onDropItem(event, item) {
+    if (!this.actor.isOwner) return null;
+    if (item.parent?.uuid === this.actor.uuid) {
+      const sorted = await this._onSortItem(event, item);
+      return sorted?.length ? item : null;
+    }
+    if (item.type !== ItemTypes.SORCERY && this.actor.hasItem(item.type, item.name)) {
+      ui.notifications.error(game.i18n.format("SVNSEA2E.ItemExists", { type: item.type, name: item.name }));
+      return null;
+    }
+    if (item.type === ItemTypes.BACKGROUND) {
+      const nation = item.system.nation;
+      const wrongNation = nation === "gisles" ? !isValidGlamorIsles(this.actor) : nation && nation !== "none" && nation !== this.actor.system.nation;
+      if (wrongNation) {
+        ui.notifications.warn(
+          game.i18n.format("SVNSEA2E.WrongNation", {
+            bgnation: game.i18n.localize(CONFIG.SVNSEA2E.natTypes[nation] ?? nation),
+            anation: game.i18n.localize(CONFIG.SVNSEA2E.nations[this.actor.system.nation] ?? ""),
+            name: item.name
+          })
+        );
+      }
+    }
+    const [created] = await this.actor.createEmbeddedDocuments("Item", [item.toObject()]);
+    return created ?? null;
+  }
+}
+const ACTOR_TEMPLATES = `${TEMPLATES}/actors`;
+const { ADVANTAGE, ARTIFACT, BACKGROUND, DUEL_STYLE, HUBRIS, MONSTER_QUALITY, SCHEME, SECRET_SOCIETY, SORCERY, STORY, VIRTUE } = ItemTypes;
+const tab = (id, label) => ({ id, label: `SVNSEA2E.${label}` });
+const scrollable = [".sheet-body .tab", ".sheet-body"];
+function prepareCharacterItems(sheet, context) {
+  const actor = sheet.actor;
+  context.skills = skillsToSheetData(actor.system).map((skill) => ({
+    ...skill,
+    locked: sheet._isModified(`system.skills.${skill.name}.value`)
+  }));
+  context.itemLists = {
+    advantages: itemSections(actor, [ADVANTAGE, DUEL_STYLE, BACKGROUND, SECRET_SOCIETY]),
+    sorcery: itemSections(actor, [SORCERY]),
+    inventory: itemSections(actor, [ARTIFACT]),
+    fate: itemSections(actor, context.isPlayerCharacter ? [VIRTUE, HUBRIS, STORY] : [VIRTUE, HUBRIS])
+  };
+}
+class PlayerCharacterSheet extends SvnSea2EActorSheet {
+  static DEFAULT_OPTIONS = { classes: ["pc"] };
+  static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/playercharacter.hbs`, scrollable } };
+  static TABS = {
+    primary: {
+      tabs: [
+        tab("concept", "Concept"),
+        tab("traits", "Traits"),
+        tab("advantages", "Features"),
+        tab("fate", "Fate"),
+        tab("inventory", "Inventory"),
+        tab("sorcery", "Sorcery")
+      ],
+      initial: "traits"
+    }
+  };
+  _prepareItems(context) {
+    prepareCharacterItems(this, context);
+  }
+}
+class HeroSheet extends SvnSea2EActorSheet {
+  static DEFAULT_OPTIONS = { classes: ["hero"] };
+  static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/hero.hbs`, scrollable } };
+  static TABS = {
+    primary: {
+      tabs: [
+        tab("traits", "Traits"),
+        tab("advantages", "Advantages"),
+        tab("sorcery", "Sorcery"),
+        tab("inventory", "Inventory"),
+        tab("fate", "Fate"),
+        tab("concept", "Concept")
+      ],
+      initial: "traits"
+    }
+  };
+  _prepareItems(context) {
+    prepareCharacterItems(this, context);
+  }
+}
+class VillainSheet extends SvnSea2EActorSheet {
+  static DEFAULT_OPTIONS = { classes: ["villain"] };
+  static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/villain.hbs`, scrollable } };
+  static TABS = {
+    primary: {
+      tabs: [
+        tab("traits", "Traits"),
+        tab("advantages", "Features"),
+        tab("sorcery", "Sorcery"),
+        tab("inventory", "Inventory"),
+        tab("fate", "Fate"),
+        tab("concept", "Concept")
+      ],
+      initial: "traits"
+    }
+  };
+  _prepareItems(context) {
+    const actor = this.actor;
+    context.itemLists = {
+      advantages: itemSections(actor, [ADVANTAGE, DUEL_STYLE, MONSTER_QUALITY, SCHEME]),
+      sorcery: itemSections(actor, [SORCERY]),
+      inventory: itemSections(actor, [ARTIFACT]),
+      fate: itemSections(actor, [VIRTUE, HUBRIS])
+    };
+  }
+}
+class MonsterSheet extends SvnSea2EActorSheet {
+  static DEFAULT_OPTIONS = { classes: ["monster"] };
+  static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/monster.hbs`, scrollable } };
+  static TABS = {
+    primary: {
+      tabs: [tab("features", "Features"), tab("fate", "Fate"), tab("concept", "Concept")],
+      initial: "features"
+    }
+  };
+  _prepareItems(context) {
+    const actor = this.actor;
+    context.itemLists = {
+      features: itemSections(actor, [[MONSTER_QUALITY, { used: false }]]),
+      fate: itemSections(actor, [VIRTUE, HUBRIS])
+    };
+  }
+}
+class BruteSheet extends SvnSea2EActorSheet {
+  static DEFAULT_OPTIONS = { classes: ["brute"] };
+  static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/brute.hbs`, scrollable: [".sheet-body"] } };
+  _prepareItems(context) {
+    context.itemLists = { features: itemSections(this.actor, [ADVANTAGE, DUEL_STYLE]) };
+  }
+}
+class DangerPointsSheet extends SvnSea2EActorSheet {
+  static DEFAULT_OPTIONS = {
+    classes: ["dangerpts"],
+    position: { width: 450, height: "auto" },
+    actions: { adjustPoints: DangerPointsSheet.#onAdjustPoints }
+  };
+  static PARTS = { sheet: { template: `${ACTOR_TEMPLATES}/dangerpts.hbs` } };
+  static async #onAdjustPoints(event, target) {
+    if (!this.isEditable) return;
+    const points = Math.max(0, (parseInt(this.actor.system.points) || 0) + parseInt(target.dataset.delta));
+    await this.actor.update({ "system.points": points });
+  }
+}
+class ShipSheet extends SvnSea2EActorSheet {
+  static DEFAULT_OPTIONS = {
+    classes: ["ship"],
+    actions: { removeCrew: ShipSheet.#onRemoveCrew }
+  };
+  static PARTS = {
+    sheet: { template: `${ACTOR_TEMPLATES}/ship.hbs`, scrollable: [".sheet-body .tab"] }
+  };
+  static TABS = {
+    primary: {
+      tabs: [
+        { id: "roster", label: "SVNSEA2E.Roster" },
+        { id: "cargo", label: "SVNSEA2E.Cargo" },
+        { id: "features", label: "SVNSEA2E.Features" }
+      ],
+      initial: "roster"
+    }
+  };
+  /** @override */
+  async _prepareContext(options) {
+    const context = await super._prepareContext(options);
+    context.enrichedCargo = await enrichHTML(this.actor.system.cargo, { secrets: this.actor.isOwner, relativeTo: this.actor });
+    context.crew = this._prepareCrew();
+    return context;
+  }
+  _prepareItems(context) {
+    context.itemLists = { features: itemSections(this.actor, [ItemTypes.SHIP_ADVENTURE, ItemTypes.SHIP_BACKGROUND]) };
+  }
+  /** The roster: every role with the crew members currently assigned to it. */
+  _prepareCrew() {
+    const crew = Object.fromEntries(
+      Object.entries(CONFIG.SVNSEA2E.crewRoles).map(([role, label]) => [role, { label, cssClass: role, role, actors: [] }])
+    );
+    for (const { actorId, role } of this.actor.system.crew) {
+      const member = game.actors.get(actorId);
+      if (member && crew[role]) crew[role].actors.push(member);
+    }
+    return Object.values(crew);
+  }
+  /** @override */
+  async _onRender(context, options) {
+    await super._onRender(context, options);
+    for (const header of this.element.querySelectorAll(".roster .item-header[data-role]")) {
+      header.addEventListener("dragenter", () => header.classList.add("drag-over"));
+      header.addEventListener("dragleave", (event) => {
+        if (!header.contains(event.relatedTarget)) header.classList.remove("drag-over");
+      });
+      header.addEventListener("drop", () => header.classList.remove("drag-over"));
+    }
+  }
+  /** An actor dropped on a role header joins the crew with that role. */
+  async _onDropActor(event, actor) {
+    if (!this.isEditable || actor.pack) return null;
+    const role = event.target.closest("[data-role]")?.dataset.role;
+    if (!role) return null;
+    await this.actor.system.setCrewRole(actor.id, role);
+    return actor;
+  }
+  static async #onRemoveCrew(event, target) {
+    if (!this.isEditable) return;
+    const actorId = target.closest("[data-actor-id]")?.dataset.actorId;
+    if (actorId) await this.actor.system.removeCrewMember(actorId);
+  }
+}
+const DEFAULT_ITEM_ICONS = ["icons/svg/item-bag.svg", CONST.DEFAULT_TOKEN];
+const CHAT_TEMPLATES = {
+  [ItemTypes.BACKGROUND]: `${TEMPLATES}/items/parts/skill-throw-background.hbs`,
+  [ItemTypes.DUEL_STYLE]: `${TEMPLATES}/items/parts/skill-throw-duelstyle.hbs`,
+  default: `${TEMPLATES}/items/parts/skill-throw.hbs`
+};
+const ENRICHED_FIELDS = ["quirk", "bonus", "concern", "earnfavor", "callupon", "reward", "endings", "steps"];
+class SvnSea2EItem extends Item {
+  /** Use the system icon for new items that still have the default artwork. */
+  async _preCreate(data, options, user) {
+    if (await super._preCreate(data, options, user) === false) return false;
+    if (!this.img || DEFAULT_ITEM_ICONS.includes(this.img)) {
+      this.updateSource({ img: `${SYSTEM_PATH}/icons/${this.type}.jpg` });
+    }
+  }
+  /**
+   * Data used to display the item in chat or in the expandable summary of the actor sheets.
+   * @param {object} [options]
+   * @param {boolean} [options.secrets]  Whether to reveal secret blocks.
+   */
+  async getChatData({ secrets = this.isOwner } = {}) {
+    const data = this.system.toObject(false);
+    const enrichOptions = { secrets, relativeTo: this, rollData: this.actor?.getRollData() };
+    data.description = await enrichHTML(data.description, enrichOptions);
+    for (const field of ENRICHED_FIELDS) {
+      if (typeof data[field] === "string") data[field] = await enrichHTML(data[field], enrichOptions);
+    }
+    data.metadatahtml = this[`_${this.type}ChatData`]?.(data) ?? "";
+    return data;
+  }
+  _advantageChatData(data) {
+    const points = data.cost.normal === 1 ? game.i18n.localize("SVNSEA2E.Point") : game.i18n.localize("SVNSEA2E.Points");
+    let html = `<ul class="details-list"><li class="tag">${data.cost.normal} ${points}</li>`;
+    if (data.knack) html += `<li class="tag">${game.i18n.localize("SVNSEA2E.Knack")}</li>`;
+    if (data.innate) html += `<li class="tag">${game.i18n.localize("SVNSEA2E.Innate")}</li>`;
+    return `${html}</ul>`;
+  }
+  _artifactChatData(data) {
+    const type = !data.artifactType || data.artifactType === "none" ? "" : CONFIG.SVNSEA2E.artifactTypes[data.artifactType];
+    return `<ul class="details-list"><li class="tag">${type ?? ""}</li></ul>`;
+  }
+  _backgroundChatData(data) {
+    const tags = (list) => list.map((entry) => `<li class="tag">${entry}</li>`).join("");
+    return `<h5>${game.i18n.localize("SVNSEA2E.Quirk")}</h5>
+    <p>${data.quirk}</p>
+    <h5>${game.i18n.localize("SVNSEA2E.Skills")}</h5>
+    <ul class="skills-list">${tags(data.skills.map((s) => CONFIG.SVNSEA2E.skills[s]))}</ul>
+    <h5>${game.i18n.localize("SVNSEA2E.Advantages")}</h5>
+    <ul class="advantages-list">${tags(data.advantages)}</ul>`;
+  }
+  _duelstyleChatData(data) {
+    return `<h5>${game.i18n.localize("SVNSEA2E.Bonus")}</h5><p>${data.bonus}</p>`;
+  }
+  _schemeChatData(data) {
+    return `<p>${game.i18n.format("SVNSEA2E.ChatInfluence", { influence: data.influence.value })}</p>`;
+  }
+  _secretsocietyChatData(data) {
+    return `<h5>${game.i18n.localize("SVNSEA2E.Concern")}</h5>
+    <p>${data.concern}</p>
+    <h5>${game.i18n.localize("SVNSEA2E.EarnFavor")}</h5>
+    <p>${data.earnfavor}</p>
+    <h5>${game.i18n.localize("SVNSEA2E.UseFavor")}</h5>
+    <p>${data.callupon}</p>`;
+  }
+  _sorceryChatData(data) {
+    const cfg = CONFIG.SVNSEA2E;
+    return `<ul class="tag-list">
+    <li class="tag">${cfg.sorceryTypes[data.sorctype] ?? ""}</li>
+    <li class="tag">${cfg.sorcerySubcats[data.sorcsubcat] ?? ""} ${cfg.sorceryCats[data.sorccat] ?? ""}</li>
+    <li class="tag">${game.i18n.localize("SVNSEA2E.Duration")}: ${cfg.durations[data.sorcdur] ?? ""}</li>
+    </ul>`;
+  }
+  _storyChatData(data) {
+    return `<h5>${game.i18n.localize("SVNSEA2E.Status")}</h5>
+    <p>${CONFIG.SVNSEA2E.storyStatuses[data.status] ?? ""}</p>
+    <h5>${game.i18n.localize("SVNSEA2E.Endings")}</h5>
+    <p>${data.endings}</p>
+    <h5>${game.i18n.localize("SVNSEA2E.Steps")}</h5>
+    <p>${data.steps}</p>
+    <h5>${game.i18n.localize("SVNSEA2E.Reward")}</h5>
+    <p>${data.reward}</p>`;
+  }
+  /** Post a card with the item's image, name and description to the chat. */
+  async sendToChat() {
+    const itemData = await this.getChatData();
+    const template = CHAT_TEMPLATES[this.type] ?? CHAT_TEMPLATES.default;
+    const content = await foundry.applications.handlebars.renderTemplate(template, {
+      ...itemData,
+      name: this.name,
+      img: this.img,
+      item: this
+    });
+    return ChatMessage.implementation.create({
+      author: game.user.id,
+      speaker: ChatMessage.implementation.getSpeaker({ actor: this.actor }),
+      content
+    });
+  }
+  /** @deprecated Kept for macros written against v23; use {@link sendToChat}. */
+  ItemThrow() {
+    return this.sendToChat();
+  }
+}
+const { HTMLField, SchemaField, NumberField, StringField, ArrayField, BooleanField } = foundry.data.fields;
+const baseSchema = () => ({
+  description: new HTMLField(),
+  infosource: new StringField(),
+  used: new BooleanField({ initial: false })
+});
+class SimpleItemModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return baseSchema();
+  }
+}
+class AdvantageModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      ...baseSchema(),
+      cost: new SchemaField({
+        normal: new NumberField({ required: true, integer: true, min: 0, initial: 1 }),
+        // Free text: the reduced cost usually depends on the nation ("2 if you are Castillian").
+        reducecost: new StringField()
+      }),
+      knack: new BooleanField({ initial: false }),
+      innate: new BooleanField({ initial: false })
+    };
+  }
+  /** Costs saved before the cost had to be a whole number and the reduced cost became text. */
+  static migrateData(source) {
+    const cost = source.cost;
+    if (cost) {
+      if (typeof cost.normal === "string") cost.normal = parseInt(cost.normal);
+      if (typeof cost.normal === "number") cost.normal = Number.isFinite(cost.normal) ? Math.max(Math.round(cost.normal), 0) : 1;
+      if (typeof cost.reducecost === "number") cost.reducecost = String(cost.reducecost);
+      else if (cost.reducecost === null) cost.reducecost = "";
+    }
+    return super.migrateData(source);
+  }
+}
+class ArtifactModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return { ...baseSchema(), artifactType: new StringField() };
+  }
+}
+class BackgroundModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      ...baseSchema(),
+      quirk: new HTMLField(),
+      skills: new ArrayField(new StringField()),
+      advantages: new ArrayField(new StringField()),
+      nation: new StringField(),
+      // Whether the background's skills and advantages are currently applied to the owning actor.
+      active: new BooleanField({ initial: true })
+    };
+  }
+}
+class DuelStyleModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return { ...baseSchema(), bonus: new HTMLField() };
+  }
+}
+class SchemeModel extends foundry.abstract.TypeDataModel {
+  static INFLUENCE_MAX = 40;
+  static defineSchema() {
+    const value = new NumberField({ required: true, integer: true, min: 0, max: this.INFLUENCE_MAX, initial: 0 });
+    return { ...baseSchema(), influence: new SchemaField({ value }) };
+  }
+  static migrateData(source) {
+    const influence = source.influence;
+    if (typeof influence?.value === "number") influence.value = clamp(influence.value, 0, this.INFLUENCE_MAX);
+    return super.migrateData(source);
+  }
+  prepareBaseData() {
+    super.prepareBaseData();
+    Object.assign(this.influence, { min: 0, max: SchemeModel.INFLUENCE_MAX });
+  }
+}
+class SecretSocietyModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      ...baseSchema(),
+      concern: new HTMLField(),
+      earnfavor: new HTMLField(),
+      callupon: new HTMLField(),
+      favor: new NumberField({ required: true, integer: true, min: 0, initial: 0 })
+    };
+  }
+  /** Up to v23 the favor was saved as text ("2", "" or even "<p>2</p>"). */
+  static migrateData(source) {
+    if (typeof source.favor === "string") source.favor = Math.max(parseInt(source.favor.replace(/<[^>]*>/g, "")) || 0, 0);
+    return super.migrateData(source);
+  }
+}
+class SorceryModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      ...baseSchema(),
+      sorctype: new StringField(),
+      sorcdur: new StringField(),
+      sorccat: new StringField(),
+      sorcsubcat: new StringField()
+    };
+  }
+}
+class StoryModel extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      ...baseSchema(),
+      reward: new HTMLField(),
+      endings: new HTMLField(),
+      steps: new HTMLField(),
+      status: new StringField({ initial: "current" })
+    };
+  }
+}
+class HubrisModel extends SimpleItemModel {
+}
+class MonsterQualityModel extends SimpleItemModel {
+}
+class ShipAdventureModel extends SimpleItemModel {
+}
+class ShipBackgroundModel extends SimpleItemModel {
+}
+class VirtueModel extends SimpleItemModel {
+}
+const { ApplicationV2, HandlebarsApplicationMixin: HandlebarsApplicationMixin$1 } = foundry.applications.api;
+class ChoiceSelector extends HandlebarsApplicationMixin$1(ApplicationV2) {
+  /**
+   * @param {object} config
+   * @param {foundry.abstract.Document} config.document  The document to update.
+   * @param {string} config.field                        Path of the array field, e.g. "system.skills".
+   * @param {Record<string, string>} config.choices      Available choices as {key: label}.
+   * @param {string} config.title
+   */
+  constructor({ document: document2, field, choices, title, ...options }) {
+    super(options);
+    this.document = document2;
+    this.field = field;
+    this.choices = choices;
+    this.selectorTitle = title;
+  }
+  static DEFAULT_OPTIONS = {
+    tag: "form",
+    // Up to v23.3 the selectors were Application V1 windows, always light.
+    classes: ["svnsea2e", "choice-selector", "themed", "theme-light"],
+    position: { width: 320, height: "auto" },
+    window: { contentClasses: ["standard-form"] },
+    form: { handler: ChoiceSelector.#onSubmit, closeOnSubmit: true }
+  };
+  static PARTS = {
+    form: { template: `${TEMPLATES}/apps/choice-selector.hbs`, scrollable: [".choice-list"] }
+  };
+  /** @override */
+  get title() {
+    return this.selectorTitle ?? super.title;
+  }
+  /** @override */
+  async _prepareContext(options) {
+    const chosen = foundry.utils.getProperty(this.document, this.field) ?? [];
+    return {
+      choices: Object.entries(this.choices).map(([key, label]) => ({
+        key,
+        label: game.i18n.localize(label),
+        chosen: chosen.includes(key)
+      }))
+    };
+  }
+  static async #onSubmit(event, form) {
+    const chosen = [...form.querySelectorAll('input[type="checkbox"]:checked')].map((input) => input.value);
+    await this.document.update({ [this.field]: chosen });
+  }
+}
+const { HandlebarsApplicationMixin } = foundry.applications.api;
+const { ItemSheetV2 } = foundry.applications.sheets;
+const ITEM_TEMPLATES = `${TEMPLATES}/items`;
+const ITEM_LAYOUTS = {
+  [ItemTypes.ADVANTAGE]: { tabs: ["description", "attributes"] },
+  [ItemTypes.ARTIFACT]: { header: true },
+  [ItemTypes.BACKGROUND]: { header: true, tabs: ["description", "quirk", "details"] },
+  [ItemTypes.DUEL_STYLE]: { tabs: ["description", "bonus"] },
+  [ItemTypes.SCHEME]: { header: true },
+  [ItemTypes.SECRET_SOCIETY]: { header: true, tabs: ["description", "concern", "earnfavor", "callupon"], width: 800 },
+  [ItemTypes.SORCERY]: { header: true, width: 750 },
+  [ItemTypes.STORY]: { header: true, tabs: ["description", "reward", "endings", "steps"] }
+};
+const PARTIAL_TABS = /* @__PURE__ */ new Set(["attributes", "details"]);
+const TAB_LABELS = { earnfavor: "SVNSEA2E.EarnFavor", callupon: "SVNSEA2E.UseFavor" };
+const tabLabel = (id) => TAB_LABELS[id] ?? `SVNSEA2E.${id[0].toUpperCase()}${id.slice(1)}`;
+async function advantageLink(name) {
+  const uuid = await findAdvantageUuid(name);
+  if (uuid) return { name, link: await enrichHTML(`@UUID[${uuid}]{${name}}`) };
+  return { name, missing: game.i18n.format("SVNSEA2E.ItemDoesntExist", { name }) };
+}
+class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
+  static DEFAULT_OPTIONS = {
+    classes: ["svnsea2e", "sheet", "item", "themed", "theme-light"],
+    position: { width: 600, height: 700 },
+    window: { resizable: true },
+    form: { submitOnChange: true },
+    actions: {
+      selectSkills: SvnSea2EItemSheet.#onSelectSkills,
+      selectAdvantages: SvnSea2EItemSheet.#onSelectAdvantages,
+      ...EFFECT_ACTIONS
+    }
+  };
+  static PARTS = { sheet: { template: `${ITEM_TEMPLATES}/item.hbs`, scrollable: [".sheet-body .tab"] } };
+  get layout() {
+    return ITEM_LAYOUTS[this.item.type] ?? {};
+  }
+  /** @override */
+  _initializeApplicationOptions(options) {
+    options = super._initializeApplicationOptions(options);
+    const width = ITEM_LAYOUTS[options.document?.type]?.width;
+    if (width) options.position.width = width;
+    return options;
+  }
+  /** @override */
+  _getTabsConfig(group) {
+    if (group !== "primary") return null;
+    const tabs = (this.layout.tabs ?? ["description"]).map((id) => ({ id, label: tabLabel(id) }));
+    return withEffectsTab({ tabs, initial: "description" });
+  }
+  /** @override */
+  async _prepareContext(options) {
+    const context = await super._prepareContext(options);
+    const item = this.item;
+    const system = item.system;
+    const tabs = this._prepareTabs("primary");
+    Object.assign(context, {
+      item,
+      system,
+      editable: this.isEditable,
+      cssClass: item.isOwner ? "editable" : "locked",
+      config: CONFIG.SVNSEA2E,
+      tabs,
+      itemType: CONFIG.SVNSEA2E.itemTypes[item.type],
+      name: item.name,
+      img: item.img,
+      headerPartial: this.layout.header ? `${ITEM_TEMPLATES}/parts/header-${item.type}.hbs` : null,
+      bodyTabs: Object.values(tabs).filter((tab2) => tab2.id !== "effects").map((tab2) => ({ ...tab2, editor: !PARTIAL_TABS.has(tab2.id), partial: `${ITEM_TEMPLATES}/parts/tab-${tab2.id}.hbs` })),
+      effects: prepareEffects(item),
+      enriched: {}
+    });
+    const enrichOptions = { secrets: item.isOwner, relativeTo: item, rollData: item.actor?.getRollData() };
+    for (const tab2 of context.bodyTabs.filter((t) => t.editor)) {
+      context.enriched[tab2.id] = await enrichHTML(system[tab2.id], enrichOptions);
+    }
+    if (item.type === ItemTypes.BACKGROUND) {
+      context.selectedskills = system.skills.map((s) => CONFIG.SVNSEA2E.skills[s]);
+      context.advantageLinks = await Promise.all(system.advantages.map((name) => advantageLink(name)));
+    }
+    return context;
+  }
+  static #onSelectSkills(event, target) {
+    if (!this.isEditable) return;
+    new ChoiceSelector({
+      document: this.item,
+      field: "system.skills",
+      choices: CONFIG.SVNSEA2E.skills,
+      title: game.i18n.localize("SVNSEA2E.BackgroundSkillSelect")
+    }).render(true);
+  }
+  static async #onSelectAdvantages(event, target) {
+    if (!this.isEditable) return;
+    const names = await getAllAdvantageNames();
+    new ChoiceSelector({
+      document: this.item,
+      field: "system.advantages",
+      choices: Object.fromEntries(names.map((name) => [name, name])),
+      title: game.i18n.localize("SVNSEA2E.BackgroundAdvantageSelect")
+    }).render(true);
+  }
+}
+Hooks.once("init", () => {
   console.log(`7th Sea 2E | Initializing 7th Sea Second Edition System
-    ${h.ASCII}`), game.svnsea2e = {
-      applications: {
-        SvnSea2EActor: ce,
-        SvnSea2EItem: Se
-      },
-      config: h,
-      migrations: os,
-      toolbox: new ds()
-    }, CONFIG.Combat.initiative = {
-      formula: "1d20",
-      decimals: 2
-    }, CONFIG.SVNSEA2E = h, CONFIG.SVNSEA2E.natTypes = foundry.utils.duplicate(h.nations), CONFIG.SVNSEA2E.natTypes.gisles = "SVNSEA2E.RegionGlamourIsles", CONFIG.Actor.documentClass = ce, CONFIG.Item.documentClass = Se, CONFIG.Actor.dataModels[l.BRUTE] = Te, CONFIG.Actor.dataModels[l.DANGERPOINTS] = xe, CONFIG.Actor.dataModels[l.HERO] = He, CONFIG.Actor.dataModels[l.MONSTER] = Ge, CONFIG.Actor.dataModels[l.PLAYER] = qe, CONFIG.Actor.dataModels[l.SHIP] = Ye, CONFIG.Actor.dataModels[l.VILLAIN] = Ke, CONFIG.Item.dataModels[p.ADVANTAGE] = et, CONFIG.Item.dataModels[p.ARTIFACT] = at, CONFIG.Item.dataModels[p.BACKGROUND] = rt, CONFIG.Item.dataModels[p.DUEL_STYLE] = ct, CONFIG.Item.dataModels[p.MONSTER_QUALITY] = dt, CONFIG.Item.dataModels[p.SCHEME] = St, CONFIG.Item.dataModels[p.SECRET_SOCIETY] = Vt, CONFIG.Item.dataModels[p.SHIP_ADVENTURE] = gt, CONFIG.Item.dataModels[p.SHIP_BACKGROUND] = ft, CONFIG.Item.dataModels[p.VIRTUE] = At, CONFIG.Item.dataModels[p.HUBRIS] = bt, CONFIG.Item.dataModels[p.SORCERY] = kt, CONFIG.Item.dataModels[p.STORY] = Ct, Ie(), Actors.unregisterSheet("core", ActorSheet), Actors.registerSheet("svnsea2e", jt, {
-      types: [l.PLAYER],
-      makeDefault: !0
-    }), Actors.registerSheet("svnsea2e", HeroSheet, {
-      types: [l.HERO],
-      makeDefault: !0
-    }), Actors.registerSheet("svnsea2e", Rt, {
-      types: [l.BRUTE],
-      makeDefault: !0
-    }), Actors.registerSheet("svnsea2e", Gt, {
-      types: [l.MONSTER],
-      makeDefault: !0
-    }), Actors.registerSheet("svnsea2e", qt, {
-      types: [l.VILLAIN],
-      makeDefault: !0
-    }), Actors.registerSheet("svnsea2e", Pt, {
-      types: [l.SHIP],
-      makeDefault: !0
-    }), Actors.registerSheet("svnsea2e", Ht, {
-      types: [l.DANGERPOINTS],
-      makeDefault: !0
-    }), Items.unregisterSheet("core", ItemSheet), Items.registerSheet("svnsea2e", Ut, {
-      types: [p.ADVANTAGE],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", Yt, {
-      types: [p.ARTIFACT],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", Wt, {
-      types: [p.BACKGROUND],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", Kt, {
-      types: [p.DUEL_STYLE],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", Qt, {
-      types: [p.MONSTER_QUALITY],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", Jt, {
-      types: [p.SCHEME],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", Xt, {
-      types: [p.SECRET_SOCIETY],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", Zt, {
-      types: [p.SHIP_ADVENTURE],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", es, {
-      types: [p.SHIP_BACKGROUND],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", ts, {
-      types: [p.SORCERY],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", ss, {
-      types: [p.STORY],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", rs, {
-      types: [p.VIRTUE],
-      makeDefault: !0
-    }), Items.registerSheet("svnsea2e", ns, {
-      types: [p.HUBRIS],
-      makeDefault: !0
-    }), Handlebars.registerHelper("concat", function () {
-      var i = "";
-      for (var e in arguments)
-        typeof arguments[e] != "object" && (i += arguments[e]);
-      return i;
-    }), Handlebars.registerHelper("toLowerCase", function (i) {
-      return i.toLowerCase();
-    }), Handlebars.registerHelper("capitalize", function (i) {
-      return i.charAt(0).toUpperCase() + i.slice(1);
-    }), 
-    
-    Handlebars.registerHelper("for", function (i, e, t, s) {
-      var a = "";
-      const n = parseInt(i) + parseInt(e);
-
-      // CORRECCIÓN FINAL: Agrupamiento dinámico.
-      // Lee los datos del personaje y divide el Máximo de Heridas entre el Máximo de Dramáticas.
-      let r = 5;
-      if (this.wounds && this.wounds.max && this.dwounds && this.dwounds.max > 0) {
-        r = Math.floor(this.wounds.max / this.dwounds.max);
-      }
-
-      for (var o = i; o < n; o += t) {
-        s.data.index = o;
-        s.data.first = o === 0;
-        s.data.last = o === e;
-        s.data.mod = Math.trunc(o / r);
-        s.data.remain = o % r;
-        a += s.fn(this);
-      }
-      return a;
-    }), 
-    
-    Handlebars.registerHelper("iff", function (i, e, t, s) {
-      var a = !1;
-      switch (e) {
-        case "==":
-          a = i == t;
-          break;
-        case "!=":
-          a = i != t;
-          break;
-        case ">=":
-          a = i >= t;
-          break;
-        case "<=":
-          a = i <= t;
-          break;
-        case ">":
-          a = i > t;
-          break;
-        case "<":
-          a = i < t;
-          break;
-        default:
-          throw "Unknown operator " + e;
-      }
-      return a ? s.fn(this) : s.inverse(this);
-    }), ke();
+${SVNSEA2E.ASCII}`);
+  game.svnsea2e = {
+    applications: { SvnSea2EActor, SvnSea2EItem },
+    config: SVNSEA2E,
+    migrations,
+    rolls: { rollDicePool, rollSkill, rollTrait, rollFreeDice, editRoll },
+    updateInitiative,
+    toolbox: new Toolbox()
+  };
+  CONFIG.SVNSEA2E = SVNSEA2E;
+  CONFIG.SVNSEA2E.natTypes = { ...SVNSEA2E.nations, gisles: "SVNSEA2E.RegionGlamourIsles" };
+  CONFIG.Combat.initiative = { formula: "1d20", decimals: 0 };
+  CONFIG.Combat.documentClass = SvnSea2ECombat;
+  CONFIG.Combatant.documentClass = SvnSea2ECombatant;
+  CONFIG.Actor.documentClass = SvnSea2EActor;
+  CONFIG.Item.documentClass = SvnSea2EItem;
+  CONFIG.ActiveEffect.documentClass = SvnSea2EActiveEffect;
+  Object.assign(CONFIG.Actor.dataModels, {
+    [ActorType.BRUTE]: BruteModel,
+    [ActorType.DANGERPOINTS]: DangerPointsModel,
+    [ActorType.HERO]: HeroModel,
+    [ActorType.MONSTER]: MonsterModel,
+    [ActorType.PLAYER]: PlayerModel,
+    [ActorType.SHIP]: ShipModel,
+    [ActorType.VILLAIN]: VillainModel
+  });
+  CONFIG.ChatMessage.dataModels[ROLL_MESSAGE] = RollMessageModel;
+  Object.assign(CONFIG.Item.dataModels, {
+    [ItemTypes.ADVANTAGE]: AdvantageModel,
+    [ItemTypes.ARTIFACT]: ArtifactModel,
+    [ItemTypes.BACKGROUND]: BackgroundModel,
+    [ItemTypes.DUEL_STYLE]: DuelStyleModel,
+    [ItemTypes.MONSTER_QUALITY]: MonsterQualityModel,
+    [ItemTypes.SCHEME]: SchemeModel,
+    [ItemTypes.SECRET_SOCIETY]: SecretSocietyModel,
+    [ItemTypes.SHIP_ADVENTURE]: ShipAdventureModel,
+    [ItemTypes.SHIP_BACKGROUND]: ShipBackgroundModel,
+    [ItemTypes.SORCERY]: SorceryModel,
+    [ItemTypes.STORY]: StoryModel,
+    [ItemTypes.VIRTUE]: VirtueModel,
+    [ItemTypes.HUBRIS]: HubrisModel
+  });
+  registerSystemSettings();
+  registerSheets();
+  registerHandlebarsHelpers();
+  return preloadHandlebarsTemplates();
 });
-Hooks.once("ready", async function () {
-  game.svnsea2e.packAdvs = await ms(), console.log("7th Sea 2E | Loaded Compendium Advantages"), game.settings.get("svnsea2e", "systemMigrationVersion"), game.user.isGM && fe(), as(), game.svnsea2e.toolbox.render(!0);
-});
-Hooks.once("setup", function () {
-  const i = [
-    "actorTypes",
+function registerSheets() {
+  const { DocumentSheetConfig } = foundry.applications.apps;
+  for (const sheet of [foundry.appv1?.sheets?.ActorSheet, foundry.applications.sheets.ActorSheetV2]) {
+    if (sheet) DocumentSheetConfig.unregisterSheet(Actor, "core", sheet);
+  }
+  for (const sheet of [foundry.appv1?.sheets?.ItemSheet, foundry.applications.sheets.ItemSheetV2]) {
+    if (sheet) DocumentSheetConfig.unregisterSheet(Item, "core", sheet);
+  }
+  const register = (documentClass, sheet, type) => DocumentSheetConfig.registerSheet(documentClass, SYSTEM_ID, sheet, { types: [type], makeDefault: true });
+  register(Actor, PlayerCharacterSheet, ActorType.PLAYER);
+  register(Actor, HeroSheet, ActorType.HERO);
+  register(Actor, BruteSheet, ActorType.BRUTE);
+  register(Actor, MonsterSheet, ActorType.MONSTER);
+  register(Actor, VillainSheet, ActorType.VILLAIN);
+  register(Actor, ShipSheet, ActorType.SHIP);
+  register(Actor, DangerPointsSheet, ActorType.DANGERPOINTS);
+  DocumentSheetConfig.registerSheet(Item, SYSTEM_ID, SvnSea2EItemSheet, { types: Object.values(ItemTypes), makeDefault: true });
+}
+Hooks.once("setup", () => {
+  const lists = [
     "natTypes",
     "artifactTypes",
     "crewStatuses",
@@ -3479,116 +2878,49 @@ Hooks.once("setup", function () {
     "languages",
     "nations",
     "traits",
-    "shipRoles",
     "skills",
     "sorceryTypes",
     "sorceryCats",
     "sorcerySubcats",
     "storyStatuses"
-  ], e = [];
-  for (const t of i) {
-    const s = Object.entries(CONFIG.SVNSEA2E[t]).map((a) => [a[0], game.i18n.localize(a[1])]);
-    e.includes(t) || s.sort((a, n) => a[1].localeCompare(n[1])), CONFIG.SVNSEA2E[t] = s.reduce((a, n) => (a[n[0]] = n[1], a), {});
+  ];
+  for (const list of [...lists, "crewRoles"]) {
+    const entries = Object.entries(CONFIG.SVNSEA2E[list]).map(([key, label]) => [key, game.i18n.localize(label)]);
+    if (lists.includes(list)) entries.sort((a, b) => a[1].localeCompare(b[1]));
+    CONFIG.SVNSEA2E[list] = Object.fromEntries(entries);
   }
 });
-Hooks.on("preCreateItem", function (i, e, t) {
-  // Solo sobreescribimos la imagen si NO tiene imagen personalizada.
-  // Es decir, si está vacía o tiene el icono de bolsa por defecto de Foundry.
-  if (!i.img || i.img === "icons/svg/item-bag.svg" || i.img === "icons/svg/mystery-man.svg") {
-    i.updateSource({
-      img: "systems/svnsea2e/icons/" + i.type + ".jpg"
-    });
-  }
+Hooks.once("ready", async () => {
+  registerChatListeners();
+  await migrateWorldIfNeeded();
+  game.svnsea2e.toolbox.render(true);
 });
-Hooks.on("preCreateActor", function (i, e, t, s) {
-  if (!i.img || i.img === "icons/svg/mystery-man.svg") {
-    i.updateSource({
-      img: "systems/svnsea2e/icons/" + i.type + ".jpg"
-    });
-  }
+Hooks.on("updateActor", (actor) => {
+  if (game.svnsea2e.toolbox.shows(actor)) game.svnsea2e.toolbox.render();
 });
-Hooks.on("updateActor", function () {
-  us();
-});
-Hooks.on("renderActorDirectory", (i, e, t) => {
-  if (game.user.isGM) {
-    const s = document.createElement("div");
-    s.className = "header-actions action-buttons flexrow";
-    const a = document.createElement("button");
-    a.style.width = "95%", a.innerHTML = game.i18n.localize("SVNSEA2E.OpenToolbox"), a.addEventListener("click", () => {
-      game.svnsea2e.toolbox.render(!0);
-    });
-    const n = e == null ? void 0 : e.querySelector(".directory-header"), r = n.querySelector("search");
-    s.appendChild(a), n.insertBefore(s, r);
-  }
-});
-
-Hooks.on("renderCombatTracker", (app, html, data) => {
-  const currentCombat = app.viewed;
-  if (!currentCombat) return;
-
-  const $html = $(html);
-
-  $html.find(".combatant").each((i, el) => {
-    const li = $(el);
-    const combatantId = li.data("combatant-id");
-    const combatant = currentCombat.combatants.get(combatantId);
-
-    if (!combatant) return;
-
-    // Buscamos el contenedor del número de iniciativa
-    const initDiv = li.find(".token-initiative");
-
-    // Si ya tiene botones, no hacemos nada
-    if (initDiv.find(".combat-btn").length > 0) return;
-
-    // Creamos los botones
-    const btnAdd = $(`<a class="combat-btn add" data-action="add" title="+1 Raise"><i class="fas fa-plus"></i></a>`);
-    const btnSub = $(`<a class="combat-btn sub" data-action="sub" title="-1 Raise"><i class="fas fa-minus"></i></a>`);
-
-    // INSERCIÓN: 
-    // Prepend = Poner al principio (ARRIBA)
-    // Append  = Poner al final (ABAJO)
-    initDiv.prepend(btnAdd);
-    initDiv.append(btnSub);
-
-    // Listeners (Clic y Doble Clic)
-    const buttons = initDiv.find(".combat-btn");
-
-    buttons.click(async (ev) => {
-      ev.preventDefault();
-      ev.stopPropagation();
-      const btn = ev.currentTarget;
-      const action = btn.dataset.action;
-      let newInit = (combatant.initiative || 0) + (action === "add" ? 1 : -1);
-      Q(combatant.actor.id, newInit);
-    });
-
-    buttons.dblclick((ev) => {
-      ev.preventDefault();
-      ev.stopPropagation();
-      return false;
-    });
+for (const hook of ["createActiveEffect", "updateActiveEffect", "deleteActiveEffect"]) {
+  Hooks.on(hook, (effect) => {
+    const actor = effect.actor;
+    if (actor && game.svnsea2e.toolbox.shows(actor)) game.svnsea2e.toolbox.render();
   });
-});
-
-async function ms() {
-  const i = [], e = Array.from(game.packs);
-  for (var t = 0; t < e.length; t++) {
-    const s = e[t];
-    if (s.metadata.type === "Item" || s.metadata.entity === "Item") {
-      const a = await s.getIndex();
-      for (let n = 0; n < a.length; n++) {
-        const doc = await s.getDocument(a[n]._id);
-        if (doc && doc.type === "advantage") {
-            i.push(doc.toObject ? doc.toObject() : doc.data || doc);
-        }
-      }
-    }
-  }
-  return i;
 }
-
-
+for (const hook of ["createItem", "updateItem", "deleteItem"]) Hooks.on(hook, invalidateAdvantageCache);
+Hooks.on("renderActorDirectory", (app, html) => {
+  if (!game.user.isGM || html.querySelector(".svnsea2e-toolbox-button")) return;
+  const header = html.querySelector(".directory-header");
+  if (!header) return;
+  const wrapper = document.createElement("div");
+  wrapper.className = "header-actions action-buttons flexrow svnsea2e-toolbox-button";
+  const button = document.createElement("button");
+  button.type = "button";
+  button.innerHTML = `<i class="fa-solid fa-toolbox"></i> ${game.i18n.localize("SVNSEA2E.OpenToolbox")}`;
+  button.addEventListener("click", () => game.svnsea2e.toolbox.render(true));
+  wrapper.append(button);
+  header.insertBefore(wrapper, header.querySelector("search"));
+});
+Hooks.on("renderCombatTracker", onRenderCombatTracker);
+Hooks.on("getCombatTrackerContextOptions", onGetCombatTrackerContextOptions);
+Hooks.on("renderActiveEffectConfig", onRenderActiveEffectConfig);
+Hooks.on("renderChatMessageHTML", onRenderChatMessage);
+Hooks.on("getChatMessageContextOptions", onGetChatMessageContextOptions);
 //# sourceMappingURL=svnsea2e.mjs.map
-

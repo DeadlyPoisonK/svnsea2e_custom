@@ -1,0 +1,32 @@
+{
+  "folder": "YXoq8ps9ZLmxOmkx",
+  "name": "Bohiti",
+  "type": "background",
+  "_id": "Lj1aaSrdtqhVC4fj",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Embajador de Soryana, puente entre tu gente y sus predecesores. Esta es tu sagrada responsabilidad.</p>",
+    "infosource": "Naciones Piratas, p. 148",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando resuelvas el problema de un ancestro perdido.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "perform",
+      "sailing",
+      "scholarship"
+    ],
+    "advantages": [
+      "Buscador de Soryana",
+      "Sentido de la orientación"
+    ],
+    "nation": "rahuri",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

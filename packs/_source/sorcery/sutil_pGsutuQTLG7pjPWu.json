@@ -1,0 +1,22 @@
+{
+  "folder": "4rsEYwOl0zAEkA41",
+  "name": "Sutil",
+  "type": "sorcery",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La Manifestación no tiene ningún efecto visual o auditivo, salvo un pequeño gesto o un breve y sutil destello de luz en los ojos. Cualquiera que observe activamente al churikuna sabe que ha activado una Manifestación, pero no conoce el efecto específico de la Manifestación (a menos que sea inmediatamente obvio).</p><p>Cualquiera que no esté observando activamente el churikuna debe gastar 1 punto de héroe (o un punto de peligro, si es un villano) para darse cuenta de que hay algo en marcha.</p>",
+    "infosource": "El Nuevo Mundo, p. 180",
+    "used": false,
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "turn",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "pGsutuQTLG7pjPWu",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

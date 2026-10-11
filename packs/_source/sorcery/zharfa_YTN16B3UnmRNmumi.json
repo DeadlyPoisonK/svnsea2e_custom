@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Zharfa",
+  "type": "sorcery",
+  "_id": "YTN16B3UnmRNmumi",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado y pon tus manos sobre un personaje. Si has recibido al menos una Herida Dramática, te curas una Herida Dramática y causas una Herida Dramática a ese personaje.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 180",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "8yRTt6IGKB0lpv51",
+  "name": "Bendición de Tranquilidad Brillante",
+  "type": "sorcery",
+  "_id": "TIdn2y4UWwp3Eh9F",
+  "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
+  "system": {
+    "description": "<p>Activa este turru para calmar a un gran grupo de personas o una multitud, centrada en ti. Los alborotadores simplemente se irritan y enojan; los grupos ansiosos y temerosos se calman. El efecto dura mientras permanezcas con la multitud. Si te vas, el efecto persiste durante un número de rondas igual a tu Donaire.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 184",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

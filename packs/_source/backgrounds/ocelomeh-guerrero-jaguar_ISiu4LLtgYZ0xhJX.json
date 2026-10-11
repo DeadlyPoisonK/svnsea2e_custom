@@ -1,0 +1,31 @@
+{
+  "folder": "oGKITcJ7tfpTOqvu",
+  "name": "Ocēlōmeh (Guerrero jaguar)",
+  "type": "background",
+  "_id": "ISiu4LLtgYZ0xhJX",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tú y tus hermanos y hermanas de armas acecháis las selvas nahuacanas, derrotando a los enemigos de tu nación.</p>",
+    "infosource": "El Nuevo Mundo, p. 163",
+    "quirk": "<p>Ganas 1 punto de héroe cuando tu compromiso a trabajar como parte de un equipo o unidad te ayude a resolver un problema.</p>",
+    "skills": [
+      "athletics",
+      "hide",
+      "intimidate",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Academia de esgrima (Icniuhitli)",
+      "Acechador en las sombras"
+    ],
+    "nation": "nahuaca",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

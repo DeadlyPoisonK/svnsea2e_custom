@@ -1,0 +1,22 @@
+{
+  "folder": "3DBtzP6wWtTujRJe",
+  "name": "Llamar",
+  "type": "sorcery",
+  "_id": "JTU9XN0EKZUFbqLN",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Milagro para que tu Maravilla vuele hasta tu mano. Tu Maravilla evita obstáculos y no daña a nadie ni a nada. Si algo la sostiene, tira de ello hasta que se suelta, pero no puede levantar nada del suelo a ninguna distancia que pueda dañarlo. Si tu Maravilla queda atrapada (por magia o por cualquier otro medio), este hechizo no funciona. Tu Maravilla, dependiendo de la distancia a la que te encuentres, te alcanza en esta escena o en la siguiente. Debe ser una gran distancia, por ejemplo, varios días de viaje a pie, para no llegar durante esta escena. Vuela a una velocidad impresionante y aterriza suavemente en tu mano o junto a ti.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 167",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "miracle",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

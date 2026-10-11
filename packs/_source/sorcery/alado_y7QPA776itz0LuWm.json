@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Alado",
+  "type": "monsterquality",
+  "_id": "y7QPA776itz0LuWm",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Esta criatura tiene un poderoso par de alas que usa para propulsarse en el aire, y normalmente prefiere golpear a su presa desde lo alto. Si este monstruo es un villano y tiene espacio para extender sus alas y volar, tira 5 dados adicionales en cualquier Riesgo. Después de que el monstruo reciba 2 Heridas Dramáticas, está demasiado herido para volar y pierde sus bonificaciones hasta que tenga tiempo para recuperarse. Si es una banda de monstruos, cualquier intento de infligirle Heridas cuesta 1 Aumento adicional.</p>",
+    "infosource": "7º Mar (básico), p. 197",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

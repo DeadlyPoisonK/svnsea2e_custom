@@ -1,0 +1,22 @@
+{
+  "folder": "7okTCjMzppFJENbT",
+  "name": "Coraje Litet Merke",
+  "type": "sorcery",
+  "_id": "YpbGBWyPNn9ACZc1",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Elige a otro personaje que esté en la misma escena que tú. Dicho personaje puede activar de inmediato una Oportunidad sin gastar un Aumento.</p><p>Espíritu es una runa que gobierna la libertad, la emoción y la empatía. La runa da nombre a los héroes que se han entregado para ayudar a los demás. Su uso más habitual es como encantamiento de amor.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 191",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

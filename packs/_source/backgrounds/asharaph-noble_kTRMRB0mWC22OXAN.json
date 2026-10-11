@@ -1,0 +1,32 @@
+{
+  "folder": "AWlM6bJmJQhh7Se4",
+  "name": "Asharaph (Noble)",
+  "type": "background",
+  "_id": "kTRMRB0mWC22OXAN",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Lealtad</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "infosource": "Khitai, p. 108 (traducción no oficial)",
+    "quirk": "<p>Gana un punto de héroe cuando uses la presión política o tu influencia para resolver un problema.</p>",
+    "skills": [
+      "convince",
+      "ride",
+      "tempt",
+      "warfare"
+    ],
+    "advantages": [
+      "Amigos en la corte (Khitai)",
+      "Mirada altiva (Khitai)",
+      "Buen bebedor (Khitai)"
+    ],
+    "nation": "none",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

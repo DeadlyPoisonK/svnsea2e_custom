@@ -1,0 +1,32 @@
+{
+  "folder": "1QfGlHgem6ssE584",
+  "name": "Enspektè",
+  "type": "background",
+  "_id": "ZBmNmiMBL1PTprb0",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Los horrores de Jaragua pretenden romper a tu pueblo, pero tú eres su protector y eres irrompible.</p><p><em>Ventajas en el libro: Academia de esgrima (Bugu Takobi).</em></p>",
+    "infosource": "Naciones Piratas, p. 147",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando aprendas un secreto sobre un monstruo o una conspiración antijaraguana.</p>",
+    "skills": [
+      "athletics",
+      "empathy",
+      "notice",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Academia de esgrima",
+      "Nervios de acero"
+    ],
+    "nation": "jaragua",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

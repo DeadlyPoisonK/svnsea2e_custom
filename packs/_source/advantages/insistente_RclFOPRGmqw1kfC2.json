@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Insistente",
+  "type": "advantage",
+  "_id": "RclFOPRGmqw1kfC2",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando apliques Presión a otro personaje, gasta 1 punto de héroe. El efecto de tu presión dura hasta el final de la ronda.</p>",
+    "infosource": "Naciones Piratas, p. 150",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

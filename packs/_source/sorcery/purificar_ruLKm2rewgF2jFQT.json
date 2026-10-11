@@ -1,0 +1,21 @@
+{
+  "folder": "ccPqyXbxMB2UEXTa",
+  "name": "Purificar",
+  "type": "sorcery",
+  "_id": "ruLKm2rewgF2jFQT",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La purificaci&oacute;n es la raz&oacute;n principal por la que los s&egrave;vit&egrave;s<br>veneran a Sousson. Muchos de los que buscan a los s&egrave;vit&egrave;s<br>para pedir ayuda codician este don para limpiar el cuerpo<br>de la enfermedad, tanto f&iacute;sica como mental. Mientras<br>Sousson lo posea, el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe<br>para eliminar cualquier achaque, mal o enfermedad no<br>inducida de manera sobrenatural a una persona que<br>lo sufra. Esto no cura Heridas y no se puede usar para<br>curar enfermedades o males causados por monstruos<br>o hechicer&iacute;as.</p>",
+    "infosource": "Naciones Piratas, p. 165",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

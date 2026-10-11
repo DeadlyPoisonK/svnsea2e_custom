@@ -1,0 +1,18 @@
+{
+  "folder": "OFzjAcydrY68u0XJ",
+  "name": "Le Strade",
+  "type": "duelstyle",
+  "_id": "3CUe5T5fTt4IbULD",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Nadie sabe quién inventó realmente este estilo, aunque muchos espadachines aseguran haberlo hecho ellos. Llamado como las estrechas calles en las que nació y se refinó, este estilo encaja a la perfección con los retorcidos bulevares y las altas torres de las ciudades vodaccias. Los que estudian Le Strade aprenden a mirar su entorno como si fuera una carrera de obstáculos de la que pueden aprovecharse para vencer a su oponente. Este estilo suele utilizar una espada ligera en la mano diestra y así tener la zurda libre para poder sortear paredes, balancearse desde puentes, saltar edificios o rodar bajo una puerta.</p><p>Los partidarios de Le Strade se toman muy en serio su entrenamiento y a menudo hacen «carreras» por localizaciones nuevas para calcular las distancias que separan los edificios, la altura de los muros que hay que sortear, saltar o atravesar, el peso de una verja, etc., pues siempre es mejor ir preparado que descubrir todo eso en medio de un duelo a muerte. Cuando se reúnen los espadachines de Le Strade, acostumbran a enseñarse las nuevas maniobras que han aprendido, y si lo hacen en una casa gremial, pueden incluso contar con público y realizar apuestas.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 199",
+    "bonus": "<p><strong>La Furia delle Strade.</strong></p><p>Cuando usas una espada de esgrima (como una ropera o un alfanje) en una mano y nada en la otra, y luchas en un entorno que cuenta con gran número de obstáculos que se pueden saltar, trepar o desde los que se balancearse, como una ciudad, un pueblo o un barco, puedes realizar una maniobra especial denominada La Furia delle Strade. La Furia delle Strade evita tantas Heridas como tu nivel de Atletismo y crea una Consecuencia para tu enemigo basada en el entorno de un nivel igual a tu Maña. Para lidiar con esa Consecuencia el oponente debe gastar un Aumento o recibirá tantas Heridas como su nivel al final de la ronda. Un espadachín puede realizar La Furia delle Strade una vez por ronda.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

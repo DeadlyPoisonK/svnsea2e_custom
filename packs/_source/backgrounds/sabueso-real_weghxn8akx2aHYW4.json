@@ -1,0 +1,32 @@
+{
+  "folder": "8naW9Ks6goOXSxdv",
+  "name": "Sabueso real",
+  "type": "background",
+  "_id": "weghxn8akx2aHYW4",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Los enemigos de los Detectives Reales insisten en que solo eres un sabueso del rey, pero todos ellos lo dicen desde la prisión.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 203",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando te niegues a actuar hasta que tengas más información y eso te provoque más problemas.</p>",
+    "skills": [
+      "aim",
+      "empathy",
+      "hide",
+      "notice",
+      "theft"
+    ],
+    "advantages": [
+      "Callejero",
+      "Oportunista"
+    ],
+    "nation": "castille",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

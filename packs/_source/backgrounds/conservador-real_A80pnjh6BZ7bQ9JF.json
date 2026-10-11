@@ -1,0 +1,33 @@
+{
+  "folder": "EZA8IlMqkW2CNyZb",
+  "name": "Conservador real",
+  "type": "background",
+  "_id": "A80pnjh6BZ7bQ9JF",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Ávalon es una tierra hermosa y la reina te ha confiado la tarea de que siga siéndola.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 203",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando quieras preservar una maravilla natural y al hacerlo te metas en problemas.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "empathy",
+      "notice",
+      "scholarship"
+    ],
+    "advantages": [
+      "Francotirador",
+      "Gatillo fácil",
+      "Sentido de la orientación"
+    ],
+    "nation": "avalon",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

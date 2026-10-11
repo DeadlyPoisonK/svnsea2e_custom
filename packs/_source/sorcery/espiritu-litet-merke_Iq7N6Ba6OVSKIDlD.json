@@ -1,0 +1,22 @@
+{
+  "folder": "zHoQ2ilelKv9nRRk",
+  "name": "Espíritu Litet Merke",
+  "type": "sorcery",
+  "_id": "Iq7N6Ba6OVSKIDlD",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Elige a un segundo personaje que esté contigo en la escena.</p><p>Dicho personaje se ve afectado por la stort merke de tu Galdr, exactamente igual que el primero. Si tu stort merke afecta a varios personajes, esta litet merke no tiene ningún efecto.</p><p>La runa de la Estrella gobierna los misterios y los peligros ocultos, además de los engaños. La runa da nombre a los héroes cuyos orígenes y naturalezas son prácticamente desconocidos. La mayor parte de la gente usa la runa para protegerse del peligro.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 191",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

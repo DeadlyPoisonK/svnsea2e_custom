@@ -1,0 +1,21 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Mystírio de Potnia",
+  "type": "sorcery",
+  "_id": "1PA8sLLMau7u0p0F",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p><em>Potnia Agrotera, diosa de la caza y la guerra.</em></p><p>El mystírio de Potnia Agrotera es quizás el secreto mejor guardado entre todos los hiereia de Numa. A veces se considera que la historia secreta de amor y sacrificio de Potnia no concuerda con su representación más común, como una diosa de la guerra y la batalla, impulsiva y sedienta de sangre. Sin embargo, lo que llegan a entender sus adheridos es que, si realmente deseas luchar por algo, debes amar y estar dispuesto a sacrificarte por ello. ¿Y qué mayor sacrificio podría hacer un guerrero que dar su vida (mortal o inmortal) para salvar otra?</p><p>Cuando gastes Aumentos durante un Riesgo para evitarle Heridas a otro héroe, le provocas 1 Herida al personaje que intentó dañarlo.</p><p>Puedes activar este apokálypsi en lugar de gastar 1 Aumento para realizar una acción durante una secuencia de acción al usar Apuntar, Armas o Pelear como Enfoque. Esto también significa que puedes volver a actuar inmediatamente: tu número efectivo de Aumentos no se ha reducido, así que sigue siendo tu turno.</p><p>Cuando gastes Aumentos durante un Riesgo para evitarle Heridas a otro héroe, le provocas 1 Herida al personaje que intentó dañarlo.</p>",
+    "infosource": "Naciones Piratas, p. 167",
+    "sorctype": "mystirios",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

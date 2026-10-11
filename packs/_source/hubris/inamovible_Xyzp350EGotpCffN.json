@@ -1,0 +1,17 @@
+{
+  "folder": "rxiPEUOSj58lttE0",
+  "name": "Inamovible",
+  "type": "hubris",
+  "_id": "Xyzp350EGotpCffN",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibes 1 punto de héroe cuando tu personaje se entera de los problemas de otra persona y no actúa en consecuencia.</p>",
+    "infosource": "La montaña · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

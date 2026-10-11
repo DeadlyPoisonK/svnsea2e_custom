@@ -1,0 +1,22 @@
+{
+  "folder": "XxbatVafsy3T61pQ",
+  "name": "Caldo negro",
+  "type": "sorcery",
+  "_id": "uqzdJZngHBajMX1H",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Pan mohoso mezclado con sangre de monstruo y agua de pantano fétida. Elige una única cualidad de monstruo en el momento de realizar el ungüento y este caldo la otorgará cuando se consuma y sus efectos durarán hasta el final de la escena. Beber el Caldo negro voluntariamente y sabiéndolo, o engañar a otro personaje para que lo beba, genera corrupción.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 209",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

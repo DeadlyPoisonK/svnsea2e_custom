@@ -1,0 +1,22 @@
+{
+  "folder": "DpI0uFBXpNQbj8F9",
+  "name": "Tormenta Litet Merke",
+  "type": "sorcery",
+  "_id": "XR9x6DmA21jkUN0Q",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>El personaje que elijas puede cambiar su Enfoque de inmediato.</p><p>Trueno es la runa de la audacia, la furia y el orgullo ante la adversidad. La runa da nombre a los héroes con bondad en los corazones y que han traído la paz a la tierra. Se suele utilizar habitualmente para designar a alguien que es demasiado orgulloso como una forma de que muestre humildad.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 193",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

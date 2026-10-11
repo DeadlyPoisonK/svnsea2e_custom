@@ -1,0 +1,23 @@
+{
+  "folder": "vxu1cHRUsVi9hzod",
+  "name": "Asesinos (solo Ashur)",
+  "type": "advantage",
+  "_id": "SuVAZN8knJK9ja29",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Durante la primera ronda en la que sorprendiste al enemigo, los 10 explotan en todas las Estrategias que recibe esta unidad.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 195",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

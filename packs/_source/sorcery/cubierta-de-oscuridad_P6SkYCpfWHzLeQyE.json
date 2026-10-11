@@ -1,0 +1,21 @@
+{
+  "folder": "hKSS5Yx1PWVKU58w",
+  "name": "Cubierta de oscuridad",
+  "type": "sorcery",
+  "_id": "P6SkYCpfWHzLeQyE",
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+  "system": {
+    "description": "<p>Activa este turru para atraer toda la luz hacia ti, ya sea en una habitación, o si estás fuera, en un área pequeña centrada en ti. Las velas se extinguen, los fuegos se apagan e incluso el sol mismo se oscurece. La oscuridad dura hasta que liberas la luz, abandonas el área o finaliza la escena.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 184",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

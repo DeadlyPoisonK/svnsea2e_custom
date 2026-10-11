@@ -1,0 +1,22 @@
+{
+  "folder": "KnMqpe46crPBBvU0",
+  "name": "Absolver",
+  "type": "sorcery",
+  "_id": "z21VcXod3sNWEId9",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este poder y elige otro personaje en la escena. Durante el resto de la ronda, si toma una acción que no intenta causarte Heridas, ese personaje recibe 1 Herida.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 168",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

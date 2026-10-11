@@ -1,0 +1,23 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Maestro artesano",
+  "type": "advantage",
+  "_id": "2B144CSIVNcBM5Et",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige un tipo de objeto (armas, armaduras, pinturas, etcétera). Cuando creas un objeto de este tipo, puedes aumentar el tiempo de creación para hacer un objeto de mayor calidad. Si usas materiales típicos y normales, esto no tiene ningún efecto adicional, aparte del cosmético: se nota que el objeto es mejor que los objetos similares e incluso puede llevar tu marca, con lo que consigues notoriedad por un buen trabajo, obtienes un mayor precio si lo vendes, etcétera. Pero si usas materiales exóticos (como forjar una espada usando metal de una estrella caída, por ejemplo), puedes crear un Objeto distintivo para ti o para otro héroe. El tiempo necesario para crear un Objeto distintivo, y si un material es o no lo suficientemente «especial» para reunir las condiciones, siempre queda a discreción del DJ.</p><p><em>Coste: 3 (2 si eres vestenio).</em></p>",
+    "infosource": "7º Mar (básico), p. 151",
+    "cost": {
+      "normal": 3,
+      "reducecost": 2
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  }
+}

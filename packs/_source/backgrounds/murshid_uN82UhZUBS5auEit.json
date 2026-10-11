@@ -1,0 +1,32 @@
+{
+  "folder": "4U6I0mscCu3etLYC",
+  "name": "Murshid",
+  "type": "background",
+  "_id": "uN82UhZUBS5auEit",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Viviste tu vida en el 8º Mar. Ahora le muestras a otros cómo sobrevivir.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 158",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando ayudas a otro personaje a evitar el peligro predicando con el ejemplo.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "hide",
+      "notice",
+      "ride"
+    ],
+    "advantages": [
+      "Pisa donde yo piso",
+      "Trabajo en equipo"
+    ],
+    "nation": "tribes",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

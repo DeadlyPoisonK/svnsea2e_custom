@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Vafa, Ángel de la Tierra y la Piedad",
+  "type": "sorcery",
+  "_id": "nsexHCusAHC2qBIV",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Vafa, el Ángel de la Tierra y la Piedad, es el único ahura que ha luchado en casi tantos conflictos como Parshand. Sin embargo, mientras su hermano se enfoca en golpear a sus enemigos, Vafa se dedica a la protección de su familia. Se dice que Vafa colocó su cuerpo en el camino de una lanza destinada a perforar el corazón de Parshand y lleva la cicatriz de esa lesión hasta el día de hoy. Sin embargo, la herida no lo inquietó, y en la siguiente batalla regresó junto a sus hermanos y hermanas, manteniéndolos a salvo de cualquier daño.</p><p>A los usuarios de Khahesh-ahura empoderados por Vafa se les otorgan alas de tierra. Estas pueden tomar la forma de piedra, de cristal o de arena, y se dice que muchos de estos usuarios de Khahesh-ahura pueden utilizar sus alas como escudos improvisados en combate.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 178",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

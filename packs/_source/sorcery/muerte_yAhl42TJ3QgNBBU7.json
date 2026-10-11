@@ -1,0 +1,22 @@
+{
+  "folder": "UAD1q5zNVMpOyhGo",
+  "name": "Muerte",
+  "type": "sorcery",
+  "_id": "yAhl42TJ3QgNBBU7",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>Gasta 1 punto de h&eacute;roe para proteger a cualquier personaje de ser asesinado. Mientras est&aacute; pose&iacute;do, el personaje seleccionado no puede morir, incluso cuando queda Indefenso.</p>",
+    "used": false,
+    "infosource": "Tierras de Fuego y Oro, p. 194",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

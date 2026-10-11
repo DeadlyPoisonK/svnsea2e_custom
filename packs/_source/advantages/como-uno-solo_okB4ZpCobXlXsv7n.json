@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "¡Como uno solo!",
+  "type": "advantage",
+  "_id": "okB4ZpCobXlXsv7n",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe. Cualquier banda de matones bajo tu mando esta ronda tira 2 dados adicionales en cualquier Riesgo que realice.</p>",
+    "infosource": "Khitai, p. 114 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

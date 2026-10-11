@@ -1,0 +1,33 @@
+{
+  "folder": "zrOTu2Mah9eRQKyp",
+  "name": "Buscador de Yol",
+  "type": "background",
+  "_id": "QM5GxwlA95yt6K4O",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>El camino hacia la iluminación no es el mismo para todos, pero es un camino que recorres todos los días.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 156",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando ayudes a otro personaje a lograr un momento de iluminación, claridad o un avance similar.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "intimidate",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Las viejas tradiciones",
+      "Osda",
+      "Reputación"
+    ],
+    "nation": "anatol"
+  },
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

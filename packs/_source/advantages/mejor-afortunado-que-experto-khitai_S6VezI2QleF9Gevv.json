@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Mejor afortunado que experto (Khitai)",
+  "type": "advantage",
+  "_id": "S6VezI2QleF9Gevv",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cada vez que realizas un Riesgo usando una habilidad en la que tengas uno o cero rangos, gastar un punto de héroe te proporciona 2 dados adicionales en lugar de 1.</p>",
+    "infosource": "Khitai, p. 114 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

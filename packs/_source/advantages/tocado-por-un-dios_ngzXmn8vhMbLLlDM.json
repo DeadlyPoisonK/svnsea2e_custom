@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Tocado por un dios",
+  "type": "advantage",
+  "_id": "ngzXmn8vhMbLLlDM",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Has sido marcado o elegido por uno de los dioses de Aztlán. Elige qué dios te ha favorecido, por ejemplo Suway, la Serpiente Emplumada o Ītzzohualli. Después de lanzar los dados en un Riesgo, puedes gastar 1 punto de héroe para pedir el favor de los dioses y seleccionar un número del que hayas obtenido uno o más en el Riesgo. Todos los dados que resultaron en el número elegido explotan durante este Riesgo.</p><p>Por ejemplo, si seleccionaste el número 7, todos los 7 que lanzaste explotarán (además de otros dados que puedan explotar, como tus 10 si te han infligido 2 Heridas Dramáticas). Puedes usar Tocado por un dios solo una vez por escena.</p>",
+    "infosource": "El Nuevo Mundo, p. 167",
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

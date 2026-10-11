@@ -1,0 +1,23 @@
+{
+  "folder": "s1n9pHqJXetLrKa5",
+  "name": "Característica legendaria",
+  "type": "advantage",
+  "_id": "mG4pm4MsSNGeGe9p",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige una característica. Cuando hagas una tirada en un Riesgo usando esa característica, aparta un dado de tu reserva antes de tirar. Ese dado siempre se considera como un 10. Si tus 10 explotan, tu dado por la Característica legendaria también explota.</p>",
+    "infosource": "7º Mar (básico), p. 153",
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

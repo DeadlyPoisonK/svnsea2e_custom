@@ -1,0 +1,15 @@
+{
+  "name": "Invierno",
+  "sorting": "a",
+  "folder": "DMohupPGQDu5qKnD",
+  "type": "Item",
+  "_id": "H8YLX4cFP6DRzAqH",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "98e42052e56de9a341b1c15542367b14f910ad5b"
+    }
+  }
+}

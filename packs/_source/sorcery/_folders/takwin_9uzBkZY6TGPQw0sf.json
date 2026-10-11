@@ -1,0 +1,15 @@
+{
+  "name": "Takwin",
+  "sorting": "a",
+  "folder": "Blvpl18m1qGPsjC8",
+  "type": "Item",
+  "_id": "9uzBkZY6TGPQw0sf",
+  "description": "",
+  "sort": 400000,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "62f0bd19669322e80a138dc830fa07863abce602"
+    }
+  }
+}

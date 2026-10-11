@@ -1,0 +1,21 @@
+{
+  "folder": "hKSS5Yx1PWVKU58w",
+  "name": "Puerta resplandeciente",
+  "type": "sorcery",
+  "_id": "zznj65uvTbg112bJ",
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+  "system": {
+    "description": "<p>Activa este turru para pasar entre rayos de luz, transportándote a cualquier lugar dentro de la línea de visión. Paradójicamente, este poder funciona mejor cuando hay algo de sombra que permite diferenciar manchas de luz; una plaza sin sombra al mediodía tiene pocas opciones.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 184",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

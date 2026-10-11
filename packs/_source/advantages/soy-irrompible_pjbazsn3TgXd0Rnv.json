@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Soy irrompible",
+  "type": "advantage",
+  "_id": "pjbazsn3TgXd0Rnv",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastes 1 punto de héroe para conseguir dados adicionales en un Riesgo que se relacione directamente con completar un paso de tu historia de héroe, consigues 2 dados adicionales en lugar de 1.</p><p><strong>NACIONES PIRATAS</strong> 153</p><p><em>Coste: 5 (3 si eres rahuri).</em></p>",
+    "infosource": "Naciones Piratas, p. 153",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

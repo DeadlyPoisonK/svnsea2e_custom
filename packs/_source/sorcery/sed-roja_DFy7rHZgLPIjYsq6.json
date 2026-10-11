@@ -1,0 +1,22 @@
+{
+  "folder": "XxbatVafsy3T61pQ",
+  "name": "Sed roja",
+  "type": "sorcery",
+  "_id": "DFy7rHZgLPIjYsq6",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Carne podrida y bayas, hervidas junto con raíces y hierbas picantes. Gasta 1 Aumento durante una secuencia de acción para aplicar este ungüento en tu piel. Cualquier monstruo no muerto que ataque en esta ronda deberá tomarte a ti como objetivo.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 209",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

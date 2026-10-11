@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Instinto de cazador",
+  "type": "advantage",
+  "_id": "cDNPHIunQBjD8onV",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe cuando aceches a tu presa a través de entornos naturales como una jungla o un bosque frondoso. La primera vez que inflijas Heridas a tu objetivo, este sufre una Herida Dramática adicional. Un héroe solo puede usar esta ventaja una vez por escena, y no funciona con armas de fuego.</p>",
+    "infosource": "Khitai, p. 118 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

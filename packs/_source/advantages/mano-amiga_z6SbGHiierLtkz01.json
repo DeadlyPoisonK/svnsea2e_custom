@@ -1,0 +1,23 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Mano amiga",
+  "type": "advantage",
+  "_id": "z6SbGHiierLtkz01",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Activa esta ventaja para ayudar a un aliado (dándole tres dados de bonificación para un Riesgo) sin gastar 1 punto de héroe. Solo puedes activar esta ventaja una vez por sesión.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 177",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 8900000,
+  "ownership": {
+    "default": 0
+  }
+}

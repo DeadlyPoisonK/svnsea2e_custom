@@ -1,0 +1,22 @@
+{
+  "folder": "DpI0uFBXpNQbj8F9",
+  "name": "Tormenta Stort Merke",
+  "type": "sorcery",
+  "_id": "UFE6Pbp20laudfGM",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Todos los personajes de la escena actual consiguen 1 Aumento. Elige un personaje para que gane 2 Aumentos en lugar de 1.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 193",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

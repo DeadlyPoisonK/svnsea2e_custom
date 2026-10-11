@@ -1,0 +1,23 @@
+{
+  "folder": "s1n9pHqJXetLrKa5",
+  "name": "Liceo",
+  "type": "advantage",
+  "_id": "wQf1nBsU2ebsc4YK",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Estudiaste retórica y debate y refinaste tus dotes sociales en uno de los muchos liceos de Théah o escuelas de señoritas normalmente reservados para la élite social y noble. Cuando realices un Riesgo usando Convencer, Intimidar o Tentar, todos tus dados suman un +1 a su valor.</p>",
+    "infosource": "7º Mar (básico), p. 153",
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": -200000,
+  "ownership": {
+    "default": 0
+  }
+}

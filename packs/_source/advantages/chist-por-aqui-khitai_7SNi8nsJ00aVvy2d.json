@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Chist, por aquí (Khitai)",
+  "type": "advantage",
+  "_id": "7SNi8nsJ00aVvy2d",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Mientras no hayas sido detectado, puedes gastar un punto de héroe para atraer a un único personaje fuera de su posición y dejarlo inconsciente. El resto de personajes de la zona seguirán sin percatarse de tu presencia.</p>",
+    "infosource": "Khitai, p. 116 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

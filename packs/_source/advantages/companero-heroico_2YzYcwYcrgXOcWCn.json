@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Compañero heroico",
+  "type": "advantage",
+  "_id": "2YzYcwYcrgXOcWCn",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><em>Debes tener la ventaja «Compañero de confianza».</em> Tu compañero es lo bastante hábil y conocido como para ser un héroe por derecho propio, pero en su lugar elige seguirte. Colabora con el DJ para detallar los pormenores de tu compañero o compañeros. ¿Cómo llegó a ser tan hábil en lo suyo y por qué continúa siguiendo tus pasos en lugar de labrarse su propio camino? Elige un trasfondo general para tu compañero. Siempre que realice un Riesgo usando una habilidad de ese trasfondo, tira 2 dados adicionales. Obtiene las ventajas de ese trasfondo; cualquier efecto que requiera el gasto de un punto de héroe debe ser pagado por ti. Tu compañero ahora puede sufrir 10 Heridas antes de quedar Indefenso, aunque seguirá necesitando que lo rescates.</p>",
+    "infosource": "Khitai, p. 116 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

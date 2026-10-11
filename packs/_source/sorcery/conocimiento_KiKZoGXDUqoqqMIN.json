@@ -1,0 +1,21 @@
+{
+  "folder": "YTcrjQkDWcQTDfXz",
+  "name": "Conocimiento",
+  "type": "sorcery",
+  "_id": "KiKZoGXDUqoqqMIN",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un abonsam que prefiere el Trato del Conocimiento a menudo parece similar a un ifricano típico, tal vez acurrucado dentro de una capa voluminosa o usando una máscara para ocultar su rostro. Puede invocar la suma total del conocimiento, de los humanos u otras criaturas. También rige sobre la conexión entre la mente y el cuerpo, y puede causar una ruptura limpia entre los dos, convirtiendo el cuerpo mortal de un ifricano en una prisión de la cual su mente no puede escapar.</p><ul><li>Separar la mente de una criatura de su cuerpo: la criatura permanece viva, pero ya no puede hablar ni moverse.</li><li>Alterar una memoria específica en un gran número de personas. Podrías hacer que todos los que te han visto en las últimas 24 horas olviden por completo tu presencia. Recuerdan todo lo demás, pero hay un vacío donde estarías tú.</li><li>Responder una sola pregunta objetiva con un sí o un no. La pregunta debe referirse solo a acontecimientos que ya han ocurrido. No importa cuánto insista en lo contrario, un abonsam no puede predecir el futuro con más precisión que su dasusuo.</li><li>Encontrar la ubicación exacta de cualquier objeto que desees, con precisión exacta tanto en cuanto a la ubicación del objeto como al objeto mismo.</li><li>Descubrir una pizca de conocimiento, incluso si se trata de saberes perdidos. Puede ser cualquier cosa, desde una antigua fórmula alquímica hasta un mapa que te guíe a un retiro náutico oculto.</li><li>Borrar una memoria específica de la mente de un solo personaje. Podrías hacer que un hombre se olvide de que alguna vez te habló o hacer que tu enemigo se olvide de tu cara. Esto a menudo tiene graves efectos secundarios en la psique de la víctima, en especial si trata de recuperar el recuerdo olvidado.</li><li>Restaurar una mente turbada a su función completa. Por desgracia, este efecto solo dura una escena, y tras ella el personaje vuelve a su agudeza mental anterior.</li></ul>",
+    "infosource": "Tierras de Fuego y Oro, p. 192",
+    "sorctype": "melbur",
+    "sorcdur": "none",
+    "sorccat": "patron",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

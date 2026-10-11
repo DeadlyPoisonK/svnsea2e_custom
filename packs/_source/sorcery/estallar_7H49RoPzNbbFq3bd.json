@@ -1,0 +1,22 @@
+{
+  "folder": "Ii9neQCQcG7PZkgg",
+  "name": "Estallar",
+  "type": "sorcery",
+  "_id": "7H49RoPzNbbFq3bd",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un poderoso estallido de energía surge de tu cuerpo causando una devastación incalculable. Inflige a todos los demás personajes (una banda de matones de cualquier Fuerza cuenta como un personaje) en tu Zona actual tantas Heridas como tu Discordia. Cabe destacar que esto te incluye a ti mismo. Luego, tu Discordia pasa a ser 0.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 206 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Iluminado",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para saber, hasta el final de la escena, cuándo te está mintiendo cualquier otro personaje.</p>",
+    "infosource": "El profeta · 7º Mar (básico), p. 158"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "grzBR9rMcXdyEVdY",
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  }
+}

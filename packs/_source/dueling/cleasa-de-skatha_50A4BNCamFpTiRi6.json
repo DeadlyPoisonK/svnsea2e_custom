@@ -1,0 +1,18 @@
+{
+  "folder": "9c8i6URJvxaqZFe5",
+  "name": "Cleasa de Skatha",
+  "type": "duelstyle",
+  "_id": "50A4BNCamFpTiRi6",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Los guerreros de antaño lucharon y se enfrentaron a multitud de desafíos y pruebas para ganarse el derecho a aprender de Skatha, la mujer guerrera. Sus estudiantes practicaban corriendo en un río que fluía en su contra y luchaban entre sus corrientes. Hacían malabares día y noche arrojando manzanas cada vez más alto para aprender del ritmo de sus caídas. Danzaban sobre carbones calientes hasta que las plantas de los pies se les volvían negras. Y cada truco aumentaba su fuerza, resistencia, velocidad, elegancia y agilidad.</p><p>Los espadachines también utilizan muchas de estas técnicas en el combate, lo que crea duelos muy llamativos llenos de saltos oportunos y maniobras atléticas inesperadas.</p><p>Por ejemplo, en la cleas «Tomar aliento» se expulsa el aliento de forma ruidosa y explosiva, lo que aumenta la fuerza de un impacto. El «Salto del maestro» es un salto coordinado que permite esquivar un ataque. Una de las cleasa de Skatha más famosa, sin embargo, es la mencionada en la canción de Orgullosa Eithne, el «Salto del salmón».</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 53",
+    "bonus": "<p><strong>Salto del salmón.</strong></p><p>Si eres capaz de moverte con libertad (tu armadura no te restringe el movimiento y tienes espacio libre), puedes realizar una maniobra especial denominada Salto del Salmón. Se trata de un salto vertical repentino que te permite evitar o eludir la guardia del contrario, sea cual sea tu arma. Esta maniobra inflige una cantidad de Heridas igual a tu nivel en Atletismo y no hay posibilidad alguna de evitarlas. Puedes realizar el Salto del Salmón una vez cada ronda.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  }
+}

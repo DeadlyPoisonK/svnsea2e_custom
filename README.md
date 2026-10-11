@@ -10,18 +10,35 @@ Ante eso, tomé el código base y armé mi propio fork para poder seguir arregla
 
 Lo subí porque mis amigos me pidieron permiso para compartirlo entre ellos. Preferí publicarlo yo directamente así todos tienen acceso a las mismas mejoras y correcciones, en vez de andar repartiendo copias sueltas.
 
+## Versiones
+
+- **v24.x → Foundry VTT 14.** Reescrito sobre ApplicationV2, sin APIs deprecadas, y aprovechando lo nuevo de v14. Al abrir un mundo de la v23, el sistema lo migra solo, una vez.
+  - **Efectos activos:** pestaña "Efectos" al final de todas las hojas. Los efectos de una ventaja, virtud o arcano pasan al personaje que la tiene y cambian la hoja o las tiradas (dados extra, +1, umbral 15…). Compendio "7th Sea Effects" con ejemplos.
+  - **Hard To Kill** ya no es un interruptor: es un efecto en la ventaja Duro de Matar. La migración lo pone donde estaba encendido.
+  - **Editar tirada:** en el menú de un mensaje de tirada, para corregir umbral, +1, explosiones, dados o Joie de Vivre sin volver a tirar (solo se tiran los dados añadidos). Lo ven el autor y el DJ.
+  - **Secuencia de acción:** la primera tirada de cada personaje en la ronda pone sus aumentos en el combat tracker, y la ronda nueva los vacía. ±1 en el tracker; funciona con tokens no vinculados. La iniciativa ya no está en las hojas.
+  - **Idiomas** con un selector en la propia hoja.
+  - **Reglas corregidas:** las combinaciones de tres dados como 1+7+7 contaban un dado dos veces; Joie de Vivre cuenta como 10 los dados iguales o menores que la habilidad (y la tarjeta los marca); la explosión por 3 heridas dramáticas vale en todas las tiradas; los monstruos no tienen Influencia.
+  - **Datos que se perdían:** la Redención del villano, el Concepto del monstruo y la tripulación del barco ahora se guardan. Los actores con iniciativa guardada en un formato antiguo y las ventajas con coste reducido escrito ("2 si eres castellano") vuelven a cargar; el coste reducido pasa a ser texto libre.
+  - Las tarjetas del chat usan el fondo de pergamino.
+  - **Compendios en español** (carpeta "7º Mar"): ventajas, trasfondos, duelos, hechicería, virtudes e hibris de todos los libros, con su fuente y página. Antes venían en el módulo aparte `7-sea-modules`, que ya no hace falta. Las ventajas de un trasfondo se aplican desde el compendio sin importarlas al mundo, y en su hoja son enlaces a la ventaja (en rojo si no existe ninguna con ese nombre).
+  - **Bugs corregidos:** los puntos de héroe gastados en una tirada ahora se descuentan; borrar un trasfondo activo quita sus habilidades y ventajas; el selector de ventajas del trasfondo lista también las de los compendios; los personajes de Inismore pueden tomar trasfondos de las Islas del Glamour; la influencia de los esquemas ya no sale como `[object Object]` en el chat.
+  - **Mejoras:** las secciones plegadas de las hojas se mantienen al redibujar; la toolbox recuerda sus actores y permite quitarlos; las tiradas privadas y a ciegas respetan los modos de mensaje de v14 y Dice So Nice anima solo; los ítems se pueden arrastrar a otras hojas o a la barra de macros; se puede tomar un trasfondo de otra nación (solo avisa, para personajes de nacionalidad mixta); traducciones completadas en los 6 idiomas.
+  - **Se conservó:** el motor de tiradas da los mismos resultados que en la v23.3, y las hojas mantienen su aspecto (tema claro en las hojas, oscuro en la toolbox).
+- **v23.3 → Foundry VTT 13.** Última versión para v13. Se instala desde su release: `https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.3/system.json`.
+
 ## Estado respecto al oficial
 
-Base tomada de `Detailing-the-Realm/svnsea2e` v`4.0.0` (compatibilidad Foundry `13.341`). Historial propio: `Initial commit` (import del oficial) → `v23` → `v23.1` (cambios propios).
+Base tomada de `Detailing-the-Realm/svnsea2e` v`4.0.0` (compatibilidad Foundry `13.341`). Historial propio: `Initial commit` (import del oficial) → `v23` → `v23.1` → `v23.3` (cambios propios, Foundry 13) → `v24.0` (Foundry 14).
 
 Cambios propios agregados sobre esa base:
 
-- **Hard To Kill (HtK):** toggle nuevo en la hoja de personaje jugador y en la de villano (villano suma 1 Herida Dramática extra). No existe en el oficial.
+- **Hard To Kill (HtK):** 5 heridas dramáticas para héroes y villanos (en el villano, un grupo de heridas más). Fue un toggle en la hoja hasta la v23.3; desde la v24.0 es un efecto activo de la ventaja. No existe en el oficial.
 - **Tirada de dados libre ("Roll Dice"):** botón nuevo en la hoja de personaje que abre un diálogo para elegir cantidad de dados y tirarlos al chat, sin depender de una habilidad. No existe en el oficial.
 - **Sistema de tiradas de habilidad mejorado:** la tarjeta de resultado en el chat (roll-card) ahora muestra los dados no usados ("UnusedDices") y el conteo de dados explotados ("+N dados explotados"), además de lo que ya mostraba el oficial (combos, rerolls, umbral). Textos en español.
-- **Tirar ítems al chat:** se agregó la clase `item-throw` (con su handler `_onItemThrow` → `item.ItemThrow()`) a los ítems de Advantages, Dueling Styles, Backgrounds, Virtue, Hubris, Stories, Artifacts y Sorcery en las hojas de personaje. En el oficial esos ítems solo mostraban la imagen (`item-image`) sin poder tirarlos al chat; ahora se puede hacer clic en el ícono de cada uno para enviarlo.
+- **Tirar ítems al chat:** se agregó la acción `throwItem` (→ `item.sendToChat()`, antes `_onItemThrow` → `item.ItemThrow()`) a los ítems de Advantages, Dueling Styles, Backgrounds, Virtue, Hubris, Stories, Artifacts y Sorcery en las hojas de personaje. En el oficial esos ítems solo mostraban la imagen (`item-image`) sin poder tirarlos al chat; ahora se puede hacer clic en el ícono de cada uno para enviarlo.
 - **Uso de Virtudes/Hubris:** casilla de "usado" agregada a cada Virtud y Hubris en la pestaña Fate, para marcarlas como gastadas en la sesión. El oficial no tenía forma de trackear esto en la hoja.
-- **Iniciativa editable:** el campo de iniciativa pasó de estar deshabilitado (solo lectura) a editable directamente, con los botones +1/-1 corregidos para no disparar el submit del formulario.
+- **Aumentos en el combat tracker:** la iniciativa es la cantidad de aumentos. Hasta la v23.3 se editaba en la hoja; desde la v24.0 la pone la primera tirada de la ronda y se ajusta con ±1 en el tracker.
 - Íconos e imágenes propias agregadas (`icons/`) para varias habilidades/estilos de duelo.
 
 Y probablemente algún que otro ajuste menor que ya ni recuerdo — si notás algo raro o distinto avisame.
@@ -38,6 +55,41 @@ Claves nuevas agregadas a `en/de/fr/es/it/pt-BR` (traducción funcional, no revi
 - `SVNSEA2E.ExtraDiceExploded` — sufijo del conteo de dados explotados en el roll-card.
 
 Además, `roll-card.hbs` ahora usa la clave oficial `SVNSEA2E.UnusedDice` (ya traducida a los 6 idiomas desde el oficial) en vez del texto fijo `"UnusedDices"` que tenía. De paso se completó `it.json` (italiano), al que le faltaban `SVNSEA2E.UnusedDice` y `SVNSEA2E.UnusedDie` desde el oficial — hueco heredado, no introducido por este fork, pero ya corregido acá.
+
+## Desarrollo
+
+El código fuente está en `src/` y se compila a `svnsea2e.mjs` (el archivo que carga Foundry) con [Vite](https://vitejs.dev/). Hace falta Node.js 20 o superior.
+
+```bash
+npm install        # una vez
+npm run build      # compila src/ → svnsea2e.mjs
+npm run watch      # recompila solo al guardar
+npm test           # lint + build + chequeos de plantillas/idiomas + prueba de ejecución
+```
+
+Los cambios de código se hacen en `src/`, nunca a mano en `svnsea2e.mjs`. Después de compilar hay que commitear también el `svnsea2e.mjs` generado. Las plantillas (`templates/`), el CSS y los idiomas (`lang/`) se editan directamente.
+
+```
+src/
+  svnsea2e.mjs            punto de entrada: registro de modelos, hojas y hooks
+  config.js / enums.js    configuración y constantes
+  settings.js, templates.js, helpers.js, migration.js
+  combat.js               aumentos en el combat tracker (Combat y Combatant propios)
+  chat.js                 botones de la tarjeta de tirada y "Editar tirada"
+  effects.js              efectos activos: claves del sistema, fase y pestaña Efectos
+  actor/                  documento Actor, modelos de datos y hojas (sheets/)
+  item/                   documento Item, modelos de datos y hojas
+  apps/choice-selector.js selector de habilidades y ventajas de trasfondo
+  roll/                   motor puro (engine.js), tiradas (roll.js), mensaje de tirada (message.js) y diálogos
+  toolbox/                caja de herramientas del DJ
+templates/                plantillas Handlebars
+lang/                     traducciones
+svnsea2e.mjs (+ .map)     generado por el build: no editar a mano
+tools/check.mjs           chequeos estáticos (plantillas, acciones, idiomas, manifest)
+tests/                    prueba de ejecución con una simulación de la API de Foundry
+```
+
+Para publicar una versión: crear un release en GitHub con tag `vX.Y`. El workflow `Release` adjunta `system.json` y `system.zip` solo.
 
 ## Créditos
 

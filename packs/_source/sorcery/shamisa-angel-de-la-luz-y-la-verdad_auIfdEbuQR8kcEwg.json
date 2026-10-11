@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Shamisa, Ángel de la Luz y la Verdad",
+  "type": "sorcery",
+  "_id": "auIfdEbuQR8kcEwg",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>A Shamisa, el Ángel de la Luz y la Verdad, se le atribuye nunca haber dicho una mentira o una verdad a medias desde los albores de los tiempos. Según la leyenda, al principio de la Lucha Eterna, un daeva había tomado la forma de su hermana Omideh en un intento de destruir a los ahura desde el interior. Shamisa, el único miembro de su familia que vio a través de las mentiras del daeva, incineró al impostor con su llama justa.</p><p>A los usuarios de Khahesh-ahura empoderados por Shamisa se les otorgan alas de fuego. Estas alas pueden ser fuego puro, lava que fluye o unas más tradicionales alas plumosas envueltas en llamas.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 177",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

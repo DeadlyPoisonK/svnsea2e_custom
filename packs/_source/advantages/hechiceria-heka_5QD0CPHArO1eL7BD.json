@@ -1,0 +1,23 @@
+{
+  "folder": "vIU7NVRxbdGwTGsF",
+  "name": "Hechicería (Heka)",
+  "type": "advantage",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>La Heka es una forma menor del pictograma mágico de la Enéada, derivado de los experimentos del rey alquimista Theyt. Esperaba revivir a su reina vertiendo cantidades masivas de su esencia de vida en tablillas de esmeralda, creyendo que con el tiempo derrotaría a la muerte. Solo consiguió conocerla en el mundo del más allá, pero la capacidad de infundir ka en objetos y sigilos vivía en su gente. La obsesión de Theyt por revivir a su reina también llevó al conocimiento de que el ka de los muertos, tan fuerte como el de los vivos, podía usarse para alimentar la Heka. Los practicantes de Heka más atrevidos, desesperados e inmorales saquean tumbas en busca de objetos para alimentar a este «Heka oscuro». Sin embargo, no están exentos de peligro, y lo que le sucede al ka, y, por lo tanto, a las almas de los muertos, se desconoce.</p><p>Con un pequeño vocabulario de símbolos, un trabajador de Heka puede imbuir su ka en amuletos, esculturas e inscripciones para darles poder simpático. El ka se trabaja de la misma forma que los signos elementales: tierra, aire, fuego y agua, y cada cual proporciona distintas bendiciones a través de la magia de los practicantes de Heka.</p><p>Un practicante de Heka tiende a tener una comprensión profunda del lenguaje, la cultura y el simbolismo: cuanto más entiende, más fácilmente puede visualizar su intención mientras trabaja su ka. Cuando tomes esta Hechicería durante la creación del héroe, asume que has tenido al menos un poco de estudio del lenguaje del pictograma de los dioses. Si compras esta hechicería más adelante en el juego, este estudio debe ser parte de tu historia.</p><p>La primera vez que compras esta hechicería, aprendes dos Talismanes y una Inscripción. Los Talismanes deben ser del mismo elemento, y solo puedes aprender una Inscripción si ya conoces el Talismán. Cada compra adicional de Hechicería, puedes aprender un Talismán y una Inscripción, o un Hechizo. Para aprender un Hechizo, ya debes conocer una Inscripción. Para usar este poder en el juego, primero se debe crear el Talismán, la Inscripción o el Hechizo y luego activarlo.</p>",
+    "infosource": "Variante creada por la mesa: Hechicería (Tierras de Fuego y Oro, p. 185)",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "5QD0CPHArO1eL7BD",
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "folder": "8AjTGHJtL0XNoqWh",
+  "name": "Médico",
+  "type": "background",
+  "_id": "zleCRyIMBJeM1rqp",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Trabajas para curar a los enfermos y asistir a los heridos.</p>",
+    "infosource": "7º Mar (básico), p. 140",
+    "quirk": "<p>Ganas 1 punto de héroe cuando cures las heridas de un villano o de inocentes heridos por un villano.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "notice",
+      "ride",
+      "scholarship"
+    ],
+    "advantages": [
+      "Noción del tiempo",
+      "Toque milagroso"
+    ],
+    "nation": "none",
+    "active": true
+  },
+  "effects": [],
+  "sort": 2300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

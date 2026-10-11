@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Confiable",
+  "type": "virtue",
+  "_id": "g5obMLR9IzcCMMsF",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando tires los dados para un Riesgo y elijas a otro personaje en la misma escena. Tú y ese personaje combináis vuestros Aumentos para la ronda, gastando Aumentos para realizar acciones de vuestra reserva compartida.</p>",
+    "infosource": "Mangosta · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

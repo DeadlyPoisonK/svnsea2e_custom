@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Frugal",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para evitar que te afecte cualquier efecto mágico (hechicería, artefactos, monstruos, etcétera).</p>",
+    "infosource": "El glifo · 7º Mar (básico), p. 158"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "yemuyNVw1GdFhlcz",
+  "sort": 2100000,
+  "ownership": {
+    "default": 0
+  }
+}

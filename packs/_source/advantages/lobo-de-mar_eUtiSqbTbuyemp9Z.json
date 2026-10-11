@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Lobo de mar",
+  "type": "advantage",
+  "_id": "eUtiSqbTbuyemp9Z",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Aprendiste a vivir y a sobrevivir con el vaivén de la borda de un barco en el mar. Cuando realices un Riesgo usando Navegación, Robar o Intimidar, todos tus dados consiguen +1 a su valor.</p>",
+    "infosource": "Naciones Piratas, p. 152",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

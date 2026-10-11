@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Confortador",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para cancelar los efectos del Miedo sobre tus amigos y tú.</p>",
+    "infosource": "Los tronos · 7º Mar (básico), p. 158"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "cXRUQnBzDscpz4az",
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  }
+}

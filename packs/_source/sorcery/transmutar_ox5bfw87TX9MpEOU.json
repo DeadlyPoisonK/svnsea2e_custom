@@ -1,0 +1,22 @@
+{
+  "folder": "piYhdrGNp0ZAVmW9",
+  "name": "Transmutar",
+  "type": "sorcery",
+  "_id": "ox5bfw87TX9MpEOU",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Exponer un material a esta poción hace que su estructura fundamental cambie. Cuando se crea esta poción, elige un material (papel, piedra, acero, etc.). Vaciar el contenido de esta poción sobre un material inanimado hace que se transforme en el material seleccionado en el momento de su creación. Este cambio dura un número de rondas igual a la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 199 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

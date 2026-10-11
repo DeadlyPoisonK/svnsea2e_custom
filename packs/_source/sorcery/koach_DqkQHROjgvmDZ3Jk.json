@@ -1,0 +1,22 @@
+{
+  "folder": "Oz7TQTAkyShWiFfG",
+  "name": "Koach",
+  "type": "sorcery",
+  "_id": "DqkQHROjgvmDZ3Jk",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Koach es la promesa de la fuerza. El vigor para abrir por la fuerza puertas bloqueadas y para contener a los atacantes. La fuerza para levantar hogares y arrasar cárceles.</p><p><strong>Amuleto:</strong> Cuando activas un Amuleto Koach, la fuerza te recorre. Durante el resto de la ronda, no tienes que pagar el coste de Improvisar para ninguna acción que utilice Músculo. <strong>Escritura:</strong> Cuando activas una Escritura Koach, tus músculos y articulaciones se fortalecen. Añade dos dados adicionales a cualquier Riesgo de Músculo durante el resto de la escena. Si Músculo ya es parte de tu Enfoque, puedes tirar inmediatamente los 2 dados adicionales y agregar el resultado a tus Aumentos.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 173",
+    "sorctype": "chozeh",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "Fsa6PxwXk2zOMAfH",
+  "name": "Pléroma",
+  "type": "background",
+  "_id": "Jy4CuSXoOlroZPi0",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Para prosperar, todos deben trabajar juntos. Es tu tarea persuadir a otros con esta verdad.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 156",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando persuadas con éxito a un grupo de personas para que ayuden a sus vecinos con un problema que no les afecta directamente.</p>",
+    "skills": [
+      "athletics",
+      "convince",
+      "notice",
+      "ride",
+      "sailing"
+    ],
+    "advantages": [
+      "Contactos",
+      "Un inocente malentendido"
+    ],
+    "nation": "ashur"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

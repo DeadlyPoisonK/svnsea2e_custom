@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Lengua de plata (Khitai)",
+  "type": "advantage",
+  "_id": "tf2RezYYs2nYruSy",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando actúas primero en una secuencia de acción y gastas tu primera acción en presumir de cómo vas a derrotar a tu oponente de formas especialmente pintorescas e ingeniosas, la primera vez que inflijas Heridas a tu oponente deberá gastar el doble de Aumentos de lo normal para prevenirlas.</p>",
+    "infosource": "Khitai, p. 114 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

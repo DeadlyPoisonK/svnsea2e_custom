@@ -1,0 +1,21 @@
+{
+  "folder": "N2qsFS6XbvuICS1X",
+  "name": "Celebridad",
+  "type": "sorcery",
+  "_id": "2qedOpghn83PyGng",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Consigue que un extraño hable de ti y tu arma a causa de las historias que se cuentan de tus gloriosas hazañas pasadas. Obtienes un dado de bonificación en cualquier Riesgo en el que el nombre de tu espada sea relevante.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 201",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

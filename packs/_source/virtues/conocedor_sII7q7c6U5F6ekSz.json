@@ -1,0 +1,17 @@
+{
+  "folder": "cM8cp2HgmMlzFy4Z",
+  "name": "Conocedor",
+  "type": "virtue",
+  "_id": "sII7q7c6U5F6ekSz",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud y haz una afirmación sobre un evento que está sucediendo en el presente o que sucedió en el pasado. Esta afirmación siempre es cierta.</p>",
+    "infosource": "El erudito · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

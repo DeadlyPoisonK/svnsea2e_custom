@@ -1,0 +1,22 @@
+{
+  "folder": "aKUid9pbLLTS3ZqR",
+  "name": "Camino de los Devotos",
+  "type": "sorcery",
+  "_id": "gKIVRjKr04ZZ21r9",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El Camino de los Devotos te muestra cómo protegerte a ti mismo y a los demás contra la Hechicería. El Segundo Profeta a menudo detenía la magia que se usaba contra él, y este camino te enseña precisamente eso.</p><p>El primer paso en el Camino de los Devotos te enseña a encontrar magia. Saber dónde buscar puede ayudarte a detener cualquier Hechicería que no se use por el bien de Terra. Tu Maravilla gana la habilidad de detectar Hechicería y otros poderes sobrenaturales. Cada Maravilla que tome este Camino reacciona de manera diferente a la magia; algunas brillan o zumban cerca de Hechicería, otras se vuelven ligeras como una pluma o son atraídas por las fuentes de magia como un imán.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 167",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Desenfundado rápido (Khitai)",
+  "type": "advantage",
+  "_id": "G2bcVqbuO1KPERAF",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando realizas un Riesgo de Apuntar, puedes gastar un punto de héroe para obtener un Aumento adicional por cada pareja de dados iguales que obtengas en tu tirada. Estos dados se pueden seguir usando para obtener Aumentos adicionales con normalidad.</p>",
+    "infosource": "Khitai, p. 118 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

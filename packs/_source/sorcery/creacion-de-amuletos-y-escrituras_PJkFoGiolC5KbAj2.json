@@ -1,0 +1,22 @@
+{
+  "folder": "OBuVuToMnzlON0Sb",
+  "name": "Creación de Amuletos y Escrituras",
+  "type": "sorcery",
+  "_id": "PJkFoGiolC5KbAj2",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Un Amuleto es un pequeño colgante que creas, generalmente de arcilla o madera, inscrito con la palabra clave de tu promesa. El Amuleto se desmorona o se convierte en ceniza después de usarlo.</p><p>Una Escritura se crea escribiendo la palabra clave de la promesa en tu piel con tinta, ceniza, sangre, barro, o lo que sea que tengas a mano. Una vez que usas la Escritura, la palabra desaparece.</p><p>Otros no pueden destruir tus Amuletos o Escrituras. Comienzas cada escena con un Amuleto o Escritura por cada vez que hayas comprado la ventaja de Hechicería. No necesitas determinar qué Amuletos o Escrituras tienes preparados. En efecto, esto simplemente te permite activar tu Hechicería una vez por cada vez que hayas comprado la ventaja. Cuando te quedes sin Amuletos o Escrituras en una escena determinada, puedes crear más. En tu turno, gasta 1 punto de héroe para crear un Amuleto o Escritura. Puedes crear cualquier Amuleto o Escritura que conozcas, pero tienes que elegir cuál creas ahora.</p><p>Un Amuleto o Escritura pierde su poder después de 24 horas.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 172",
+    "sorctype": "chozeh",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

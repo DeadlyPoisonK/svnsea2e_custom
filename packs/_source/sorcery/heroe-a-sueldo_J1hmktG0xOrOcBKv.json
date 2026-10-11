@@ -1,0 +1,21 @@
+{
+  "folder": "N2qsFS6XbvuICS1X",
+  "name": "Héroe a sueldo",
+  "type": "sorcery",
+  "_id": "J1hmktG0xOrOcBKv",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Gana Riqueza a cambio de los servicios que prestasteis tú y tu espada. Consigues Riqueza 1 extra cada vez que te paguen por tus servicios como guerrero.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 201",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

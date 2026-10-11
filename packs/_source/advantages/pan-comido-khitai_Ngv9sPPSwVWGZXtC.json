@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Pan comido (Khitai)",
+  "type": "advantage",
+  "_id": "Ngv9sPPSwVWGZXtC",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><em>Debes tener la ventaja «Francotirador».</em></p><p>Cuando realizas un Riesgo de Apuntar usando un mosquete de cañón largo, un arco largo o una ballesta, la primera vez que gastes un Aumento para infligir Heridas a otro personaje puedes gastar un punto de héroe para causar también una Herida Dramática. Tu víctima no debe percatarse de tu presencia para que puedas usar esta ventaja, y una vez que uses esta ventaja no podrás volver a activarla durante esa escena.</p>",
+    "infosource": "Khitai, p. 113 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

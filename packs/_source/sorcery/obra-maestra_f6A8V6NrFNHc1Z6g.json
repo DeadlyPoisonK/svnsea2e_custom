@@ -1,0 +1,22 @@
+{
+  "folder": "f1ztwTMcX7isHIH6",
+  "name": "Obra maestra",
+  "type": "sorcery",
+  "_id": "f6A8V6NrFNHc1Z6g",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Tu arma es el culmen de la artesanía ifricana. Tal vez la hiciste tú mismo, o un maestro herrero la hizo para ti. Si tomas la ventaja de Objeto distintivo y tu objeto distintivo es tu arma de zahmeireen, esta cuenta como una ventaja de 2 puntos para ti.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 199",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

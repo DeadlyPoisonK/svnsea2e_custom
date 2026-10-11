@@ -1,0 +1,18 @@
+{
+  "folder": "lsFFlvwOxj6nD71t",
+  "name": "Enroque del bastión",
+  "type": "duelstyle",
+  "_id": "SK56EeoEWRpZyXIG",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Exclusivo para duelos en equipo, consiste en coordinarse con tu compa&ntilde;ero para despistar al enemigo y encontrar una oportunidad para atacar. Cuando realices Enroque cambias de lugar con tu compa&ntilde;ero y cancelas la maniobra de tu rival. Solo puedes realizar Enroque en tu acci&oacute;n y debes realizarlo justo en la acci&oacute;n que sigue a la maniobra que te tiene como objetivo, si la maniobra de tu rival no te ten&iacute;a como objetivo, Enroque fallara. Un espadach&iacute;n solo puede realizar esta maniobra una vez por ronda.</p>",
+    "infosource": "Fuente no localizada en los manuales",
+    "bonus": ""
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "OBuVuToMnzlON0Sb",
+  "name": "Activación de Amuletos y Escrituras",
+  "type": "sorcery",
+  "_id": "m68ySCQsGjTQFQ2t",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cuando activas un Amuleto o Escritura, repites la palabra clave y la frase «esta es mi promesa» en cualquier idioma. Si estás fuera de una escena de acción o dramática, puedes activar un Amuleto o Escritura libremente. Si el efecto es duradero, como la escritura Yad, dura hasta que comienza una escena.</p><p>Dentro de una secuencia de acción o dramática, activar un Amuleto o Escritura cuesta solo un Aumento. Un Amuleto tiene un efecto inmediato o a corto plazo. Las Escrituras suelen ser más poderosas y, si su efecto es duradero, duran toda la escena.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 172",
+    "sorctype": "chozeh",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

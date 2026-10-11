@@ -1,0 +1,31 @@
+{
+  "folder": "CXXvM7Ygk4Y8t234",
+  "name": "Teeverlegch (Portaestandarte)",
+  "type": "background",
+  "_id": "vdldN8AYUjnZDFGD",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Lealtad</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p><p><em>Ventajas en el libro (en inglés): Signature Item (Sulde).</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando te pongas en peligro para proteger, defender o recuperar tu Sulde.</p>",
+    "skills": [
+      "perform",
+      "ride",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Objeto distintivo (Khitai)",
+      "Piensa rápido (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 110 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

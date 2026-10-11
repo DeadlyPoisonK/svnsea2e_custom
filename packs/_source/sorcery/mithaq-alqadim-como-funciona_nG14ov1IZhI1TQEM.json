@@ -1,0 +1,22 @@
+{
+  "folder": "sUWTdl5qMbYmk0j8",
+  "name": "Mithaq Alqadim: cómo funciona",
+  "type": "sorcery",
+  "_id": "nG14ov1IZhI1TQEM",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>La primera vez que compres la ventaja de Hechicería, decide cuál es tu thiqa. Una thiqa es siempre un objeto pequeño que se puede sujetar con una mano, como una moneda antigua, un sombrero, un collar o una lámpara. Además, eliges dos <em>Khidma </em>(que significa literalmente servicio) que conoces. Cada vez que compras la ventaja de Hechicería, aprendes un Khidma adicional.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 181",
+    "sorctype": "mithaq",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

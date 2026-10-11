@@ -1,0 +1,24 @@
+{
+  "name": "Mano de paz",
+  "type": "advantage",
+  "_id": "VKu529cTNnu4y9yQ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Hasta que tú o tus aliados toméis una acción agresiva en una escena, puedes ejercer Presión sobre cualquier número de objetivos. Aun así, un objetivo solo puede verse afectado por una Presión a la vez.</p><p><em>Coste: 2 (1 si eres aksumita).</em></p>",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": 1
+    },
+    "knack": false,
+    "innate": false,
+    "infosource": "Tierras de Fuego y Oro, p. 177"
+  },
+  "effects": [],
+  "folder": "yECDvkOZsan9lVBP",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

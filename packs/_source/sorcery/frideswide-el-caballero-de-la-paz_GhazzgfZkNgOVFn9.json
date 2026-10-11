@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Frideswide, el Caballero de la Paz",
+  "type": "sorcery",
+  "_id": "GhazzgfZkNgOVFn9",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Después de muchos años sirviendo al lado del rey Elilodd, Frideswide volvió al castillo y arrojó su espada ante los ojos del rey, jurando que no dejaría que su acero volviera a derramar sangre. El rey Elilodd le respondió dándole una tarea que nunca antes se había escuchado: solo Frideswide podría reunir a los caballeros para la guerra.</p><p>Característica mayor: Ingenio Característica menor: Brío</p><h3>Naciones de Théah vol. 1, p. 49</h3><p><strong>Virtud:</strong> Confortador (Los tronos). <strong>Hibris:</strong> Leal (La guerra).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando convenzas a otros para que tomen un rumbo de acción más difícil, pero más pacífico, incluso cuando la violencia represente una solución más sencilla.</p><p><strong>Glamour legendario — Desarme eléctrico:</strong> Al activar este Glamour, todos los objetos de metal al alcance de un mosquete liberan una potente descarga eléctrica. Todo aquel que sujete uno de estos objetos (ya sea aliado, enemigo, héroe, villano o incluso tú mismo) debe soltarlo de inmediato o recibirá tantas Heridas como tu Ingenio. Si no lo suelta, tira 1d10; si el resultado de la tirada es superior a su Brío, también dejará caer el objeto. Todos los objetos de metal que se cayeran mantienen la carga durante una hora; se necesita una cantidad de Aumentos igual a tu Ingenio para coger uno sin problemas (1 Herida por cada Aumento que falte).</p>",
+    "infosource": "7º Mar (básico), p. 212",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "GijgBUHwVjgAk4A4",
+  "name": "Protección",
+  "type": "sorcery",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El pictograma de protección y resistencia es el cocodrilo, tan cómodo en el barro como en el brillante río Iteru. Los practicantes de Heka usan barro de la orilla del río para estos talismanes.</p><p><em>Talismán: </em>Un Talismán de Protección activado hace que la piel del portador esté tan blindada como la de un cocodrilo. El Talismán previene las siguientes 3 Heridas (Dramáticas o normales) que recibas.</p><p><em>Inscripción: </em>Cuando se activa una Inscripción de Protección en un objeto, estructura o barco, previene el equivalente a los próximos 3 Impactos (Críticos o normales) que reciba.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 186",
+    "sorctype": "heka",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "pMtbFVdXMpzAxtfz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

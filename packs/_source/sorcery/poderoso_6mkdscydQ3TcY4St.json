@@ -1,0 +1,22 @@
+{
+  "folder": "CQBbl0cBcssKHSuR",
+  "name": "Poderoso",
+  "type": "sorcery",
+  "_id": "6mkdscydQ3TcY4St",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un personaje que bebe esta poción obtiene ataques excepcionalmente poderosos en combate.</p><p>Las Heridas que inflijas no se pueden reducir de ninguna manera. Este efecto dura un número de acciones igual a la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 200 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

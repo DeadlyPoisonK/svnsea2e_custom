@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Triaje",
+  "type": "advantage",
+  "_id": "sEG5lVrNCKgMeZqr",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para identificar un veneno o una enfermedad, determinar las lesiones de un personaje (y cuál es la mejor forma de tratarlas) o salvar a alguien de una amenaza médica inmediata (como alguien que se atraganta, tiene un pulmón colapsado, etc.).</p><p><em>Coste: 2 (1 si eres sarmion).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 160",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": 1
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

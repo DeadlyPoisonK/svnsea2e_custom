@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Aceite de anosmia",
+  "type": "sorcery",
+  "_id": "hBP9JmDfcUN8yFg4",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Se hierven un puñado de pelo y una gota de orina de un monstruo con hierbas, aceites esenciales y ácido, hasta que todo quede reducido a una pasta aceitosa. Este óleo se puede restregar sobre el cuerpo de una persona para evitar que todos los monstruos (durante una única escena) localicen a dicha persona mediante el olfato. Un monstruo debe gastar un Aumento adicional para tratar de encontrarlo.</p>",
+    "used": false,
+    "infosource": "Naciones de Théah vol. 2, p. 52",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "MPxL1iJv9JWQs4La",
+  "name": "Dignidad",
+  "type": "sorcery",
+  "_id": "DBvfjjkt7xQV2agy",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p><strong>Límite:</strong> Siempre debes actuar con calma y lógica, y nunca dejar que las emociones te lleven a actuar de forma precipitada o sin considerar con cuidado las consecuencias de tus actos.</p><p><strong>Penitencia:</strong> Debes deshacer la decisión que tomaste y las consecuencias de tus actos precipitados.</p>",
+    "infosource": "Heroes & Villains, p. 205 (traducción no oficial)",
+    "sorctype": "darm",
+    "sorccat": "restriction",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

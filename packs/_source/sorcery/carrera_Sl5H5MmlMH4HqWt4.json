@@ -1,0 +1,22 @@
+{
+  "folder": "SpTam7S7whbJOyQm",
+  "name": "Carrera",
+  "type": "sorcery",
+  "_id": "Sl5H5MmlMH4HqWt4",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un gran estallido de velocidad te permite recorrer grandes distancias en un instante. Muévete de inmediato a través de hasta 2 Puentes a una Zona diferente, ignorando cualquier circunstancia especial en esos Puentes (como requerir una habilidad específica para usarlos). Luego, genera 2 de Discordia.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 207 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

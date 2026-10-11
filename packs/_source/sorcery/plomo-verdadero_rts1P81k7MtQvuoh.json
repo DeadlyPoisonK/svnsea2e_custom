@@ -1,0 +1,21 @@
+{
+  "folder": "dRivclZirteK4bLL",
+  "name": "Plomo verdadero",
+  "type": "sorcery",
+  "_id": "rts1P81k7MtQvuoh",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este preparado hace que cualquier objeto inorgánico sea inmune durante una escena a los efectos relacionados con la hechicería, ya que el plomo dificulta gravemente el flujo de las energías mágicas.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 96",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "HQe5z3Y1LzDB9lfT",
+  "name": "Borets",
+  "type": "background",
+  "_id": "QYQeP0G0PFW3Ddfc",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Te has ganado un nombre como un excepcional luchador ussuro.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 208",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando alguien te reconoce por tu reputación y tú hubieras preferido que no hubiera sido así.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "hide",
+      "intimidate",
+      "perform"
+    ],
+    "advantages": [
+      "Ataque corporal",
+      "Reputación"
+    ],
+    "nation": "ussura",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

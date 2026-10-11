@@ -1,0 +1,23 @@
+{
+  "folder": "s1n9pHqJXetLrKa5",
+  "name": "Seidr",
+  "type": "advantage",
+  "_id": "IgdPi8Fd30kTP7AW",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Has estudiado con un skald vestenio. Has aprendido cómo ver los Nombres de las cosas, cómo conocer el futuro según el baile de las llamas de una hoguera y cómo guiar las pasiones de la gente, ya sea para alabar a tus héroes o ridiculizar a tus enemigos.</p><p>Gasta 1 punto de héroe y pronuncia un discurso sobre otro personaje, que gana 1 nivel de Reputación (como la ventaja del mismo nombre) de tu elección, aumenta una Reputación existente en 1 nivel o cambia su Reputación a otra diferente a tu elección (pero el nivel sigue siendo el mismo). Si cambias la Reputación existente de un personaje, cualquiera que use la nueva Reputación contra él consigue tantos dados adicionales como el nivel de esa Reputación.</p><p>Gasta 1 punto de héroe para lanzar runas, dados o huesos. Cuando lo hagas, hazle al DJ una pregunta sencilla sobre el futuro. El DJ debe responder con honestidad, pero solo tiene que decir sí o no. Si el evento en cuestión puede cambiar debido a las acciones de otros, como si una persona morirá o no, entonces la respuesta dada representa el resultado que actualmente es más probable, pero por lo demás este poder nunca se equivoca.</p><p>Gasta 1 punto de héroe cuando mires a otro humano mortal para saber el nombre de esa persona. Ningún disfraz puede esconder el nombre ante ti ni tampoco creerás ninguna mentira diseñada para ocultar el nombre. Siempre reconocerás a esa persona durante el resto de la escena, no importa lo que ella haga por cambiar.</p><p><em>Solo vestenios.</em></p>",
+    "infosource": "7º Mar (básico), p. 153",
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

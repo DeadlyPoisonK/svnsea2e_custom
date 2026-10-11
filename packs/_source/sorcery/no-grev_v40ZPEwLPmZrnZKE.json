@@ -1,0 +1,21 @@
+{
+  "folder": "9x8lmsGTSiAFkW8U",
+  "name": "No Grev",
+  "type": "sorcery",
+  "_id": "v40ZPEwLPmZrnZKE",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Se dice que nadie puede morir hasta que Bawon G&eacute; no<br>cave su tumba. Mientras G&eacute; lo posea, el s&egrave;vit&egrave; decide qu&eacute;<br>tumbas se cavan y cu&aacute;les no, y puede gastar 1 punto de<br>h&eacute;roe para proteger a cualquier personaje de la muerte.<br>Mientras Bawon G&eacute; posea al s&egrave;vit&egrave;, el personaje seleccionado<br>no puede morir, incluso si se queda Indefenso.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "gros",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

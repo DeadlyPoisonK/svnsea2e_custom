@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Maestría sin igual",
+  "type": "advantage",
+  "_id": "T98vrZ3RNuORY9oi",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Ya sea tras años afilando tu habilidad como una navaja o por mero talento natural, tu maestría no tiene parangón. Elige una habilidad en la que tengas al menos 3 rangos. Tus 10 explotan automáticamente siempre que uses esa habilidad como tu Enfoque.</p>",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false,
+    "infosource": "Khitai, p. 123 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

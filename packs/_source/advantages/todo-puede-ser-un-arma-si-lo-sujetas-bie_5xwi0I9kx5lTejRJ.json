@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Todo puede ser un arma si lo sujetas bien (Khitai)",
+  "type": "advantage",
+  "_id": "5xwi0I9kx5lTejRJ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><em>Debes tener la ventaja «Pelea de bar».</em></p><p>Cuando realizas un Riesgo de Pelear para luchar usando un arma improvisada (como una mesa volcada, un taburete de bar, un tablón de madera, un bastón, etc.) y gastas un Aumento para infligir Heridas, puedes elegir romper tu arma. Si lo haces, las Heridas que inflijas no se pueden prevenir de ninguna manera. No puedes volver a usar esta ventaja durante esa escena a menos que pagues un punto de héroe para agenciarte una nueva arma.</p>",
+    "infosource": "Khitai, p. 112 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

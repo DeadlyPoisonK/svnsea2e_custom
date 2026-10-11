@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Shayesteh",
+  "type": "sorcery",
+  "_id": "DEjuYAHUxZJmFoln",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado después de contar Aumentos durante un Riesgo. Selecciona un personaje que tenga más Aumentos que tú. Ese enemigo pierde Aumentos hasta que ambos tengáis la misma cantidad.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 180",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

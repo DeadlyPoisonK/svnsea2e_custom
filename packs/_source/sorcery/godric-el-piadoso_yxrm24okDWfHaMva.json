@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Godric, el Piadoso",
+  "type": "sorcery",
+  "_id": "yxrm24okDWfHaMva",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cuando Elilodd recibió el Grial, solo una voz pidió precaución. Godric dijo que el trato con los sidhe era una blasfemia y que se debía renunciar a él. Elilodd estaba a punto de expulsar a Godric cuando los sidhe lo detuvieron y le dijeron: «El primero en preguntar por qué es el más sabio de vosotros. Dejadle que os proteja de los tratos más oscuros».</p><p>Característica mayor: Donaire Característica menor: Brío</p><h3>Naciones de Théah vol. 1, p. 49</h3><p><strong>Virtud:</strong> Valiente (El héroe). <strong>Hibris:</strong> Supersticioso (El glifo).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando desenmascares a un hechicero, sidhe u otra influencia sobrenatural que haya estado oculta.</p><p><strong>Glamour legendario — Reprender al blasfemo:</strong> Sir Godric creía que su devoción y piedad eran sus mejores armas contra los hechiceros. Se hubiera sentido decepcionado si hubiera sabido que era un don de los sidhe. Si activas este Glamour puedes maldecir a todos los hechiceros villanos que puedas ver. La próxima vez que uno de esos hechiceros haga una tirada no podrá utilizar ningún dado cuyo resultado sea inferior a tu Donaire. NACIONES DE THÉAH: VOLUMEN 1 49</p>",
+    "infosource": "7º Mar (básico), p. 212",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

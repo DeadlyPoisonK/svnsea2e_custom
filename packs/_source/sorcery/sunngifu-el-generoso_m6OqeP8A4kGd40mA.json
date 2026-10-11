@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Sunngifu, el Generoso",
+  "type": "sorcery",
+  "_id": "m6OqeP8A4kGd40mA",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cuando un día llegó al pueblo un anciano loco de atar, los guardias lo echaron del castillo. Sunngifu, al escuchar la conmoción, acudió en su ayuda. Cuando el hombre le pidió su espada y su escudo para defender su granja, Sunngifu se los entregó gustosamente. Cuando el hombre suplicó la armadura de Sunngifu para proteger a su hija, Sunngifu se desnudó. Cuando los guardias se rieron de Sunngifu por su ingenuidad, el anciano se giró y sonrió. El Mago había ido para ver si los relatos sobre la corte de Elilodd eran ciertos y ese día Sunngifu había protegido a uno de los aliados más poderosos del rey Elilodd.</p><p>Característica mayor: Ingenio Característica menor: Músculo</p><h3>Naciones de Théah vol. 1, p. 51</h3><p><strong>Virtud:</strong> Iluminado (El profeta). <strong>Hibris:</strong> Cándido (El diablo).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando ayudar a alguien te suponga una gran dificultad o inconveniente, o cuando te ponga en contra de tus aliados, pero aun así eliges hacerlo porque crees que es lo correcto.</p><p><strong>Glamour legendario — Carpe diem:</strong> Este Glamour te permite evitar las Consecuencias con las que otros tropezarían y aprovechar las Oportunidades que a otros se les pasarían por alto. Activa este Glamour para obtener una reserva con tantos Aumentos gratuitos como tu Ingenio. Estos Aumentos no afectan el orden de acción, pero se pueden gastar en tu turno para reducir las Consecuencias, aprovechar Oportunidades o crear Oportunidades para otros.</p>",
+    "infosource": "7º Mar (básico), p. 213",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

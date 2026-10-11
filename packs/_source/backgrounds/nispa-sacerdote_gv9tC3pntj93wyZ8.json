@@ -1,0 +1,32 @@
+{
+  "folder": "NUOxMdBqWbDQh6uy",
+  "name": "Nispa (Sacerdote)",
+  "type": "background",
+  "_id": "gv9tC3pntj93wyZ8",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Sabiduría</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p><p><em>Ventajas en el libro (en inglés): Magic (Shaman), Magic (Shaman).</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando comulgues con el mundo espiritual en nombre de tu grey para resolver un problema en su favor.</p>",
+    "skills": [
+      "brawl",
+      "notice",
+      "perform",
+      "scholarship"
+    ],
+    "advantages": [
+      "Hechicería (Khitai)",
+      "Hechicería (2)",
+      "Noción del tiempo (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 109 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

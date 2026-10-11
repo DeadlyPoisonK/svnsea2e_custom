@@ -1,0 +1,23 @@
+{
+  "folder": "vIU7NVRxbdGwTGsF",
+  "name": "Hechicería (Mohwoo)",
+  "type": "advantage",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando un h&eacute;roe adquiere esta Hechicer&iacute;a, consigue un tatuaje de Madame Wenshen (o uno de sus huajia, uno&nbsp;de sus h&aacute;biles estudiantes de confianza).</p>\n<p>El proceso de conseguir un mohwoo es una entrevista m&iacute;stica, que no se parece en nada a la lectura de cartas de una strega vodaccia o a un seidr vestenio mirando en el futuro.</p>",
+    "infosource": "Variante creada por la mesa: Hechicería (Naciones Piratas, p. 159)",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "JNnWulM7TOqLVNPI",
+  "sort": 3500000,
+  "ownership": {
+    "default": 0
+  }
+}

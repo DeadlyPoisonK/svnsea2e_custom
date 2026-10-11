@@ -1,0 +1,22 @@
+{
+  "folder": "VRdpGqhOjOfLZVLx",
+  "name": "Trueno Stort Merke",
+  "type": "sorcery",
+  "_id": "PReF5fatcTZC5IEz",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Elige a un personaje que esté contigo en la escena. La próxima vez que sufra Heridas en esta ronda recibirá un número de Heridas adicionales igual a su característica más alta, pero la próxima vez en esta ronda que inflija Heridas, infligirá un número de Heridas adicionales igual a su característica más alta. Los efectos de esta merke acaban al final del turno, haya el personaje sufrido o infligido Heridas o no.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 193",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

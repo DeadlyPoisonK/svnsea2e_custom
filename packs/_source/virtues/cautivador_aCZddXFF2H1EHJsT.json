@@ -1,0 +1,17 @@
+{
+  "folder": "cM8cp2HgmMlzFy4Z",
+  "name": "Cautivador",
+  "type": "virtue",
+  "_id": "aCZddXFF2H1EHJsT",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para forzar que todas las acciones realizadas contra tus aliados durante el resto de la ronda se realicen contra ti.</p>",
+    "infosource": "La estrella de la mañana · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

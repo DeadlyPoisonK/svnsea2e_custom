@@ -1,0 +1,24 @@
+{
+  "folder": "aSM5k4zd4YYt1rg3",
+  "name": "Todo puede ser un arma si lo sujetas bien",
+  "type": "advantage",
+  "_id": "iatBnq7ykxVahXZY",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe debe tener la ventaja «Pelea de bar» para poder adquirir esta ventaja. Cuando realices un Riesgo de Pelear para luchar utilizando un arma improvisada (como una mesa boca abajo, un taburete, una tabla, un bastón, etcétera), puedes decidir que el arma se rompa cuando gastes un Aumento para infligir Heridas. Si lo haces, las Heridas que inflijas no pueden evitarse de ninguna manera. No puedes utilizar esta ventaja de nuevo en la misma escena a menos que gastes un punto de héroe para procurarte un arma nueva.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 205",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

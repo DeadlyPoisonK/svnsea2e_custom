@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Zharfa, Ángel de la Muerte",
+  "type": "sorcery",
+  "_id": "s3OfZY4Bc3Rls80O",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Zharfa, el Ángel de la Muerte, es el hermano gemelo de Arsalan. Lejos de ser malévolo, Zharfa asume sus responsabilidades con una actitud sombría. Zharfa es responsable de asegurar que las almas de los mortales lleguen a la otra vida, y es un deber que se toma en serio. Los mortales que sufren una experiencia cercana a la muerte a menudo informan haber visto a un hombre con una cara gentil pero triste, sentado a su lado. Este hombre parece completamente normal, pero tiene alas de plumas oscuras que brotan de su espalda. Tales mortales informan que Zharfa les tomó de las manos y, justo cuando iban a volver a la vida, lo escucharon susurrar: «Todavía no es tu momento».</p><p>A los usuarios de Khahesh-ahura empoderados por Zharfa se les otorgan las alas de las bestias, pero en lugar de ser vibrantes como las de los empoderados por Arsalan, estas alas están muriendo y pudriéndose.</p><p>Hay un total de 22 Legados, aunque solamente 10 Comunes y un solo Inusual están disponibles para un usuario concreto de Khahesh-ahura. Un hechicero khahesh-ahura es capaz de seleccionar cualquier Legado Común, pero solo puede seleccionar el Legado Inusual relacionado con su ahura. Estos son los aspectos que todos los ahura comparten y cualquier poder por su gracia puede canalizar.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 178",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Dos sangres",
+  "type": "advantage",
+  "_id": "TlzX7P5nlAuJWV1a",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tienes una herencia mixta: tu madre y tu padre eran de dos naciones diferentes, y la sangre de ambos corre por tus venas. Elige una nación que no sea la tuya. Si compras la ventaja de Hechicería, puedes elegir la opción de Hechicería de esa nación (aunque de todas formas solo puedes aprender un tipo de Hechicería). También puedes comprar ventajas al coste menor para esa nación cuando corresponda.</p>",
+    "infosource": "El Nuevo Mundo, p. 165",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "TQzJbDDBg4ZBhZyS",
+  "name": "Extranjero",
+  "type": "advantage",
+  "_id": "ye1VxXMj3muAHsTs",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige una nación de Théah que no sea tu tierra natal; ahí será donde te criaste. Por ejemplo, si tus padres eran castellanos pero te criaste en Vodacce, podrías ser Extranjero (Vodacce). Cualquier Riesgo que realices que se beneficiaría de una herencia doble (como usar Convencer para negociar entre dos mercaderes originarios de tus dos culturas o usar Tentar para saber qué decir para sobornar a una patrulla fronteriza y que te deje pasar sin inspeccionarte) consigue 1 dado adicional.</p>",
+    "infosource": "7º Mar (básico), p. 148",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  }
+}

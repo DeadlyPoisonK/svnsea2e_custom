@@ -1,0 +1,33 @@
+{
+  "folder": "HQe5z3Y1LzDB9lfT",
+  "name": "Maldito de Tură",
+  "type": "background",
+  "_id": "agnlvm1LGE0AC2Z8",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Hay más de una senda que conduce al poder y tú lo sabes de primera mano.</p><p><em>Ventajas en el libro: Hechicería (Toque de Tură), Hechicería (Toque de Tură).</em></p>",
+    "infosource": "Naciones de Théah vol. 2, p. 208",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando convences a otro personaje de que rechace alguna autoridad o que actúe de manera contraria a su posición social, y eso te mete en problemas.</p>",
+    "skills": [
+      "convince",
+      "hide",
+      "notice",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Sentido de la orientación",
+      "Hechicería",
+      "Hechicería (2)"
+    ],
+    "nation": "ussura",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

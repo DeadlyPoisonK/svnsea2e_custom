@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Callejero",
+  "type": "advantage",
+  "_id": "rr6VWKyAcmXevDJc",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes gastar 1 punto de héroe para localizar a alguien que te arregle un asunto, un soplón, un contrabandista o una figura similar de los bajos fondos.</p>",
+    "infosource": "7º Mar (básico), p. 149",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  }
+}

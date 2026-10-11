@@ -1,0 +1,22 @@
+{
+  "folder": "o690w5aSkrQJLvTs",
+  "name": "Purgar",
+  "type": "sorcery",
+  "_id": "fk89G2YKpIDIh1Hy",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 3 de Furia. Tu contacto fuerza a un espíritu a entrar en el cuerpo de alguien afectado por la magia, y luego el espíritu es liberado llevándose consigo el efecto mágico. Elimina un único efecto mágico del objetivo. Podría tratarse de un efecto beneficioso en un enemigo (como el efecto de una poción alquímica) o de un efecto perjudicial en un aliado (como una maldición).</p>",
+    "used": false,
+    "infosource": "Khitai, p. 195 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 101563,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

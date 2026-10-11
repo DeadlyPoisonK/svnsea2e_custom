@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Osda",
+  "type": "advantage",
+  "_id": "VLdCXAW4ENzV0bBn",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Te has ganado el título de Osda dentro de Anatol Ayh. Tus compañeros te consideran amable, bien hablado y honorable. Puedes recitar la poesía clásica anatolia, conoces todos los protocolos y tradiciones de la hospitalidad anatolia y eres muy apreciado entre aquellos que honran los ideales de Osda. Dichas personas te ofrecen libremente comida o bebida, alojamiento u hospitalidades similares. Además, obtienes 2 dados adicionales para cualquier Riesgo social contra personajes que respeten la Senda de Anatol Ayh y sus tradiciones de Osda.</p><p><em>Coste: 3 (2 si eres anatolio).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 160",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": 2
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

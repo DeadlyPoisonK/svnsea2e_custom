@@ -1,0 +1,23 @@
+{
+  "folder": "TQzJbDDBg4ZBhZyS",
+  "name": "Pequeño",
+  "type": "advantage",
+  "_id": "bB6ZH2xDk5vYulHQ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>No puedes adquirir la ventaja «Grande».</strong></p><p>Eres más pequeño que el resto de théanos medios. Mucho más pequeño. Consigues 1 dado adicional si tu tamaño hace que un Riesgo sea más fácil (como usar Esconder para escabullirte en un espacio pequeño y escapar de una patrulla de guardias o usar Atletismo para deslizarte entre los barrotes de una celda).</p>",
+    "infosource": "7º Mar (básico), p. 148",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  }
+}

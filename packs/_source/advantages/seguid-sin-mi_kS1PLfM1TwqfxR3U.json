@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Seguid sin mí",
+  "type": "advantage",
+  "_id": "kS1PLfM1TwqfxR3U",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta todos tus Aumentos, al menos 1 por cada héroe (además de ti) en la escena actual. Todos los héroes (excepto tú) salen de la escena y tú te quedas atrás, varado y solo. No puedes escapar de la escena antes de tiempo por ningún efecto (como la Virtud «Astuto»), y aquellos que has sacado de la escena no pueden regresar. Todos los jugadores (aunque no sus héroes) deben estar dispuestos a que este efecto funcione; si aunque sea un solo jugador no quiere irse, <em>todos</em> los héroes permanecen en la escena y aun así tú pierdes tus Aumentos.</p><p><em>Coste: 3 (1 si eres kuraq).</em></p>",
+    "infosource": "El Nuevo Mundo, p. 167",
+    "cost": {
+      "normal": 3,
+      "reducecost": 1
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "folder": "uRiLWm1i9xUID1Ha",
+  "name": "Orgulloso",
+  "type": "hubris",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibe 1 punto de héroe cuando tu héroe se niegue a aceptar la ayuda que se le ofrece. Por ejemplo, cuando un héroe quiera gastar 1 punto de héroe para darte 1 dado adicional y tú lo rechaces.</p>",
+    "infosource": "El sol · 7º Mar (básico), p. 158"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "iCGSohYHkReXDl1q",
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  }
+}

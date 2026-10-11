@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Decidido",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud y apunta a un villano. Hasta el final de esta escena, no puedes gastar puntos de héroe y el villano no puede gastar puntos de peligro.</p>",
+    "infosource": "El mago · 7º Mar (básico), p. 156"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "t8AErjFbxHD0RL1Z",
+  "sort": 1900000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "TQzJbDDBg4ZBhZyS",
+  "name": "Uno con el barco",
+  "type": "advantage",
+  "_id": "BEjaYfkcqcquJXj3",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Nunca pierdes el equilibrio mientras te encuentres a bordo de un barco. Además, consigues 1 dado adicional en cualquier Riesgo físico mientras estés a bordo de un barco en el mar (como enzarzarte en una lucha con espadas en la cubierta de un barco inclinado o escalar por el cordaje durante una tormenta).</p>",
+    "infosource": "7º Mar (básico), p. 148",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  }
+}

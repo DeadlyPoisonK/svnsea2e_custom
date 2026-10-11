@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Quitinoso",
+  "type": "monsterquality",
+  "_id": "MPrA2d9Rc7WJnA20",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Este monstruo tiene un caparazón exterior muy resistente, como escamas, o un exoesqueleto similar al de un insecto. Gasta 1 punto de peligro para anular todas las Heridas infligidas por un solo ataque a este monstruo.</p>",
+    "infosource": "7º Mar (básico), p. 198",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

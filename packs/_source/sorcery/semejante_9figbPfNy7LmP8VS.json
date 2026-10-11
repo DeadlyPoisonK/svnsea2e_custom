@@ -1,0 +1,22 @@
+{
+  "folder": "Ii9neQCQcG7PZkgg",
+  "name": "Semejante",
+  "type": "sorcery",
+  "_id": "9figbPfNy7LmP8VS",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Los monstruos te ven temporalmente como a uno de los suyos. Cuando un monstruo con una Fuerza igual o inferior a tu Discordia actual te elija como objetivo de un ataque o efecto sobrenatural, puedes optar por activar esta Herencia para ignorar el ataque. Esta habilidad funciona incluso si no eres el único objetivo del ataque o habilidad, pero no proporciona esta protección a ningún otro objetivo. Luego, tu Discordia pasa a ser 0.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 205 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

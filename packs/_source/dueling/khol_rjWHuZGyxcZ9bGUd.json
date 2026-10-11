@@ -1,0 +1,19 @@
+{
+  "folder": "EukS0hh4uQes49gW",
+  "name": "Khol",
+  "type": "duelstyle",
+  "_id": "rjWHuZGyxcZ9bGUd",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Maestra Practicante: Astarte Khol Astarte.</p><p>Khol es oriunda de la isla de Numa. Criada como haimon (casta guerrera numanari), aprendió los caminos de la guerra mientras crecía. Sus viajes la llevaron a Iskandar donde descubrió que las palabras pueden ser armas poderosas. Sus ahumados ojos azul oscuro centellean ante la posibilidad de un desafío. Basándose en las epopeyas numanari, los practicantes de Khol tejen poemas grandiosos que detallan las historias de los héroes. Aquellos que escuchan o leen poesía Khol sienten un impulso en sus emociones para viajar y buscar más allá del horizonte.</p>",
+    "bonus": "<p><strong>Bonificación de la escuela.</strong></p><p>Un practicante de Khol gana 1 dado adicional durante los Kavitas de estilo mutakārib (heroica).</p>",
+    "infosource": "El Imperio de la Media Luna, p. 203"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

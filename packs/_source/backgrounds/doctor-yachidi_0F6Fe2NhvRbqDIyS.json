@@ -1,0 +1,33 @@
+{
+  "folder": "woHhojw41I6E4wVp",
+  "name": "Doctor Yachidi",
+  "type": "background",
+  "_id": "0F6Fe2NhvRbqDIyS",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Muchos de los pacientes son testarudos, pero no tanto como tú.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 157",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando obligas, persuades, amenazas o engatusas a un personaje para que te permita brindarle atención médica.</p>",
+    "skills": [
+      "empathy",
+      "intimidate",
+      "notice",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Parientes lejanos",
+      "Triaje",
+      "Voluntad indómita"
+    ],
+    "nation": "sarmion",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

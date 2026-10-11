@@ -1,0 +1,32 @@
+{
+  "folder": "4U6I0mscCu3etLYC",
+  "name": "Mustakshaf",
+  "type": "background",
+  "_id": "IKfAdp9GfWZ9dRgu",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>El desierto esconde muchos tesoros. Has «encontrado» uno o dos.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 158",
+    "used": false,
+    "quirk": "<p>Gana 1 punto de héroe cuando tu búsqueda de tesoros antiguos y riquezas fabulosas te meta en problemas.</p>",
+    "skills": [
+      "athletics",
+      "hide",
+      "notice",
+      "ride",
+      "theft"
+    ],
+    "advantages": [
+      "Multitareas",
+      "Objeto distintivo"
+    ],
+    "nation": "tribes",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

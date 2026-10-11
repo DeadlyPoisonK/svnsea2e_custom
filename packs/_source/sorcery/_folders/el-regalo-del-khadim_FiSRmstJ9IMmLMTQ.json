@@ -1,0 +1,15 @@
+{
+  "name": "El regalo del khadim",
+  "sorting": "a",
+  "folder": "sUWTdl5qMbYmk0j8",
+  "type": "Item",
+  "_id": "FiSRmstJ9IMmLMTQ",
+  "description": "",
+  "sort": 100000,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "ac1a468703c6fa7fc3c65037b9c950884e483fc4"
+    }
+  }
+}

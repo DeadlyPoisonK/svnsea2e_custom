@@ -1,0 +1,31 @@
+{
+  "folder": "LwLTj4fFc1wG4Kux",
+  "name": "Holkanob",
+  "type": "background",
+  "_id": "fSisrokzx7wVsIxW",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Eres uno de los soldados de infantería de Tzak K'an y te interpones entre tu gente y los invasores que les harían daño.</p>",
+    "infosource": "El Nuevo Mundo, p. 163",
+    "quirk": "<p>Gana 1 punto de héroe cuando te superen en número, en armas o en habilidad y te niegues a dar marcha atrás.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "hide",
+      "notice",
+      "weaponry"
+    ],
+    "advantages": [
+      "Duro de matar",
+      "Superviviente"
+    ],
+    "nation": "tzakkan",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

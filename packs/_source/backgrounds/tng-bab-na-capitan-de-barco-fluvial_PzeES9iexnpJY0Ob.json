@@ -1,0 +1,32 @@
+{
+  "folder": "5tjKI2pyNkh7RQ3Z",
+  "name": "Tng-bab Na (Capitán de barco fluvial)",
+  "type": "background",
+  "_id": "PzeES9iexnpJY0Ob",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Paz</p>",
+    "quirk": "<p>Gana un punto de héroe cuando te pongas a ti y a tus aliados en peligro para defender a los indefensos.</p>",
+    "skills": [
+      "aim",
+      "empathy",
+      "scholarship",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Timonel (Khitai)",
+      "Liderazgo (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 111 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

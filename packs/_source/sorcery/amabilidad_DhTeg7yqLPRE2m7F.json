@@ -1,0 +1,22 @@
+{
+  "folder": "MPxL1iJv9JWQs4La",
+  "name": "Amabilidad",
+  "type": "sorcery",
+  "_id": "DhTeg7yqLPRE2m7F",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p><strong>Límite: </strong>Siempre debes ofrecer ayuda a aquellos que lo necesitan (amigos, extraños) sin importar lo desesperada que sea la situación.</p><p><strong>Penitencia: </strong>Debes ayudar a alguien que se portó mal contigo.</p>",
+    "infosource": "7º Mar (básico), p. 218",
+    "sorctype": "darm",
+    "sorccat": "restriction",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

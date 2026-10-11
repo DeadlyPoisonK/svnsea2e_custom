@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Más allá de la vista (Khitai)",
+  "type": "advantage",
+  "_id": "VzanAu3z9hIilwts",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe. Hasta el final de la escena, puedes ignorar cualquier impedimento a tu visión, sin importar su origen. Por ejemplo, si tienes los ojos vendados o estás sumido en la oscuridad total, se te considera como si pudieras ver con normalidad. Lo más común es que los héroes con esta ventaja tengan la capacidad de concentrar sus otros sentidos para compensar la pérdida de visión.</p>",
+    "infosource": "Khitai, p. 114 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

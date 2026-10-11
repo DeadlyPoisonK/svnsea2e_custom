@@ -1,0 +1,21 @@
+{
+  "folder": "ccPqyXbxMB2UEXTa",
+  "name": "Máscara del paria",
+  "type": "sorcery",
+  "_id": "8AldeJ3aWijBHZ4p",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Dicen que nadie mira a un leproso a los ojos. Mientras<br>Sousson lo posea, el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe<br>para que otra gente lo evite, como si tuviera la peste. La<br>apariencia del s&egrave;vit&egrave; se hace m&aacute;s horrible y se crea un aura<br>que provoca que la gente evite el contacto visual con &eacute;l y<br>que se aparte de su camino. Si un h&eacute;roe desea acercarse<br>siquiera a alguien que porte la M&aacute;scara del Paria, debe<br>gastar 1 punto de h&eacute;roe o, si forma parte de una secuencia,<br>gastar 1 Aumento; adem&aacute;s, cualquier interacci&oacute;n f&iacute;sica<br>requiere 1 Aumento adicional, adem&aacute;s del que costar&iacute;a<br>la acci&oacute;n en s&iacute;.</p>",
+    "infosource": "Naciones Piratas, p. 165",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

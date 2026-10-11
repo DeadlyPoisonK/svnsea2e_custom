@@ -1,0 +1,21 @@
+{
+  "folder": "fAgf1ip8yOiUWsc3",
+  "name": "Imperdonable",
+  "type": "sorcery",
+  "_id": "ngIrwnxHA3GrivRG",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>En la noche suceden cosas que Mareaux impide que<br>olvides. Mientras Mareaux lo posea, el s&egrave;vit&egrave; puede gastar<br>1 punto de h&eacute;roe para fijar algo en la memoria de otro. La<br>escena se le queda grabada en el cerebro hasta el d&iacute;a de su<br>muerte (y quiz&aacute;s incluso m&aacute;s tiempo) y resiste todos los<br>intentos de eliminarla.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

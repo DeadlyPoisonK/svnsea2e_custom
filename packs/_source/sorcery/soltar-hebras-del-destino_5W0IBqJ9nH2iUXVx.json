@@ -1,0 +1,22 @@
+{
+  "folder": "2M2vfXkTX0aej1QO",
+  "name": "Soltar hebras del destino",
+  "type": "sorcery",
+  "_id": "5W0IBqJ9nH2iUXVx",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Una strega puede decidir soltar hebras del destino de dos modos:</p><ul><li>En primer lugar, puede elegir pagar con sangre. Para soltar una sola hebra, la strega recibe un número de Heridas igual al número de hebras que tenga. Por ejemplo, una strega con 4 hebras puede elegir soltar 1 e inmediatamente recibe 4 Heridas. Ahora tiene 3 hebras.</li><li>En segundo lugar, puede elegir pagar con mala suerte. Para soltar una sola hebra, la strega decide añadir 1 punto de peligro por cada hebra que tenga. Por ejemplo, una strega con 4 hebras puede añadir 4 puntos (que se suman inmediatamente a la reserva de puntos de peligro del DJ). Ahora tiene 3 hebras.</li></ul><p>Una strega que no tiene cuidado y coge demasiadas hebras puede acabar cansada y exhausta, traicionada por el Destino cuando más lo necesita. Después de que la strega realice cualquier Riesgo, el DJ puede gastar 1 punto de peligro para que la strega no pueda usar ninguno de los dados que ha tirado que tengan un resultado menor que el número de hebras que tiene. Por ejemplo, una strega con 4 hebras sería incapaz de utilizar los dados con resultados 3, 2 o 1 para conseguir Aumentos.</p><p>Además, pagando 1 punto de peligro adicional, el DJ puede hacer que otro héroe sufra ese mismo efecto, en vez de la strega, haciendo así que el Destino se cobre su precio de un modo u otro.</p><p>Para usar un Tessere durante una secuencia de acción, debes hacerlo durante tu acción y cuesta 1 Aumento, además de otros precios (como puntos de héroe o hebras). Una strega nunca puede apuntarse a sí misma con ningún Tessere.</p>",
+    "infosource": "7º Mar (básico), p. 229",
+    "sorctype": "sorte",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

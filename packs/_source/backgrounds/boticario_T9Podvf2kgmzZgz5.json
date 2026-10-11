@@ -1,0 +1,33 @@
+{
+  "folder": "8naW9Ks6goOXSxdv",
+  "name": "Boticario",
+  "type": "background",
+  "_id": "T9Podvf2kgmzZgz5",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>La ciencia es una cosa hermosa.</p><p><em>Ventajas en el libro: Hechicería (Alquimia), Hechicería (Alquimia).</em></p>",
+    "infosource": "Naciones de Théah vol. 1, p. 203",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando persigas obstinadamente un secreto alquímico y tu perseverancia te meta en problemas.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "hide",
+      "notice",
+      "scholarship"
+    ],
+    "advantages": [
+      "Estómago de hierro",
+      "Hechicería",
+      "Hechicería (2)"
+    ],
+    "nation": "castille",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

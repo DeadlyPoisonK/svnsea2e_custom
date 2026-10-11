@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Cangrejo Menor",
+  "type": "sorcery",
+  "_id": "LjHdSjveSYWdRjEs",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p><br>El cangrejo es un protector y un guardi&aacute;n. Este mohwoo&nbsp;es un s&iacute;mbolo de que el h&eacute;roe le da mucha importancia a&nbsp;la custodia de algo o alguien, a menudo excluyendo otras&nbsp;cosas. Podr&iacute;a ser algo f&iacute;sico, como la hija menor de la&nbsp;hero&iacute;na o su nuevo esposo, o algo m&aacute;s ef&iacute;mero, como el&nbsp;sentido del honor de un h&eacute;roe.</p>\n<hr>\n<p><br>Activa este mohwoo cuando gastes Aumentos para recibir&nbsp;Heridas en lugar de otro personaje. Las Heridas que<br>recibes se reducen a la mitad (redondeando hacia abajo,&nbsp;hasta un m&iacute;nimo de 1) antes de recibirlas y se pueden<br>cancelar gastando Aumentos o usando un Contraataque&nbsp;o Parada (como es habitual).</p>",
+    "infosource": "Naciones Piratas, p. 170",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 106250,
+  "ownership": {
+    "default": 0
+  }
+}

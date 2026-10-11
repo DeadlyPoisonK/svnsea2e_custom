@@ -1,0 +1,21 @@
+{
+  "folder": "a9auYVTd6m9zGaNk",
+  "name": "Pagar con dolor",
+  "type": "sorcery",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>La corrupción de la sangre es a menudo la más fácil. Después de que un rooi heks activa Pagar con dolor, cualquier hechicero que use sus dones en presencia del rooi heks sufre 1 Herida por cada punto de héroe u otro costo (por ejemplo, las hebras de una strega) que gaste para activar un poder de Hechicería. Todavía ocurren todos los efectos, incluso si estas Heridas hacen que el hechicero quede Indefenso. Pagar con dolor dura hasta el final de la escena.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 196",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "5N03DCVSqTmCmzLB",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

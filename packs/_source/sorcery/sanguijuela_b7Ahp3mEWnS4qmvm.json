@@ -1,0 +1,22 @@
+{
+  "folder": "COvFX4cO6Vx1BswB",
+  "name": "Sanguijuela",
+  "type": "sorcery",
+  "_id": "b7Ahp3mEWnS4qmvm",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa esta Manifestación y toca un cadáver u otra criatura. Si la criatura es reacia, también debes gastar un Aumento para hacerlo. Extraes parte de la esencia vital de la criatura para alimentar la tuya.</p><p>Si usas Sanguijuela en un cadáver o criatura no muerta, puedes elegir uno de los siguientes efectos. Cada efecto adicional cuesta otro punto de héroe, pero cada efecto solo se puede activar una vez en un cadáver y en una activación determinada.</p><p>Si activas los 3 efectos de esta Manifestación en un solo cadáver, el alma del cadáver se destruye por completo; todas tus Heridas se curan inmediatamente, pero obtienes 1 punto de corrupción. La destrucción de un alma siempre es una acción malvada.</p><ul><li>Cura una Herida Dramática.</li><li>Cura todas las Heridas de tu nivel actual de la Espiral de la Muerte.</li><li>Aumenta una característica de tu elección en 1, pero reduce otra en 1. Este efecto dura hasta el final de la escena.</li></ul><p>Si usas Sanguijuela en una criatura viva, puedes elegir uno de los siguientes efectos. Usar Sanguijuela en un personaje vivo reacio provoca un punto de corrupción inmediato. Si dejas Indefenso a un personaje mediante el uso de Sanguijuela, inmediatamente sanas todas tus Heridas y Heridas Dramáticas, tu víctima muere instantáneamente y consumes su alma. Esto da como resultado una corrupción mayor de la que se obtendría con la muerte del personaje de otra manera (por ejemplo, si cometes un asesinato a sangre fría comiéndote el alma de un inocente, obtienes 2 puntos de corrupción).</p><ul><li>Causa una Herida Dramática y te cura una Herida Dramática.</li><li>Cura todas las Heridas de tu nivel actual de la Espiral de la Muerte. Tu víctima recibe la mitad de ese número de Heridas.</li><li>Aumenta una característica de tu elección en 1. Tu víctima reduce la misma característica en 1. Este efecto dura hasta el final de la escena.</li></ul><p>Cuando activas esta Manifestación, un haz de luz fluye desde tu víctima y se dirige a ti. Algunos churikuna optan por absorber esta luz a través de las palmas de las manos, mientras que otros la respiran por la nariz o la beben por la boca.</p>",
+    "infosource": "El Nuevo Mundo, p. 178",
+    "used": false,
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "manifestation",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

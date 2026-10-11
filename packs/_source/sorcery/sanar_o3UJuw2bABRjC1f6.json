@@ -1,0 +1,22 @@
+{
+  "folder": "Nk9XzMl8LirAadwj",
+  "name": "Sanar",
+  "type": "sorcery",
+  "_id": "o3UJuw2bABRjC1f6",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este poder una vez por escena para curar 1 Herida Dramática a cualquier personaje que puedas tocar. El segundo paso en el Camino de los Misericordiosos te muestra que al-Musawwir te protege incluso en momentos de dolor y castiga a aquellos que te dañan. Tu Maravilla te permite canalizar Su protección hacia ti.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "path",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

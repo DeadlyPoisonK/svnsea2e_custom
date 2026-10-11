@@ -1,0 +1,31 @@
+{
+  "folder": "8AjTGHJtL0XNoqWh",
+  "name": "Granjero",
+  "type": "background",
+  "_id": "KWI8mjFIdWeLbRfw",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Te criaste en una granja pequeña, trabajando para sobrevivir, y nunca has conocido la vida de aventura.</p>",
+    "infosource": "7º Mar (básico), p. 139",
+    "quirk": "<p>Ganas 1 punto de héroe cuando resuelvas un problema complejo de una forma sencilla que ya conoces de tu vida en la granja.</p>",
+    "skills": [
+      "athletics",
+      "convince",
+      "empathy",
+      "perform",
+      "ride"
+    ],
+    "advantages": [
+      "Característica legendaria",
+      "Superviviente"
+    ],
+    "nation": "none",
+    "active": true
+  },
+  "effects": [],
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

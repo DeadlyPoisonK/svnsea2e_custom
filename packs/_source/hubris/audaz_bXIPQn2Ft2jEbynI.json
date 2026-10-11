@@ -1,0 +1,17 @@
+{
+  "folder": "mISBGS3k1JGW0JWu",
+  "name": "Audaz",
+  "type": "hubris",
+  "_id": "bXIPQn2Ft2jEbynI",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Gana un punto de héroe cuando asumas una tarea peligrosa sin ningún otro motivo que la emoción.</p>",
+    "infosource": "Gato · Khitai, p. 126 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

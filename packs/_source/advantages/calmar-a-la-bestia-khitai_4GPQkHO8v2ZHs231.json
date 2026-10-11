@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Calmar a la bestia (Khitai)",
+  "type": "advantage",
+  "_id": "4GPQkHO8v2ZHs231",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes gastar un Aumento en tu acción para evitar que un animal o monstruo realice acciones agresivas. El animal o monstruo aún puede hacer otras cosas (como huir, intentar esconderse, etc.), pero no atacará a nadie de los presentes. Este efecto termina de inmediato y no se puede reanudar si algún efecto hace que el animal o monstruo sufra alguna Herida o si se realiza hacia él una acción similar que interprete como agresiva. Esta ventaja no funciona contra criaturas con un nivel de inteligencia aproximadamente humano o superior.</p>",
+    "infosource": "Khitai, p. 119 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

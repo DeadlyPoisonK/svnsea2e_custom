@@ -1,0 +1,17 @@
+{
+  "name": "Astuto",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para escapar del peligro en la escena actual. Solo te puedes salvar a ti mismo.</p>",
+    "infosource": "El bufón · 7º Mar (básico), p. 156"
+  },
+  "effects": [],
+  "folder": "BrBmrdx9NrOeGW5g",
+  "flags": {},
+  "_id": "CFdvHFLImavWBvbZ",
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  }
+}

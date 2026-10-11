@@ -1,0 +1,33 @@
+{
+  "folder": "ITG0hBu6GuSfmpnA",
+  "name": "Sacerdote de la Enéada",
+  "type": "background",
+  "_id": "82Py2n6mXeXMS7yZ",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Gran parte de Ifri, y Khemet, han olvidado los antiguos conocimientos de la Enéada. Pero tú los recuerdas.</p><p><em>Ventajas en el libro: Hechicería (Heka), Hechicería (Heka).</em></p>",
+    "infosource": "Tierras de Fuego y Oro, p. 175",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando te enfrentes al peligro para encontrar más información sobre la Enéada, descifrar un pictograma misterioso o defender tus creencias y te metes en problemas.</p>",
+    "skills": [
+      "aim",
+      "convince",
+      "notice",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Lingüista"
+    ],
+    "nation": "khemet"
+  },
+  "effects": [],
+  "sort": 150000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

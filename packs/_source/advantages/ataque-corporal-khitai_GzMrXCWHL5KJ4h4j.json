@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Ataque corporal (Khitai)",
+  "type": "advantage",
+  "_id": "GzMrXCWHL5KJ4h4j",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastas un Aumento para infligir Heridas o realizar una maniobra durante un Riesgo de Pelear, puedes gastar un punto de héroe para aumentar la cantidad de Heridas que infliges. Cada punto de héroe que gastes de este modo hace que tu golpe inflija 2 Heridas adicionales.</p>",
+    "infosource": "Khitai, p. 117 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

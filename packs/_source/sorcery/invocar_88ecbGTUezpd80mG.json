@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Invocar",
+  "type": "sorcery",
+  "_id": "88ecbGTUezpd80mG",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Manifiesta un demonio, diablo, bestia de las sombras o monstruo de otro mundo similar para que obedezca tus órdenes. Genera 4 de Plaga. El monstruo tiene una Fuerza igual a tu Plaga actual. Si queda Indefenso o la escena termina, el monstruo se desvanece de inmediato.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 202 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "folder": "mISBGS3k1JGW0JWu",
+  "name": "Temerario",
+  "type": "hubris",
+  "_id": "DBHR8tVq05YdEyIb",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Gana un punto de héroe cuando busques una pelea que no debías o te niegues a dar un paso atrás cuando sabes que deberías hacerlo.</p>",
+    "infosource": "Tigre · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

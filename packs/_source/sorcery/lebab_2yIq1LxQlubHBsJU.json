@@ -1,0 +1,21 @@
+{
+  "folder": "FAUpm3Eb4Xb9dJKz",
+  "name": "Lebab",
+  "type": "sorcery",
+  "_id": "2yIq1LxQlubHBsJU",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Lebab es la promesa de un corazón claro. La duda, la incertidumbre y el odio a uno mismo distorsionan el yo interior y oscurecen el propósito. Un corazón claro, sin embargo, está lleno de paz. El espejo interior se calma y puedes verte como eres: defectuoso, sí, pero también maravilloso.</p><p><strong>Amuleto: </strong>Cuando activas un Amuleto Lebab, puedes sentir los corazones de los que te rodean. Elige otro personaje en la misma escena. Hasta el final de la escena, cada vez que ese personaje miente o te engaña a propósito, lo sabes. No sabes la verdad ni sus verdaderos motivos, pero sabes que no está siendo honesta.</p><p><strong>Escritura:</strong> Cuando activas una Escritura Lebab, la paz interior se asienta dentro de ti a medida que todas las dudas sobre ti mismo se desvanecen; sabes quién eres. Esta claridad de propósito fortalece tu capacidad para tomar medidas. Todos los 9 ahora cuentan como 10. Este efecto dura el resto de la escena.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 174",
+    "sorctype": "chozeh",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

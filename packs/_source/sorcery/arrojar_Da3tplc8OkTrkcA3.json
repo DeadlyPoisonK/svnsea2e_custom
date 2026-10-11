@@ -1,0 +1,22 @@
+{
+  "folder": "3e0470FcjhLl9xWF",
+  "name": "Arrojar",
+  "type": "sorcery",
+  "_id": "Da3tplc8OkTrkcA3",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Tus músculos se ensanchan mientras agarras a un oponente y lo lanzas fuera de tu camino. Selecciona a un único oponente y muévelo a través de un Puente a una Zona diferente. Luego, genera 2 de Discordia.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 207 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

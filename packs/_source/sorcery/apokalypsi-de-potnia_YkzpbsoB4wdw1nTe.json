@@ -1,0 +1,21 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Apokálypsi de Potnia",
+  "type": "sorcery",
+  "_id": "YkzpbsoB4wdw1nTe",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Puedes activar este apokálypsi en lugar de gastar 1 Aumento para realizar una acción durante una secuencia de acción al usar Apuntar, Armas o Pelear como Enfoque. Esto también significa que puedes volver a actuar inmediatamente: tu número efectivo de Aumentos no se ha reducido, así que sigue siendo tu turno.</p>",
+    "infosource": "Naciones Piratas, p. 167",
+    "sorctype": "mystirios",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

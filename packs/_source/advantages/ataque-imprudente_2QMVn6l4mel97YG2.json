@@ -1,0 +1,23 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Ataque imprudente",
+  "type": "advantage",
+  "_id": "2QMVn6l4mel97YG2",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando infliges Heridas a otro personaje, gastas 1 punto de héroe. Las Heridas que infliges no se pueden reducir de ninguna manera. Durante el resto de la ronda, no puedes gastar Aumentos para reducir las Heridas que recibas tú o cualquier otro personaje.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 160",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  }
+}

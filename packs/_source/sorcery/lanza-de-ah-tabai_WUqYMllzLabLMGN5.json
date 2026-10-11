@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Lanza de Ah-Tabai",
+  "type": "sorcery",
+  "_id": "WUqYMllzLabLMGN5",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Se dice que ningún animal de la tierra, el aire o el mar estaba a salvo de la lanza del gran cazador Ah-Tabai.</p><p>Acostumbrado a acechar en las selvas durante días en busca de su presa, la caída de Ah-Tabai se produjo cuando decidió cazar un monstruo que no era de este mundo. Su orgullo le costó un brazo, pero los dioses, teniendo piedad de él, imbuyeron su lanza de gran poder. Mientras empuñe la Lanza de Ah-Tabai, un héroe puede gastar 1 punto de héroe cada vez que inflige Heridas para causar un número adicional de Heridas igual a sus propias Heridas Dramáticas.</p>",
+    "infosource": "El Nuevo Mundo, p. 173",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 271875,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

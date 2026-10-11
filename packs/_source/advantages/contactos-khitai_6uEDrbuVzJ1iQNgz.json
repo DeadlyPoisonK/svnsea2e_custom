@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Contactos (Khitai)",
+  "type": "advantage",
+  "_id": "6uEDrbuVzJ1iQNgz",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Conoces a alguien que puede proporcionarte información o ayudarte cuando lo necesites. Colabora con el DJ para crear los detalles de tu contacto. ¿Perteneces a algún tipo de organización o tienes un mecenas noble? ¿Tu reputación entre tus contactos es bien conocida, o siempre contactas a través del mismo intermediario? ¿Quién es este intermediario y cómo te trata? Elige un tipo de contacto (por ejemplo, «bajos fondos de Shenzhou», «guardia urbana de Kogu» o «cortesanos de la alta sociedad de Agnivarsa»). Siempre puedes ponerte en contacto con alguien de ese tipo que te dará información básica o te ayudará de forma menor, siempre que no le cueste nada ni lo ponga en peligro. Si deseas información más difícil de encontrar o un favor peligroso, debes gastar un punto de héroe o aceptar un coste estipulado por tu contacto (como pagarle dinero o aceptar hacerle un favor a cambio).</p>",
+    "infosource": "Khitai, p. 115 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

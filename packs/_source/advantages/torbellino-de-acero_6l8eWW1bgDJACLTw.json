@@ -1,0 +1,24 @@
+{
+  "folder": "aSM5k4zd4YYt1rg3",
+  "name": "Torbellino de acero",
+  "type": "advantage",
+  "_id": "6l8eWW1bgDJACLTw",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe debe tener la ventaja «Esgrimista» para poder adquirir esta ventaja. Cuando realices un Riesgo de Armas usando un florete, una daga, un alfanje u otra arma similar de una mano, puedes decidir no tirar los dados al comienzo de la ronda. Si lo haces, reduce a la mitad la Fuerza de todas las bandas de matones de la escena (redondeando hacia abajo).</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 205",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

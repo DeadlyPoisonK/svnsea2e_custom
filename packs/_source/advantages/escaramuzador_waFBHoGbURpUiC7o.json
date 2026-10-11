@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Escaramuzador",
+  "type": "advantage",
+  "_id": "waFBHoGbURpUiC7o",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando participas en Combate en masa como Solitario, las unidades enemigas pierden tantos dados como tu nivel en Ingenio o Maña (lo que sea mayor) en todas las tiradas dirigidas contra ti.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 159",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

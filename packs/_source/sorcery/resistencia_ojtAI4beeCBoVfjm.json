@@ -1,0 +1,22 @@
+{
+  "folder": "QGZKkDVKIZ1yqSDj",
+  "name": "Resistencia",
+  "type": "sorcery",
+  "_id": "ojtAI4beeCBoVfjm",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un personaje que bebe esta poción puede caminar entre las llamas sin pestañear. Cuando se cree esta poción, elige un elemento (como fuego, electricidad, ácido, etc.). Un personaje que beba esta poción ignora todas las Heridas causadas por el elemento seleccionado durante un número de rondas igual a la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 200 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

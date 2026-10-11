@@ -1,0 +1,21 @@
+{
+  "folder": "NqSlX828sLHAWCwO",
+  "name": "Zonbi",
+  "type": "sorcery",
+  "_id": "KWWb0iROc5ecBH95",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Existen muchos mitos e historias sobre la capacidad de Kap<br>S&egrave;vi para animar a los muertos. Por desgracia, si existe un<br>lwa con tal poder, no se ha dado a conocer a los s&egrave;vit&egrave;s. Lo<br>m&aacute;s cercano se encuentra en el poder de Sousson para crear<br>un zonbi. Mientras Sousson lo posea, el s&egrave;vit&egrave; puede gastar<br>1 punto de h&eacute;roe para enmascarar cualquier signo de vida<br>en una persona Indefensa. Su coraz&oacute;n late despacio, se le<br>nublan los ojos y los m&uacute;sculos se le tensan. Tambi&eacute;n se<br>vuelve susceptible a la sugesti&oacute;n y se puede dirigir para que<br>realice acciones simples por orden del s&egrave;vit&egrave;.</p>",
+    "infosource": "Naciones Piratas, p. 165",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "gros",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

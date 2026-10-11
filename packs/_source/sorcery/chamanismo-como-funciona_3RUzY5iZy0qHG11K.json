@@ -1,0 +1,22 @@
+{
+  "folder": "6S1sZ4pEu7VkQtbd",
+  "name": "Chamanismo: cómo funciona",
+  "type": "sorcery",
+  "_id": "3RUzY5iZy0qHG11K",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El chamanismo se basa en el concepto de equilibrar la Furia y la Tranquilidad de los espíritus. Siempre que un chamán entra en una escena y comienza a usar su magia o a interactuar con fuerzas espirituales, el DJ le informará de la Furia y la Tranquilidad de la escena. Estos dos números siempre suman 10 (4 de Furia significa 6 de Tranquilidad, 8 de Furia significa 2 de Tranquilidad, etc.). La mayoría de las escenas tendrán un reparto de 5/5 o de 4/6, ya que los espíritus del mundo suelen encontrarse en un estrecho equilibrio incluso en circunstancias severas pero naturales; normalmente se requiere la interferencia de un chamán o una alteración extrema no natural para romper esta pauta. Una alteración extrema puede provocar que los espíritus se desequilibren aún más; por ejemplo, el escenario de una batalla intensa y sangrienta podría tener una Furia de 7 y una Tranquilidad de 3.</p><p>Todos los poderes de chamán interactúan de algún modo con la Furia o la Tranquilidad de una escena aumentando un aspecto u otro de la misma. La mayoría de los ritos aumentan la Furia al obligar a los espíritus a hacer cosas que normalmente no desearían hacer, pero muchos ritos ofrecen la opción de aumentar en su lugar la Tranquilidad de una escena realizando el rito como un ritual prolongado para apaciguar a los espíritus y solicitar su ayuda. Los chamanes heroicos normalmente desean equilibrar la Furia y la Tranquilidad, mientras que a los chamanes villanos a menudo no les importa aumentar la Furia de los espíritus. Sin embargo, los chamanes heroicos deben tener cuidado de no aumentar demasiado la Tranquilidad; a medida que los espíritus comienzan a calmarse, se vuelve cada vez más difícil recurrir a ellos en busca de ayuda. Los valores de Furia y Tranquilidad de una escena afectan al mundo de diferentes maneras. A medida que el valor de Furia de la escena aumenta, el DJ genera puntos de peligro al comienzo de cada ronda según la siguiente tabla:</p><p>0-5 Furia 0 puntos de peligro 6-7 Furia 1 punto de peligro 8-9 Furia 2 puntos de peligro 3 puntos de peligro 10 Furia Además, a medida que la Tranquilidad aumenta, se vuelve más difícil realizar magia chamánica. Los chamanes deben gastar Aumentos adicionales (u horas preparando un ritual) para usar sus poderes. Al comienzo de cada ronda, determina el valor de Tranquilidad de la escena y cómo afectará a la ronda según la siguiente tabla: 0-5 Tranquilidad 0 Aumentos / Horas adicionales 6-7 Tranquilidad 1 Aumento / Hora adicional 8-9 Tranquilidad 2 Aumentos / Horas adicionales 3 Aumentos / 10 Tranquilidad Horas La primera vez que adquieres la ventaja Hechicería, un chamán obtiene el rito Visión y puede elegir otro rito. Este rito debe ser un rito general o un rito de tu nación natal. Cada vez posterior que adquieras la ventaja Hechicería, elige dos ritos adicionales. Nunca puedes elegir un rito de otra nación. Por ejemplo, un chamán de Agnivarsa nunca podrá elegir el rito Bendecir.</p><p>Todos los ritos pueden activarse de inmediato (a menudo a costa de aumentar el valor de Furia de la escena); algunos ritos pueden activarse como un ritual dedicando una hora de preparación para asegurar que los espíritus de la escena no se enojen por la magia (lo que aumenta la Tranquilidad de la escena).</p><p>Un personaje debe gastar un punto de héroe cada vez que active un rito (ya sea de inmediato o como un ritual); durante una secuencia de acción también debe gastar un Aumento.</p>",
+    "infosource": "Khitai, p. 194 (traducción no oficial)",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "hLWsg73CQv2Qz1Sp",
+  "name": "Visión",
+  "type": "sorcery",
+  "_id": "Br75X97aAnLPo7h8",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Obtienes capacidades perceptivas sobrenaturales. Hasta el final de la escena, ves automáticamente a través de cualquier ilusión (como un monstruo que adopte otra forma o una habilidad mágica) y sabes si un personaje está poseído (ves que sus ojos brillan de forma antinatural, su sombra se mueve independientemente de su cuerpo o algún otro indicador visual). Luego, genera 2 de Discordia.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 207 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

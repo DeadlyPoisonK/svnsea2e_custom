@@ -1,0 +1,21 @@
+{
+  "folder": "COvFX4cO6Vx1BswB",
+  "name": "Levantar",
+  "type": "sorcery",
+  "_id": "dQpPXY01umcuSIPB",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa esta Manifestación cuando toques una criatura que murió hace menos de un minuto. Obligas a su espíritu a regresar a su cuerpo y lo devuelves a la vida. El personaje permanece Indefenso, pero está vivo otra vez.</p><p>Sin embargo, devolverle la vida a una criatura pasa factura a los churikuna. El Brío del churikuna se reduce permanentemente en 1. La única forma en que un churikuna puede reponer este punto de Brío es subiendo una característica a través de una Historia. Si esta Manifestación reduce su Brío a 0, muere. Un personaje que muere de esta manera no puede salvarse de ninguna forma, ni siquiera sobrenatural; voluntariamente sacrifica su vida para salvar a otro y este precio no puede ser eludido.</p><p>Cuando activas esta Manifestación, tu mano se envuelve en energía antinatural y agarras visiblemente el espíritu antes de que pueda alejarse del cuerpo, forzándolo a regresar al cadáver.</p>",
+    "infosource": "El Nuevo Mundo, p. 178",
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "manifestation",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "folder": "TPYIDgBQTXjRlnH2",
+  "name": "Vala",
+  "type": "background",
+  "_id": "gxAYBVTS6SFscFNx",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Los escribas y políticos de hoy creen que las palabras tienen poder. No tienen ni idea de hasta qué punto.</p><p><em>Ventajas en el libro: Hechicería (Galdr), Hechicería (Galdr), Lingüística.</em></p>",
+    "infosource": "Naciones de Théah vol. 1, p. 205",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando te niegues a resolver un problema usando la magia, aunque sea más sencillo hacerlo así; el problema no es lo bastante importante para usar tus poderes con él.</p>",
+    "skills": [
+      "convince",
+      "intimidate",
+      "perform",
+      "ride",
+      "scholarship"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Lingüista"
+    ],
+    "nation": "vesten",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

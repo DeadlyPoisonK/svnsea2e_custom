@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Wilfrith, la Caballera de la Voluntad",
+  "type": "sorcery",
+  "_id": "cOx9mwczrY4ENIVB",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Tras ser capturada por sus enemigos, Wilfrith estuvo en prisión durante 15 años. Ni la tortura ni la promesa de riqueza cambiaron su lealtad. Cuando sus enemigos se cansaron de torturarla, intentaron convertirla en un monstruo indescriptible, pero de algún modo volvió al castillo del rey Elilodd. Moribunda y loca de atar, Wilfrith necesitó menos de una luna para recuperar sus sentidos y curarse las heridas.</p><p>Característica mayor: Brío Característica menor: Músculo</p><h3>Naciones de Théah vol. 1, p. 51</h3><p><strong>Virtud:</strong> Flexible (Monedas). <strong>Hibris:</strong> Orgullosa (El sol).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe si actúas antes de pensar y eso te deja aislado, solo y enfrentándote al peligro sin ayuda.</p><p><strong>Glamour legendario — Recuperación milagrosa:</strong> Gasta uno o más puntos de héroe para activar este Glamour antes de una noche completa de sueño o de meditación ininterrumpida. Cuando despiertes te habrás curado 1 Herida Dramática por cada punto de héroe que gastases.</p>",
+    "infosource": "7º Mar (básico), p. 213",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "iQwE9i6UuITLrQEf",
+  "name": "Pistola nascosta",
+  "type": "background",
+  "_id": "IM4r9yOBOqI6tE1L",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Para cuando ven el cañón de tu pistola, ya es tarde, así que esperas no tener que llegar a eso.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 208",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando resuelvas un problema con una amenaza violenta, pero sin tener que desenfundar tu arma de fuego.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "empathy",
+      "intimidate",
+      "tempt"
+    ],
+    "advantages": [
+      "Desenfundado rápido",
+      "Mirar fijamente"
+    ],
+    "nation": "vodacce",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

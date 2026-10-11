@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Artista (Khitai)",
+  "type": "background",
+  "_id": "esDoOoUtMyXrbHVk",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Honestidad</p>",
+    "quirk": "<p>Gana un punto de héroe cuando asumas un riesgo personal o hagas un sacrificio personal para hacer el mundo más hermoso.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "perform",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Maestro artesano (Khitai)",
+      "Amigos en la corte (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 104 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

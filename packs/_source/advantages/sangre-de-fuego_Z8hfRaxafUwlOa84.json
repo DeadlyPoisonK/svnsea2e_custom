@@ -1,0 +1,23 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Sangre de fuego",
+  "type": "advantage",
+  "_id": "Z8hfRaxafUwlOa84",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Mientras tengas al menos 1 Herida Dramática, obtendrás un dado de bonificación adicional en todos los Riesgos de Atletismo, Pelear, Tácticas de Guerra y Armas.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 177",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

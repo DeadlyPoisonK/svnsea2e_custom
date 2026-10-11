@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Colaborador",
+  "type": "advantage",
+  "_id": "cgjWGlhY4LPnfy51",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastas un Aumento para crear una Oportunidad, puedes gastar un segundo Aumento. Si lo haces, activas la Oportunidad en nombre de otra heroína dispuesta, sin que necesite gastar su propio Aumento.</p><p><em>Coste: 2 (1 si eres nahuacano).</em></p>",
+    "infosource": "El Nuevo Mundo, p. 165",
+    "cost": {
+      "normal": 2,
+      "reducecost": 1
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

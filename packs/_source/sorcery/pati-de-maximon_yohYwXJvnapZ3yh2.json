@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Pati de Maximon",
+  "type": "sorcery",
+  "_id": "yohYwXJvnapZ3yh2",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>En vida, Maximon fue una comerciante, curandera y partera ambulante. Se convirtió en la tzak k'ana que más había viajado en la historia, en parte debido a su profundo conocimiento de la jungla. Confeccionó sandalias que casi no hacían ruido, se cubrió con aceites para disfrazar su olor y coloreó su pati para que se camuflara con las hojas y árboles de su entorno. Mientras vista el Pati de Maximon, un héroe puede gastar 1 punto de héroe para ser invisible a la vista, el oído y el olfato. Este efecto dura hasta el final de la escena o hasta que el héroe interactúe con su entorno de alguna manera (como recoger un objeto, atacar a otro personaje o hablar).</p>",
+    "infosource": "El Nuevo Mundo, p. 173",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 375000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "Ii9neQCQcG7PZkgg",
+  "name": "Vuelo",
+  "type": "sorcery",
+  "_id": "pkRn2aDk2hDU4JOi",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Ya sea mediante alas que brotan de tu espalda o mediante alguna otra forma de locomoción, eres capaz de alzarte por los cielos. Hasta el final de la ronda puedes volar. Generas 2 de Discordia.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 206 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

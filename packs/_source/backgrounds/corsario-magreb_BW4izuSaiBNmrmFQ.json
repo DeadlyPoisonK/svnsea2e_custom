@@ -1,0 +1,33 @@
+{
+  "folder": "yeVte1kxkn01Z33J",
+  "name": "Corsario (Magreb)",
+  "type": "background",
+  "_id": "BW4izuSaiBNmrmFQ",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tu barco merodea por las costas de Ifri, proporcionándote a ti y a tus compañeros una vida de libertad y aventura.</p>",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando tu insistencia en evitar, engañar o desconfiar de la autoridad te meta en problemas.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "hide",
+      "intimidate",
+      "sailing"
+    ],
+    "advantages": [
+      "Casado con el mar",
+      "Fuera del manifiesto",
+      "Mañoso"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 175",
+    "nation": "maghreb"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

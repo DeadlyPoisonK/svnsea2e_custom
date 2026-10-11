@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Venenoso",
+  "type": "monsterquality",
+  "_id": "hXClnIDaGI1SemlA",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>El monstruo tiene un potente veneno y colmillos perfectos para aplicarlo. Gasta 1 punto de peligro al principio de la ronda para que la víctima pierda 1 Aumento cuando el monstruo le inflija daño.</p>",
+    "infosource": "7º Mar (básico), p. 198",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "m7qckYPLTrStR8HN",
+  "name": "Maldición Mayor",
+  "type": "sorcery",
+  "_id": "9GWwipxWi3EyggST",
+  "img": "icons/magic/perception/eye-ringed-green.webp",
+  "system": {
+    "description": "<p>Gasta 1 punto de h&eacute;roe y coge una o m&aacute;s hebras para<br>lanzarle a otro h&eacute;roe o villano una Maldici&oacute;n mayor con<br>un nivel igual al n&uacute;mero de hebras que tengas cuando<br>la lances. El personaje permanece maldito hasta que<br>decidas activarla (despu&eacute;s de que tire los dados para<br>un Riesgo). Cuando se activa, tu Maldici&oacute;n elimina 1<br>Aumento de su riesgo por cada nivel de la Maldici&oacute;n.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 230",
+    "sorctype": "sorte",
+    "sorcdur": "none",
+    "sorccat": "tesse",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

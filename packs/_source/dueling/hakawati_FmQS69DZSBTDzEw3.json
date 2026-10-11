@@ -1,0 +1,19 @@
+{
+  "folder": "EukS0hh4uQes49gW",
+  "name": "Hakawati",
+  "type": "duelstyle",
+  "_id": "FmQS69DZSBTDzEw3",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Maestra Practicante: Zahrah bint Marwa al-Amin Zahrah bint Marwa al-Amin lleva consigo generaciones de historia. La historia de su familia y tribu siempre está presente en sus pensamientos. Puede recordar los detalles más minuciosos de sucesos que ocurrieron hace milenios. Ella le da lecciones a la gente de su tribu todas las noches mientras se reúnen para comer. Los reyes y líderes de otras tribus recurren a su experiencia para ayudar a resolver disputas familiares. El estilo Hakawati se centra en la historia familiar y tribal, entretejiendo historias a partir de tramas secundarias y saltando de un lado a otro. Haciendo referencia a un drama con el siguiente y entretejiendo palabras como si estuviera elaborando una hermosa canasta, un poeta de Hakawati toma la tradición oral y la pone en rima y métrica.</p>",
+    "bonus": "<p><strong>Bonificación de la escuela.</strong></p><p>Un practicante de Hakawati gana 1 dado adicional durante el segundo Bayt.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 202"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

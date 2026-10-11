@@ -1,0 +1,22 @@
+{
+  "folder": "UAD1q5zNVMpOyhGo",
+  "name": "Sombra",
+  "type": "sorcery",
+  "_id": "p8egHJu2kA0gCqPN",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>Gasta 1 punto de h&eacute;roe para dotar&nbsp;de sentidos a tu sombra. La sombra se vuelve&nbsp;semicorp&oacute;rea y obedece tus &oacute;rdenes. Es capaz de&nbsp;explorar, escuchar a escondidas y otras actividades&nbsp;similares, pero no puede recoger objetos o interactuar&nbsp;con otras personas. Si realiza una acci&oacute;n&nbsp;peligrosa, tiene Fuerza 5 (tira 5 dados) y gasta&nbsp;Aumentos en consecuencia. Si sufre una Herida,&nbsp;instant&aacute;neamente vuelve a ti y se niega a ser reanimada&nbsp;hasta la pr&oacute;xima puesta de sol.</p>",
+    "used": false,
+    "infosource": "Tierras de Fuego y Oro, p. 194",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

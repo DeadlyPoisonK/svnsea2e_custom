@@ -1,0 +1,32 @@
+{
+  "folder": "woHhojw41I6E4wVp",
+  "name": "Chavra",
+  "type": "background",
+  "_id": "3swCJ1lwEf9q0s6c",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Formas parte de la élite del ejército de Sarmion. Hay algunos problemas tan peligrosos que solo tú deberías enfrentarlos, solo.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 157",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando eliges enfrentar un problema solo, para proteger a otros del peligro potencial de la tarea.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "hide",
+      "notice",
+      "weaponry"
+    ],
+    "advantages": [
+      "Estudiante marcial",
+      "Reputación"
+    ],
+    "nation": "sarmion",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

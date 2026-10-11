@@ -1,0 +1,22 @@
+{
+  "folder": "qeCZ5JNoQShLPnz4",
+  "name": "Acelerar",
+  "type": "sorcery",
+  "_id": "yhVCZ4NG9geY8NCy",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este poder para moverte más rápido de lo normal. En distancias cortas, cualquier persona que desee igualar tu velocidad debe pagar 2 Aumentos para hacerlo (ya sea porque está huyendo de ti o porque tú estás huyendo de ella). Si viajas una distancia larga, reduce a la mitad el tiempo necesario para llegar a tu destino.</p><p>El último paso te enseña a crear algo de la nada. Tu Maravilla invoca un arma o herramienta para que la uses. Puede estar hecha de arena, aire o luz; cada Maravilla es diferente. Te ayuda a llevar a cabo la tarea que debas completar.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "dRivclZirteK4bLL",
+  "name": "Ligero como una pluma",
+  "type": "sorcery",
+  "_id": "cDypPs1q7dFo1XCZ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este preparado reduce el peso de un objeto inorgánico a la mitad, aunque mantiene el resto de sus propiedades. Es más fácil transportar el objeto (no requiere usar Aumentos adicionales), pero empeora su precisión (arrojar el objeto te cuesta un Aumento adicional).</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 96",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

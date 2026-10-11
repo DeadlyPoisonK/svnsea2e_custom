@@ -1,0 +1,22 @@
+{
+  "folder": "nmMwaFNJyu84HU6o",
+  "name": "Acelerar",
+  "type": "sorcery",
+  "_id": "kZfRj6eB7qcpeymG",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un personaje que beba esta poción puede moverse de inmediato a una Zona diferente a través de un número de Puentes igual o inferior a la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 200 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

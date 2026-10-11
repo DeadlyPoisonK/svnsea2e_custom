@@ -1,0 +1,21 @@
+{
+  "folder": "ZsbQAw9KQhYQn1xz",
+  "name": "Asalto sinérgico Menor",
+  "type": "sorcery",
+  "_id": "4R883t3Ph2LwAXlh",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La dedicación de la khadim a la supervivencia de los demás le da una visión única de cómo moverse y atacar, creando aperturas y oportunidades para sus aliados que de otro modo no existirían. La khadim hace esto mirando solo unos momentos hacia el futuro.</p><p>Activa este Khidma cuando causes Heridas a otro personaje. Elige otro personaje en la misma escena. Ese personaje puede realizar inmediatamente una acción gastando un Aumento.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 182",
+    "sorctype": "mithaq",
+    "sorcdur": "none",
+    "sorccat": "thiqa",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

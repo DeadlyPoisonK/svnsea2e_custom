@@ -1,0 +1,33 @@
+{
+  "folder": "gsj5qRm5qxWlCFv4",
+  "name": "Saoi (Sabio)",
+  "type": "background",
+  "_id": "rYlIOGo3FnrUJv3Y",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tienes el mayor honor concedido por Aosdána, una asociación de artistas creativos inismoreses financiada por el Estado.</p>",
+    "infosource": "7º Mar (básico), p. 142",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando te interpongas ante el daño para proteger a los artistas de Théah.</p>",
+    "skills": [
+      "athletics",
+      "convince",
+      "empathy",
+      "perform",
+      "weaponry"
+    ],
+    "advantages": [
+      "Buen bebedor",
+      "Sonrisa encantadora",
+      "Trabajo en equipo"
+    ],
+    "nation": "inismore"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

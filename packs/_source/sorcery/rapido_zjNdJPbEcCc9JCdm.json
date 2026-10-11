@@ -1,0 +1,22 @@
+{
+  "folder": "4rsEYwOl0zAEkA41",
+  "name": "Rápido",
+  "type": "sorcery",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Si la Manifestación requiere un Aumento para activarse, puedes activarla sin gastarlo. Debes realizar una acción antes de poder activar otra Manifestación mientras usas este Giro.</p>",
+    "infosource": "El Nuevo Mundo, p. 180",
+    "used": false,
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "turn",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "zjNdJPbEcCc9JCdm",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

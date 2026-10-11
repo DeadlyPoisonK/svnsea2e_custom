@@ -1,0 +1,22 @@
+{
+  "folder": "k18gDEigRmb5jnMD",
+  "name": "Trampa",
+  "type": "sorcery",
+  "_id": "qvhXIFw2rXEeot51",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Dibuja un símbolo en el suelo (comúnmente un círculo o un pentagrama) para que actúe como trampa; si un monstruo entra en la trampa y el símbolo permanece intacto, no puede abandonar los confines de la trampa ni afectar a nadie fuera del círculo con un poder sobrenatural. El monstruo puede realizar cualquier otra acción con normalidad. El monstruo no puede romper la trampa por sí mismo.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 204 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

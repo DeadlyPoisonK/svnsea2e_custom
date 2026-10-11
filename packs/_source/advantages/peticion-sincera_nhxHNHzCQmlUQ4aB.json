@@ -1,0 +1,23 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Petición sincera",
+  "type": "advantage",
+  "_id": "nhxHNHzCQmlUQ4aB",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para suplicar a otro personaje que siga los dictados de su conciencia, que haga la vista gorda por el bien de alguien o, en resumen, que haga lo correcto cuando no es lo que más le conviene en un momento dado.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 209",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 7400000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "9uzBkZY6TGPQw0sf",
+  "name": "Aparato de respiración subacuática",
+  "type": "sorcery",
+  "_id": "HU5jc9YGQLpneudH",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este dispositivo imita la función de los órganos respiratorios, permitiéndote respirar bajo el agua durante una escena como si estuvieras al aire libre.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 97",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

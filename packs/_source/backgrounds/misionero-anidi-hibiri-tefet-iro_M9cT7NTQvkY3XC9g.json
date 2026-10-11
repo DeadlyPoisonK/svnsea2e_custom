@@ -1,0 +1,32 @@
+{
+  "folder": "M57WOXC69CG2ZoLB",
+  "name": "Misionero Ānidi Hibiri Tefet'iro",
+  "type": "background",
+  "_id": "M9cT7NTQvkY3XC9g",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Has visto la verdad de la gloria de Theus y sientes el llamado a llevar Su luz a otros.</p>",
+    "used": false,
+    "quirk": "<p>Gana 1 punto de héroe cuando aproveches la oportunidad de predicar, hacer proselitismo o tratar de convertir a alguien a tu religión y te metes en problemas.</p>",
+    "skills": [
+      "convince",
+      "notice",
+      "perform",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Liderazgo",
+      "Miembro de la orden"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 174",
+    "nation": "aksum"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

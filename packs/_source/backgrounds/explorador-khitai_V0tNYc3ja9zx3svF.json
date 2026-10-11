@@ -1,0 +1,33 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Explorador (Khitai)",
+  "type": "background",
+  "_id": "V0tNYc3ja9zx3svF",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Lealtad</p>",
+    "quirk": "<p>Gana un punto de héroe cuando contemples un paraje natural rara vez (o nunca) visto antes.</p>",
+    "skills": [
+      "athletics",
+      "notice",
+      "ride",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Superviviente (Khitai)",
+      "Vista de lince (Khitai)",
+      "Afrontar la tormenta (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 105 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

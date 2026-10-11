@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Jinete consumado (Khitai)",
+  "type": "advantage",
+  "_id": "o5swyAWoUl7eQbF3",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para espolear a tu montura y dar un salto increíble, llamar a tu fiel corcel a tu lado (siempre que sea físicamente capaz de acudir) o guiarlo para esquivar el ataque de un enemigo o contratacar con cascos y dientes (previniendo o infligiendo tantas Heridas como tus rangos en Equitación).</p>",
+    "infosource": "Khitai, p. 114 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

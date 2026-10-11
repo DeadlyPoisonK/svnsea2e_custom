@@ -1,0 +1,22 @@
+{
+  "folder": "oRakCwdCZmL2RCWI",
+  "name": "Pegamento",
+  "type": "sorcery",
+  "_id": "Ya6EhWsQv5ZQG6xR",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Arrojar esta poción al suelo hace que un fluido espeso y pegajoso se extienda desde el punto de impacto. Tantos objetivos en la Zona como la Potencia de la poción no pueden abandonar la Zona hasta el final de la ronda.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 200 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

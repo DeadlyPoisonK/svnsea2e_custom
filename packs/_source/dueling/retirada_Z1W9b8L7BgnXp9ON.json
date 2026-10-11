@@ -1,0 +1,18 @@
+{
+  "folder": "SHTZehac4c9ek4Nd",
+  "name": "Retirada",
+  "type": "duelstyle",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Usa esta Estrategia en tu acción para evitar un número de Impactos igual al número de Aumentos obtenidos. Sin embargo, debes ordenar esta Estrategia inmediatamente después de la acción que causó los Impactos.</p><p>Si bien un ejército tiene solo un general, se deben cumplir una serie de otros roles. Cualquier héroe que no actúe como general puede seleccionar lo siguiente:</p>",
+    "infosource": "El Imperio de la Media Luna, p. 193",
+    "bonus": ""
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_id": "Z1W9b8L7BgnXp9ON",
+  "sort": 0
+}

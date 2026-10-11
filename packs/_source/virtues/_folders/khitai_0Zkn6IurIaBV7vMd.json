@@ -1,0 +1,15 @@
+{
+  "name": "Khitai",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "0Zkn6IurIaBV7vMd",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "16fb2484125bff69720ce5a5fa00daac569f0701"
+    }
+  }
+}

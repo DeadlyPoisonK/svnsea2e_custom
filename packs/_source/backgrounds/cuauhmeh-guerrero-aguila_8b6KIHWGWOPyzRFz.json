@@ -1,0 +1,32 @@
+{
+  "folder": "oGKITcJ7tfpTOqvu",
+  "name": "Cuāuhmeh (Guerrero águila)",
+  "type": "background",
+  "_id": "8b6KIHWGWOPyzRFz",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Eres uno de los mejores soldados de la Alianza y tu casco de águila distintivo denota tu posición.</p>",
+    "infosource": "El Nuevo Mundo, p. 163",
+    "quirk": "<p>Ganas 1 punto de héroe cuando te enfrentas a un problema que no te incumbe porque es lo correcto.</p>",
+    "skills": [
+      "athletics",
+      "convince",
+      "empathy",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Adornar con plumas",
+      "Objeto distintivo",
+      "Superviviente"
+    ],
+    "nation": "nahuaca",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

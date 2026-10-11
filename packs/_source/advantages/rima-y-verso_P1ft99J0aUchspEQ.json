@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Rima y verso",
+  "type": "advantage",
+  "_id": "P1ft99J0aUchspEQ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Eres un <em>Kavi</em>, un duelista de poesía. Consulta la sección de duelos de poesía (ver <strong>Kavita </strong>en la sección: <strong>Juegos entre la luna y las estrellas</strong>) para obtener más información.</p><p>La primera vez que compras esta ventaja, eliges aprender el estilo damu, chamsin, griot o hakawati.</p><p>La segunda vez que compres esta ventaja, eliges aprender el estilo goftār-e nik, mascarada o khol.</p><p>La tercera vez que compres esta ventaja, eliges cualquier habilidad que poseas y ganas un dado adicional cuando uses esa habilidad durante un Kavita.</p><p>La cuarta vez (y cada subsiguiente) que compres esta ventaja, eliges aprender cualquier estilo de Kavita que desees.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 159",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

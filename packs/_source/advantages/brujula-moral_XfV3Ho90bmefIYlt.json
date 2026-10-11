@@ -1,0 +1,24 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Brújula moral",
+  "type": "advantage",
+  "_id": "XfV3Ho90bmefIYlt",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>Requisitos:</strong> Tu héroe debe haber completado una historia de redención y no tener corrupción.</p><p>Tu héroe sabe que, a pesar del mal que puedan haber ocasionado, las personas son buenas; de hecho, tu héroe personifica esta idea. Siempre que ayudes a otro héroe a completar un paso en una historia de redención, dicho héroe pierde 2 puntos de corrupción en lugar de uno.</p><p><em>Tierras de Fuego y Oro, p. 178: coste 4 (3 si eres embeyano).</em></p>",
+    "infosource": "Naciones de Théah vol. 2, p. 210",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

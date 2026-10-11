@@ -1,0 +1,18 @@
+{
+  "folder": "PWCKDOvwS0ovE4Y9",
+  "name": "Eisenfaust",
+  "type": "duelstyle",
+  "_id": "ztFWpqMSWGBLGJGN",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Eisenfaust usa una espada ancha con un panzerhand o guante de hierro en la zurda. El espadachín desvía o agarra los ataques del oponente con su guante y aprovecha las aperturas que crea con su espada ancha. El estilo Eisenfaust es defensivo y enseña a sus estudiantes a esperar que su oponente cometa un error antes de atacar. Eisenfaust aprovecha los errores que comete el oponente, que poco a poco se impacienta o se enfada. En cuanto se equivoca, el estudiante de Eisenfaust está encima de él, acribillándolo con los golpes de su temible espada ancha.</p>",
+    "infosource": "7º Mar (básico), p. 238",
+    "bonus": "<p><strong>Réplica de hierro.</strong></p><p>Cuando esgrimes un arma pesada en una mano y un panzerhand en la otra, tu maniobra Contraataque se remplaza por Réplica de Hierro, que evita tantas Heridas como tu nivel de Brío + tu nivel de Armas. También infliges tantas Heridas como tu nivel de Músculo + Armas. Solo puedes realizar Réplica de Hierro una vez por ronda.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100049,
+  "ownership": {
+    "default": 0
+  }
+}

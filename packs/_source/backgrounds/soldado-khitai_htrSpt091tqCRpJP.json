@@ -1,0 +1,31 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Soldado (Khitai)",
+  "type": "background",
+  "_id": "htrSpt091tqCRpJP",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Lealtad</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando renuncies a la ventaja en combate para asegurarte de que todos tus camaradas regresen a casa.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Camaradería (Khitai)",
+      "Guardaespaldas (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 107 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Tocado de Naum",
+  "type": "sorcery",
+  "_id": "IlcvPK0OiiTsx3QK",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Cuando los dioses crearon a la humanidad, eran criaturas estúpidas que sobrevivían solo por instinto. Algunos de los dioses decidieron imbuirlos de pensamiento e inteligencia. Hicieron un elaborado tocado y se lo dieron a una mujer conocida como Naum. Al colocar el tocado sobre su cabeza, Naum sonrió y le agradeció a los dioses por el regalo. Mientras lleve puesto el Tocado de Naum, un héroe puede gastar 1 punto de héroe para activar su efecto. Hasta el final de la escena, el héroe no tiene que pagar penalizaciones de improvisación o sin cualificación cuando realiza acciones ligadas a una habilidad en la que no tiene niveles.</p><p>Los Pixan son elementos y criaturas importantes que una Ahez puede convocar para ayudarla. Tienen consciencia, y pueden persistir durante más que una escena si quieren lograr algo. Siempre que un héroe lleve o esté acompañado por un Pixan, puede usar el poder del Pixan pagando el coste de puntos de héroe asociado al Pixan. Sin embargo, el Pixan también viene con un truco, algo que hace la vida del héroe un poco más difícil si decide convertirse en un Ahpul.</p>",
+    "infosource": "El Nuevo Mundo, p. 174",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 350000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

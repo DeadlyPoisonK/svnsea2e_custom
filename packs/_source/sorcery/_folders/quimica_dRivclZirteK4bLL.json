@@ -1,0 +1,15 @@
+{
+  "name": "Química",
+  "sorting": "a",
+  "folder": "Blvpl18m1qGPsjC8",
+  "type": "Item",
+  "_id": "dRivclZirteK4bLL",
+  "description": "",
+  "sort": 100000,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "d3cc8313ede235eaab1c2960de51e684e71fe282"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Reflejos rápidos",
+  "type": "advantage",
+  "_id": "TaBsEoJkQGdYNXJu",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige una habilidad. Siempre realizas las acciones como si tuvieras un Aumento adicional para gastar cuando uses esa habilidad. Por ejemplo, si un héroe tiene Reflejos Rápidos con Armas y saca 3 Aumentos, realiza su primera acción a los 4 Aumentos. Si gasta 1 Aumento para realizar una acción (y le quedan 2 Aumentos), su siguiente acción se realiza a los 3 Aumentos. Un héroe puede adquirir esta ventaja más de una vez; elige una habilidad diferente cada vez.</p>",
+    "infosource": "7º Mar (básico), p. 152",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  }
+}

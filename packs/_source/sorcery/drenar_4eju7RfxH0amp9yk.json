@@ -1,0 +1,22 @@
+{
+  "folder": "O4h9r3arW2O5M1WV",
+  "name": "Drenar",
+  "type": "sorcery",
+  "_id": "4eju7RfxH0amp9yk",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Pones las manos sobre un enemigo y absorbes su fuerza vital en ti mismo. Inflige tantas Heridas como la mitad de tu Plaga actual en tu Zona. Sana tantas Heridas como el número de Heridas infligidas.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 203 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

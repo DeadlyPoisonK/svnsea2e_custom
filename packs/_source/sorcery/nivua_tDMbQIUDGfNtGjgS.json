@@ -1,0 +1,21 @@
+{
+  "folder": "DyFaRublZKFyCSai",
+  "name": "Nivua",
+  "type": "sorcery",
+  "_id": "tDMbQIUDGfNtGjgS",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Nivua es el poder de la profecía. Aquellos que usan Nivua no esperan los sueños de Elohah de lo que está por venir, sino que eligen rasgar el velo entre lo que Es y lo que Será para descubrir lo que depara el futuro.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 175",
+    "sorctype": "chozeh",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

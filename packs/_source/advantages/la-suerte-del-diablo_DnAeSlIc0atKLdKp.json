@@ -1,0 +1,23 @@
+{
+  "folder": "BsRq7OrECMmGFFR9",
+  "name": "La suerte del diablo",
+  "type": "advantage",
+  "_id": "DnAeSlIc0atKLdKp",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe después de realizar un Riesgo para volver a tirar tantos dados como quieras. Debes quedarte con la nueva tirada, a menos que tengas otro efecto que te permita volver a tirar los dados. Solo puedes utilizar esta ventaja una vez por escena.</p><p><em>Coste: 5 (3 si eres de las islas del glamour).</em></p>",
+    "infosource": "7º Mar (básico), p. 155",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 25000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "COvFX4cO6Vx1BswB",
+  "name": "Canalizar",
+  "type": "sorcery",
+  "_id": "A62jKRbmvaZMtk9W",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Cuando aprendas esta Manifestación, elige un trasfondo que no poseas (ya sea un trasfondo básico o un trasfondo de Kuraq). Este trasfondo representa lo que fue tu antepasado en su vida.</p><p>Cuando activas esta Manifestación, las memorias de la vida de tu antepasado y las habilidades que aprendió inundan tu mente. Obtienes 1 nivel en cada una de las habilidades de trasfondo y la peculiaridad del trasfondo de tu antepasado, adicional a tus propias peculiaridades. Este efecto dura hasta que decidas finalizarlo o hasta el final de la escena.</p><p>Mientras esta Manifestación está activa, la forma de tu antepasado aparece en una luz fantasmal y se mueve junto a ti, ligeramente fuera de sincronía con tus movimientos, como una imagen residual antinatural.</p>",
+    "infosource": "El Nuevo Mundo, p. 178",
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "manifestation",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

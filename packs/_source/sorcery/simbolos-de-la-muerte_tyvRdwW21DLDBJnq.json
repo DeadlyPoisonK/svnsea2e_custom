@@ -1,0 +1,22 @@
+{
+  "folder": "46pDhOiEQTukf2IT",
+  "name": "Símbolos de la Muerte",
+  "type": "sorcery",
+  "_id": "tyvRdwW21DLDBJnq",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>La primera vez que compras esta Hechicería, creas un Símbolo de la Muerte que incorpora un poco de hueso o una reliquia corporal similar del antepasado cuyo espíritu canalizas. El primer Símbolo de la Muerte creado es siempre una máscara tallada y pintada para parecerse a una calavera. Aunque rara vez está hecha del cráneo real del antepasado, la máscara siempre incorpora una pequeña parte de sus restos físicos. Quizás uno de los dientes de la máscara no está hecho de madera como los demás, o un poco de ornamentación ósea es más auténtica que el resto. Cada vez después de la primera, se siguen creando Símbolos de la Muerte, pero la forma que toman varía según el churikuna. Algunos eligen crear anillos o amuletos, guanteletes o brazaletes hechos de hueso, o incluso incorporan trozos de los restos de sus antepasados en sus armas. Cuanto más poderoso es el churikuna, y más potente su conexión con su antepasado, más ornamentación usa. En ocasiones, alguien usa falsos Símbolos de la Muerte para cosechar las recompensas sociales asociadas a ser un churikuna o en un intento de exagerar su capacidad real con Wañuy Ñaqay. Esta treta rara vez dura y la mayoría de los churikunas se apresuran a castigar a los impostores. Un churikuna que pierde un Símbolo de la Muerte (se lo roban, lo destruye, etc.) debe recuperarlo, ya sea reclamándolo o creando uno nuevo (para lo cual debe visitar a su antepasado y ponerse en la incómoda posición de tener que explicar cómo perdió el Símbolo anterior). Una churikuna que usa una Manifestación o intenta utilizar múltiples Giros sin tener en su poder todos sus Símbolos de la Muerte debe gastar puntos de héroe adicionales para activar su efecto por cada día que el Símbolo de la Muerte haya estado lejos de sus manos.</p><p>Si un héroe ha perdido un Símbolo de la Muerte, el primer día cada Manifestación cuesta 1 punto de héroe adicional. La próxima vez que salga el sol, cada Manifestación cuesta 2 puntos de héroe adicionales, y así sucesivamente. Esta penalización es acumulativa: si pierdes dos de tus Símbolos, debes pagar el doble del precio adicional para activar cualquier Manifestación o para utilizar Giros adicionales. Si un héroe ha perdido dos Símbolos de la Muerte, el primer día cada Manifestación cuesta 2 puntos de héroe adicionales. La próxima vez que salga el sol, cada Manifestación cuesta 4 puntos de héroe adicionales, y así sucesivamente. Si un churikuna pierde todos sus Símbolos de la Muerte o si pierde su máscara, el Símbolo de la Muerte inicial, no puede activar ninguna Manifestación hasta que recupere su máscara, momento en el que puede volver a activar sus Manifestaciones con la penalización por los Símbolos de la Muerte perdidos.</p>",
+    "infosource": "El Nuevo Mundo, p. 176",
+    "sorctype": "wanuy",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

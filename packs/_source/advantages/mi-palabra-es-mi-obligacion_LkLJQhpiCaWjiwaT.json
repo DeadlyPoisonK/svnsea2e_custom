@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Mi palabra es mi obligación",
+  "type": "advantage",
+  "_id": "LkLJQhpiCaWjiwaT",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta cualquier cantidad de puntos de héroe y hazle una promesa a otro personaje. Durante el resto de la escena, cuando realices un Riesgo para cumplir tu promesa, consigues 1 Aumento por cada punto de héroe que gastaste para activar esta ventaja. Si tu promesa no se ha cumplido al final de la escena, pierdes todos los puntos de héroe y no puedes conseguir más durante el resto de la sesión de juego. Si tu promesa se cumple antes del final de la escena, consigues 1 punto de héroe. Un héroe solo puede activar esta ventaja una vez por episodio.</p><p>Una promesa que se haga de este modo debería ser algo importante, difícil o peligroso. «Prometo ir a tu fiesta de cumpleaños» no es una promesa adecuada… a menos, por supuesto, que se lo prometas a la hija de un mortífero duque que te quiere muerto.</p><p><em>Coste: 5 (3 si eres aragostano).</em></p>",
+    "infosource": "Naciones Piratas, p. 153",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

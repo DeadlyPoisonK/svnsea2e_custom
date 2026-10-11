@@ -1,0 +1,33 @@
+{
+  "folder": "CXXvM7Ygk4Y8t234",
+  "name": "Kharvaach (Tirador)",
+  "type": "background",
+  "_id": "lRmIZ8Qbf6klF9QJ",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Alegría</p>",
+    "quirk": "<p>Gana un punto de héroe cuando tu reputación como tirador certero (con arco o arma de fuego) te preceda, y bien te meta en problemas o te ayude a resolver un problema.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "intimidate",
+      "ride",
+      "warfare"
+    ],
+    "advantages": [
+      "Francotirador (Khitai)",
+      "Pan comido (Khitai)",
+      "Sentido de la orientación (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 110 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

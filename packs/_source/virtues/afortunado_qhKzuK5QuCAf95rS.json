@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Afortunado",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para retrasar en una acción una Oportunidad o una Consecuencia.</p>",
+    "infosource": "El timón · 7º Mar (básico), p. 157"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "qhKzuK5QuCAf95rS",
+  "sort": 1700000,
+  "ownership": {
+    "default": 0
+  }
+}

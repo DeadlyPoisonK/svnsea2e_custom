@@ -1,0 +1,15 @@
+{
+  "name": "Mystírios",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "HiXf3SFL7bujQf7l",
+  "description": "",
+  "sort": 1000000,
+  "color": "#004cff",
+  "flags": {
+    "scene-packer": {
+      "hash": "dbd31a7cd1661a8d067a168c47147c0e06063a0b"
+    }
+  }
+}

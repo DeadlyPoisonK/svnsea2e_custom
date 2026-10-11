@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Ealdræd, el Caballero Más Viejo",
+  "type": "sorcery",
+  "_id": "GKK1TNNOK9BBsGa3",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El rey Elilodd no nació blandiendo una espada. Su maestro fue el formidable Ealdræd, que primero fue caballero del padre de Elilodd. Aunque no es una figura habitual en las historias de Elilodd, Ealdræd solía aparecer para recordarle al rey Elilodd sus raíces o para animar a un caballero más joven a buscar sabiduría en el pasado.</p><p>Característica mayor: Ingenio Característica menor: Maña</p><h3>Naciones de Théah vol. 1, p. 49</h3><p><strong>Virtud:</strong> Intuitivo (La bruja). <strong>Hibris:</strong> Desafortunado (El timón).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando aconsejes a un compañero para que no haga algo que él quería hacer o para que haga algo que él no quería. Es necesario que te escuche para activar esta peculiaridad.</p><p><strong>Glamour legendario — Antiguo saber sidhe:</strong> Debes encontrar un lugar que tenga el favor de los sidhe (como un círculo feérico, un estanque prístino en una noche de luna, un prado de flores silvestres al mediodía, una vela reflejada un millón de veces entre dos espejos enfrentados…) y activar este Glamour para solicitar la ayuda de los sidhe. Puedes hacer una cantidad de solicitudes igual a tu Ingenio. Puedes pedir: Que respondan a una única pregunta sobre el presente o el pasado con un sí o un no. Que te digan la actual localización de una persona o cosa. Que revelen un trozo de conocimiento perdido o un pedazo de conocimiento antiguo, pero siempre que sepas exactamente lo que estás pidiendo.</p>",
+    "infosource": "7º Mar (básico), p. 212",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

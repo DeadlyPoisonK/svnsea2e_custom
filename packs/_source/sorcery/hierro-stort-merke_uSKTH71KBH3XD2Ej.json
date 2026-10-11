@@ -1,0 +1,22 @@
+{
+  "folder": "EvPuBJJ4Sc2NNppQ",
+  "name": "Hierro Stort Merke",
+  "type": "sorcery",
+  "_id": "uSKTH71KBH3XD2Ej",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Elige a un personaje que esté contigo en la escena (pero no puedes ser tú mismo) y aplica Presión a dicho personaje. Si él elige resistir la Presión gastando 2 Aumentos para hacer una acción, obtiene 1 punto de héroe. Si el personaje no resiste la Presión, y por tanto realiza una acción acorde a la Presión que apliques, se cura un número de Heridas igual a su característica más alta.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 192",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

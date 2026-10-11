@@ -1,0 +1,22 @@
+{
+  "folder": "46pDhOiEQTukf2IT",
+  "name": "Manifestaciones y Giros",
+  "type": "sorcery",
+  "_id": "RItlCj4iRXRbO3ia",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cuando un churikuna activa una Manifestación, gasta 1 punto de héroe. El churikuna canta en una lengua antigua, hace gestos dramáticos, sus manos u ojos brillan de un verde brillante o púrpura, etc. El efecto visual específico puede variar dependiendo de la Manifestación o dejarse en manos del churikuna, pero la presencia de magia es obvia incluso para un observador casual.</p><p>La activación de una Manifestación causa el efecto de inmediato. Además, el churikuna elige un Giro que conozca y aplica su efecto a la Manifestación. Un churikuna puede aplicar Giros adicionales a su Manifestación gastando 1 punto de héroe adicional por cada Giro después del primero, pero puede aplicar cada Giro una sola vez. Por ejemplo, una churikuna podría optar por gastar 1 punto de héroe y activar Testigo con el Giro Sutil. Si quisiera que su Testigo también usara Alcance, podría gastar 1 punto de héroe adicional (lo que significa que su Testigo tendría los beneficios de Sutil y Alcance). Si quisiera que su Testigo usara Alcance, Sutil y Eco, gastaría 2 puntos de héroe adicionales para un total de 3. No podría usar Eco varias veces en una sola Manifestación.</p>",
+    "infosource": "El Nuevo Mundo, p. 177",
+    "sorctype": "wanuy",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

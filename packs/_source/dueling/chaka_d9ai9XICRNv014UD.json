@@ -1,0 +1,19 @@
+{
+  "folder": "PUYV4r6swGJd7KsV",
+  "name": "Chaka",
+  "type": "duelstyle",
+  "_id": "d9ai9XICRNv014UD",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Este estilo de duelo, que lleva el nombre de un líder legendario, se debe más a las técnicas de guerra que al combate ritual individual. Chaka innovó la guerra para su pueblo o robó las innovaciones de otros, pero fuera como fuera, los ifricanos lo conocen por su perspicacia militar y éxito. Basado sobre todo en enfrentar un combate singular usando dos palos, uno para atacar y otro para defender, con un pequeño escudo para resguardar su mano protectora, este estilo usa una lanza para atacar y un escudo mucho más grande y robusto. Sin embargo, los duelistas han adaptado este estilo para usar cualquier arma blanca y escudo.</p><p>El estilo de duelo Chaka tiene una mala reputación entre la mayoría de los duelistas que lo condenan por ser demasiado despiadado. Sin embargo, a aquellos que secan el río con regularidad, les gusta la brutalidad del estilo Chaka. En la actualidad, el estilo Chaka es muy popular en todo Mbey.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 205",
+    "used": false,
+    "bonus": "<p><strong>Llave de Isihlangu.</strong></p><p>Cuando empuñas un arma y un escudo, puedes realizar la Llave de Isihlangu. Al usar el exterior de tu escudo contra el interior de la guardia de tu oponente, que puede ser un escudo o un arma, creas una abertura vulnerable que puedes explotar rápidamente, mientras quedas expuesto a un ataque. Infliges una cantidad de Heridas igual a tus niveles en Armas y Maña sumados. Hasta el final de la ronda, no puedes realizar ninguna maniobra que reduzca el número de Heridas que sufres (aunque todavía puedes gastar Aumentos para reducir las Heridas como harías si no fueras duelista). Puede realizar la Llave de Isihlangu una vez por ronda.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

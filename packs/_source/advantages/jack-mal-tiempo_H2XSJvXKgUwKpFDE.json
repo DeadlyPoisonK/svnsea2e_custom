@@ -1,0 +1,24 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Jack mal tiempo",
+  "type": "advantage",
+  "_id": "H2XSJvXKgUwKpFDE",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe consigue una segunda historia; créala del mismo modo que el resto de historias de héroe y su progreso y recompensas se determinan de manera independiente. Puede escribir otra nueva cuando esta historia se complete.</p>",
+    "infosource": "7º Mar (básico), p. 151",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

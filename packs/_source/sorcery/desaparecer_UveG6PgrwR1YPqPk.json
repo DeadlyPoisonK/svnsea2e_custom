@@ -1,0 +1,22 @@
+{
+  "folder": "yScdzZG3TB1qFJJE",
+  "name": "Desaparecer",
+  "type": "sorcery",
+  "_id": "UveG6PgrwR1YPqPk",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Glamour y cualquiera que te esté buscando será incapaz de localizarte durante una hora por cada nivel que tengas en Desaparecer. Cualquier intento de rastrearte, localizarte a través de medios sobrenaturales o saber dónde estás por parte de otros, falla automáticamente. Esto no te hace invisible: si alguien puede verte físicamente, este Glamour no tiene efecto.</p>",
+    "infosource": "7º Mar (básico), p. 215",
+    "used": false,
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "glamour",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

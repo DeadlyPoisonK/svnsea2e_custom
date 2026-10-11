@@ -1,0 +1,21 @@
+{
+  "folder": "N2qsFS6XbvuICS1X",
+  "name": "Trotamundos",
+  "type": "sorcery",
+  "_id": "pN8NfjY8jUn7BqWd",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Visita cada nación dentro de tu continente de origen (es decir, cada reino de Ifri para un héroe ifricano o cada nación de Théah para un héroe théano). Obtén un dado de bonificación por Riesgos sociales mientras estés fuera de tu país o cuando interactúes con extranjeros en tu país.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 201",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

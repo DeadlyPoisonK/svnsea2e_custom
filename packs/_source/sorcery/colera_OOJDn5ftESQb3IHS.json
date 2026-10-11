@@ -1,0 +1,22 @@
+{
+  "folder": "o690w5aSkrQJLvTs",
+  "name": "Cólera",
+  "type": "sorcery",
+  "_id": "OOJDn5ftESQb3IHS",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 1 de Furia. Arremete contra un enemigo con energía natural pura, causando tantas Heridas como el valor de Furia de la escena. El DJ obtiene de inmediato tantos puntos de peligro como la mitad del valor de Furia de la escena.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 195 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 100025,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

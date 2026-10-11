@@ -1,0 +1,21 @@
+{
+  "folder": "li9WDKazVu5ySEdo",
+  "name": "Peligrosa",
+  "type": "sorcery",
+  "_id": "YUJBwvxkLdHzBtQ8",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El poder que corre a través de tu espada la hace más peligrosa que las armas mundanas. Una vez por cada ocasión en que inflijas Heridas, puedes gastar 1 punto de héroe para causar una cantidad de Heridas adicionales igual al nivel de la característica que utilizaste en tu Enfoque.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 200",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Hereward, el Consejero",
+  "type": "sorcery",
+  "_id": "UAL8EjOfEzstVmvK",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>No se puede hablar de Hereward sin mencionar a Hildræd. Ambos caballeros sirvieron al rey Elilodd de manera similar, pero no podrían ser más diferentes. Cuando Hereward pedía paciencia, Hildræd pedía guerra. Cuando Hereward se volvía cauto, Hildræd veía la necesidad de pasar a la acción. De este modo, el rey Elilodd siempre estaba informado de las mejores opciones de cualquier estrategia.</p><p>Hereward y Hildræd también estaban relacionados de cierto modo. Algunas historias los representan como hermano y hermana a la greña, otras como marido y mujer y algunas como amantes desafortunados.</p><p>Hereward Hildræd Característica mayor: Ingenio Característica mayor: Maña Característica menor: Donaire Característica menor: Músculo</p><h3>Naciones de Théah vol. 1, p. 50</h3><p><strong>Virtud:</strong> Ejemplar (Reunión). <strong>Hibris:</strong> Malhadado (Los amantes).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando alguien al que nunca has aconsejado venga a ti para pedirte consejo y tú consideres su problema seriamente y le aconsejes de forma apropiada.</p><p><strong>Glamour legendario — Consejo de sabio:</strong> Enséñale a otro héroe un rumbo de acción apropiado; luego activa este Glamour y lleva a cabo un Riesgo apropiado al tema en cuestión (por ejemplo, Ingenio + Tácticas de Guerra para un plan de ataque). Además de tu guía, le concedes al héroe los Aumentos obtenidos. En cualquier momento antes de que finalice la sesión, el héroe puede gastar esos Aumentos en cualquier acción que siga tus consejos.</p>",
+    "infosource": "7º Mar (básico), p. 212",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

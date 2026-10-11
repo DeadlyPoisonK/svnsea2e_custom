@@ -1,0 +1,32 @@
+{
+  "folder": "YXoq8ps9ZLmxOmkx",
+  "name": "Surcaolas",
+  "type": "background",
+  "_id": "ZxUpxg0rNqpYXgiX",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Lo único que necesitas para derrotar monstruos temibles es tu intelecto y tu arpón.</p>",
+    "infosource": "Naciones Piratas, p. 148",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando derrotes a un monstruo marino.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "notice",
+      "sailing",
+      "weaponry"
+    ],
+    "advantages": [
+      "Soy irrompible",
+      "Vista de lince"
+    ],
+    "nation": "rahuri",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

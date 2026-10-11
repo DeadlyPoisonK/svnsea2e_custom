@@ -1,0 +1,33 @@
+{
+  "folder": "TPYIDgBQTXjRlnH2",
+  "name": "Hrungnir",
+  "type": "background",
+  "_id": "DVLbaxKr6bDL2j2f",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>No necesitas una espada para ser peligroso.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 204",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando alguien te subestime porque no tengas armas y tú aproveches ese error.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "hide",
+      "intimidate",
+      "notice"
+    ],
+    "advantages": [
+      "Buen bebedor",
+      "Pelea de bar",
+      "Todo puede ser un arma si lo sujetas bien"
+    ],
+    "nation": "vesten",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

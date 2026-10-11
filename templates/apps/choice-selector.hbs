@@ -1,0 +1,13 @@
+<div class="choice-selector-body">
+  <ol class="choice-list">
+    {{#each choices as |choice|}}
+      <li>
+        <label class="checkbox">
+          <input type="checkbox" value="{{choice.key}}" {{checked choice.chosen}} />
+          {{choice.label}}
+        </label>
+      </li>
+    {{/each}}
+  </ol>
+  <button type="submit"><i class="fa-regular fa-floppy-disk"></i> {{localize "SVNSEA2E.Save"}}</button>
+</div>

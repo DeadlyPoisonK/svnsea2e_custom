@@ -1,0 +1,21 @@
+{
+  "folder": "FxGE3VwgEoqXw1Op",
+  "name": "Sonido San Yopa",
+  "type": "sorcery",
+  "_id": "EGsmmxmbfzR2C4bt",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El silencio es oro y Papa Ahron sabe aprovecharlo.<br>Mientras Papa Ahron lo posea, el s&egrave;vit&egrave; puede gastar 1<br>punto de h&eacute;roe para moverse sin hacer ruido durante una<br>escena. El s&egrave;vit&egrave; todav&iacute;a puede ser visto, olido o sentido,<br>pero no se puede detectar ninguna presencia audible. De<br>todos modos, el s&egrave;vit&egrave; debe ser sutil mientras usa Sonido<br>San Yopa, pues los lwa no pueden ocultar acciones descaradamente<br>viles y obvias como disparar una pistola junto<br>a la cabeza de alguien o gritarle a la cara.</p>",
+    "infosource": "Naciones Piratas, p. 164",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

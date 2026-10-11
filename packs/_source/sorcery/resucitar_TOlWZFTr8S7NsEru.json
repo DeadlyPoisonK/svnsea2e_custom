@@ -1,0 +1,22 @@
+{
+  "folder": "d42jZhN0By3mSJyq",
+  "name": "Resucitar",
+  "type": "sorcery",
+  "_id": "TOlWZFTr8S7NsEru",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Gasta 1 punto de héroe y presta ayuda a un personaje que haya muerto en el último minuto (por ejemplo, dándole un trago de agua, restañando sus heridas o insuflándole literalmente la vida). El personaje vuelve a la vida, pero sigue Indefenso.</p>",
+    "infosource": "Heroes & Villains, p. 205 (traducción no oficial)",
+    "sorctype": "darm",
+    "sorccat": "gift",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

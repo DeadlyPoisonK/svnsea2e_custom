@@ -1,0 +1,32 @@
+{
+  "folder": "kFgELUK3901UeCsS",
+  "name": "Táctico militar",
+  "type": "background",
+  "_id": "Ho1MQKZkCCenj6ts",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Para ti, el ajedrez es un juego de niños.</p><p><em>Ventajas en el libro: Reputación (Táctico).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 155",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando consigas aplacar con éxito la amenaza de una guerra (grande o pequeña) sin recurrir a la batalla.</p>",
+    "skills": [
+      "aim",
+      "convince",
+      "empathy",
+      "ride",
+      "warfare"
+    ],
+    "advantages": [
+      "Comandante experimentado",
+      "Reputación"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

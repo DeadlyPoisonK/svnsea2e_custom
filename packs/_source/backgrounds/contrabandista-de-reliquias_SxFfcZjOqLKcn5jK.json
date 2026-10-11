@@ -1,0 +1,32 @@
+{
+  "folder": "nmlomi28Bss1o6oR",
+  "name": "Contrabandista de reliquias",
+  "type": "background",
+  "_id": "SxFfcZjOqLKcn5jK",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>A través de medios legítimos o ilegítimos, obtienes artefactos para ayudar a preservar la cultura aztlana.</p>",
+    "infosource": "El Nuevo Mundo, p. 162",
+    "quirk": "<p>Ganas 1 punto de héroe cuando adquieres una reliquia (ya sea de la antigua Aztlán o de Théah) por medios deshonestos.</p>",
+    "skills": [
+      "empathy",
+      "hide",
+      "sailing",
+      "theft",
+      "weaponry"
+    ],
+    "advantages": [
+      "Allanamiento de morada",
+      "Callejero",
+      "La seña"
+    ],
+    "nation": "none",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "DyFaRublZKFyCSai",
+  "name": "Chai",
+  "type": "sorcery",
+  "_id": "0sbbVz6sa3rnllJ8",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Chai es el poder de la vida. Aquellos que usan Chai pueden dar vida a objetos inanimados y dirigir esos objetos de acuerdo a la voluntad del usuario. Los eruditos sarmiones usaron este poder recientemente con un efecto devastador para proteger la nación de la última invasión numanari.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 175",
+    "sorctype": "chozeh",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

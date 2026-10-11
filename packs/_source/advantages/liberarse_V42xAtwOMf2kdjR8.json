@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Liberarse",
+  "type": "advantage",
+  "_id": "V42xAtwOMf2kdjR8",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para liberar tus manos de unas esposas, desatarte la cuerda que te ata a una silla o liberarte a ti mismo de cualquier otra forma similar.</p>",
+    "infosource": "7º Mar (básico), p. 150",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1250000,
+  "ownership": {
+    "default": 0
+  }
+}

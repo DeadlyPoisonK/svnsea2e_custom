@@ -1,0 +1,15 @@
+{
+  "name": "Sangre",
+  "sorting": "a",
+  "folder": "DMohupPGQDu5qKnD",
+  "type": "Item",
+  "_id": "u4dyc8vAl5yaaJP8",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "630e28c137c3e30bc5d0348948827cbd7cf7c1a8"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "CXYgWftEL3IgByAi",
+  "name": "Docente",
+  "type": "background",
+  "_id": "EkgFoQv53xVZILft",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>¿Théah es merecedora de la amistad de Numa? Los pondrás a prueba.</p><p><em>Ventajas en el libro: Academia de esgrima (Lakedaimon Agoge).</em></p>",
+    "infosource": "Naciones Piratas, p. 148",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando animes a otro personaje a que explote todo su potencial, incluso cuando eso signifique que provoque problemas o complique la situación.</p>",
+    "skills": [
+      "athletics",
+      "empathy",
+      "scholarship",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Academia de esgrima",
+      "Trabajo en equipo"
+    ],
+    "nation": "numa"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "Ii9neQCQcG7PZkgg",
+  "name": "Caminar sobre las aguas",
+  "type": "sorcery",
+  "_id": "0GDj80viCmVxTtPD",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Te sientes como en casa sobre el mar, capaz de desplazarte sobre él tan fácilmente como sobre tierra firme. Hasta el final de la escena, puedes caminar sobre cualquier líquido como si fuera una superficie sólida. Luego, genera 2 de Discordia. Esto no proporciona ninguna protección: un vástago con esta habilidad podría caminar sobre la lava, pero seguiría siendo vulnerable a sufrir Heridas por el calor.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 205 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

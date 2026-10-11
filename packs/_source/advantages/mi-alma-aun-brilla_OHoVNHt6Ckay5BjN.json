@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Mi alma aún brilla",
+  "type": "advantage",
+  "_id": "OHoVNHt6Ckay5BjN",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige una característica. Si sacas cero Aumentos durante un Riesgo usando esa característica, puedes gastar 1 punto de héroe. Sufres una Herida Dramática, pero obtienes inmediatamente un número de Aumentos igual a esa característica. Un jugador solo puede usar esta ventaja una vez por sesión.</p><p><em>Coste: 5 (3 si eres pérsico).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 161",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

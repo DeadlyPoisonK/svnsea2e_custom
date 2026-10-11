@@ -1,0 +1,23 @@
+{
+  "folder": "vxu1cHRUsVi9hzod",
+  "name": "Élite",
+  "type": "advantage",
+  "_id": "7SWrnrHUAuIRV9ro",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Una unidad con este Mérito puede realizar una acción gratuita antes de que todas las demás unidades del ejército se hayan ido.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 195",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Hazte con tu gloria",
+  "type": "advantage",
+  "_id": "X6Ipxj5bJVBq5d46",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige una segunda Virtud para tu héroe, pero solo puedes activar una Virtud por sesión de juego.</p><p><em>Coste: 5 (3 si eres numanari).</em></p>",
+    "infosource": "Naciones Piratas, p. 153",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

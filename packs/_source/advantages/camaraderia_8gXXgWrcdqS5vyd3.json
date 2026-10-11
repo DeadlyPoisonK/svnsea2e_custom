@@ -1,0 +1,23 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Camaradería",
+  "type": "advantage",
+  "_id": "8gXXgWrcdqS5vyd3",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastes 1 punto de héroe para ayudar a un aliado, este gana 4 dados en lugar de 3.</p><p><em>Coste: 3 (2 si eres montaignés).</em></p>",
+    "infosource": "7º Mar (básico), p. 151",
+    "cost": {
+      "normal": 3,
+      "reducecost": 2
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  }
+}

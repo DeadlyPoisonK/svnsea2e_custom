@@ -1,0 +1,15 @@
+{{!-- One section of owned items: a header that collapses it, with "Add", and a row per item.
+      Hash: section (see itemSections in src/actor/sheets/base.js) --}}
+<li class="flexrow item-header {{section.cssClass}}" data-action="toggleSection" data-section="{{section.type}}">
+  {{#if section.label}}<h3 class="item-name flexrow">{{localize section.label}}</h3>{{else}}<div class="item-name flexrow"></div>{{/if}}
+  {{#if @root.editable}}
+    <div class="item-controls">
+      <a class="item-control item-create" data-action="createItem" data-type="{{section.type}}" data-tooltip="{{localize section.addTitle}}">
+        <i class="fa-solid fa-plus"></i> {{localize "SVNSEA2E.Add"}}
+      </a>
+    </div>
+  {{/if}}
+</li>
+{{#each section.items as |item|}}
+  {{> "systems/svnsea2e/templates/actors/parts/item-row.hbs" item=item section=../section}}
+{{/each}}

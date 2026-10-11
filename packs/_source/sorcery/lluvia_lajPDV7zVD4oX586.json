@@ -1,0 +1,22 @@
+{
+  "folder": "3DBtzP6wWtTujRJe",
+  "name": "Lluvia",
+  "type": "sorcery",
+  "_id": "lajPDV7zVD4oX586",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Milagro para manipular la lluvia durante una escena. Puedes hacer que llueva tanto o tan poco como quieras, creando una suave lluvia primaveral o un aguacero torrencial que será recordado durante años. Después de la escena, el clima vuelve a la normalidad.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 167",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "miracle",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

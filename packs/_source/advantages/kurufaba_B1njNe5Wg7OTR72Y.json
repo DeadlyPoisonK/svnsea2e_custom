@@ -1,0 +1,24 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Kurufaba",
+  "type": "advantage",
+  "_id": "B1njNe5Wg7OTR72Y",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Has pasado tiempo entre los delegados de la Kurufaba Internacional y estás acostumbrado a hacer tratos. Cuando llegas a un acuerdo (ya sea oral o por escrito), puedes gastar 1 punto de héroe. Si la otra parte rompe el trato, puedes darle una mala reputación de tu elección (por ejemplo, «Deshonroso», «Cruel», etc.). La mala reputación se puede usar contra ese personaje: en los Riesgos en que la mala reputación pone en desventaja al personaje, su oposición gana un dado de bonificación. Puedes mantener un número de tratos de Kurufaba igual a tu nivel en Ingenio; una vez que hayas alcanzado tu máximo, no puedes activar esta Ventaja otra vez hasta que finalices un trato, por cualquier medio.</p><p><em>Solo si eres mandenká.</em></p>",
+    "infosource": "Tierras de Fuego y Oro, p. 178",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

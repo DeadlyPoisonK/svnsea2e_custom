@@ -1,0 +1,21 @@
+{
+  "folder": "N2qsFS6XbvuICS1X",
+  "name": "Nunca te rindas",
+  "type": "sorcery",
+  "_id": "7HorwvwI1wMVmqcA",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Queda Indefenso. Gasta 1 punto de héroe cuando sufras tu cuarta Herida Dramática para evitar recibirla. Puede activar esta Leyenda una vez en cada escena.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 201",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

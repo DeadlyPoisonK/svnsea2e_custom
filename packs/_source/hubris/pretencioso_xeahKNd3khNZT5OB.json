@@ -1,0 +1,17 @@
+{
+  "folder": "rxiPEUOSj58lttE0",
+  "name": "Pretencioso",
+  "type": "hubris",
+  "_id": "xeahKNd3khNZT5OB",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibes 1 punto de héroe cuando te niegas a participar en una acción porque sientes que hacerlo sería rebajarte.</p>",
+    "infosource": "La estrella de la mañana · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

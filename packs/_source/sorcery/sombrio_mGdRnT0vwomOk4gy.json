@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Sombrío",
+  "type": "monsterquality",
+  "_id": "mGdRnT0vwomOk4gy",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Ya sea un cazador, un depredador natural o una criatura con algún tipo de afinidad mágica a la oscuridad, este monstruo merodea por las sombras con una gracia y un sigilo sin rival y aparece cuando su desafortunada presa menos se lo espera. Cualquier intento de localizar o rastrear a este monstruo cuesta 2 Aumentos en lugar de 1.</p>",
+    "infosource": "7º Mar (básico), p. 198",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

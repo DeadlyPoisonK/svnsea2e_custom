@@ -1,0 +1,21 @@
+{
+  "folder": "N2qsFS6XbvuICS1X",
+  "name": "Guerrero sin miedo",
+  "type": "sorcery",
+  "_id": "qVRo92d1uhGEjPC5",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Derrota a un enemigo con la cualidad de monstruo Temible. Gasta 1 punto de héroe para ignorar una cantidad de niveles de miedo igual a tus niveles en Armas hasta el final de la ronda, siempre y cuando tengas tu arma.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 201",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

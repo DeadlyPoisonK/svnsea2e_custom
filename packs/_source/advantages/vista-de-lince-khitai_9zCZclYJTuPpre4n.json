@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Vista de lince (Khitai)",
+  "type": "advantage",
+  "_id": "9zCZclYJTuPpre4n",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Mientras tengas una línea de visión despejada, puedes ver perfectamente hasta una distancia de una milla. Si usas un catalejo, incluso puedes distinguir detalles minuciosos, como la inscripción grabada en una alianza de boda. Si realizas un Riesgo que dependa en gran medida de tu agudeza visual, obtienes 1 dado adicional.</p>",
+    "infosource": "Khitai, p. 115 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

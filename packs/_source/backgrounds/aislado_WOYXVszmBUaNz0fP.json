@@ -1,0 +1,33 @@
+{
+  "folder": "kFgELUK3901UeCsS",
+  "name": "Aislado",
+  "type": "background",
+  "_id": "WOYXVszmBUaNz0fP",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Alguna vez estuviste perdido y solo. Nadie debería pasar por una prueba así.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 155",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando te esfuerces por salvar a otro personaje del aislamiento.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "hide",
+      "notice",
+      "sailing"
+    ],
+    "advantages": [
+      "Derrota temeraria",
+      "Estómago de hierro",
+      "Mañoso"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Wai Dan",
+  "sorting": "a",
+  "folder": "Blvpl18m1qGPsjC8",
+  "type": "Item",
+  "_id": "lViId2hAgZrG1OcT",
+  "description": "",
+  "sort": 200000,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "821e25f72c6fb95c21a6d1581d8c43e4a85f60eb"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Viajero atabeano",
+  "type": "advantage",
+  "_id": "JfJHt9MwXSMSHgwf",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe mientras estés en el mar Atabeano para conocer la dirección de la tierra más cercana, encontrar comida o agua fresca o hacerle al DJ una única pregunta de sí o no sobre tu entorno o una criatura con la que te has encontrado. <strong>NACIONES PIRATAS</strong> 151</p><p><em>Coste: 3 (2 si eres rahuri).</em></p>",
+    "infosource": "Naciones Piratas, p. 151",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": 2
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

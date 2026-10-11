@@ -1,0 +1,22 @@
+{
+  "folder": "o690w5aSkrQJLvTs",
+  "name": "Encadenar",
+  "type": "sorcery",
+  "_id": "1J89PeOJOuTY5eB2",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 4 de Furia si se activa de inmediato; genera 1 de Furia si te tomas una hora para activarlo como un ritual. Somete a un espíritu a tu voluntad, esclavizándolo. Debes gastar un número de Aumentos igual a la Furia de la escena para lograrlo. Si lo haces, el espíritu se desvanece de inmediato en el interior de un objeto mundano (un anillo, una lámpara, una espada, etc.). En cualquier momento antes del final de la sesión de juego, puedes liberar a ese espíritu durante una escena. Sigue tus órdenes y te obedece, realizando cualquier acción que le encomiendes. El espíritu es un monstruo con un valor de Fuerza igual a la Furia de la escena en la que fue encadenado. Al final de la escena, o si el espíritu queda Indefenso, se desvanece.</p>",
+    "infosource": "Khitai, p. 195 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "used": false
+  },
+  "effects": [],
+  "sort": 100391,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

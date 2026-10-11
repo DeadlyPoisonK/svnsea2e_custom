@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Pez Menor",
+  "type": "sorcery",
+  "_id": "zVGQRd8STbRurPTy",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El mohwoo del pez represanta una busqueda o un descubrimiento, normalmente personal o de algo que el buscador no es consciente. Podria ser la revelaci&oacute;n de una verdad del pasado de la propia persona o un viaje hacia el autodescubrimiento y el entendimiento.</p>\n<p>&nbsp;</p>\n<hr>\n<p>&nbsp;El h&eacute;roe no necesita respirar durante el resto de la escena. No puede atragantarse ni ser estrangulado, no puede asfixiarse ni ahogarse y los venenos que se transmiten por el aire no le afectan.</p>",
+    "infosource": "Naciones Piratas, p. 170",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 101563,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Oficial del ejército (Khitai)",
+  "type": "background",
+  "_id": "zSjF3RwQgn9ZCpd8",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Lealtad</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "quirk": "<p>Gana un punto de héroe cada vez que tomes el mando durante un momento de violencia intensa o peligro extremo.</p>",
+    "skills": [
+      "aim",
+      "notice",
+      "ride",
+      "warfare"
+    ],
+    "advantages": [
+      "Academia militar",
+      "Sentido de la orientación (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 103 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

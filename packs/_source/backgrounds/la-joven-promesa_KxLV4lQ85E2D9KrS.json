@@ -1,0 +1,31 @@
+{
+  "name": "La joven promesa",
+  "type": "background",
+  "_id": "KxLV4lQ85E2D9KrS",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>No has ganado el torneo del Baile, pero se te reconoció como alguien que apunta maneras.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 203",
+    "quirk": "<p>Ganas un punto de héroe cuando te metas en problemas para aumentar tus habilidades con la espada o para ampliar tu reputación.</p>",
+    "skills": [
+      "athletics",
+      "empathy",
+      "notice",
+      "perform",
+      "weaponry"
+    ],
+    "advantages": [
+      "Estudiante marcial",
+      "Reputación"
+    ],
+    "nation": "castille",
+    "active": true
+  },
+  "effects": [],
+  "folder": "8naW9Ks6goOXSxdv",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

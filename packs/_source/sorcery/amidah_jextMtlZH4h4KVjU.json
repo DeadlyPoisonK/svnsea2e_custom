@@ -1,0 +1,22 @@
+{
+  "folder": "Oz7TQTAkyShWiFfG",
+  "name": "Amidah",
+  "type": "sorcery",
+  "_id": "jextMtlZH4h4KVjU",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Amidah es la promesa de la resistencia. El poder de resistir el poderoso río, el viento destructivo o el calor interminable. La capacidad de soportar ataque tras ataque y permanecer de pie. <strong>Amuleto:</strong> Cuando activas un Amuleto Amidah, te envuelve una luz protectora. El Amuleto previene las siguientes 3 Heridas (Dramáticas o normales) que recibas.</p><p><strong>Escritura: </strong>Cuando activas una Escritura Amidah, tu piel se endurece y tu tolerancia al dolor aumenta. Recibes 1 Herida menos (mínimo 1 Herida) cada vez que recibes Heridas por el resto de la escena.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 173",
+    "sorctype": "chozeh",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

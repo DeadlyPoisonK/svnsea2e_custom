@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Esta es mi ciudad (Khitai)",
+  "type": "advantage",
+  "_id": "bWbW2XR6VUeFLXVC",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe cuando estés en una zona con la que estés familiarizado para despistar a alguien que te siga, señalar con precisión a un extraño que no encaje allí, reconocer si te están siguiendo o no, o encontrar un atajo.</p>",
+    "infosource": "Khitai, p. 117 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

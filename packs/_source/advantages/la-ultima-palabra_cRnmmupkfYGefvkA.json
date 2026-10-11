@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "La última palabra",
+  "type": "advantage",
+  "_id": "cRnmmupkfYGefvkA",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando no tienes Aumentos durante una secuencia dramática, puedes gastar 1 punto de héroe para realizar una sola acción, ignorando las reglas de improvisación. Un jugador solo puede usar esta ventaja una vez por sesión.</p>",
+    "infosource": "El Nuevo Mundo, p. 166",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

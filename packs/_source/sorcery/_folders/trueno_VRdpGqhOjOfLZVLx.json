@@ -1,0 +1,15 @@
+{
+  "name": "Trueno",
+  "sorting": "a",
+  "folder": "DMohupPGQDu5qKnD",
+  "type": "Item",
+  "_id": "VRdpGqhOjOfLZVLx",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "fbba7b4e72068166a587026700aa41ef77d7d1b2"
+    }
+  }
+}

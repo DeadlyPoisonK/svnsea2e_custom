@@ -1,0 +1,21 @@
+{
+  "folder": "9uzBkZY6TGPQw0sf",
+  "name": "Gancho Comprimido",
+  "type": "sorcery",
+  "_id": "t1Jss5fIxzpXgb3D",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>ste<br>dispositivo permite al que lo lleve salir disparado del lugar mediante un gancho que se dispara alta velocidad. Evita todas las heridas que vaya a recibir o permite retirarse de la escena gastando un aumento. Requisitos 2</p>\n<p>&nbsp;</p>",
+    "infosource": "Creado por la mesa (no aparece en los manuales)",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

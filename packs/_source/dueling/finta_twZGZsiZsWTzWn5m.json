@@ -1,0 +1,18 @@
+{
+  "folder": "lsFFlvwOxj6nD71t",
+  "name": "Finta",
+  "type": "duelstyle",
+  "_id": "twZGZsiZsWTzWn5m",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Adquirir una postura y una posición de tal modo que tu oponente baje la guardia o intente bloquear un ataque que nunca llega. Cuando realices Finta, infliges 1 Herida; si tu objetivo vuelve a recibir Heridas en esta ronda, sufre 1 Herida adicional.</p>",
+    "infosource": "7º Mar (básico), p. 235",
+    "bonus": ""
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

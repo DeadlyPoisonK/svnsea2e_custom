@@ -1,0 +1,22 @@
+{
+  "folder": "uXqEPyuNpDuBVbZp",
+  "name": "Salvaguarda",
+  "type": "sorcery",
+  "_id": "TuLLfOhAcjLzKnfp",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 2 de Furia si se activa de inmediato; genera 2 de Tranquilidad si te tomas una hora para activarlo como un ritual. Los espíritus retienen a cualquiera que intente acercarse a ti. Hasta el final de la ronda, ningún personaje puede entrar ni salir de tu Zona actual. Los personajes aún pueden interactuar con otros fuera de tu Zona (hablar, disparar un arma de fuego, efectos mágicos, etc.); este poder solo detiene el movimiento físico hacia dentro y hacia fuera de tu Zona.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 197 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

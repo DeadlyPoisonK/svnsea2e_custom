@@ -1,0 +1,22 @@
+{
+  "folder": "O4h9r3arW2O5M1WV",
+  "name": "Anatema",
+  "type": "sorcery",
+  "_id": "MvoMiuDT24YIiItc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Con una mirada maldices a un enemigo, haciendo que fracase donde de otro modo podría tener éxito. Genera 3 de Plaga. Hasta el final de la escena, el personaje objetivo debe volver a tirar todos los 10.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 203 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

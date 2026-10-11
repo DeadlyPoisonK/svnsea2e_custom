@@ -1,0 +1,24 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Mejor afortunado que experto",
+  "type": "advantage",
+  "_id": "Ln7TTBXigd9W7KsQ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Siempre que realices un Riesgo usando una habilidad en la que tengas uno o cero niveles, gastar puntos de héroe te da 2 dados adicionales en lugar de 1.</p>",
+    "infosource": "El Nuevo Mundo, p. 166",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

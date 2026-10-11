@@ -1,0 +1,32 @@
+{
+  "folder": "zrOTu2Mah9eRQKyp",
+  "name": "Kurtanoğlu",
+  "type": "background",
+  "_id": "mctn8L37kYPmP1JQ",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Aunque te has distanciado del salvajismo de los tuyos, la sed de gloria todavía canta en tu corazón.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 156",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando te involucres en un conflicto únicamente por la gloria que traerá.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "hide",
+      "scholarship",
+      "warfare"
+    ],
+    "advantages": [
+      "Escaramuzador",
+      "Recuerda mi nombre"
+    ],
+    "nation": "anatol"
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "La tormenta me sirve",
+  "type": "advantage",
+  "_id": "ZYLZyDuiTCRd6xNE",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe. Durante una ronda, una Amenaza (página 199) en la escena gana el Elemento de Dominio y tú te transformas en su amo. Si la Amenaza ya tenía este atributo, te conviertes en el amo de la Amenaza y su amo anterior pierde el beneficio durante una ronda. Mientras seas el amo de una Amenaza de esta manera, puedes gastar un Aumento en respuesta a que la Amenaza tome una acción; si lo haces, la Amenaza falla su acción y pierde los Aumentos que gastara en ella. Un héroe solo puede activar esta ventaja una vez por escena.</p><p><em>Coste: 5 (3 si tzak k'ano).</em></p>",
+    "infosource": "El Nuevo Mundo, p. 167",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

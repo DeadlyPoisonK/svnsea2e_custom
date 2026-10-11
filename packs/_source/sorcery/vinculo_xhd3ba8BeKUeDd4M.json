@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Vínculo",
+  "type": "sorcery",
+  "_id": "xhd3ba8BeKUeDd4M",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Vinculas tu alma con la de otro personaje en tu Zona. Hasta el final de la ronda, cada vez que sufras Heridas (hasta tu valor actual de Plaga), inflige el mismo número de Heridas al otro personaje. Las Heridas que te inflijas a ti mismo no activan este efecto; deben ser causadas por otra persona.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 202 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

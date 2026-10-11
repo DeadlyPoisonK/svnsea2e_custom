@@ -1,0 +1,31 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Mercader (Khitai)",
+  "type": "background",
+  "_id": "9uXpRElEYuHXb6JB",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Honestidad</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando renuncies a obtener beneficios en una venta porque tu cliente necesitaba desesperadamente lo que compraba.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "notice",
+      "tempt"
+    ],
+    "advantages": [
+      "Rico (Khitai)",
+      "Cruzar la palma (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 105 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

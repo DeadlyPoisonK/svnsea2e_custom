@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Sonrisa encantadora",
+  "type": "advantage",
+  "_id": "94ZYLkKwpaWG4uG7",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para evitar que otro personaje saque un arma, empiece una pelea o recurra a la violencia. Se defenderá si le atacan, pero no empezará ningún conflicto violento.</p>",
+    "infosource": "7º Mar (básico), p. 150",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1225000,
+  "ownership": {
+    "default": 0
+  }
+}

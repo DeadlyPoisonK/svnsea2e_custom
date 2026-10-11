@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Lengua de cadáver",
+  "type": "sorcery",
+  "_id": "WptihzHJL5LGzXy0",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>La lengua cortada de un cadáver, empapada en belladona, amasada hasta que se convierte en una pasta y aplicada en la lengua de un hexe. Este ungüento te permitirá hablar con un cadáver y recibir sus mensajes sobre cualquier cosa que supiera en vida. Puedes hacerle dos preguntas por cada punto de Brío que tengas y el cadáver debe responderte con honestidad. Después de que hagas la última pregunta tendrás que vomitar y el cadáver al que has interrogado se convierte en polvo; no podrás hacerle más preguntas, incluso si tienes otra dosis de Lengua de cadáver.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 208",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

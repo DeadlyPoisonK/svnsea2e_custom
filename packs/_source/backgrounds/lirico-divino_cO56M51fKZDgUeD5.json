@@ -1,0 +1,32 @@
+{
+  "folder": "woHhojw41I6E4wVp",
+  "name": "Lírico divino",
+  "type": "background",
+  "_id": "cO56M51fKZDgUeD5",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Elohah hizo 12 promesas al mundo. Parte de tu tarea es asegurarte de que se mantengan.</p><p><em>Ventajas en el libro: Hechicería (Chozeh), Hechicería (Chozeh).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 157",
+    "quirk": "<p>Ganas 1 punto de héroe cuando cumplas una promesa que sería ventajoso para ti romper.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "notice",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Lingüista"
+    ],
+    "nation": "sarmion",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

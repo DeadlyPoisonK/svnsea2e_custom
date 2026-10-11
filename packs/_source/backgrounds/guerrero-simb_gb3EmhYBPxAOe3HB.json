@@ -1,0 +1,33 @@
+{
+  "folder": "pz1cTXqfxYJssm9B",
+  "name": "Guerrero Simb",
+  "type": "background",
+  "_id": "gb3EmhYBPxAOe3HB",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Al igual que los leones de Ifri, tu coraje es infalible y tu letalidad es insuperable.</p><p><em>Ventajas en el libro: Buena pegada (NdT:V1).</em></p>",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando termines una pelea antes de que tu oponente tenga la oportunidad de actuar.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "empathy",
+      "hide",
+      "warfare"
+    ],
+    "advantages": [
+      "Boxeador",
+      "Buena pegada",
+      "Superviviente"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 176",
+    "nation": "mbey"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

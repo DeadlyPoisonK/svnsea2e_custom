@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Mildgyd, el Gentil",
+  "type": "sorcery",
+  "_id": "bhgEuK1jjzBCMoLz",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Medía dos metros y medio, tres, tres y medio o seis, dependiendo del relato. Mildgyd era el clásico gigante gentil. Las historias afirman que tenía algo de sangre de gigante de verdad en sus venas y casi todos sus relatos hablan de su interacción con un sidhe que malinterpretó su naturaleza, a menudo con resultados humorísticos. Característica mayor: Músculo Característica menor: Donaire</p><h3>Naciones de Théah vol. 1, p. 50</h3><p><strong>Virtud:</strong> Humilde (La torre). <strong>Hibris:</strong> Indeciso (El ahorcado).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando muestres compasión por alguien que no la esperaría de ti.</p><p><strong>Glamour legendario — Fuerza de gigantes:</strong> Activa este Glamour para canalizar la fuerza de los gigantes. Te vuelves físicamente más grande durante la escena (30 cm por cada punto de Músculo) además de proporcionalmente más robusto y pesado. Mientras tu altura sea superior y utilices Músculo en tu Enfoque puedes sumar tu Músculo a cada dado de tus tiradas. La primera vez que lo hagas no te cuesta nada, es parte de tu activación inicial, pero cada nuevo Enfoque de Músculo te cuesta un punto de héroe adicional. Este efecto se acumula con otros efectos que cambien el valor obtenido en los dados.</p>",
+    "infosource": "7º Mar (básico), p. 213",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

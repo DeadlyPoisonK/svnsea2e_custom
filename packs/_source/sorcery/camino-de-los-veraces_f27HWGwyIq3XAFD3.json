@@ -1,0 +1,22 @@
+{
+  "folder": "3RPIRXn1ftcKXUa4",
+  "name": "Camino de los Veraces",
+  "type": "sorcery",
+  "_id": "f27HWGwyIq3XAFD3",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El Camino de los Veraces te enseña las lecciones de las palabras. Te enseña a comunicarte con los animales y también a asegurarte de que alguien diga la verdad.</p><p>El primer paso por este Camino te enseña a localizar exactamente lo que estabas buscando. Tu Maravilla te apunta en la dirección correcta y te tira o flota hacia esa ubicación.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 170",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

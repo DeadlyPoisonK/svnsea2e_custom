@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Lealtad indiscutible",
+  "type": "advantage",
+  "_id": "UPsCXRit2Mjnn2tx",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe siempre apoya a sus aliados, listo para respaldarlos sin importar los problemas a los que os enfrentéis. Gasta un punto de héroe después de tirar los dados para un Riesgo, pero antes de que ningún personaje haya realizado una acción. Puedes entregar cualquier número de tus Aumentos a otro personaje en la misma escena.</p>",
+    "infosource": "Khitai, p. 123 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

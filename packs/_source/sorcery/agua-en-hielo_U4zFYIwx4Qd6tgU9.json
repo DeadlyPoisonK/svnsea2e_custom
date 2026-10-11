@@ -1,0 +1,21 @@
+{
+  "folder": "dRivclZirteK4bLL",
+  "name": "Agua en hielo",
+  "type": "sorcery",
+  "_id": "U4zFYIwx4Qd6tgU9",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este preparado congela hasta 28 m3 de agua (28 000 litros) en una ronda; solo se descongelará cuando se aplique un disolvente adecuado. Preparar esta sustancia necesita 1 Requisito.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 96",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

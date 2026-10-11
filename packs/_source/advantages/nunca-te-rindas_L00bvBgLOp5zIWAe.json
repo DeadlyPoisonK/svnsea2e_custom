@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Nunca te rindas",
+  "type": "advantage",
+  "_id": "L00bvBgLOp5zIWAe",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Mientras estás unido a una unidad durante el Combate en masa, tu unidad siempre tira con su Fuerza completa. Por ejemplo, si tu unidad ha sufrido 7 Impactos, sigues tirando como si tu unidad tuviera Fuerza 10 en lugar de 3.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 160",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "XxbatVafsy3T61pQ",
+  "name": "Cebo de osario",
+  "type": "sorcery",
+  "_id": "HID5L9gQfLxL3TL8",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Sebo de cad&aacute;ver fermentado durante una luna, sangre vieja, ra&iacute;ces de mandr&aacute;gora y un fragmento de hueso largo de monstruo molido hasta hacerlo polvo.</p>\n<p>Untado sobre la piel, las ropas o, mejor a&uacute;n, sobre la puerta o el umbral de un lugar cerrado, el Cebo de osario emite un hedor que solo las criaturas antinaturales perciben, y que para ellas es tan irresistible como el olor de la sangre fresca para un sabueso.</p>\n<p>Hasta el final de la escena, todo monstruo dentro del alcance natural de su olfato acudir&aacute; hacia el cebo sin descanso, ignorando presas m&aacute;s cercanas o m&aacute;s f&aacute;ciles. La bruja decide al preparar el ung&uuml;ento si lo usa para atraer al monstruo hasta s&iacute; &mdash;y enfrentarlo en el terreno que ha elegido&mdash; o para apartarlo de aquello que de verdad quiere proteger. El Cebo de osario no distingue clases: convoca por igual al hambriento espectro de una cuneta y a la cosa antigua que duerme bajo las ra&iacute;ces del bosque, y muchas brujas han aprendido, demasiado tarde, que no siempre acude lo que esperaban.</p>",
+    "used": false,
+    "infosource": "Creado por la mesa (no aparece en los manuales)",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

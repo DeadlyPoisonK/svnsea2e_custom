@@ -1,0 +1,22 @@
+{
+  "folder": "UmOykxAiB4ACTBDv",
+  "name": "Fuego",
+  "type": "sorcery",
+  "_id": "gkt7QoUpBmiZwdoH",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Un dievas con el Trato del Fuego es un ser de llamas puras, cuya sangre puede moldear la piedra y cuyo tacto puede incinerar la madera. Puede crear y manipular el fuego, restaurar objetos que han quedado dañados o destruidos por el fuego o hacer que lluevan llamas devastadoras del cielo.</p><ul><li>Crear una tormenta de fuego enorme que destruya prácticamente todo en un radio de 30 metros.</li><li>Convocar un monstruo imparable de llamas puras que atacará a un enemigo, o a varios, de acuerdo a una sola orden (aunque ignorará los detalles adicionales, como «sin matar a nadie» o «pero no quemes nada»).</li><li>Crear un fuego controlado y contenido, del tamaño de una hoguera o más pequeño.</li><li>Extinguir todas las llamas de una habitación.</li><li>Hacer que las ropas de otras criaturas salgan ardiendo, infligiendo 2 Heridas cada vez que realicen una acción en esta ronda. La criatura puede realizar una acción para apagar las llamas, lo que termina con el efecto.</li><li>Reconstruir un objeto que quepa en una mano y que fue destruido por el fuego, haciendo que vuelva a la condición en que estaba antes de quedar expuesto al fuego.</li><li>Envolver un arma con llamas sobrenaturales, haciendo que inflija 1 Herida adicional cada vez que se use para atacar. El arma se rompe o se deshace en cenizas al final de la escena.</li></ul>",
+    "infosource": "7º Mar (básico), p. 225",
+    "sorctype": "sanderis",
+    "sorccat": "deal",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

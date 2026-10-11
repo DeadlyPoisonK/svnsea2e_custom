@@ -1,0 +1,17 @@
+{
+  "folder": "rxiPEUOSj58lttE0",
+  "name": "Descontrolado",
+  "type": "hubris",
+  "_id": "aLTeBwgN0e5c1I2Q",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibes 1 punto de héroe cuando vas en contra de una orden dada por alguien en una posición de autoridad.</p>",
+    "infosource": "El río · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

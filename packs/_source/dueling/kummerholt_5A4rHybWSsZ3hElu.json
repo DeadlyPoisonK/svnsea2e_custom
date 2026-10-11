@@ -1,0 +1,18 @@
+{
+  "folder": "OFzjAcydrY68u0XJ",
+  "name": "Kummerholt",
+  "type": "duelstyle",
+  "_id": "5A4rHybWSsZ3hElu",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>La gente de Eisen conoce muchas historias sobre personas normales que luchan contra verdaderos monstruos. En la mayor parte de los casos, estas historias hablan de héroes desesperados e insólitos que se enfrentan a lo imposible, como una madre defendiendo a sus hijos de la criatura que aúlla en la noche, armada solo con un cuchillo de la cocina. Otra es la historia del Adel Dietz que termina con él apaleado y herido, para luego derrotar al Blutiger Fürst apuñándolo en el corazón con su cuchillo de caza, al tiempo que el noble se regodea. Si hay que creer a las historias, los cazadores mataban a los drachen con espadas rotas que le clavaban hasta el fondo del corazón mientras los monstruos los aplastaban.</p><p>Los espadachines no se ponen de acuerdo sobre quien fue la primera persona que codificó el estilo Kummerholt, pero nadie puede negar su efectividad. Más que una forma de combatir es un estado mental. El espadachín combate sin pensar en su propia seguridad, cargando y apuñalando a un oponente superior a él. Al final, cuando todo parece perdido, el espadachín le clava el arma hasta la empuñadura, acabando el combate con un único ataque bien colocado.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 55",
+    "bonus": "<p><strong>Sentencia de muerte.</strong></p><p>Cuando blandas un arma de hoja de tamaño pequeño en una mano (como una daga, un trozo afilado de metralla o los restos de una espada rota), obtienes una maniobra especial llamada Sentencia de muerte.</p><p>Gastas todos tus Aumentos e infliges una cantidad de Heridas igual a tus rangos en Armas + la cantidad de Aumentos que has gastado + la Fuerza de tu oponente (o, en el caso de que no sea un villano, la Característica más alta de tu oponente). Estas Heridas no se pueden evitar ni prevenir en forma alguna. Un héroe sólo puede realizar llevar cabo una Sentencia de muerte por escena.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

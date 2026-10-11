@@ -1,0 +1,15 @@
+{
+  "name": "Heka",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "FSvZPlEy3X5a8iK3",
+  "description": "",
+  "sort": 800000,
+  "color": "#ccb100",
+  "flags": {
+    "scene-packer": {
+      "hash": "3ec09f2717e23fbe49e8b650aba09372d9eb8ac1"
+    }
+  }
+}

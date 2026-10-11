@@ -1,0 +1,21 @@
+{
+  "folder": "lViId2hAgZrG1OcT",
+  "name": "Juventud",
+  "type": "sorcery",
+  "_id": "sZgd8kkcphsx9EGS",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Beber este elixir te permite restaurar la perfecta capacidad de adaptación que tenías antaño (o que aún no has tenido). Puedes cambiar inmediatamente tu Enfoque sin penalización. Preparar este elixir necesita 1 Requisito.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 95",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

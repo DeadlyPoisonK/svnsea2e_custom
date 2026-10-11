@@ -1,0 +1,32 @@
+{
+  "folder": "M57WOXC69CG2ZoLB",
+  "name": "Arquero Alhidaf",
+  "type": "background",
+  "_id": "5VRWHQBf5zUVSwGg",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Los arqueros de Aksum antes eran aclamados como casi legendarios. Es hora de recordarle al mundo por qué.</p>",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando te adhieres a viejas tradiciones o antiguas prácticas obsoletas para resolver un problema.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "notice",
+      "scholarship",
+      "warfare"
+    ],
+    "advantages": [
+      "Francotirador",
+      "Vista de lince"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 174",
+    "nation": "aksum"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

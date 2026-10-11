@@ -1,0 +1,17 @@
+{
+  "folder": "ZP9JMCrX0jaFLHs0",
+  "name": "Modesto",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud después de tirar los dados para un Riesgo. Pierdes la mitad de tus Aumentos, pero el resto de héroes que están en la escena contigo consiguen tantos Aumentos como has perdido tú.</p>",
+    "infosource": "El pescador · Naciones Piratas, p. 154"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "Bvg56CLYgHMZt2ge",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

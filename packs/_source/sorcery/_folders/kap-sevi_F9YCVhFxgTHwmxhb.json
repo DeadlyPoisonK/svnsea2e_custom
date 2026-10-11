@@ -1,0 +1,15 @@
+{
+  "name": "Kap Sèvi",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "F9YCVhFxgTHwmxhb",
+  "description": "",
+  "sort": 700000,
+  "color": "#004cff",
+  "flags": {
+    "scene-packer": {
+      "hash": "91add613d7f3cb9d4ecf369c679b3e94ef46879c"
+    }
+  }
+}

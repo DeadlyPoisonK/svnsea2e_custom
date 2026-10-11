@@ -1,0 +1,32 @@
+{
+  "folder": "3rpOB9OIylqQmszO",
+  "name": "Inmortal",
+  "type": "background",
+  "_id": "Utt07emd7Eam3dXb",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>¡Por el honor de los Inmortales! ¡Por el honor de Persis!</p>",
+    "infosource": "El Imperio de la Media Luna, p. 157",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando tu compromiso de proteger la reputación de los Inmortales te meta en problemas.</p>",
+    "skills": [
+      "athletics",
+      "notice",
+      "ride",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Mi alma aún brilla",
+      "Mirar fijamente"
+    ],
+    "nation": "persis"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

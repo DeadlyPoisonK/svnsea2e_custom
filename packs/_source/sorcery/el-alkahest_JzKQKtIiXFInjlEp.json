@@ -1,0 +1,22 @@
+{
+  "folder": "U5nMuKvobKHWGJgn",
+  "name": "El Alkahest",
+  "type": "sorcery",
+  "_id": "JzKQKtIiXFInjlEp",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El objetivo definitivo de la Alquimia es encontrar el alkahest, el disolvente universal capaz de fundir cualquier sustancia. Un descubrimiento tan revolucionario tendría un valor incalculable no solo para los boticarios, sino para todo tipo de científicos experimentales. Además, el alkahest puede revelar las <em>prima materia,</em> el origen de toda la materia. Algunos ejemplos de resultados son:</p><ul><li>Mi héroe sufre un terrible accidente mientras trata de encontrar el alkahest, uno que lo desfigura permanentemente.</li><li>Mi héroe destila el alkahest, el disolvente universal, pero un aprendiz se lo roba junto a sus correspondientes notas de investigación… y la fórmula final.</li><li>Mi héroe no consigue destilar el alkahest, pero encuentra un disolvente más poderoso que la sal <em>alkali,</em> lo que le concede fama y fortuna.</li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 98",
+    "sorctype": "alquimia",
+    "sorccat": "magnum",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

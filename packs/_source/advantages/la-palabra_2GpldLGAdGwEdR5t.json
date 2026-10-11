@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "La palabra",
+  "type": "advantage",
+  "_id": "2GpldLGAdGwEdR5t",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Estás familiarizado con el sorprendentemente complejo código de gestos y frases que se usa en La Bucca para realizar negocios con discreción. Cuando hables con otro personaje que tiene esta ventaja, puedes darle un mensaje que el resto no entenderá o no percibirá (a menos, por supuesto, que también tengan esta ventaja).</p><p>Las ideas demasiado complejas no se pueden comunicar mediante este código, pero las peticiones simples o las afirmaciones comunes son fáciles de entender. Algunos ejemplos incluyen: «Necesito ayuda», «Tengo que hablar contigo en privado» o «Soy agente de las Secciones», así como frases simples de una sola palabra como «sí», «no», «mentiroso» o «ladrón». Si con el código se contradice algo que se ha dicho antes, la otra parte normalmente asumirá que lo dicho con el código es cierto.</p><p>Puedes enseñarle a otro personaje cómo hacer un gesto para pasarle un mensaje a una tercera persona, pero el primero no puede entender las respuestas ni usar otra frase que no sea la que le has enseñado. Por esta razón, la mayoría de los agentes enseñan frases comunes como «Tengo que hablar contigo en privado» o «Tengo un mensaje importante», y una vez que tienen la libertad de hablar de una forma más abierta, pueden pasar a mensajes más complejos.</p><p><em>Coste: 5 (3 si eres bucanero).</em></p>",
+    "infosource": "Naciones Piratas, p. 153",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

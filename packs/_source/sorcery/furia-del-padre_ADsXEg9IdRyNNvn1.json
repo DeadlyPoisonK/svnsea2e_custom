@@ -1,0 +1,22 @@
+{
+  "folder": "XxbatVafsy3T61pQ",
+  "name": "Furia del padre",
+  "type": "sorcery",
+  "_id": "ADsXEg9IdRyNNvn1",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Una estaca de madera sagrada, embadurnada con un puré hecho de hierbas y venenos naturales y luego bendecida por un sacerdote. Puedes realizar una acción para usar esta estaca sobre un monstruo no muerto que esté Indefenso. El monstruo queda completamente destruido y no puede volver a la vida.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 209",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

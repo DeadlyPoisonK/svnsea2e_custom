@@ -1,0 +1,21 @@
+{
+  "folder": "9uzBkZY6TGPQw0sf",
+  "name": "Detector de visión nocturna",
+  "type": "sorcery",
+  "_id": "bga4QgNQGAHhDNdf",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este dispositivo, que imita los órganos visuales nocturnos de algunos animales, permite al que lo lleve puesto detectar objetos sólidos hasta una distancia de 18 metros, sin importar si hay o no luz.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 97",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

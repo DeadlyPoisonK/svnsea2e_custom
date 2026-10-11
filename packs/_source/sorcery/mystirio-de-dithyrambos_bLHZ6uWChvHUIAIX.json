@@ -1,0 +1,21 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Mystírio de Dithyrambos",
+  "type": "sorcery",
+  "_id": "bLHZ6uWChvHUIAIX",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p><em>Dithyrambos, dios de la plenitud.</em></p><p>La historia de Dithyrambos es de dolor y regeneración. El relato del dios de la plenitud les enseña a los mystai que el dolor es temporal y que un héroe debe aguantar si desea triunfar. Incluso la ira del padre de los dioses no puede aplastar el cuerpo (ni el espíritu) del dios de la plenitud. Él regresa todas las primaveras de la oscuridad del invierno y sus mystai aprenden a volverse a poner en pie del mismo modo.</p><p>Cada vez que realices una acción, te curas una única Herida. Si este mystírio te cura una Herida Dramática, tu apokálypsi se activa inmediatamente y este efecto termina.</p><p>Durante tu acción, puedes activar este apokálypsi para curarte inmediatamente una Herida Dramática.</p><p>Cada vez que realices una acción, te curas una única Herida. Si este mystírio te cura una Herida Dramática, tu apokálypsi se activa inmediatamente y este efecto termina.</p>",
+    "infosource": "Naciones Piratas, p. 167",
+    "sorctype": "mystirios",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

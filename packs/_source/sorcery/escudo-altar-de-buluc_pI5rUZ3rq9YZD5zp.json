@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Escudo-altar de Buluc",
+  "type": "sorcery",
+  "_id": "pI5rUZ3rq9YZD5zp",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Buluc era una guerrera que no era famosa por derrotar a sus enemigos o conquistar tierras, sino por proteger a su gente y asegurarse de que sus guerreros ganaran sus batallas. La leyenda dice que antes de la batalla dejaba su escudo en el suelo y hacía sacrificios a los dioses. La sangre y la ceniza de sus obsequios manchaban el escudo y protegían a su gente de cualquier daño. Mientras lleve el Escudo-altar de Buluc, el héroe puede gastar 1 punto de héroe para desviar cualquier ataque dirigido a otro personaje y apuntarlo a sí mismo. Cualquier Herida que pudiera ser infligida se reduce en 1.</p>",
+    "infosource": "El Nuevo Mundo, p. 173",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 287500,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

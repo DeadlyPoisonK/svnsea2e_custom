@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Sangre de soberanos (Khitai)",
+  "type": "advantage",
+  "_id": "Qmm1ZAnPq7hwUdm4",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Eres miembro de la nobleza de tu nación de origen y gozas de gran estima entre la élite política y social. Colabora con el DJ para determinar los pormenores de tu noble cuna. ¿Sigues estando bien considerado en esos círculos sociales? ¿Cree tu héroe que la aristocracia tiene derecho a gobernar, o has decidido rechazar el concepto mismo de la sangre noble en favor de una ideología política más radical y progresista? Cuando realizas un Riesgo en el que tu estatus noble suponga un beneficio directo e inmediato, gasta un punto de héroe para obtener Aumentos adicionales iguales a tus rangos en Respeto, Lealtad o Sabiduría (lo que sea más alto).</p>",
+    "infosource": "Khitai, p. 122 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

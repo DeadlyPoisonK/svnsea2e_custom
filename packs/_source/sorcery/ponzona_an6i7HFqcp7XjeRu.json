@@ -1,0 +1,22 @@
+{
+  "folder": "Ii9neQCQcG7PZkgg",
+  "name": "Ponzoña",
+  "type": "sorcery",
+  "_id": "an6i7HFqcp7XjeRu",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Tu mordedura transmite una potente toxina que merma la energía de tu víctima y alimenta tus extraordinarios poderes. Cada Aumento que gastas causa 1 Herida a tu objetivo (igual que cualquier ataque normal). Además, cada vez que tu objetivo realice una acción hasta el final de la ronda, puedes elegir causarle 1 Herida u obtener 1 de Discordia.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 205 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

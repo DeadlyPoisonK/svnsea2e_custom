@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Expansores de lóbulo resplandecientes de Kinich Ahau",
+  "type": "sorcery",
+  "_id": "mUzWYNXPpiJurUrb",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Incluso antes de que fuera una deidad, las leyendas dicen que Kinich Ahau podía iluminar una habitación. Las historias hablan de cómo, cuando era un niño, Kinich Ahau consolaba a los enfermos o detenía las peleas. Quizás fue este poder lo que hizo que un jefe de guerra local, Ekchuah, le temiera tanto. El día antes de su cumpleaños número 13, Ekchuah secuestró a Kinich Ahau y lo sacrificó a los dioses. Sabiendo que Kinich Ahau siempre sería temido por los hombres malvados, los dioses elevaron a Kinich Ahau a la divinidad. Se le dio control sobre dónde puede brillar el sol, para desarraigar la oscuridad dondequiera que la vea. Un héroe que lleve los Expansores de lóbulo resplandecientes de Kinich Ahau puede gastar 1 punto de héroe para iluminar una habitación, eliminar todas las sombras e infligir una Herida Dramática a cualquier persona que tenga puntos de corrupción.</p>",
+    "infosource": "El Nuevo Mundo, p. 173",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 250000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "kFgELUK3901UeCsS",
+  "name": "Cazatesoros",
+  "type": "background",
+  "_id": "mrxnlq8KWmNIpw9F",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>¡Recompensas doradas y brillantes te esperan! Mejor ve a buscarlas.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 155",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando tu hambre de baratijas raras, artefactos perdidos o un tesoro similar te meta en problemas.</p>",
+    "skills": [
+      "athletics",
+      "hide",
+      "notice",
+      "scholarship",
+      "theft"
+    ],
+    "advantages": [
+      "¡Lo tengo!",
+      "Nervios de acero"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

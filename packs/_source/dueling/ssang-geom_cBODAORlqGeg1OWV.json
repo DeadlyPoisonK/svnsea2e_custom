@@ -1,0 +1,19 @@
+{
+  "folder": "xRskIATgzioWdrTl",
+  "name": "Ssang Geom",
+  "type": "duelstyle",
+  "_id": "cBODAORlqGeg1OWV",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>El Ssang Geom (literalmente «espadas gemelas») es un estilo de espada originario de Han. Durante la mayor parte de su historia, el Ssang Geom fue ignorado por la sociedad hanin (especialmente entre la nobleza) en favor de artes foráneas de Shenzhou y Fusō. Aunque esos estilos todavía gozan de un amplio uso en las cortes de Han, el Ssang Geom disfruta de un auge de popularidad debido al prestigio de su maestra moderna más famosa: la almirante Ji. El repentino aumento de popularidad del estilo ha propiciado una oleada de apertura de escuelas por parte de autoproclamados maestros de Ssang Geom (aunque a menudo estos maestros en realidad se habían formado en otros estilos y simplemente se están aprovechando de la atención atraída hacia el Ssang Geom por Ji). La propia Ji no acepta estudiantes, centrándose en cambio en sus responsabilidades militares. El Ssang Geom utiliza un par de espadas gemelas, una para defender y la otra para atacar, alternando rápidamente entre ambas. Un maestro atacará con la derecha y defenderá con la izquierda, para luego cambiar de táctica y mantener a su oponente con la guardia baja lanzando el siguiente ataque desde la izquierda.</p><p>Irónicamente, mientras que la popularidad del Ssang Geom en su propia tierra natal apenas comienza a florecer ahora, los maestros de la espada de Shenzhou y Fusō en particular han estado utilizando algunas de las técnicas del estilo durante generaciones con sus propias armas. Los practicantes de Shenzhou prefieren empuñar la espada larga recta de Shenzhou en una mano y su vaina en la otra, mientras que el estilo de Fusō utiliza la katana y el wakizashi.</p>",
+    "infosource": "Khitai, p. 226 (traducción no oficial)",
+    "bonus": "<p><strong>Bonificación de escuela.</strong> Cuando empuñas un arma en cada mano (más comúnmente un par de espadas), obtienes una maniobra especial llamada Giro del guerrero. Cuando realizas Giro del guerrero, previenes un número de Heridas igual a tus rangos en Armas, y la siguiente fuente de Heridas sobre tu objetivo esta ronda inflige una Herida adicional. Debes realizar Giro del guerrero en respuesta a la maniobra que causó las Heridas que estás previniendo, y puedes hacerlo incluso cuando no sea tu acción. Solo puedes realizar Giro del guerrero una vez por ronda. <strong>Bonificación de maestría.</strong> Has aprendido a alterar la dirección de tus golpes giratorios, manteniendo mejor a tu oponente con la guardia baja y haciendo que tus movimientos sean más difíciles de predecir. Después de tirar los dados para un Riesgo usando Armas y cuando estés usando el estilo Ssang Geom, puedes realizar Giro del guerrero un número de veces adicional igual al número de parejas de dados iguales que obtengas. Por ejemplo, si sacaste una pareja de 4 y tres 9 en tu Riesgo de Armas, puedes realizar Giro del guerrero hasta 3 veces esta ronda (una de forma normal, una por tu pareja de 4 y otra por tu pareja de 9).</p>",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

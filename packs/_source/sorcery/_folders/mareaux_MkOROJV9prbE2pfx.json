@@ -1,0 +1,15 @@
+{
+  "name": "Mareaux",
+  "sorting": "a",
+  "folder": "F9YCVhFxgTHwmxhb",
+  "type": "Item",
+  "_id": "MkOROJV9prbE2pfx",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "03c87a9d7738afff4df08a5d64ab4b692e028ffe"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "SmDxtX5jHsO7PhTE",
+  "name": "Desencadenado",
+  "type": "sorcery",
+  "_id": "Gb2YQBEyEY8ZMpg8",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Badagris conoce las debilidades de cada cadena, no se la<br>puede encadenar. Mientras Badagris lo posea, el s&egrave;vit&egrave;<br>puede gastar 1 punto de h&eacute;roe para escapar de unos<br>grilletes, una prisi&oacute;n o una limitaci&oacute;n.</p>",
+    "infosource": "Naciones Piratas, p. 161",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

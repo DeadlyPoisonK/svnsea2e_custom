@@ -1,0 +1,21 @@
+{
+  "folder": "YTcrjQkDWcQTDfXz",
+  "name": "Fuego",
+  "type": "sorcery",
+  "_id": "5c1S8XI4jCqvZ0Iq",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Una abonsam con el Trato del Fuego es un ser de llama viva, cuya sangre puede derretir piedra y cuyo toque puede incendiar madera. Puede crear y manipular el fuego, restaurar objetos dañados o destruidos por las llamas o convocar devastadoras lluvias de ascuas que caen del cielo.</p><ul><li>Crea una enorme tormenta de fuego, destruyendo todo lo que esté a un máximo de 30 metros del epicentro.</li><li>Invoca a un monstruo imparable hecho de llamas vivas, que ataca a un enemigo o enemigos de acuerdo a un sola orden (aunque ignora los calificativos, como «sin matar a nadie» o «pero no prendas fuego a nada»).</li><li>Crear un fuego controlado y contenido, del tamaño de una hoguera o más pequeño.</li><li>Apagar todas las llamas en una habitación.</li><li>Prender fuego a la ropa de otra criatura, infligiéndole 2 Heridas cada vez que lleve a cabo una acción durante esta ronda. La criatura puede usar una acción para apagar las llamas y poner fin al efecto.</li><li>Reconstruir un objeto de mano destruido por el fuego, devolviéndolo a la condición en que estaba antes de ser expuesto a las llamas.</li><li>Envolver un arma con llamas sobrenaturales, causando que inflija 1 Herida adicional cada vez que se utiliza para atacar. Al final de la escena, el arma se derrite o se reduce a cenizas.</li></ul>",
+    "infosource": "Tierras de Fuego y Oro, p. 192",
+    "sorctype": "melbur",
+    "sorcdur": "none",
+    "sorccat": "patron",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

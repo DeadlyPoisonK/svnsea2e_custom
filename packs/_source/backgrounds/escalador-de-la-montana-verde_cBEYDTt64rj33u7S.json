@@ -1,0 +1,33 @@
+{
+  "folder": "Fsa6PxwXk2zOMAfH",
+  "name": "Escalador de la Montaña Verde",
+  "type": "background",
+  "_id": "cBEYDTt64rj33u7S",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Has escalado la montaña, te has encontrado con el Guardián y has visitado el Jardín para convertirte en un asesino.</p><p><em>Ventajas en el libro: Hechicería (Nawaru).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 156",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando un problema podría resolverse fácilmente mediante el asesinato, pero encuentras una solución menos sangrienta.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "hide",
+      "notice",
+      "theft"
+    ],
+    "advantages": [
+      "He estado esperando esto",
+      "Hechicería",
+      "Nombre falso"
+    ],
+    "nation": "ashur"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

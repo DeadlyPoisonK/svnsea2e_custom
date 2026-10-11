@@ -1,0 +1,23 @@
+{
+  "folder": "BsRq7OrECMmGFFR9",
+  "name": "No voy a morir aquí",
+  "type": "advantage",
+  "_id": "kYQmYQSfdvzy7xDL",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para ignorar todos los efectos negativos de Heridas Dramáticas durante la ronda: el villano no consigue dados adicionales si tienes 2 Heridas Dramáticas y tú no te quedas Indefenso con 4 Heridas Dramáticas.</p><p><em>Coste: 5 (3 si eres eiseno).</em></p>",
+    "infosource": "7º Mar (básico), p. 155",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": -100000,
+  "ownership": {
+    "default": 0
+  }
+}

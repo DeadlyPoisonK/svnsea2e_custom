@@ -1,0 +1,22 @@
+{
+  "folder": "hLWsg73CQv2Qz1Sp",
+  "name": "Aliento",
+  "type": "sorcery",
+  "_id": "5ADKlMColwJQKy2e",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Exhalas fuego, vapor, relámpagos o algún otro elemento para devastar a tus oponentes. Inflige un total de Heridas igual a tu Discordia a cualquier número de personajes en una Zona (divididas como desees). Luego, tu Discordia pasa a ser 0.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 207 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Apokálypsi de Salacio",
+  "type": "sorcery",
+  "_id": "8mrAM7UQ0uCI8LB2",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Puedes activar este apokálypsi cuando realices un Riesgo de Brío. Puedes volver a tirar cualquier dado que tenga un resultado menor que tu nivel en Brío, pero debes usar el nuevo resultado. No puedes modificar de ningún modo el nuevo resultado de estos dados al repetir la tirada y no puedes volver a tirarlos debido a otros efectos (como tener niveles altos en habilidades u otras ventajas).</p><p>Theonoa se enorgullece de saber adónde moverse para inclinar el campo de batalla a su favor, independientemente de que ese campo de batalla sea literal o un banquete de estado formal. El mystírio que ella enseña muestra que sus adeptos siempre deben adaptarse. ¿Y su apokálypsi? Cuando no puedes ganar jugando según las reglas… cámbialas.</p>",
+    "infosource": "Naciones Piratas, p. 168",
+    "sorctype": "mystirios",
+    "sorccat": "none",
+    "sorcsubcat": "major",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

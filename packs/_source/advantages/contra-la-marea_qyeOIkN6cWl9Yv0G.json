@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Contra la marea",
+  "type": "advantage",
+  "_id": "qyeOIkN6cWl9Yv0G",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe se crece ante dificultades abrumadoras. Al tirar los dados en un Riesgo, gasta un punto de héroe para obtener un número de dados adicionales igual al doble de la oposición a la que te enfrentas (cada villano, banda de matones, monstruo, etc., cuenta como uno).</p>",
+    "infosource": "Khitai, p. 122 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "uETcMjSzbDU1pecb",
+  "name": "Sisemité",
+  "type": "sorcery",
+  "_id": "sHINf80PJcWRybaW",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Estos poderosos humanoides peludos se parecen más a monos grandes que a un tzak k'ano. Son criaturas no verbales que solo emiten aullidos o gritos dependiendo de su estado de ánimo. Sin embargo, su naturaleza no conmutativa no debería engañar a los Ahez que saben que los sisemité son criaturas poderosamente proféticas capaces de otorgar visiones de un futuro seguro. Lamentablemente, los sisemité tienden a ser sexistas y prefieren tratar con mujeres Ahez.</p><p>Siempre que el sisemité siga a la heroína, esta puede gastar 1 punto de héroe para que el sisemité le conceda una visión. Las visiones siempre muestran una respuesta definitiva, aunque descifrar el significado puede no ser tan fácil.</p><p>Sin embargo, mientras el sisemité esté con la heroína, le pedirá a ella que haga cosas. Una vez más, estas solicitudes se comunican en forma de visiones y pueden ser desde simples favores hasta elaboradas misiones. La heroína puede verse a sí misma trayendo una taza de agua al sisemité o viajando a los bosques más profundos de Ussura (una tierra a literalmente medio mundo de distancia), recogiendo nieve recién caída, derritiéndola sobre un fuego y sirviéndola al sisemité. A veces, estas tareas son imposibles y, al no cumplir con la solicitud de un sisemité, este regresa al mundo del que proviene.</p>",
+    "infosource": "El Nuevo Mundo, p. 175",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "pixan"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

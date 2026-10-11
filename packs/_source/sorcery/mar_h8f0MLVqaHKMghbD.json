@@ -1,0 +1,22 @@
+{
+  "folder": "UmOykxAiB4ACTBDv",
+  "name": "Mar",
+  "type": "sorcery",
+  "_id": "h8f0MLVqaHKMghbD",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Aunque la forma de un dievas con el Trato del Mar podría variar (a veces es una criatura con escamas negras cubierta de percebes y envuelta en algas, otras es una criatura cuyo cuerpo es un facsímil tosco del cuerpo de un hombre pero hecho completamente de agua), su poder es innegable. Pueden ahogar a un hombre mientras está sentado en lo alto de una montaña, convocar una ola para que devaste una ciudad portuaria entera o dar órdenes a las monstruosas criaturas de las profundidades.</p><ul><li>Crear una ola de proporciones casi apocalípticas, capaz de aniquilar una ciudad costera entera.</li><li>Convocar a un monstruo de las profundidades para que arrastre un barco bajo las olas. La criatura no sigue instrucciones, pero no atacará directamente a quien la convocó o al barco en el que esta persona se encuentra, a menos que se la provoque.</li><li>Conocer la localización exacta de cualquier barco dentro de 10 millas náuticas (18,5 kilómetros) respecto a tu localización actual.</li><li>Calmar unas aguas agitadas para hacerlas navegables o nadables, o hacer que las aguas calmadas se agiten.</li><li>Conseguir durante una escena la capacidad de sobrevivir bajo el agua, como si esta fuera aire. Todavía puedes nadar con normalidad, pero consigues la capacidad de respirar y ver bajo el agua igual que si estuvieras en tierra.</li><li>Aumentar o disminuir en un metro y medio el nivel de un cuerpo de agua existente al ritmo de un minuto cada 0,3 metros.</li><li>Eliminar cualquier toxina, veneno o sustancia dañina de un recipiente de agua de hasta cinco galones (20 litros). El agua se vuelve perfectamente pura, limpia y clara, pero no convierte el agua del mar en agua dulce.</li></ul>",
+    "infosource": "7º Mar (básico), p. 226",
+    "sorctype": "sanderis",
+    "sorccat": "deal",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

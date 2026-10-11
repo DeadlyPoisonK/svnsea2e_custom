@@ -1,0 +1,22 @@
+{
+  "folder": "piYhdrGNp0ZAVmW9",
+  "name": "Sueño",
+  "type": "sorcery",
+  "_id": "gd6KgLrlMi4D2uJq",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este elixir hace que quien lo beba caiga en un sueño profundo y sin sueños. Un personaje que beba esta poción queda Indefenso hasta el final de la escena. Despertarlo requiere un número de Aumentos igual a la Potencia de esta poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 198 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

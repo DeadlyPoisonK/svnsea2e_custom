@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Duro de matar (Khitai)",
+  "type": "advantage",
+  "_id": "PQvm90cKIDH83b83",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando tienes cuatro Heridas Dramáticas, no quedas Indefenso. En su lugar, cualquier villano que realice un Riesgo contra ti obtiene 3 dados adicionales.</p><p>Cuando tienes cinco Heridas Dramáticas, quedas Indefenso.</p>",
+    "infosource": "Khitai, p. 121 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

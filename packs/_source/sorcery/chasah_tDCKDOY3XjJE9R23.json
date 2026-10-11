@@ -1,0 +1,21 @@
+{
+  "folder": "JMAGvB9WVghinr6q",
+  "name": "Chasah",
+  "type": "sorcery",
+  "_id": "tDCKDOY3XjJE9R23",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Chasah es la promesa de refugio. El punto de calma dentro de la vorágine, un asiento libre en la mesa de un extraño o un lugar secreto que nadie puede encontrar. Es a la vez seguridad y una promesa de protección para los demás. <strong>Amuleto: </strong>Cuando activas un Amuleto Chasah, cualquier cosa que hayas envuelto en el Amuleto se oculta hasta que el sol alcanza su cenit. El objeto es invisible, imperceptible e imposible de encontrar. Sin embargo, si alguien que busca el objeto oculto sospecha que ha estado oculto en el Amuleto (porque se le ha hablado sobre su capacidad para hacerlo, por ejemplo) o tiene ayuda sobrenatural, debe gastar 2 Aumentos para encontrarlo.</p><p><strong>Escritura: </strong>Cuando activas una Escritura Chasah, ningún nudo, cerradura o barra puede evitar que encuentres un lugar seguro. Te liberas de las esposas y abres las puertas de la prisión. Durante esta escena, no puedes estar encerrado.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 174",
+    "sorctype": "chozeh",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

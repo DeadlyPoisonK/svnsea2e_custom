@@ -1,0 +1,22 @@
+{
+  "folder": "zZYgf0jaGTPfG7RT",
+  "name": "Mucha suerte",
+  "type": "sorcery",
+  "_id": "UvOnUfu4oU6NTsFq",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Glamour para añadir su nivel al valor de cualquier dado. Por ejemplo, si tienes nivel 5 en este Glamour, podrías sumar 5 puntos a cualquier dado que hayas tirado. Si el valor del dado alcanza 10 o más, ese dado explota.</p>",
+    "infosource": "7º Mar (básico), p. 214",
+    "used": false,
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "glamour",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

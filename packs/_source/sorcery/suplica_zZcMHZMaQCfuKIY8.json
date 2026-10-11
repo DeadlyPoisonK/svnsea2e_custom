@@ -1,0 +1,22 @@
+{
+  "folder": "o690w5aSkrQJLvTs",
+  "name": "Súplica",
+  "type": "sorcery",
+  "_id": "zZcMHZMaQCfuKIY8",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 3 de Furia si se activa de inmediato; genera 2 de Tranquilidad si te tomas una hora para activarlo como un ritual. Manifiesta un espíritu para que realice una acción. Si la acción es peligrosa, el espíritu realiza un Riesgo con 5 dados y gasta Aumentos. Cualquier Herida que sufra el espíritu aumenta el valor de Furia de la escena en una cantidad igual.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 195 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

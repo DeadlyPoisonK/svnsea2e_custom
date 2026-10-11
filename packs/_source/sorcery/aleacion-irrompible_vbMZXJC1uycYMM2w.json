@@ -1,0 +1,21 @@
+{
+  "folder": "pVGrpMjo5Filx8Qq",
+  "name": "Aleación irrompible",
+  "type": "sorcery",
+  "_id": "vbMZXJC1uycYMM2w",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Preparas un compuesto que transforma incluso los metales más básicos en un material irrompible. Durante el resto de la escena, un objeto inorgánico será imposible de romper a menos que ocurran circunstancias especiales (por ejemplo, el uso de la hechicería). Preparar este compuesto necesita 1 Requisito.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 95",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

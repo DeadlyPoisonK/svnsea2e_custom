@@ -1,0 +1,21 @@
+{
+  "folder": "ccPqyXbxMB2UEXTa",
+  "name": "Bon Zanmi",
+  "type": "sorcery",
+  "_id": "7qSHS1iL0IbFWxJA",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Una vida de curar enfermedades suele dejar mucha gente<br>agradecida y Sousson siempre logra encontrar a alguien<br>a quien haya ayudado alguna vez. Mientras Sousson lo<br>posea, el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe para saber<br>de alguien cerca a quien Sousson ya ha tratado y que ahora<br>le debe un favor.</p>",
+    "infosource": "Naciones Piratas, p. 165",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

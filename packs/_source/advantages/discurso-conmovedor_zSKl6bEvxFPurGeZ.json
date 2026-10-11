@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Discurso conmovedor",
+  "type": "advantage",
+  "_id": "zSKl6bEvxFPurGeZ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe tiene un don con las palabras que levanta la moral de sus compañeros. Justo antes de que ocurra una confrontación con un villano, gasta un punto de héroe. También deberías hacer algún tipo de comentario mordaz o ingenioso sobre cómo «cuando las cosas parecen más oscuras, es cuando las almas brillan con más fuerza». En la siguiente tirada de cada héroe, cada dado que obtenga un resultado igual o inferior a la habilidad del héroe cuenta como un 10.</p>",
+    "infosource": "Khitai, p. 123 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

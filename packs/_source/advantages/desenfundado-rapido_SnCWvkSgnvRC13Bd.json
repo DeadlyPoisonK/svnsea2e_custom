@@ -1,0 +1,24 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Desenfundado rápido",
+  "type": "advantage",
+  "_id": "SnCWvkSgnvRC13Bd",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando realices un Riesgo de Apuntar puedes gastar 1 punto de héroe para conseguir un Aumento adicional por cada pareja de dobles que obtengas en tu tirada de dados. Además, dichos dados también se pueden utilizar para conseguir más Aumentos de la forma normal.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 210",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "ITG0hBu6GuSfmpnA",
+  "name": "Los altísimos",
+  "type": "background",
+  "_id": "nJXD5lQ30goKCbhC",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Eres descendiente de los más grandes reyes y reinas de la historia del mundo: los Altísimos de Khemet.</p><p><em>Ventajas en el libro: Mirada altiva (NdT:V2).</em></p>",
+    "infosource": "Tierras de Fuego y Oro, p. 175",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando la reputación de corrupción (mágica o material) de tu línea de sangre te meta en problemas.</p>",
+    "skills": [
+      "empathy",
+      "intimidate",
+      "ride",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Sangre de soberanos",
+      "Mirada altiva"
+    ],
+    "nation": "khemet"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "CQBbl0cBcssKHSuR",
+  "name": "Invulnerabilidad",
+  "type": "sorcery",
+  "_id": "FC7ksqmLp81r3xFp",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un personaje que bebe esta poción se vuelve temporalmente resistente al daño. La próxima vez que el bebedor sufra cualquier cantidad de Heridas, ignora tantas Heridas como la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 200 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

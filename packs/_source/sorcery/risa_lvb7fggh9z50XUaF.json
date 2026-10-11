@@ -1,0 +1,22 @@
+{
+  "folder": "3e0470FcjhLl9xWF",
+  "name": "Risa",
+  "type": "sorcery",
+  "_id": "lvb7fggh9z50XUaF",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Haces que un personaje estalle en un ataque de risa incontrolable. El objetivo pierde un número de Aumentos igual a la mitad de tu Discordia actual (mínimo 1). Luego, tu Discordia pasa a ser 0.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 207 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

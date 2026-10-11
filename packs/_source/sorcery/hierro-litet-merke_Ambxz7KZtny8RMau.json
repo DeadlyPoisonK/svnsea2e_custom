@@ -1,0 +1,22 @@
+{
+  "folder": "EvPuBJJ4Sc2NNppQ",
+  "name": "Hierro Litet Merke",
+  "type": "sorcery",
+  "_id": "Ambxz7KZtny8RMau",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>El personaje que elijas gana 1 Aumento y sufre una cantidad de Heridas igual a su característica más alta. Invierno es la runa de la penuria, la oscuridad y lo inevitable. La runa da nombre a los héroes que se sacrificaron en nombre del bien, aunque perdieron de todas formas. La mayor parte de la gente utiliza la runa para protegerse contra la penuria y el infortunio.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 192",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "folder": "mISBGS3k1JGW0JWu",
+  "name": "Terco",
+  "type": "hubris",
+  "_id": "6jRFYBbacVF5nUUo",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Gana un punto de héroe cuando te niegues a desviarte del curso de acción elegido o de tu forma de pensar.</p>",
+    "infosource": "Serpiente · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

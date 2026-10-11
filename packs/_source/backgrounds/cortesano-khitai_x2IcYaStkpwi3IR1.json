@@ -1,0 +1,31 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Cortesano (Khitai)",
+  "type": "background",
+  "_id": "x2IcYaStkpwi3IR1",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Alegría</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "quirk": "<p>Gana un punto de héroe cada vez que cambies las tornas de la violencia con encanto y estilo.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Un inocente malentendido (Khitai)",
+      "Ven aquí (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 104 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

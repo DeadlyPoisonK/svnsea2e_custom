@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Afligir",
+  "type": "sorcery",
+  "_id": "jJvPZvHnppktCL2Z",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Invocas energía funesta para destruir a tus oponentes. Genera 2 de Plaga. Inflige a un personaje al que puedas ver tantas Heridas como tu Plaga actual.</p>",
+    "infosource": "Khitai, p. 202 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "used": false
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

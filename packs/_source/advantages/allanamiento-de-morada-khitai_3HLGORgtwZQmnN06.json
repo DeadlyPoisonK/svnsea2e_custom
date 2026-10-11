@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Allanamiento de morada (Khitai)",
+  "type": "advantage",
+  "_id": "3HLGORgtwZQmnN06",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para localizar una vía de entrada a un edificio o zona restringida. Puedes llevarte contigo a un personaje más, pero todos los demás tendrán que buscar su propia forma de entrar (o esperar a que les abras camino).</p>",
+    "infosource": "Khitai, p. 116 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

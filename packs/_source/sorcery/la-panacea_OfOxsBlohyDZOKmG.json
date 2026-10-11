@@ -1,0 +1,22 @@
+{
+  "folder": "U5nMuKvobKHWGJgn",
+  "name": "La Panacea",
+  "type": "sorcery",
+  "_id": "OfOxsBlohyDZOKmG",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El objetivo definitivo de la Alquimia es conectar la vida y la existencia en general. Según la comprensión del boticario, nada es más importante que preservar la vida, el mayor trabajo de todos. Por tanto, centra sus estudios en prolongar la existencia de las criaturas vivas, sobre todo contra la enfermedad y la muerte.</p><p>Algunos ejemplos de resultados son:</p><ul><li>Mi héroe descubre la cura de un gran número de enfermedades, pero al hacerlo crea una enfermedad terrible e incurable.</li><li>Mi héroe se concede por accidente la vida eterna y se convierte en una leyenda: buscado por los que quieren su bendición y por aquellos que quieren matarlo para arrebatarle su secreto.</li><li>Mi héroe finalmente desentraña el misterio de la panacea, la cura de todas las enfermedades y la fuente de la vida y la juventud eternas, pero debes decidir cómo evitar que caiga en las manos equivocadas.</li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 98",
+    "sorctype": "alquimia",
+    "sorccat": "magnum",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

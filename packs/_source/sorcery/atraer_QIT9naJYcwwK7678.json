@@ -1,0 +1,22 @@
+{
+  "folder": "U2PSSPaknua4R4bA",
+  "name": "Atraer",
+  "type": "sorcery",
+  "_id": "QIT9naJYcwwK7678",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Los héroes que tienen Porté pueden traer objetos a través de los portales y también traspasarlos ellos mismos hacia los objetos ensangrentados. No hay ninguna otra conexión física entre los dos portales. En otras palabras, si un héroe tira un broche ensangrentado en el océano y abre un portal a ese broche, el agua no saldrá por el portal; sin embargo, el broche estará mojado cuando el héroe lo coja.</p><p>Del mismo modo, si un héroe cruza un portal hacia donde hay un objeto y dicho objeto está en un lugar en el que el héroe no puede entrar, encontrará ese pasaje bloqueado y se verá obligado a ir a otro objeto ensangrentado para salir del portal… No es una opción muy agradable. Por ejemplo, si un héroe deja un broche ensangrentado en la habitación de una dama y la dama lo coloca en su joyero, el héroe no será capaz de moverse por el portal hacia el joyero. Sin embargo, sí podrá coger el broche sin comprometer la integridad de la caja.</p>",
+    "infosource": "7º Mar (básico), p. 220",
+    "sorctype": "porte",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

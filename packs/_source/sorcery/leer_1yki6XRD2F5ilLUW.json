@@ -1,0 +1,22 @@
+{
+  "folder": "2M2vfXkTX0aej1QO",
+  "name": "Leer",
+  "type": "sorcery",
+  "_id": "1yki6XRD2F5ilLUW",
+  "img": "icons/magic/perception/eye-ringed-green.webp",
+  "system": {
+    "description": "<p>Leer es un Tessere especial que todas las streghe<br>aprenden. Usar Leer no requiere puntos de h&eacute;roe ni<br>hebras y solo tiene un efecto (en lugar de un efecto<br>menor y otro mayor).<br>Para usar cualquier otro Tejido, una strega debe usar antes<br>Leer para ver el Arcano que la rodea. Si una strega no puede<br>ver (tiene los ojos vendados, le han echado sal en los ojos o<br>est&aacute; cegada de manera permanente), no puede usar Leer.<br>Usar Leer cuesta 1 Aumento durante las secuencias de<br>acci&oacute;n. Una vez lo use, la strega puede ver todos los hilos<br>y Arcanos durante el resto de la escena.</p>",
+    "infosource": "7º Mar (básico), p. 230",
+    "used": false,
+    "sorctype": "sorte",
+    "sorcdur": "none",
+    "sorccat": "tesse",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

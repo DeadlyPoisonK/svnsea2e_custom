@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Pirata (Khitai)",
+  "type": "background",
+  "_id": "MTqOYhXzWpdSXK83",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Respeto</p>",
+    "quirk": "<p>Gana un punto de héroe cuando hagas un sacrificio personal para asegurar la libertad de otro.</p>",
+    "skills": [
+      "brawl",
+      "hide",
+      "intimidate",
+      "scholarship",
+      "theft"
+    ],
+    "advantages": [
+      "Uno contra muchos (Khitai)",
+      "Donde pongo el ojo (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 106 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

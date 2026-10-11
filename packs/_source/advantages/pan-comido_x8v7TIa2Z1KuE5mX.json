@@ -1,0 +1,24 @@
+{
+  "folder": "aSM5k4zd4YYt1rg3",
+  "name": "Pan comido",
+  "type": "advantage",
+  "_id": "x8v7TIa2Z1KuE5mX",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe debe tener la ventaja «Donde pongo el ojo» para poder adquirir esta ventaja. Cuando realices un Riesgo de Apuntar usando una pistola, un trabuco o un arma arrojadiza, como un cuchillo o un hacha, gasta un Aumento para reducir la Fuerza de una banda de matones en tantos puntos como tu nivel en Maña.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 205",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

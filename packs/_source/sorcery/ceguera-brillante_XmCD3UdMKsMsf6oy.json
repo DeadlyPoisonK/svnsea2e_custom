@@ -1,0 +1,21 @@
+{
+  "folder": "hKSS5Yx1PWVKU58w",
+  "name": "Ceguera brillante",
+  "type": "sorcery",
+  "_id": "XmCD3UdMKsMsf6oy",
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+  "system": {
+    "description": "<p>Activa este turru para lanzar un destello de luz al aire que solo ciega a aquellos que has determinado que son tus enemigos. Todos los enemigos cegados tiran 2 dados menos en cualquier Riesgo que tomen. La ceguera dura un número de rondas igual al número de veces que tengas la ventaja Hechicería.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 184",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

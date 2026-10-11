@@ -1,0 +1,17 @@
+{
+  "folder": "cM8cp2HgmMlzFy4Z",
+  "name": "Estable/Consistente",
+  "type": "virtue",
+  "_id": "IBPcwiript2Rya1U",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando gastes 1 punto de héroe para ayudar a un aliado. Ese héroe gana 2 dados adicionales.</p>",
+    "infosource": "La estrella de la tarde · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

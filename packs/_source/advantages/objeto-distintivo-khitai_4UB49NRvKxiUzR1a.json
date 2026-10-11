@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Objeto distintivo (Khitai)",
+  "type": "advantage",
+  "_id": "4UB49NRvKxiUzR1a",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige un objeto específico que sea importante para ti. Descríbelo y colabora con el DJ para decidir por qué es importante para ti. ¡Quizás incluso quieras ponerle un nombre! Puedes gastar un punto de héroe para obtener cualquiera de los siguientes beneficios:</p><ul><li>Hacer que tu Objeto distintivo aparezca en la siguiente escena si lo pierdes o te lo roban</li><li>Obtener 2 dados adicionales en un Riesgo</li><li>Aumentar las Heridas que infliges en tantos puntos como tu rasgo más alto</li><li>Reducir las Heridas que sufres en tantos puntos como tu rasgo más alto.</li></ul><p>Siempre debes describir cómo te ayuda tu Objeto distintivo, y debe tener sentido que el objeto te proporcione cualquier bonificación de este modo (a discreción del DJ).</p>",
+    "infosource": "Khitai, p. 119 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

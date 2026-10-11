@@ -1,0 +1,32 @@
+{
+  "folder": "ITG0hBu6GuSfmpnA",
+  "name": "Bailarín Awal Thmani",
+  "type": "background",
+  "_id": "wQkZJzoYi9qT6ayo",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Se dice que el combate con espadas es como una danza. Haces que esta comparación sea literal.</p><p><em>Ventajas en el libro: Escuela de esgrima (Awal Thmani).</em></p>",
+    "used": false,
+    "quirk": "<p>Gana 1 punto de héroe cuando evites un conflicto convenciéndolos de que se centren en sus similitudes y no en sus diferencias.</p>",
+    "skills": [
+      "athletics",
+      "notice",
+      "perform",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Academia de esgrima",
+      "Fascinar"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 175",
+    "nation": "khemet"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

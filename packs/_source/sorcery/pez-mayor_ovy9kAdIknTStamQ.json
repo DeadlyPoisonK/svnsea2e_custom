@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Pez Mayor",
+  "type": "sorcery",
+  "_id": "ovy9kAdIknTStamQ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p><br>El mohwoo del pez representa una b&uacute;squeda o un descubrimiento, normalmente personal o de algo que el<br>buscador no es consciente. Podr&iacute;a ser la revelaci&oacute;n de una&nbsp;verdad del pasado de la propia persona o un viaje hacia el&nbsp;autodescubrimiento y el entendimiento.</p>\n<hr>\n<p><br>Activa este mohwoo en lugar de gastar 1 Aumento&nbsp;durante una secuencia de acci&oacute;n o dram&aacute;tica cuando tu<br>tarea implique nadar o cuando estar en el agua (al menos&nbsp;medio sumergido) ser&iacute;a ventajoso para la acci&oacute;n que<br>desees realizar.</p>",
+    "infosource": "Naciones Piratas, p. 170",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 103125,
+  "ownership": {
+    "default": 0
+  }
+}

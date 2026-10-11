@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Parshand",
+  "type": "sorcery",
+  "_id": "itWrPUnxsRo4tcfS",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado para crear un arma de la nada. Esta arma es claramente mística; puedes crear una espada llameante, pero no una hoja de acero mundana. No puedes crear un arma compleja (como un arma de fuego) a través de este Legado. La primera vez que golpeas a un enemigo con esta arma en cada ronda, ignora cualquier forma de reducción de daño sobrenatural (es decir, cualidades de monstruo, otras Hechicerías, etc.) y las Heridas provocadas no se pueden evitar de ninguna manera (como usando maniobras de Esgrima o gastando Aumentos). Este Legado dura hasta el final de la escena o hasta que el objeto deja tus manos, lo que suceda primero.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 179",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

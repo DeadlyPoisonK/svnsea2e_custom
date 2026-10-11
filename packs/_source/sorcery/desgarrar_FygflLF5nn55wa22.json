@@ -1,0 +1,22 @@
+{
+  "folder": "Mxa9nYJzv3JTmlII",
+  "name": "Desgarrar",
+  "type": "sorcery",
+  "_id": "FygflLF5nn55wa22",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Enormes garras brotan de tus dedos, capaces de infligir heridas terribles. Inflige a un solo objetivo tantas Heridas como tu Discordia. Luego, tu Discordia pasa a ser 0.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 207 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

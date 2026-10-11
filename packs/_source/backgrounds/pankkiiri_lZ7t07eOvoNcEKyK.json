@@ -1,0 +1,32 @@
+{
+  "folder": "TPYIDgBQTXjRlnH2",
+  "name": "Pankkiiri",
+  "type": "background",
+  "_id": "lZ7t07eOvoNcEKyK",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>El dinero habla y tú sabes escucharlo.</p><p><em>Ventajas en el libro: Mecenas (Liga de Vendel).</em></p>",
+    "infosource": "Naciones de Théah vol. 1, p. 205",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando uses tu posición o tu fortuna para intimidar a un personaje para que haga algo y eso te meta en problemas.</p>",
+    "skills": [
+      "aim",
+      "convince",
+      "empathy",
+      "sailing",
+      "scholarship"
+    ],
+    "advantages": [
+      "Endulzar el trato",
+      "Mecenas"
+    ],
+    "nation": "vesten",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

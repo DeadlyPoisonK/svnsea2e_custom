@@ -1,0 +1,33 @@
+{
+  "folder": "oV6tWUZgX7fd5HWW",
+  "name": "Fangshi (Boticario)",
+  "type": "background",
+  "_id": "PJiwBGOGrBF0CK66",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Sabiduría</p><p><em>Ventajas en el libro (en inglés): Magic (Alchemy), Magic (Alchemy).</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando asumas un riesgo para conseguir un ingrediente alquímico raro, valioso o necesario.</p>",
+    "skills": [
+      "convince",
+      "ride",
+      "scholarship",
+      "tempt",
+      "theft"
+    ],
+    "advantages": [
+      "Hechicería (Khitai)",
+      "Hechicería (2)",
+      "Estómago de hierro (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 111 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

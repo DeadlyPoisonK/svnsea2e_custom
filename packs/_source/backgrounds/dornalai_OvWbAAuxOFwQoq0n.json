@@ -1,0 +1,33 @@
+{
+  "folder": "5jr7B6vkuuAAECFW",
+  "name": "Dornálaí",
+  "type": "background",
+  "_id": "OvWbAAuxOFwQoq0n",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>«Eh, eres un tío grande, amigo. Apostemos en una pelea, ¿quieres?».</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 203",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando formes un vínculo con tu oponente después de una pelea y pienses que lo pasado, pasado está.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "convince",
+      "intimidate",
+      "notice"
+    ],
+    "advantages": [
+      "Boxeador",
+      "Buen bebedor",
+      "Buena pegada"
+    ],
+    "nation": "inismore",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

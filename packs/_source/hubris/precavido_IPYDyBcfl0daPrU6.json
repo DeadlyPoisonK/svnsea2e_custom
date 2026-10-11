@@ -1,0 +1,17 @@
+{
+  "folder": "rxiPEUOSj58lttE0",
+  "name": "Precavido",
+  "type": "hubris",
+  "_id": "IPYDyBcfl0daPrU6",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibes 1 punto de héroe cuando ocultas información a tus aliados y compartir esa información sería beneficioso para ti.</p>",
+    "infosource": "El Ceiba · El Nuevo Mundo, p. 169"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

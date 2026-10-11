@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Cenhelm, el Ansioso",
+  "type": "sorcery",
+  "_id": "ryv5miOPZFVyTWat",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cenhelm se ganó su nombre tanto por su espada como por su mente. Las historias cuentan que ningún caballero tenía un ingenio o una espada más rápidos que los de Cenhelm. Las historias de Cenhelm suelen empezar con una situación precaria en la que se ha metido por bocazas y su espada reduciendo después los problemas a pedazos.</p><p>Característica mayor: Maña Característica menor: Ingenio</p><h3>Naciones de Théah vol. 1, p. 48</h3><p><strong>Virtud:</strong> Agudo (El diablo). <strong>Hibris:</strong> Prepotente (El profeta).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando saques tu acero para acabar una discusión, debate o negociación.</p><p><strong>Glamour legendario — Canalizar las espadas:</strong> Puedes invocar las habilidades de combate de todos los caballeros que han encarnado a Cenhelm el Ansioso. Activa este Glamour para obtener la bonificación de la Escuela de cualquier estilo de esgrima durante la duración de la secuencia de acción y sin importar el arma que estés usando.</p>",
+    "infosource": "7º Mar (básico), p. 211",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

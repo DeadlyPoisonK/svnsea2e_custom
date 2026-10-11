@@ -1,0 +1,22 @@
+{
+  "folder": "XxbatVafsy3T61pQ",
+  "name": "Resina de carroña",
+  "type": "sorcery",
+  "_id": "a66MXD5NXtaZKy72",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Savia de pino mezclada con la grasa derretida de un cad&aacute;ver, sangre seca y un pu&ntilde;ado de moscardas trituradas. Aplica la Resina de carro&ntilde;a sobre la piel o las ropas de un personaje.</p>\n<p>Hasta el final de la escena, todas las alima&ntilde;as e insectos del lugar (naturales o antinaturales) acudir&aacute;n hacia el objetivo y lo atacar&aacute;n con sa&ntilde;a, infligi&eacute;ndole Heridas acordes a las criaturas que habiten el sitio. El objetivo solo puede librarse de la Resina arroj&aacute;ndose al barro o al agua, revolc&aacute;ndose por el suelo o desprendi&eacute;ndose por completo de la prenda o piel manchada, lo que requiere una acci&oacute;n y un Aumento durante una secuencia de acci&oacute;n&nbsp;</p>",
+    "used": false,
+    "infosource": "Creado por la mesa (no aparece en los manuales)",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

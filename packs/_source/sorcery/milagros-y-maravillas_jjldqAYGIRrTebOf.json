@@ -1,0 +1,22 @@
+{
+  "folder": "foSRT3NgIGvdLO60",
+  "name": "Milagros y Maravillas",
+  "type": "sorcery",
+  "_id": "jjldqAYGIRrTebOf",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Los Milagros son poderes que no requieren que lleves tu Maravilla. Estos Milagros pueden mostrarle a la gente que al-Musawwir los vigila y los protege. Cada Maravilla solo te otorga dos Milagros. Todos los Milagros requieren 1 punto de héroe para activarse.</p><p>Activa este Milagro para crear una efigie de arcilla de un animal que pueda caber en la palma de tu mano. Tu efigie es indistinguible de un animal real de su tipo. Tu creación dura hasta el final de la escena y luego vuelve a convertirse en arcilla. Mientras tu efigie está activa, puedes ver a través de sus ojos y darle instrucciones mentales simples como decirle a dónde ir, en qué dirección mirar, etc. Debes tener una bola de arcilla, barro o un material similar para activar este Milagro. Activa este Milagro para sanar o hacer crecer una planta. Esto puede hacer que las enredaderas crezcan en una pared para proporcionar una escalera o que un árbol se incline y crezca atravesando un cañón (siempre que se encuentre dentro de la capacidad natural del árbol crecer hasta un tamaño suficiente para cruzar el cañón). Esto no crea vegetación y solo funciona en la vida vegetal existente.</p><p>Activa este Milagro para proporcionar iluminación a tu alrededor o alrededor de tu Maravilla durante una escena. La iluminación es tan brillante como una lámpara de aceite y puedes atenuarla o aumentarla como desees hasta el final de la escena.</p><p>Activa este Milagro para que tu Maravilla vuele hasta tu mano. Tu Maravilla evita obstáculos y no daña a nadie ni a nada. Si algo la sostiene, tira de ello hasta que se suelta, pero no puede levantar nada del suelo a ninguna distancia que pueda dañarlo. Si tu Maravilla queda atrapada (por magia o por cualquier otro medio), este hechizo no funciona. Tu Maravilla, dependiendo de la distancia a la que te encuentres, te alcanza en esta escena o en la siguiente. Debe ser una gran distancia, por ejemplo, varios días de viaje a pie, para no llegar durante esta escena. Vuela a una velocidad impresionante y aterriza suavemente en tu mano o junto a ti.</p><p>Activa este Milagro para manipular la lluvia durante una escena. Puedes hacer que llueva tanto o tan poco como quieras, creando una suave lluvia primaveral o un aguacero torrencial que será recordado durante años. Después de la escena, el clima vuelve a la normalidad.</p><p>Activa este Milagro para hacer que el agua sea limpia y saludable para beber durante una escena. Puedes elegir activar esta Maravilla en una fuente de agua (como un manantial natural o un lago) o en un recipiente para beber (un odre o una copa). La fuente o recipiente limpia cualquier líquido que contenga de cualquier impureza, y lo hace potable sin efectos secundarios.</p><p>Activa este Milagro para curar permanentemente la ceguera, la mudez, la sordera, la parálisis o cualquier enfermedad similar del objetivo. Hasta el final de la escena, sufres la enfermedad del objetivo; si curas la ceguera de una persona, por ejemplo, estás ciego hasta el final de la escena.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 166",
+    "sorctype": "prophet",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

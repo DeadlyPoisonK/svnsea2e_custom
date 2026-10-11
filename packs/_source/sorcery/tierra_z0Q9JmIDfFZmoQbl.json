@@ -1,0 +1,21 @@
+{
+  "folder": "YTcrjQkDWcQTDfXz",
+  "name": "Tierra",
+  "type": "sorcery",
+  "_id": "z0Q9JmIDfFZmoQbl",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Una abonsam con el Trato de la Tierra es un monstruo enorme y de aspecto brutal que nunca podría pasar por humana. Puede manipular el suelo bajo sus pies como quiera, y todas las piedras, gemas o minerales responden a sus órdenes.</p><ul><li>Animar materiales terrestres cercanos para crear un enorme monstruo de tierra viva. Este monstruo sigue órdenes de una sola palabra, como «ataca», «defiende» o «quédate» e ignoran las órdenes más complejas.</li><li>Hacer que en el suelo aparezca un sumidero capaz de engullir a toda una ciudad.</li><li>Hacer que tu piel sea tan dura como la piedra. Hasta el final de la ronda, cada vez que sufras Heridas, el número de Heridas sufridas se reduce en 1.</li><li>Transformar una pequeña cantidad de material terrestre, como hierro o barro, en otro material terrestre, como oro o piedra. Este efecto dura hasta el final de la escena y luego el material vuelve a su forma original.</li><li>Rompe una gran cantidad de materiales terrestres, como una pared de ladrillo o una roca.</li><li>Hacer la tierra ondular debajo de los pies de un objetivo. Hasta el final de la ronda, el objetivo debe gastar un Aumento adicional para realizar cualquier acción que no sea quedarse quieto.</li><li>Camuflarte a ti, y a cualquier persona que te toque en una cantidad de material terrestre con suficiente volumen para abarcar a todos los objetivos afectados. Mientras están dentro del material terrestre no pueden ser detectados, pero son conscientes de su entorno. Un poco de daño al material no te hace nada, pero su completa destrucción te expulsa de su área sin daños.</li></ul>",
+    "infosource": "Tierras de Fuego y Oro, p. 191",
+    "sorctype": "melbur",
+    "sorcdur": "none",
+    "sorccat": "patron",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

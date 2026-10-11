@@ -1,0 +1,21 @@
+{
+  "folder": "tRWGOFtYaF1huSvr",
+  "name": "Conciencia",
+  "type": "sorcery",
+  "_id": "D9Vuxy4AQW7IJF1b",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado para preguntarle al DJ la ubicación específica de una persona, lugar o cosa. El DJ debe responder honestamente y debe ser generoso con la información que da. Por ejemplo, si estás tratando de encontrar la biblioteca secreta del rajá, debería decirte que «está en el tercer piso del palacio, adjunta a su dormitorio» en lugar de simplemente «en el palacio».</p>",
+    "infosource": "El Imperio de la Media Luna, p. 178",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "common"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "vxu1cHRUsVi9hzod",
+  "name": "Caballería",
+  "type": "advantage",
+  "_id": "pIwf33v644JNiDZG",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando a una unidad con este Mérito se le ordena adoptar la Estrategia de Choque, sus 10 explotan.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 195",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

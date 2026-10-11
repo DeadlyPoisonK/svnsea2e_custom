@@ -1,0 +1,21 @@
+{
+  "folder": "GijgBUHwVjgAk4A4",
+  "name": "Fuerza",
+  "type": "sorcery",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El pictograma de Fuerza es el toro, que también significa estabilidad. Los Talismanes de Fuerza a veces están hechos de arcilla en forma de toros pequeños.</p><p><em>Talismán: </em>Cuando activas un Talismán de Fuerza, el portador es bendecido con la fuerza del ka imbuido dentro. Durante el resto de la ronda, tiene un Aumento gratuito para cualquier acción que utilice Músculo.</p><p><em>Inscripción: </em>Cuando se activa una Inscripción de Fuerza en un arma, hace daño adicional en una pelea. Añade una cantidad de Heridas adicionales idéntica a los niveles de Pelea durante el resto de la escena.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 186",
+    "sorctype": "heka",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "RpUpDo7jpQ2VTWls",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

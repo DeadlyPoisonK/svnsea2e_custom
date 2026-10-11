@@ -1,0 +1,33 @@
+{
+  "folder": "zs32dqYrmZlqCpWg",
+  "name": "Rycerz senatu",
+  "type": "background",
+  "_id": "gDuWlWxbr5k5d30Z",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Eres la voz del Senat, representas su voluntad y solo respondes ante él.</p><p><em>Ventajas en el libro: Mecenas (Senat).</em></p>",
+    "infosource": "Naciones de Théah vol. 2, p. 207",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando decides ocultarle algo a un miembro de la autoridad por una noble razón y eso te mete en problemas.</p>",
+    "skills": [
+      "athletics",
+      "convince",
+      "empathy",
+      "ride",
+      "weaponry"
+    ],
+    "advantages": [
+      "Jinete consumado",
+      "Lingüista",
+      "Mecenas"
+    ],
+    "nation": "sarmatia",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

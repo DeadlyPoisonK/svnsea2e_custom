@@ -1,0 +1,21 @@
+{
+  "folder": "JMAGvB9WVghinr6q",
+  "name": "Nivut",
+  "type": "sorcery",
+  "_id": "D2BAWaCLAvqeLo9L",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Nivut es la promesa del sentido de dirección. Cuando estás perdido o no estás seguro, Nivut revela el siguiente paso. Todos los que deambulan pueden encontrar su camino. <strong>Amuleto: </strong>Cuando activas un Amuleto Nivut, tu mirada se dirige hacia algo que puedes usar. Creas una Oportunidad gratuita y puedes actuar inmediatamente gastando solo un Aumento.</p><p><strong>Escritura: </strong>Cuando activas una Escritura Nivut, el camino correcto se vuelve claro. Pídele al DJ instrucciones sobre cómo llegar a una ubicación. Mientras continúes en la dirección correcta, la Escritura en tu cuerpo brilla suavemente. Si te alejas de la ruta, la Escritura se calienta y atenúa su brillo para advertirte. Si abandonas voluntariamente el camino (para investigar algo que te llame la atención, para encontrar comida o para lograr algún otro objetivo, incluso si la distracción dura solo unos minutos), el efecto termina.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 174",
+    "sorctype": "chozeh",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

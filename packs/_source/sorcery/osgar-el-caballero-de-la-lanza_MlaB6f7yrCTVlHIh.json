@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Osgar, el Caballero de la Lanza",
+  "type": "sorcery",
+  "_id": "MlaB6f7yrCTVlHIh",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>A pesar de que los demás caballeros portaban espadas, Osgar llevaba una lanza. El resto de caballeros se burlaban de Osgar y decían que una lanza no era un arma para un caballero. Pero cuando se les echó encima un enorme jabalí, fue Osgar con su lanza quien mató a la bestia. Después de eso, nadie se volvió a burlar del Caballero de la Lanza.</p><p>Característica mayor: Maña Característica menor: Brío</p><h3>Naciones de Théah vol. 1, p. 50</h3><p><strong>Virtud:</strong> Victorioso (La guerra). <strong>Hibris:</strong> Rencoroso (Reunión).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando crees problemas o tensiones al actuar de forma contraria a lo que la sociedad espera o por dar la cara por alguien que actúe así.</p><p><strong>Glamour legendario — Lo tomaré de aquí:</strong> Activa este Glamour cuando un aliado se quede sin Aumentos durante una secuencia de acción o dramática para conseguir una cantidad de Aumentos adicionales igual a tu Maña. Solo puedes usar estos Aumentos para continuar o completar algo que haya estado haciendo el aliado, aunque no necesariamente de la misma forma.</p>",
+    "infosource": "7º Mar (básico), p. 213",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

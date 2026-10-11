@@ -1,0 +1,22 @@
+{
+  "folder": "vLaujvVdVjmbDTQL",
+  "name": "Flotar",
+  "type": "sorcery",
+  "_id": "JLID9JHPKkNeKVPW",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este poder para flotar justo por encima del suelo durante el resto de la escena. Esto evita que aparezcan huellas en el suelo y cualquier efecto que tu peso tenga en el medio ambiente (como romper un puente débil), ya que no ejerces ninguna presión sobre la superficie sobre la que flotas. Sin embargo, esto no te protege de los peligros de tu entorno: si flotas sobre el fuego, aún te quemas, o si flotas sobre el océano, una ola aún puede ahogarte. Puedes navegar por tu entorno como si estuvieras caminando normalmente. En el segundo paso, tu Maravilla te proporciona la capacidad de mover cualquier obstáculo, despejando el sendero para continuar por tu Camino.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "f1ztwTMcX7isHIH6",
+  "name": "Legado",
+  "type": "sorcery",
+  "_id": "jHwhAvOpXMWsOQkf",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Eres parte de una larga estirpe de orgullosos guerreros. Tal vez esta espada fue dada por perdida cuando tu padre murió en la batalla, pero te la dio un ermitaño del desierto que te ha tomado como aprendiz. Ganas 2 dados de bonificación en cualquier Riesgo en el que la historia de tu espada, o aquellos que la manejaron, influya en aquellos con los que interactúas.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 199",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

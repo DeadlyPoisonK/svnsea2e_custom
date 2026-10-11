@@ -1,0 +1,22 @@
+{
+  "folder": "e7zC6zFneGTjKAV7",
+  "name": "Estrella Litet Merke",
+  "type": "sorcery",
+  "_id": "ZD0zrNrxRs5Rmu4t",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>El personaje que has elegido puede realizar una acción de inmediato sin gastar un Aumento, pero dicha acción debe usar las habilidades de Esconder o Robar (no tiene que pagar los costes por Improvisar).</p><p>La runa Hierro es la que representa las pruebas de voluntad y la perseverancia. La runa da nombre a los héroes que se sobreponen a los grandes reveses. Muchos la utilizan para protegerse de la enfermedad y la desgracia.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 191",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

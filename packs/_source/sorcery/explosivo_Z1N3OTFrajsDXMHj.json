@@ -1,0 +1,22 @@
+{
+  "folder": "JkHu2Lc75NtTtwLy",
+  "name": "Explosivo",
+  "type": "sorcery",
+  "_id": "Z1N3OTFrajsDXMHj",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Arrojar esta poción al suelo provoca un fuego explosivo. Cada personaje en la Zona donde se arroje (amigo o enemigo) sufre tantas Heridas como la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 200 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

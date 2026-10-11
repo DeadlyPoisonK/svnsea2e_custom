@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Mañoso",
+  "type": "advantage",
+  "_id": "ToTMiIFWY7gnqZ9n",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para reparar un objeto roto, apañar una pistola estropeada, parchear un barco que tiene una fuga o realizar milagros similares que hagan que el objeto funcione con normalidad durante el resto de la escena. Al final de la escena, o si el objeto sufre cualquier daño adicional, este se vuelve inservible hasta que tengas tiempo de realizar una reparación seria con las herramientas adecuadas.</p>",
+    "infosource": "7º Mar (básico), p. 150",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Gros",
+  "sorting": "a",
+  "folder": "pnQ66D5r1OzZIDZT",
+  "type": "Item",
+  "_id": "NqSlX828sLHAWCwO",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "1e571efdb640d3760c718135ae5091f2f5af9d96"
+    }
+  }
+}

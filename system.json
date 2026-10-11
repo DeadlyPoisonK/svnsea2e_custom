@@ -3,13 +3,11 @@
     "name": "svnsea2e",
     "title": "7th Sea Second Edition (Unofficial)",
     "description": "The 7th Sea Second Edition (Unofficial) system for FoundryVTT!",
-    "version": "23.3",
+    "version": "24.0",
     "compatibility": {
-        "minimum": "13.341",
-        "verified": "13.341",
-        "maximum": "13"
+        "minimum": "14",
+        "verified": "14"
     },
-    "templateVersion": 3,
     "authors": [
         {
             "name": "DeadlyPoisonK"
@@ -63,15 +61,17 @@
             "dangerpts": {},
             "hero": {
                 "htmlFields": [
-                    "concept",
-                    "arcana.virtue.description"
+                    "concept"
                 ]
             },
-            "monster": {},
+            "monster": {
+                "htmlFields": [
+                    "concept"
+                ]
+            },
             "playercharacter": {
                 "htmlFields": [
-                    "concept",
-                    "arcana.virtue.description"
+                    "concept"
                 ]
             },
             "ship": {
@@ -81,91 +81,185 @@
             },
             "villain": {
                 "htmlFields": [
-                    "concept",
-                    "arcana.virtue.description"
+                    "concept"
                 ]
             }
         },
         "Item": {
             "advantage": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "artifact": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "background": {
                 "htmlFields": [
-                    "desciption",
+                    "description",
                     "quirk"
                 ]
             },
             "duelstyle": {
                 "htmlFields": [
-                    "desciption",
+                    "description",
                     "bonus"
                 ]
             },
             "monsterquality": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "scheme": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "secretsociety": {
                 "htmlFields": [
-                    "desciption",
+                    "description",
                     "concern",
                     "earnfavor",
-                    "callupon",
-                    "favor"
+                    "callupon"
                 ]
             },
             "shipadventure": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "shipbackground": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "sorcery": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "story": {
                 "htmlFields": [
-                    "desciption"
+                    "description",
+                    "reward",
+                    "endings",
+                    "steps"
                 ]
             },
             "virtue": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             },
             "hubris": {
                 "htmlFields": [
-                    "desciption"
+                    "description"
                 ]
             }
+        },
+        "ChatMessage": {
+            "roll": {}
         }
     },
-    "gridDistance": 5,
-    "gridUnits": "ft",
+    "packs": [
+        {
+            "name": "advantages",
+            "label": "Ventajas",
+            "path": "packs/advantages",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "backgrounds",
+            "label": "Trasfondos",
+            "path": "packs/backgrounds",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "dueling",
+            "label": "Duelos",
+            "path": "packs/dueling",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "sorcery",
+            "label": "Hechicería",
+            "path": "packs/sorcery",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "virtues",
+            "label": "Virtudes",
+            "path": "packs/virtues",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "hubris",
+            "label": "Hibris",
+            "path": "packs/hubris",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "effects",
+            "label": "7th Sea Effects",
+            "path": "packs/effects",
+            "type": "ActiveEffect",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        }
+    ],
+    "packFolders": [
+        {
+            "name": "7º Mar",
+            "sorting": "m",
+            "color": "#6b1d1d",
+            "packs": [
+                "advantages",
+                "backgrounds",
+                "dueling",
+                "sorcery",
+                "virtues",
+                "hubris",
+                "effects"
+            ]
+        }
+    ],
+    "grid": {
+        "distance": 5,
+        "units": "ft"
+    },
     "primaryTokenAttribute": "wounds",
     "secondaryTokenAttribute": "dwounds",
     "url": "https://github.com/DeadlyPoisonK/svnsea2e_custom",
-    "manifest": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.3/system.json",
-    "download": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.3/system.zip",
+    "manifest": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/latest/download/system.json",
+    "download": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v24.0/system.zip",
     "license": "MIT"
 }

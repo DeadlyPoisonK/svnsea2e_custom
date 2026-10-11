@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Buen ojo para el talento (Khitai)",
+  "type": "advantage",
+  "_id": "LDSn6Bkto0YdVSWL",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastas puntos de Riqueza para contratar una banda de matones, la Fuerza de esa banda de matones es 1 punto mayor de lo normal.</p>",
+    "infosource": "Khitai, p. 112 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

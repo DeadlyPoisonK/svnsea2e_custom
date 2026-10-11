@@ -1,0 +1,22 @@
+{
+  "folder": "DMohupPGQDu5qKnD",
+  "name": "La «maldición» del Galdr",
+  "type": "sorcery",
+  "_id": "bhzXyPcp9K5x7tdq",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El Galdr es una magia de equilibrios. El futhark representa tanto un ideal como su contrario. Utilizar una runa para conseguir prosperidad conduce inevitablemente a una pérdida, utilizar una runa para amar termina finalmente con un desengaño. Incluso si no se pierde lo que se ganara, la runa siempre acaba por equilibrarse. Por tanto, utilizar el Galdr contra los enemigos terminará por beneficiarles. Los que no están iniciados en la magia de Vestenmennavenjar temen a los valas y a sus poderes, pues les preocupa que usen una runa contra ellos. Aunque los efectos iniciales pueden ser dolorosos, casi siempre terminan concediendo alguna ventaja al objetivo. Pocos saben que lo bueno que les ha pasado es culpa del Galdr, y pocos valas admiten que sea así.</p><p>Naturalmente, lo que el vala debe pagar por utilizar su magia es menos conocido y mucho más desastroso. Si un vala utiliza su Galdr sin la voluntad concreta de hacerlo (lo que significa que lo utiliza en un momento de pasión o para algún propósito insignificante), el efecto equilibrador de la runa terminará por afectarle. El poder místico que vincula el mundo no le permitirá perturbar el equilibrio, y esto suele estar más castigado de lo habitual.</p><p>Un vala se entrena durante años antes de comenzar a crear runas con el propósito de utilizar el Galdr. Cuando crea sus runas, lo hace de forma voluntaria, insuflando su propia fuerza vital en las runas. Cuando utiliza la runa que ha creado, rompe dicha voluntad, convirtiéndola en una fuerza que cambia el mundo. Un vala sabe inherentemente si el Galdr ha sido usado de forma correcta o no y puede sentir la magia fluyendo a través de él.</p><p>Si un personaje utiliza Galdr en un momento de rencor, de pasión o por razones irreflexivas, el DJ puede gastar un punto de peligro para infligir el inconveniente de la stort merke sobre el héroe. No conseguirá los beneficios positivos de la merke, solo los negativos.</p><p>Hay doce runas del futhark en total. Cada runa tiene dos marcas o palabras asociadas a ella, lo que suma un total de veinticuatro palabras. Cada runa puede representar una dualidad (una cosa y su opuesta), aunque no siempre. Estas son las palabras que Ekerila descubrió y tradujo, y las leyendas dicen que con ellas los dioses crearon todo lo que existe: humanos y animales, montañas y mares.</p><p>Son, literalmente, las palabras que crearon el mundo. Estas runas se pueden encontrar por todo Vestenmennavenjar grabadas en piedras y bordadas en tejidos, contando las historias de los que vivieron antes que nosotros. Cada una tiene varios significados, pero el vala conoce el principal y su significado básico.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 190",
+    "sorctype": "galdr",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

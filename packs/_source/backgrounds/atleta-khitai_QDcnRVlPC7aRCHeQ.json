@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Atleta (Khitai)",
+  "type": "background",
+  "_id": "QDcnRVlPC7aRCHeQ",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Respeto</p>",
+    "quirk": "<p>Gana un punto de héroe cuando uses tu fama o reputación como una oportunidad para inspirar a otro personaje.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "intimidate",
+      "notice",
+      "perform"
+    ],
+    "advantages": [
+      "Lengua de plata (Khitai)",
+      "Reflejos rápidos (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 104 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

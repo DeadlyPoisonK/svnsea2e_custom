@@ -1,0 +1,22 @@
+{
+  "folder": "k1HL2jkmGetnNNuC",
+  "name": "Pacificar",
+  "type": "sorcery",
+  "_id": "6gQcrc0TlwBQXGRB",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este poder para hacer que otro personaje se tranquilice. Si es amenazado o atacado, reacciona normalmente, y sabe que has usado un efecto mágico para alterar su estado de ánimo. El personaje permanece tranquilo hasta el final de la escena, o hasta que es atacado o amenazado. Si usas esta habilidad durante una secuencia de acción, el personaje afectado está bajo Presión para no atacar, y esta Presión se vuelve a aplicar automáticamente al comienzo de cada ronda.</p><p>A veces, las palabras pueden interponerse en el camino de la verdadera comprensión. El segundo paso permite a tu Maravilla proyectar tus pensamientos a tus amigos sin que tengas que verbalizarlos. Como cada Maravilla es diferente, esto puede suceder de muchas maneras distintas. Por ejemplo, podría ser un susurro que solo tus compañeros pueden escuchar, podría ser una voz angelical que habla justo detrás de ti o tus aliados simplemente saben lo que quieres decir.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 168",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "path",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

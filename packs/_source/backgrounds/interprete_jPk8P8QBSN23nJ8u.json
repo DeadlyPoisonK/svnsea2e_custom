@@ -1,0 +1,32 @@
+{
+  "folder": "8AjTGHJtL0XNoqWh",
+  "name": "Intérprete",
+  "type": "background",
+  "_id": "jPk8P8QBSN23nJ8u",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Trabajas sin descanso para crear una experiencia de belleza.</p>",
+    "infosource": "7º Mar (básico), p. 140",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando uses tus habilidades de complacer al público por algo más que conseguir unas cuantas monedas.</p>",
+    "skills": [
+      "athletics",
+      "empathy",
+      "perform",
+      "tempt",
+      "theft"
+    ],
+    "advantages": [
+      "Inspirar generosidad",
+      "Virtuoso"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

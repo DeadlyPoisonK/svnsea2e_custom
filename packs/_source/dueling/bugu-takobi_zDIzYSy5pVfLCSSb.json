@@ -1,0 +1,18 @@
+{
+  "folder": "xHKlTiVU5lOVZ9t2",
+  "name": "Bugu Takobi",
+  "type": "duelstyle",
+  "_id": "zDIzYSy5pVfLCSSb",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Una de las técnicas de lucha traídas de Ifri usa una espada corta y movimientos para distraer y desequilibrar al oponente, así como para crear ventajas. Un machete funciona mejor para esta técnica, que confía en los cortes rápidos mientras se mueve ágilmente dentro y fuera del alcance del oponente. Estos movimientos similares a un baile y los pasos rápidos confunden al oponente, lo que permite lanzar cortes como dardos y dar pasos laterales para evitar recibir daño.</p><p>Los mawons perfeccionaron el estilo y su capacidad para no delatar la dirección de la que provendrá el ataque y lo usaron para luchar contra los opresores del Atabeano. Hoy en día existen un puñado de escuelas en las que aprender Bugu Takobi en el mar Atabeano. Las dos más conocidas son Makaranta Takobi (literalmente «escuela de espada» y se encuentra en el Arco Sur de La Bucca, cerca del Refugio del Atardecer) y el Monumento de Taiyewo (que se encuentra en Kap-Kalfu en Jaragua, en las sombras de los Príncipes Gemelos). Recientemente, se rumorea que un maestro de Bugu Takobi ha viajado a la Mancomunidad Sármata esperando abrir una escuela allí.</p>",
+    "infosource": "Naciones Piratas, p. 173",
+    "bonus": "<p><strong>Takobi Gudana.</strong></p><p>Cuando esgrimas un arma de mano pequeña (como un machete o un hacha de mano) en una mano y nada en la otra, consigues una maniobra especial llamada Takobi Gudana, o «flujo de espada». Takobi Gudana evita tantas Heridas como tu nivel en Armas y la siguiente maniobra que realices esta ronda que inflija Heridas inflige 1 Herida adicional. Puedes realizar Takobi Gudana una vez por ronda.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

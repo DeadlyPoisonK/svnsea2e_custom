@@ -1,0 +1,18 @@
+{
+  "folder": "jraBR9ng5ywEQ4lN",
+  "name": "Waglichina",
+  "type": "duelstyle",
+  "_id": "FP7w4Nu3qlEDOjx7",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Waglichina es un estilo creado y utilizado casi exclusivamente por los guerreros Tupac de Kuraq. Los sacerdotes de Suway entrenaron en este estilo a sus guerreros más talentosos en P'alqacamba. Hacía hincapié en matar a un tipo específico de ser: los dioses. Los guerreros Tupac enviados en Caza de Dioses se aseguraron de que las deidades permanecieran a merced de los soldados de Suway más especializados. En la batalla, los duelistas de Waglichina mantuvieron a los dioses, así como a sus adoradores mortales, fuera de equilibrio. Cuando eran derribados al suelo, otros Tupac los atacaban, intentando asestarles un golpe mortal.</p><p>Aunque originalmente era un estilo enseñado exclusivamente a los Tupac, el estilo Waglichina ha traspasado las fronteras de Kuraq hacia el resto de Aztlán y más allá. Los primeros maestros del estilo que se lo enseñaron a personas fuera de la orden fueron guerreros Tupac desilusionados que dejaron sus puestos para alejarse de los sacerdotes de la muerte. Ahora, los duelistas nahuacanos y tzak k'anos le enseñan Waglichina a sus propios estudiantes. Dentro de Kuraq, sin embargo, los Tokoyriq están atentos a identificar a cualquier maestro descarriado de Waglichina. Enseñar el estilo fuera de los Tupac y dentro de Kuraq es una elección peligrosa.</p>",
+    "infosource": "El Nuevo Mundo, p. 184",
+    "bonus": "<p><strong>Acometidas de Waglichina.</strong></p><p>Mientras uses un arma pesada (como un garrote o un hacha) en una mano y nada en la otra, obtienes una maniobra especial llamada «Acometida de Waglichina». Cuando realizas esta maniobra, infliges una Herida mientras tropiezas, empujas o de alguna manera desequilibras a tu oponente y lo derribas. Aplicas Presión al objetivo para que permanezca en el suelo. Hasta que el objetivo supere la Presión y realice una acción diferente, sufre una Herida adicional cada vez que recibe Heridas.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

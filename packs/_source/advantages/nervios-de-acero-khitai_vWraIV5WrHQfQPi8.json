@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Nervios de acero (Khitai)",
+  "type": "advantage",
+  "_id": "vWraIV5WrHQfQPi8",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cada vez que gastas un punto de héroe para concederte dados adicionales en un Riesgo contra una criatura o personaje con una cualidad de monstruo, obtienes 1 repetición de tirada además de los efectos normales de tu punto de héroe.</p>",
+    "infosource": "Khitai, p. 118 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "U5nMuKvobKHWGJgn",
+  "name": "La Crisopea",
+  "type": "sorcery",
+  "_id": "TnRGt9gjuhsGUQww",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El objetivo definitivo de la Alquimia es perfeccionar cualquier sustancia, lo que permitiría que algo tan básico y despreciable como el plomo revelaría ser tan valioso como el oro. Debido a esto, un boticario dedica su vida a ver la perfección donde los demás solo observan defectos.</p><p>Algunos ejemplos de resultados son:</p><ul><li>Mi héroe descubre la piedra filosofal, pero el coste de crearla es tal que solo puede usarla una vez.</li><li>Mi héroe no acaba su búsqueda, pero en su lugar encuentra un nuevo material alquímico que tiene unas propiedades que nunca se habían investigado.</li><li>Mi héroe es capaz de descubrir el verdadero secreto de la perfección, uno que acepta la realidad tal y como es en lugar de tratar de cambiarla.</li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 98",
+    "sorctype": "alquimia",
+    "sorccat": "magnum",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

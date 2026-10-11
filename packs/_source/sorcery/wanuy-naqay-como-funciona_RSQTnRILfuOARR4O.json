@@ -1,0 +1,22 @@
+{
+  "folder": "46pDhOiEQTukf2IT",
+  "name": "Wañuy Ñaqay: cómo funciona",
+  "type": "sorcery",
+  "_id": "RSQTnRILfuOARR4O",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cada vez que compras la ventaja de Hechicería, tu héroe aprende una Manifestación y un Giro. Cada vez que compras la ventaja de Hechicería después de la primera, obtienes una Manifestación y un Giro adicionales. Además, cada vez que compras esta Hechicería debes crear un nuevo talismán o fetiche, llamado Símbolo de la Muerte, para canalizar el poder de tu antepasado.</p>",
+    "infosource": "El Nuevo Mundo, p. 176",
+    "sorctype": "wanuy",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

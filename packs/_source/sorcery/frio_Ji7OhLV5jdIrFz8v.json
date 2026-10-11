@@ -1,0 +1,22 @@
+{
+  "folder": "UmOykxAiB4ACTBDv",
+  "name": "Frío",
+  "type": "sorcery",
+  "_id": "Ji7OhLV5jdIrFz8v",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Los dievai del Trato del Frío tienen una niebla visible que surge de su piel envuelta en hielo. Pueden helar el agua con solo tocarla, quizás incluso con solo mirarla.</p><p>Pueden convertir a un hombre en un bloque de hielo y hacerlo añicos al tocarlo con la punta del dedo o rayarlo con clavos de hielo imposiblemente afilados.</p><ul><li>Sumir una región en un invierno violento y repentino, haciendo que la vida vegetal muera debido al estallido de frío extremo, hacer que lagos y ríos se congelen y que una nevasca torrencial cubra un área de aproximadamente 800 metros de radio.</li><li>Provocar una avalancha y toda la destrucción que esta conlleva. Una avalancha de este tipo es lo suficientemente grande como para destruir una aldea de montaña de un tamaño moderado.</li><li>Hacer que se congele un personaje o un objeto que el losejas toque y que se cubra de una delgada capa de hielo. Mientras está cubierto, el personaje o el objeto no puede ser dañado ni destruido directamente.</li><li>Reformar o darle la forma que quieras a un trozo de hielo ya existente, con detalles exactos y precisos y con la apariencia exacta que quieras. Por ejemplo, podrías formar una llave de hielo para abrir una puerta específica, incluso si nunca has visto la llave que la abre.</li><li>Provocar que el agua estancada o que fluye lentamente se congele y se vuelva lo suficientemente sólida como para caminar sobre ella en un área de aproximadamente 30 metros cuadrados.</li><li>Crear un objeto de hielo sólido que puedas coger con una mano, como una espada. El objeto funciona como lo haría un objeto normal de ese tipo durante una escena, luego se derrite sin provocar daño.</li><li>Hacer que un bloque de hielo se fragmente con un simple toque. Si algo está encerrado dentro del hielo puedes decidir liberarlo sin provocarle ningún daño o hacerlo pedazos también.</li></ul>",
+    "infosource": "7º Mar (básico), p. 225",
+    "sorctype": "sanderis",
+    "sorccat": "deal",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

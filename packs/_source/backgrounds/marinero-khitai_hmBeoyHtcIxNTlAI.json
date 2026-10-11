@@ -1,0 +1,33 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Marinero (Khitai)",
+  "type": "background",
+  "_id": "hmBeoyHtcIxNTlAI",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Compasión</p>",
+    "quirk": "<p>Gana un punto de héroe cuando dejes a un lado tus deseos personales para garantizar la seguridad y el bienestar de tus aliados.</p>",
+    "skills": [
+      "athletics",
+      "notice",
+      "perform",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Buen bebedor (Khitai)",
+      "Equilibrio perfecto (Khitai)",
+      "Mañoso (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 107 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

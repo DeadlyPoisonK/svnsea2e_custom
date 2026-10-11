@@ -1,0 +1,17 @@
+{
+  "folder": "cM8cp2HgmMlzFy4Z",
+  "name": "Bravo",
+  "type": "virtue",
+  "_id": "UjoJFcQY77LU9FOP",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando te afecte el Miedo al lanzar un Riesgo. Durante ese Riesgo, tus 10 explotan. Si tus 10 ya explotan por otro efecto, tus 9 también explotan.</p>",
+    "infosource": "El explorador · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

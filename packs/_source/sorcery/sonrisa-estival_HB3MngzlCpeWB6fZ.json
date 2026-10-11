@@ -1,0 +1,22 @@
+{
+  "folder": "XxbatVafsy3T61pQ",
+  "name": "Sonrisa estival",
+  "type": "sorcery",
+  "_id": "HB3MngzlCpeWB6fZ",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Un emplasto fabricado a partir del agua de un arroyo rápido y hierbas muy dulces y empalagosas. Este ungüento se aplica sobre una Herida Dramática provocada por un monstruo no muerto y se curará al final de la escena.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 209",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

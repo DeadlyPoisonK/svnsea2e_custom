@@ -1,0 +1,19 @@
+{
+  "folder": "lsFFlvwOxj6nD71t",
+  "name": "Contraataque",
+  "type": "duelstyle",
+  "_id": "Y5hWHc5d6GNSlWW1",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Fallar al dominar Contraataque ha hecho que fallen más estudiantes al graduarse en su Academia que cualquier otra maniobra. Cuando realices Contraataque, evitas e infliges tantas Heridas como tu nivel de Armas.</p><p>Solo puedes realizar Contraataque en tu acción y debes realizarlo justo en la acción que sigue a la maniobra que causó las Heridas que estás evitando. Un espadachín solo puede realizar esta maniobra una vez por ronda.</p>",
+    "infosource": "7º Mar (básico), p. 235",
+    "used": false,
+    "bonus": ""
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

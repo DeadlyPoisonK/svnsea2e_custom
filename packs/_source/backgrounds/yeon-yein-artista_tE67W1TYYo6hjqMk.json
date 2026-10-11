@@ -1,0 +1,32 @@
+{
+  "folder": "yhr5tiU5LZn3tiW4",
+  "name": "Yeon-Yein (Artista)",
+  "type": "background",
+  "_id": "tE67W1TYYo6hjqMk",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Honestidad</p>",
+    "quirk": "<p>Gana un punto de héroe cuando uses lenguaje florido, poesía o algún tipo de arte escénico para educar a tu público.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "empathy",
+      "perform",
+      "scholarship"
+    ],
+    "advantages": [
+      "Virtuoso (Khitai)",
+      "Insistente (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 109 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

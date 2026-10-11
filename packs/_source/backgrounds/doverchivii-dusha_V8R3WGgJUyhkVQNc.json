@@ -1,0 +1,32 @@
+{
+  "folder": "HQe5z3Y1LzDB9lfT",
+  "name": "Doverchivii dusha",
+  "type": "background",
+  "_id": "V8R3WGgJUyhkVQNc",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Te encantan las historias dramáticas, pero sueles confiar en la persona equivocada y alejarte de los que realmente te necesitan.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 208",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando otro personaje se escapa tras mentirte o manipularte y eso te mete en problemas.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "notice",
+      "scholarship",
+      "theft"
+    ],
+    "advantages": [
+      "Confiado",
+      "Espíritu valiente"
+    ],
+    "nation": "ussura",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

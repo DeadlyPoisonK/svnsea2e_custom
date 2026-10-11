@@ -1,0 +1,23 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Hombre rana",
+  "type": "advantage",
+  "_id": "89ImT7HF7WuEwgbK",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando realices un Riesgo de Atletismo que implique nadar, consigues 1 dado adicional.</p>",
+    "infosource": "Naciones Piratas, p. 151",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

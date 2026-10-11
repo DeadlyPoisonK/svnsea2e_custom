@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Más allá de la vista",
+  "type": "advantage",
+  "_id": "HKw4KnLvwgTVY3nd",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe. Hasta el final de la escena, puedes ignorar cualquier impedimento a tu visión, sin importar la fuente. Por ejemplo, si tienes los ojos vendados o estás sumergido en la oscuridad total, puedes actuar como si pudieras ver normalmente. Por lo general, los héroes con esta ventaja tienen la capacidad de concentrarse en sus otros sentidos para compensar la pérdida de visión.</p>",
+    "infosource": "El Nuevo Mundo, p. 166",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 3100000,
+  "ownership": {
+    "default": 0
+  }
+}

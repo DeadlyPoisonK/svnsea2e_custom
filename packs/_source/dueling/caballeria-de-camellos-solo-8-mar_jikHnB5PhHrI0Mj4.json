@@ -1,0 +1,23 @@
+{
+  "folder": "vxu1cHRUsVi9hzod",
+  "name": "Caballería de camellos (solo 8º Mar)",
+  "type": "advantage",
+  "_id": "jikHnB5PhHrI0Mj4",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Si el general gasta 1 punto de héroe, los 10 de la Caballería de camellos explotan siempre que luchen junto a, al menos, otra unidad con este Mérito.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 195",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Levantaos, hermanos y hermanas (Khitai)",
+  "type": "advantage",
+  "_id": "38TtwMvAmvjaRPfe",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastas un punto de héroe para otorgar dados adicionales a otro héroe en un Riesgo, puedes dividir los dados concedidos entre cualesquiera héroes aliados que puedan verte u oírte. Cualquier héroe que reciba dados adicionales de este modo puede seguir gastando sus propios puntos de héroe para obtener dados adicionales y puede seguir recibiendo dados adicionales de otro héroe que gaste un punto de héroe para ayudarlo.</p>",
+    "infosource": "Khitai, p. 121 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

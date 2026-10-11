@@ -1,0 +1,32 @@
+{
+  "folder": "8AjTGHJtL0XNoqWh",
+  "name": "Marinero",
+  "type": "background",
+  "_id": "uBmsLg5DwiHKLZVu",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>No sirves a ningún país ni dueño, pero el barco y tu tripulación son toda la familia que necesitas.</p>",
+    "infosource": "7º Mar (básico), p. 140",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando pongas a un lado tus deseos personales para asegurar la seguridad y la comodidad de tus aliados.</p>",
+    "skills": [
+      "brawl",
+      "notice",
+      "sailing",
+      "tempt",
+      "weaponry"
+    ],
+    "advantages": [
+      "Pelea de bar",
+      "Vista de lince"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 2100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

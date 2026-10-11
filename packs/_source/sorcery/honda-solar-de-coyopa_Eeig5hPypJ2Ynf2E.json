@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Honda solar de Coyopa",
+  "type": "sorcery",
+  "_id": "Eeig5hPypJ2Ynf2E",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Durante toda su vida, Coyopa fue la mejor hondera de todas las tribus tzak k'anas. Podía lanzar una piedra más lejos y más fuerte que cualquier hombre, mujer o incluso dios que encontrara. Uno de los cuentos más populares es el que trata del desafío del dios Kakmo a Coyopa. Kakmo dijo que si Coyopa podía arrojar una piedra al sol, le daría la vida eterna; si Coyopa fallaba, se vería obligada a servir a Kakmo por toda la eternidad. Cuando un héroe porta la Honda solar de Coyopa, puede gastar 1 punto de héroe para causar a cualquier persona en la escena una cantidad de Heridas igual a los niveles del héroe en Apuntar.</p>",
+    "infosource": "El Nuevo Mundo, p. 173",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "QGZKkDVKIZ1yqSDj",
+  "name": "Valentía",
+  "type": "sorcery",
+  "_id": "XJBmOmRw0yO2ACdb",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Los personajes bajo el efecto de esta mezcla poseen una calma sobrenatural incluso frente al más horrendo de los monstruos. Un personaje que beba esta poción puede ignorar tantos rangos de Miedo como la Potencia de la poción. Este efecto dura hasta el final de la escena.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 200 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

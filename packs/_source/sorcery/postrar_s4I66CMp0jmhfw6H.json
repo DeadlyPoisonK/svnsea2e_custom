@@ -1,0 +1,21 @@
+{
+  "folder": "COvFX4cO6Vx1BswB",
+  "name": "Postrar",
+  "type": "sorcery",
+  "_id": "s4I66CMp0jmhfw6H",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa esta Manifestación cuando realices un Riesgo durante una secuencia de acción o una secuencia dramática usando Intimidar como Enfoque. Puedes gastar Aumentos para reducir la Fuerza de una banda de matones no muertos, incluso si de otra manera no podrías hacerlo. Cuando gastas un Aumento para reducir la Fuerza de una banda de matones (independientemente de si esa banda de matones son no muertos o no), reduces la Fuerza de la banda de matones en 2 en lugar de 1. Cuando gastas un Aumento para ejercer Presión sobre otro personaje que está no muerto o que posee Wañuy Ñaqay, el efecto de tu Presión se duplica y deben gastar 2 Aumentos adicionales (para un total de 3) para superar tu Presión. Este efecto dura hasta el final de la ronda.</p><p>Mientras estás bajo el efecto de Postrar, tu máscara brilla y reluce con llamas espectrales inquietantes y aterradoras.</p>",
+    "infosource": "El Nuevo Mundo, p. 178",
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "manifestation",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "MPxL1iJv9JWQs4La",
+  "name": "Honestidad",
+  "type": "sorcery",
+  "_id": "joqciiJBpjYEoFvg",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p><strong>Límite: </strong>Nunca debes decir una mentira, una verdad a medias ni ocultar la verdad.</p><p><strong>Penitencia:</strong> Solo puedes recuperar tus dones pasando un mes sin mentir.</p>",
+    "infosource": "7º Mar (básico), p. 218",
+    "sorctype": "darm",
+    "sorccat": "restriction",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

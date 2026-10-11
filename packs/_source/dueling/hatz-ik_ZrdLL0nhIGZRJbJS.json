@@ -1,0 +1,18 @@
+{
+  "folder": "jraBR9ng5ywEQ4lN",
+  "name": "Hatz'ik",
+  "type": "duelstyle",
+  "_id": "ZrdLL0nhIGZRJbJS",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Se cree que el Hatz'ik se originó entre los plebeyos de Tzak K'an debido a su dependencia de un bastón, un arma que los granjeros o trabajadores pueden obtener más fácilmente que una lanza. La leyenda dice que fue un viajero entre las montañas de la nación quien originalmente les enseñó el estilo. Este maestro le enseñaba a cualquiera que estuviera dispuesto a aprender, sin pedir nada a cambio. En los últimos años, el Hatz'ik ha ganado una gran popularidad. El caudillo de guerra Iktan Cha'zah es uno de los generales más consumados de la nación, cuyo bastón ha sido extremadamente bien utilizado tras años de batalla.</p><p>En manos de un duelista que ha dominado el Hatz'ik, una vez que un bastón comienza a girar, no se detiene hasta que la pelea termina. Muchos instructores les enseñan a sus alumnos que no importa lo lento que te muevas, siempre y cuando nunca dejes de mover tu arma. Sin embargo, en las manos de un maestro, los movimientos del bastón son casi imposibles de seguir. Una vez que el bastón comienza a moverse, crea una zona alrededor del duelista que permite responder con un aluvión de golpes incluso a la finta más cautelosa. Y una vez que el enemigo está agotado del encuentro, el usuario de Hatz'ik desata el impulso creado al hacer girar su arma en un choque extremadamente poderoso.</p>",
+    "infosource": "El Nuevo Mundo, p. 183",
+    "bonus": "<p><strong>Espiral de Hatz'ik.</strong></p><p>Cuando empuñas un bastón con ambas manos, puedes realizar una maniobra especial llamada «Espiral de Hatz'ik». Cuando realices esta maniobra, cualquier personaje que te inflija Heridas recibe una Herida en respuesta. La próxima vez que realices la maniobra de Estocada en esta ronda, infliges tantas Heridas adicionales como niveles en Donaire tengas y el efecto de tu Espiral Hatz'ik termina. Solo puedes realizar la Espiral Hatz'ik una vez por ronda.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

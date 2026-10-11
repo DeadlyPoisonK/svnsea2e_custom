@@ -1,0 +1,31 @@
+{
+  "folder": "oV6tWUZgX7fd5HWW",
+  "name": "Seng (Monje)",
+  "type": "background",
+  "_id": "LBHAQZicRF0j8f9D",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Paz</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p><p><em>Ventajas en el libro (en inglés): Duelist Academy (Geng Yu Qiang).</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando convenzas a alguien de abandonar su vida anterior y mejorar como persona.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "empathy",
+      "weaponry"
+    ],
+    "advantages": [
+      "Academia de esgrima (Khitai)",
+      "Voluntad indómita (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 111 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

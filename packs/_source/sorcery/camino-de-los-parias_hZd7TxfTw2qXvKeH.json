@@ -1,0 +1,22 @@
+{
+  "folder": "vLaujvVdVjmbDTQL",
+  "name": "Camino de los Parias",
+  "type": "sorcery",
+  "_id": "hZd7TxfTw2qXvKeH",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Puedes que seas un marginado, pero si tomas el Camino de los Parias es tu deber mostrar a los escépticos que Terra es hermosa y está llena de maravillas.</p><p>El primer paso en el Camino de los Parias es la capacidad de levitar. Tu Maravilla te da esta capacidad de mostrar que incluso el más pequeño de los regalos puede ser útil.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

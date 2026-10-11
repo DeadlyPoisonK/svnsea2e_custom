@@ -1,0 +1,23 @@
+{
+  "folder": "BsRq7OrECMmGFFR9",
+  "name": "Chispa de genialidad",
+  "type": "advantage",
+  "_id": "32A3lO9y4hnSELbI",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige un campo específico de estudio académico (astronomía, matemáticas, arquitectura, historia, etcétera). Cuando hagas un Riesgo y recurras a tu campo de estudio especializado, gasta 1 punto de héroe para conseguir tantos Aumentos adicionales como tu Ingenio.</p><p><em>Coste: 5 (3 si eres castellano).</em></p>",
+    "infosource": "7º Mar (básico), p. 154",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  }
+}

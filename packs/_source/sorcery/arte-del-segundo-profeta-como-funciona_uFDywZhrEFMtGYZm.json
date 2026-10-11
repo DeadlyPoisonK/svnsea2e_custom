@@ -1,0 +1,22 @@
+{
+  "folder": "foSRT3NgIGvdLO60",
+  "name": "Arte del Segundo Profeta: cómo funciona",
+  "type": "sorcery",
+  "_id": "uFDywZhrEFMtGYZm",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>La primera vez que compres la ventaja de Hechicería, crea tu Maravilla. Tu Maravilla es un objeto exclusivo de tu personaje: una daga hecha de un metal nacarado con una puesta de sol grabada en la hoja, un cinturón de cuero con un poema grabado o una piedra tallada de un volcán activo. La mayoría crea sus propias Maravillas a partir de materiales particularmente bellos o significativos, aunque algunas son heredadas u objetos de valor sentimental que recuerdan a la</p>",
+    "infosource": "El Imperio de la Media Luna, p. 166",
+    "sorctype": "prophet",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

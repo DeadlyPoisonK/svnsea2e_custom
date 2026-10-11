@@ -1,0 +1,33 @@
+{
+  "folder": "uITHHwDfWOeygkix",
+  "name": "Balayeur",
+  "type": "background",
+  "_id": "ZrFEQu76icDUfmku",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tu oficio es el de barrendero y tienes tu propia escoba, una que escupe metal y come pólvora.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 204",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando mantengas el control de una situación caótica mientras eres superado en número.</p>",
+    "skills": [
+      "aim",
+      "brawl",
+      "empathy",
+      "intimidate",
+      "notice"
+    ],
+    "advantages": [
+      "Donde pongo el ojo",
+      "Pan comido",
+      "Sentido de la orientación"
+    ],
+    "nation": "montaigne",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

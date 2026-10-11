@@ -1,0 +1,24 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Luz en la oscuridad",
+  "type": "advantage",
+  "_id": "1MqvaSQa1hCSseLs",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Después de que el DJ gaste 1 o más puntos de peligro en un solo efecto, puedes gastar la misma cantidad de puntos de héroe. El efecto no se activa y el DJ pierde los puntos de peligro que gastó.</p><p><em>Coste: 5 (3 si eres embeyano).</em></p>",
+    "infosource": "Tierras de Fuego y Oro, p. 178",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,18 @@
+{
+  "folder": "PUYV4r6swGJd7KsV",
+  "name": "Awal Thmani",
+  "type": "duelstyle",
+  "_id": "ouYlqOQ4pElADfyr",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Los practicantes de este estilo de duelo de combate con espadas aprenden una serie de elaboradas danzas divididas en distintos movimientos utilizados durante los duelos. La espada tradicional para el estilo Awal Thmani es una espada curvada en forma de hoz que se conoce como khopesh. Los duelistas sostienen la espada del Awal Thmani en una mano y por lo general empuñan un palo o garrote de defensa, aunque algunos usuarios prefieren un escudo simple.</p><p>No todos los que aprenden Awal Thmani aspiran a participar en duelos. Muchos bailarines también aprenden el estilo Awal Thmani y lo adaptan para sus propios fines. Esto ha llevado a un renovado interés en la música e historias antiguas y tradicionales. Una duelista que defiende su arte contra aprendices menos marciales con frecuencia señala la popularidad del estilo Awal Thmani y el interés en las culturas perdidas como un éxito del duelo que actúa como puente cultural.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 206",
+    "bonus": "<p><strong>Los Primeros Ocho.</strong></p><p>Cuando empuñas una espada o un bastón con una sola mano, obtienes una maniobra especial llamada los Primeros Ocho. Esta maniobra utiliza una serie de cortes, golpes y tajos rápidos en la forma de una figura de ocho horizontal o símbolo de infinito. Para realizar los Primeros Ocho, debe gastar 2 Aumentos. Los Primeros Ocho inflige un número de Heridas igual a tus niveles en Armas más tus niveles en Músculo. Solo puedes realizar Los Primeros Ocho una vez por ronda.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

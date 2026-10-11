@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Teletransporte",
+  "type": "monsterquality",
+  "_id": "CLYoYMcv6Yd3XAo8",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Ya sea abriendo un agujero en la realidad del mismo modo que los magos Porté de Montaigne o simplemente desvaneciéndose de la vista para aparecer en cualquier otro lugar, este monstruo puede moverse por el espacio con la misma facilidad con que respira un hombre. Gasta 1 punto de peligro para hacer que el monstruo salga o entre en una escena, incluso si es imposible (como en una habitación con todas las puertas y ventanas cerradas, una cripta subterránea cerrada, etcétera).</p>",
+    "infosource": "7º Mar (básico), p. 198",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

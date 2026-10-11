@@ -1,0 +1,22 @@
+{
+  "folder": "2M2vfXkTX0aej1QO",
+  "name": "Sorte: cómo funciona",
+  "type": "sorcery",
+  "_id": "NpkshjxyqSjXokPv",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>La Sorte tiene varios efectos, cada uno de los cuales recibe el nombre de Tejido o <em>Tessere</em> (plural: <em>Tesse</em>) y tiene efectos menores y mayores. La primera vez que adquieres la ventaja Hechicería, tu heroína consigue el Tejido Leer, dos Tejidos menores y un Tejido mayor adicional. Para aprender un Tejido mayor, primero debes aprender el mismo Tejido menor.</p><p>Cada vez que adquieras la ventaja Hechicería consigues Tejidos adicionales, hasta un total de:</p><p>1ª vez: Leer, dos menores, uno mayor.</p><p>2ª vez: Leer, tres menores, dos mayores.</p><p>3ª vez: Leer, cuatro menores, tres mayores.</p><p>4ª vez: Leer, cuatro menores, cuatro mayores. Cuando una strega usa un Tessere, gasta 1 punto de héroe y coge al menos 1 hebra (algunos Tesse dan la opción de coger hebras adicionales, pero el mínimo siempre es 1). El número de hebras de la strega aumenta el efecto de un Tessere, pero también hace que el precio final sea más alto. Al destino no le gusta que las streghe lo toqueteen y siempre se asegura de cobrarse su precio.</p><p>Tener hebras del destino es tanto beneficioso como perjudicial. Es beneficioso porque cuantas más hebras tengas, más fuerte es tu magia, y es perjudicial porque soltarlas se vuelve más doloroso.</p><p>Una strega puede decidir soltar hebras del destino de dos modos:</p><ul><li>En primer lugar, puede elegir pagar con sangre. Para soltar una sola hebra, la strega recibe un número de Heridas igual al número de hebras que tenga. Por ejemplo, una strega con 4 hebras puede elegir soltar 1 e inmediatamente recibe 4 Heridas. Ahora tiene 3 hebras.</li><li>En segundo lugar, puede elegir pagar con mala suerte. Para soltar una sola hebra, la strega decide añadir 1 punto de peligro por cada hebra que tenga. Por ejemplo, una strega con 4 hebras puede añadir 4 puntos (que se suman inmediatamente a la reserva de puntos de peligro del DJ). Ahora tiene 3 hebras.</li></ul><p>Una strega que no tiene cuidado y coge demasiadas hebras puede acabar cansada y exhausta, traicionada por el Destino cuando más lo necesita. Después de que la strega realice cualquier Riesgo, el DJ puede gastar 1 punto de peligro para que la strega no pueda usar ninguno de los dados que ha tirado que tengan un resultado menor que el número de hebras que tiene. Por ejemplo, una strega con 4 hebras sería incapaz de utilizar los dados con resultados 3, 2 o 1 para conseguir Aumentos.</p><p>Además, pagando 1 punto de peligro adicional, el DJ puede hacer que otro héroe sufra ese mismo efecto, en vez de la strega, haciendo así que el Destino se cobre su precio de un modo u otro.</p>",
+    "infosource": "7º Mar (básico), p. 228",
+    "sorctype": "sorte",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
