@@ -278,7 +278,7 @@
   "SVNSEA2E.BackgroundSkillSelect": "Seleção de Perícia da Formação",
   "SVNSEA2E.ItemExists": "O {type}: {name} já está associado à personagem.",
   "SVNSEA2E.ItemDoesntExist": "{name} não existe entre os itens do mundo.",
-  "SVNSEA2E.WrongNation": "A nação da personagem ({anation}) não corresponde à nação requerida pela formação {name} ({bgnation}).",
+  "SVNSEA2E.WrongNation": "A nação da personagem ({anation}) não corresponde à nação requerida pela formação {name} ({bgnation}). Foi adicionada mesmo assim.",
   "SVNSEA2E.Points": "pontos",
   "SVNSEA2E.Point": "ponto",
   "SVNSEA2E.ChatInfluence": "Influência: {influence}",

@@ -268,7 +268,7 @@
   "SVNSEA2E.BackgroundSkillSelect": "Hintergrund Eigenschaftsauswahl",
   "SVNSEA2E.ItemExists": "Das {type}: {name} ist schon einem anderen Charakter zugeordnet.",
   "SVNSEA2E.ItemDoesntExist": "{name} existiert nicht in den Items dieser Welt.",
-  "SVNSEA2E.WrongNation": "Die Nation ({anation}) des Charakters passt nicht zu der im Hintergrund {name} benötigten Nation ({bgnation}).",
+  "SVNSEA2E.WrongNation": "Die Nation ({anation}) des Charakters passt nicht zu der im Hintergrund {name} benötigten Nation ({bgnation}). Er wurde trotzdem hinzugefügt.",
   "SVNSEA2E.Points": "Punkte",
   "SVNSEA2E.Point": "Punkt",
   "SVNSEA2E.ChatInfluence": "Einfluss: {influence}",

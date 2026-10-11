@@ -327,15 +327,15 @@ export class SvnSea2EActorSheet extends HandlebarsApplicationMixin(ActorSheetV2)
       const nation = item.system.nation;
       const wrongNation =
         nation === 'gisles' ? !isValidGlamorIsles(this.actor) : nation && nation !== 'none' && nation !== this.actor.system.nation;
+      // Only a warning: characters of mixed nationality may still take the background.
       if (wrongNation) {
-        ui.notifications.error(
+        ui.notifications.warn(
           game.i18n.format('SVNSEA2E.WrongNation', {
             bgnation: game.i18n.localize(CONFIG.SVNSEA2E.natTypes[nation] ?? nation),
             anation: game.i18n.localize(CONFIG.SVNSEA2E.nations[this.actor.system.nation] ?? ''),
             name: item.name,
           }),
         );
-        return null;
       }
     }
 

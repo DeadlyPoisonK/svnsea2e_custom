@@ -2229,14 +2229,13 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$2(ActorSheetV2) {
       const nation = item.system.nation;
       const wrongNation = nation === "gisles" ? !isValidGlamorIsles(this.actor) : nation && nation !== "none" && nation !== this.actor.system.nation;
       if (wrongNation) {
-        ui.notifications.error(
+        ui.notifications.warn(
           game.i18n.format("SVNSEA2E.WrongNation", {
             bgnation: game.i18n.localize(CONFIG.SVNSEA2E.natTypes[nation] ?? nation),
             anation: game.i18n.localize(CONFIG.SVNSEA2E.nations[this.actor.system.nation] ?? ""),
             name: item.name
           })
         );
-        return null;
       }
     }
     const [created] = await this.actor.createEmbeddedDocuments("Item", [item.toObject()]);

@@ -156,8 +156,11 @@ ok(!pc.items.has(pcBg.id) && pc.system.skills.sailing.value === 0 && !pc.items.s
 // Wrong nation background
 pc._source.system.nation = 'castille'; pc.prepareData();
 const eisenBg = await Item.create({ name: 'Eisen BG', type: 'background', system: { nation: 'eisen' } });
-await pcSheet._onDropItem({}, eisenBg);
-ok(log.notifications.at(-1)[1].includes("doesn't match"), 'wrong nation rejected');
+const warned = log.notifications.length;
+const eisenOwned = await pcSheet._onDropItem({}, eisenBg);
+ok(log.notifications.slice(warned).some(([level, m]) => level === 'warn' && m.includes("doesn't match")), 'wrong nation warned');
+ok(eisenOwned && pc.items.has(eisenOwned.id), 'wrong nation background still added');
+await pc.deleteEmbeddedDocuments('Item', [eisenOwned.id]);
 
 // Skill roll: 3 dice of trait + aim 0... set aim to 3 to get reroll
 await pc.update({ 'system.skills.aim.value': 3, 'system.traits.brawn.value': 3 });
