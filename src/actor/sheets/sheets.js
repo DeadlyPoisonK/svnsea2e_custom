@@ -6,7 +6,8 @@ const { ADVANTAGE, ARTIFACT, BACKGROUND, DUEL_STYLE, HUBRIS, MONSTER_QUALITY, SC
   ItemTypes;
 
 const tab = (id, label) => ({ id, label: `SVNSEA2E.${label}` });
-const scrollable = ['.sheet-body .tab', '.sheet-body'];
+// Only the visible tab scrolls: `.tab` alone would keep the scroll of the first (hidden) tab across re-renders.
+const scrollable = ['.sheet-body .tab.active', '.sheet-body'];
 
 /** Skills and item lists of the hero and player character sheets. */
 function prepareCharacterItems(sheet, context) {

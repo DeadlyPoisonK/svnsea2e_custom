@@ -2246,7 +2246,7 @@ class SvnSea2EActorSheet extends HandlebarsApplicationMixin$2(ActorSheetV2) {
 const ACTOR_TEMPLATES = `${TEMPLATES}/actors`;
 const { ADVANTAGE, ARTIFACT, BACKGROUND, DUEL_STYLE, HUBRIS, MONSTER_QUALITY, SCHEME, SECRET_SOCIETY, SORCERY, STORY, VIRTUE } = ItemTypes;
 const tab = (id, label) => ({ id, label: `SVNSEA2E.${label}` });
-const scrollable = [".sheet-body .tab", ".sheet-body"];
+const scrollable = [".sheet-body .tab.active", ".sheet-body"];
 function prepareCharacterItems(sheet, context) {
   const actor = sheet.actor;
   context.skills = skillsToSheetData(actor.system).map((skill) => ({
@@ -2369,7 +2369,7 @@ class ShipSheet extends SvnSea2EActorSheet {
     actions: { removeCrew: ShipSheet.#onRemoveCrew }
   };
   static PARTS = {
-    sheet: { template: `${ACTOR_TEMPLATES}/ship.hbs`, scrollable: [".sheet-body .tab"] }
+    sheet: { template: `${ACTOR_TEMPLATES}/ship.hbs`, scrollable: [".sheet-body .tab.active"] }
   };
   static TABS = {
     primary: {
@@ -2478,6 +2478,10 @@ class SvnSea2EItem extends Item {
     <ul class="advantages-list">${tags(data.advantages)}</ul>`;
   }
   _duelstyleChatData(data) {
+    if (!data.bonus?.replace(/<[^>]*>/g, "").trim()) {
+      data.bonus = data.description;
+      return "";
+    }
     return `<h5>${game.i18n.localize("SVNSEA2E.Bonus")}</h5><p>${data.bonus}</p>`;
   }
   _schemeChatData(data) {
@@ -2733,7 +2737,7 @@ class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
       ...EFFECT_ACTIONS
     }
   };
-  static PARTS = { sheet: { template: `${ITEM_TEMPLATES}/item.hbs`, scrollable: [".sheet-body .tab"] } };
+  static PARTS = { sheet: { template: `${ITEM_TEMPLATES}/item.hbs`, scrollable: [".sheet-body .tab.active"] } };
   get layout() {
     return ITEM_LAYOUTS[this.item.type] ?? {};
   }

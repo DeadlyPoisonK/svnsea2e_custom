@@ -54,7 +54,7 @@ export class SvnSea2EItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     },
   };
 
-  static PARTS = { sheet: { template: `${ITEM_TEMPLATES}/item.hbs`, scrollable: ['.sheet-body .tab'] } };
+  static PARTS = { sheet: { template: `${ITEM_TEMPLATES}/item.hbs`, scrollable: ['.sheet-body .tab.active'] } };
 
   get layout() {
     return ITEM_LAYOUTS[this.item.type] ?? {};

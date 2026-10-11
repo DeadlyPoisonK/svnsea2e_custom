@@ -8,7 +8,7 @@ export class ShipSheet extends SvnSea2EActorSheet {
     actions: { removeCrew: ShipSheet.#onRemoveCrew },
   };
   static PARTS = {
-    sheet: { template: `${ACTOR_TEMPLATES}/ship.hbs`, scrollable: ['.sheet-body .tab'] },
+    sheet: { template: `${ACTOR_TEMPLATES}/ship.hbs`, scrollable: ['.sheet-body .tab.active'] },
   };
   static TABS = {
     primary: {

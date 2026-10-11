@@ -63,6 +63,11 @@ export class SvnSea2EItem extends Item {
   }
 
   _duelstyleChatData(data) {
+    // Some compendium styles keep their bonus in the description: the chat card shows that instead of an empty bonus.
+    if (!data.bonus?.replace(/<[^>]*>/g, '').trim()) {
+      data.bonus = data.description;
+      return '';
+    }
     return `<h5>${game.i18n.localize('SVNSEA2E.Bonus')}</h5><p>${data.bonus}</p>`;
   }
 
