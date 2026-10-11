@@ -6,6 +6,7 @@ const DEFAULT_ITEM_ICONS = ['icons/svg/item-bag.svg', CONST.DEFAULT_TOKEN];
 /** Chat card template used when an item is sent to chat. */
 const CHAT_TEMPLATES = {
   [ItemTypes.BACKGROUND]: `${TEMPLATES}/items/parts/skill-throw-background.hbs`,
+  [ItemTypes.DUEL_STYLE]: `${TEMPLATES}/items/parts/skill-throw-duelstyle.hbs`,
   default: `${TEMPLATES}/items/parts/skill-throw.hbs`,
 };
 

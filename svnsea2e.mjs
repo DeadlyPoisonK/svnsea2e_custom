@@ -2430,6 +2430,7 @@ class ShipSheet extends SvnSea2EActorSheet {
 const DEFAULT_ITEM_ICONS = ["icons/svg/item-bag.svg", CONST.DEFAULT_TOKEN];
 const CHAT_TEMPLATES = {
   [ItemTypes.BACKGROUND]: `${TEMPLATES}/items/parts/skill-throw-background.hbs`,
+  [ItemTypes.DUEL_STYLE]: `${TEMPLATES}/items/parts/skill-throw-duelstyle.hbs`,
   default: `${TEMPLATES}/items/parts/skill-throw.hbs`
 };
 const ENRICHED_FIELDS = ["quirk", "bonus", "concern", "earnfavor", "callupon", "reward", "endings", "steps"];
