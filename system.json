@@ -242,7 +242,7 @@
         }
     ],
     "url": "https://github.com/DeadlyPoisonK/svnsea2e_custom",
-    "manifest": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.4/system.json",
+    "manifest": "https://raw.githubusercontent.com/DeadlyPoisonK/svnsea2e_custom/wip_v13/system.json",
     "download": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.4/system.zip",
     "license": "MIT"
 }
