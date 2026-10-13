@@ -315,6 +315,22 @@ const Ie = function () {
     type: String,
     default: 0
   });
+  // Actors the GM pinned to the toolbox, kept between sessions.
+  game.settings.register("svnsea2e", "toolboxActors", {
+    name: "Toolbox actors",
+    scope: "client",
+    config: !1,
+    type: Array,
+    default: []
+  });
+  // Optional toolbox columns, by key: false hides one. Columns added later show up until the GM hides them.
+  game.settings.register("svnsea2e", "toolboxColumns", {
+    name: "Toolbox columns",
+    scope: "client",
+    config: !1,
+    type: Object,
+    default: {}
+  });
 }, ke = async function () {
   const i = [
     // Actor Sheet Partials
@@ -881,34 +897,169 @@ class Tt extends FormApplication {
   }
 }
 
-function Q(i, e) {
-  const t = parseFloat(e);
-  if (isNaN(t)) return;
+// ==========================================
+// ACTION SEQUENCE (same rules as v24 on Foundry 14)
+// The raises of the round are the initiative of each combatant; the actor keeps a copy in `system.initiative` (shown
+// by the toolbox and the sheets, used out of combat). During a combat the combatant is the source: with unlinked
+// tokens each token has its own combatant and its own actor, so they do not overwrite each other.
+//
+// The first roll of a combatant in a round sets its raises (`flags.svnsea2e.roll` remembers the round and the raises).
+// Later rolls of that round leave them alone; the button of the roll card sets them on purpose. A new round clears them.
+// ==========================================
 
-  // 1. Actualizar el Combat Tracker activo
-  const activeCombats = game.combats.filter((a) => a.active);
-  
-  activeCombats.forEach((combat) => {
-    const updates = [];
+/** Rounds 0 (before the combat begins, when the approaches are rolled) and 1 are the same round of raises. */
+const raisesRound = (combat) => Math.max(combat.round ?? 0, 1);
 
-    combat.combatants.forEach((r) => {
-      // Comprobación segura: usamos actorId o verificamos que r.actor exista antes de pedir su .id
-      if (r.actorId === i || (r.actor && r.actor.id === i)) {
-        updates.push({ _id: r.id, initiative: t });
-      }
-    });
+/** Villains (and their monsters and brutes) act first on ties with heroes. */
+const actsFirstOnTies = (combatant) => [l.VILLAIN, l.MONSTER, l.BRUTE].includes(combatant.actor?.type);
 
-    // Actualización en lote (Mejor rendimiento y recomendado en Foundry v10+)
-    if (updates.length > 0) {
-      combat.updateEmbeddedDocuments("Combatant", updates);
-    }
-  });
+/** Turn order: most raises first, then villains, then by name. Without raises at the end. */
+function compareTurns(a, ia, b, ib) {
+  ia = Number.isFinite(ia) ? ia : -Infinity;
+  ib = Number.isFinite(ib) ? ib : -Infinity;
+  return (
+    ib - ia ||
+    Number(actsFirstOnTies(b)) - Number(actsFirstOnTies(a)) ||
+    (a.name ?? "").localeCompare(b.name ?? "") ||
+    (a.id > b.id ? 1 : -1)
+  );
+}
 
-  // 2. Actualizar el Actor principal en la barra lateral usando .get() que es mucho más rápido
-  const baseActor = game.actors.get(i);
-  if (baseActor) {
-    baseActor.update({ "system.initiative": t });
+class SvnSea2ECombat extends Combat {
+  /** @override Called unbound by Combat#setupTurns. */
+  _sortCombatants(a, b) {
+    return compareTurns(a, a.initiative, b, b.initiative);
   }
+
+  /**
+   * Set the raises of some combatants (updates with `_id` and `initiative`).
+   * @param {object[]} updates
+   * @param {object} [options]
+   * @param {boolean} [options.keepTurn=true]   Keep the turn on the current combatant. Without it the turn keeps its
+   *   place: at the beginning of the round, the first one, on whoever has the most raises.
+   */
+  async updateRaises(updates, { keepTurn = true } = {}) {
+    if (!updates.length) return;
+    const options = { turnEvents: false };
+    if (!keepTurn && this.turn !== null) options.combatTurn = this.turn;
+    await this.updateEmbeddedDocuments("Combatant", updates, options);
+  }
+
+  /**
+   * The turn that keeps the current combatant after these changes of initiative, or null when nothing moves. Foundry
+   * keeps the turn index, so the turn would jump to whoever takes that place in the new order.
+   * @param {object[]} updates   Combatant changes with `_id`.
+   */
+  turnKeepingCurrent(updates) {
+    const current = this.combatant;
+    if (!current || this.turn === null || !updates.some((u) => "initiative" in u)) return null;
+    const values = new Map(updates.filter((u) => "initiative" in u).map((u) => [u._id, u.initiative]));
+    const value = (c) => (values.has(c.id) ? values.get(c.id) : c.initiative);
+    const order = this.combatants.contents.sort((a, b) => compareTurns(a, value(a), b, value(b)));
+    const turn = order.findIndex((c) => c.id === current.id);
+    return turn === this.turn ? null : turn;
+  }
+
+  /** @override The raises come from the rolls of the system: Foundry's d20 initiative is not rolled. */
+  async rollInitiative() {
+    return this;
+  }
+
+  /** @override A new round clears the raises; the active GM does it, as a player may advance the round. */
+  _onUpdate(changed, options, userId) {
+    super._onUpdate(changed, options, userId);
+    if ("round" in changed && options.direction > 0 && changed.round > 1 && game.user.isActiveGM) this.clearRaises();
+  }
+
+  /** Clear the raises of every combatant. Their marks of having rolled belong to the past round: they no longer count. */
+  async clearRaises() {
+    const updates = this.combatants.filter((c) => c.initiative !== null).map((c) => ({ _id: c.id, initiative: null }));
+    await this.updateRaises(updates, { keepTurn: false });
+  }
+}
+
+class SvnSea2ECombatant extends Combatant {
+  /** @override Any change of raises (rolls, buttons, the tracker's own field) keeps the turn on the same combatant. */
+  static async _preUpdateOperation(documents, operation, user) {
+    const combat = operation.parent ?? documents[0]?.parent;
+    if (combat?.turnKeepingCurrent && operation.combatTurn === undefined) {
+      const turn = combat.turnKeepingCurrent(operation.updates ?? []);
+      if (turn !== null) operation.combatTurn = turn;
+    }
+    return super._preUpdateOperation(documents, operation, user);
+  }
+
+  /** The roll that set the raises of the current round, if any: `{round, raises}`. */
+  get raisesRoll() {
+    const roll = this.getFlag("svnsea2e", "roll");
+    return roll && this.parent && roll.round === raisesRound(this.parent) ? roll : null;
+  }
+
+  /** @override Keep the copy of the raises on the actor (the token's actor when unlinked). */
+  _onUpdate(changed, options, userId) {
+    super._onUpdate(changed, options, userId);
+    if (userId !== game.user.id || !("initiative" in changed)) return;
+    const actor = this.actor;
+    const value = changed.initiative ?? 0;
+    if (actor?.isOwner && "initiative" in actor.system && actor.system.initiative !== value) {
+      actor.update({ "system.initiative": value });
+    }
+  }
+}
+
+/** The actor of a roll card: v23.4 cards keep its UUID (the token's actor when unlinked), older ones its id. */
+function actorFrom(ref) {
+  if (!ref) return null;
+  if (typeof ref !== "string") return ref;
+  return ref.includes(".") ? fromUuidSync(ref) : game.actors.get(ref);
+}
+
+/** Combatants of the actor in the active combats that the user may change. */
+function combatantsOf(actor) {
+  return game.combats
+    .filter((combat) => combat.active)
+    .flatMap((combat) => combat.combatants.filter((c) => c.isOwner && c.actor && (c.actor === actor || c.actor.uuid === actor.uuid)));
+}
+
+/** Group the combatant updates by combat and apply them. */
+async function updateCombatants(updates, options) {
+  const byCombat = new Map();
+  for (const [combatant, update] of updates) {
+    const combat = combatant.parent;
+    if (!byCombat.has(combat)) byCombat.set(combat, []);
+    byCombat.get(combat).push({ _id: combatant.id, ...update });
+  }
+  for (const [combat, list] of byCombat) await combat.updateRaises(list, options);
+}
+
+/**
+ * Set the initiative (raises) of an actor: on its combatants in the active combats, which copy it to the actor, or
+ * on the actor alone when it is not in a combat.
+ * @param {Actor|string} i   The actor, its UUID or (v23.3 cards and macros) the id of a world actor.
+ * @param {number|string} e  The raises.
+ */
+async function Q(i, e) {
+  const actor = actorFrom(i);
+  let initiative = parseFloat(e);
+  if (!actor || Number.isNaN(initiative)) return;
+  initiative = Math.max(0, initiative);
+
+  const combatants = combatantsOf(actor);
+  if (!combatants.length) {
+    if (actor.isOwner && "initiative" in actor.system) await actor.update({ "system.initiative": initiative });
+    return;
+  }
+  await updateCombatants(combatants.map((c) => [c, { initiative }]));
+}
+
+/** The first roll of a combatant in the round sets its raises. The turn keeps its place, on the most raises. */
+async function setRaisesFromRoll(actor, raises) {
+  if (!actor?.uuid) return;
+  const combatants = combatantsOf(actor).filter((c) => !c.raisesRoll);
+  await updateCombatants(
+    combatants.map((c) => [c, { initiative: raises, "flags.svnsea2e.roll": { round: raisesRound(c.parent), raises } }]),
+    { keepTurn: false }
+  );
 }
 
 const Ee = (i, e) => Object.entries(i.skills).map(([t, s]) => ({
@@ -916,97 +1067,210 @@ const Ee = (i, e) => Object.entries(i.skills).map(([t, s]) => ({
   name: t,
   label: e.SVNSEA2E.skills[t]
 })).sort((t, s) => t.label.localeCompare(s.label)), m = (actor, type) => actor.items.filter((i) => i.type === type).sort((a, b) => a.name.localeCompare(b.name));
+/**
+ * Index entries ({name, uuid}) of every advantage in the Item compendiums, the system's first: they win over a copy
+ * with the same name in a module or world compendium. Built from the lightweight compendium indexes.
+ */
 async function Mt() {
-  let i = game.packs.filter((a) => a.metadata.type === "Item");
-  const e = async (a, n) => await a.getDocument(n._id), t = async (a) => {
-    const n = await a.getIndex();
-    return await Promise.all(
-      n.filter((r) => r.type === "advantage").map((r) => e(a, r))
-    );
-  };
-  return (await Promise.all(i.map((a) => t(a)))).flatMap((a) => a);
+  const found = [];
+  const packs = [...game.packs].sort((a, b) => (b.metadata.packageName === "svnsea2e") - (a.metadata.packageName === "svnsea2e"));
+  for (const pack of packs) {
+    if (pack.documentName !== "Item") continue;
+    const index = await pack.getIndex({ fields: ["type"] });
+    for (const entry of index) {
+      if (entry.type === "advantage") found.push({ name: entry.name, uuid: entry.uuid ?? pack.getUuid(entry._id) });
+    }
+  }
+  return found;
 }
-const Dt = ["highland", "avalon", "insmore"], xt = (i) => Dt.includes(i.system.nation), B = function (i, e) {
-  const t = [];
-  return t.push(i.indexOf(e[0])), e[0] === e[1] ? t.push(i.indexOf(e[1], t[0] + 1)) : t.push(i.indexOf(e[1])), e.length > 2 && (e[0] === e[2] ? t.push(i.indexOf(e[2], t[1] + 1)) : t.push(i.indexOf(e[2]))), t;
-}, J = function (i = 10, e = !1) {
-  let t = 1;
-  return (i === 15 && !e || i === 20 && e) && t++, t;
-}, ue = function (i, e = 10, t = !1) {
-  // 1. Clonamos y ordenamos los dados de mayor a menor para optimizar
-  let dice = [...i].map(Number).sort((a, b) => b - a);
-  const a = { rolls: [], combos: [], raises: 0 };
 
-  // Función interna recursiva: Busca la mejor combinación posible
-  function findCombo(target, exactOnly) {
+/**
+ * Find an advantage by name: an exact match among world items first, then in the compendiums (an exact match, then a
+ * case-insensitive one).
+ * @returns {Promise<Item|null>}
+ */
+async function findAdvantage(name) {
+  const worldItem = game.items.find((i) => i.type === "advantage" && i.name === name);
+  if (worldItem) return worldItem;
+  const entries = await Mt();
+  const lower = name.toLowerCase();
+  const entry = entries.find((e) => e.name === name) ?? entries.find((e) => e.name.toLowerCase() === lower);
+  return entry ? fromUuid(entry.uuid) : null;
+}
+const Dt = ["highland", "avalon", "inismore"], xt = (i) => Dt.includes(i.system.nation);
+
+// ==========================================
+// ROLL ENGINE (same rules as v24 on Foundry 14)
+// From the dice rolled and the options of the roll to the raises. Nothing here rolls dice: when the rank 3 reroll
+// is missing the result says so and the caller rolls it and asks again.
+// ==========================================
+
+/** Raises earned by one set: 2 for a 15 (or a 20 when the GM raised the threshold), 1 otherwise. */
+function raisesPerCombo(threshold, increased) {
+  return (threshold === 15 && !increased) || (threshold === 20 && increased) ? 2 : 1;
+}
+
+/** Indices of the values of `combo` inside `dice`, each one a different die, or null when a value is missing. */
+function findComboIndices(dice, combo) {
+  const indices = [];
+  for (const value of combo) {
+    const index = dice.findIndex((die, i) => die.value === value && !indices.includes(i));
+    if (index === -1) return null;
+    indices.push(index);
+  }
+  return indices;
+}
+
+/**
+ * Group the dice into sets reaching `target`: first every exact sum, then the sets that overshoot the least.
+ * @returns {{left: object[], combos: string[], raises: number}} left are the dice not used.
+ */
+function groupDice(dice, target, increased) {
+  const pool = [...dice].sort((a, b) => b.value - a.value);
+  const result = { left: pool, combos: [], raises: 0 };
+
+  const findCombo = (exactOnly) => {
     let bestOvershoot = Infinity;
     let found = null;
-
-    function dfs(index, currentSum, currentCombo, usedIndices) {
-      // Si encontramos la suma exacta, detenemos la búsqueda de esta rama (es perfecto)
-      if (currentSum === target) {
-        found = { combo: currentCombo, indices: usedIndices };
+    const dfs = (index, sum, used) => {
+      if (sum === target) {
+        found = used;
         return true;
       }
-      // Si nos pasamos, pero es el menor "desperdicio" hasta ahora, lo guardamos temporalmente
-      if (!exactOnly && currentSum > target && currentSum < bestOvershoot) {
-        bestOvershoot = currentSum;
-        found = { combo: currentCombo, indices: usedIndices };
-        return false; // Seguimos buscando a ver si hay algo más cercano
+      if (!exactOnly && sum > target && sum < bestOvershoot) {
+        bestOvershoot = sum;
+        found = used;
+        return false;
       }
-      // Podar rama: si nos pasamos del objetivo o ya no quedan dados, retrocedemos
-      if (currentSum >= target || index >= dice.length) return false;
+      if (sum >= target || index >= pool.length) return false;
+      if (dfs(index + 1, sum + pool[index].value, [...used, index])) return true;
+      return dfs(index + 1, sum, used);
+    };
+    dfs(0, 0, []);
+    if (!found) return null;
+    const combo = found.map((i) => pool[i].value);
+    for (let j = found.length - 1; j >= 0; j--) pool.splice(found[j], 1);
+    return combo;
+  };
 
-      // Probar INCLUYENDO el dado actual
-      if (dfs(index + 1, currentSum + dice[index], [...currentCombo, dice[index]], [...usedIndices, index])) return true;
-      // Probar EXCLUYENDO el dado actual
-      if (dfs(index + 1, currentSum, currentCombo, usedIndices)) return true;
-
-      return false;
+  for (const exactOnly of [true, false]) {
+    let combo;
+    while ((combo = findCombo(exactOnly)) !== null) {
+      result.combos.push(combo.sort((a, b) => a - b).join(" + "));
+      result.raises += raisesPerCombo(target, increased);
     }
+  }
+  return result;
+}
 
-    dfs(0, 0, [], []); // Iniciar búsqueda
+const byValue = (a, b) => a.value - b.value;
 
-    if (found) {
-      // Remover los dados usados del pool (de atrás hacia adelante para no romper los índices)
-      for (let j = found.indices.length - 1; j >= 0; j--) {
-        dice.splice(found.indices[j], 1);
-      }
-      return found.combo;
+/**
+ * Count the raises of a pool.
+ * @param {object} input
+ * @param {number[]} input.faces           Faces of every die of the pool, explosions included, as rolled (1 to 10).
+ * @param {number} input.threshold         Threshold of the skill: 10, or 15 from rank 4.
+ * @param {boolean} input.increaseThreshold The GM raised the threshold by 5.
+ * @param {boolean} input.addOne           +1 to every die.
+ * @param {number} input.joieRank          Joie de Vivre: faces up to this count as 10s (0 without it).
+ * @param {boolean} input.reroll           Skill rank 3+: the lowest leftover die is rolled again.
+ * @param {number|null} input.rerollFace   The new face of that die, once rolled.
+ */
+function resolveDice(input) {
+  const { addOne, joieRank = 0, reroll, rerollFace = null } = input;
+  const increased = !!input.increaseThreshold;
+  // Joie de Vivre: the dice equal to or lower than the skill rank (before the +1) count as 10s.
+  const valueOf = (face) => (face <= joieRank ? 10 : addOne ? face + 1 : face);
+  const dice = input.faces.map((face) => ({ face, value: valueOf(face) })).sort(byValue);
+  const target = input.threshold + (increased ? 5 : 0);
+  const matches = target === 15 ? CONFIG.SVNSEA2E.match15 : target === 20 ? CONFIG.SVNSEA2E.match20 : CONFIG.SVNSEA2E.match10;
+
+  let raises = 0;
+  const combos = [];
+
+  // Each die of 10 or more is a raise on its own when the threshold is 10.
+  const takeTens = () => {
+    if (target !== 10) return;
+    for (let i = dice.length - 1; i >= 0 && dice[i].value >= 10; i--) {
+      raises++;
+      combos.push(String(dice[i].value));
+      dice.splice(i, 1);
     }
-    return null;
+  };
+
+  takeTens();
+
+  // Exact pairs, then exact triples, from the match tables.
+  for (const combo of [...matches.two, ...matches.three]) {
+    let indices;
+    while ((indices = findComboIndices(dice, combo))) {
+      raises += raisesPerCombo(target, increased);
+      combos.push(indices.map((i) => dice[i].value).join(" + "));
+      for (const i of indices.sort((a, b) => b - a)) dice.splice(i, 1);
+    }
   }
 
-  let combo;
-  // PASO A: Buscar todas las combinaciones EXACTAS (ej. 1+1+1+1+1+5 = 10)
-  while ((combo = findCombo(e, true)) !== null) {
-    a.combos.push(combo.sort((x, y) => x - y).join(" + "));
-    a.raises += J(e, t);
+  // Skill rank 3+: reroll the lowest leftover die.
+  let rerolled = null;
+  if (dice.length > 0 && reroll) {
+    if (rerollFace === null) return { needsReroll: true, target };
+    rerolled = { from: dice[0].face, to: rerollFace };
+    dice[0] = { face: rerollFace, value: valueOf(rerollFace) };
+    dice.sort(byValue);
   }
 
-  // PASO B: Si ya no hay exactas, buscar las que se pasen por lo mínimo (ej. 4+4+3 = 11)
-  while ((combo = findCombo(e, false)) !== null) {
-    a.combos.push(combo.sort((x, y) => x - y).join(" + "));
-    a.raises += J(e, t);
+  takeTens();
+
+  // Whatever is left is grouped as efficiently as possible.
+  let grouped = groupDice(dice, target, increased);
+  combos.push(...grouped.combos);
+  raises += grouped.raises;
+  if (grouped.left.length > 0 && ((!increased && target === 15) || (increased && target === 20))) {
+    const lower = groupDice(grouped.left, target - 5, increased);
+    combos.push(...lower.combos);
+    raises += lower.raises;
+    grouped = lower;
   }
 
-  // Sincronizar el arreglo original 'i' para que la función principal sepa qué dados sobraron realmente
-  i.length = 0;
-  i.push(...dice);
+  const faces = [...input.faces];
+  if (rerolled) faces[faces.indexOf(rerolled.from)] = rerolled.to;
+  return {
+    needsReroll: false,
+    target,
+    raises,
+    combos,
+    unused: grouped.left.map((die) => die.value),
+    faces: faces.sort((a, b) => a - b),
+    rerolled,
+  };
+}
 
-  a.rolls = dice;
-  return a;
-}, Ft = function (i) {
-  var n, r, o, d;
-  const e = (n = i.flairDice) != null && n.checked ? 1 : 0, t = (r = i.interpretationDice) != null && r.checked ? 1 : 0, s = parseInt(((o = i.useForMe) == null ? void 0 : o.value) || 0), a = parseInt(((d = i.useForHelpMe) == null ? void 0 : d.value) || 0) * 3;
-  return parseInt(i.bonusDice.value) + e + t + s + a;
-}, Lt = function (i, e) {
-  var a;
-  const t = parseInt(((a = i.useForMe) == null ? void 0 : a.value) || 0), s = e.system.heropts || 0;
-  return t > s ? (ui.notifications.error(game.i18n.format("SVNSEA2E.NotEnoughHero", {})), !1) : (t > 0 && e.update({
-    data: { heropts: s - t }
-  }), !0);
+const formNumber = (field) => parseInt(field?.value) || 0, formChecked = (field) => !!field?.checked;
+
+/** Dice added by the options of the roll dialog: bonus, flair, interpretation and hero points (3 dice each from helpers). */
+const Ft = function (i) {
+  return formNumber(i.bonusDice) + (formChecked(i.flairDice) ? 1 : 0) + (formChecked(i.interpretationDice) ? 1 : 0) + formNumber(i.useForMe) + formNumber(i.useForHelpMe) * 3;
 };
+
+/** Hero points spent on the roll. Returns false when the hero does not have enough of them. */
+const Lt = async function (i, e) {
+  const spent = formNumber(i.useForMe), available = e.system.heropts || 0;
+  if (spent > available) {
+    ui.notifications.error(game.i18n.localize("SVNSEA2E.NotEnoughHero"));
+    return false;
+  }
+  // Up to v23.3 this updated "data.heropts", which no longer exists: the points were never spent.
+  if (spent > 0) await e.update({ "system.heropts": available - spent });
+  return true;
+};
+
+/**
+ * Roll a dice pool, sort it into raises and post the result card to the chat.
+ * @param {object} rolldata   skilldice, skillRank (for Joie de Vivre), threshold (10 or 15), explode, reroll, skipWoundBonus.
+ * @param {Actor} actor
+ * @param {object} data       The actor's system data.
+ * @param {HTMLFormElement|object} form  The roll dialog (or an object with the same fields).
+ */
 async function de({
   rolldata: i = {},
   actor: e = {},
@@ -1015,115 +1279,59 @@ async function de({
   template: a,
   title: n
 }) {
-  var ae;
-  if (e.type !== l.VILLAIN && e.type !== l.MONSTER && !Lt(s, e))
-    return console.error("not enought hero point"), !1;
-  const r = parseInt(i.skilldice);
-  
-  // ==========================================
-  // MOTOR DE HERIDAS DRAMÁTICAS CORREGIDO
-  // ==========================================
-  let dwBonus = 0;
-  if (t.dwounds && t.dwounds.value >= 1 && !i.skipWoundBonus) {
-      dwBonus = 1; // Aplica a TODOS (Players y Villanos ganan 1 dado extra)
+  // Every character with at least one dramatic wound gets one extra die.
+  const woundBonus = !i.skipWoundBonus && t.dwounds && t.dwounds.value >= 1 ? 1 : 0;
+  const poolSize = (parseInt(i.skilldice) || 0) + formNumber(s.trait) + Ft(s) + woundBonus;
+  if (poolSize < 1) {
+    ui.notifications.warn(game.i18n.localize("SVNSEA2E.NoDiceToRoll"));
+    return false;
+  }
+  // Hero points are spent only when there are dice to roll.
+  if (e.type !== l.VILLAIN && e.type !== l.MONSTER && !(await Lt(s, e)))
+    return false;
+
+  const increased = formChecked(s.increaseThreshold),
+    addOne = formChecked(s.addOneToDice),
+    explode = !!(i.explode || formChecked(s.explodeDice)),
+    // Joie de Vivre: the dice up to the skill rank count as 10s (trait rolls have no skill: rank 0).
+    joieRank = formChecked(s.joieDeVivreAdvantage) ? Math.min(Math.max(parseInt(i.skillRank) || 0, 0), 5) : 0;
+
+  // Foundry rolls the explosions after the dice of the pool, in the same term.
+  const roll = await new Roll(`${poolSize}d10${explode ? "x" : ""}`).evaluate();
+  const faces = roll.dice[0].results.map((r) => r.result);
+  const input = { faces, threshold: i.threshold === 15 ? 15 : 10, increaseThreshold: increased, addOne, joieRank, reroll: !!i.reroll };
+  let result = resolveDice(input);
+  if (result.needsReroll) {
+    const rerollRoll = await new Roll("1d10").evaluate();
+    result = resolveDice({ ...input, rerollFace: rerollRoll.total });
   }
 
-  // Sumamos los dados de Habilidad + Rasgo + Bonos del Formulario + BONO DE HERIDA
-  const o = r + parseInt(s.trait.value) + Ft(s) + dwBonus; 
-  // ==========================================
-
-  const d = s.increaseThreshold !== void 0 ? s.increaseThreshold.checked : 0, 
-        f = s.addOneToDice !== void 0 ? s.addOneToDice.checked : !1,
-        manualExplode = s.explodeDice !== void 0 ? s.explodeDice.checked : !1, 
-        willExplode = i.explode || manualExplode,
-        y = new Roll(`${o}d10${willExplode ? "x" : ""}`);
-        
-  await y.evaluate();
-  const c = pe(y).map((u) => f ? u + 1 : u), C = willExplode;
-  d && (i.threshold += 5);
-  const w = i.threshold === 15 ? CONFIG.SVNSEA2E.match15 : i.threshold === 20 ? CONFIG.SVNSEA2E.match20 : CONFIG.SVNSEA2E.match10;
-  let b = 0, v = [];
-  if (i.threshold === 10) {
-    let u = c.length;
-    for (; u--;)
-      if (c[u] >= 10)
-        b++, v.push(c[u]), c.splice(u, 1);
-      else if (c[u] < 10)
-        break;
-  }
-  if ((ae = s.joieDeVivreAdvantage) != null && ae.checked) {
-    let u = c.length;
-    for (; u--;)
-      c[u] <= r && (b++, v.push(c[u]), c.splice(u, 1));
-  }
-  for (let u = 0; u < w.two.length; u++) {
-    let k = B(c, w.two[u]);
-    for (; k[0] > -1 && k[1] > -1;)
-      b += J(i.threshold, d), v.push(
-        c[k[0]].toString() + " + " + c[k[1]].toString()
-      ), c.splice(k[0], 1), c.splice(c.indexOf(w.two[u][1]), 1), k = B(c, w.two[u]);
-  }
-  for (let u = 0; u < w.three.length; u++)
-    for (var O = B(c, w.three[u]); O[0] > -1 && O[1] > -1 && O[2] > -1;)
-      b += J(i.threshold, d), v.push(
-        c[O[0]].toString() + " + " + c[O[1]].toString() + " + " + c[O[2]].toString()
-      ), c.splice(O[0], 1), c.splice(c.indexOf(w.three[u][1]), 1), c.splice(c.indexOf(w.three[u][2]), 1), O = B(c, w.three[u]);
-  let L = c.length, R = !1, H = "";
-  const T = pe(y);
-  if (L > 0 && i.reroll) {
-    const u = f ? c[0] - 1 : c[0];
-    c[0] = Math.floor(Math.random() * 10) + 1, H = game.i18n.format("SVNSEA2E.Reroll", {
-      roll1: u,
-      roll2: c[0]
-    }), R = !0;
-    for (let k = 0; k < T.length; k++)
-      if (T[k] == u) {
-        T[k] = c[0];
-        break;
-      }
-    f && (c[0] = c[0] + 1), T.sort(me), c.sort(me);
-  }
-  if (i.threshold == 10) {
-    let u = c.length;
-    for (; u--;)
-      if (c[u] >= 10)
-        b++, v.push(c[u]), c.splice(u, 1), L = c.length;
-      else if (c[u] < 10)
-        break;
-  }
-  let S = ue(c, i.threshold, d);
-  if (v.push(...S.combos), b += S.raises, S.rolls.length > 0 && (!d && i.threshold == 15 || d && i.threshold == 20)) {
-    let u = ue(
-      S.rolls,
-      i.threshold - 5,
-      d
-    );
-    v.push(...u.combos), b += u.raises, S = u;
-  }
-  let G = i.threshold.toString();
-  d && (G = i.threshold.toString() + " " + game.i18n.localize("SVNSEA2E.GMIncreasedThreshold"));
-  const E = S.rolls.length, A = {
+  let threshold = String(result.target);
+  increased && (threshold += " " + game.i18n.localize("SVNSEA2E.GMIncreasedThreshold"));
+  const unused = result.unused.length, A = {
     actor: e,
-    raisetxt: b > 1 ? game.i18n.localize("SVNSEA2E.Raises") : game.i18n.localize("SVNSEA2E.Raise"),
-    unusedDiceTxt: E > 1 ? game.i18n.localize("SVNSEA2E.UnusedDice") : game.i18n.localize("SVNSEA2E.UnusedDie"),
+    // The token's actor when unlinked, so the initiative button finds its combatant.
+    actorUuid: e.uuid,
+    raisetxt: result.raises > 1 ? game.i18n.localize("SVNSEA2E.Raises") : game.i18n.localize("SVNSEA2E.Raise"),
+    unusedDiceTxt: unused > 1 ? game.i18n.localize("SVNSEA2E.UnusedDice") : game.i18n.localize("SVNSEA2E.UnusedDie"),
     data: t,
-    exploded: C,
+    exploded: explode,
     explosions: game.i18n.format("SVNSEA2E.RollsExploded"),
-    extraDice: T.length - o,
-    hasAddOneToDice: f,
+    extraDice: faces.length - poolSize,
+    hasAddOneToDice: addOne,
     addOneToDiced: game.i18n.format("SVNSEA2E.AddOneToDiced"),
     labels: t.labels,
-    rolls: T,
-    raises: b,
+    rolls: result.faces,
+    raises: result.raises,
     rCombos: game.i18n.localize("SVNSEA2E.RaiseCombos"),
-    combos: v.map((u) => `${u}`),
-    rerolled: R,
-    reroll: H,
-    unusedDice: E,
-    unusedRolls: S.rolls,
-    dicesNumber: o,
+    combos: result.combos,
+    rerolled: !!result.rerolled,
+    reroll: result.rerolled ? game.i18n.format("SVNSEA2E.Reroll", { roll1: result.rerolled.from, roll2: result.rerolled.to }) : "",
+    unusedDice: unused,
+    unusedRolls: result.unused,
+    dicesNumber: poolSize,
     threshold: game.i18n.format("SVNSEA2E.RollThreshold", {
-      threshold: G
+      threshold
     })
   }, ve = await renderTemplate(a, A), te = game.settings.get("core", "rollMode"), se = {
     user: game.user.id,
@@ -1140,15 +1348,11 @@ async function de({
     // Toggle default roll mode
     whisper: ["gmroll", "blindroll"].includes(te) ? ChatMessage.getWhisperRecipients("GM") : void 0
   };
-  return game.dice3d ? game.dice3d.showForRoll(y).then(() => {
-    ChatMessage.create(se);
-  }) : ChatMessage.create(se), y;
-}
-function me(i, e) {
-  return i - e;
-}
-function pe(i) {
-  return i.terms[0].results.map((e) => e.result).sort((e, t) => e - t);
+  game.dice3d && await game.dice3d.showForRoll(roll);
+  await ChatMessage.create(se);
+  // In an action sequence, the first roll of the round sets the raises of the actor's combatants.
+  await setRaisesFromRoll(e, result.raises);
+  return roll;
 }
 class M extends ActorSheet {
   /** @override */
@@ -1199,7 +1403,8 @@ class M extends ActorSheet {
       dwounds: a.dwounds,
       htk: a.htk,
       traits: this._prepareTraits(s),
-      selectedlangs: this._prepareLanguages(s),
+      languageChoices: this._prepareLanguages(s),
+      languages: a.languages,
       // Concept tab.
       religion: a.religion,
       reputation: a.reputation,
@@ -1333,6 +1538,8 @@ class M extends ActorSheet {
               const joieDeVivreChecked = html.find("#joieDeVivreAdvantage").is(":checked");
               const explodeDiceChecked = html.find("#explodeDice").is(":checked");
               const increaseThresholdChecked = html.find("#increaseThreshold").is(":checked");
+              // Joie de Vivre needs the rank of the skill: the number of dice is not it.
+              const joieRank = parseInt(html.find("#joieRank").val(), 10) || 0;
 
               // 2. Ejecutar la función 'de' (la lógica interna de tiradas)
               // NOTA: 'de' espera un formulario complejo, así que creamos un objeto 'fakeForm'
@@ -1344,6 +1551,7 @@ class M extends ActorSheet {
                   threshold: 10,      // Dificultad estándar
                   explode: false,     // La explosión manual se maneja vía explodeDice
                   reroll: false,
+                  skillRank: joieRank,
                   skipWoundBonus: true
                 },
                 actor: this.actor,
@@ -1417,7 +1625,7 @@ class M extends ActorSheet {
   _onAddInitiative(e) {
     e.preventDefault();
     const t = (this.actor.system.initiative || 0) + 1;
-    console.log("new initiative", t), Q(this.actor.id, t);
+    Q(this.actor, t);
   }
   async _onInitiativeChange(event) {
     event.preventDefault();
@@ -1435,7 +1643,7 @@ class M extends ActorSheet {
     // 'Q' se encarga de: 
     // 1. Actualizar 'system.initiative' en el Actor.
     // 2. Buscar si el actor está en el Combat Tracker y actualizarlo ahí también.
-    Q(this.actor.id, newInitiative);
+    Q(this.actor, newInitiative);
 
     // Quitar el foco para confirmar visualmente el cambio
     input.blur();
@@ -1443,23 +1651,21 @@ class M extends ActorSheet {
   _onMinusInitiative(e) {
     e.preventDefault();
     const t = (this.actor.system.initiative || 0) - 1;
-    Q(this.actor.id, t);
+    Q(this.actor, t);
   }
   /* -------------------------------------------- */
   /**
-   * Prepare the Languages that the Actor has selected for use with the LanguageSelector application
+   * Choices of the languages <multi-select> as {key: label}. Stored keys that are not in the configuration are kept
+   * as choices too, so that saving the sheet does not drop them.
    * @param {Object} actor       The actor
    * @private
    */
   _prepareLanguages(e) {
-    if ([l.PLAYER, l.HERO, l.VILLAIN].includes(e.type))
-      return console.log(e), console.log(e.system), console.log(e.system.languages), e.system.languages.reduce(
-        (t, s) => ({
-          ...t,
-          [s]: CONFIG.SVNSEA2E.languages[s]
-        }),
-        {}
-      );
+    const languages = e.system.languages;
+    if (!languages) return {};
+    const choices = { ...CONFIG.SVNSEA2E.languages };
+    for (const lang of languages) choices[lang] ??= lang;
+    return choices;
   }
   /* -------------------------------------------- */
   /**
@@ -1695,18 +1901,19 @@ class M extends ActorSheet {
         })
       );
     if (s.type === "background") {
+      const bgNation = s.system.nation;
       if (
-        // If the background is nation specific the actor must be of the same nation.
-        s.system.nation !== "none" && s.system.nation !== this.actor.system.nation || // Glamour Isles backgrounds applies to Highland, Avalon, and Inismore.
-        s.system.nation === "gisles" && !xt(this.actor)
+        // Glamour Isles backgrounds apply to Highland, Avalon and Inismore; other nation specific ones to that nation.
+        bgNation === "gisles" ? !xt(this.actor) : bgNation && bgNation !== "none" && bgNation !== this.actor.system.nation
       )
-        return ui.notifications.error(
+        // Only a warning: characters of mixed nationality may still take the background.
+        ui.notifications.warn(
           game.i18n.format("SVNSEA2E.WrongNation", {
             bgnation: game.i18n.localize(
-              CONFIG.SVNSEA2E.nations[s.system.nation]
+              CONFIG.SVNSEA2E.natTypes[s.system.nation] ?? s.system.nation
             ),
             anation: game.i18n.localize(
-              CONFIG.SVNSEA2E.nations[this.actor.system.nation]
+              CONFIG.SVNSEA2E.nations[this.actor.system.nation] ?? ""
             ),
             name: s.name
           })
@@ -1731,11 +1938,7 @@ class M extends ActorSheet {
   async _processBackgroundDrop(e) {
     const t = e.system;
     for (const s of t.advantages) {
-      const a = game.items.find(
-        (f) => f.name === s
-      ), r = (await Mt()).find(
-        (f) => f.name.toLowerCase() === s.toLowerCase()
-      ), o = a || r || null;
+      const o = await findAdvantage(s);
       if (!o) {
         ui.notifications.error(
           game.i18n.format("SVNSEA2E.ItemDoesntExist", {
@@ -1849,7 +2052,9 @@ class M extends ActorSheet {
       threshold: 10,
       explode: !1,
       reroll: !1,
-      skilldice: r
+      skilldice: r,
+      // Rank of the skill rolled, for Joie de Vivre.
+      skillRank: r
     };
     r > 2 && (o.reroll = !0), r >= 4 && (o.threshold = 15), (r === 5 || n.dwounds.value >= 3) && (o.explode = !0);
     const d = {};
@@ -1952,7 +2157,8 @@ class M extends ActorSheet {
       n = this.actor.system;
     let r = {
       threshold: 10,
-      explode: !1,
+      // 10s explode from the third dramatic wound, on every roll.
+      explode: !!(n.dwounds && n.dwounds.value >= 3),
       reroll: !1,
       skilldice: 0
     };
@@ -2550,7 +2756,7 @@ class Se extends Item {
       async: !0
     });
     const s = this[`_${this.type}ChatData`];
-    return s && s.bind(this)(t, e), t;
+    return s && await s.bind(this)(t, e), t;
   }
   /**
    * Prepare chat data for an advantage
@@ -2585,7 +2791,13 @@ class Se extends Item {
     </ul>
 `, e;
   }
-  _duelstyleChatData(e, t) {
+  async _duelstyleChatData(e, t) {
+    // Some compendium styles keep their bonus in the description: the chat card shows that instead of an empty bonus.
+    if (!e.bonus?.replace(/<[^>]*>/g, "").trim()) {
+      e.bonus = e.description;
+      return e;
+    }
+    e.bonus = await TextEditor.enrichHTML(e.bonus, { async: !0 });
     return e.metadatahtml = `
     <h5>${game.i18n.format("SVNSEA2E.Bonus")}</h5>
     <p>${e.bonus}</p>
@@ -2661,7 +2873,7 @@ class Se extends Item {
       "sorcery": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
       "secretsociety": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
       "story": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
-      "duelstyle": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
+      "duelstyle": 'systems/svnsea2e/templates/items/parts/skill-throw-duelstyle.hbs',
       "artifact": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
       "virtue": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
       "hubris": 'systems/svnsea2e/templates/items/parts/skill-throw.hbs',
@@ -3212,124 +3424,194 @@ const fe = async function () {
 }, Symbol.toStringTag, { value: "Module" })), ls = "system.svnsea2e", cs = {
   characterChange: "characterChanged"
 };
-function us() {
-  game.svnsea2e.toolbox.refresh(), game.socket.emit(ls, {
-    type: cs.characterChange
-  });
+/** Refresh the toolbox when one of its actors changes (the hook runs on every client). */
+function us(actor) {
+  const toolbox = game.svnsea2e.toolbox;
+  if (actor && toolbox.shows(actor)) toolbox.render();
 }
-class ds extends FormApplication {
-  /**
-   * Constructor
-   * @param {ApplicationOptions} options
-   */
-  constructor(t = {}) {
-    super(t);
-    /**
-     * Settings
-     */
-    ie(this, "object", {});
-    this._initialize();
-  }
-  /**
-   * Assign the default options
-   * @override
-   */
-  static get defaultOptions() {
-    const t = $(window).width();
-    return $(window).height(), foundry.utils.mergeObject(super.defaultOptions, {
-      id: "svnsea-toolbox",
-      classes: ["toolbox"],
-      template: "systems/svnsea2e/templates/toolbox/toolbox.hbs",
-      title: game.i18n.localize("SVNSEA2E.Toolbox"),
-      left: t - 650,
-      top: 20,
-      width: 300,
-      closeOnSubmit: !1,
-      submitOnClose: !1,
-      submitOnChange: !0,
-      minimizable: !0,
-      resizable: !0,
-      dragDrop: [{ dropSelector: ".items" }]
-    });
-  }
-  /**
-   * Refresh data (used from socket)
-   */
-  async refresh() {
-    game.user.isGM && (this.object.showActors = this.object.items.map(
-      (t) => game.actors.find((s) => `Actor.${s.id}` === t)
-    ), this.render(!1));
-  }
-  /**
-   * Initialize the values
-   * @private
-   */
-  _initialize() {
-    this.object = {
-      items: []
-    };
-  }
-  /**
-   * @override
-   */
-  render(t = !1, s = {}) {
-    if (game.user.isGM)
-      return this.position.height = "auto", super.render(t, s);
-  }
-  /**
-   * Construct and return the data object used to render the HTML template for this form application.
-   * @param options
-   * @return {Object}
-   * @override
-   */
-  async getData(t = null) {
-    return {
-      ...await super.getData(t)
-    };
-  }
-  /**
-   * Listen to html elements
-   * @param {jQuery} html HTML content of the sheet.
-   * @override
-   */
-  activateListeners(t) {
-    super.activateListeners(t);
-  }
-  /**
-   * This method is called upon form submission after form data is validated
-   * @param event    The initial triggering submission event
-   * @param formData The object of validated form data with which to update the object
-   * @returns        A Promise which resolves once the update operation has completed
-   * @override
-   */
-  async _updateObject(t, s) {
-    this.render(!1);
-  }
-  /** @override */
-  async _onDrop(t) {
-    if (!game.user.isGM)
-      return;
-    t.preventDefault();
-    let s;
-    try {
-      s = JSON.parse(t.dataTransfer.getData("text/plain"));
-    } catch {
-      return !1;
+
+/**
+ * Values the toolbox can show, as paths inside actor.system. An actor type without the value leaves its cell empty.
+ * `max` is the path of the upper bound; `fixed` columns are always shown (danger points actors have nothing else).
+ */
+const TOOLBOX_COLUMNS = [
+  { key: "raises", path: "initiative", icon: "fa-star-of-life", label: "SVNSEA2E.Initiative" },
+  { key: "heropts", path: "heropts", icon: "fa-sun", label: "SVNSEA2E.HeroPoints" },
+  { key: "wounds", path: "wounds.value", max: "wounds.max", icon: "fa-heart", label: "SVNSEA2E.Wounds" },
+  { key: "dwounds", path: "dwounds.value", max: "dwounds.max", icon: "fa-heart-crack", label: "SVNSEA2E.DramaWounds" },
+  { key: "points", path: "points", icon: "fa-skull", label: "SVNSEA2E.DangerPoints", fixed: true }
+];
+
+const toolboxClamp = (value, min, max) => Math.min(Math.max(Number(value) || 0, min), max);
+
+/**
+ * The update that sets the wounds of an actor to `value`. Like the hearts of the sheet: marking wounds also marks the
+ * dramatic wounds they reach (every 5 wounds, or Strength + 1 for villains and monsters), never removes any.
+ */
+function toolboxWoundUpdate(actor, value) {
+  const system = actor.system;
+  const wounds = toolboxClamp(value, 0, system.wounds.max);
+  if (!system.dwounds) return { "system.wounds.value": wounds };
+  const perDramatic = [l.VILLAIN, l.MONSTER].includes(actor.type) ? (parseInt(system.traits.strength.value) || 0) + 1 : 5;
+  const dwounds = Math.max(system.dwounds.value, Math.min(Math.trunc(wounds / perDramatic), system.dwounds.max));
+  return { "system.wounds.value": wounds, "system.dwounds.value": dwounds };
+}
+
+/**
+ * GM toolbox: a small window listing some values of the actors dropped on it, with +/- buttons to change them.
+ * The list and the chosen columns are remembered between sessions.
+ */
+class ds extends foundry.applications.api.HandlebarsApplicationMixin(foundry.applications.api.ApplicationV2) {
+  static DEFAULT_OPTIONS = {
+    id: "svnsea-toolbox",
+    classes: ["svnsea2e", "toolbox", "themed", "theme-dark"],
+    window: {
+      title: "SVNSEA2E.Toolbox",
+      minimizable: true,
+      resizable: true,
+      controls: [{ icon: "fa-solid fa-gear", label: "SVNSEA2E.ToolboxConfigure", action: "configure" }]
+    },
+    position: { top: 20, width: 420, height: "auto" },
+    actions: {
+      adjust: ds.#onAdjust,
+      configure: ds.#onConfigure,
+      openSheet: ds.#onOpenSheet,
+      removeActor: ds.#onRemoveActor
     }
-    if (!s)
-      return !1;
-    if (s.type === "Actor")
-      return this._onDropActor(t, s);
+  };
+
+  static PARTS = {
+    items: { template: "systems/svnsea2e/templates/toolbox/toolbox.hbs" }
+  };
+
+  /** UUIDs of the actors shown in the toolbox. */
+  get actorUuids() {
+    return game.settings.get("svnsea2e", "toolboxActors") ?? [];
   }
-  /**
-   * Handle dropping an Actor on the sheet to trigger a Polymorph workflow
-   * @param {DragEvent} event   The drop event
-   * @param {Object} data       The data transfer
-   * @return {Object}           OwnedItem data _getIndexeso create
-   * @private
-   */
-  async _onDropActor(t, s) {
-    this.object.items.push(s.uuid), this.refresh();
+
+  async _setActorUuids(uuids) {
+    await game.settings.set("svnsea2e", "toolboxActors", uuids);
+    this.render();
+  }
+
+  /** Keys of the optional columns the GM chose to show. */
+  get columnKeys() {
+    const chosen = game.settings.get("svnsea2e", "toolboxColumns") ?? {};
+    return TOOLBOX_COLUMNS.filter((column) => column.fixed || chosen[column.key] !== false).map((column) => column.key);
+  }
+
+  /** Whether a change to this actor should refresh the toolbox. */
+  shows(actor) {
+    return this.rendered && this.actorUuids.includes(actor.uuid);
+  }
+
+  /** @override */
+  render(options, _options) {
+    if (!game.user.isGM) return this;
+    return super.render(options, _options);
+  }
+
+  /** @override */
+  _initializeApplicationOptions(options) {
+    options = super._initializeApplicationOptions(options);
+    options.position.left ??= Math.max(window.innerWidth - 770, 0);
+    return options;
+  }
+
+  /** @override */
+  async _prepareContext(options) {
+    const getProperty = foundry.utils.getProperty;
+    const actors = this.actorUuids.map((uuid) => fromUuidSync(uuid)).filter((actor) => actor);
+    // Only the chosen columns that at least one of the actors has.
+    const keys = this.columnKeys;
+    const columns = TOOLBOX_COLUMNS.filter(
+      (column) => keys.includes(column.key) && actors.some((actor) => getProperty(actor.system, column.path) !== undefined)
+    );
+    const rows = actors.map((actor) => ({
+      uuid: actor.uuid,
+      name: actor.name,
+      cells: columns.map((column) => {
+        const value = getProperty(actor.system, column.path);
+        if (value === undefined) return null;
+        const max = column.max && getProperty(actor.system, column.max);
+        return { key: column.key, label: column.label, text: max ? `${value}/${max}` : `${value}` };
+      })
+    }));
+    return { columns, rows };
+  }
+
+  /** @override */
+  _onRender(context, options) {
+    super._onRender(context, options);
+    const dropZone = this.element.querySelector(".items");
+    dropZone?.addEventListener("dragover", (event) => event.preventDefault());
+    dropZone?.addEventListener("drop", this.#onDrop.bind(this));
+  }
+
+  async #onDrop(event) {
+    event.preventDefault();
+    const data = foundry.applications.ux.TextEditor.implementation.getDragEventData(event);
+    if (data?.type !== "Actor" || !data.uuid) return;
+    const uuids = this.actorUuids;
+    if (!uuids.includes(data.uuid)) await this._setActorUuids([...uuids, data.uuid]);
+  }
+
+  /** +1 / -1 on a value; the updateActor hook re-renders the toolbox. */
+  static async #onAdjust(event, target) {
+    const getProperty = foundry.utils.getProperty;
+    const actor = fromUuidSync(target.closest("[data-uuid]").dataset.uuid);
+    const column = TOOLBOX_COLUMNS.find((c) => c.key === target.dataset.key);
+    if (!actor || !column) return;
+    const system = actor.system;
+    const delta = Number(target.dataset.delta);
+    const max = column.max ? getProperty(system, column.max) : Infinity;
+    const value = toolboxClamp(getProperty(system, column.path) + delta, 0, max);
+
+    // Raises are also the initiative of the actor's combatants.
+    if (column.key === "raises") return Q(actor, value);
+    if (column.key === "wounds") return actor.update(toolboxWoundUpdate(actor, value));
+    await actor.update({ [`system.${column.path}`]: value });
+  }
+
+  /** Choose the columns to show. */
+  static async #onConfigure() {
+    const keys = this.columnKeys;
+    const content = TOOLBOX_COLUMNS.filter((column) => !column.fixed)
+      .map(
+        (column) => `<label class="checkbox">
+          <input type="checkbox" name="${column.key}" ${keys.includes(column.key) ? "checked" : ""} />
+          <i class="fa-solid ${column.icon}"></i> ${game.i18n.localize(column.label)}
+        </label>`
+      )
+      .join("");
+    const chosen = await foundry.applications.api.DialogV2.wait({
+      window: { title: "SVNSEA2E.ToolboxConfigure" },
+      classes: ["svnsea2e", "toolbox-config"],
+      content: `<p>${game.i18n.localize("SVNSEA2E.ToolboxColumns")}</p><div class="toolbox-columns">${content}</div>`,
+      buttons: [
+        {
+          action: "save",
+          label: game.i18n.localize("SVNSEA2E.Save"),
+          icon: "fa-solid fa-floppy-disk",
+          default: true,
+          callback: (event, button) =>
+            Object.fromEntries(TOOLBOX_COLUMNS.filter((c) => !c.fixed).map((c) => [c.key, button.form.elements[c.key].checked]))
+        }
+      ],
+      rejectClose: false
+    });
+    if (!chosen) return;
+    await game.settings.set("svnsea2e", "toolboxColumns", chosen);
+    this.render();
+  }
+
+  static #onOpenSheet(event, target) {
+    fromUuidSync(target.closest("[data-uuid]").dataset.uuid)?.sheet.render(true);
+  }
+
+  static async #onRemoveActor(event, target) {
+    const uuid = target.closest("[data-uuid]").dataset.uuid;
+    await this._setActorUuids(this.actorUuids.filter((u) => u !== uuid));
   }
 }
 Hooks.once("init", async function () {
@@ -3343,9 +3625,10 @@ Hooks.once("init", async function () {
       migrations: os,
       toolbox: new ds()
     }, CONFIG.Combat.initiative = {
+      // The initiative is the raises of the round, set by the rolls; the formula is never rolled.
       formula: "1d20",
-      decimals: 2
-    }, CONFIG.SVNSEA2E = h, CONFIG.SVNSEA2E.natTypes = foundry.utils.duplicate(h.nations), CONFIG.SVNSEA2E.natTypes.gisles = "SVNSEA2E.RegionGlamourIsles", CONFIG.Actor.documentClass = ce, CONFIG.Item.documentClass = Se, CONFIG.Actor.dataModels[l.BRUTE] = Te, CONFIG.Actor.dataModels[l.DANGERPOINTS] = xe, CONFIG.Actor.dataModels[l.HERO] = He, CONFIG.Actor.dataModels[l.MONSTER] = Ge, CONFIG.Actor.dataModels[l.PLAYER] = qe, CONFIG.Actor.dataModels[l.SHIP] = Ye, CONFIG.Actor.dataModels[l.VILLAIN] = Ke, CONFIG.Item.dataModels[p.ADVANTAGE] = et, CONFIG.Item.dataModels[p.ARTIFACT] = at, CONFIG.Item.dataModels[p.BACKGROUND] = rt, CONFIG.Item.dataModels[p.DUEL_STYLE] = ct, CONFIG.Item.dataModels[p.MONSTER_QUALITY] = dt, CONFIG.Item.dataModels[p.SCHEME] = St, CONFIG.Item.dataModels[p.SECRET_SOCIETY] = Vt, CONFIG.Item.dataModels[p.SHIP_ADVENTURE] = gt, CONFIG.Item.dataModels[p.SHIP_BACKGROUND] = ft, CONFIG.Item.dataModels[p.VIRTUE] = At, CONFIG.Item.dataModels[p.HUBRIS] = bt, CONFIG.Item.dataModels[p.SORCERY] = kt, CONFIG.Item.dataModels[p.STORY] = Ct, Ie(), Actors.unregisterSheet("core", ActorSheet), Actors.registerSheet("svnsea2e", jt, {
+      decimals: 0
+    }, CONFIG.Combat.documentClass = SvnSea2ECombat, CONFIG.Combatant.documentClass = SvnSea2ECombatant, CONFIG.SVNSEA2E = h, CONFIG.SVNSEA2E.natTypes = foundry.utils.duplicate(h.nations), CONFIG.SVNSEA2E.natTypes.gisles = "SVNSEA2E.RegionGlamourIsles", CONFIG.Actor.documentClass = ce, CONFIG.Item.documentClass = Se, CONFIG.Actor.dataModels[l.BRUTE] = Te, CONFIG.Actor.dataModels[l.DANGERPOINTS] = xe, CONFIG.Actor.dataModels[l.HERO] = He, CONFIG.Actor.dataModels[l.MONSTER] = Ge, CONFIG.Actor.dataModels[l.PLAYER] = qe, CONFIG.Actor.dataModels[l.SHIP] = Ye, CONFIG.Actor.dataModels[l.VILLAIN] = Ke, CONFIG.Item.dataModels[p.ADVANTAGE] = et, CONFIG.Item.dataModels[p.ARTIFACT] = at, CONFIG.Item.dataModels[p.BACKGROUND] = rt, CONFIG.Item.dataModels[p.DUEL_STYLE] = ct, CONFIG.Item.dataModels[p.MONSTER_QUALITY] = dt, CONFIG.Item.dataModels[p.SCHEME] = St, CONFIG.Item.dataModels[p.SECRET_SOCIETY] = Vt, CONFIG.Item.dataModels[p.SHIP_ADVENTURE] = gt, CONFIG.Item.dataModels[p.SHIP_BACKGROUND] = ft, CONFIG.Item.dataModels[p.VIRTUE] = At, CONFIG.Item.dataModels[p.HUBRIS] = bt, CONFIG.Item.dataModels[p.SORCERY] = kt, CONFIG.Item.dataModels[p.STORY] = Ct, Ie(), Actors.unregisterSheet("core", ActorSheet), Actors.registerSheet("svnsea2e", jt, {
       types: [l.PLAYER],
       makeDefault: !0
     }), Actors.registerSheet("svnsea2e", HeroSheet, {
@@ -3507,8 +3790,8 @@ Hooks.on("preCreateActor", function (i, e, t, s) {
     });
   }
 });
-Hooks.on("updateActor", function () {
-  us();
+Hooks.on("updateActor", function (actor) {
+  us(actor);
 });
 Hooks.on("renderActorDirectory", (i, e, t) => {
   if (game.user.isGM) {
@@ -3523,53 +3806,69 @@ Hooks.on("renderActorDirectory", (i, e, t) => {
   }
 });
 
-Hooks.on("renderCombatTracker", (app, html, data) => {
-  const currentCombat = app.viewed;
-  if (!currentCombat) return;
+// Paints the message header with its author's player color; the CSS falls back to the system red.
+Hooks.on("renderChatMessageHTML", (message, html) => {
+  const color = message.author?.color;
+  if (!color) return;
+  // Whether black text contrasts better than white on this color (WCAG relative luminance).
+  const [r, g, b] = color.rgb.map((c) => (c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4));
+  const light = 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.179;
+  html.style.setProperty("--svnsea-author-color", color.css);
+  html.style.setProperty("--svnsea-author-text", light ? "#000" : "#fff");
+});
 
-  const $html = $(html);
+// Combat tracker: -1 / +1 raise buttons around each combatant's raises, and no d20 initiative buttons (the raises
+// come from the rolls).
+Hooks.on("renderCombatTracker", (app, html) => {
+  for (const action of ["rollAll", "rollNPC"]) {
+    const button = html.querySelector(`[data-action="${action}"]`);
+    if (!button) continue;
+    const spacer = document.createElement("div");
+    spacer.className = "spacer";
+    button.replaceWith(spacer);
+  }
 
-  $html.find(".combatant").each((i, el) => {
-    const li = $(el);
-    const combatantId = li.data("combatant-id");
-    const combatant = currentCombat.combatants.get(combatantId);
+  const combat = app.viewed;
+  if (!combat) return;
+  for (const row of html.querySelectorAll(".combatant[data-combatant-id]")) {
+    const combatant = combat.combatants.get(row.dataset.combatantId);
+    const initiative = row.querySelector(".token-initiative");
+    if (!initiative || initiative.querySelector(".combat-btn, .no-raises")) continue;
+    initiative.querySelector('[data-action="rollInitiative"]')?.remove();
+    if (!Number.isFinite(combatant?.initiative)) {
+      const empty = document.createElement("span");
+      empty.className = "no-raises";
+      empty.textContent = "–";
+      initiative.append(empty);
+    }
+    if (!combatant?.actor || !combatant.isOwner) continue;
 
-    if (!combatant) return;
+    const makeButton = (delta) => {
+      const button = document.createElement("a");
+      button.className = `combat-btn ${delta > 0 ? "add" : "sub"}`;
+      button.dataset.tooltip = delta > 0 ? "+1 Raise" : "-1 Raise";
+      button.innerHTML = `<i class="fa-solid fa-${delta > 0 ? "plus" : "minus"}"></i>`;
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        combat.updateRaises([{ _id: combatant.id, initiative: Math.max(0, (combatant.initiative || 0) + delta) }]);
+      });
+      // Keep double clicks on the buttons from opening the actor sheet.
+      button.addEventListener("dblclick", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+      });
+      return button;
+    };
+    initiative.prepend(makeButton(-1));
+    initiative.append(makeButton(1));
+  }
+});
 
-    // Buscamos el contenedor del número de iniciativa
-    const initDiv = li.find(".token-initiative");
-
-    // Si ya tiene botones, no hacemos nada
-    if (initDiv.find(".combat-btn").length > 0) return;
-
-    // Creamos los botones
-    const btnAdd = $(`<a class="combat-btn add" data-action="add" title="+1 Raise"><i class="fas fa-plus"></i></a>`);
-    const btnSub = $(`<a class="combat-btn sub" data-action="sub" title="-1 Raise"><i class="fas fa-minus"></i></a>`);
-
-    // INSERCIÓN: 
-    // Prepend = Poner al principio (ARRIBA)
-    // Append  = Poner al final (ABAJO)
-    initDiv.prepend(btnAdd);
-    initDiv.append(btnSub);
-
-    // Listeners (Clic y Doble Clic)
-    const buttons = initDiv.find(".combat-btn");
-
-    buttons.click(async (ev) => {
-      ev.preventDefault();
-      ev.stopPropagation();
-      const btn = ev.currentTarget;
-      const action = btn.dataset.action;
-      let newInit = (combatant.initiative || 0) + (action === "add" ? 1 : -1);
-      Q(combatant.actor.id, newInit);
-    });
-
-    buttons.dblclick((ev) => {
-      ev.preventDefault();
-      ev.stopPropagation();
-      return false;
-    });
-  });
+// No "Re-roll Initiative" in the context menu of the combatants.
+Hooks.on("getCombatTrackerContextOptions", (app, options) => {
+  const index = options.findIndex((option) => option.name === "COMBAT.CombatantReroll");
+  if (index >= 0) options.splice(index, 1);
 });
 
 async function ms() {

@@ -269,7 +269,7 @@
   "SVNSEA2E.BackgroundSkillSelect": "Hintergrund Eigenschaftsauswahl",
   "SVNSEA2E.ItemExists": "Das {type}: {name} ist schon einem anderen Charakter zugeordnet.",
   "SVNSEA2E.ItemDoesntExist": "{name} existiert nicht in den Items dieser Welt.",
-  "SVNSEA2E.WrongNation": "Die Nation ({anation}) des Charakters passt nicht zu der im Hintergrund {name} benötigten Nation ({bgnation}).",
+  "SVNSEA2E.WrongNation": "Die Nation ({anation}) des Charakters passt nicht zu der im Hintergrund {name} benötigten Nation ({bgnation}). Er wurde trotzdem hinzugefügt.",
   "SVNSEA2E.Points": "Punkte",
   "SVNSEA2E.Point": "Punkt",
   "SVNSEA2E.ChatInfluence": "Einfluss: {influence}",
@@ -349,5 +349,11 @@
   "SVNSEA2E.HtkOff": "HTK: AUS",
   "SVNSEA2E.RollDice": "Würfel werfen",
   "SVNSEA2E.DiceNumberLabel": "Anzahl der Würfel:",
-  "SVNSEA2E.ExtraDiceExploded": "explodierte Würfel"
+  "SVNSEA2E.ExtraDiceExploded": "explodierte Würfel",
+  "SVNSEA2E.NoDiceToRoll": "Es gibt keine Würfel zu werfen.",
+  "SVNSEA2E.RemoveFromToolbox": "Aus der Toolbox entfernen",
+  "SVNSEA2E.ToolboxConfigure": "Werkzeugkasten konfigurieren",
+  "SVNSEA2E.ToolboxColumns": "Anzuzeigende Werte:",
+  "SVNSEA2E.JoieSkillRank": "Fertigkeitsstufe (Joie de Vivre)",
+  "SVNSEA2E.ExplodeTens": "10er explodieren"
 }

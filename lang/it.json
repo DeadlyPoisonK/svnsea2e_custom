@@ -276,7 +276,7 @@
   "SVNSEA2E.BackgroundSkillSelect": "Background Skill Selection",
   "SVNSEA2E.ItemExists": "The {type}: {name} is already assigned to the character.",
   "SVNSEA2E.ItemDoesntExist": "{name} doesn't exist in the world's items.",
-  "SVNSEA2E.WrongNation": "The character's nation ({anation}) doesn't match the required background {name}'s nation ({bgnation}).",
+  "SVNSEA2E.WrongNation": "The character's nation ({anation}) doesn't match the required background {name}'s nation ({bgnation}). It was added anyway.",
   "SVNSEA2E.Points": "punti",
   "SVNSEA2E.Point": "punto",
   "SVNSEA2E.ChatInfluence": "Influenza: {influence}",
@@ -351,5 +351,11 @@
   "SVNSEA2E.HtkOff": "HTK: DISATTIVO",
   "SVNSEA2E.RollDice": "Tira Dadi",
   "SVNSEA2E.DiceNumberLabel": "Numero di Dadi:",
-  "SVNSEA2E.ExtraDiceExploded": "dadi esplosi"
+  "SVNSEA2E.ExtraDiceExploded": "dadi esplosi",
+  "SVNSEA2E.NoDiceToRoll": "Non ci sono dadi da tirare.",
+  "SVNSEA2E.RemoveFromToolbox": "Rimuovi dalla toolbox",
+  "SVNSEA2E.ToolboxConfigure": "Configura cassetta degli attrezzi",
+  "SVNSEA2E.ToolboxColumns": "Valori da mostrare:",
+  "SVNSEA2E.JoieSkillRank": "Grado di abilità (Joie de Vivre)",
+  "SVNSEA2E.ExplodeTens": "I 10 esplodono"
 }

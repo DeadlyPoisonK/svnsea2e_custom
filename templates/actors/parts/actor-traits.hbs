@@ -47,13 +47,8 @@
   {{/if}}
   {{#if hasLanguages}}
     <h3 class="language-title">{{localize "SVNSEA2E.Languages"}}</h3>
-    <div class="language flexrow flex-group flex-left">
-      <ul class="tag-list">
-        {{#each selectedlangs as |k v|}}
-          <li class="tag {{v}}">{{k}}</li>
-        {{/each}}
-      </ul>
-      <a class="language-selector" data-options="languages"><i class="fas fa-edit"></i></a>
-    </div>
+    <multi-select class="language" name="system.languages" {{#unless editable}}disabled{{/unless}}>
+      {{selectOptions languageChoices selected=languages}}
+    </multi-select>
   {{/if}}
 </div>
