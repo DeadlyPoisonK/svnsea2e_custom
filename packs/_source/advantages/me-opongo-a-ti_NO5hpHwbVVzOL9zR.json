@@ -1,0 +1,24 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Me opongo a ti",
+  "type": "advantage",
+  "_id": "NO5hpHwbVVzOL9zR",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando tengas que tirar dados por un Riesgo, gasta 1 punto de héroe para ganar un número de dados de bonificación igual al doble de la cantidad de oposición que enfrentas (cada villano, banda de matones, monstruo, etc., cuenta como uno).</p><p><em>Coste: 5 (3 si eres magrebí).</em></p>",
+    "infosource": "Tierras de Fuego y Oro, p. 178",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

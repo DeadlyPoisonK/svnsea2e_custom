@@ -1,0 +1,22 @@
+{
+  "folder": "uXqEPyuNpDuBVbZp",
+  "name": "Reanimación",
+  "type": "sorcery",
+  "_id": "BuxxsLj9t9UUdfUm",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este poder cuando sufras tu cuarta Herida Dramática. Los espíritus te revigorizan cuando de otro modo caerías. Genera 5 de Furia y elimina todas las Heridas de tu último nivel. No quedas Indefenso. Reanimación solo puede usarse una vez por sesión de juego.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 197 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Hacerse el muerto (Khitai)",
+  "type": "advantage",
+  "_id": "gOITOKQzaRV5a6dj",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando eres el único héroe que queda en una escena en la que participa un villano o matones empleados por un villano, puedes elegir quedar Indefenso. Si lo haces, eres inmune al Asesinato y cualquier villano presente (o matón a su servicio) dejará escapar algún dato de información útil. El DJ te dirá la información que se te revela, pero por lo general puedes esperar enterarte de un dato útil o vislumbrar los motivos y planes del villano. El villano podría sonreír con suficiencia sobre tu cuerpo supuestamente inconsciente y confesar que te pareces exactamente a tu padre justo antes de morir (revelando así que el villano fue quien lo mató, o que al menos estuvo presente, por ejemplo), o un pelotón de guardias podría revelar que tienen la intención de encerrarte en las mazmorras subterráneas del duque, en la celda contigua a la de ese molesto barón (revelando así que el duque ha capturado y encarcelado al barón en su mazmorra).</p><p>El villano o los matones pueden ignorarte, darte por muerto, tomarte prisionero o cualquier otra cosa que harían si te dejaran Indefenso, pero no pueden matarte. Al comienzo de la siguiente escena, ya no estás Indefenso.</p>",
+    "infosource": "Khitai, p. 119 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

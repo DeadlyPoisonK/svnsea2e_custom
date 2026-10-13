@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Cambiaformas",
+  "type": "monsterquality",
+  "_id": "NjwbcszeasarFF6k",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Los mejores cazadores nunca dejan que su presa sepa quién les está dando caza hasta que es demasiado tarde.</p><p>Esta criatura podría estar delante de ti, e incluso hablar contigo, y nunca lo sabrías. Gasta 1 punto de peligro para hacer que este monstruo asuma una nueva forma. La nueva forma es completamente indistinguible de lo que esté mimetizando, salvo por algo específico que determine el DJ. Por ejemplo, un monstruo mimetizado podría tener siempre ojos de gato o colmillos de serpiente.</p>",
+    "infosource": "7º Mar (básico), p. 197",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

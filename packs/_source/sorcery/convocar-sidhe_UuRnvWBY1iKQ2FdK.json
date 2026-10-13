@@ -1,0 +1,22 @@
+{
+  "folder": "pRnQODnoY7cWX42i",
+  "name": "Convocar sidhe",
+  "type": "sorcery",
+  "_id": "UuRnvWBY1iKQ2FdK",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este Glamour para convocar al sidhe más cercano para que te ayude. Cuantos más niveles tengas en este Glamour, más poderoso puede ser el sidhe. A menos que el director de juego gaste 1 punto de peligro, un sidhe de la Corte Luminosa responde a tu llamada y te ayuda lo mejor que puede…, a cambio de algo, naturalmente. Si el DJ gasta 1 punto de peligro, entonces un sidhe de la Corte Oscura responde a tu llamada. El precio que exige por su ayuda, suponiendo que no intente matarte sin más trámites, será muchísimo más duro. Sin embargo, si gastas un segundo punto de héroe, puedes cancelar el punto de peligro del DJ y hacer que aparezca un sidhe de la Corte Luminosa.</p>",
+    "infosource": "7º Mar (básico), p. 216",
+    "sorctype": "knight",
+    "sorccat": "glamour",
+    "sorcsubcat": "minor",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

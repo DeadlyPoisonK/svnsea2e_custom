@@ -1,0 +1,21 @@
+{
+  "folder": "li9WDKazVu5ySEdo",
+  "name": "Pacífica",
+  "type": "sorcery",
+  "_id": "DF9kE3PKBito7Q3U",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El poder que corre a través de tu espada la hace más protectora que las armas mundanas. Gasta 1 punto de héroe al prevenir Heridas para evitar Heridas adicionales iguales al nivel de característica utilizado en tu Enfoque.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 200",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

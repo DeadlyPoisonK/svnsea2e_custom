@@ -1,0 +1,21 @@
+{
+  "folder": "tRWGOFtYaF1huSvr",
+  "name": "Regeneración",
+  "type": "sorcery",
+  "_id": "7YSCNUagQQdzQDiO",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado para curar todas las Heridas que hayas sufrido. Este Legado no tiene efecto sobre las Heridas Dramáticas.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 179",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "common"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

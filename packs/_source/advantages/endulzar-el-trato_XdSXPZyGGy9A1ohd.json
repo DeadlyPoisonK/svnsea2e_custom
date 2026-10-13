@@ -1,0 +1,24 @@
+{
+  "folder": "aSM5k4zd4YYt1rg3",
+  "name": "Endulzar el trato",
+  "type": "advantage",
+  "_id": "XdSXPZyGGy9A1ohd",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de Riqueza para sobornar con éxito a un personaje durante una secuencia de acción o dramática sin gastar un Aumento. Puedes hacerlo una vez por secuencia.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 206",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

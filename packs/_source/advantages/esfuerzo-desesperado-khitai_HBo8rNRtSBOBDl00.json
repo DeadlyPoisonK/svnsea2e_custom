@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Esfuerzo desesperado (Khitai)",
+  "type": "advantage",
+  "_id": "HBo8rNRtSBOBDl00",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando tienes cero Aumentos en una secuencia de acción, puedes gastar un punto de héroe para realizar una única acción. Ignoras la Improvisación para esta acción, pero por lo demás puedes realizar cualquier acción que normalmente se te permitiría gastando un (y solo un) Aumento. Un jugador solo puede usar esta ventaja una vez por sesión de juego.</p>",
+    "infosource": "Khitai, p. 118 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

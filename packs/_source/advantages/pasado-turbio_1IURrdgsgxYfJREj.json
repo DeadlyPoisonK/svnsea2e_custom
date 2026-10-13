@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Pasado turbio",
+  "type": "advantage",
+  "_id": "1IURrdgsgxYfJREj",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Creciste en la dureza y aprendiste a cuidar de ti mismo por las malas. Colabora con el DJ para determinar las razones de tu turbio trasfondo. ¿Creciste en la pobreza y tuviste que valerte por ti mismo en las calles, o naciste rico pero caíste en la miseria debido a las maquinaciones de los poderosos? Cuando realizas un Riesgo usando Pelear, Esconder, Intimidar o Robar como tu Enfoque y gastas un punto de héroe (para obtener un dado adicional, ayudar a un aliado en la misma ronda o hacer que tus 10 exploten), puedes volver a tirar cualquier dado cuyo resultado esté por debajo de tus rangos en esa habilidad. Debes conservar el nuevo resultado, incluso si es menor.</p>",
+    "infosource": "Khitai, p. 120 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

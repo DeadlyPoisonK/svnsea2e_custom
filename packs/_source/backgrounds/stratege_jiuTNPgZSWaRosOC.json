@@ -1,0 +1,32 @@
+{
+  "folder": "IzxDf7LBEx0QQz86",
+  "name": "Stratege",
+  "type": "background",
+  "_id": "jiuTNPgZSWaRosOC",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Cuando eras niño eras un portento jugando al ajedrez. Ahora sabes que el mundo es como un tablero de ajedrez y sigues siendo el mejor jugando en él.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 207",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando cometas un error de cálculo fatal en tus planes y eso te meta a ti o a tus aliados en problemas.</p>",
+    "skills": [
+      "aim",
+      "empathy",
+      "scholarship",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "El cerebro del grupo",
+      "Trabajo en equipo"
+    ],
+    "nation": "eisen",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

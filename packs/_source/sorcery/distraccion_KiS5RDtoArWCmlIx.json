@@ -1,0 +1,22 @@
+{
+  "folder": "piYhdrGNp0ZAVmW9",
+  "name": "Distracción",
+  "type": "sorcery",
+  "_id": "KiS5RDtoArWCmlIx",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Arrojar esta poción al suelo provoca una fuerte explosión y un destello de luz. La siguiente acción que realice una víctima cuesta 2 Aumentos, en lugar de 1, y este objeto afecta a tantas criaturas en tu Zona como la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 199 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

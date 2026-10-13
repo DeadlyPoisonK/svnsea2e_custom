@@ -1,0 +1,32 @@
+{
+  "folder": "PrCClrluNkXpzvK4",
+  "name": "Skald",
+  "type": "background",
+  "_id": "W0OAan3XaNE5FBX8",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Interpretas los misterios del fuego y los huesos, compartiendo relatos de gloria y derrota.</p>",
+    "infosource": "7º Mar (básico), p. 145",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando uses tu conocimiento como Seidr para ayudar a otro héroe a resolver un problema o boicotear a un villano.</p>",
+    "skills": [
+      "brawl",
+      "intimidate",
+      "perform",
+      "sailing",
+      "weaponry"
+    ],
+    "advantages": [
+      "Seidr",
+      "Uno con el barco"
+    ],
+    "nation": "vesten"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

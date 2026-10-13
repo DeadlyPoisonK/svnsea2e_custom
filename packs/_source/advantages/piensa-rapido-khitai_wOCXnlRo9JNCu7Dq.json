@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Piensa rápido (Khitai)",
+  "type": "advantage",
+  "_id": "wOCXnlRo9JNCu7Dq",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>La primera vez en cada ronda que tendrías que pagar un Aumento adicional para realizar una acción debido a la Improvisación, no necesitas gastar el Aumento extra. Esto se aplica únicamente al incremento del coste de Aumentos por Improvisación; cualquier otro efecto que cause un coste incrementado en Aumentos se sigue aplicando con normalidad.</p>",
+    "infosource": "Khitai, p. 120 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

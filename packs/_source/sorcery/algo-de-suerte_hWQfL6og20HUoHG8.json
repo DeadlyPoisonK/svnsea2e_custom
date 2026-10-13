@@ -1,0 +1,22 @@
+{
+  "folder": "zZYgf0jaGTPfG7RT",
+  "name": "Algo de suerte",
+  "type": "sorcery",
+  "_id": "hWQfL6og20HUoHG8",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Glamour. Durante el resto de la escena, después de que realices un Riesgo usando tu característica menor, puedes remplazar un dado cualquiera por un dado cuyo valor sea igual a 1 más el nivel que tengas en este Glamour.</p>",
+    "infosource": "7º Mar (básico), p. 214",
+    "used": false,
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "glamour",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

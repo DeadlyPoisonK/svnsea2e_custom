@@ -1,0 +1,19 @@
+{
+  "folder": "xRskIATgzioWdrTl",
+  "name": "Mori Naiz",
+  "type": "duelstyle",
+  "_id": "vr5qSsh9Eqr84vSQ",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>En Khazaria, un guerrero sin caballo no es un guerrero en absoluto. Los forasteros a menudo ven esto como una debilidad, creyendo que descabalgar a un jinete jázaro lo dejará prácticamente indefenso. Aunque esta táctica tiene cierto fundamento, los caballos de guerra jázaros están tan bien entrenados como sus jinetes. A estos caballos se les enseña a luchar junto a sus amos incluso cuando están descabalgados, y los jinetes saben cómo aprovechar esto de la mejor manera para lograr la victoria.</p><p>El estilo más conocido y codificado de este tipo de lucha se llama Mori Naiz (literalmente «amigo del caballo»). Corcel y jinete se mueven juntos para arrinconar a sus oponentes, aprovechar los huecos en su defensa con la hoja o el casco y defender los flancos mutuos de los ataques. Los practicantes de Mori Naiz son agresivos e implacables, y confían en su compañero para mantenerse tan a salvo como sea posible mientras lidian con cualquier amenaza presente. Los forasteros que desean imitar este estilo a menudo intentan simplemente comprar caballos jázaros, creyendo que los secretos de Mori Naiz vendrán con ellos. La verdad, sin embargo, es que este vínculo requiere toda una vida para forjarse. Más allá del simple adiestramiento para la guerra, los caballos entrenados en Mori Naiz son criados por sus amos desde potros hasta la edad adulta. El caballo y el jinete son compañeros íntimos que se cuidan y protegen mutuamente debido al vínculo emocional tan especial que tienen, en lugar de estar simplemente bien entrenados en artes marciales. Se sabe que los jinetes de Mori Naiz montan en cólera si sus corceles mueren y (si el jinete sobrevive a la batalla, lo cual es raro) guardan un luto tan profundo y triste como si hubieran perdido a un hermano muy querido.</p>",
+    "infosource": "Khitai, p. 224 (traducción no oficial)",
+    "bonus": "<p><strong>Bonificación de escuela.</strong> Mientras estés a caballo, o mientras luches junto a un corcel que esté bajo tu control, tu maniobra Embestida es reemplazada por una maniobra especial llamada Hundimiento del jinete. Cuando realizas Hundimiento del jinete, gasta todos tus Aumentos. Infliges un número de Heridas igual a tus rangos en Armas + tus rangos en Equitación + el número de Aumentos que hayas gastado. Solo puedes realizar Hundimiento del jinete una vez por ronda. <strong>Bonificación de maestría.</strong> La maestría en Mori Naiz te ha enseñado a recuperarte de tu Hundimiento del jinete más rápidamente, lo que te permite defenderte o continuar tu asalto. Después de realizar Hundimiento del jinete, obtienes un único Aumento.</p>",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

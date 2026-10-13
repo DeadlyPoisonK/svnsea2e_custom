@@ -1,0 +1,22 @@
+{
+  "folder": "x73GUTtn0yqIt3h2",
+  "name": "Parar a Matushka",
+  "type": "sorcery",
+  "_id": "RnyX4VEQycqUvbrw",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Con un paso, Tură te encarga una tarea específica que forma parte de un plan mucho mayor, pero que no comparte contigo. La tarea puede ser entregar una carta, permanecer fuera de una casa durante varias horas, abrir una ventana o cantar una canción determinada en voz alta en una taberna concreta. Con dos pasos, Tură te pide que realices dos tareas pequeñas, al parecer sin relación alguna entre ellas. Con tres pasos, Tură te pide que encuentres respuesta a una pregunta que requiere cierta investigación.</p><p>Con cuatro pasos, Tură te pide que encuentres respuesta a una pregunta que requiere espiar a un poluchatel, al zar, a la zarina o incluso a la propia Matushka.</p><p>A continuación te presentamos dos ejemplos de posibles tareas, la primera de un paso y la segunda de cuatro pasos:</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 149",
+    "used": false,
+    "sorctype": "tura",
+    "sorcdur": "none",
+    "sorccat": "task",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

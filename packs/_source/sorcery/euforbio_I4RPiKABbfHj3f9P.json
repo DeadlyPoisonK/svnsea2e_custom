@@ -1,0 +1,21 @@
+{
+  "folder": "xu8eDKs9AYg0HUdE",
+  "name": "Euforbio",
+  "type": "sorcery",
+  "_id": "I4RPiKABbfHj3f9P",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este extracto otorga a quien lo beba la audacia y la determinación de los héroes de antaño. Durante una escena, el personaje que beba este extracto es inmune al Miedo, y cualquier acción que use un Enfoque de Intimidar contra este personaje requiere 2 Aumentos para tener éxito. Preparar este extracto necesita 1 Requisito.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 96",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

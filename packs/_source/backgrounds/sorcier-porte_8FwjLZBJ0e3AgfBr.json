@@ -1,0 +1,33 @@
+{
+  "folder": "K4Suv6nR4omjCfBo",
+  "name": "Sorcier porté",
+  "type": "background",
+  "_id": "8FwjLZBJ0e3AgfBr",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Has dominado el arte de Porté, la magia que abre portales.</p>",
+    "infosource": "7º Mar (básico), p. 144",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando cierres una blessure que rasgó un villano.</p>",
+    "skills": [
+      "empathy",
+      "hide",
+      "ride",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Noción del tiempo"
+    ],
+    "nation": "montaigne"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "CXXvM7Ygk4Y8t234",
+  "name": "Deeremchin (Saqueador)",
+  "type": "background",
+  "_id": "3ww2GjROTSMXxLw6",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Paz</p><p><em>Ventajas en el libro (en inglés): Duelist Academy (Mori Naiz).</em></p>",
+    "infosource": "Khitai, p. 110 (traducción no oficial)",
+    "quirk": "<p>Gana un punto de héroe cuando decidas golpear a un enemigo antes de que pueda prepararse o atacarte primero.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "hide",
+      "ride",
+      "weaponry"
+    ],
+    "advantages": [
+      "Academia de esgrima (Khitai)",
+      "Jinete consumado (Khitai)"
+    ],
+    "nation": "none",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

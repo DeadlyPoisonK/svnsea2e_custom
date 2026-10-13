@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Eadburg, el Rico",
+  "type": "sorcery",
+  "_id": "K8mRaDAqZTDemVjy",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Dicen que tras jurarle lealtad al rey Elilodd, Eadburg entregó todos sus bienes terrenales. El que una vez fuera un rico mercader tomó un voto de pobreza y se negó a recibir ningún pago superior a lo que necesitaba para sobrevivir. Aun así, se dice que su nombre no refleja sus bienes terrenales, sino su riqueza espiritual.</p><p>Característica mayor: Donaire Característica menor: Ingenio</p><h3>Naciones de Théah vol. 1, p. 49</h3><p><strong>Virtud:</strong> Altruista (El ahorcado). <strong>Hibris:</strong> Envidioso (El mendigo).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando regales dinero u objetos valiosos que no te sean necesarios para vivir.</p><p><strong>Glamour legendario — Bendición del penitente:</strong> Activa este Glamour y gasta 1 punto de héroe cuando tengas tiempo de imponer tus manos sobre un compañero y ofrecerle tu bendición. La próxima vez que un compañero bendecido tire dados en esta sesión podrá convertir en un 10 cualquier dado cuyo resultado sea igual o inferior a tu Donaire. No puedes bendecirte a ti mismo.</p>",
+    "infosource": "7º Mar (básico), p. 212",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

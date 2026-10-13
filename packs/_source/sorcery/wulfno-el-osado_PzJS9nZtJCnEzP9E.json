@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Wulfnoð, el Osado",
+  "type": "sorcery",
+  "_id": "PzJS9nZtJCnEzP9E",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Wulfnoð era el primero que entraba en la batalla y el último en marcharse. Era tan bueno en lo que hacía que el resto de caballeros toleraban su impetuosidad.</p><p>Las historias de Wulfnoð lo representan siempre rompiendo la formación y persiguiendo a un enemigo por el campo de batalla. Su temeridad a menudo pillaba a sus oponentes con la guardia baja, lo que le permitía vencer en circunstancias difíciles.</p><p>Característica mayor: Músculo Característica menor: Maña</p><h3>Naciones de Théah vol. 1, p. 51</h3><p><strong>Virtud:</strong> Flexible (Monedas). <strong>Hibris:</strong> Imprudente (El héroe).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe si actúas antes de pensar y eso te deja aislado, solo y enfrentándote al peligro sin ayuda.</p><p><strong>Glamour legendario — No he terminado aún:</strong> Activa este Glamour cuando te quedes sin Aumentos en una secuencia de acción para infligir a un oponente una cantidad de Heridas igual a tu Armas + Músculo. Un héroe que haya activado este Glamour una vez en su ronda puede volver a activarlo, pero cada vez que lo haga sufre una Herida Dramática que no se puede evitar de forma alguna. NACIONES DE THÉAH: VOLUMEN 1 51</p>",
+    "infosource": "7º Mar (básico), p. 213",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

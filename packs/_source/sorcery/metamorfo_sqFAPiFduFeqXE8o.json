@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Metamorfo",
+  "type": "monsterquality",
+  "_id": "sqFAPiFduFeqXE8o",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Este monstruo tiene la poderosa habilidad de transformar cualquier criatura en otra. Esta aptitud otorga todas las características de la forma de la criatura objetivo, aunque la criatura transformada conserva su mente y voluntad, al menos durante un tiempo. Una vez transformado, solo una poderosa magia puede devolver al objetivo a su forma original. Si la criatura pasa demasiado tiempo en su nueva forma, comienza a perder el sentido de sí misma. El DJ tiene que gastar 1 punto de peligro para activar esta habilidad. Un héroe objetivo de un Metamorfo puede gastar 1 punto de héroe para conservar solo un aspecto de su forma original, como, por ejemplo, la capacidad de hablar.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 59",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

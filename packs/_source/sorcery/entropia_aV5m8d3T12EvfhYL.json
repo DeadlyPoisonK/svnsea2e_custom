@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Entropía",
+  "type": "sorcery",
+  "_id": "aV5m8d3T12EvfhYL",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Tu contacto puede hacer que los objetos se descompongan hasta la nada. Genera 1 de Plaga. Destruye un único objeto mundano que puedas sostener en la mano. Si deseas destruir algo más grande, puedes activar este poder en cada una de tus acciones para destruir otro metro cúbico de material, pero el objeto permanece intacto hasta que hayas gastado suficientes acciones para destruirlo por completo.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 202 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

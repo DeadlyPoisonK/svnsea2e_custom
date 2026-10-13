@@ -1,0 +1,19 @@
+{
+  "folder": "PWCKDOvwS0ovE4Y9",
+  "name": "Postura Bittner (Delante)",
+  "type": "duelstyle",
+  "_id": "uoknd31czYgW1rKj",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Postura Bittner (delante): Las maniobras que evitan Heridas evitan tantas Heridas adicionales como tu nivel de Brío, pero no puedes realizar la maniobra Estocada. De todas formas, todavía puedes gastar Aumentos en tu acción para infligir Heridas como haría cualquiera que no sea espadachín.</p><p>Selecciona tu postura al principio de cada ronda. Si deseas cambiar de postura durante una ronda, debes gastar 1 Aumento para hacerlo.</p>",
+    "used": false,
+    "bonus": "",
+    "infosource": "7º Mar (básico), p. 237 (estilo Drexel)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

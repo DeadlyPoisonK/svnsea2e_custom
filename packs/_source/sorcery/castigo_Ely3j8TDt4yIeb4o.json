@@ -1,0 +1,22 @@
+{
+  "folder": "piYhdrGNp0ZAVmW9",
+  "name": "Castigo",
+  "type": "sorcery",
+  "_id": "Ely3j8TDt4yIeb4o",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Esta mezcla está específicamente elaborada para resultar cáustica para los monstruos pero inocua para los humanos. Una criatura sobrenatural expuesta a esta poción sufre un número de Heridas igual al doble de la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 199 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

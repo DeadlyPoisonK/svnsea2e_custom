@@ -1,0 +1,23 @@
+{
+  "folder": "BsRq7OrECMmGFFR9",
+  "name": "Joie de vivre",
+  "type": "advantage",
+  "_id": "4fYiy66gRZLzGhil",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Justo antes de que tenga lugar una confrontación con un villano, gasta 1 punto de héroe y haz algún tipo de comentario breve o inteligente como: «El alma brilla más cuando las cosas parecen más oscuras». Todos los héroes que lo escuchen cuentan como 10 todos los dados que tiren en su siguiente tirada y tengan un valor igual o inferior a su habilidad.</p><p><em>Coste: 5 (3 si eres montaignés).</em></p>",
+    "infosource": "7º Mar (básico), p. 154",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  }
+}

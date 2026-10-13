@@ -1,0 +1,18 @@
+{
+  "folder": "jraBR9ng5ywEQ4lN",
+  "name": "Quetzuo",
+  "type": "duelstyle",
+  "_id": "KcH6owxL6EcxDmpc",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Los guerreros Quetzuo fueron entrenados originalmente para cazar brujas y magos. Utilizaron técnicas para mantener su objetivo fijo en ellos y, más tarde, los tzak k'anos adoptaron estas técnicas para la caza y el ejército. Los guerreros Quetzuo usan un escudo en una mano y un arma (generalmente un garrote, cuchillo o lanza) en la otra. El escudo, conocido como Challi, es redondo, está hecho de madera y cuero, y es construido por el guerrero durante su entrenamiento. El Challi frecuentemente está decorado con plumas y piedras preciosas, y la ornamentación del escudo suele ser una marca de alto rango o estatus.</p><p>Durante el entrenamiento, la maestra le presta su propio Challi a su aprendiz, quien lo usa hasta completar sus lecciones. La maestra elige un Yencotetl, una piedra que puede ser desde una roca común y corriente hasta un gran trozo de turquesa. Cuando la aprendiz de Quetzuo completa una lección, desprende una esquirla del Yencotetl y la usa para hacer un mosaico en el Challi que está elaborando. Al final de su formación, el Yencotetl es una escultura, que representa los viajes que ha realizado la estudiante y las pruebas que ha superado durante su tiempo de tutela. El guerrero Quetzuo se apega a su Challi; es un gran honor recibir el Challi de un maestro, ya que renunciar a su escudo se considera una gran señal de respeto y confianza.</p>",
+    "infosource": "El Nuevo Mundo, p. 183",
+    "bonus": "<p><strong>Provocación con Challi.</strong></p><p>Mientras uses un escudo en una mano y un arma en la otra, obtienes una maniobra especial llamada «Provocación con Challi» que te permite usar tu escudo para desequilibrar a tu objetivo, dirigiendo su atención hacia ti. Cuando realices esta maniobra, inflige una Herida; la próxima vez que tu objetivo inflija Heridas en esta ronda, evitas tantas Heridas como niveles tengas en Armas. Si tu objetivo elige infligir Heridas a cualquier héroe que no seas tú en su próxima acción, debe gastar una cantidad de Aumentos igual a tu Brío.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

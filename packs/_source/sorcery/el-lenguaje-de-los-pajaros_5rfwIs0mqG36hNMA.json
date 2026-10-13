@@ -1,0 +1,22 @@
+{
+  "folder": "ubbm9ln1dtOMG7jG",
+  "name": "El lenguaje de los pájaros",
+  "type": "sorcery",
+  "_id": "5rfwIs0mqG36hNMA",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Puedes hablar con cualquier pájaro durante una escena. Puedes preguntarle por cualquier cosa que haya visto u oído antes de que tú llegaras o en sus viajes recientes. También puedes solicitar la ayuda de los pájaros en nombre de Tură. Incluso los pájaros que nunca han estado en Ussura tratarán de acatar tus órdenes. Si la solicitud conlleva un Riesgo, el pájaro tira 5 dados, pero tú decides cómo gastar sus Aumentos. Si es una solicitud particularmente indicada para el pájaro, éste consigue 2 dados adicionales.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 148",
+    "used": false,
+    "sorctype": "tura",
+    "sorcdur": "none",
+    "sorccat": "gift",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

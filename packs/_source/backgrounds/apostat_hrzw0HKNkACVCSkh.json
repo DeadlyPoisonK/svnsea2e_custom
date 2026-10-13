@@ -1,0 +1,33 @@
+{
+  "folder": "IzxDf7LBEx0QQz86",
+  "name": "Apostat",
+  "type": "background",
+  "_id": "hrzw0HKNkACVCSkh",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Te han expulsado de tu tierra natal por lo que podrías hacer, pero no permitirás que eso te impida hacer lo que es correcto.</p><p><em>Ventajas en el libro: Hechicería (Hexenwerk).</em></p>",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando decides aliarte con alguien al que encuentras particularmente desagradable para poder lograr algo importante.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "empathy",
+      "notice",
+      "ride"
+    ],
+    "advantages": [
+      "Estómago de hierro",
+      "Hechicería",
+      "Reputación"
+    ],
+    "active": true,
+    "infosource": "Naciones de Théah vol. 2, p. 207",
+    "nation": "eisen"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

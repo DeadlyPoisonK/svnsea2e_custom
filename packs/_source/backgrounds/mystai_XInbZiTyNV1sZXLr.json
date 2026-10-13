@@ -1,0 +1,32 @@
+{
+  "folder": "CXYgWftEL3IgByAi",
+  "name": "Mystai",
+  "type": "background",
+  "_id": "XInbZiTyNV1sZXLr",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>El espíritu humano es capaz de cosas increíbles. Se lo vas a demostrar al mundo.</p>",
+    "infosource": "Naciones Piratas, p. 148",
+    "quirk": "<p>Ganas 1 punto de héroe cuando boicotees al mystai de Hecteba.</p>",
+    "skills": [
+      "athletics",
+      "convince",
+      "intimidate",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Noción del tiempo"
+    ],
+    "nation": "numa",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

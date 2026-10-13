@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "El favorito de la taberna",
+  "type": "advantage",
+  "_id": "4KWVTXvqWOP87gWT",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando realices un Riesgo de Interpretar en un lugar de «clase baja» como una taberna del puerto, la esquina de una calle o un lugar similar, consigues 1 dado adicional.</p>",
+    "infosource": "Naciones Piratas, p. 150",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

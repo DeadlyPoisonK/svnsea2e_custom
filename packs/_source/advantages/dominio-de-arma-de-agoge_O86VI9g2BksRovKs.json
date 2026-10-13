@@ -1,0 +1,23 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Dominio de arma de Agoge",
+  "type": "advantage",
+  "_id": "O86VI9g2BksRovKs",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>Requiere Lakedaimon Agoge.</strong></p><p>Elige un arma adicional de la lista de armas de Agoge (página 174, en la sección de «Embate Agoge»). Consigues la bonificación apropiada cuando la empuñas.</p>",
+    "infosource": "Naciones Piratas, p. 150",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 3900000,
+  "ownership": {
+    "default": 0
+  }
+}

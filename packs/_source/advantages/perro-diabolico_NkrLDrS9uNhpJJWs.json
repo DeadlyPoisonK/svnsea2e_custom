@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Perro diabólico",
+  "type": "advantage",
+  "_id": "NkrLDrS9uNhpJJWs",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>Otro héroe o tú debe tener la ventaja «Casado con el mar».</strong> Gasta 1 punto de héroe. Cualquier brigada que se encuentre bajo tu mando esta ronda tira 2 dados adicionales en cualquier Riesgo.</p>",
+    "infosource": "Naciones Piratas, p. 150",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

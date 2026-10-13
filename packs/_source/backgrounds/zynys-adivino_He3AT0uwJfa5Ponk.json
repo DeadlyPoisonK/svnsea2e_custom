@@ -1,0 +1,33 @@
+{
+  "folder": "3RQTsbeWnY6qUVnN",
+  "name": "Žynys (Adivino)",
+  "type": "background",
+  "_id": "He3AT0uwJfa5Ponk",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Te encontraste con el Diablo en tu caminar, lo engañaste y conseguiste que sus poderes estuvieran a tus órdenes.</p>",
+    "infosource": "7º Mar (básico), p. 144",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando uses algo malvado para hacer el bien.</p>",
+    "skills": [
+      "athletics",
+      "convince",
+      "perform",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Lingüista"
+    ],
+    "nation": "sarmatia"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

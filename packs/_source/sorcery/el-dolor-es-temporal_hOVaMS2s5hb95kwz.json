@@ -1,0 +1,22 @@
+{
+  "folder": "VxtfbGZzvag7ET35",
+  "name": "El dolor es temporal",
+  "type": "sorcery",
+  "_id": "hOVaMS2s5hb95kwz",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este Glamour para curarte inmediatamente 5 Heridas por cada nivel que tengas en él. Las Heridas Dramáticas no se curan.</p>",
+    "infosource": "7º Mar (básico), p. 216",
+    "sorctype": "knight",
+    "sorccat": "glamour",
+    "sorcsubcat": "minor",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

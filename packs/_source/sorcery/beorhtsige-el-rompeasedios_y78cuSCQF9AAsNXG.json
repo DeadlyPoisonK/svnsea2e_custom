@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Beorhtsige, el Rompeasedios",
+  "type": "sorcery",
+  "_id": "y78cuSCQF9AAsNXG",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cuando los enemigos asediaron el castillo del rey Elilodd, fue Beorhtsige quien llegó y rompió las líneas. Cuando el propio Beorhtsige se encontró bajo asedio, asaltó a un ejército de frente con solo un puñado de soldados leales.</p><p>Parece que no importa en qué bando se encontrara Beorhtsige, ningún asedio podía resistir su voluntad.</p><p>Característica mayor: Donaire Característica menor: Músculo</p><h3>Naciones de Théah vol. 1, p. 48</h3><p><strong>Virtud:</strong> Afortunado (El timón). <strong>Hibris:</strong> Firme (Monedas).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando consigas romper el cerco de un lugar fortificado o protegido o cuando defiendas un lugar así de los enemigos.</p><p><strong>Glamour legendario — No me moveré:</strong> Resistes al pie del cañón y nadie puede pasar. Activa este Glamour cuando llames la atención durante un combate para aplicar Presión a todos los oponentes que puedan verte. Todos ellos deberán gastar un Aumento adicional para realizar cualquier acción que no sea retirarse del combate.</p>",
+    "infosource": "7º Mar (básico), p. 211",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

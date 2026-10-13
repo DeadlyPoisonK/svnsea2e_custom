@@ -1,0 +1,22 @@
+{
+  "folder": "aft3kr5m13fZOAVo",
+  "name": "Firma el acta",
+  "type": "sorcery",
+  "_id": "uiuyXtw2rdW3dRcq",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El ritual empieza formando un círculo alrededor de una hoguera en la playa. Cada persona implicada coge una daga de otra de las personas que se encuentran en el círculo y se hace un corte en la mano. Luego se pasa un cuenco, en el que cada participante vierte sangre, dice su nombre (su nombre completo y verdadero) y se lo pasa a la persona que tiene al lado. El cuenco recorre el círculo en sentido antihorario, luego cada participante coloca la mano ensangrentada en el fuego (sí, en el fuego) y vierte sangre en las brasas. Si el ritual ha tenido éxito, el fuego soltará una llamarada y luego se extinguirá. Por último, todos los participantes firman el Acta usando la sangre del cuenco. Deben escribir su nombre completo o el ritual no funcionará. No se pueden añadir nombres al Acta una vez que se ha firmado.</p>",
+    "used": false,
+    "infosource": "Naciones Piratas, p. 158",
+    "sorctype": "charter",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

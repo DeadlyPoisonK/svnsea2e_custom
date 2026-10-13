@@ -1,0 +1,21 @@
+{
+  "folder": "uETcMjSzbDU1pecb",
+  "name": "La Estela de Votan",
+  "type": "sorcery",
+  "_id": "f7TnWxTF2AGei3t4",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La heroína Votan fue una arquitecta que diseñó monumentos tan agradables para los dioses del Viejo Aztlán que le otorgaron el libre albedrío más allá de la muerte. Se le dio una pequeña estela parlante para persuadir a los Dioses Remeros de que llevaran a Votan de orilla eterna en orilla eterna. Ahora un Ahez puede invocar el símbolo de Votan, asumiendo que no lo esté usando, para garantizar viajes seguros.</p><p>Cuando un héroe lleva la Estela de Votan, puede gastar 1 punto de héroe para llegar sano y salvo a su destino, evitando cualquier problema que pudiera haber encontrado en el camino. Estas evasiones a menudo se disfrazan como contratiempos (un árbol caído que bloquea la ruta normal), pero resultan salvar vidas (había un gran campamento de bandidos a lo largo de la ruta que los héroes evitaron).</p><p>Sin embargo, mientras el héroe lleve la Estela de Votan, también llevará la muerte con él. A menos que se lleve a cabo una acción que salve su vida, cualquier personaje que quede Indefenso muere al final de la escena.</p>",
+    "infosource": "El Nuevo Mundo, p. 175",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "pixan"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

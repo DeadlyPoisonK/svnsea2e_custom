@@ -1,0 +1,22 @@
+{
+  "folder": "AFeBWzCal8PCdRZC",
+  "name": "Tirar Menor",
+  "type": "sorcery",
+  "_id": "o27XFsLfr2GRxRTJ",
+  "img": "icons/magic/perception/eye-ringed-green.webp",
+  "system": {
+    "description": "<p>Coge 1 hebra para tirar de tu objetivo hacia ti. El personaje<br>pierde 1 Aumento, se cae de cabeza hacia ti y se<br>esfuerza por recuperar el equilibrio y ponerse en pie.<br>Por supuesto, los personajes que est&eacute;n en balcones o<br>barandillas pueden caer al suelo si tiras de ellos. Si el<br>personaje est&aacute; en el otro lado de un obst&aacute;culo m&oacute;vil o<br>que se puede romper f&aacute;cilmente (como una mesa o una<br>ventana), recibe 1 Herida.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 230",
+    "sorctype": "sorte",
+    "sorcdur": "none",
+    "sorccat": "tesse",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

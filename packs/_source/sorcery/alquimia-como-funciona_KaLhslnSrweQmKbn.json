@@ -1,0 +1,22 @@
+{
+  "folder": "Blvpl18m1qGPsjC8",
+  "name": "Alquimia: cómo funciona",
+  "type": "sorcery",
+  "_id": "KaLhslnSrweQmKbn",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Aunque no es una hechicería como las demás (un boticario no se considera un hechicero, a pesar de sus efectos en el juego), la Alquimia se adquiere mediante la ventaja Hechicería (<strong>Libro básico,</strong> página 149). Cada vez que adquieras la ventaja Hechicería, obtienes acceso a uno de los cinco <em>Juvenilia.</em> Además, cada nivel de Alquimia por encima del primero mejora el <em>laboratorium,</em> lo que te permite evitar ciertos requisitos para crear un Juvenilia específico. Escoge un único objeto o brebaje de entre los Juvenilia que conoce tu héroe, que será el que pueda crear en su laboratorium sin ningún requisito.</p><p>Todos los experimentos de la Alquimia (que suelen ser peligrosos) deben llevarse a cabo en un lugar seguro y controlado. Debido a ello, un boticario posee un laboratorium, un lugar subterráneo bien iluminado y ventilado donde puede realizar sus investigaciones lejos de miradas indiscretas. Estos lugares suelen contar con equipo caro y modificado, metales raros y otras sustancias químicas, además de tomos voluminosos, escritos a mano y casi siempre codificados, en los que los boticarios anotan sus investigaciones y resultados.</p><p>Para los no iniciados, un laboratorium puede parecer un lugar desorganizado y descuidado. Naturalmente, esta disposición sin sentido y aparentemente caótica tiene un propósito. Es otra capa más de misterio que usa el boticario, no solo para proteger su trabajo, sino para asegurarse que los legos en la materia no puedan percibir los misterios de su ciencia sagrada.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 93",
+    "sorctype": "alquimia",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

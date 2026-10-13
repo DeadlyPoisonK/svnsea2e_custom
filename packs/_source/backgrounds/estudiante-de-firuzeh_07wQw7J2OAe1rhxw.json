@@ -1,0 +1,33 @@
+{
+  "folder": "3rpOB9OIylqQmszO",
+  "name": "Estudiante de Firuzeh",
+  "type": "background",
+  "_id": "07wQw7J2OAe1rhxw",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Has estudiado a los pies de Firuzeh, uno de los más grandes Kavi de los tiempos modernos.</p><p><em>Ventajas en el libro: Rima y verso (Damu).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 157",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando conviertes a un rival en un aliado, estudiante o amigo.</p>",
+    "skills": [
+      "convince",
+      "intimidate",
+      "perform",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Kwa damu",
+      "Lingüista",
+      "Rima y verso"
+    ],
+    "nation": "persis"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

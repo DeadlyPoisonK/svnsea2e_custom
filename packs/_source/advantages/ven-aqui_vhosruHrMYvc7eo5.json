@@ -1,0 +1,24 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Ven aquí",
+  "type": "advantage",
+  "_id": "vhosruHrMYvc7eo5",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para atraer a otro personaje a una habitación privada y marcharte después de dicha habitación sin él, con lo que lo sacas de la escena. Puede ser rescatado después de que te marches.</p>",
+    "infosource": "7º Mar (básico), p. 150",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

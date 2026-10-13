@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Reputación",
+  "type": "advantage",
+  "_id": "hW2J3lS2ZN6aoMqo",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Determina cuál es tu reputación con un solo adjetivo («Honorable», «Vicioso», etcétera). Cuando uses tu reputación para sacar ventaja en los Riesgos sociales, consigues 1 dado adicional. Puedes comprar esta ventaja varias veces; cada vez que lo hagas, puedes ganar una nueva Reputación o aumentar el número de dados adicionales que consigues cuando invocas una Reputación ya definida.</p>",
+    "infosource": "7º Mar (básico), p. 150",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 350000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "folder": "gd4oUJpI8AMIWALS",
+  "name": "Tokoyriq",
+  "type": "background",
+  "_id": "rkVZ3Gt0lJSxbN0Y",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tienes la tarea de mantener la paz dentro de Kuraq como guardia y policía secreta.</p>",
+    "infosource": "El Nuevo Mundo, p. 162",
+    "quirk": "<p>Ganas 1 punto de héroe cuando descubres un secreto y te mete en problemas.</p>",
+    "skills": [
+      "aim",
+      "empathy",
+      "intimidate",
+      "notice",
+      "weaponry"
+    ],
+    "advantages": [
+      "Chist, por aquí",
+      "Piensa rápido"
+    ],
+    "nation": "kuraq",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

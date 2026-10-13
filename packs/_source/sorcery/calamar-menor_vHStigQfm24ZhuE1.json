@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Calamar Menor",
+  "type": "sorcery",
+  "_id": "vHStigQfm24ZhuE1",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El calamar tiene un agarre irrompible y morira antes de soltar a su presa. Esto a menudo se aplica a un heroe que tiene el mohwoo del calamar, pero de una manera menos literal. Este tipo de heroe a menudo se encari&ntilde;a rapidamente con alguien y tiene dificultades para dejarlo marchar o para admitir que esta equivocado. A menudo sus enemigos lo describen como cabezota y sus amigos como empecinado.</p>\n<hr>\n<p>Activa este mohwoo cuando gastes 1 Aumento para aplicar Presion. Para actuar contra tu Presion, otro personaje debe gastar 2 Aumento adicionales en lugar de 1. Un qing solo puede usar esta capacidad una vez por episodio.Tatuaje Mohwoo</p>",
+    "infosource": "Naciones Piratas, p. 171",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 125000,
+  "ownership": {
+    "default": 0
+  }
+}

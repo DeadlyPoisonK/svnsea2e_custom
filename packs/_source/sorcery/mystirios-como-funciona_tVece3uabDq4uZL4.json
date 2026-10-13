@@ -1,0 +1,22 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Mystírios: cómo funciona",
+  "type": "sorcery",
+  "_id": "tVece3uabDq4uZL4",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cuando un héroe adquiere esta hechicería, elige uno de los dioses numanaris y aprende su mystírio o misterio. Este proceso implica un ritual largo y guiado donde los devotos de un dios participan en sus secretos. Cada mystírio también viene con un <em>apokálypsi</em> («revelación»), un secreto que solo conocen los devotos de ese dios y que relata las motivaciones y los verdaderos deseos de ese dios. Una vez se completa el ritual, el héroe se convierte en un mystai, un iniciado en los misterios del dios. Aprende algo sobre la sabiduría del dios y llega a entender mejor sus propias capacidades. Esto libera una parte de su potencial heroico ilimitado, lo que le concede capacidades que pueden ser menos ostentosas que los efectos de otras tradiciones de hechicería… pero no menos potentes.</p>",
+    "infosource": "Naciones Piratas, p. 166",
+    "sorctype": "mystirios",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

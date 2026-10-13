@@ -1,0 +1,24 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Recolector",
+  "type": "advantage",
+  "_id": "9YwWAL4FlHV9vqXR",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando tengas al menos una hora para buscar comida en tu entorno, puedes encontrar materiales para crear armas rudimentarias (una lanza de piedra o madera, un cuchillo de piedra afilado, flechas simples de madera o piedra, etc.), ropa protectora o herramientas básicas (como un martillo tosco, hacha, cincel, cuchillo de desollar, etc.). Estos objetos funcionan normalmente durante una escena (no necesariamente la escena en la que se crearon). Si el DJ gasta 1 punto de peligro, el objeto se rompe.</p>",
+    "infosource": "El Nuevo Mundo, p. 166",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

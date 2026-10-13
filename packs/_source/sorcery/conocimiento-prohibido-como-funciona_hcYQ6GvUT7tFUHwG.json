@@ -1,0 +1,22 @@
+{
+  "folder": "KCreOz5CX3gRxrSb",
+  "name": "Conocimiento prohibido: cómo funciona",
+  "type": "sorcery",
+  "_id": "hcYQ6GvUT7tFUHwG",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El conocimiento prohibido se basa en el concepto de tentar a la suerte utilizando magia poderosa que te vuelve menos capaz en otras acciones no mágicas. Un ocultista genera Plaga (energía negativa que distorsiona la realidad y drena la vida) a medida que se aprovecha de muchas de sus artes oscuras; otras artes oscuras dependen de la cantidad total de Plaga que el ocultista ya haya generado. La Plaga, sin embargo, no es inofensiva, y usar las artes oscuras es siempre una apuesta arriesgada. Cada vez que un ocultista realiza un Riesgo, el DJ puede gastar un punto de peligro. Cualquier dado que obtenga un resultado por debajo de su valor actual de Plaga no se puede utilizar para crear Aumentos. Por ejemplo, un ocultista con 4 de Plaga no podría usar ningún dado que saque un 1, 2 o 3 para obtener Aumentos. Un ocultista puede gastar un punto de héroe para purgar toda la Plaga de su cuerpo sufriendo un número de Heridas igual a su valor actual de Plaga.</p><p>La primera vez que adquieres la ventaja Hechicería, elige dos artes oscuras. Estos poderes deben ser un arte oscura general o un arte oscura de tu nación natal. Cada vez posterior que adquieras la ventaja Hechicería, elige dos artes oscuras adicionales. Nunca puedes elegir un arte oscura de otra nación. Por ejemplo, un ocultista de Agnivarsa nunca podrá elegir el arte oscura Mutágeno.</p><p>Un personaje debe gastar un punto de héroe cada vez que active un arte oscura; durante una secuencia de acción también debe gastar un Aumento.</p>",
+    "infosource": "Khitai, p. 201 (traducción no oficial)",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

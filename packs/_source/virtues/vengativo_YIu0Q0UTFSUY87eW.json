@@ -1,0 +1,17 @@
+{
+  "folder": "ZP9JMCrX0jaFLHs0",
+  "name": "Vengativo",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando ejerzas la justicia poética, hagas que alguien pague lo que debe u obligues a alguien a que cumpla un trato. Para el siguiente Riesgo, cuando determines los Aumentos, cada dado cuenta como 1 Aumento.</p>",
+    "infosource": "El Diablo Jonah · Naciones Piratas, p. 154"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "YIu0Q0UTFSUY87eW",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

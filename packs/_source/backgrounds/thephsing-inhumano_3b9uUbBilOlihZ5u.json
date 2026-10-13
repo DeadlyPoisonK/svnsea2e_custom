@@ -1,0 +1,32 @@
+{
+  "folder": "5tjKI2pyNkh7RQ3Z",
+  "name": "Thephsing (Inhumano)",
+  "type": "background",
+  "_id": "3b9uUbBilOlihZ5u",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Compasión</p><p><em>Ventajas en el libro (en inglés): Magic (Heritage).</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando tu herencia inhumana haga que destaques entre la multitud y te meta en problemas.</p>",
+    "skills": [
+      "convince",
+      "hide",
+      "intimidate",
+      "perform",
+      "theft"
+    ],
+    "advantages": [
+      "Hechicería (Khitai)",
+      "Camaradería (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 111 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

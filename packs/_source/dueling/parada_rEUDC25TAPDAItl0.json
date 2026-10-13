@@ -1,0 +1,18 @@
+{
+  "folder": "lsFFlvwOxj6nD71t",
+  "name": "Parada",
+  "type": "duelstyle",
+  "_id": "rEUDC25TAPDAItl0",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>El arte de interponer tu arma entre tú mismo y el daño. Realiza Parada para evitar un número de Heridas igual a tu nivel de Armas. Solo puedes activar Parada en tu acción e inmediatamente después de la maniobra que te causó Heridas.</p>",
+    "infosource": "7º Mar (básico), p. 235",
+    "bonus": ""
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

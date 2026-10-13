@@ -1,0 +1,21 @@
+{
+  "folder": "a9auYVTd6m9zGaNk",
+  "name": "Toque de Deterioro",
+  "type": "sorcery",
+  "_id": "BfKyBIjIOzx3X4LO",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>Las religiones antiguas dentro de Mbey enseñan que hay un espíritu dentro de todo, ya sea un ser vivo o un objeto inanimado. Una silla tiene el mismo tipo de alma que la que posee un árbol o un perro. Con Toque de Deterioro, el Toque Rojo se extiende al espíritu que reside dentro de las cosas cotidianas. El rooi heks toca un objeto y gasta Ruina 1, dejándolo inutilizable; un arma de fuego se cae a pedazos; una armadura se corroe y se oxida en cuestión de segundos, o una viga de soporte crítica para un edificio se hace polvo. Además de los efectos narrativos inmediatos (un villano no puede dispararte con una pistola que ya no funciona, obviamente), este poder se puede usar para crear una Oportunidad que puedes aprovechar más tarde. Una rooi heks que usa su Toque de Deterioro en la pistola de un villano puede esperar hasta un momento dramático para desencadenar la destrucción del arma. Este tipo especial de Oportunidad puede ser activada por cualquier héroe en su turno normal, pero puede ser activada por la propia rooi heks incluso cuando no sea su turno. Efectivamente, los rooi heks pueden interrumpir una acción en curso para desencadenar un Toque de Deterioro que ya se ha colocado. Cualquier acción interrumpida de esta manera no tiene éxito, pero el personaje que realizó esa acción aún pierde el Aumento que usó para realizarla.</p><p>Toque de Deterioro dura hasta el final de la escena. Si Toque de Deterioro afecta a un objeto mágico o un objeto distintivo, hace que el objeto solo sea inutilizable durante la escena en lugar de para siempre; el héroe deja caer su espada en un momento de torpeza y debe recuperarla más tarde.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 194",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

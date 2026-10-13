@@ -1,0 +1,23 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Sangre de oro",
+  "type": "advantage",
+  "_id": "wMnbtNRHTNBOOLUC",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Mientras tengas al menos 1 Herida Dramática, obtendrás un dado de bonificación adicional en todos los Riesgos de Convencer, Empatía, Interpretar y Tentar.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 178",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

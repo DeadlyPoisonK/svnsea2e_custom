@@ -1,0 +1,24 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Reserva personal",
+  "type": "advantage",
+  "_id": "a6J57SszZcqkynpW",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando recibas Riqueza, puedes gastar 1 punto de héroe para recibir Riqueza 1 adicional.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 177",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

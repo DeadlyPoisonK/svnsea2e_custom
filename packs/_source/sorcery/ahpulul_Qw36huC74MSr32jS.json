@@ -1,0 +1,22 @@
+{
+  "folder": "3fNO2d3iK8VKBqNJ",
+  "name": "Ahpulul",
+  "type": "sorcery",
+  "_id": "Qw36huC74MSr32jS",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Las cosas que el Ahez extrae de otros lugares se denominan colectivamente Ahpulul. Los Baxan son cosas sin inteligencia, como artículos, armas o ropa, mientras que los Pixan representan cualquier cosa inteligente que el Ahez invoca, como espíritus, criaturas o almas. De vez en cuando, un Ahez escuchará sobre un arma u objeto inteligente, pero los Pixan tienen forma de seres con mayor frecuencia.</p><h3>Baxan</h3><p>Los Baxan son elementos y objetos menores que un Ahez puede convocar para ayudarlo. Siempre duran una sola escena antes de desaparecer en una nube de humo. Un Baxan puede usarse varias veces en una escena siempre que el Ahez continúe pagando el coste de puntos de héroe para activar sus habilidades.</p><h3>Pixan</h3><p>Los Pixan son elementos y criaturas importantes que una Ahez puede convocar para ayudarla. Tienen consciencia, y pueden persistir durante más que una escena si quieren lograr algo. Siempre que un héroe lleve o esté acompañado por un Pixan, puede usar el poder del Pixan pagando el coste de puntos de héroe asociado al Pixan. Sin embargo, el Pixan también viene con un truco, algo que hace la vida del héroe un poco más difícil si decide convertirse en un Ahpul.</p>",
+    "infosource": "El Nuevo Mundo, p. 172",
+    "sorctype": "wayak",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

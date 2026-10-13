@@ -1,0 +1,22 @@
+{
+  "folder": "AFeBWzCal8PCdRZC",
+  "name": "Tirar Mayor",
+  "type": "sorcery",
+  "_id": "SJDPdvfVpzU4b3aO",
+  "img": "icons/magic/perception/eye-ringed-green.webp",
+  "system": {
+    "description": "<p>Gasta 1 punto de h&eacute;roe y coge una o m&aacute;s hebras para<br>tirar de varios objetivos hacia ti. Los objetivos de tu<br>Tessere siempre reciben 1 Herida debido a la fuerza de<br>tu arrastre, independiente de si hay obst&aacute;culos m&oacute;viles<br>o f&aacute;ciles de destruir que te separen de ellos, pero dichos<br>obst&aacute;culos no les causan una segunda Herida.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 230",
+    "sorctype": "sorte",
+    "sorcdur": "none",
+    "sorccat": "tesse",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

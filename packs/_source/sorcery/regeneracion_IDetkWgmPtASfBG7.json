@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Regeneración",
+  "type": "monsterquality",
+  "_id": "IDetkWgmPtASfBG7",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>El monstruo se cura con rapidez y es incluso capaz de regenerar los miembros que pierde, aunque esta cualidad solo se puede aplicar a un monstruo villano. Gasta 1 punto de peligro para eliminar todas las Heridas del último segmento, justo hasta la siguiente Herida Dramática. Gasta 2 puntos de peligro más para eliminar la siguiente Herida Dramática.</p>",
+    "infosource": "7º Mar (básico), p. 198",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

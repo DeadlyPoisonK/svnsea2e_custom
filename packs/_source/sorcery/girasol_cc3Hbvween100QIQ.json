@@ -1,0 +1,21 @@
+{
+  "folder": "xu8eDKs9AYg0HUdE",
+  "name": "Girasol",
+  "type": "sorcery",
+  "_id": "cc3Hbvween100QIQ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este extracto afecta al sentido del juicio del objetivo, haciéndolo incapaz de ocultar sus verdaderas intenciones y obligándole a responder a todas las preguntas de la forma más franca que le sea posible. Un personaje que beba el extracto de girasol no puede mentir durante una escena. Preparar este extracto necesita 1 Requisito.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 96",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

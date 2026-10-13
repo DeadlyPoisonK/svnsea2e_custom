@@ -1,0 +1,33 @@
+{
+  "folder": "M57WOXC69CG2ZoLB",
+  "name": "Consultores Nebīyi",
+  "type": "background",
+  "_id": "yg5jL4P8KRsUCfUK",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Las matemáticas son bellas en su verdad, incluso si otros son incapaces de ver el esplendor en los cálculos que haces.</p>",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando resuelves un problema usando conocimiento oscuro, un cálculo complejo o descifrándolo.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "scholarship",
+      "tempt",
+      "warfare"
+    ],
+    "advantages": [
+      "Lingüista",
+      "Mano de paz",
+      "Predicar con el ejemplo"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 174",
+    "nation": "aksum"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

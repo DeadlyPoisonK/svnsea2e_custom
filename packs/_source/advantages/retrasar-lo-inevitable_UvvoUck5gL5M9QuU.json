@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Retrasar lo inevitable",
+  "type": "advantage",
+  "_id": "UvvoUck5gL5M9QuU",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe durante una secuencia de acción o dramática, y selecciona cualquier Consecuencia con límite de tiempo. Retrasas ese límite de tiempo tantos Aumentos como gastes. Sin embargo, ya nadie puede superar o reducir esa Consecuencia por medio de gastar Aumentos.</p><p><em>Coste: 2 (1 si eres pérsico).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 159",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": 1
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

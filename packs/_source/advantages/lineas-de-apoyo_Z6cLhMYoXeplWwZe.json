@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Líneas de apoyo",
+  "type": "advantage",
+  "_id": "Z6cLhMYoXeplWwZe",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Al determinar quién va primero en el Combate en masa, puedes agregar tantos Aumentos adicionales como tu nivel de Ingenio. Esto no cambia la cantidad de Aumentos que puedes gastar.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 160",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

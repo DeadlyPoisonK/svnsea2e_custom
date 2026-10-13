@@ -1,0 +1,21 @@
+{
+  "folder": "NqSlX828sLHAWCwO",
+  "name": "Aliados improbables",
+  "type": "sorcery",
+  "_id": "WJwyuB0em33ZdDRf",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Dicen que Sousson siempre se encuentra acompa&ntilde;ado<br>de amigos donde quiera que vaya, pero que tras su paso<br>solo quedan enemigos en su estela. Mientras Sousson lo<br>posea, el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe para hacerse<br>amigo de alguien inmediatamente. Sin embargo, una vez<br>Sousson se marcha del s&egrave;vit&egrave;, este efecto se disipa y el<br>objetivo puede sentirse molesto con el s&egrave;vit&egrave;, dependiendo<br>de c&oacute;mo lo tratara.</p>",
+    "infosource": "Naciones Piratas, p. 165",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "gros",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "yScdzZG3TB1qFJJE",
+  "name": "Golpe certero",
+  "type": "sorcery",
+  "_id": "FTU9z64Au0RHeeQ6",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Glamour después de determinar los Aumentos para un Riesgo de Armas. Todos tus ataques infligen tantas Heridas adicionales como tu nivel en este Glamour. Este efecto dura toda la ronda.</p>",
+    "infosource": "7º Mar (básico), p. 215",
+    "used": false,
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "glamour",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

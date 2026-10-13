@@ -1,0 +1,22 @@
+{
+  "folder": "aft3kr5m13fZOAVo",
+  "name": "La bendición",
+  "type": "sorcery",
+  "_id": "nezvbNX20xACrGoV",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Os sugerimos que hagáis una copia del Acta (complementada con las firmas) y que la pongáis en el centro de la mesa o en cualquier otro lugar accesible para los jugadores. Ahora forma parte del relato de vuestra tripulación y todos debéis recordar el peso que ello pone sobre vuestros hombros. Si sois fieles al Acta, cosecharéis las recompensas. Pero si rompéis vuestro solemne voto, pagaréis un precio terrible por vuestro egoísmo.</p><p>La mecánica del Acta es simple: por cada héroe o villano que pague 1 punto de héroe o de peligro, se añade 1 punto a la reserva de suerte del Acta. Cada punto de suerte es 1d10. Por eso, si firman seis héroes o villanos, poned 6 dados de puntos de suerte en el Acta.</p><p>En cualquier momento durante la partida, cualquier jugador puede extraer tantos puntos de suerte como quiera de la reserva y añadirlos a una única tirada. Sin embargo, una vez se utiliza un d10, desaparece durante el resto de la sesión de juego. La reserva de suerte se restablece al principio de cada sesión de juego.</p><p>Quienes firmaron el Acta tienen buena suerte siempre y cuando cumplan con las normas del Acta. Si rompen alguna regla, sufren una terrible maldición.</p>",
+    "used": false,
+    "infosource": "Naciones Piratas, p. 159",
+    "sorctype": "charter",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

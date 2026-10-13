@@ -1,0 +1,22 @@
+{
+  "folder": "Nk9XzMl8LirAadwj",
+  "name": "Revivir",
+  "type": "sorcery",
+  "_id": "EBpDK62J8Z3mMH5J",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este poder y recibe 1 Herida Dramática para devolver a la vida a otro personaje. Curas todas sus heridas, excepto 1 Herida Dramática. Ambas Heridas Dramáticas, la que recibes y la que mantiene, no pueden ser sanadas por ningún efecto, ni siquiera mágico, y también pierdes la capacidad de Revivir nuevamente. Las Heridas Dramáticas se manifiestan en forma de una cicatriz notable. Tanto tú como tu objetivo tenéis exactamente la misma cicatriz. Tu objetivo debe haber muerto durante la escena en la que activas Revivir.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "path",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

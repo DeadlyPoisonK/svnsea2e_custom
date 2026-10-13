@@ -1,0 +1,22 @@
+{
+  "folder": "aKUid9pbLLTS3ZqR",
+  "name": "Absorber",
+  "type": "sorcery",
+  "_id": "JpS7Lc5SLTMm0EBg",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este poder inmediatamente cuando otro personaje utilice Hechicería o un efecto similar: tu Maravilla absorbe el poder y niega el efecto. Debes activar este poder antes de que se conozcan los efectos de la Hechicería. Solo puedes activar este poder una vez por escena.</p><p>El último paso en el Camino de los Devotos te muestra que siempre hay una manera correcta de usar la magia. La mejor manera de enseñar a cualquiera cómo usar la magia es con una demostración. Tu Maravilla ahora te permite lanzar un hechizo absorbido por ella.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 167",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "path",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

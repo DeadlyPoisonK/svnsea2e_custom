@@ -1,0 +1,19 @@
+{
+  "folder": "xRskIATgzioWdrTl",
+  "name": "Geng Yu Qiang",
+  "type": "duelstyle",
+  "_id": "JBF1AcyjVcN1Hfu1",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Shenzhou no carece de escuelas de artes marciales, desde templos y monasterios hasta academias militares. Esto conduce a una cantidad aparentemente interminable de variaciones de estilos populares, pero las técnicas de lucha más comunes e icónicas caen bajo una sola denominación: <em>Geng Yu Qiang.</em></p><p>Literalmente la frase shenesa para «lanza tras el trabajo agrícola», las técnicas del estilo Geng Yu Qiang se difundieron hace casi 200 años en preparación para la inminente invasión fusoesa de Shenzhou. Considerada ampliamente en Shenzhou como «la reina de las armas», la lanza shenesa consta de un asta flexible coronada por una punta de lanza con forma de hoja, afilada como una cuchilla. Una borla brillante de plumas, tela o crin de caballo se fija justo debajo de la punta de la lanza. Esta borla cumple varios propósitos: atrae la mirada del enemigo y lo distrae, sirve como un estandarte en miniatura para que los soldados de élite puedan destacar, pero lo más importante es que absorbe la sangre de las víctimas del arma para que el asta no se vuelva resbaladiza ni pegajosa.</p><p>El estilo Geng Yu Qiang a menudo es considerado demasiado rígido y reglamentado por los críticos, pero esta característica desaparece cuando se ve a un maestro del estilo en comparación con un novato. Los maestros del estilo fluyen de una forma a la siguiente, entrelazando ataques y defensas a la perfección.</p><p>En Fusō, a veces se enseña una lucha con lanzas similar a los heimin para defenderse de bandidos e invasores extranjeros. Los habitantes de Fusō llaman a este estilo de lucha <em>sojutsu</em>.</p>",
+    "infosource": "Khitai, p. 224 (traducción no oficial)",
+    "bonus": "<p><strong>Bonificación de escuela.</strong> Mientras empuñes una lanza de mango largo (los sheneses prefieren una lanza flexible a veces de más de 8 pies de largo, mientras que los fusoeses prefieren un arma de hoja ancha llamada naginata), tu maniobra Finta es reemplazada por Método Qiang. Cuando realizas Método Qiang infliges una Herida, y la siguiente fuente de Heridas sobre tu objetivo esta ronda inflige una Herida adicional. Luego, elige la maniobra Estocada, Empujar o Parada. Si realizas esa maniobra a continuación, obtienes una bonificación especial (ver más abajo). Puedes realizar Método Qiang una vez por ronda.</p><p>Estocada inflige una Herida adicional a quien elijas atacar. Parada reduce una Herida adicional, independientemente de la fuente. Empujar reduce las Heridas que inflige tu objetivo en una Herida adicional.</p><p><strong>Bonificación de maestría.</strong> Tu maestría sobre el Geng Yu Qiang te permite fluir sin problemas de una forma a otra, entrelazando tus golpes de lanza en un ritmo implacable. Cuando realizas Método Qiang, ahora puedes elegir dos maniobras de tu lista y obtener la bonificación si realizas cualquiera de ellas como tu siguiente maniobra. Además, cuando realizas cualquiera de las maniobras que elegiste para Método Qiang, puedes elegir otra maniobra de la misma lista y continuar obteniendo el beneficio. Esto continúa hasta que realices una maniobra que no hayas elegido.</p>",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

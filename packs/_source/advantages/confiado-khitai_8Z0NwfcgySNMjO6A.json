@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Confiado (Khitai)",
+  "type": "advantage",
+  "_id": "8Z0NwfcgySNMjO6A",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Activa esta ventaja después de que el DJ compre tus dados no utilizados durante un Riesgo de Empatía. Obtienes 2 puntos de héroe por cada dado que compre el DJ. Un héroe solo puede activar esta ventaja una vez por sesión de juego.</p>",
+    "infosource": "Khitai, p. 120 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

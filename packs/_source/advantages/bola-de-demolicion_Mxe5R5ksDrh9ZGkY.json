@@ -1,0 +1,24 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Bola de demolición",
+  "type": "advantage",
+  "_id": "Mxe5R5ksDrh9ZGkY",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para derribar una puerta, destrozar una barricada, volcar un carruaje, destruir o inutilizar de alguna otra forma un objeto utilizando solo tu fuerza e ímpetu.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 209",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

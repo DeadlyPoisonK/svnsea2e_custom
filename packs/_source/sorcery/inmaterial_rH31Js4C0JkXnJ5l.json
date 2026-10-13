@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Inmaterial",
+  "type": "monsterquality",
+  "_id": "rH31Js4C0JkXnJ5l",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Esta criatura es invisible para todos y cada uno de los sentidos humanos, pero su ubicación puede deducirse por otros medios, como el uso de la luz o la reacción de los animales. Este monstruo no puede ser dañado por ningún medio material, excepto bajo circunstancias <em>muy</em> específicas, como un material difícil de obtener (hierro puro, plata, etc.), magia u otras ocurrencias poco probables. Cualquier criatura Inmaterial puede adquirir forma física durante el tiempo que desee, pero durante ese tiempo se considera material y pierde sus inmunidades inmateriales.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 59",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

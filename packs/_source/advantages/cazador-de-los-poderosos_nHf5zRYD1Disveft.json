@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Cazador de los poderosos",
+  "type": "advantage",
+  "_id": "nHf5zRYD1Disveft",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe cuando infliges Heridas a un villano o un monstruo. Infliges una cantidad de Heridas adicionales igual a la diferencia entre su Fuerza y tu característica más alta. Por ejemplo, si tu característica más alta es tu Maña en 3 y estás infligiendo Heridas a un villano de Fuerza 10, infliges 7 Heridas adicionales.</p><p><em>Coste: 5 (3 si eres kuraq).</em></p>",
+    "infosource": "El Nuevo Mundo, p. 167",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

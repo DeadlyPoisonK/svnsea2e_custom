@@ -1,0 +1,32 @@
+{
+  "folder": "y0DwOQKkcGKxRhrF",
+  "name": "Alagbato Iya",
+  "type": "background",
+  "_id": "w6ldd4y8i6EsCc0t",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Una vez fuiste miembro de la guardia personal del Mansa de Mandén, una de las famosas «Madres Guardianas». (Restricción: debes identificarte como mujer).</p>",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando te pongas en peligro para proteger a otro personaje de un daño inmediato, ya sea físico o emocional.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "empathy",
+      "notice",
+      "weaponry"
+    ],
+    "advantages": [
+      "Acepta tu destino",
+      "Guardaespaldas"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 176",
+    "nation": "manden"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

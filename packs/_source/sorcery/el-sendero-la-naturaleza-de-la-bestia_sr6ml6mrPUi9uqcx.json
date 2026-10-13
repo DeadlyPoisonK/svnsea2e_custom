@@ -1,0 +1,22 @@
+{
+  "folder": "4p5I2hDwDTQ8cpz3",
+  "name": "El Sendero: la naturaleza de la bestia",
+  "type": "sorcery",
+  "_id": "sr6ml6mrPUi9uqcx",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El lugar que hay más allá de un <em>portail</em> puede parecer otro mundo, parecido al nuestro pero surrealista y especular, con colores que brillan en el aire y que solo pueden vislumbrarse por el rabillo del ojo, además de voces que vienen de no se sabe dónde. Un explorador encontrará aquí reflejos de lugares que ha conocido, pero también otros que nunca han existido. Contemplará allí su propio hogar, pero sutilmente diferente y perturbador, y solo se dará cuenta de ello cuando se vaya (quizás todas las puertas se abran de forma incorrecta o quizás haya una habitación adicional en el lugar donde solía haber una pared). También encontrará antiguas fortalezas de las que solo ha leído en libros, que ahora han cobrado vida con brillantes detalles y están habitadas por gente muerta hace ya mucho tiempo.</p><p>Pero este no es un mundo en sentido propio. Aquí nada es real. Al principio, antes de que los hechiceros tomasen atajos a través de la laguna de la realidad, aquí solo había una enorme nada que se extendía hacia el infinito. Con el paso de los milenios, los sueños, recuerdos y especulaciones de los que han quedado atrás, de los que han sido condenados a vagar por este espacio por la eternidad, han creado un eco retorcido del mundo en el que vivían, una proyección, una expresión de su desesperado deseo de regresar a casa. Conforme iban perdiendo la cordura, desesperados por la soledad y el miedo, fueron tomando forma lugares aún más extraños sacados de su imaginación, lugares de leyendas y pesadillas. Si hoy un hechicero abre los ojos encontrará antiguos reflejos de lugares que ya no existen en el mundo real, modificados por la fantasía de sus antepasados y persistiendo para siempre en el limbo.</p><p>Cualquier entidad que viva en el sendero ya no es una persona. Lo fue antaño, pero la locura del Lugar entre los Mundos lo ha corrompido de forma inevitable y lo ha convertido en otra cosa. Es una temeridad confiar en él, ya que sus deseos humanos han sido retorcidos y convertidos en ansias monstruosas. Podría intercambiar su destino con el de un héroe valiente, o usarlo para volver al mundo real, o matarlo y quedarse con su poder, o engañarlo para que se convierta en su compañero eternamente. Incluso si se pudiera encontrar el verdadero espíritu de alguien que se haya perdido aquí, es muy improbable que siga siendo la persona que era antaño, pues la soledad y las promesas rotas lo han arruinado.</p><p>Probablemente será un monstruo, con apenas nada de humanidad en su interior. Podría también ser un villano, capaz de recordar apenas su vida pero demasiado corrompido por el sendero para poder ser considerado un aliado.</p><p>Puedes convertir a una entidad del sendero en un monstruo o en un villano, siguiendo las reglas para ello (<strong>Libro básico,</strong> páginas 193 a 198). A menudo poseerá cualidades monstruosas debido a su larga exposición a la corrupción del sendero, pero si quieres crear un enemigo que no lleve demasiado tiempo atrapado o incluso un héroe que tenga cierta probabilidad de redimirse, no tiene por qué ser un monstruo. La Influencia de un villano del sendero refleja su alcance y autoridad sobre otras entidades de este lugar, pero también puede reflejar cuántos lugares y localizaciones expresan el yo interior del villano.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 143",
+    "sorctype": "porte",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

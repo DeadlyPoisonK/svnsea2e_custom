@@ -1,0 +1,22 @@
+{
+  "folder": "li9WDKazVu5ySEdo",
+  "name": "Rápida",
+  "type": "sorcery",
+  "_id": "j8WmGqOxCG3ARy9v",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>En combate, tu espada es un movimiento borroso, casi imposible de seguir para el ojo humano. Gasta 1 punto de héroe cuando tomes una acción que cause Heridas a otro personaje. Puede tomar una acción adicional de inmediato, pero debes gastar Aumentos en esta acción como de costumbre. Puede usar esta faceta solo una vez en cada ronda.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 200",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

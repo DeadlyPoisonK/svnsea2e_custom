@@ -1,0 +1,24 @@
+{
+  "folder": "aSM5k4zd4YYt1rg3",
+  "name": "Estudiante marcial",
+  "type": "advantage",
+  "_id": "U1Zaxs2XeCwViLQB",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Aprendes las maniobras de Estocada y Parada, además de otra maniobra a tu elección (pero no una bonificación de escuela), y las puedes realizar igual que un espadachín. La ventaja «Academia de esgrima» se considera una ventaja de 3 puntos para ti.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 206",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

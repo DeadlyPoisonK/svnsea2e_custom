@@ -1,0 +1,32 @@
+{
+  "folder": "8AjTGHJtL0XNoqWh",
+  "name": "Jenny",
+  "type": "background",
+  "_id": "QNVvOel0p1mxqUeZ",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Seduces a otros para divertirte y sacar beneficio.</p>",
+    "infosource": "7º Mar (básico), p. 140",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando resuelvas un conflicto con la seducción o con artimañas.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "empathy",
+      "perform",
+      "tempt"
+    ],
+    "advantages": [
+      "Enfoque dinámico",
+      "Ven aquí"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

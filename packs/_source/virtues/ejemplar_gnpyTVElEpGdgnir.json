@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Ejemplar",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud y elige otro héroe que se encuentre en la misma escena para sumar vuestra reserva de Aumentos durante toda la ronda. Para realizar acciones gastáis Aumentos de esta reserva compartida.</p>",
+    "infosource": "Reunión · 7º Mar (básico), p. 158"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "gnpyTVElEpGdgnir",
+  "sort": 1300000,
+  "ownership": {
+    "default": 0
+  }
+}

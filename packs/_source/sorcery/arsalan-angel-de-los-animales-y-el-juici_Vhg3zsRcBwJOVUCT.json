@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Arsalan, Ángel de los Animales y el Juicio",
+  "type": "sorcery",
+  "_id": "Vhg3zsRcBwJOVUCT",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Arsalan, el Ángel de los Animales y el Juicio, es el hermano gemelo de Zharfa. Arsalan es responsable de la vida, la salud y el crecimiento de los animales (incluidos los mortales). Fue solo a través de las habilidades de Arsalan que Vafa sanó después de sufrir la grave herida al proteger a su hermano. Se dice que cualquier herida, no importa cuán grave sea, se puede curar con un simple toque de este ahura. Se dice también que muchos de los que se recuperan de lesiones increíbles han sido «tocados por Arsalan».</p><p>A los usuarios de Khahesh-ahura empoderados por Arsalan se les otorgan las alas de las bestias. Si bien estas pueden ser reminiscentes de las alas de las aves a menudo asociadas con los ángeles, también pueden ser las alas de otros animales como murciélagos o libélulas.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 176",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

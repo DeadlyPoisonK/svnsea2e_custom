@@ -1,0 +1,22 @@
+{
+  "folder": "UAD1q5zNVMpOyhGo",
+  "name": "Memoria",
+  "type": "sorcery",
+  "_id": "FMY97TeISaskH0yn",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>Gasta 1 punto de h&eacute;roe para hablar en&nbsp;representaci&oacute;n de cualquier persona, viva o muerta.&nbsp;La rooi heks debe ser capaz de tocar el cuerpo del&nbsp;objetivo o algo de valor personal extremo que&nbsp;pertenezca al objetivo. Debe haber otro participante&nbsp;para unirse a la conversaci&oacute;n, ya que la rooi&nbsp;heks no puede hablar consigo misma. Esto no le da&nbsp;al rooi heks ninguna idea de lo que desea su objetivo,&nbsp;solo le permite actuar como un recept&aacute;culo&nbsp;para que el objetivo hable a trav&eacute;s de ella.</p>",
+    "used": false,
+    "infosource": "Tierras de Fuego y Oro, p. 194",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

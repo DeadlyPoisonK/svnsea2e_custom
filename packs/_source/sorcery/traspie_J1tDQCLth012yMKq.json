@@ -1,0 +1,21 @@
+{
+  "folder": "8yRTt6IGKB0lpv51",
+  "name": "Traspié",
+  "type": "sorcery",
+  "_id": "J1tDQCLth012yMKq",
+  "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
+  "system": {
+    "description": "<p>Activa este turru para moverte más rápido que la comprensión mortal, tan rápido como la luz. Esto te permite evadir un ataque, cualquier cosa que te arrojen, disparen o corten, como si nunca hubieras estado allí. No recibes Heridas.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 185",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

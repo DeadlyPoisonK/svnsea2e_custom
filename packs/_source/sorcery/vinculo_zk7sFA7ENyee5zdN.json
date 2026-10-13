@@ -1,0 +1,22 @@
+{
+  "folder": "o690w5aSkrQJLvTs",
+  "name": "Vínculo",
+  "type": "sorcery",
+  "_id": "zk7sFA7ENyee5zdN",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 1 de Furia. Toca a un aliado y vinculad vuestros espíritus. Siempre que uno de vosotros sufra Heridas, el otro puede sufrir esas Heridas en su lugar. Por cada caso de Heridas transferidas, aumenta la Furia en 1.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 195 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 150000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

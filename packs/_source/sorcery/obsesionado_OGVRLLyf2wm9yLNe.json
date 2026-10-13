@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Obsesionado",
+  "type": "monsterquality",
+  "_id": "OGVRLLyf2wm9yLNe",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Este monstruo tiene una misión y busca desesperadamente un objeto o una persona específica que represente el objetivo de su cometido. Por eso, cualquiera que se interponga entre un monstruo en una misión y su objetivo, sufre su ira. ¡Cualquier tonto que lo haga seguramente debe tener ganas de morir! Si este monstruo es un villano, tira 5 dados adicionales en cualquier Riesgo que tome mientras intenta obtener el objetivo de su búsqueda. Si se trata de una banda de monstruos, inflige el doble de Heridas mientras intenta alcanzar el objetivo de su misión.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 59",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

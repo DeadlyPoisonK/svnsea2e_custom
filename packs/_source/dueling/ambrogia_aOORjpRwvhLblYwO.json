@@ -1,0 +1,18 @@
+{
+  "folder": "PWCKDOvwS0ovE4Y9",
+  "name": "Ambrogia",
+  "type": "duelstyle",
+  "_id": "aOORjpRwvhLblYwO",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>La popularidad de Ambrogia se ha propagado como el fuego en los últimos años. Destaca por dos razones principales: la primera es que enseña a sus estudiantes a luchar con la espada en la mano izquierda y con la main gauche en la derecha, la segunda es que su fundadora, Verónica Ambrogia, también es una de las cortesanas más famosas de Vodacce.</p><p>Aunque Ambrogia se centra en la mano izquierda (un factor con el que es difícil lidiar, para muchos espadachines), esta escuela destaca la practicidad por encima del estilo. Los estudiantes aprenden a usar cualquier cosa que tengan en la mano para ganar el duelo. «Después de todo», enseña Madame Ambrogia, «es el ganador quien cuenta la historia».</p>",
+    "infosource": "7º Mar (básico), p. 237",
+    "bonus": "<p><strong>La estratagema de Verónica.</strong></p><p>Cuando esgrimes una daga en la mano derecha y una espada de esgrima (como una ropera o un alfanje) en la izquierda, consigues una capacidad llamada «estratagema de Verónica», con la que podrás usar Maña o Ingenio cuando reúnas una reserva de Riesgo para Armas. Si gastas 1 punto de héroe, puedes usar las dos.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100391,
+  "ownership": {
+    "default": 0
+  }
+}

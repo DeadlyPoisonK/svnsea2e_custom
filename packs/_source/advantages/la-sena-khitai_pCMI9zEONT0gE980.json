@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "La seña (Khitai)",
+  "type": "advantage",
+  "_id": "pCMI9zEONT0gE980",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes transmitir un mensaje de una sola palabra (como «peligro», «ayuda», «vamos» o «huid») a cualquier aliado que pueda oírte o verte mediante un sonido o movimiento inocuo que los demás no entenderán y que parecerá completamente normal. La mayoría de las veces se trata de cantos de pájaros, miradas intencionadas o gestos sutiles.</p>",
+    "infosource": "Khitai, p. 112 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Jugando con el peligro",
+  "type": "advantage",
+  "_id": "yRLjBxfeiGydPSIE",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Activa esta ventaja cuando realices un Riesgo de Tentar. El director de juego debe comprar todos los dados que no utilices. Un héroe sólo puede activar esta ventaja una vez por sesión de juego.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 210",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

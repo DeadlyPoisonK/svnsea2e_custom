@@ -1,0 +1,15 @@
+{
+  "name": "Melbur",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "YTcrjQkDWcQTDfXz",
+  "description": "",
+  "sort": 1500000,
+  "color": "#ccb100",
+  "flags": {
+    "scene-packer": {
+      "hash": "0ee9bdca568952a77f6214f3d4b5b64393b26a6e"
+    }
+  }
+}

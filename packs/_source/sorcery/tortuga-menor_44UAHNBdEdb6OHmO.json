@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Tortuga Menor",
+  "type": "sorcery",
+  "_id": "44UAHNBdEdb6OHmO",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La Tortuga es precavida y sabia, solo se mueve cuando su camino es seguro. Este Mohwo es indicativo de un individuo atento y cuidadoso que sabe que hacer algo bien es mas importante que hacerlo rapido.</p>\n<hr>\n<p>Gasta tu primer aumento en una ronda para activar este mohwoo y recibiras 1 Herida menos cada vez que sufras da&ntilde;o durante el resto de la ronda</p>",
+    "infosource": "Naciones Piratas, p. 171",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100098,
+  "ownership": {
+    "default": 0
+  }
+}

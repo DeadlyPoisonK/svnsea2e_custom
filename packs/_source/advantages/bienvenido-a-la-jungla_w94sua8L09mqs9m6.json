@@ -1,0 +1,24 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Bienvenido a la jungla",
+  "type": "advantage",
+  "_id": "w94sua8L09mqs9m6",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe cuando aceches a tu presa a través de un entorno natural, como una jungla o un bosque espeso. La primera vez que infliges Heridas a tu objetivo, este recibe una Herida Dramática adicional. Un héroe solo puede usar esta ventaja una vez por escena y no funciona con armas de fuego.</p>",
+    "infosource": "El Nuevo Mundo, p. 166",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

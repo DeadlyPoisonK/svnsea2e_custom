@@ -1,0 +1,15 @@
+{
+  "name": "Sorte",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "2M2vfXkTX0aej1QO",
+  "description": "",
+  "sort": 0,
+  "color": "#6b6b6b",
+  "flags": {
+    "scene-packer": {
+      "hash": "101e4c1355de4c967d2501854b13a1fcc881bb0f"
+    }
+  }
+}

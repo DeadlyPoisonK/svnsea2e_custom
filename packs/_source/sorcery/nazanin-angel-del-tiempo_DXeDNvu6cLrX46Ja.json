@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Nazanin, Ángel del Tiempo",
+  "type": "sorcery",
+  "_id": "DXeDNvu6cLrX46Ja",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Nazanin, el Ángel del Tiempo, es la ahura con menos leyendas. Lo que se sabe de Nazanin es que los enemigos demasiado poderosos para ser asesinados están encarcelados en algún lugar, y que Nazanin vigila a esos seres. La suya es una estación de la soledad, ya que nunca puede dejar su puesto. Sus únicas interacciones con su familia son cuando acuden a su prisión.</p><p>A los usuarios de Khahesh-ahura empoderados por Nazanin se les otorgan alas de hielo. Estas alas son amargamente frías al tacto, y el agua quieta cercana se congela cuando estas alas se desatan.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 177",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

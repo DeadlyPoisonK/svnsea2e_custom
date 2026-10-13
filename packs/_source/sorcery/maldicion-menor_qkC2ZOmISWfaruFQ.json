@@ -1,0 +1,22 @@
+{
+  "folder": "m7qckYPLTrStR8HN",
+  "name": "Maldición Menor",
+  "type": "sorcery",
+  "_id": "qkC2ZOmISWfaruFQ",
+  "img": "icons/magic/perception/eye-ringed-green.webp",
+  "system": {
+    "description": "<p>Coge 1 hebra o m&aacute;s para lanzarle a un h&eacute;roe o villano una<br>Maldici&oacute;n menor con nivel igual al n&uacute;mero de hebras que<br>tengas cuando la lances. El personaje permanece maldito<br>hasta que decidas activarla (despu&eacute;s de que re&uacute;na dados<br>para realizar un Riesgo, pero antes de que tire los dados).<br>Cuando se activa, tu Maldici&oacute;n elimina 1 dado de su<br>reserva de Riesgo por cada nivel de la Maldici&oacute;n.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 230",
+    "sorctype": "sorte",
+    "sorcdur": "none",
+    "sorccat": "tesse",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

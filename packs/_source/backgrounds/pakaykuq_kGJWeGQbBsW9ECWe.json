@@ -1,0 +1,31 @@
+{
+  "folder": "gd4oUJpI8AMIWALS",
+  "name": "Pakaykuq",
+  "type": "background",
+  "_id": "kGJWeGQbBsW9ECWe",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Crees que Suway no es el dios que tu nación necesita y, en secreto, luchas a favor de otro dios.</p><p><em>Ventajas en el libro: Las viejas tradiciones (Ver libro Imperio de la Media Luna).</em></p>",
+    "infosource": "El Nuevo Mundo, p. 162",
+    "quirk": "<p>Ganas 1 punto de héroe cuando corres un gran riesgo personal para enfrentarte a un tirano.</p>",
+    "skills": [
+      "athletics",
+      "hide",
+      "notice",
+      "ride",
+      "tempt"
+    ],
+    "advantages": [
+      "Las viejas tradiciones",
+      "Tocado por un dios"
+    ],
+    "nation": "kuraq",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

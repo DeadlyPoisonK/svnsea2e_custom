@@ -1,0 +1,23 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Las viejas tradiciones",
+  "type": "advantage",
+  "_id": "qmSRmuOvdxDQ0fo2",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Conoces los antiguos ritos de hospitalidad y puedes pedírselos a otro cuando necesites comida, agua, cobijo, asistencia médica o algo similar. El otro personaje te ofrece esta ayuda siempre que no crea que lo pone en peligro, y siempre que te asegures de hacer lo mismo por los demás.</p><p>Esta ventaja no tiene ningún efecto contra un villano o sus subordinados directos, o personajes que ya tienen alguna razón para que les desagrades o para desconfiar de ti.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 159",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 7800000,
+  "ownership": {
+    "default": 0
+  }
+}

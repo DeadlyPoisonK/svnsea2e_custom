@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Hacerse el muerto",
+  "type": "advantage",
+  "_id": "oOS6665lI9TnYLfo",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando eres el único héroe que queda en una escena que involucra a un villano o una banda de matones empleada por este, puedes elegir quedar Indefenso. Si lo haces, eres inmune al asesinato y cualquier villano presente (o banda de matones a su servicio) te dará una pizca de información útil. El DJ te dirá que información te revelan, pero en general puedes esperar escuchar un poco de información útil o alguna idea de los motivos y planes del villano.</p><p>El villano puede sonreír sobre tu (supuestamente) inconsciente cuerpo y confesar que te ves igual que tu padre antes de morir (revelando así que el villano es quien lo mató o, al menos, que estuvo presente), o un escuadrón de guardias podría revelar que tienen la intención de encerrarte en las mazmorras del duque, en la celda contigua a ese molesto barón (revelando así que el duque ha capturado y encarcelado al barón en su mazmorra).</p><p>El villano o la banda de matones te ignorarán, te darán por muerto, te tomarán prisionero, o cualquier otra cosa que pudieran haber hecho si te hubieran dejado Indefenso, pero no pueden matarte. Al comienzo de la siguiente escena ya no estás Indefenso.</p>",
+    "infosource": "El Nuevo Mundo, p. 166",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

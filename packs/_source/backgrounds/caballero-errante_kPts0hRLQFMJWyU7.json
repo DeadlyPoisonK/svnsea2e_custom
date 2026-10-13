@@ -1,0 +1,33 @@
+{
+  "folder": "3AEY6C9jJm6ze9iL",
+  "name": "Caballero errante",
+  "type": "background",
+  "_id": "kPts0hRLQFMJWyU7",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Estás imbuido con la magia legendaria de los caballeros del rey Elilodd.</p>",
+    "infosource": "7º Mar (básico), p. 142",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando defiendas un ideal de virtud caballeresca de una forma que haga que te metas en problemas.</p>",
+    "skills": [
+      "brawl",
+      "intimidate",
+      "ride",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Sentido de la orientación"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

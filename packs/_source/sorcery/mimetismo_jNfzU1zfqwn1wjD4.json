@@ -1,0 +1,22 @@
+{
+  "folder": "piYhdrGNp0ZAVmW9",
+  "name": "Mimetismo",
+  "type": "sorcery",
+  "_id": "jNfzU1zfqwn1wjD4",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un personaje que beba esta poción altera físicamente su cuerpo para adoptar la apariencia de otro personaje al que haya conocido. Esto incluye volverse más alto o más bajo, ganar o perder peso, cambiar el color de ojos y pelo y modular su voz. Para percatarse de esta transformación, un personaje rival debe gastar tantos Aumentos como la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 199 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Honesto",
+  "type": "virtue",
+  "_id": "oP8H3YxJkL8Zx0jn",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud. Hasta el final de la escena, sabes de inmediato cuándo cualquier otro personaje miente a sabiendas.</p>",
+    "infosource": "Libélula · Khitai, p. 126 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

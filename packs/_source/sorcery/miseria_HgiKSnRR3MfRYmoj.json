@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Miseria",
+  "type": "sorcery",
+  "_id": "HgiKSnRR3MfRYmoj",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Canalizas poderes de muerte y descomposición para dañar a tus enemigos. Genera 1 de Plaga. Elige un número de personajes igual a tu Plaga actual. Cada uno de esos personajes sufre 3 Heridas.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 202 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Destinos gemelos",
+  "type": "advantage",
+  "_id": "Ekxkkwa95gBJdAwR",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe tiene un hermano gemelo. Colabora con el DJ para idear los detalles sobre tu gemelo y determinar la relación de tu héroe con él. Parte de este vínculo es el entrelazamiento de tu destino, tu alma, con tu gemelo. Elige una Virtud para el gemelo de tu héroe. Tu héroe puede activar esa Virtud como si fuera la suya propia, pero tu héroe solo puede seguir activando una Virtud por sesión de juego.</p>",
+    "infosource": "Khitai, p. 122 (traducción no oficial)",
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

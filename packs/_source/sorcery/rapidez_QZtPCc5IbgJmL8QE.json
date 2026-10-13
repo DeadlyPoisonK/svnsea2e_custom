@@ -1,0 +1,22 @@
+{
+  "folder": "McTjwldc9c7ZehBI",
+  "name": "Rapidez",
+  "type": "sorcery",
+  "_id": "QZtPCc5IbgJmL8QE",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este mejunje dota a quien lo bebe de reacciones más rápidas. Un personaje que beba esta poción puede, hasta el final de la escena, realizar acciones como si tuviera tantos Aumentos adicionales como la Potencia de la poción. Esto no le proporciona más Aumentos, sino simplemente la capacidad de gastar sus Aumentos más rápidamente.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 199 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

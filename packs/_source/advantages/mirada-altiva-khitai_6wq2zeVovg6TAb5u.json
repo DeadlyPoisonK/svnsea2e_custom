@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Mirada altiva (Khitai)",
+  "type": "advantage",
+  "_id": "6wq2zeVovg6TAb5u",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para usar tu autoridad (real o percibida) y hacer que otro personaje te deje en paz, se quite de en medio o desestime tus actos como nada más que una rabieta de un noble engreído.</p>",
+    "infosource": "Khitai, p. 116 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

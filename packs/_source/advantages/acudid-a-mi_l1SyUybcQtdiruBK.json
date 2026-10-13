@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Acudid a mí",
+  "type": "advantage",
+  "_id": "l1SyUybcQtdiruBK",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Mientras actúas como General en la acción de tu unidad, puedes gastar 1 punto de héroe para reanimar a tus tropas con un grito de guerra, un discurso conmovedor o algún acto de inspiración similar. Una unidad de tu elección recupera una cantidad de Fuerza igual a tu Donaire.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 160",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

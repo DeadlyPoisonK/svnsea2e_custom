@@ -1,0 +1,22 @@
+{
+  "folder": "zHoQ2ilelKv9nRRk",
+  "name": "Espíritu Stort Merke",
+  "type": "sorcery",
+  "_id": "RcI3j5Vo0MYQnndC",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Elige a un personaje que esté contigo en la escena y que esté bajo Presión. La Presión desaparece de inmediato, pero hasta el final de la ronda dicho personaje debe gastar 2 Aumentos para superar cualquier Presión posterior, en lugar de 1.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 191",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

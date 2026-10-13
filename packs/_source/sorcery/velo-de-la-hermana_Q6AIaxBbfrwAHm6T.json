@@ -1,0 +1,22 @@
+{
+  "folder": "XxbatVafsy3T61pQ",
+  "name": "Velo de la hermana",
+  "type": "sorcery",
+  "_id": "Q6AIaxBbfrwAHm6T",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Cera de vela funeraria fundida con leche agria, cabellos arrancados de la propia bruja y, como ingrediente esencial, una l&aacute;grima o una gota de sudor de aquella a quien se quiere amparar; sin ese rastro, el ung&uuml;ento es solo una pasta que no obra nada.</p>\n<p>Aplicado sobre la frente y las mu&ntilde;ecas de la persona elegida, el Velo de la hermana envuelve su don, sus voces y sus furias en una calma sorda hasta el final de la escena, como si una madre hubiera puesto la mano sobre su rostro mientras duerme. Durante ese tiempo, su hechicer&iacute;a, su corrupci&oacute;n o cualquier poder que la habite no puede manifestarse ni ser invocado, ni por ella ni contra ella, y quienes tratan de sentirla por medios sobrenaturales no encontrar&aacute;n m&aacute;s que un silencio tibio. El ung&uuml;ento no la cura ni la libera: solo aplaza. Cuando el velo se levanta, todo lo que estaba contenido despierta de golpe, y suele despertar con hambre.</p>",
+    "used": false,
+    "infosource": "Creado por la mesa (no aparece en los manuales)",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

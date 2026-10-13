@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Cruzar la palma",
+  "type": "advantage",
+  "_id": "kbyKNPpRx7fkdXng",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastas Riqueza para volver a lanzar 1 dado en un Riesgo social en el que puede influir el dinero, puedes volver a lanzar hasta 2 dados.</p><p><em>Coste: 2 (1 si eres tzak k'ano).</em></p>",
+    "infosource": "El Nuevo Mundo, p. 166",
+    "cost": {
+      "normal": 2,
+      "reducecost": 1
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 7100000,
+  "ownership": {
+    "default": 0
+  }
+}

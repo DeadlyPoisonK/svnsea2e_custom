@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Compañero de confianza (Khitai)",
+  "type": "advantage",
+  "_id": "pA1Atr4Oh0WlXeCn",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tienes un pequeño grupo de personas que te son devotas o un único aliado de confianza que cruzaría el fuego por ti. Colabora con el DJ para crear los detalles de tu compañero (o compañeros). ¿Cómo te ganaste su inquebrantable confianza y cómo se ganaron ellos la tuya? Si tus aliados te ayudan directamente en un Riesgo, obtienes 2 dados adicionales si describes de forma específica cómo te ayudan. Si los envías a lograr algo por su cuenta y necesitan realizar un Riesgo (a discreción del DJ), tiran 5 dados. Tu Compañero de confianza puede sufrir 5 Heridas antes de quedar Indefenso (y probablemente necesitar que lo rescates).</p>",
+    "infosource": "Khitai, p. 121 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

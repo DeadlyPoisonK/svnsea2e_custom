@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Poderoso",
+  "type": "monsterquality",
+  "_id": "asal1R7S6oct8sNQ",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>El poder de la fuerza bruta al mando de algo que solo desea la destrucción. Este monstruo podría coger fácilmente un caballo y cargar con él, y quizás con más. Gasta 1 punto de peligro para duplicar el número de Heridas que inflige el monstruo después de tener éxito en un ataque contra un héroe.</p>",
+    "infosource": "7º Mar (básico), p. 198",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

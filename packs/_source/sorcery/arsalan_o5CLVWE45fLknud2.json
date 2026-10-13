@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Arsalan",
+  "type": "sorcery",
+  "_id": "o5CLVWE45fLknud2",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado y pon tus manos sobre un personaje. Si ese personaje ha recibido al menos una Herida Dramática, curas hasta dos Heridas Dramáticas de ese personaje y tú recibes una Herida Dramática.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 179",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

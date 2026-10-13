@@ -1,0 +1,21 @@
+{
+  "folder": "9uzBkZY6TGPQw0sf",
+  "name": "Brazo mecánico",
+  "type": "sorcery",
+  "_id": "BnR2p0wQGCAS6CGr",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este dispositivo funciona de la misma forma que un brazo humano. El boticario se lo ata al cuerpo y puede sujetar con él un objeto de forma indefinida. Para usarlo de esta forma no es necesario gastar un Aumento.</p><p>Además, se puede usar para llevar a cabo cualquier función razonable que también haría un brazo, como blandir una espada o dar un apretón de manos. Puedes realizar una única acción con el brazo como si hubieras gastado un Aumento, pero luego el brazo deja de funcionar. Preparar este dispositivo necesita 1 Requisito.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 97",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "o690w5aSkrQJLvTs",
+  "name": "Petición",
+  "type": "sorcery",
+  "_id": "fkfOzuglhIQ9wic6",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 2 de Furia si se activa de inmediato; genera 2 de Tranquilidad si te tomas una hora para activarlo como un ritual. Haz a los espíritus de la escena preguntas objetivas y directas sobre acontecimientos del pasado de los que puedan tener constancia (respuestas de sí/no u otras de una sola palabra).</p>",
+    "used": false,
+    "infosource": "Khitai, p. 195 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 100782,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

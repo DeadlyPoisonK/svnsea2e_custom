@@ -1,0 +1,21 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Apokálypsi de Caledon",
+  "type": "sorcery",
+  "_id": "p4tGzlSF9DNZvVLE",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este apokálypsi para permitirles al resto de héroes en la escena que se curen todas las Heridas que tengan en el tramo actual de la Espiral de la Muerte y 1 Herida Dramática, pero tú recibes 1 Herida Dramática. Un mystai solo puede activar este apokálypsi una vez por episodio.</p>",
+    "infosource": "Naciones Piratas, p. 168",
+    "sorctype": "mystirios",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

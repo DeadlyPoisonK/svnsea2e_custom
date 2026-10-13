@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Médico (Khitai)",
+  "type": "background",
+  "_id": "QUK2ACBSho4DcG08",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Compasión</p>",
+    "quirk": "<p>Gana un punto de héroe cada vez que atiendas las heridas de un villano o de los inocentes dañados por un villano.</p>",
+    "skills": [
+      "empathy",
+      "notice",
+      "scholarship",
+      "theft",
+      "weaponry"
+    ],
+    "advantages": [
+      "Toque milagroso (Khitai)",
+      "Noción del tiempo (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 104 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

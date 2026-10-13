@@ -1,0 +1,22 @@
+{
+  "folder": "li9WDKazVu5ySEdo",
+  "name": "Velo",
+  "type": "sorcery",
+  "_id": "g88kqNhByRtDNCcB",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Tu arma te oculta de los demás, haciendo que sea más fácil pasar desapercibido. Gasta 1 punto de héroe para ganar 2 dados de bonificación durante un Riesgo en el que intentes moverte en silencio o evadir la alerta de alguien.</p><p>Las Leyendas otorgan bonificaciones y habilidades al héroe la primera vez que hace algo específico con su arma de zahmeireen durante el juego. Ganar una Leyenda no siempre es una experiencia positiva (por ejemplo, que te den una paliza casi mortal rara vez es agradable), pero aprendes y creces a partir de la experiencia.</p><p>La primera vez que consigas una Leyenda durante el juego (no en las discusiones anteriores al juego, ni en una conversación sobre lo que hacen los héroes entre sesiones o en un momento de descanso, ni en el origen de tu arma, sino durante la verdadera partida en la mesa cuando el arma de zahmeireen esté en tu posesión), obtienes una nueva bonificación o habilidad asociada con esa Leyenda.</p><p>La bonificación por completar una Leyenda se obtiene solo la primera vez que haces algo. Así que la primera vez que ganes riqueza por tus habilidades con la espada, obtendrás «Héroe a sueldo». Si te pagan de nuevo, no lo vuelves a ganar. Las lista de Leyendas enumeradas aquí no es exhaustiva, pero sirve como una buena base para que un DJ pueda diseñar sus propias Leyendas y recompensas asociadas. La regla general de lo que constituye una Leyenda debe ser que es difícil (como derrotar a un enemigo con la cualidad de monstruo Temible para la Leyenda de «Guerrero sin Miedo»), interesante e inusual (como que un extraño hable de las historias que hablan de tu habilidad con la espada para la Leyenda «Celebridad») o evocadora y divertida (como derrotar sin ayuda a una banda de matones para la Leyenda «Uno contra Muchos»).</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 200",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

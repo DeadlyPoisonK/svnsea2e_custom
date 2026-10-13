@@ -1,0 +1,15 @@
+{
+  "name": "Las Protecciones",
+  "sorting": "a",
+  "folder": "OBuVuToMnzlON0Sb",
+  "type": "Item",
+  "_id": "JMAGvB9WVghinr6q",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "fe88a5b5db17e6e73e439279d65459eb819e3e3d"
+    }
+  }
+}

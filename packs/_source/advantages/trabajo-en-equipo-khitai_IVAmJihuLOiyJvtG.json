@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Trabajo en equipo (Khitai)",
+  "type": "advantage",
+  "_id": "IVAmJihuLOiyJvtG",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastas un Aumento para crear una Oportunidad, puedes gastar un segundo Aumento. Si lo haces, activas la Oportunidad en nombre de otro héroe dispuesto; él no necesitará gastar su propio Aumento.</p>",
+    "infosource": "Khitai, p. 117 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

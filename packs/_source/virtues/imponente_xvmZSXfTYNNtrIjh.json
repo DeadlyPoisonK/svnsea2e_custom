@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Imponente",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud y el DJ le dará 1 punto de héroe al resto de héroes que se encuentren en esta escena.</p>",
+    "infosource": "El emperador · 7º Mar (básico), p. 158"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "xvmZSXfTYNNtrIjh",
+  "sort": 2000000,
+  "ownership": {
+    "default": 0
+  }
+}

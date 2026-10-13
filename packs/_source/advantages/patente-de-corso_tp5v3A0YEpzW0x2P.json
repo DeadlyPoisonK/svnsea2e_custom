@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Patente de corso",
+  "type": "advantage",
+  "_id": "tp5v3A0YEpzW0x2P",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>Otro héroe o tú debe tener la ventaja «Casado con el mar».</strong> Elige una nación de Théah. Tienes una patente de corso del gobierno de esa nación, la cual le da a la tripulación de tu barco permiso para operar en tu embarcación. Cualquier corsario o embarcación militar de esa nación no te hostigará mientras le enseñes la patente y no sufrirás ramificaciones legales por las «actividades de corsarios» de esa nación. Normalmente los agentes de otras naciones no se sienten impresionados, aunque en raras ocasiones las políticas théanas te darán ventaja.</p>",
+    "infosource": "Naciones Piratas, p. 150",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

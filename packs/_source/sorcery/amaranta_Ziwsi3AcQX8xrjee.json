@@ -1,0 +1,21 @@
+{
+  "folder": "xu8eDKs9AYg0HUdE",
+  "name": "Amaranta",
+  "type": "sorcery",
+  "_id": "Ziwsi3AcQX8xrjee",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este extracto se usa para tratar las enfermedades sanguíneas, además de para detener hemorragias. El objetivo recupera 1 Herida Dramática tras beber el extracto y gastar 1 punto de Héroe.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 96",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

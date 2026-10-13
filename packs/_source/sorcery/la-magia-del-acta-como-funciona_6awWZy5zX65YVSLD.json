@@ -1,0 +1,22 @@
+{
+  "folder": "aft3kr5m13fZOAVo",
+  "name": "La magia del Acta: cómo funciona",
+  "type": "sorcery",
+  "_id": "6awWZy5zX65YVSLD",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Si tu tripulación quiere firmar un Acta, debe seguir el ritual que se describe en la página anterior. El DJ puede ofrecer un ritual ligeramente diferente o determinar que algunos elementos no son tan importantes como otros. Luego, cada jugador paga 1 punto de héroe (los PNJ pagan puntos de peligro) y la bendición y la maldición del Acta estarán activas para todos. Para bien o para mal. Os sugerimos que hagáis una copia del Acta (complementada con las firmas) y que la pongáis en el centro de la mesa o en cualquier otro lugar accesible para los jugadores. Ahora forma parte del relato de vuestra tripulación y todos debéis recordar el peso que ello pone sobre vuestros hombros. Si sois fieles al Acta, cosecharéis las recompensas. Pero si rompéis vuestro solemne voto, pagaréis un precio terrible por vuestro egoísmo.</p><p>La mecánica del Acta es simple: por cada héroe o villano que pague 1 punto de héroe o de peligro, se añade 1 punto a la reserva de suerte del Acta. Cada punto de suerte es 1d10. Por eso, si firman seis héroes o villanos, poned 6 dados de puntos de suerte en el Acta.</p><p>En cualquier momento durante la partida, cualquier jugador puede extraer tantos puntos de suerte como quiera de la reserva y añadirlos a una única tirada. Sin embargo, una vez se utiliza un d10, desaparece durante el resto de la sesión de juego. La reserva de suerte se restablece al principio de cada sesión de juego.</p><p>Quienes firmaron el Acta tienen buena suerte siempre y cuando cumplan con las normas del Acta. Si rompen alguna regla, sufren una terrible maldición.</p><p>Si un héroe o un villano rompe el acuerdo que se establece en el Acta, queda «condenado por partida doble». La mayoría de Actas, si no todas, usan este lenguaje en concreto, un recordatorio de que las consecuencias de romper una promesa jurada a tus camaradas no se tienen que tomar a la ligera.</p><p>La maldición que sufren los forajidos desleales se llama «la mota negra». Por cada firma restante en el Acta, el personaje recibe una «mota negra» adicional. De este modo, si hay seis nombres en el Acta, el personaje recibe cinco motas negras (una por cada uno de los demás firmantes).</p>",
+    "used": false,
+    "infosource": "Naciones Piratas, p. 159",
+    "sorctype": "charter",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

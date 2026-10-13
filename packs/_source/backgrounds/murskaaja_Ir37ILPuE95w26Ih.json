@@ -1,0 +1,33 @@
+{
+  "folder": "TPYIDgBQTXjRlnH2",
+  "name": "Murskaaja",
+  "type": "background",
+  "_id": "Ir37ILPuE95w26Ih",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Una defensa es tan fuerte como su punto más débil. Eres un experto en encontrar dicho punto y destrozarlo.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 204",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando te lances de cabeza a una situación peligrosa para coger desprevenidos a tus oponentes.</p>",
+    "skills": [
+      "athletics",
+      "hide",
+      "ride",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "A la pelea",
+      "Gorila",
+      "Sentido de la orientación"
+    ],
+    "nation": "vesten",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

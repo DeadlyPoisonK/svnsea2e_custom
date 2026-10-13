@@ -1,0 +1,21 @@
+{
+  "folder": "tRWGOFtYaF1huSvr",
+  "name": "Majestad",
+  "type": "sorcery",
+  "_id": "2hyxs9AAIrp5OhTp",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado antes de tirar un Riesgo de Donaire. Selecciona un solo dado de tu reserva y déjalo a un lado. Se considera que has sacado un 10 en ese dado cuando cuentas tus Aumentos. Si tus 10 explotan, tu 10 gratuito de Majestad explota también.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 179",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "common"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Matices de gris",
+  "type": "advantage",
+  "_id": "QbrCN1EBBhVKaNol",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe comprende que la moralidad no siempre es tan absoluta, o al menos se le da muy bien hacer que los demás lo crean. Colabora con el DJ para determinar por qué tu héroe comprende tan a fondo la mente villana. ¿Eres un hábil detective que se ha enfrentado a la oscuridad tantas veces como para poder imitarla, o tus palabras apaciguadoras provienen de experiencias pasadas? Gasta un punto de héroe para convencer a un villano de que estás de su lado. El villano te considerará un aliado de confianza. Tan pronto como el villano te vea realizar una acción heroica o te niegues a realizar una acción villana, la ilusión se terminará. Solo puedes usar esta ventaja una vez con cada villano.</p>",
+    "infosource": "Khitai, p. 123 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

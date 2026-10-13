@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Levantaos, hermanos y hermanas",
+  "type": "advantage",
+  "_id": "xtYsd2tuR0AmDH9Z",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastas 1 punto de héroe para darle dados adicionales a otro héroe en un Riesgo, puedes dividir los dados que das entre cualquier héroe aliado que pueda verte o escucharte. Cualquier héroe que reciba dados de esta manera puede seguir gastando sus propios puntos de héroe en dados adicionales, y aún puede recibir dados de otro héroe que gaste 1 punto de héroe para ayudarlo.</p><p>Básicamente, tu gasto de punto de héroe no cuenta para la restricción de que «un héroe solo puede recibir dados adicionales de esta manera una vez por Riesgo».</p><p><em>Coste: 5 (3 si eres nahuacano).</em></p>",
+    "infosource": "El Nuevo Mundo, p. 167",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

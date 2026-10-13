@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Ambicioso",
+  "type": "virtue",
+  "_id": "DszmOdBpDyXZvMZW",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando actives tu Hibris o una Peculiaridad. Obtienes 2 puntos de héroe, en lugar de 1.</p>",
+    "infosource": "Chacal · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

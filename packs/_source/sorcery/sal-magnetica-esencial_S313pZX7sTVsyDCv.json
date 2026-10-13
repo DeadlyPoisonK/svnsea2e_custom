@@ -1,0 +1,21 @@
+{
+  "folder": "pVGrpMjo5Filx8Qq",
+  "name": "Sal magnética esencial",
+  "type": "sorcery",
+  "_id": "S313pZX7sTVsyDCv",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Puedes preparar un compuesto que, esparcido sobre una zona, crea un campo magnético que funciona como un campo de fuerza, desviando cualquier objeto o fuerza externa durante una ronda. Todo aquel que trate de disparar un proyectil a la persona rodeada por la sal magnética esencial debe gastar un Aumento adicional para traspasar el campo magnético.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 95",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

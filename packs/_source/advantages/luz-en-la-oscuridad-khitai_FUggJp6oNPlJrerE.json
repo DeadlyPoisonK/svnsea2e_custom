@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Luz en la oscuridad (Khitai)",
+  "type": "advantage",
+  "_id": "FUggJp6oNPlJrerE",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Hay algo en tu héroe que te permite triunfar incluso ante una adversidad extraordinaria. Después de que el DJ gaste uno o más puntos de peligro para un solo efecto, puedes gastar el mismo número de puntos de héroe. El efecto no llega a activarse y el DJ pierde de todos modos los puntos de peligro gastados.</p>",
+    "infosource": "Khitai, p. 122 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

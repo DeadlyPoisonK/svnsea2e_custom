@@ -1,0 +1,23 @@
+{
+  "name": "Ejecución impecable",
+  "type": "advantage",
+  "_id": "ijNf9LOGC5XCgEHY",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Debes poder realizar maniobras de espadachín. Elige una maniobra que conozcas. Puedes gastar 1 punto de héroe en lugar de un Aumento para realizar esa maniobra. El resto de reglas de las maniobras se siguen aplicando (algunas maniobras solo se pueden realizar una vez por ronda, no puedes realizar la misma maniobra dos veces seguidas, etcétera). Un héroe solo puede usar esta ventaja una vez por ronda.</p>",
+    "infosource": "Heroes & Villains, p. 205 (traducción no oficial)",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "folder": "vcoxSAwP9VR8RQf9",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

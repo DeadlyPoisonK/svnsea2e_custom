@@ -1,0 +1,22 @@
+{
+  "folder": "JkHu2Lc75NtTtwLy",
+  "name": "Potenciar",
+  "type": "sorcery",
+  "_id": "CsgnH9dLW4XWFUsS",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este elixir mejora las capacidades de un personaje, haciendo que incluso los novatos puedan rivalizar con los maestros durante un breve periodo de tiempo. Elige una habilidad cuando se cree esta poción. Un personaje que consuma esta poción puede tirar tantos dados adicionales en un Riesgo de la habilidad elegida como la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 200 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

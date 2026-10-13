@@ -1,0 +1,23 @@
+{
+  "folder": "s1n9pHqJXetLrKa5",
+  "name": "Toque milagroso",
+  "type": "advantage",
+  "_id": "p5p6rSZYHZqPJY1s",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Quizás fue por estudiar con la Iglesia o con un chamán local, pero conoces las heridas y sabes cómo curarlas. Gasta 1 punto de héroe y 1 Aumento durante tu acción para curar a otro héroe, que recuperará 1 Herida Dramática. Debes poder tocar al héroe que vayas a curar.</p>",
+    "infosource": "7º Mar (básico), p. 154",
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": -300000,
+  "ownership": {
+    "default": 0
+  }
+}

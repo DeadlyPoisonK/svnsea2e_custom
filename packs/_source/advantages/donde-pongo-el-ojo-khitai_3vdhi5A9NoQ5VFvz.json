@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Donde pongo el ojo (Khitai)",
+  "type": "advantage",
+  "_id": "3vdhi5A9NoQ5VFvz",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Obtienes 1 dado adicional cuando realizas un Riesgo de Apuntar usando una pistola, trabuco, un arma arrojadiza como un cuchillo o hacha, o un arma similar de proyectiles a corta distancia.</p>",
+    "infosource": "Khitai, p. 118 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

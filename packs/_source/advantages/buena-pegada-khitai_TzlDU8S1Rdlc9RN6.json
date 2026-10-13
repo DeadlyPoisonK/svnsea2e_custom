@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Buena pegada (Khitai)",
+  "type": "advantage",
+  "_id": "TzlDU8S1Rdlc9RN6",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><em>Debes tener la ventaja «Boxeador».</em></p><p>Cuando realizas un Riesgo de Pelear para dar un puñetazo, una patada, un cabezazo o herir de otro modo a otro personaje usando únicamente tu propio cuerpo, puedes optar por gastar un punto de héroe la primera vez que realices una acción para causar Heridas a otro personaje. Infliges un número de Heridas igual a los Aumentos que gastes. Luego, el personaje golpeado por tu jab pierde un número de Aumentos igual a tus rangos en Pelear.</p>",
+    "infosource": "Khitai, p. 113 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

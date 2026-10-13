@@ -1,0 +1,24 @@
+{
+  "folder": "s1n9pHqJXetLrKa5",
+  "name": "Alquimista",
+  "type": "advantage",
+  "_id": "oZrWL4S8aFrGjPek",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para fabricar un elixir o una poción que proporcione un efecto inmediato. Usar el brebaje alquímico requiere 1 Aumento durante una secuencia de acción o una secuencia dramática. Aquí tienes algunos ejemplos de usos de brebajes alquímicos, pero puede haber otros. Si quieres crear el tuyo propio, consúltalo con tu DJ.</p><p><strong>Explosión</strong>: El preparado provoca una explosión de humo asfixiante y fuego, lo que crea una Oportunidad que tú y otros podéis usar para huir de la escena.</p><p><strong>Mejora</strong>: Ganas 1 nivel en 1 característica durante 1 ronda.</p><p><strong>Aceite resbaladizo</strong>: Cualquier cosa que se cubra con este preparado se vuelve muy escurridiza y casi imposible de sostener. Si se vierte sobre el suelo, cualquiera que camine o corra sobre la superficie se resbalará y caerá. Si se vierte sobre un muro, cualquiera que intente escalarlo también se resbalará y caerá.</p><p><em>Solo castellanos.</em></p>",
+    "infosource": "7º Mar (básico), p. 153",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

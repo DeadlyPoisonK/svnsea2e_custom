@@ -1,0 +1,24 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Hoja centelleante",
+  "type": "advantage",
+  "_id": "qLZgar82hgCTqWx9",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastes un Aumento para infligir Heridas o realices una maniobra para infligir Heridas a un personaje o banda de matones durante un Riesgo de Armas, puedes gastar 1 punto de héroe para infligir esa misma cantidad de Heridas a un personaje o banda de matones diferente en la misma escena. El héroe sólo puede utilizar esta ventaja una vez por ronda.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 210",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

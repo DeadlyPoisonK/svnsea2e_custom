@@ -1,0 +1,22 @@
+{
+  "folder": "XxbatVafsy3T61pQ",
+  "name": "Velo de la viuda",
+  "type": "sorcery",
+  "_id": "yLeX2aQgaEQ9pACR",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Un crisantemo marchito recogido de una tumba, lavado con agua bendita y luego bendecido por un sacerdote. Un personaje que se coloque un Velo de la viuda en su ropa será inmune al primer ataque o efecto sobrenatural que provenga de un monstruo no muerto. Después de eso, las hojas de esta planta se convertirán en polvo y quedarán inservibles.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 209",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,33 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Prisionero fugado",
+  "type": "background",
+  "_id": "eMg1AS4ki8vY6pkE",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Compasión</p>",
+    "quirk": "<p>Gana un punto de héroe cuando salves a alguien de la esclavitud, la captura o el peligro ofreciéndote a ti mismo en su lugar u ocupando su puesto.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "hide",
+      "notice",
+      "ride"
+    ],
+    "advantages": [
+      "Liberarse (Khitai)",
+      "¡Lo tengo! (Khitai)",
+      "Estómago de hierro (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 105 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

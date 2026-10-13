@@ -1,0 +1,22 @@
+{
+  "folder": "aKUid9pbLLTS3ZqR",
+  "name": "Rebotar",
+  "type": "sorcery",
+  "_id": "d5zB4pDfBlZfcGuZ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este poder en cualquier momento de tu acción en una escena después de absorber un efecto de Hechicería de otro personaje. En su lugar, activas el poder. Puedes elegir nuevos objetivos para el poder si este requiere objetivos.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 167",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "path",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

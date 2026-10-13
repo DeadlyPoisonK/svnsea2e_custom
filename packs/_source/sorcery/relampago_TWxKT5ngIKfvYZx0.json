@@ -1,0 +1,22 @@
+{
+  "folder": "ubbm9ln1dtOMG7jG",
+  "name": "Relámpago",
+  "type": "sorcery",
+  "_id": "TWxKT5ngIKfvYZx0",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Invocas un relámpago para castigar a tus enemigos. Aunque puedes hacerlo sin importar el tiempo que haga, debes tener algún tipo de acceso al cielo. Si estás en el interior de un edificio y todas las ventanas están cerradas, no podrás invocarlo. El relámpago inflige tantas Heridas como tu nivel de Conocimientos. No es posible defenderse de las heridas infligidas por un relámpago.</p><p>Cuando conoces por primera vez a Tură, él te pedirá que guardes su secreto y extiendas el mito del terrible Chernobog. Si aceptas, te dará dos dones y una tarea. El número de pasos de la historia de la tarea depende de la cantidad de dones que tengas. Cada vez que adquieres la ventaja Hechicería obtienes dos dones adicionales y añades a tu tarea dos pasos adicionales. Estos pasos pueden ser historias independientes de un solo paso o combinarse para formar una historia de dos pasos. Por tanto, si escoges la ventaja Hechicería por primera vez, puedes elegir entre dos tareas de un paso o una tarea de dos pasos. Si vuelves a escogerla otra vez, ahora tienes cuatro dones y tienes cuatro pasos para distribuir entre las tareas que poseas.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 149",
+    "used": false,
+    "sorctype": "tura",
+    "sorcdur": "none",
+    "sorccat": "gift",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

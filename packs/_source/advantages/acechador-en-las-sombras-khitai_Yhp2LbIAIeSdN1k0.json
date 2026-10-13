@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Acechador en las sombras (Khitai)",
+  "type": "advantage",
+  "_id": "Yhp2LbIAIeSdN1k0",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para moverte en silencio, desvanecerte en la oscuridad o demostrar de cualquier otro modo tu afinidad con las sombras.</p>",
+    "infosource": "Khitai, p. 116 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

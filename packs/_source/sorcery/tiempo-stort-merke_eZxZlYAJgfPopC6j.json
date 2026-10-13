@@ -1,0 +1,22 @@
+{
+  "folder": "0NnSXX8vlRijAPqF",
+  "name": "Tiempo Stort Merke",
+  "type": "sorcery",
+  "_id": "eZxZlYAJgfPopC6j",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Elige a un personaje que esté contigo en la escena (no puedes ser tú mismo). Dicho personaje pierde de inmediato todos sus Aumentos. En la siguiente ronda obtendrá una cantidad de Aumentos adicionales igual al doble de la cantidad que perdió.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 193",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

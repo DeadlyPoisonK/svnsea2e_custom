@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Humilde",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para conseguir 2 puntos de héroe, en lugar 1, cuando actives tu Hibris o una Peculiaridad.</p>",
+    "infosource": "La torre · 7º Mar (básico), p. 157"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "qrFjXP6bW3So2Cnc",
+  "sort": 1800000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Multitareas",
+  "type": "advantage",
+  "_id": "ZQTx8Fdravz5pC8m",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastas 1 Aumento en tu acción para activar una Oportunidad, puedes gastar 1 punto de héroe para reducir una Consecuencia como si hubieras gastado un solo Aumento para hacerlo.</p><p><em>Coste: 3 (2 si eres de una tribu del 8º Mar).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 160",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": 2
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

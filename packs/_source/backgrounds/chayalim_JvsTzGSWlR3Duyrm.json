@@ -1,0 +1,32 @@
+{
+  "folder": "woHhojw41I6E4wVp",
+  "name": "Chayalim",
+  "type": "background",
+  "_id": "JvsTzGSWlR3Duyrm",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Fuiste entrenado en Sarmion como infantería ligera, hábil con la espada y el arco por igual.</p><p><em>Ventajas en el libro: Reflejos rápidos (Armas).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 157",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando desafías a tus superiores, te niegas a obedecer órdenes o te opones a la autoridad para hacer lo que crees que es correcto.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "brawl",
+      "ride",
+      "weaponry"
+    ],
+    "advantages": [
+      "Equilibrio perfecto",
+      "Reflejos rápidos"
+    ],
+    "nation": "sarmion",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

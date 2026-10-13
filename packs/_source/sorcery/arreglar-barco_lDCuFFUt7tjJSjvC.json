@@ -1,0 +1,22 @@
+{
+  "folder": "ey7m8TjScwWG6Ah5",
+  "name": "Arreglar barco",
+  "type": "sorcery",
+  "_id": "lDCuFFUt7tjJSjvC",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Toca un barco y activa este Glamour para reparar instantáneamente sus Impactos. Reparas 5 Impactos por cada nivel que tengas en este Glamour. No puedes reparar Impactos Críticos.</p>",
+    "infosource": "7º Mar (básico), p. 215",
+    "used": false,
+    "sorctype": "knight",
+    "sorcdur": "none",
+    "sorccat": "glamour",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

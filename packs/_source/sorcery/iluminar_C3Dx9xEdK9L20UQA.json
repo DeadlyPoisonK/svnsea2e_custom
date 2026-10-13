@@ -1,0 +1,21 @@
+{
+  "folder": "d42jZhN0By3mSJyq",
+  "name": "Iluminar",
+  "type": "sorcery",
+  "_id": "C3Dx9xEdK9L20UQA",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El área que te rodea se vuelve perfectamente iluminada.</p><p>Ni demasiado oscura, ni demasiado brillante. Una luz mágica y de ambiente perfecto llena el espacio. Si activas este poder en el exterior, el efecto tiene su centro en ti y se expande unos 3,5 metros. Todas las criaturas no muertas que se encuentren dentro del área sufren 5 Heridas inmediatamente y tiran 2 dados menos en cualquier Riesgo que realicen mientras <em>Iluminar</em> tenga efecto.</p>",
+    "infosource": "7º Mar (básico), p. 217",
+    "sorctype": "darm",
+    "sorcdur": "none",
+    "sorccat": "gift",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

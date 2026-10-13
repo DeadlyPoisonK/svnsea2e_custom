@@ -1,0 +1,22 @@
+{
+  "folder": "UmOykxAiB4ACTBDv",
+  "name": "Tormenta",
+  "type": "sorcery",
+  "_id": "illXMmAudtIjumVW",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Los dievai con el Trato de la Tormenta pueden ser tan impredecibles como el viento. Se dejan llevar por el aire sin ningún esfuerzo y con un control perfecto. Pueden crear un tornado mediante su aliento con la facilidad con que un mortal puede respirar o convocar un relámpago chascando los dedos.</p><ul><li>Convocar una tormenta, como un huracán o un tornado, cuando hay un tiempo tranquilo. Una tormenta de este tipo puede arrasar un área de aproximadamente un kilómetro y medio de radio.</li><li>Convocar un rayo durante una tormenta para que golpee a una criatura de tu elección y la mate al instante.</li><li>Crear un viento constante que sopla en la dirección que elijas durante una escena.</li><li>Calmar una tormenta existente, convirtiendo un chaparrón torrencial en una lluvia leve, o darle más potencia a una tormenta existente y convertir una lluvia leve en un chaparrón torrencial.</li><li>Conseguir la capacidad de provocar rayos y truenos durante una escena para usarlos como distracción. Puedes hacer que un relámpago golpee o que un trueno retumbe gastando un Aumento durante cualquier Riesgo.</li><li>Convocar una poderosa corriente de aire, lo que te permite saltar una distancia o altura que de otro modo hubiera sido imposible, o amortiguar una caída que hubiera sido mortal.</li><li>Lanzar un rayo para derribar a una criatura (o varias criaturas, si es una banda de matones o de monstruos) que se encuentre a hasta 3 metros de ti directamente. Si la criatura golpea algo sólido (como una pared), recibe 3 Heridas del impacto. Independientemente de esto, cae al suelo después, aturdida, y debe dedicar su siguiente acción a ponerse en pie.</li></ul>",
+    "infosource": "7º Mar (básico), p. 226",
+    "sorctype": "sanderis",
+    "sorccat": "deal",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

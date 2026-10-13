@@ -1,0 +1,15 @@
+{
+  "name": "El mensajero",
+  "sorting": "a",
+  "folder": "sUWTdl5qMbYmk0j8",
+  "type": "Item",
+  "_id": "lUyQwJwbG6GzVDjj",
+  "description": "",
+  "sort": 700000,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "0e695f55e48815504a83d2a61c97ba29b992b271"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# LevelDB compendium packs: binary, never convert line endings (CURRENT must keep its LF)
+packs/** -text
+packs/_source/** text eol=lf

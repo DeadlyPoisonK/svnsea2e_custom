@@ -1,0 +1,22 @@
+{
+  "folder": "YTcrjQkDWcQTDfXz",
+  "name": "Melbur: cómo funciona",
+  "type": "sorcery",
+  "_id": "pyNuuFH9FCGuMpel",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cada vez que un héroe compra Hechicería Melbur, su abonsam gana un Trato. El dasusuo selecciona dos Favores menores por cualquier Trato que tenga su abonsam, y siempre puede invocar esos favores gastando 1 punto de héroe. Para un Favor menor, el dasusuo solo necesita pedir el efecto. El acuerdo que hizo con el demonio incluye estos Favores menores. Si un dasusuo desea invocar un Favor durante una secuencia de acción, cuesta 1 Aumento y 1 punto de héroe.</p><p>El abonsam no puede rechazar un Favor menor: estos son parte del Trato que el dasusuo hizo con el demonio. Estos precios son menores, pero irritantes.</p><p>El coste típico de un Favor menor sería algo así como...</p><ul><li>«¡Un brindis en mi nombre!».</li><li>«Después de que haga esto, tendrás que darme las gracias. Y debes darlas de corazón».</li><li>«Dame un apretón de manos amistoso, sonríe y haz contacto visual».</li></ul><p>Si el dasusuo quiere hacer un Favor menor que no ha comprado, puede gastar 1 punto de héroe (y un Aumento, si es durante una secuencia de acción), para pedirle a su abonsam dicho favor. En la mayoría de los casos, el acto que el abonsam exige paga una deuda a otro abonsam. Ellos conspiran y traman entre sí tanto como con su dasusuo mortal, intercambiando favores en una complicada red de intrigas y beneficios.</p><p>El coste típico de un Favor menor que el dasusuo no ha comprado sería algo así como…</p><ul><li>«La próxima vez que estés en la Ciudad Pintada, encuentra a un hombre con un solo brazo llamado Amalu. Cómprale un par de zapatos cómodos».</li><li>«En Arrada, hay un mendigo que los niños llaman Bakary el Triste. Asegúrate de que duerma rodeado de lujos durante al menos una noche».</li><li>«En Masr, ve al banco en el barrio de los nobles. Obtén acceso a la caja fuerte 13. Toma la carta que encontrarás dentro y entrégala a una mujer llamada Nepthis».</li></ul><p>Un Favor mayor es un asunto totalmente distinto. Un dasusuo no selecciona Favores mayores específicos cuando compra Hechicería. Un abonsam podría hacerte un Favor mayor, pero es costoso. El abonsam sabe que si el dasusuo</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 189",
+    "sorctype": "melbur",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

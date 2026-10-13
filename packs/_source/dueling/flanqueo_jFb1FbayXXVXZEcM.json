@@ -1,0 +1,18 @@
+{
+  "folder": "SHTZehac4c9ek4Nd",
+  "name": "Flanqueo",
+  "type": "duelstyle",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Un ataque que a menudo se usa para acabar con un enemigo, Flanqueo es una de las órdenes potencialmente más devastadoras que se pueden dar. Cuando ordenas Flanqueo, la unidad tira tantos dados como su Fuerza y el general gasta todos los Aumentos restantes. Hace tantos Impactos como la cantidad de Aumentos obtenidos por la unidad más la cantidad de Aumentos que gastas.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 193",
+    "bonus": ""
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_id": "jFb1FbayXXVXZEcM",
+  "sort": 400000
+}

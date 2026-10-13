@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Parientes lejanos (Khitai)",
+  "type": "advantage",
+  "_id": "qkAt72AjCVT0YxlA",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para revelar que tienes un primo lejano que vive cerca y puede ayudarte con materiales, información o cobijo.</p>",
+    "infosource": "Khitai, p. 115 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

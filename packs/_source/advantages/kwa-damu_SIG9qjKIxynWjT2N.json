@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Kwa damu",
+  "type": "advantage",
+  "_id": "SIG9qjKIxynWjT2N",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>Debes tener la ventaja de «Rima y verso».</strong></p><p>Si ganas 5 Aumentos más que tu oponente en un Bayt durante un duelo de poesía, ganas. Has dominado el arte de presionar a tu oponente para que se someta. Se queda sin palabras o incluso sin la oportunidad de reprender tu verso.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 159",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

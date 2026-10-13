@@ -1,0 +1,23 @@
+{
+  "folder": "vIU7NVRxbdGwTGsF",
+  "name": "Extranjero (nahuacano)",
+  "type": "advantage",
+  "_id": "0gu40gmAz24aQO8r",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige una naci&oacute;n de h&eacute;ah que no sea tu tierra natal;<br>ah&iacute; ser&aacute; donde te criaste. Por ejemplo, si tus padres<br>eran castellanos pero te criaste en Vodacce, podr&iacute;as ser<br>Extranjero (Vodacce). Cualquier Riesgo que realices<br>que se beneiciar&iacute;a de una herencia doble (como usar<br>Convencer para negociar entre dos mercaderes originarios<br>de tus dos culturas o usar Tentar para saber qu&eacute;<br>decir para sobornar a una patrulla fronteriza y que te<br>deje pasar sin inspeccionarte) consigue 1 dado adicional</p>",
+    "infosource": "Variante creada por la mesa: Extranjero para el trasfondo La Ventan (El Nuevo Mundo, p. 163)",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

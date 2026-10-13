@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Oportunista (Khitai)",
+  "type": "advantage",
+  "_id": "xw9SelRCawPtNKVW",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando otro personaje gasta un Aumento para crear una Oportunidad, puedes gastar un punto de héroe para activar de inmediato la Oportunidad para ti.</p>",
+    "infosource": "Khitai, p. 119 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

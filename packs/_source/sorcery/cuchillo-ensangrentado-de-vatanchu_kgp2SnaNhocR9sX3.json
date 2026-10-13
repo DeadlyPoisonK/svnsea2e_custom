@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Cuchillo ensangrentado de Vatanchu",
+  "type": "sorcery",
+  "_id": "kgp2SnaNhocR9sX3",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>En el folclore de Tzak K'an, Vatanchu fue la primera persona en quitarle la vida a otra en contra de su voluntad. En algunos relatos es un sacrificio forzado y en otros, un asesinato legítimo. El motivo del asesinato también cambia de historia en historia, al igual que la víctima e incluso el género de Vatanchu. Las historias de Vatanchu son cuentos con moraleja, destinados a recordarle al oyente el precio de tomar una vida. Al portar el Cuchillo ensangrentado de Vatanchu, un héroe puede gastar 1 punto de héroe para aplicar Presión a todos los que están presentes en la escena. Cualquier acción violenta cuesta 2 Aumentos en lugar de 1.</p>",
+    "infosource": "El Nuevo Mundo, p. 172",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

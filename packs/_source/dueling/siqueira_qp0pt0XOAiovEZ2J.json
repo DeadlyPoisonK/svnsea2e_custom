@@ -1,0 +1,18 @@
+{
+  "folder": "9c8i6URJvxaqZFe5",
+  "name": "Siqueira",
+  "type": "duelstyle",
+  "_id": "qp0pt0XOAiovEZ2J",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Un torero entrenado en Siqueira controla elegantemente al toro mientras realiza su danza. Hay quien afirma que el estilo se originó en las técnicas utilizadas por los pastores para ahuyentar a los lobos y a los ladrones. De esta forma, el duelista controla a su objetivo enojándolo primero con una vara. Un duelista de Siqueira trata de enfurecer a su oponente atizándole con la punta de su arma o, en ocasiones, insultándole. Una vez enfurecido, persuade a su enemigo para que cargue contra él. Durante la carga, el duelista se mueve hacia un lado y golpea a su enemigo por el flanco, y luego vuelve a distanciarse rápidamente de él. El objetivo es mantener al oponente alejado y hacer que se abalance para imponer siempre las condiciones del duelo.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 100",
+    "bonus": "<p><strong>Coger al toro por los cuernos.</strong></p><p>Si utilizas un cayado o un palo largo, obtienes una maniobra especial llamada «Coger al toro por los cuernos». Cuando realices esta maniobra, aplicas Presión sobre tu objetivo; si el oponente desea hacer otra cosa que no sea atacarte (infligirte Heridas por cualquier medio del que disponga), debe gastar 2 Aumentos, en lugar de uno, para realizar dicha acción. Si tu objetivo elige atacarte, le infliges tantas Heridas como tu nivel en Maña. Un héroe solo puede realizar esta maniobra una vez por ronda.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Duelista erudito",
+  "type": "advantage",
+  "_id": "9lOpjK78GIFXiZDc",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Un héroe debe tener la ventaja «Academia de esgrima» para poder adquirir esta ventaja. Elige otro estilo de esgrima, que aprendes.</p>",
+    "infosource": "Heroes & Villains, p. 205 (traducción no oficial)",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "folder": "vcoxSAwP9VR8RQf9",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

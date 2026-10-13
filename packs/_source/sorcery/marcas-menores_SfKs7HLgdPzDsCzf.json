@@ -1,0 +1,22 @@
+{
+  "folder": "U2PSSPaknua4R4bA",
+  "name": "Marcas menores",
+  "type": "sorcery",
+  "_id": "SfKs7HLgdPzDsCzf",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Los objetos pequeños (algo que se puede coger con una mano como una espada, un guardapelo o un sombrero) normalmente están marcados con marcas menores, lo que le permite al sorcier saber dónde está el objeto y atraerlo hacia sí mismo usando Porté.</p>",
+    "infosource": "7º Mar (básico), p. 221",
+    "sorctype": "porte",
+    "sorccat": "mark",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

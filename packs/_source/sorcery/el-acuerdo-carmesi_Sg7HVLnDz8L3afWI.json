@@ -1,0 +1,21 @@
+{
+  "folder": "UAD1q5zNVMpOyhGo",
+  "name": "El Acuerdo Carmesí",
+  "type": "sorcery",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>La comunión con los espíritus es una práctica común entre muchos sacerdotes y magos de culturas de todo el mundo, pero los métodos de los rooi heks pueden ser los más íntimos... y los más peligrosos.</p><p>Al gastar Ruina 1, los rooi heks abren su alma a los ori y les permiten poseerla. Un alma abierta es el señuelo perfecto, y rara vez un espíritu puede resistir tan clara invitación. El personaje obtiene acceso a una de las siguientes habilidades, dependiendo de qué tipo de ori responda al señuelo.</p><ul><li>Muerte: Gasta 1 punto de héroe para proteger a cualquier personaje de ser asesinado. Mientras está poseído, el personaje seleccionado no puede morir, incluso cuando queda Indefenso.</li><li>Sombra: Gasta 1 punto de héroe para dotar de sentidos a tu sombra. La sombra se vuelve semicorpórea y obedece tus órdenes. Es capaz de explorar, escuchar a escondidas y otras actividades similares, pero no puede recoger objetos o interactuar con otras personas. Si realiza una acción peligrosa, tiene Fuerza 5 (tira 5 dados) y gasta Aumentos en consecuencia. Si sufre una Herida, instantáneamente vuelve a ti y se niega a ser reanimada hasta la próxima puesta de sol.</li><li>Sangre: Gasta 1 punto de héroe mientras le haces la tercera Herida Dramática a otro personaje para dejarlo Indefenso de inmediato. Solo puedes activar este poder una vez por episodio.</li><li>Memoria: Gasta 1 punto de héroe para hablar en representación de cualquier persona, viva o muerta. La rooi heks debe ser capaz de tocar el cuerpo del objetivo o algo de valor personal extremo que pertenezca al objetivo. Debe haber otro participante para unirse a la conversación, ya que la rooi heks no puede hablar consigo misma. Esto no le da al rooi heks ninguna idea de lo que desea su objetivo, solo le permite actuar como un receptáculo para que el objetivo hable a través de ella.</li><li>Corazón: Gasta 1 punto de héroe para enmascarar cualquier señal de vida en un personaje Indefenso. La frecuencia cardíaca del objetivo se ralentiza, sus ojos se nublan y sus músculos se endurecen. También se vuelve susceptible a la sugestión y se le puede indicar que haga acciones simples siguiendo las instrucciones del rooi heks.</li></ul><p>Estos poderes provienen de los lazos del Toque Rojo con Kap Sèvi (<strong>N P</strong>, página 160). Mientras que una rooi heks no se limita a hacer tratos con los ori en particular de la misma manera que un sèvitè lo hace con su Lwa, ella tiene su propio precio a pagar. Debido a que no está sujeta a las mismas reglas y no está obligada a ofrecer tributo (como un Grand Met de Lwa, o los costos asociados con los dievai y sus Tratos), los ori siempre intentan abandonar el cuerpo de los rooi heks lo antes posible. Al final de la escena, la rooi heks deben gastar 1 punto de héroe para mantener el control sobre el ori con el que se ha unido de forma temporal; si no lo hace, el ori la abandona de inmediato y la rooi heks no puede unirse con otro ori hasta el próximo amanecer. Si lo hace, el ori permanece, pero en ambos casos, recuerda haber sido encarcelado contra su voluntad.</p><p>Tan pronto como el ori deja la rooi heks, el DJ gana un número de puntos de peligro igual a la Ruina que la rooi heks tenga en ese momento. Estos representan el disgusto de los ori contra el mortal que se aprovechó de ellos. Durante un tiempo, las cosas no le salen bien a la rooi heks, y sus aliados a menudo sufren por asociación.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 194",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "Sg7HVLnDz8L3afWI",
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  }
+}

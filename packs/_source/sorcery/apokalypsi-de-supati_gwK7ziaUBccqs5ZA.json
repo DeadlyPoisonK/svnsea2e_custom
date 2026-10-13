@@ -1,0 +1,21 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Apokálypsi de Supati",
+  "type": "sorcery",
+  "_id": "gwK7ziaUBccqs5ZA",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Puedes activar este apokálypsi en tu acción durante un Riesgo. Los héroes (incluido tú mismo) que se encuentren bajo Presión pueden realizar una acción de forma inmediata (aunque todavía tienen que gastar Aumentos para hacerla, como es habitual).</p><p>Salacio es, en muchos sentidos, el dios patrón del compromiso. Una vez que el curso del río se ha iniciado, ningún tipo de intervención divina debe cambiarlo. Esto hace que Salacio sea a la vez alguien de confianza, al menos en lo que respecta a completar una tarea, como increíblemente cabezota. Además de su lealtad a Zendio (ilustrado por las cosas que estaba dispuesto a hacer para derrotar a Hecteba), estos son los rasgos que mejor definen al dios y la verdad de su mystírio: sigue el curso, conserva la fe en ti mismo y en tus acciones y nada te apartará de ese camino.</p>",
+    "infosource": "Naciones Piratas, p. 168",
+    "sorctype": "mystirios",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

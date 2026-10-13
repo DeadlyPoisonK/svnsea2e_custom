@@ -1,0 +1,22 @@
+{
+  "folder": "McTjwldc9c7ZehBI",
+  "name": "Camaleón",
+  "type": "sorcery",
+  "_id": "wIM43Kjsh69MX5BL",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Esta mezcla hace que la piel de quien la beba se mimetice con el entorno, volviéndose más difícil de seguir visualmente. Un personaje que beba esta poción puede contar tantos Aumentos adicionales en cualquier Riesgo de Esconder como la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 199 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

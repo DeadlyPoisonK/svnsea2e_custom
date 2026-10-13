@@ -1,0 +1,22 @@
+{
+  "folder": "aft3kr5m13fZOAVo",
+  "name": "Las motas negras",
+  "type": "sorcery",
+  "_id": "ldZWUWVsEVEcbyuj",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>A continuación tienes una lista de las maldiciones que podría recibir un personaje por tener una o más motas negras. El DJ selecciona los efectos que se aplican por cada mota que recibe el personaje, pero puede dejar que el personaje decida lo que desee. Por cada mota negra, el jugador puede:</p><ul><li>Perder 1 nivel de una característica.</li><li>Perder 2 niveles de una habilidad.</li><li>Perder cualquier ventaja (de 2 puntos o menos).</li><li>Pagar 1 punto de héroe adicional para conseguir el beneficio de una sola ventaja (de 3 puntos o más) además del coste habitual asociado con dicha activación.</li></ul><p>El único modo de liberarte de la maldición es ir al resto de firmantes del Acta y suplicar perdón. Para que te perdonen, cada participante debe hacerse un corte en la mano y estrechártela mientras preguntas «¿Me perdonas?»</p><p>y él responde «Sí». Si se concede el perdón, desaparece una mota negra y tus características, habilidades y ventajas vuelven a la normalidad, librándote de (parte) de los efectos de la maldición.</p><p>Si todos los miembros del Acta mueren, esta arde con una llama azul. Dado que en el Cubo de Sangre en Aragosta hay tantas Actas, los piratas que beben en la taberna siempre guardan un minuto de silencio cuando arde un Acta. La mayoría dice que da mala suerte firmar un Acta nueva el mismo día que una vieja se convierte en polvo, pero los más valientes de Aragosta desestiman tal superstición y llegan incluso a mezclar unas cuantas cenizas del Acta vieja con la sangre que se usa para crear un nuevo pacto con una nueva tripulación.</p><p><strong>NACIONES PIRATAS</strong> 159</p>",
+    "used": false,
+    "infosource": "Naciones Piratas, p. 159",
+    "sorctype": "charter",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,31 @@
+{
+  "folder": "NMLUIzroEfZyWIxJ",
+  "name": "Diestro",
+  "type": "background",
+  "_id": "JoFWE9MrKxQlpMjn",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Has dedicado tu vida a entender la espada, no solo su función.</p>",
+    "infosource": "7º Mar (básico), p. 143",
+    "quirk": "<p>Ganas 1 punto de héroe cuando superes a un espadachín en su propio terreno.</p>",
+    "skills": [
+      "athletics",
+      "empathy",
+      "intimidate",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Esgrimista",
+      "Sonrisa encantadora"
+    ],
+    "nation": "castille",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

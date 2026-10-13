@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Vafa",
+  "type": "sorcery",
+  "_id": "aDnRjl9J2mkz3Pch",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado cuando un aliado reciba Heridas. El aliado elegido no recibe Heridas y, en cambio, tú recibes un número de Heridas igual a la cantidad infligida menos tu Ingenio.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 180",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

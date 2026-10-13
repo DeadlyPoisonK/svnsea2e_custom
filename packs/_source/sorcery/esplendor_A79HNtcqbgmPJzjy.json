@@ -1,0 +1,21 @@
+{
+  "folder": "lViId2hAgZrG1OcT",
+  "name": "Esplendor",
+  "type": "sorcery",
+  "_id": "A79HNtcqbgmPJzjy",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Beber este elixir te permite mostrar tu belleza interior a todos los que te contemplen. Obtienes la ventaja Fascinar durante una escena; no necesitas gastar puntos de Héroe para activarla.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 95",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

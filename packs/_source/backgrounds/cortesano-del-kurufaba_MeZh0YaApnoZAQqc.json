@@ -1,0 +1,32 @@
+{
+  "folder": "y0DwOQKkcGKxRhrF",
+  "name": "Cortesano del Kurufaba",
+  "type": "background",
+  "_id": "MeZh0YaApnoZAQqc",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>El Manden Kurufaba es una de las entidades económicas más poderosas de Terra. Tú ejerces ese poder.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 176",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando tomas una acción arriesgada o moralmente ambigua por el bien de la cultura o los recursos de Ifri.</p>",
+    "skills": [
+      "empathy",
+      "intimidate",
+      "sailing",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Kurufaba",
+      "Lingüista"
+    ],
+    "nation": "manden"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

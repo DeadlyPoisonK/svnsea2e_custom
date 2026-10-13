@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Esgrimista nato (Khitai)",
+  "type": "advantage",
+  "_id": "VdSeheiWGcgwY5co",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><em>Debes tener la ventaja «Academia de esgrima».</em> Puedes gastar un punto de héroe para cambiar tu estilo elegido a mitad de una ronda, siempre que cumplas los requisitos del nuevo estilo que adoptes (como el arma empuñada). Un héroe solo puede usar esta ventaja una vez por ronda.</p>",
+    "infosource": "Khitai, p. 114 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

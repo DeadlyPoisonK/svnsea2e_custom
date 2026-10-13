@@ -1,0 +1,23 @@
+{
+  "folder": "gxkLuS9TPRnNIDZS",
+  "name": "Fascinar",
+  "type": "advantage",
+  "_id": "0doM2O0DSU46pR7L",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para llamar la atención de otro personaje, que solo estará atento a ti hasta el final de la escena o hasta que dejes de hablarle o prestarle atención, lo que suceda primero.</p>",
+    "infosource": "7º Mar (básico), p. 149",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1200000,
+  "ownership": {
+    "default": 0
+  }
+}

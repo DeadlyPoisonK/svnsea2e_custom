@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Pisa donde yo piso",
+  "type": "advantage",
+  "_id": "QEYfCFyubuyx09Jh",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe cuando gastes un Aumento para realizar una acción que implique movimiento, navegar en un entorno peligroso, evitar una trampa, saltar un abismo o alguna amenaza similar. Otro héroe de tu elección viene contigo, evitando cualquier amenaza como si hubiera gastado un Aumento.</p><p><em>Coste: 5 (3 si eres de una tribu del 8º Mar).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 161",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

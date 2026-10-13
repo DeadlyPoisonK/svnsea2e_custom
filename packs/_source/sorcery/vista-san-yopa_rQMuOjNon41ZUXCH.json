@@ -1,0 +1,21 @@
+{
+  "folder": "FxGE3VwgEoqXw1Op",
+  "name": "Vista San Yopa",
+  "type": "sorcery",
+  "_id": "rQMuOjNon41ZUXCH",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Hay veces en las que un padre quiere ver pero no quiere que<br>lo vean, y Papa Ahron ha dominado ese arte. Mientras Papa<br>Ahron lo posea, el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe para<br>moverse sin que lo vean durante una escena. El s&egrave;vit&egrave; todav&iacute;a<br>puede ser o&iacute;do, olido o sentido, pero no se puede detectar<br>ninguna presencia visual. De todos modos, el s&egrave;vit&egrave; debe ser<br>sutil mientras usa Vista San Yopa, pues los lwa no pueden<br>ocultar acciones descaradamente viles y obvias como apu&ntilde;alar<br>a alguien en el pecho o lanzar pu&ntilde;ados de harina al aire.</p>",
+    "infosource": "Naciones Piratas, p. 164",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

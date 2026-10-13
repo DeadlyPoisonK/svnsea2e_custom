@@ -1,0 +1,22 @@
+{
+  "folder": "KnMqpe46crPBBvU0",
+  "name": "Camino de los Justos",
+  "type": "sorcery",
+  "_id": "fXe3YIfGaSuorX5i",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El Camino de los Justos te enseña que cada vida merece una oportunidad justa. Con tus habilidades, puedes proteger a aquellos que necesitan protección y alimentar a quienes necesitan comida, asegurándote de que todos tengan una oportunidad justa de disfrutar de la creación de al-Musawwir.</p><p>El primer paso en el Camino de los Justos te enseña la lección de que todas las personas merecen comer. El sustento es esencial para la vida y al-Musawwir dio vida a todas las personas. Tu Maravilla te proporciona la capacidad de estirar tus raciones y alimentar a todo un pueblo.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 168",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

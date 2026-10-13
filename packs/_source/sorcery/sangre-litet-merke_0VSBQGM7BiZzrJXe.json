@@ -1,0 +1,22 @@
+{
+  "folder": "u4dyc8vAl5yaaJP8",
+  "name": "Sangre Litet Merke",
+  "type": "sorcery",
+  "_id": "0VSBQGM7BiZzrJXe",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>El personaje que sea tu objetivo puede gastar inmediatamente un punto de héroe para conseguir 2 Aumentos. La runa de Tiempo gobierna la profecía, el destino y, lo que es más importante, los ciclos. La runa da nombre a los héroes que tienen un destino, lo siguieran o no. El uso común es proteger de la holgazanería.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 193",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

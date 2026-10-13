@@ -1,0 +1,23 @@
+{
+  "folder": "vxu1cHRUsVi9hzod",
+  "name": "Guerreros Chavra (solo Sarmion)",
+  "type": "advantage",
+  "_id": "mcfxYsZrRuyM8djh",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>La primera vez en una batalla que una unidad con este Mérito recibe Impactos, recibe dos menos (mínimo 1).</p>",
+    "infosource": "El Imperio de la Media Luna, p. 196",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

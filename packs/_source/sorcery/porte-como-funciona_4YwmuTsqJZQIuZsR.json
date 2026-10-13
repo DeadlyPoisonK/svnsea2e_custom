@@ -1,0 +1,22 @@
+{
+  "folder": "U2PSSPaknua4R4bA",
+  "name": "Porté: cómo funciona",
+  "type": "sorcery",
+  "_id": "4YwmuTsqJZQIuZsR",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>La magia Porté se hereda a través de la sangre. Si uno de tus ancestros tuvo Porté, tú puedes tenerla. Los montaigneses llevan un seguimiento estricto de sus linajes para asegurarse de que el don no se aleja demasiado de la sangre noble. Ha habido magos de Porté que no eran nobles, pero aquellos que tienen el don lo mantienen en secreto o nunca lo cultivan. Las historias de carruajes negros que aparecen en medio de la noche y se llevan a niños a los que nunca se les vuelve a ver son algo más que simple folclore.</p><p>Un mago de Porté joven aprende primero el arte de la Marca de Sangre: la capacidad de marcar un objeto con su propia sangre. Un mago puede sentir después la presencia de un objeto marcado cuando está cerca o saber dónde podría estar a cierta distancia.</p><p>Después de aprender cómo marcar un objeto, el sorcier aprende cómo <strong>Atraer</strong> el objeto hacia sí mismo. Hace sangrar sus manos, abre un portal y lo traspasa para coger el objeto marcado y traerlo de vuelta a través del portal. El sorcier solo puede traer objetos que quepan fácilmente en una mano. Si no puede levantarlo, no puede traerlo a través del portal.</p><p><strong>Sacó un cuchillo y lo deslizó en el aire. Escuché un aullido, como si el mismísimo mundo estuviera gritando, mientras ella lo dividía con sus manos, abriéndolo. Se giró hacia mí, con una sonrisa en el rostro. «Nuestra ruta de escape», dijo. «¿O prefieres pudrirte en esta prisión?». Me tendió una mano que chorreaba sangre. «Sé que no confías en mí, Stephan», dijo. «Sé que crees que soy una villana…, pero me necesitas. Si no, todos esos niños inocentes van a morir». Miré su mano ensangrentada y me pregunté qué marca estaría poniendo en mi alma solo por cogerla. </strong> Después de aprender cómo atraer objetos, la siguiente habilidad que aprende un sorcier es cómo <strong>Caminar.</strong> Esto permite que el sorcier abra un portal y camine hasta un lugar u objeto que haya marcado. Esta es una práctica peligrosa, ya que expone completamente al sorcier al sendero de ese otro mundo. Sin embargo, el sorcier puede moverse así de un continente a otro en cuestión de minutos. Es muchísimo más fácil que embarcarse en un barco o viajar por tierra, pero mientras está expuesto al sendero, el sorcier debe cerrar los ojos fuertemente e ignorar las voces que escucha urgiéndole a que los abra.</p><p>Los héroes que tienen Porté pueden traer objetos a través de los portales y también traspasarlos ellos mismos hacia los objetos ensangrentados. No hay ninguna otra conexión física entre los dos portales. En otras palabras, si un héroe tira un broche ensangrentado en el océano y abre un portal a ese broche, el agua no saldrá por el portal; sin embargo, el broche estará mojado cuando el héroe lo coja.</p><p>Del mismo modo, si un héroe cruza un portal hacia donde hay un objeto y dicho objeto está en un lugar en el que el héroe no puede entrar, encontrará ese pasaje bloqueado y se verá obligado a ir a otro objeto ensangrentado para salir del portal… No es una opción muy agradable. Por ejemplo, si un héroe deja un broche ensangrentado en la habitación de una dama y la dama lo coloca en su joyero, el héroe no será capaz de moverse por el portal hacia el joyero. Sin embargo, sí podrá coger el broche sin comprometer la integridad de la caja. Si un héroe entra en un portal, camina hacia su objeto y después se da cuenta de que no puede conectar con él y no tiene ningún otro objeto ensangrentado que lo lleve a casa, queda atrapado en el sendero para siempre, o al menos hasta que <em>algo</em> lo encuentre. Por esta razón, muchos sorciers crean y esconden objetos ensangrentados que puedan funcionar como salidas de emergencia, salvaguardando así el conocimiento de su existencia incluso a sus amigos cercanos y a su familia.</p>",
+    "infosource": "7º Mar (básico), p. 219",
+    "sorctype": "porte",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

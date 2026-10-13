@@ -1,0 +1,21 @@
+{
+  "folder": "DyFaRublZKFyCSai",
+  "name": "Shlita",
+  "type": "sorcery",
+  "_id": "fdltvzgVOL2uUg60",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Shlita es el poder de la dominación. Aquellos que usan Shlita pueden atar espíritus poderosos, incluso dioses, a este plano, atrapándolos en arcilla y piedra.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 175",
+    "sorctype": "chozeh",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

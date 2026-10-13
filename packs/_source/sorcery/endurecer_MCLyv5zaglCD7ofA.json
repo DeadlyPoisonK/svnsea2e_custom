@@ -1,0 +1,22 @@
+{
+  "folder": "Ii9neQCQcG7PZkgg",
+  "name": "Endurecer",
+  "type": "sorcery",
+  "_id": "MCLyv5zaglCD7ofA",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Cuando recibes un golpe, endureces tu piel como si fuera acero. Cuando sufras Heridas, reduce las Heridas sufridas en una cantidad igual a tu Discordia. Luego, tu Discordia pasa a ser 0.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 206 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

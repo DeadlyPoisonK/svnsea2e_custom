@@ -1,0 +1,22 @@
+{
+  "folder": "qeCZ5JNoQShLPnz4",
+  "name": "Camino de los Rectos",
+  "type": "sorcery",
+  "_id": "8KB7vf4WaUk35Lhj",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El Camino de los Rectos te muestra qué camino seguir. También te muestra cómo llegar de la manera más rápida posible y te brinda las herramientas que necesites.</p><p>En el primer paso en el Camino de los Rectos, tu Maravilla te guía y te muestra exactamente qué camino tomar. Depende de ti encontrar a dónde vas, pero sabrás que te diriges en la dirección correcta.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 169",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

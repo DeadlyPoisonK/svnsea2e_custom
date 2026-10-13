@@ -1,0 +1,21 @@
+{
+  "folder": "YTcrjQkDWcQTDfXz",
+  "name": "Oscuridad",
+  "type": "sorcery",
+  "_id": "AU5EYQxch1LHcsz3",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un abonsam con el Trato de la Oscuridad puede manipular las sombras y la oscuridad, estirándolas o reduciéndolas. Puede ver y oír a través de las sombras, usarlas como puertas e incluso darle forma física a una sombra para causar daño a otra criatura.</p><ul><li>Causar un eclipse, sumergiendo una área grande (como una ciudad entera) en la oscuridad absoluta.</li><li>Invocar a una bestia de las sombras, un monstruo aterrador hecho de pura oscuridad, para acechar y matar a una criatura de tu elección.</li><li>Hacer que una habitación esté oscura como la noche.</li><li>Observar un área u otro personaje a través de las sombras. Ves y oyes todo como si estuvieras parado en la sombra, y todos tus sentidos funcionan con normalidad.</li><li>Abrir un portal sombrío para viajar una corta distancia a otra sombra que esté a la vista, de forma instantánea.</li><li>Causar que una criatura sea atacada por su propia sombra, infligiendo 1 Herida cada vez que tome una acción en esta ronda.</li><li>Tejer sombras a tu alrededor para que seas imposible de detectar. Cualquier intento de localizarte con medios mundanos falla automáticamente (no requieres usar Aumentos para evitarlo).</li></ul>",
+    "infosource": "Tierras de Fuego y Oro, p. 191",
+    "sorctype": "melbur",
+    "sorcdur": "none",
+    "sorccat": "patron",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

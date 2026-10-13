@@ -1,0 +1,15 @@
+{
+  "name": "Bestia",
+  "sorting": "a",
+  "folder": "DMohupPGQDu5qKnD",
+  "type": "Item",
+  "_id": "sdfKDBOxOuchgCWx",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "c11db22428f8bb787b5a46307a6b79e33d57ac4e"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "aft3kr5m13fZOAVo",
+  "name": "La maldición",
+  "type": "sorcery",
+  "_id": "Sf251yvVF1ZrxjKU",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Si un héroe o un villano rompe el acuerdo que se establece en el Acta, queda «condenado por partida doble». La mayoría de Actas, si no todas, usan este lenguaje en concreto, un recordatorio de que las consecuencias de romper una promesa jurada a tus camaradas no se tienen que tomar a la ligera.</p><p>La maldición que sufren los forajidos desleales se llama «la mota negra». Por cada firma restante en el Acta, el personaje recibe una «mota negra» adicional. De este modo, si hay seis nombres en el Acta, el personaje recibe cinco motas negras (una por cada uno de los demás firmantes).</p>",
+    "used": false,
+    "infosource": "Naciones Piratas, p. 159",
+    "sorctype": "charter",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

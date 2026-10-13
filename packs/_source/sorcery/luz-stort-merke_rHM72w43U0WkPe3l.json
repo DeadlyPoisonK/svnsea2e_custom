@@ -1,0 +1,22 @@
+{
+  "folder": "qaTfK8X6olVOkxqK",
+  "name": "Luz Stort Merke",
+  "type": "sorcery",
+  "_id": "rHM72w43U0WkPe3l",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Elige a un personaje que esté contigo en una escena. Hasta el final de la escena, dicho personaje no podrá mentir y siempre sabrá cuándo alguien dice una mentira.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 192",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

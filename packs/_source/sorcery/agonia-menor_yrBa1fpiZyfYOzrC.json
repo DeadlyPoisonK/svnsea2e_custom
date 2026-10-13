@@ -1,0 +1,21 @@
+{
+  "folder": "v7pSzN10zcgUKOap",
+  "name": "Agonía Menor",
+  "type": "sorcery",
+  "_id": "yrBa1fpiZyfYOzrC",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El conocimiento de cómo separar la propia alma da una idea de la condición mortal. Aunque cercenar por completo el alma de un individuo que no quiere es casi imposible, no es difícil… tirar de ella un poco. Que alguien tire de tu alma es desagradable, por decirlo con suavidad.</p><p>Activa este Khidma y elige otro personaje en la escena. La próxima vez que ese personaje realice una acción en esta ronda, debe gastar un Aumento adicional para esa acción, sufrir 3 Heridas o perder 1 Aumento sin realizar la acción, según su elección.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 181",
+    "sorctype": "mithaq",
+    "sorcdur": "none",
+    "sorccat": "thiqa",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

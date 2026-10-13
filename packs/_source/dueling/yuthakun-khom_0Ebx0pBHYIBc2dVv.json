@@ -1,0 +1,19 @@
+{
+  "folder": "xRskIATgzioWdrTl",
+  "name": "Yuthakun Khom",
+  "type": "duelstyle",
+  "_id": "0Ebx0pBHYIBc2dVv",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>El Yuthakun Khom se practica ampliamente en su tierra natal de Nagaja, y es un arte marcial de golpeo contundente centrado en patadas y golpes de rodilla y codo. Los practicantes a menudo se vendan los puños, antebrazos y espinillas con cuerdas o telas gruesas para protegerlos y evitar que la sangre de sus oponentes vuelva sus manos resbaladizas.</p><p>El Yuthakun Khom se ve más comúnmente en cuadriláteros y fosos de combate. A diferencia de las competiciones ceremoniales y deportivas de muchas otras artes marciales (el <em>bokh</em> jázaro o el <em>coreeda</em> de Kammerra o incluso los torneos formalizados de <em>kenjutsu</em> en Fusō), los combates de Yuthakun Khom son brutales espectáculos sangrientos. Las ligas clandestinas de boxeo son comunes en toda Nagaja, con campeones colmados de bolsas de premios, pero estas ligas de boxeo también están plagadas de corrupción y amaño de combates. Las apuestas son habituales y los sindicatos criminales a menudo presionan a los campeones populares para que se dejen ganar. El mundo de los torneos clandestinos de Yuthakun Khom es un nido de víboras de violencia, codicia, juego, sabotaje y traición.</p><p>Fuera de Nagaja, el Yuthakun Khom se encuentra más comúnmente en las calles de Han; concretamente entre las poblaciones de esclavos rebeldes, quienes prefieren el Yuthakun Khom por sus golpes agresivos y despiadados que ponen fin a los conflictos de la manera más rápida y brutal posible.</p>",
+    "infosource": "Khitai, p. 227 (traducción no oficial)",
+    "bonus": "<p><strong>Bonificación de escuela.</strong> Cuando luchas sin más armas que tu propio cuerpo, obtienes una maniobra especial llamada Rodillazo aturdidor. Cuando inflijas una Herida Dramática a tu oponente, puedes realizar de inmediato Rodillazo aturdidor gastando un Aumento.</p><p>Rodillazo aturdidor inflige una Herida, y la próxima vez que tu objetivo inflija Heridas esta ronda infligirá una Herida menos por cada rango que tengas en Armas. Puedes realizar Rodillazo aturdidor una vez por ronda. <strong>Bonificación de maestría.</strong> La maestría en Yuthakun Khom ha afilado tus reflejos y tu tiempo de reacción hasta el límite, y tus rodillazos caen sobre tu oponente sin previo aviso. Ahora puedes realizar la maniobra Rodillazo aturdidor tantas veces por ronda como desees.</p>",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

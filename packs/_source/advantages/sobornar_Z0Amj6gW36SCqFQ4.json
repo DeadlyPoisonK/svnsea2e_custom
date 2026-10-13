@@ -1,0 +1,23 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Sobornar",
+  "type": "advantage",
+  "_id": "Z0Amj6gW36SCqFQ4",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando gastes Riqueza para volver a tirar un dado en un Riesgo social que se podría influenciar con dinero, puedes volver a tirar hasta 2 dados en lugar de 1.</p>",
+    "infosource": "Naciones Piratas, p. 150",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 5700000,
+  "ownership": {
+    "default": 0
+  }
+}

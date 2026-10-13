@@ -1,0 +1,33 @@
+{
+  "folder": "Fsa6PxwXk2zOMAfH",
+  "name": "Hatapu",
+  "type": "background",
+  "_id": "cWcUHTDI1jiKrUJm",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Has experimentado cien muertes. Buscas evitar que otros tengan la misma experiencia.</p><p><em>Ventajas en el libro: Hechicería (Nawaru), Hechicería (Nawaru).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 156",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando tu compromiso por salvar a otra persona de presenciar el horror y el dolor de la muerte te causa problemas.</p>",
+    "skills": [
+      "brawl",
+      "hide",
+      "notice",
+      "ride",
+      "theft"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Nombre falso"
+    ],
+    "nation": "ashur"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  }
+}

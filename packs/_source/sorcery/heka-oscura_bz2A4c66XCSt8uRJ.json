@@ -1,0 +1,22 @@
+{
+  "folder": "FSvZPlEy3X5a8iK3",
+  "name": "Heka oscura",
+  "type": "sorcery",
+  "_id": "bz2A4c66XCSt8uRJ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>El legado de Theyt no solo fue la hechicería Heka, sino que su obsesión por controlar la vida más allá de la muerte también dio lugar a lo que la mayoría de los khemetíes llaman «Heka Oscura»: el uso de objetos de las tumbas para darle poder a la Heka.</p><p>A pesar de la aversión por la práctica de salir de aventuras y saquear tumbas en general, la necesidad de ka para potenciar a los hechiceros de Khemet ha creado un mercado negro para esta mercancía, una demanda en desacuerdo con el respeto que un khemetí por lo general tiene por los restos de su antepasado. Además, abunda el desacuerdo sobre qué cosas en una tumba pueden resultar útiles en términos de energías ka.</p><p>Si bien pocos khemetíes admitirán ser ladrones de tumbas, la Heka Oscura todavía proporciona una interesante discusión «teórica», y parece que se ha llegado a cierto consenso sobre la abundancia de ka de las posesiones preciadas y el cadáver de los difuntos. Los métodos de extracción y uso de ka «ancestral» ni siquiera difieren de los de usar el propio. Lo que detiene a la mayoría de los practicantes de Heka de usar este ka, más allá del hecho de que <em>no es correcto</em>, son las maldiciones.</p><p>Pocos khemetíes mencionan las maldiciones en un comienzo, pero son reales y proliferan entre los ladrones de tumbas y aquellos que usan objetos de tumbas para potenciar su Heka. Muchos tratan de minimizarlos como «mala suerte», pero los susurros a su paso no mienten. Nadie hace más que murmurar sobre las ocasionales posesiones de espíritus vengativos, que a menudo ocurren cuando se manipula el ka robado. Son más difíciles de explicar.</p><p>Algunos argumentan que «Heka Oscura» es un nombre inapropiado: no es la magia en sí la que es oscura, sino el acto de extraer ka de los objetos y cuerpos de los muertos. Sin embargo, una minoría pequeña, pero creciente, vincula el aumento de Heka a la oscuridad que se ha extendido por Khemet y su lento pero seguro declive. Sin duda, no son los únicos que lo ven...</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 188",
+    "sorctype": "heka",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

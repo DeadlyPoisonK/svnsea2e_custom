@@ -1,0 +1,40 @@
+{
+  "name": "Vagabundo",
+  "type": "background",
+  "_id": "jutK9scY5CtsVIsw",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "",
+    "used": false,
+    "quirk": "",
+    "skills": [
+      "aim",
+      "athletics",
+      "brawl",
+      "convince",
+      "empathy",
+      "hide",
+      "intimidate",
+      "notice",
+      "perform",
+      "ride",
+      "sailing",
+      "scholarship",
+      "tempt",
+      "theft",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [],
+    "active": true,
+    "infosource": "Creado por la mesa",
+    "nation": "none"
+  },
+  "effects": [],
+  "folder": "l1ND9xM3PRC4K1kQ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "uETcMjSzbDU1pecb",
+  "name": "Códice Itzam",
+  "type": "sorcery",
+  "_id": "frdw85htnVuZOzvD",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Itzam, primere de los tzak k'anos, nació sin género ni prejuicios. Itzam enseñó a las tribus de Aztlán a sembrar cultivos, construir hogares y tener hijos. Cuando Itzam finalmente decidió dejar el mundo, elle se convirtió en códices sobre la historia de las tribus, de conocimientos básicos y complejos, e incluso sabiduría en parábolas. Una Ahez astuta puede reclamar un códice de la vasta biblioteca cadavérica de Itzam para ayudarla como guía a través de disputas tribales, la negociación de nuevos acuerdos o a comprender mejor los mundos que la rodean.</p><p>Al convocar un Códice, el héroe debe especificar el tema específico que cubre el libro. Mientras un héroe lleve un libro del Códice Itzam, puede gastar 1 punto de héroe para recibir dos dados adicionales en cualquier Riesgo que involucre el tema del libro. El héroe puede realizar esta acción varias veces, ganando dos dados por cada punto de héroe gastado. Sin embargo, nunca recibe Estilo por una acción relacionada con el tema del Códice, incluso cuando no gasta puntos de héroe para usar la habilidad del Códice.</p>",
+    "infosource": "El Nuevo Mundo, p. 175",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "pixan"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

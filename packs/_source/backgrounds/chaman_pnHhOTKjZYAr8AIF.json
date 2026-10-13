@@ -1,0 +1,31 @@
+{
+  "folder": "LwLTj4fFc1wG4Kux",
+  "name": "Chamán",
+  "type": "background",
+  "_id": "pnHhOTKjZYAr8AIF",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Has sido exiliado de Tzak K'an debido a tus poderes innatos, pero aún tienes en mente el beneficio de tu nación.</p>",
+    "infosource": "El Nuevo Mundo, p. 163",
+    "quirk": "<p>Ganas 1 punto de héroe cuando rechaces una oferta de poder o influencia sobrenatural porque es demasiado peligrosa para que la maneje cualquier mortal.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "empathy",
+      "notice",
+      "scholarship"
+    ],
+    "advantages": [
+      "Hechicería",
+      "La tormenta me sirve"
+    ],
+    "nation": "tzakkan",
+    "active": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

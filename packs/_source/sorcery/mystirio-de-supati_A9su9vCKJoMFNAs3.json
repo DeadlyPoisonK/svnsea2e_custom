@@ -1,0 +1,21 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Mystírio de Supati",
+  "type": "sorcery",
+  "_id": "A9su9vCKJoMFNAs3",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p><em>Supati, diosa de la escritura, el lenguaje y la magia.</em></p><p>Supati es la patrona tanto de los eruditos como de los estafadores. Los devotos de la enigmática Supati le dan muchísimo valor al conocimiento, especialmente cuando tiene aplicaciones prácticas y beneficia claramente a otros.</p><p>A pesar de que un conocimiento más esotérico puede ser útil, los adeptos de Supati están menos interesados en los estudios puramente académicos.</p><p><strong>NACIONES PIRATAS</strong> 167 Cuando realices un Riesgo de Ingenio, puedes volver a tirar cualquier dado que haya sacado 1, pero debes usar el nuevo resultado. Este efecto tiene lugar antes que cualquier otra repetición de tiradas que consigas (como los que obtendrías de niveles de habilidad o ventajas).</p><p>Puedes activar este apokálypsi en tu acción durante un Riesgo. Los héroes (incluido tú mismo) que se encuentren bajo Presión pueden realizar una acción de forma inmediata (aunque todavía tienen que gastar Aumentos para hacerla, como es habitual).</p><p>Cuando realices un Riesgo de Ingenio, puedes volver a tirar cualquier dado que haya sacado 1, pero debes usar el nuevo resultado. Este efecto tiene lugar antes que cualquier otra repetición de tiradas que consigas (como los que obtendrías de niveles de habilidad o ventajas).</p>",
+    "infosource": "Naciones Piratas, p. 168",
+    "sorctype": "mystirios",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

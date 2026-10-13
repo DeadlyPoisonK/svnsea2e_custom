@@ -1,0 +1,22 @@
+{
+  "folder": "sdfKDBOxOuchgCWx",
+  "name": "Bestia Stort Merke",
+  "type": "sorcery",
+  "_id": "2AE1Yr4wR5m5VLFX",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Elige a un personaje en la misma escena que tú (incluyéndote a ti). Dicho personaje es inmune a las cualidades de cualquier monstruo que se enfrente específicamente al objetivo hasta el final de la ronda, aunque cualesquiera Heridas que le inflija un monstruo o animal salvaje se verán aumentadas en 1.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 191",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

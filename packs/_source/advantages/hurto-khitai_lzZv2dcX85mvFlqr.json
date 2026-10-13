@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Hurto (Khitai)",
+  "type": "advantage",
+  "_id": "lzZv2dcX85mvFlqr",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe. Vacías un bolsillo, robas un anillo del dedo de otro personaje o colocas un pequeño objeto de mano en otro personaje sin que se dé cuenta.</p>",
+    "infosource": "Khitai, p. 118 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

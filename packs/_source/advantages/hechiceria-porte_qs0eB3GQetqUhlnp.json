@@ -1,0 +1,23 @@
+{
+  "folder": "vIU7NVRxbdGwTGsF",
+  "name": "Hechicería (Porté)",
+  "type": "advantage",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Consigues la Hechicer&iacute;a de la l&iacute;nea sangu&iacute;nea de tu naci&oacute;n. Si adquieres esta ventaja despu&eacute;s de crear el h&eacute;roe, solo puedes hacerlo con una historia de h&eacute;roe. Ver el cap&iacute;tulo de &laquo;Hechicer&iacute;a&raquo; para m&aacute;s informaci&oacute;n.</p>\n<hr>\n<p>Cada vez que se adquiere la ventaja Hechicer&iacute;a se puede mantener una conexi&oacute;n con 2 marcas menores y 1 marca mayor</p>",
+    "infosource": "Variante creada por la mesa: Hechicería (7º Mar (básico), p. 219)",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "qs0eB3GQetqUhlnp",
+  "sort": 7900000,
+  "ownership": {
+    "default": 0
+  }
+}

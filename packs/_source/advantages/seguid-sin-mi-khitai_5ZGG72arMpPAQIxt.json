@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Seguid sin mí (Khitai)",
+  "type": "advantage",
+  "_id": "5ZGG72arMpPAQIxt",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta todos tus Aumentos, al menos 1 por cada héroe (aparte de ti) en la escena actual. Todos los héroes (aparte de ti) son retirados de la escena y tú te quedas atrás, varado y solo. No puedes escapar de la escena antes de tiempo mediante ningún efecto (como la Virtud «Ingenioso»), y aquellos a quienes hayas retirado de la escena no pueden regresar. Todos los jugadores (aunque no sus héroes) deben estar de acuerdo para que este efecto funcione; si tan solo un jugador no desea marcharse, todos los héroes permanecen y aun así pierdes tus Aumentos.</p>",
+    "infosource": "Khitai, p. 118 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "4rsEYwOl0zAEkA41",
+  "name": "Dominante",
+  "type": "sorcery",
+  "_id": "fAbihwkhYPAp6VjO",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El objetivo de tu Manifestación no puede verse afectado por ningún efecto mágico (como los resultantes de la Hechicería, los artefactos syrneth o algo similar) hasta que tu Manifestación finalice.</p>",
+    "infosource": "El Nuevo Mundo, p. 180",
+    "used": false,
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "turn",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

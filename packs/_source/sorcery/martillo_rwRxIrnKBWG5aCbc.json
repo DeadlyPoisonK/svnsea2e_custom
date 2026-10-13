@@ -1,0 +1,21 @@
+{
+  "folder": "MFTwVHrNXSZkgFyG",
+  "name": "Martillo",
+  "type": "sorcery",
+  "_id": "rwRxIrnKBWG5aCbc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Para Badagris, el cuerpo humano es otra herramienta que&nbsp;utilizar, pero cuando se te rompe una herramienta, no la&nbsp;tiras, sino que la vuelves a forjar en fuego y sellas la rotura.&nbsp;</p>\n<p>Mientras Badagris lo posea, el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe para curarse inmediatamente todas las heridas que tenga entre su tercera y su cuarta Herida Dram&aacute;tica, incluyendo ambas.</p>",
+    "infosource": "Naciones Piratas, p. 161",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "gros",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

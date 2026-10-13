@@ -1,0 +1,22 @@
+{
+  "folder": "ikl5WVrAvCjFUgZB",
+  "name": "Hexenwerk: cómo funciona",
+  "type": "sorcery",
+  "_id": "CUDuZYPniMC5LouP",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Cada vez que adquieres la ventaja Hechicería, aprendes una receta de un ungüento mayor y dos ungüentos menores. Se conocen siete ungüentos mayores y trece ungüentos menores. Ningún número es una coincidencia. Ningún número es un accidente.</p><p>Los ungüentos tienen ingredientes como sangre de un cadáver, globos oculares arrancados de un cuerpo muerto o la lengua cortada de un difunto reciente. Algunos también requieren hierbas raras, venenos de criaturas naturales o antinaturales u objetos cotidianos (como agua o vino) que hayan sido bendecidos por un sacerdote.</p><p>Usar las partes del cuerpo de un hexe como ingredientes hace que la mezcla sea más potente, ya que cualquier ungüento que se haga usando las partes del cuerpo de un hexe proporciona el doble de dosis. Además, estos ungüentos no se deterioran al final de un episodio. Debido a esto, muchos villanos hexene cazan a los suyos para cosechar estos valiosos ingredientes. Algunos hexene tomarán aprendices y les enseñarán a otros cómo crear sus pociones, pero es necesario que sea un proceso «manual». Los ingredientes de un ungüento son volátiles e impredecibles, y el orden ideal para mezclar los ingredientes de una poción suele cambiar de una a otra. A pesar de que los hexene suelen tomar notas de sus mezclas, a menudo se trata más bien de guías que de reglas: son notas de un estudio personal, no un libro de texto.</p>",
+    "infosource": "7º Mar (básico), p. 207",
+    "sorctype": "hex",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

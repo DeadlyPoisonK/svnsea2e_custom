@@ -1,0 +1,22 @@
+{
+  "folder": "kr6qLtXTiFO6m7tm",
+  "name": "Dudda, el Redondo",
+  "type": "sorcery",
+  "_id": "UhnWVhbuY7rcqAge",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Aunque Dudda solía ser el lado cómico de las fábulas, no era menos caballero que sus hermanos. A Dudda se le describía como un hombre alto y orondo y disfrutó de su vida más que ningún otro caballero. A Dudda se le encontraba principalmente durante escenas de celebración o en banquetes de despedida, pero rara vez se le encontraba en combate.</p><p>Característica mayor: Músculo Característica menor: Brío</p><h3>Naciones de Théah vol. 1, p. 49</h3><p><strong>Virtud:</strong> Glorioso (El sol). <strong>Hibris:</strong> Inseguro (El camino).</p><p><strong>Peculiaridad:</strong> Ganas un punto de héroe cuando se te permita hacer el tonto o ser el blanco de una broma para calmar una situación o levantar el ánimo de otra persona.</p><p><strong>Glamour legendario — Banquete perpetuo:</strong> Mientras este Glamour esté activo podrás consumir una cantidad casi infinita de comida y bebida sin que te incomode. En concreto, tienes la capacidad de comer y beber, de una sola sentada, tanta cantidad como la que puede tomar un número de personas (de tu estatura) igual a la suma de tus niveles en Músculo y Brío. Más adelante podrás activar este Glamour para pasar sin comer ni beber un número de días igual a la suma de tus niveles de Músculo y Brío, pues sobrevivirás gracias al festín que te diste.</p>",
+    "infosource": "7º Mar (básico), p. 212",
+    "sorctype": "knight",
+    "sorccat": "knight",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

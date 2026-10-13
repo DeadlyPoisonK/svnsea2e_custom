@@ -1,0 +1,31 @@
+{
+  "folder": "yhr5tiU5LZn3tiW4",
+  "name": "Uibyeong (Revolucionario)",
+  "type": "background",
+  "_id": "VnrMsiH2NW0BpKb5",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Compasión</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando te comprometas con un curso de acción peligroso para socavar a alguien en una posición de autoridad o poder.</p>",
+    "skills": [
+      "brawl",
+      "empathy",
+      "hide",
+      "notice"
+    ],
+    "advantages": [
+      "Mejor afortunado que experto (Khitai)",
+      "Esfuerzo desesperado (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 110 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

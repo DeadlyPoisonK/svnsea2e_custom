@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Calmar a la bestia",
+  "type": "advantage",
+  "_id": "mkV9it7NRyM0UvTW",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes gastar un Aumento en tu acción para evitar que un animal o monstruo ejecute acciones agresivas. El animal o monstruo puede aun así hacer otras cosas (como huir, intentar esconderse, etc.), pero no atacará a nadie presente. Este efecto termina inmediatamente y no puede reanudarse si cualquier otro efecto hace que el animal o monstruo sufra alguna Herida, o si se toma una acción similar que pueda interpretar como agresiva hacia él. Esta ventaja no funciona contra criaturas con un nivel de inteligencia aproximadamente humana o superior.</p>",
+    "infosource": "El Nuevo Mundo, p. 166",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

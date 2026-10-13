@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Acuático",
+  "type": "monsterquality",
+  "_id": "rAaIl7ueY9ieipiF",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Aunque no está restringida al agua necesariamente, esta criatura definitivamente se siente como en casa aquí. ¡Pobre de cualquier héroe que se enfrente a semejante monstruo bajo las olas! Si este monstruo es un villano, tira 5 dados adicionales en cualquier Riesgo que realice en el agua. Si es una banda de monstruos, inflige el doble de Heridas mientras está en el agua.</p>",
+    "infosource": "7º Mar (básico), p. 197",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

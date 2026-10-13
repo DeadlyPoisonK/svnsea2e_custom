@@ -1,0 +1,22 @@
+{
+  "folder": "Ii9neQCQcG7PZkgg",
+  "name": "Metamorfosis",
+  "type": "sorcery",
+  "_id": "cFdeoRJ4GCwhNwGZ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Eres capaz de recurrir a tu antepasado y empoderarte con una de sus habilidades.</p><p>Elige una cualidad de monstruo cuando obtengas este poder. Manifiestas físicamente esa cualidad de monstruo hasta que la canceles o hasta el final de la escena. En cada acción que decidas mantener tu transformación, pierdes 2 de Discordia. Si no puedes pagar el coste, este efecto termina de inmediato.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 206 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

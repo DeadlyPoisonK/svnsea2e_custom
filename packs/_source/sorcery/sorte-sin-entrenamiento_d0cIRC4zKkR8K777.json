@@ -1,0 +1,22 @@
+{
+  "folder": "2M2vfXkTX0aej1QO",
+  "name": "Sorte sin entrenamiento",
+  "type": "sorcery",
+  "_id": "d0cIRC4zKkR8K777",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Aprender Sorte fuera de Vodacce o sin una profesora reduce el coste de la ventaja a 1 punto, una reducción que se aplicará cada vez que se adquiera la ventaja sin haber recibido entrenamiento formal. Una strega puede aprender sus primeros dos Tejidos dentro de Vodacce al coste normal, escapar y aprender los siguientes dos por su cuenta aplicando el coste reducido; ella puede descubrir su poder por su cuenta, aprendiendo el primer Tejido al coste reducido y, más adelante, encontrar una strega que la enseñe al coste normal. También puede aprender a controlar de forma apropiada la magia que ha aprendido por su cuenta, gastando un punto para eliminar las consecuencias de usar la Sorte sin entrenamiento.</p><p>Si la strega tiene algún tipo de recurso que le ayude a aprender (un mazo, una instructora, un documento escrito que indique como se practica), puede hacerlo sin problemas; si no dispone de ninguno de estos recursos, aprender sus nuevas Tesse requiere coger una hebra.</p><p>Usar Tesse sin haber recibido entrenamiento formal es peligroso, pues a la strega le resulta difícil controlarlos. Siempre que los use, ella o sus compañeros sufrirán la reacción, pues su torpeza al mover los hilos del destino provocará resultados inesperados.</p><h3>Arcano</h3><p>Aunque puede Leer con facilidad, activar la Virtud o el Hibris de alguien es más complicado. Cuando una strega usa un Arcano Menor, ella debe tirar un dado: con un resultado par, activa la Virtud del objetivo; con un resultado impar, activa su Hibris. Su Arcano Mayor funciona exactamente igual que en el libro básico, pág. 229.</p><h3>Bendiciones y Maldiciones</h3><p>La strega tiene problemas con la magnitud de sus Bendiciones y Maldiciones. Tira un dado para determinar la cantidad de hebras que coge antes de definir lo beneficioso o perjudicial que es su Tessere.</p><p>Puedes gastar Puntos de Héroe para tirar 1 dado adicional por cada punto gastado y escoger el re su l t ad o que prefieras.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 197",
+    "sorctype": "sorte",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

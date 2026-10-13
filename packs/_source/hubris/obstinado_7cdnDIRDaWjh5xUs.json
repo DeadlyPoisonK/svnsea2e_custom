@@ -1,0 +1,17 @@
+{
+  "folder": "rxiPEUOSj58lttE0",
+  "name": "Obstinado",
+  "type": "hubris",
+  "_id": "7cdnDIRDaWjh5xUs",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibes 1 punto de héroe cuando te pones firme con un tema y te causa problemas.</p>",
+    "infosource": "La estrella de la tarde · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

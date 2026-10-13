@@ -1,0 +1,22 @@
+{
+  "folder": "H8YLX4cFP6DRzAqH",
+  "name": "Invierno Litet Merke",
+  "type": "sorcery",
+  "_id": "DMKuY8GDkZ6rnQkN",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>La próxima vez en esta ronda que tu objetivo sufra Heridas recibirá una Herida adicional.</p><p>La runa Luz tiene relación con las revelaciones, la verdad y la visión. La runa da nombre a los héroes que llevaron vidas verdaderas y justas. La gente común la usa para atraer la riqueza y la prosperidad.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 192",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "small"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

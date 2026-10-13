@@ -1,0 +1,22 @@
+{
+  "folder": "Ii9neQCQcG7PZkgg",
+  "name": "Fortalecer",
+  "type": "sorcery",
+  "_id": "cS6irjILGaACdRfp",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este poder cuando gastes Aumentos para causar Heridas a otro personaje. Tu acción causa Heridas adicionales iguales al rasgo usado en tu Enfoque actual, y generas 2 de Discordia.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 206 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

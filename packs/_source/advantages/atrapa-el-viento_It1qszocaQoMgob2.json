@@ -1,0 +1,24 @@
+{
+  "folder": "aSM5k4zd4YYt1rg3",
+  "name": "Atrapa el viento",
+  "type": "advantage",
+  "_id": "It1qszocaQoMgob2",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes gastar un punto de héroe mientras pilotas un barco para llegar a tu destino más rápidamente. Si lo haces, tu barco recibe un Impacto Crítico, pero reduces el tiempo de viaje en una cuarta parte. Puedes activar también esta ventaja (pagando también un punto de héroe) para escapar de tus perseguidores gracias a un alarde de velocidad náutica que parezca imposible.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 206",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

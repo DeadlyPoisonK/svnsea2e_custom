@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Piensa rápido",
+  "type": "advantage",
+  "_id": "8RkIW2B9idUdF8kT",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>La primera vez en cada ronda que tengas que pagar un Aumento adicional para realizar una acción por improvisación, no necesitas gastar el Aumento adicional. Esto solo se aplica al incremento del coste de Aumentos de improvisación; cualquier otro efecto que cause un incremento del coste de Aumentos se seguirá aplicando con normalidad.</p>",
+    "infosource": "El Nuevo Mundo, p. 167",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1800000,
+  "ownership": {
+    "default": 0
+  }
+}

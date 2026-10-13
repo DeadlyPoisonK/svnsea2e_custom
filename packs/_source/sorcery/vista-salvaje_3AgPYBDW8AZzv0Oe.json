@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Vista salvaje",
+  "type": "sorcery",
+  "_id": "3AgPYBDW8AZzv0Oe",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Se toma una rama afilada de madera oscura, se quema y luego se la envuelve en bayas, barro y algo que proceda del monstruo objetivo (pelaje, sangre, etc.). Si se utiliza la rama para arañar el cuerpo de la víctima (que recibirá 1 Herida Dramática), dicha persona entrará en trance. Durante el mismo, verá lo que vea el monstruo. Aunque le falte el contexto de lo que está viendo, se podrá hacer una mejor idea de la localización del monstruo y lo que está haciendo. Este vínculo es muy débil y se puede perder con facilidad. Si el monstruo se duerme o recibe una Herida, el vínculo queda cortado. La Vista salvaje sólo dura una escena. Mientras se encuentra en el trance de la Vista salvaje, una persona puede gastar 1 Punto de Héroe para realizar un Riesgo de Percepción y obtener información adicional del monstruo.</p>",
+    "used": false,
+    "infosource": "Naciones de Théah vol. 2, p. 53",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

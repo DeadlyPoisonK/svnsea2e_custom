@@ -1,0 +1,17 @@
+{
+  "folder": "cM8cp2HgmMlzFy4Z",
+  "name": "Perceptivo",
+  "type": "virtue",
+  "_id": "EJwNxTFqmzFWKKxF",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud después de hacerle una pregunta a otro personaje. Sabes si el otro personaje miente o dice la verdad.</p>",
+    "infosource": "El observador del cielo · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

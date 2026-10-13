@@ -1,0 +1,17 @@
+{
+  "folder": "uRiLWm1i9xUID1Ha",
+  "name": "Firme",
+  "type": "hubris",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibe 1 punto de héroe cuando te metas en problemas si te niegas a irte o cuando te retiras en un momento en el que tengas ventaja.</p>",
+    "infosource": "Monedas (para el barquero) · 7º Mar (básico), p. 157"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "r7EmFb1LUlNT5Ywz",
+  "sort": 1800000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Cerbatana de Oxlahuntiku",
+  "type": "sorcery",
+  "_id": "IYff4wJjhvAt9wIU",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Las leyendas dicen que cuando Oxlahuntiku estaba viva, ninguna criatura en el cielo estaba a salvo de su cerbatana. Una vez incluso persiguió al poderoso Vucub-Caquix, un gran demonio pájaro responsable de cortar el brazo del rival y amigo de Oxlahuntiku, Ah-Tabai. Al empuñar la Cerbatana de Oxlahuntiku, un héroe puede gastar 1 punto de héroe para infligir una Herida Dramática a cualquier monstruo que no se dé cuenta de la presencia del héroe.</p>",
+    "infosource": "El Nuevo Mundo, p. 172",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 290625,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

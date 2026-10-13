@@ -1,0 +1,31 @@
+{
+  "folder": "yhr5tiU5LZn3tiW4",
+  "name": "Daesa (Embajador)",
+  "type": "background",
+  "_id": "Uz6IGUMW9WbppeVp",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Respeto</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando arriesgues tu posición de privilegio y comodidad para lograr algo importante y significativo.</p>",
+    "skills": [
+      "aim",
+      "convince",
+      "perform",
+      "tempt"
+    ],
+    "advantages": [
+      "Cuna aristocrática",
+      "La seña (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 109 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "hKSS5Yx1PWVKU58w",
+  "name": "Capa de resplandor invisible",
+  "type": "sorcery",
+  "_id": "gAkA6YCPlzicFYoH",
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+  "system": {
+    "description": "<p>Activa este turru para curvar la luz a tu alrededor y hacerte invisible a los ojos de los mortales. El contacto con tu entorno u otras personas te delata, pero aún permaneces invisible hasta que te libras del hechizo o te quedas inconsciente. Atacar a otro personaje o recibir Heridas finaliza este efecto inmediatamente, pero no lo hace hablar, tocar a otros o recoger objetos. Este turru es uno de los favoritos entre los asesinos tanto por su capacidad para permanecer oculto como para asustar a los demás.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 184",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

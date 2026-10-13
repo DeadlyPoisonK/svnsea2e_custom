@@ -1,0 +1,22 @@
+{
+  "folder": "DUGSzEvxAKGKY0GU",
+  "name": "Arcano Mayor",
+  "type": "sorcery",
+  "_id": "9wy4e4OnoczxPC1G",
+  "img": "icons/magic/perception/eye-ringed-green.webp",
+  "system": {
+    "description": "<p>Gasta 1 punto de h&eacute;roe y coge 1 hebra. Elige una carta<br>del mazo de Sorte y, durante el resto de la escena,<br>reemplaza la Virtud o la Hibris de otro personaje con<br>la Virtud o la Hibris asociada a la carta que has cogido,<br>con lo que destapas un aspecto escondido del Arcano<br>del objetivo. El resto de reglas de la Virtud y la Hibris<br>se siguen aplicando: si el personaje ya ha activado una<br>de las dos, no puede volver a activar la nueva. Una strega<br>solo puede usar este poder una vez por sesi&oacute;n.</p>",
+    "infosource": "7º Mar (básico), p. 230",
+    "used": false,
+    "sorctype": "sorte",
+    "sorcdur": "none",
+    "sorccat": "tesse",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

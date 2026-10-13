@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Fascinar (Khitai)",
+  "type": "advantage",
+  "_id": "A7yW6Vu8Jy4YBfpC",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para captar la atención de otro personaje. Ese personaje solo te prestará atención a ti hasta el final de la escena, hasta que estalle el peligro o la violencia, o cuando renuncies al control.</p>",
+    "infosource": "Khitai, p. 115 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

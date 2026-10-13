@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "La fuerza de diez (Khitai)",
+  "type": "advantage",
+  "_id": "edgFLAWElJ0Wqglo",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>¡Eres poderoso! Cuando realizas una proeza de fuerza bruta (levantar un carromato destrozado, mantener cerrada una puerta contra un ariete, etc.), puedes gastar un punto de héroe. Si el DJ no gasta un número de puntos de peligro igual a tus rangos en Atletismo, tu acción tiene éxito automáticamente y nadie podrá superar tu fuerza física pura, por mucho que lo intenten. Este efecto dura hasta el final de la ronda o hasta que realices una acción no relacionada con tu proeza de fuerza (por ejemplo, si atrancas una puerta y luego decides huir corriendo, la puerta podrá derribarse con normalidad).</p>",
+    "infosource": "Khitai, p. 122 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

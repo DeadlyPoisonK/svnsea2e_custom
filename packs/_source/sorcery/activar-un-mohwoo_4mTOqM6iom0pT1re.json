@@ -1,0 +1,22 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Activar un mohwoo",
+  "type": "sorcery",
+  "_id": "4mTOqM6iom0pT1re",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Para activar el poder de un mohwoo, un héroe invoca el tatuaje de algún modo (algunas veces se toca el tatuaje o murmulla una <strong>NACIONES PIRATAS</strong> 169 frase concreta que tiene una importancia personal, otras simplemente se concentra por un momento; el proceso de activación siempre es único y personal) y gasta 1 punto de héroe. Algunos mohwoo pueden tener un coste adicional o alguna restricción a cuándo se pueden activar, pero este coste o circunstancia siempre va aparte del gasto del punto de héroe.</p><p>No se conoce bien la naturaleza del poder de un mohwoo, pero algunas veces los tatuajes tienen mentalidad propia. Muchos creen que ni siquiera Madame Wenshen sabe cómo funcionan, que ella solo hace que funcionen.</p><p>Un DJ siempre puede gastar 1 punto de peligro para afectar a un qing del siguiente modo.</p><ul><li>Hacer que los tatuajes se animen, brillen o que parezcan visiblemente sobrenaturales de otro modo. El qing no puede ocultar sus tatuajes ni su naturaleza mágica ante nadie que los vea. Los tatuajes brillarán por debajo de la ropa, treparán por debajo de la manga de una camisa o se darán a conocer de otro modo. Este efecto dura una escena.</li><li>Hacer que el entorno reaccione de un modo que sea apropiado para tu tatuaje. Un qing con un tatuaje de un tiburón podría encontrarse en medio de un grupo de tiburones, mientras que el que tiene el del viento podría hacer que la ventana por la que acaba de pasar a hurtadillas se cerrara de repente por el viento. Este efecto es instantáneo, aunque los efectos individuales podrían persistir durante más tiempo (el grupo de tiburones aparece más o menos de inmediato, pero no se va igual de rápido).</li><li>Aplicar Presión al qing para que actúe de acuerdo a su mohwoo durante una ronda. Realizar una acción que no sea algo que tenga que ver explícitamente con la naturaleza de su mohwoo cuesta 2 Aumentos, en lugar de 1. Un qing con el mohwoo de un cangrejo se dará cuenta de que le resulta difícil hacer otra cosa que no sea protegerse y defenderse de forma directa, mientras que otro que posea la marca del pez buscará descubrir un secreto sea cual sea el precio.</li></ul>",
+    "infosource": "Naciones Piratas, p. 169",
+    "sorctype": "mohwoo",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

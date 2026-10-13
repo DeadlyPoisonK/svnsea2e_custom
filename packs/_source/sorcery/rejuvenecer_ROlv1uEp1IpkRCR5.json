@@ -1,0 +1,22 @@
+{
+  "folder": "oRakCwdCZmL2RCWI",
+  "name": "Rejuvenecer",
+  "type": "sorcery",
+  "_id": "ROlv1uEp1IpkRCR5",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Arrojar esta poción al suelo hace que se liberen vapores calmantes. Cada personaje (amigo o enemigo) en tu Zona actual sana tantas Heridas como la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 199 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

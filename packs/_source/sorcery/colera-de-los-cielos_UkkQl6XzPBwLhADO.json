@@ -1,0 +1,21 @@
+{
+  "folder": "KpycPQTwWNzMCwcL",
+  "name": "Cólera de los cielos",
+  "type": "sorcery",
+  "_id": "UkkQl6XzPBwLhADO",
+  "img": "icons/magic/light/beam-strike-village-yellow.webp",
+  "system": {
+    "description": "<p>Usa este infrecuente turru para invocar la ira del más allá sobre tus enemigos. Cuando se activa, una columna de luz destella desde los cielos para destruir todo dentro de un radio de 15 metros, centrado en tu objetivo. Después de usarlo no queda nada dentro del diámetro de la columna de luz, excepto tierra humeante… así que úsalo con cuidado.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 185",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "advanced"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

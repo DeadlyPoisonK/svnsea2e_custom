@@ -1,0 +1,23 @@
+{
+  "folder": "BsRq7OrECMmGFFR9",
+  "name": "No somos tan diferentes…",
+  "type": "advantage",
+  "_id": "eB1LSQamuU62aiCa",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para convencer a un villano de que estás de su lado, considerándote así un aliado de confianza. La ilusión se acaba en cuanto el villano te vea realizar una acción heroica o te niegues a realizar una acción de villanía. Solo puedes usar esta ventaja en cada villano una vez. «Si me engañas una vez…».</p><p><em>Coste: 5 (3 si eres vodaccio).</em></p>",
+    "infosource": "7º Mar (básico), p. 155",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

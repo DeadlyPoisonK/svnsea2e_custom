@@ -1,0 +1,33 @@
+{
+  "folder": "Fsa6PxwXk2zOMAfH",
+  "name": "Elohim",
+  "type": "background",
+  "_id": "rayr3qP7HtwS1qZm",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Destruir la naturaleza es una afrenta contra Theus, cuyo mayor y más hermoso arte es el mundo mismo.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 156",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando defiendas una maravilla natural o protejas el mundo natural de la destrucción.</p>",
+    "skills": [
+      "athletics",
+      "empathy",
+      "hide",
+      "notice",
+      "ride"
+    ],
+    "advantages": [
+      "Maestro artesano",
+      "Sentido de la orientación",
+      "Superviviente"
+    ],
+    "nation": "ashur"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

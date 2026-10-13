@@ -1,0 +1,23 @@
+{
+  "folder": "aSM5k4zd4YYt1rg3",
+  "name": "Esta es mi ciudad",
+  "type": "advantage",
+  "_id": "E1qMvtBMEoVKjVnM",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe cuando estés en una zona conocida para esquivar a un perseguidor, localizar a alguien que no es de aquí, darte cuenta de si te están siguiendo o encontrar un atajo.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 206",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 2800000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Mi debilidad es tu fuerza",
+  "type": "advantage",
+  "_id": "OdtjENtKRe9t9vq7",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando tengas 3 Heridas Dramáticas, gasta 1 punto de héroe antes de un Riesgo. Tus 10 ya no explotan, pero los 10 de todos los demás héroes sí. Este efecto dura hasta el final de la escena, o hasta que decidas terminarlo sin coste alguno.</p><p><em>Coste: 5 (3 si eres sarmion).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 161",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

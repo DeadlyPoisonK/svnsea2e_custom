@@ -1,0 +1,22 @@
+{
+  "folder": "HiXf3SFL7bujQf7l",
+  "name": "Activar mystírios",
+  "type": "sorcery",
+  "_id": "RYdrbHOfadGiLpKv",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Para activar un mystírio, un héroe gasta 1 punto de héroe y consigue un beneficio que conserva hasta el final de la escena o hasta que activa el apokálypsi asociado (sin ningún coste), lo que suceda primero. Cada mystírio solo se puede activar una vez por escena y un héroe solo puede tener un único mystírio activo a la vez. Un apokálypsi solo se puede activar después de que el héroe haya activado un mystírio y por ello solo se puede activar una vez por escena (o con menos frecuencia, dependiendo del mystírio).</p>",
+    "infosource": "Naciones Piratas, p. 166",
+    "sorctype": "mystirios",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

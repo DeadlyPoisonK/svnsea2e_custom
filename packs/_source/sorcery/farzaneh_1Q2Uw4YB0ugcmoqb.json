@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Farzaneh",
+  "type": "sorcery",
+  "_id": "1Q2Uw4YB0ugcmoqb",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado después de recibir Heridas. Inflige al personaje que te las provocó tantas Heridas como el número de Heridas que recibiste más tu Ingenio.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 179",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

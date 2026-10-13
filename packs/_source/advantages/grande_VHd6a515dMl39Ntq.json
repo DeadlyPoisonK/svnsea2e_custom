@@ -1,0 +1,23 @@
+{
+  "folder": "TQzJbDDBg4ZBhZyS",
+  "name": "Grande",
+  "type": "advantage",
+  "_id": "VHd6a515dMl39Ntq",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>No puedes adquirir la ventaja «Pequeño».</strong></p><p>Consigues 1 dado adicional en cualquier Riesgo que se vea beneficiado debido a tu tamaño, como por ejemplo, usar Atletismo para correr a toda velocidad mientras llevas a cuestas a otro héroe o acercarte a alguien para achantarlo con Intimidar.</p>",
+    "infosource": "7º Mar (básico), p. 148",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": true
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  }
+}

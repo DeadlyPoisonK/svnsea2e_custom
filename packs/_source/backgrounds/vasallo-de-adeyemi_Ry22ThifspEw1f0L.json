@@ -1,0 +1,31 @@
+{
+  "folder": "pz1cTXqfxYJssm9B",
+  "name": "Vasallo de Adeyemi",
+  "type": "background",
+  "_id": "Ry22ThifspEw1f0L",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>El zahmeireen es una herramienta para ser utilizada. Serías un tonto si no lo empuñaras, a pesar del coste.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 176",
+    "quirk": "<p>Ganas 1 punto de héroe cuando usas magia oscura, un artefacto corrupto o tácticas cuestionables para derrotar al mal.</p>",
+    "skills": [
+      "athletics",
+      "intimidate",
+      "ride",
+      "scholarship",
+      "weaponry"
+    ],
+    "advantages": [
+      "Objeto distintivo",
+      "Uno contra muchos"
+    ],
+    "nation": "mbey",
+    "active": true
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

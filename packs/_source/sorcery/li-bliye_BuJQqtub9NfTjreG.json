@@ -1,0 +1,21 @@
+{
+  "folder": "QuihQ8WMuSlbOpw4",
+  "name": "Li Bliye",
+  "type": "sorcery",
+  "_id": "BuJQqtub9NfTjreG",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>La memoria es algo enga&ntilde;oso y la gente suele olvidar m&aacute;s<br>de lo que recuerda. Para Papa Ahron esto puede ser una<br>gran ventaja. Mientras Papa Ahron lo posea, el s&egrave;vit&egrave;<br>puede gastar 1 punto de h&eacute;roe para desvanecerse de la<br>memoria durante una escena. Cualquiera que interact&uacute;e<br>con el s&egrave;vit&egrave; puede verlo, hablar con &eacute;l y escucharlo, pero<br>en cuanto el s&egrave;vit&egrave; se marche, la otra persona se olvidar&aacute;<br>completamente de que estuvo ah&iacute;.</p>",
+    "infosource": "Naciones Piratas, p. 164",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "gros",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,18 @@
+{
+  "folder": "PWCKDOvwS0ovE4Y9",
+  "name": "Mantovani",
+  "type": "duelstyle",
+  "_id": "1ZONPq8b7bjraGxC",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>El estilo Mantovani, inicialmente muy popular en los folletines de Vodacce, surgió del sentido práctico. Muchos aspirantes a espadachines han intentado perfeccionar un estilo que use algo menos evidente que una espada. Vito Mantovani eligió el látigo.</p><p>El estilo Mantovani prefiere desviar la atención y la adaptabilidad, por eso usa un látigo para manipular el entorno: coger objetos pequeños para lanzárselos al oponente con un golpe de látigo o dar un pequeño latigazo en la mano para hacer que seguir luchando sea más doloroso de lo que merece la pena.</p>",
+    "infosource": "7º Mar (básico), p. 238",
+    "bonus": "<p><strong>Azote Mantovani.</strong></p><p>Cuando esgrimes un látigo consigues una maniobra especial llamada «Azote Mantovani», la cual inflige 1 Herida y después puedes elegir otra que sepas que tu oponente realiza (una maniobra básica o una bonificación de la Escuela que sepas que tiene). Tu objetivo no puede realizar esa maniobra durante su siguiente acción porque trabas su arma, le das un latigazo particularmente doloroso en el dorso de la mano o controlas de otro modo cómo puede actuar. Solo puedes realizar Azote Mantovani una vez por ronda.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  }
+}

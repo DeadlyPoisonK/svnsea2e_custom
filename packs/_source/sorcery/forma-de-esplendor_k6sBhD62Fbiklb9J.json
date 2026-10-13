@@ -1,0 +1,21 @@
+{
+  "folder": "KpycPQTwWNzMCwcL",
+  "name": "Forma de esplendor",
+  "type": "sorcery",
+  "_id": "k6sBhD62Fbiklb9J",
+  "img": "icons/magic/light/beam-strike-village-yellow.webp",
+  "system": {
+    "description": "<p>Este turru convierte tu cuerpo en una forma de luz blanca pura. Cualquier veneno o enfermedad en tu cuerpo se purga inmediatamente y no recibes Heridas. Mientras estás en esta forma, puedes elegir si dañar o no a aquellos que tocas; si eliges dañar, tu toque causa 2 Heridas por Aumento que gastas, pero una vez que tomas la decisión, no puedes cambiarla hasta que termine este poder. Esta forma dura hasta el final de la ronda.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 185",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "advanced"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

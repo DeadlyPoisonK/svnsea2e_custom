@@ -1,0 +1,33 @@
+{
+  "name": "Strega salvaje",
+  "type": "background",
+  "_id": "KuCUdL1bfswpOMXZ",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Tu magia aún no está refinada, pero no es ni menos potente ni menos peligrosa.</p><p><em>Ventajas en el libro: Hechicería (Sorte sin entrenar).</em></p>",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando decidas ayudar a otro personaje utilizando tus poderes de Sorte sin entrenar y eso te meta en problemas.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "hide",
+      "perform",
+      "theft"
+    ],
+    "advantages": [
+      "Contactos",
+      "Extranjero",
+      "Hechicería"
+    ],
+    "active": true,
+    "infosource": "Naciones de Théah vol. 2, p. 208",
+    "nation": "vodacce"
+  },
+  "effects": [],
+  "folder": "iQwE9i6UuITLrQEf",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

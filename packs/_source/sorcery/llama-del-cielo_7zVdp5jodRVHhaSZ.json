@@ -1,0 +1,21 @@
+{
+  "folder": "hKSS5Yx1PWVKU58w",
+  "name": "Llama del cielo",
+  "type": "sorcery",
+  "_id": "7zVdp5jodRVHhaSZ",
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+  "system": {
+    "description": "<p>Activa este turru para invocar una llama que emite luz y calor como un fuego común, pero que no se puede extinguir mientras permanezcas en el área. Cuando abandonas la zona, el fuego se apaga si lo deseas, o continúa ardiendo durante un número de rondas igual al número de veces que tengas la ventaja Hechicería.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 184",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,33 @@
+{
+  "folder": "4U6I0mscCu3etLYC",
+  "name": "Primo de Zahrah",
+  "type": "background",
+  "_id": "pA7hfFkMMq4U88ya",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>La historia de las tribus es tan rica y colorida como la de cualquier pueblo. Tus palabras serán escuchadas.</p><p><em>Ventajas en el libro: Rima y verso (Hakawati).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 158",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando convences a otro personaje para que se comprometa con un curso de acción apelando a su linaje, honor familiar, orgullo nacional o un aspecto similar de su historia personal.</p>",
+    "skills": [
+      "empathy",
+      "notice",
+      "perform",
+      "ride",
+      "scholarship"
+    ],
+    "advantages": [
+      "Amab almadaa",
+      "Rima y verso",
+      "Sentido de la orientación"
+    ],
+    "nation": "tribes",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

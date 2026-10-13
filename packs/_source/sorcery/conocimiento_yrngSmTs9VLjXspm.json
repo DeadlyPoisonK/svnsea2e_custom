@@ -1,0 +1,22 @@
+{
+  "folder": "UmOykxAiB4ACTBDv",
+  "name": "Conocimiento",
+  "type": "sorcery",
+  "_id": "yrngSmTs9VLjXspm",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Los dievai que conceden favores del Trato del Conocimiento suelen parecerse a un théano típico, aunque quizás se envuelvan en una capa voluminosa para ocultar sus rostros o lleven máscaras. Pueden acceder a toda la suma del conocimiento humano o de otras criaturas. También gobiernan las conexiones entre la mente y el cuerpo y pueden provocar una clara ruptura entre las dos, convirtiendo el cuerpo mortal de un théano en una prisión de la que su mente no pueda escapar.</p><ul><li>Arrancar la mente de una criatura de su cuerpo: la criatura sigue viva, pero no puede ni hablar ni moverse.</li><li>Alterar un recuerdo específico en mucha gente. Podrías hacer que todos los que te vieron en las últimas 24 horas se olviden de tu presencia completamente. Recordarán todo lo demás, pero efectivamente hay un vacío donde deberías estar tú.</li><li>Responder una única pregunta basada en hechos con sí o no. La pregunta solo debe concernir a eventos que ya han sucedido; no importa lo mucho que se insista, un dievas no puede predecir el futuro con más precisión que su losejas.</li><li>Encontrar la localización concreta de un objeto que deseas, con precisión exacta tanto de la localización del objeto como del objeto en sí.</li><li>Descubrir algo de conocimiento, incluso si está perdido; cualquier cosa desde una antigua fórmula alquímica a un mapa que te podría guiar a un retiro náutico escondido.</li><li>Eliminar un recuerdo específico de la mente de un único personaje. Podrías hacer que un hombre olvidara que habló contigo o hacer que tu enemigo se olvide de tu cara. A veces esto ha provocado efectos secundarios en la psique de la víctima, especialmente si el recuerdo olvidado se somete a escrutinio.</li><li>Restaurar una mente confundida a su pleno funcionamiento. Tristemente, este efecto solo persiste durante una escena y después el personaje vuelve a su agudeza mental anterior.</li></ul>",
+    "infosource": "7º Mar (básico), p. 227",
+    "sorctype": "sanderis",
+    "sorccat": "deal",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

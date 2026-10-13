@@ -1,0 +1,15 @@
+{
+  "name": "Palabras vinculantes",
+  "sorting": "a",
+  "folder": "sUWTdl5qMbYmk0j8",
+  "type": "Item",
+  "_id": "lNRPjAFXVNRwD8w9",
+  "description": "",
+  "sort": 500000,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "fc83348563dd37d6324614da578f51dacff9467e"
+    }
+  }
+}

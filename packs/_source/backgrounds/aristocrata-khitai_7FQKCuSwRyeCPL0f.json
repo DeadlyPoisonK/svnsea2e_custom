@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Aristócrata (Khitai)",
+  "type": "background",
+  "_id": "7FQKCuSwRyeCPL0f",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Respeto</p>",
+    "quirk": "<p>Gana un punto de héroe cuando demuestres que la nobleza es algo más que ropas caras y asistir a la corte.</p>",
+    "skills": [
+      "aim",
+      "convince",
+      "intimidate",
+      "ride",
+      "warfare"
+    ],
+    "advantages": [
+      "Cuna aristocrática",
+      "Buen ojo para el talento (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 103 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

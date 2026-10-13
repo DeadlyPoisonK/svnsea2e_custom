@@ -1,0 +1,22 @@
+{
+  "folder": "k18gDEigRmb5jnMD",
+  "name": "Peste",
+  "type": "sorcery",
+  "_id": "YpZ3edvaT6r4DSkm",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un personaje al que puedas ver queda infectado con una sola enfermedad mundana con la que estés familiarizado. Genera 4 de Plaga. Este efecto persiste hasta que la enfermedad sea curada, siga su curso natural y se disipe, o el personaje muera.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 204 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

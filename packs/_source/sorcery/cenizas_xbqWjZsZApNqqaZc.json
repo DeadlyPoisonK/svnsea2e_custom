@@ -1,0 +1,22 @@
+{
+  "folder": "eZEr7laiGgwaVocD",
+  "name": "Cenizas",
+  "type": "sorcery",
+  "_id": "xbqWjZsZApNqqaZc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Con una mirada eres capaz de aniquilar a un grupo de enemigos. Genera tanta Plaga como la Fuerza de la banda de matones objetivo. Luego, derrota a esa banda de matones.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 203 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

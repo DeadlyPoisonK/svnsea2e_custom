@@ -1,0 +1,32 @@
+{
+  "folder": "IIghUIYTAidR9gR1",
+  "name": "Fugitivo de la Compañía",
+  "type": "background",
+  "_id": "Q7SEot3oM4v24dBP",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Escapaste de las garras de la CCA y ahora te esfuerzas para que cada día de su existencia sea más costoso que el anterior.</p><p><em>Ventajas en el libro: Academia de esgrima (Jogo de Dentro).</em></p>",
+    "infosource": "Naciones Piratas, p. 146",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando trastoques los planes de la Compañía o cuando sabotees su fuente de ingresos.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "hide",
+      "notice",
+      "theft"
+    ],
+    "advantages": [
+      "Academia de esgrima",
+      "Espíritu valiente"
+    ],
+    "nation": "none",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

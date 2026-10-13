@@ -1,0 +1,22 @@
+{
+  "folder": "d2B7Md5aTTuNRl5Z",
+  "name": "Finiquito",
+  "type": "sorcery",
+  "_id": "tTD9oXUcHx66x1Rm",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Extraes energía maléfica del aire y la arrojas contra un enemigo; cuanto más herido esté, más dolor le causas. Genera 3 de Plaga. Inflige a un personaje tantas Heridas como tu rasgo más alto. Si el objetivo tiene al menos 2 Heridas Dramáticas, inflígele tantas Heridas como el doble de tu rasgo más alto y genera 3 de Plaga adicional. Si el objetivo tiene al menos 3 Heridas Dramáticas, inflígele tantas Heridas como el triple de tu rasgo más alto y genera 6 de Plaga adicional.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 203 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

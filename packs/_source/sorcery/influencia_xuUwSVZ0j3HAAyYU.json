@@ -1,0 +1,22 @@
+{
+  "folder": "yjYco7UI3IiAcsg3",
+  "name": "Influencia",
+  "type": "sorcery",
+  "_id": "xuUwSVZ0j3HAAyYU",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera tanta Furia como el número de objetivos enemigos en la escena actual a medida que los espíritus potencian tus habilidades naturales. Aplica Presión a cada objetivo.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 196 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

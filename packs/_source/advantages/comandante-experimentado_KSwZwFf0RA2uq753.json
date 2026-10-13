@@ -1,0 +1,24 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Comandante experimentado",
+  "type": "advantage",
+  "_id": "KSwZwFf0RA2uq753",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Las unidades que diriges son mejores que el promedio. Cada vez que comiences un Combate en masa adjunto a una unidad, puedes seleccionar un solo Mérito. La unidad obtiene el beneficio de ese Mérito sin coste de puntos de héroe. Seleccionar un segundo Mérito cuesta un punto de héroe y crece exponencialmente a partir de ahí.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 160",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

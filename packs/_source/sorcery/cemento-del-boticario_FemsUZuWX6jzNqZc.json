@@ -1,0 +1,21 @@
+{
+  "folder": "dRivclZirteK4bLL",
+  "name": "Cemento del boticario",
+  "type": "sorcery",
+  "_id": "FemsUZuWX6jzNqZc",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Este preparado es capaz de unir dos objetos completamente dispares. Romper la unión requiere un Aumento más de lo que costaría si se usara un pegamento normal. Por lo general, esto significa que para separarlos se deben usar 2 Aumentos en lugar de 1.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 96",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

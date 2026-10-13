@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Tiburon Mayor",
+  "type": "sorcery",
+  "_id": "it64ftLoCm15103w",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p><br>El tibur&oacute;n es un cazador implacable. A un h&eacute;roe agresivoy decidido se le&nbsp; dar el mohwoo del tibur&oacute;n cuando<br>valora la acci&oacute;n inmediata por encima de un enfoque&nbsp;m&aacute;s pasivo de &laquo;esperar y ver&raquo; al resolver un problema. El<br>tibur&oacute;n tambi&eacute;n puede representar a un h&eacute;roe que persigue&nbsp;algo, en contraposici&oacute;n con el pez, que desea descubrir algo.</p>\n<hr>\n<p>Activa este mohwoo y especifica a un &uacute;nico individuo como tu presa. El DJ te dir&aacute; la direcci&oacute;n y la distancia aproximada a la que se encuentra esa persona y cualquier Riesgo f&iacute;sico que realices para perseguirla consigue 1 dado adicional&nbsp;(como cuando necesitas realizar un Riesgo de Atletismo para&nbsp;correr detr&aacute;s de ella o un Riesgo de Pelear para agarrarla).</p>\n<p><br>Esto funciona hasta el final de la escena, a menos que pagues&nbsp;otro punto de h&eacute;roe para mantener el efecto. Un qing solo&nbsp;puede activar este mohwoo una vez por sesi&oacute;n.</p>",
+    "infosource": "Naciones Piratas, p. 171",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100782,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Fuera del manifiesto",
+  "type": "advantage",
+  "_id": "E2xD07vGI1PKZAY6",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>Debes tener la ventaja de «Casado con el mar».</strong></p><p>Tu barco puede almacenar una cantidad de Carga adicional igual a tu nivel en Navegar. Esta Carga debe obtenerse a través de medios ilícitos (es decir, piratería, incursiones en aldeas costeras, etc.); cualquier Carga obtenida a través de medios mundanos como el comercio sigue las reglas normales de tu barco.</p><p><em>Coste: 2 (1 si eres magrebí).</em></p>",
+    "infosource": "Tierras de Fuego y Oro, p. 177",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": 1
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

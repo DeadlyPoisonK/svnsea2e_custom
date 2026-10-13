@@ -1,0 +1,32 @@
+{
+  "folder": "oV6tWUZgX7fd5HWW",
+  "name": "Zhaofen Zhe (Rebelde)",
+  "type": "background",
+  "_id": "m98NIEWweIhwXesz",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Lealtad</p>",
+    "quirk": "<p>Gana un punto de héroe cuando ataques a una persona u organización en una posición de poder.</p>",
+    "skills": [
+      "aim",
+      "hide",
+      "tempt",
+      "theft",
+      "warfare"
+    ],
+    "advantages": [
+      "Acepta tu destino (Khitai)",
+      "Superviviente (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 111 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

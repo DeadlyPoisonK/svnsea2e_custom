@@ -1,0 +1,33 @@
+{
+  "folder": "CXXvM7Ygk4Y8t234",
+  "name": "Shulam (Bruja)",
+  "type": "background",
+  "_id": "52ZmtgnZDSg0xmrI",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Respeto</p><p><em>Ventajas en el libro (en inglés): Magic (Shaman), Magic (Shaman).</em></p>",
+    "quirk": "<p>Gana un punto de héroe cuando resuelvas un problema convenciendo a alguien de apegarse a la tradición o de honrar a sus ancestros.</p>",
+    "skills": [
+      "empathy",
+      "intimidate",
+      "perform",
+      "ride",
+      "scholarship"
+    ],
+    "advantages": [
+      "Hechicería (Khitai)",
+      "Hechicería (2)",
+      "Superviviente (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 110 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

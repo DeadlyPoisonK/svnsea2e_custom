@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Pan del amo",
+  "type": "sorcery",
+  "_id": "S57MfFE8C2s5ATSh",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Un cerebro muerto con varias hierbas y setas alucinógenas y similares, todo mezclado hasta formar una sustancia similar a una pasta que hay que dejar secar. Después de comer este pan puedes dar una orden a una banda de monstruos no muertos, que la cumplirán inmediatamente (como atacar a un objetivo en particular, derribar una barricada, etcétera). Una banda de monstruos no puede atacarse a sí misma. Contra un villano no muerto, este pan otorga 1 Aumento en cualquier riesgo social.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 208",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 125000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

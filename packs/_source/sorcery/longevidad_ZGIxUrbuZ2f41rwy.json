@@ -1,0 +1,21 @@
+{
+  "folder": "lViId2hAgZrG1OcT",
+  "name": "Longevidad",
+  "type": "sorcery",
+  "_id": "ZGIxUrbuZ2f41rwy",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Beber este elixir te permite resistir un daño que mataría a los simples mortales. Hasta el final de la escena, ya no quedas Indefenso cuando tengas 4 Heridas Dramáticas. En su lugar, cuando eso suceda, cualquier villano que realice un Riesgo contra ti consigue 3 dados adicionales (en lugar de 2). Además, obtienes una hilera adicional de Heridas. Cuando recibas tu quinta Herida Dramática, quedarás Indefenso. Preparar este elixir necesita 1 Requisito.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 95",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

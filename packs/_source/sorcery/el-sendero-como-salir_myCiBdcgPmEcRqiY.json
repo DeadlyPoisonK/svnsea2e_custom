@@ -1,0 +1,22 @@
+{
+  "folder": "4p5I2hDwDTQ8cpz3",
+  "name": "El Sendero: cómo salir",
+  "type": "sorcery",
+  "_id": "myCiBdcgPmEcRqiY",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Una vez atrapado, un héroe debe enfrentarse a su propia desesperación para encontrar una salida antes de que el sendero le convierta para siempre. Puede buscar una salida, haciendo tratos con otras de las entidades atrapadas, o puede tratar de llamar la atención de otros hechiceros que estén pasando, aunque para conseguir esto siempre se requiere llevar a cabo una historia de redención y que en uno de sus pasos se deba pagar un precio de algún tipo (consulta más adelante la sección «Qué llevas contigo» para más información sobre este precio). El héroe puede viajar a través de los recuerdos retorcidas de los muertos, visitar lugares que nunca existieron y soñados por los miedos descarriados de los incontables hechiceros que han pasado por allí o enfrentarse a pesadillas hechas realidad. Existen muchas amenazas que pueden complicar la búsqueda de una salida para un héroe. Los que se han perdido durante mucho tiempo tratan desesperadamente de engatusarlos u obligarlos a que lo lleven con ellos cuando se marchen o a pasar la eternidad haciéndoles compañía. Pueden poseerlos como si fueran espíritus, engañarlos para que los conduzcan a la <em>blessure</em> de un villano o hacerles olvidar toda su vida anterior. Morir dentro del sendero no acaba con el sufrimiento del hechicero, sino que permanece ahí como un espíritu monstruoso del sendero, un alma desafortunada que ha perdido toda su humanidad que espera salir a expensas de otro pobre bastardo o que un héroe la destruya.</p><p>Es posible traer a un hechicero atrapado en el sendero, pero es necesario exponerse al peligro y usar el sentido común y la perseverancia. Para realizar el rescate hay que gastar los mismos puntos de héroe que se necesitan para llevar a alguien, tal y como se indica en la página 221 del <strong>Libro básico.</strong></p><p>Un héroe liberado regresa a casa invadido por el alivio, pero aún debe enfrentarse a las consecuencias de lo ocurrido.</p><p>Si una entidad del sendero consumió su sangre y le robó sus vínculos, cada vez que el héroe cree una nueva Marca también creará una nueva forma para que el lunático desatado utilice su poder contra él o recorra el mundo entero extendiendo el caos. Si acumuló Corrupción debido a su exposición al sendero, perderá dichos puntos de Corrupción a un ritmo de uno por escena tras regresar al mundo real, pero hasta que lo consiga debe combatir con la oscuridad que ha traído consigo. El tiempo no tiene significado alguno dentro del sendero, así que lo que ha experimentado un héroe liberado no tiene nada que ver con lo ocurrido una vez regrese. Pueden haber pasado unos segundos o cien años. ¡Su percepción del tiempo puede corresponderse exactamente con la del mundo o quizás regrese a un tiempo anterior a su propio nacimiento!</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 145",
+    "sorctype": "porte",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

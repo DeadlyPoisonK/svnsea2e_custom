@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Mercenario (Khitai)",
+  "type": "background",
+  "_id": "Tpc6ex8C1hJ1rOm6",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Paz</p>",
+    "quirk": "<p>Gana un punto de héroe cuando encuentres un motivo para ejercer tu oficio que sea más valioso para ti que el dinero.</p>",
+    "skills": [
+      "athletics",
+      "hide",
+      "intimidate",
+      "ride",
+      "weaponry"
+    ],
+    "advantages": [
+      "Estudiante marcial (Khitai)",
+      "¡Como uno solo!"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 105 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

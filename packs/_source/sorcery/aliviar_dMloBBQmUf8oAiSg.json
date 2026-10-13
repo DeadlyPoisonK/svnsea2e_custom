@@ -1,0 +1,22 @@
+{
+  "folder": "3RPIRXn1ftcKXUa4",
+  "name": "Aliviar",
+  "type": "sorcery",
+  "_id": "dMloBBQmUf8oAiSg",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este poder para evitar que un personaje mienta hasta el final de la escena. El personaje habla honestamente, dando lo mejor de sus capacidades y conocimientos, por lo que su información no siempre es precisa.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 170",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

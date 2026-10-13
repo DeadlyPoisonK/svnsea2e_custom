@@ -1,0 +1,18 @@
+{
+  "folder": "xHKlTiVU5lOVZ9t2",
+  "name": "Jogo de Dentro",
+  "type": "duelstyle",
+  "_id": "w1SzP5Y118PjNPc0",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Jogo de Dentro («juego interior») fusiona el baile y el combate. Las posiciones de los mestres son pasos de baile, equilibrio con las manos y esquivas acrobáticas, ideal para el combate cerca del suelo en lugares estrechos. Sus armas son patadas, movimientos circulares y pinchos caseros que se sujetan con las manos o los pies, ideal para luchar con las manos atadas. Sus tácticas desequilibran y esquivan en lugar de matar, basándose en el engaño y los trucos para luchar con théanos más fuertes y sanos que tienen la autoridad de su lado.</p><p>No aprenderás el estilo de lucha más impredecible del mar Atabeano en ninguna academia de esgrima (aunque últimamente el mestre Gavião está haciendo todo lo que puede para conseguir dinero y prestigio suficiente para abrir una academia formal en el sur de Castilla, en la península Odisea). Por ahora, los únicos caminos para dominarlo acechan en los callejones traseros de Fuerte Libertad y en el infierno de la esclavitud. El Jogo de Dentro, desarrollado por prisioneros ifricanos y rahuris anónimos, no tiene un progenitor asignado. Los practicantes se llaman a sí mismos malandros, reclamando un insulto odiseo que se dirige a los habitantes de los bajos fondos de la ciudad y a los esclavos liberados.</p>",
+    "infosource": "Naciones Piratas, p. 174",
+    "bonus": "<p><strong>Riso da Malandragem.</strong></p><p>Cuando esgrimas armas blancas pequeñas e improvisadas (una cuchilla de barbero escondida en la manga, un trozo de cristal afilado incrustado en la suela del zapato, etcétera), consigues una maniobra llamada Riso da Malandragem, o «risa del sinvergüenza». Riso da Malandragem inflige una Herida a dos oponentes (dos villanos o dos bandas de matones o un villano y una banda de matones, etcétera). La próxima vez que esos objetivos inflijan Heridas en esta ronda, infligen 1 menos por cada nivel que tú tengas en Armas.</p><p>Puedes realizar Riso da Malandragem una vez por ronda.</p><p>Además, cuando hagas Riesgos de Atletismo, Esconder, Interpretar o Pelear, consigues 1 dado adicional siempre y cuando describas cómo te ayuda tu dominio de Jogo de Dentro.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "NMLUIzroEfZyWIxJ",
+  "name": "Alquimista",
+  "type": "background",
+  "_id": "44R5PKQFRGIxR7Uh",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Buscaste durante mucho tiempo y arduamente hasta que descubriste el misterio de la creación alquímica.</p>",
+    "infosource": "7º Mar (básico), p. 143",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando mejores la vida de otro théano a través de la alquimia.</p>",
+    "skills": [
+      "empathy",
+      "notice",
+      "scholarship",
+      "tempt",
+      "theft"
+    ],
+    "advantages": [
+      "Alquimista",
+      "Estómago de hierro"
+    ],
+    "nation": "castille"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

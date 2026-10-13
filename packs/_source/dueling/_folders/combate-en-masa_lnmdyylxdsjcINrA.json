@@ -1,0 +1,15 @@
+{
+  "name": "Combate en masa",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "lnmdyylxdsjcINrA",
+  "description": "",
+  "sort": 800000,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "264a97596fc15bd2be92cc060e8d6439856e50cb"
+    }
+  }
+}

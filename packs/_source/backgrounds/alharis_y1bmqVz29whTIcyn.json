@@ -1,0 +1,33 @@
+{
+  "folder": "zrOTu2Mah9eRQKyp",
+  "name": "Alharis",
+  "type": "background",
+  "_id": "y1bmqVz29whTIcyn",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Hay magia en la belleza del mundo y buscas reflejarla en tu propio trabajo.</p><p><em>Ventajas en el libro: Hechicería (Arte del Segundo Profeta), Hechicería (Arte del Segundo Profeta).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 156",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando uses tu hechicería para brindar consuelo a los marginados o a los oprimidos.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "hide",
+      "intimidate",
+      "scholarship"
+    ],
+    "advantages": [
+      "Hechicería",
+      "Hechicería (2)",
+      "Las viejas tradiciones"
+    ],
+    "nation": "anatol"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

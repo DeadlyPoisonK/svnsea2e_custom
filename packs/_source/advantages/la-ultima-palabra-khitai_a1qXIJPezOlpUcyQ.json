@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "La última palabra (Khitai)",
+  "type": "advantage",
+  "_id": "a1qXIJPezOlpUcyQ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando tienes cero Aumentos durante una secuencia dramática, puedes gastar un punto de héroe para realizar una única acción, ignorando las reglas de Improvisación. Un héroe solo puede usar esta ventaja una vez por sesión de juego.</p>",
+    "infosource": "Khitai, p. 120 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

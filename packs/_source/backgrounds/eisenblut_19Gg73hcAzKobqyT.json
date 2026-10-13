@@ -1,0 +1,32 @@
+{
+  "folder": "IzxDf7LBEx0QQz86",
+  "name": "Eisenblut",
+  "type": "background",
+  "_id": "19Gg73hcAzKobqyT",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Aún hay nobleza en Eisen y aún hay hierro en tu sangre.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 207",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando decides sacrificar algo que es importante para ti por el bien de Eisen y su pueblo.</p>",
+    "skills": [
+      "empathy",
+      "intimidate",
+      "ride",
+      "scholarship",
+      "warfare"
+    ],
+    "advantages": [
+      "Mirada altiva",
+      "Rico"
+    ],
+    "nation": "eisen",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

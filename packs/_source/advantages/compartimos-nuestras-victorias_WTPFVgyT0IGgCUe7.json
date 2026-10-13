@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Compartimos nuestras victorias",
+  "type": "advantage",
+  "_id": "WTPFVgyT0IGgCUe7",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando ayudes a otro héroe a completar un paso en su historia personal, consigues 1 punto de héroe. Cuando otro héroe te ayude a completar un paso en tu historia, consigue 1 punto de héroe.</p><p><em>Coste: 5 (3 si eres jaraguano).</em></p>",
+    "infosource": "Naciones Piratas, p. 153",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

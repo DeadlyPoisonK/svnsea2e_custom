@@ -1,0 +1,15 @@
+{
+  "name": "Espíritu",
+  "sorting": "a",
+  "folder": "DMohupPGQDu5qKnD",
+  "type": "Item",
+  "_id": "zHoQ2ilelKv9nRRk",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "22c299f235b4292773d12ea42e313ccd6bd78612"
+    }
+  }
+}

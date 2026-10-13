@@ -1,0 +1,21 @@
+{
+  "folder": "B3Qce7iGiSAgG7at",
+  "name": "Collar de Cit-Tum",
+  "type": "sorcery",
+  "_id": "4c35wynbhBmyiWyk",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>En vida, Cit-Tum fue un renombrado curandero, que sanó a los enfermos y atendió las heridas de cientos de miles de tzak k'anos. Mientras agonizaba, susurró: «He salvado muchas vidas. Curado heridas. Sanado enfermedades. No evité nada. Preferiría haber soportado el dolor yo mismo y así ahorrarles el sufrimiento a los heridos». Mientras use el Collar de Cit-Tum, un héroe puede gastar 1 punto de héroe para redirigir todas las Heridas infligidas a otro héroe hacia el portador.</p>",
+    "infosource": "El Nuevo Mundo, p. 172",
+    "sorctype": "wayak",
+    "sorcdur": "none",
+    "sorccat": "ahpulul",
+    "sorcsubcat": "baxan"
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

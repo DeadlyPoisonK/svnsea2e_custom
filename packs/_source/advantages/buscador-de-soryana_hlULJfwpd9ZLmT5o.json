@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Buscador de Soryana",
+  "type": "advantage",
+  "_id": "hlULJfwpd9ZLmT5o",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Conoces los pasadizos secretos que conducen a Soryana, la Isla de los Muertos. Cuando explores las tierras salvajes o navegues, puedes gastar 1 punto de héroe para encontrar Soryana y conseguir una audiencia con Locuo. Puedes defender tu caso ante él, y si considera que tu causa es justa, te concederá la compañía de un ancestro adecuado. Tu ancestro te seguirá como un espectro fantasmal y translúcido, pero interactuará con el mundo igual que cualquier personaje vivo (solo puede caminar por superficies sólidas, puede levantar y transportar objetos, etcétera). Tiene voluntad propia, pero por lo general te ayudará a conseguir tus objetivos. Normalmente esto significa una historia, pero algunos Buscadores (o sus ancestros) regresarán a Soryana antes o después, dependiendo de las circunstancias.</p><p>Tu ancestro tiene 3 niveles en todas las características. El DJ y tú elegís un trasfondo para tu ancestro, que le concede las ventajas asociadas, así como 2 niveles en las habilidades de dicho trasfondo. Tu ancestro puede recibir 10 Heridas antes de que su alma se deshilache y se pierda por la eternidad. La conexión de tu ancestro con este mundo es débil. Al principio de cada sesión de juego, debes gastar 1 punto de héroe para mantener tu conexión con tu ancestro y permitirle que se aferre a su cordura. Si no pagas este precio (porque decides no hacerlo o porque tu ancestro se ha alejado de ti), pierdes la conexión y se vuelve un monstruo espíritu enfadado y loco (Fuerza 10, cualidades de monstruo Destructivo y Temible, y conserva las ventajas que tenía antes). Su conexión con tu héroe se rompe y persigue a los vivos.</p><p>Locuo no se toma a la ligera que los Buscadores permitan que sus ancestros se pierdan y es poco probable que vea con buenos ojos las peticiones futuras de tales personajes. Si tu ancestro se pierde, debes encontrarlo y destruirlo o encontrar un modo de hacer que recupere la cordura antes de que Locuo te conceda la ayuda de otro ancestro.</p><p>Esta ventaja también te permite hacer de guía de otro personaje que desee visitar Soryana y hacerle una petición a Locuo. En este caso, el otro personaje paga el punto de héroe para mantener la conexión y el ancestro lo sigue a él en lugar de a ti. Si un personaje que guías a Soryana no consigue mantener su conexión o no devuelve al ancestro a la isla, la responsabilidad de corregirlo recae sobre ti.</p><p><em>Solo si eres rahuri.</em></p>",
+    "infosource": "Naciones Piratas, p. 152",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

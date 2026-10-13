@@ -1,0 +1,21 @@
+{
+  "folder": "d42jZhN0By3mSJyq",
+  "name": "Transformación",
+  "type": "sorcery",
+  "_id": "8QHiHPVxdS5Qk7UH",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Selecciona un animal del cuadro de texto «Formas animales». Puedes adoptar la forma de esa criatura durante la escena. Tus habilidades, conocimiento y capacidades se mantienen en tu nueva forma, aunque pueden estar limitadas; por ejemplo, Armas puede ser inutilizable si no puedes agarrar armas. Si la forma del animal es particularmente ventajosa para hacer algo (como evitar que te perciban mientras estás en forma de ratón), consigues 2 dados adicionales.</p>",
+    "infosource": "7º Mar (básico), p. 218",
+    "sorctype": "darm",
+    "sorcdur": "none",
+    "sorccat": "gift",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

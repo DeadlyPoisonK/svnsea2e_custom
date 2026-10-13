@@ -1,0 +1,23 @@
+{
+  "folder": "TQzJbDDBg4ZBhZyS",
+  "name": "Buen bebedor",
+  "type": "advantage",
+  "_id": "lthnplSLeVrZd1eO",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>El alcohol nunca te afecta negativamente, no importa cuánto bebas.</p>",
+    "infosource": "7º Mar (básico), p. 148",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

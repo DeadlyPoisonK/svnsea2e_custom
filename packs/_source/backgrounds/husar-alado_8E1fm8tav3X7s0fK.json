@@ -1,0 +1,32 @@
+{
+  "folder": "3RQTsbeWnY6qUVnN",
+  "name": "Húsar alado",
+  "type": "background",
+  "_id": "8E1fm8tav3X7s0fK",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Sirves en el regimiento de caballería más respetado, una unidad de élite del ejército sármata.</p>",
+    "infosource": "7º Mar (básico), p. 144",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando tu montura y tú os precipitéis de cabeza a una batalla o conflicto, sin preocuparte del peligro.</p>",
+    "skills": [
+      "convince",
+      "notice",
+      "ride",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Juntos somos fuertes",
+      "Trabajo en equipo"
+    ],
+    "nation": "sarmatia"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  }
+}

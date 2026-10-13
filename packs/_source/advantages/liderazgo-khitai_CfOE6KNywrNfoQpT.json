@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Liderazgo (Khitai)",
+  "type": "advantage",
+  "_id": "CfOE6KNywrNfoQpT",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta un punto de héroe para inspirar a un grupo a actuar. El grupo debe poder oírte, pero si puede y tiene una disposición neutral o mejor, hará lo que le ordenes siempre que sea razonable (es poco probable que se arrojen por un puente hacia una muerte segura, por ejemplo).</p>",
+    "infosource": "Khitai, p. 116 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

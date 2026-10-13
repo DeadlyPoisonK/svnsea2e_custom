@@ -1,0 +1,21 @@
+{
+  "folder": "hKSS5Yx1PWVKU58w",
+  "name": "Chispa de intuición",
+  "type": "sorcery",
+  "_id": "4xBL0u7WXg00xfM4",
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+  "system": {
+    "description": "<p>Activa este turru para hacer a los poderes del más allá una simple pregunta que te ayude a aclarar una situación. ¿Estoy siguiendo el camino correcto? ¿Deberíamos seguir a ese barco? ¿El barón debe morir? Recibes una respuesta definitiva a través de una señal, una sensación de certeza o algún otro presagio. Si el resultado de tu pregunta es discutible o incierto, los poderes te guían de acuerdo a su propia agenda o deseos, pero si hay una respuesta definitiva, entonces recibes la verdad.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 184",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Afrontar la tormenta",
+  "type": "advantage",
+  "_id": "ffJurvFU7vHSiQny",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cualquier Aumento que gastes para superar una Consecuencia creada por una Amenaza cuenta como 2 Aumentos.</p>",
+    "infosource": "El Nuevo Mundo, p. 165",
+    "used": false,
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

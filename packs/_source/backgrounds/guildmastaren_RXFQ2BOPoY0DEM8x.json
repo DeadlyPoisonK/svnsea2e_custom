@@ -1,0 +1,32 @@
+{
+  "folder": "PrCClrluNkXpzvK4",
+  "name": "Guildmästaren",
+  "type": "background",
+  "_id": "RXFQ2BOPoY0DEM8x",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Sirves a la Liga de Vendel y manejas gremiales con una cierta habilidad.</p>",
+    "infosource": "7º Mar (básico), p. 145",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando uses los vastos recursos de la Liga de Vendel para algo más noble que el beneficio.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "ride",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "Maestro artesano",
+      "Rico"
+    ],
+    "nation": "vesten"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -164,6 +164,83 @@
     "gridUnits": "ft",
     "primaryTokenAttribute": "wounds",
     "secondaryTokenAttribute": "dwounds",
+    "packs": [
+        {
+            "name": "advantages",
+            "label": "Ventajas",
+            "path": "packs/advantages",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "backgrounds",
+            "label": "Trasfondos",
+            "path": "packs/backgrounds",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "dueling",
+            "label": "Duelos",
+            "path": "packs/dueling",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "sorcery",
+            "label": "Hechicería",
+            "path": "packs/sorcery",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "virtues",
+            "label": "Virtudes",
+            "path": "packs/virtues",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "hubris",
+            "label": "Hibris",
+            "path": "packs/hubris",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        }
+    ],
+    "packFolders": [
+        {
+            "name": "7º Mar",
+            "sorting": "m",
+            "color": "#6b1d1d",
+            "packs": [
+                "advantages",
+                "backgrounds",
+                "dueling",
+                "sorcery",
+                "virtues",
+                "hubris"
+            ]
+        }
+    ],
     "url": "https://github.com/DeadlyPoisonK/svnsea2e_custom",
     "manifest": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.3/system.json",
     "download": "https://github.com/DeadlyPoisonK/svnsea2e_custom/releases/download/v23.3/system.zip",

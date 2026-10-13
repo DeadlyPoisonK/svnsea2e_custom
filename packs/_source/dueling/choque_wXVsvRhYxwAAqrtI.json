@@ -1,0 +1,18 @@
+{
+  "folder": "SHTZehac4c9ek4Nd",
+  "name": "Choque",
+  "type": "duelstyle",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Podría decirse que es la estrategia más común adoptada en el combate en masa. Choque involucra a una unidad que se lanza a la batalla para derrotar a sus enemigos. Cuando ordenas Choque, la unidad seleccionada tira tantos dados como su Fuerza y reparte tantos Impactos como el número de Aumentos que ha tirado.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 192",
+    "bonus": ""
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_id": "wXVsvRhYxwAAqrtI",
+  "sort": 300000
+}

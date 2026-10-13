@@ -1,0 +1,22 @@
+{
+  "folder": "XxbatVafsy3T61pQ",
+  "name": "Clemencia de la madre",
+  "type": "sorcery",
+  "_id": "cKbYDQYkQeh7eWaP",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Una densa sopa de verduras silvestres y agua bendita. Beber la Clemencia de la madre elimina todos los efectos de cualquier enfermedad, maldición o efecto debilitador que provocan los no muertos. Un personaje muere inmediatamente si bebe este ungüento después de comer las Gachas funerarias, pero no vuelve como un monstruo no muerto.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 209",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

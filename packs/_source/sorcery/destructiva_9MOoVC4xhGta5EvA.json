@@ -1,0 +1,22 @@
+{
+  "folder": "li9WDKazVu5ySEdo",
+  "name": "Destructiva",
+  "type": "sorcery",
+  "_id": "9MOoVC4xhGta5EvA",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Con un solo golpe, tu arma puede destruir rocas, árboles e incluso paredes. Gasta 1 punto de héroe para destruir un objeto inanimado, de tamaño más o menos humano, con tu arma. Puedes destruir objetos inanimados más grandes de esta manera si gastas puntos de héroe adicionales (2 puntos de héroe para destruir un objeto del doble del tamaño de un humano, etc.).</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 199",
+    "sorctype": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "FxR2wVhya2ZvEU7l",
+  "name": "La Gesa del Caballero",
+  "type": "sorcery",
+  "_id": "ht09ZsN85fU9YgHz",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Hay siete dogmas en la Gesa del Caballero; aunque la Gesa obliga de manera sobrenatural, su interpretación suele basarse en las creencias del caballero. Por ejemplo, un dogma es: «No levantarás tu espada contra un compatriota», pero la Gesa no especifica lo que eso significa. Puede que un caballero inismorés, por ejemplo, no considere a los avaloneses como sus compatriotas. Aunque la Gesa puede estar abierta a interpretación, un caballero puede decidir «sobre la marcha» cómo se aplica. Si no considera que servir a la reina Elaine es lo mismo que servir al Grial, tiene que dejar su interpretación clara al DJ, quien en última instancia decide si las acciones de un caballero rompen o no con su Gesa. Los siete dogmas son:</p><p><strong>No levantarás tu espada contra un compatriota. No abandonarás la lucha antes de que haya acabado. No faltarás a tu palabra ni ayudarás a alguien que falte a la suya.</strong></p><p><strong>No holgazanearás cuando hay trabajo por hacer. No dejarás que tus pasiones te dominen.</strong></p><p><strong>No cogerás para ti algo que pertenezca a otro. Servirás siempre al Grial.</strong></p><p>Un caballero que falta a un dogma de la Gesa del Caballero pone en peligro su manto de Glamour. Seguirá funcionando con normalidad, pero el caballero puede sentir que su sujeción con la magia se vuelve tenue y necesitará redimirse para reforzar este vínculo con la magia del Grial. Si un caballero falta a un dogma de la Gesa mientras su manto está en peligro perderá todo acceso a su Glamour hasta que se redima.</p><p>Para redimirse, un caballero debe buscar a otra persona (un <strong>confesor</strong>) a la que se le haya concedido el poder del Grial, ya sea otro Caballero del Glamour o la reina Elaine. El que busca redención (el <strong>suplicante</strong>) debe confesar las acciones que ha realizado y que provocaron la ruptura con la Gesa y por qué cree que estaba justificado hacerlo. El confesor comulga con el Grial a través del poder de su propio manto mediante la meditación o la oración (normalmente alrededor de una hora de tiempo ininterrumpido). El Grial informa al confesor de la tarea que se debe llevar a cabo para que el suplicante se redima. Algunas veces, si el confesor cree que las acciones del suplicante están justificadas, lo ayudará a completar su tarea.</p><p>Una tarea de redención normalmente está relacionada de algún modo con el dogma al que se ha faltado. Aquí tienes algunos ejemplos de tareas de redención:</p><ul><li>Ayudar a una compatriota en una tarea específica («Ir a Carleon, encontrar a un hombre en el consistorio llamado Finnegan y ayudarle con su problema»).</li><li>Ayudar a alguien a que aprenda el valor de uno de los dogmas de la Gesa, incluso si no es un caballero («En Kirkwal hay un ladrón llamado Angus MacFierson. Encuéntralo y enséñale a vivir una vida honesta»).</li><li>Adquirir algo de valor para otro personaje y dárselo, sin condiciones («Una mujer en Donega llamada Fiona Brennan ha perdido su herencia ante un abogado extranjero confabulador. Ayúdala a recuperarla»).</li></ul><p>Un caballero cuyo manto está en peligro no puede actuar como confesor.</p>",
+    "infosource": "7º Mar (básico), p. 210",
+    "sorctype": "knight",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

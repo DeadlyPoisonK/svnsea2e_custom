@@ -1,0 +1,33 @@
+{
+  "folder": "3rpOB9OIylqQmszO",
+  "name": "Rebelde pérsico",
+  "type": "background",
+  "_id": "v5ubmc6NDSrpoIwP",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>¡Abajo el Sah!</p>",
+    "infosource": "El Imperio de la Media Luna, p. 157",
+    "used": false,
+    "quirk": "<p>Ganas 1 punto de héroe cuando le digas a alguien con autoridad exactamente lo que piensas de él, incluso cuando en realidad no deberías hacerlo.</p>",
+    "skills": [
+      "brawl",
+      "empathy",
+      "hide",
+      "intimidate",
+      "theft"
+    ],
+    "advantages": [
+      "Liberarse",
+      "Retrasar lo inevitable",
+      "Trabajo en equipo"
+    ],
+    "nation": "persis",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

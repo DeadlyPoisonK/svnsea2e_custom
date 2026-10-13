@@ -1,0 +1,21 @@
+{
+  "folder": "YTcrjQkDWcQTDfXz",
+  "name": "Miedo",
+  "type": "sorcery",
+  "_id": "1Rw2M9c2HjgNjtUV",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un abonsam con el Trato del Miedo intenta ocultar su verdadera naturaleza más que cualquier otro de su tipo. Su dominio completo sobre el miedo es tan poderoso que incluso su dasusuo se sorprende la primera vez que el abonsam revela su verdadero rostro. Él hace llorar incluso a los más valientes y hasta puede manipular el miedo de otros monstruos.</p><ul><li>Infundir verdadero terror en un solo objetivo, matándolo al instante.</li><li>Hasta el final de la escena, gana niveles de Miedo iguales a tu nivel de característica más alto.</li><li>Conocer el miedo más profundo y oscuro de un personaje en concreto.</li><li>Manipular el miedo de otra criatura, haciéndola desconfiar de ti. Hasta el final de la ronda, el objetivo debe gastar un Aumento adicional para realizar cualquier acción directa contra ti.</li><li>Hacer que cada criatura a menos de 15 metros de ti entre en pánico como si ocurriera algo horrible. Las reacciones individuales pueden variar, aunque todos, excepto los más resueltos, huyen aterrorizados.</li><li>Ignora la cualidad de monstruo Temible hasta el final de la escena.</li><li>Reducir en 1 el nivel de Miedo de todos los monstruos en la escena.</li></ul>",
+    "infosource": "Tierras de Fuego y Oro, p. 191",
+    "sorctype": "melbur",
+    "sorcdur": "none",
+    "sorccat": "patron",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "uITHHwDfWOeygkix",
+  "name": "La voix des sans-voix",
+  "type": "background",
+  "_id": "qjSe9sDgjcTSUfM7",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Hablas por aquellos que no pueden, ya sea porque son demasiado débiles o demasiado asustados. Eres la voz de los sin voz.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 204",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando declines una solución que te beneficie personalmente, pero que sería perjudicial para los que representas.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "intimidate",
+      "notice",
+      "scholarship"
+    ],
+    "advantages": [
+      "Crítica mordaz",
+      "Reputación"
+    ],
+    "nation": "montaigne",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

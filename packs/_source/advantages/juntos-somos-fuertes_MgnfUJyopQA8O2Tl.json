@@ -1,0 +1,23 @@
+{
+  "folder": "BsRq7OrECMmGFFR9",
+  "name": "Juntos somos fuertes",
+  "type": "advantage",
+  "_id": "MgnfUJyopQA8O2Tl",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para darle cualquiera de tus Aumentos a otro héroe que se encuentre en la misma escena, siempre y cuando te pueda ver o escuchar. Puedes darle todos los Aumentos que desees.</p><p><em>Coste: 5 (3 si eres sármata).</em></p>",
+    "infosource": "7º Mar (básico), p. 154",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 50000,
+  "ownership": {
+    "default": 0
+  }
+}

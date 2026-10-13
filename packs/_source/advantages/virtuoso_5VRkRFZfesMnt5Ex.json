@@ -1,0 +1,23 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Virtuoso",
+  "type": "advantage",
+  "_id": "5VRkRFZfesMnt5Ex",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige un tipo de interpretación específica, como cantar, tocar un instrumento concreto o bailar. Consigues 1 dado adicional cuando realizas un Riesgo de Interpretar usando dicho arte.</p>",
+    "infosource": "7º Mar (básico), p. 152",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 250000,
+  "ownership": {
+    "default": 0
+  }
+}

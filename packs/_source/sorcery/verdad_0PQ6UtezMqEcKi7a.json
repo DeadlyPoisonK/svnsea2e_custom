@@ -1,0 +1,22 @@
+{
+  "folder": "nmMwaFNJyu84HU6o",
+  "name": "Verdad",
+  "type": "sorcery",
+  "_id": "0PQ6UtezMqEcKi7a",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Un personaje expuesto a esta poción debe responder a las preguntas con la verdad. El número de preguntas que deben responderse de esta manera es igual a la Potencia de la poción.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 200 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

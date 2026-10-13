@@ -1,0 +1,22 @@
+{
+  "folder": "o690w5aSkrQJLvTs",
+  "name": "Reparar",
+  "type": "sorcery",
+  "_id": "DH4ARVrn7dayc0zQ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 2 de Furia si se activa de inmediato; genera 3 de Tranquilidad si te tomas una hora para activar este poder como un ritual. Devuelve un objeto mundano destruido a su forma original, siempre que tengas las piezas. El objeto recupera su estado impecable, incluso si estaba dañado o desgastado antes de ser destruido. La forma de las piezas es irrelevante; incluso una carta arrojada al fuego y reducida a cenizas puede repararse.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 196 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 106250,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

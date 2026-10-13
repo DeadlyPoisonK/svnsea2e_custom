@@ -1,0 +1,18 @@
+{
+  "folder": "9c8i6URJvxaqZFe5",
+  "name": "De Vore",
+  "type": "duelstyle",
+  "_id": "6rUE4NuTGFOLHYVp",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>En un pequeño pueblo de Les Sommets Blancs llamado Auzat hay un château llamado Mont de Vore, hogar del estilo de esgrima De Vore. El edificio, donde se refinan las habilidades de los estudiantes, se encuentra a la orilla del lago y lo vigilan montañas cubiertas de nieve. Un estudiante de De Vore aprende la postura adecuada y que todas las cosas de Montaigne son superiores. Se dice que los espadachines de De Vore parecen estatuas, con la cabeza bien alta, y que solo se permiten ligeros movimientos durante el combate. Es el epítome de la eficacia. Lo que más llama la atención es la mano de la espada, que sostiene el florete más alto de lo que sería cómodo y paralelo al suelo. Un estudiante de este estilo asegura que al hacerlo así «eleva el listón» de la esgrima.</p><p>Mont de Vore entrega a todos los que se gradúan una fusta para recordarle cómo mantener la postura correcta y el protocolo. Monsieur Riche la Barre es el actual director de Mont de Vore. Carismático, La Barre perteneció a la Garde Lumineuse y perdió el ojo izquierdo protegiendo al l’Empereur de un asesino, al que despachó mientras él estaba sangrando y cegado. Su época como aclamado Garde Lumineuse llegó a su final con un escándalo en el que estaba implicada una de las hijas de l’Empereur. Su trayectoria le salvó la vida y se fue a un retiro tranquilo en las montañas, al lugar donde él mismo aprendió De Vore, donde decidió pasar sus últimos años enseñando a la siguiente generación el estilo que tan bien le había servido.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 148",
+    "bonus": "<p><strong>De Vore Politesse.</strong></p><p>Cuando manejes un florete en tu mano principal, obtienes una maniobra especial llamada De Vore Politesse. Cuando realices esta maniobra, gasta todos tus Aumentos y elige a un personaje que esté en la misma escena (puedes ser tú mismo). De Vore Politesse evita todas las Heridas infligidas a dicho personaje (incluso las Heridas que serían imposibles de evitar, como las procedentes de una maniobra de Embestida o la Herida Dramática automática procedente de un disparo con un arma de fuego). Las Heridas que se eviten deben ser infligidas por otro personaje; el daño provocado por el entorno o las Consecuencias (como las explosiones o el disparo de un cañón) no pueden evitarse con De Vore Politesse. Un héroe puede realizar De Vore Politesse una vez por ronda.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

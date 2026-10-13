@@ -1,0 +1,17 @@
+{
+  "folder": "cM8cp2HgmMlzFy4Z",
+  "name": "Resistente",
+  "type": "virtue",
+  "_id": "WXeEKlhjXXYKdP2A",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando recibas tu cuarta Herida Dramática. Durante el resto de la ronda, puedes actuar con normalidad y no se te considera Indefenso.</p>",
+    "infosource": "La montaña · El Nuevo Mundo, p. 168"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "hOdOhSiwrSC0WDrV",
+  "name": "Omideh, Ángel de la Esperanza",
+  "type": "sorcery",
+  "_id": "Vjv4cywp2ZPJJKiY",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Omideh, el Ángel de la Esperanza, es la más joven de los ahura. No importa la oscuridad que los rodee o cuán grave sea la circunstancia, Omideh proporciona un faro de luz para todos sus hermanos. Se dice que incluso la firme Dawna recurre a su hermana menor en los momentos más difíciles.</p><p>A los usuarios de Khahesh-ahura empoderados por Omideh se les otorgan alas de flores. Estas alas pueden tomar la forma de ramas de árboles, pétalos de flores o enredaderas que cubren la espalda del hechicero.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 177",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

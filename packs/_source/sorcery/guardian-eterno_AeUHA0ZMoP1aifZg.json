@@ -1,0 +1,21 @@
+{
+  "folder": "MAYrwPAf96Az0kIK",
+  "name": "Guardián Eterno",
+  "type": "sorcery",
+  "_id": "AeUHA0ZMoP1aifZg",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Como la patrona de los muertos, G&eacute; tambi&eacute;n es responsable<br>de sus restos terrenales. Mientras G&eacute; lo posea, el<br>s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe para proteger a un<br>cad&aacute;ver de los efectos de una Hechicer&iacute;a, incluyendo Kap<br>S&egrave;vi. Por ejemplo, los cuerpos tocados por el Guardi&aacute;n<br>Eterno no pueden alzarse como espectros mediante<br>Hexenwerk y los lwa no pueden comunicarse con ellos.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

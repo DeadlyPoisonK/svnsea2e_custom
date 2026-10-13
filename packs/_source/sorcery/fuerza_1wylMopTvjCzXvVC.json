@@ -1,0 +1,22 @@
+{
+  "folder": "zsCxGJcpdbI5Sxwj",
+  "name": "Fuerza",
+  "type": "sorcery",
+  "_id": "1wylMopTvjCzXvVC",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Tu cuerpo se hincha con músculos adicionales, lo que te permite realizar proezas de gran fuerza.</p><p>Genera 2 de Plaga. Hasta el final de la ronda, cada vez que causes Heridas con un arma cuerpo a cuerpo o con tus manos desnudas, mueve a un objetivo a través de un Puente a una Zona diferente.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 203 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "TQzJbDDBg4ZBhZyS",
+  "name": "Noción del tiempo",
+  "type": "advantage",
+  "_id": "hpAF6urgvIV5DVUS",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Siempre sabes qué hora es. Sabes cuánto falta hasta el siguiente amanecer o puesta de sol con menos de un minuto de margen de error.</p>",
+    "infosource": "7º Mar (básico), p. 148",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  }
+}

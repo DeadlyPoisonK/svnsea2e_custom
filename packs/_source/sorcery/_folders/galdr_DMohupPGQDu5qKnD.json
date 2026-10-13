@@ -1,0 +1,15 @@
+{
+  "name": "Galdr",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "DMohupPGQDu5qKnD",
+  "description": "",
+  "sort": 0,
+  "color": "#20ac90",
+  "flags": {
+    "scene-packer": {
+      "hash": "dc14a2affaf5ac22b42362c9d45ceacbbf7f2437"
+    }
+  }
+}

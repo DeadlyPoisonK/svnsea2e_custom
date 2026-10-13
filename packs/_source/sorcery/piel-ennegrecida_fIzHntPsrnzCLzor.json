@@ -1,0 +1,21 @@
+{
+  "folder": "SmDxtX5jHsO7PhTE",
+  "name": "Piel ennegrecida",
+  "type": "sorcery",
+  "_id": "fIzHntPsrnzCLzor",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El calor de la forja ha cubierto el cuerpo de Badagris de<br>callos, lo que la ayuda a tolerar el calor de los fuegos y a<br>permanecer inalterable mientras se encuentra en su puesto.<br>Mientras Badagris lo posea, el s&egrave;vit&egrave; puede gastar 1 punto<br>de h&eacute;roe para soportar cualquier fuego o llama. El s&egrave;vit&egrave;<br>no recibe ning&uacute;n da&ntilde;o de ninguna fuente de calor.</p>",
+    "infosource": "Naciones Piratas, p. 161",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

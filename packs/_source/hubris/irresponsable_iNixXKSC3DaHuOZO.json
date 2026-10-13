@@ -1,0 +1,17 @@
+{
+  "folder": "mISBGS3k1JGW0JWu",
+  "name": "Irresponsable",
+  "type": "hubris",
+  "_id": "iNixXKSC3DaHuOZO",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Gana un punto de héroe cuando eludas tus responsabilidades o rompas una promesa, y las consecuencias vuelvan para atormentarte.</p>",
+    "infosource": "Delfín · Khitai, p. 126 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

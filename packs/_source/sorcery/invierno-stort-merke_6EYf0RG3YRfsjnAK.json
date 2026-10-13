@@ -1,0 +1,22 @@
+{
+  "folder": "H8YLX4cFP6DRzAqH",
+  "name": "Invierno Stort Merke",
+  "type": "sorcery",
+  "_id": "6EYf0RG3YRfsjnAK",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Elige una Oportunidad de la escena en la que estés. Dicha Oportunidad es destruida, lo que significa que nadie puede activarla.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 192",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

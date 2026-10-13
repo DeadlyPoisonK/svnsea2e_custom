@@ -1,0 +1,23 @@
+{
+  "folder": "o08gPvZy5dFhOVGH",
+  "name": "Mirada altiva",
+  "type": "advantage",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para utilizar tu autoridad (real o supuesta) y hacer que otro personaje te deje solo, salga de tu camino o se olvide de tus acciones considerándolas poco más que la rabieta de un noble altivo.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 209",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "VeoJ4c49FNsdv8pI",
+  "sort": 5000000,
+  "ownership": {
+    "default": 0
+  }
+}

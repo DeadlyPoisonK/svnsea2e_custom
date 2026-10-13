@@ -1,0 +1,21 @@
+{
+  "folder": "vVtRutUHi8yOY4RA",
+  "name": "Dawna",
+  "type": "sorcery",
+  "_id": "5Odz9l1JBRIdkM3E",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este Legado cuando cuentes más Aumentos que cada uno de tus adversarios en una escena. Tú y cada aliado en la escena actual obtenéis un Aumento adicional.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 179",
+    "sorctype": "khahesh",
+    "sorcdur": "none",
+    "sorccat": "ahura",
+    "sorcsubcat": "rare"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

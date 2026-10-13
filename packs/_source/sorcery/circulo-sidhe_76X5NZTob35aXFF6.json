@@ -1,0 +1,22 @@
+{
+  "folder": "pRnQODnoY7cWX42i",
+  "name": "Círculo Sidhe",
+  "type": "sorcery",
+  "_id": "76X5NZTob35aXFF6",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este Glamour para crear un círculo de 3 metros de diámetro, cuyo centro seas tú, que los sidhe no pueden traspasar. Se alejan de ti si están dentro del círculo cuando activas este poder y no pueden usar su magia sobre ti mientras dure el efecto. Puedes mantener el efecto durante tantos anocheceres como niveles tengas en este Glamour. Si tú o cualquier persona sale del círculo, dejará de contar con la protección de este Glamour y se volverá inmediatamente vulnerable a los sidhe.</p>",
+    "infosource": "7º Mar (básico), p. 216",
+    "sorctype": "knight",
+    "sorccat": "glamour",
+    "sorcsubcat": "major",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

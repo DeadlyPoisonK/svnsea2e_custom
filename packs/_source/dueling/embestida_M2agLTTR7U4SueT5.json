@@ -1,0 +1,18 @@
+{
+  "folder": "lsFFlvwOxj6nD71t",
+  "name": "Embestida",
+  "type": "duelstyle",
+  "_id": "M2agLTTR7U4SueT5",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Una maniobra temeraria, y a veces desesperada, pero capaz de acabar con un conflicto inmediatamente. Gasta todos tus Aumentos cuando realices Embestida para infligir un número de Heridas igual a tu nivel en Armas más los Aumentos que gastes. Estas Heridas no se pueden evitar ni prevenir.</p>",
+    "infosource": "7º Mar (básico), p. 235",
+    "bonus": ""
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

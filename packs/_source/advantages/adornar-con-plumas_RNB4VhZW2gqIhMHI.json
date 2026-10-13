@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "Adornar con plumas",
+  "type": "advantage",
+  "_id": "RNB4VhZW2gqIhMHI",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>Debes tener la ventaja «Objeto distintivo».</strong></p><p>Has aprendido a mejorar tu Objeto distintivo a través de materiales raros y místicos, tales como plumas bendecidas por los dioses u obsidiana encantada. Cuando compres esta ventaja, elige una de las siguientes habilidades. Siempre puedes gastar 1 punto de héroe para usar una habilidad escogida de la misma manera que en las habilidades que se ofrecen en la ventaja de Objeto distintivo.</p><ul><li>Evita que las Heridas se reduzcan por debajo de una cantidad igual a tu característica más alta, cuando uses el Objeto distintivo.</li><li>Evita que un número de Heridas igual a tu característica más alta se inflijan a otro personaje, cuando uses el Objeto distintivo.</li><li>Ejerce Presión a una cantidad de objetivos de la escena actual igual a tu característica más alta, cuando uses el Objeto distintivo.</li><li>Ignora un número de niveles de Miedo igual a tu característica más alta, cuando uses el Objeto distintivo.</li></ul><p>Un héroe puede comprar esta ventaja varias veces. Cada vez que lo haga, elige una habilidad distinta de Adornar con plumas.</p><p><em>Solo nahuacanos.</em></p>",
+    "infosource": "El Nuevo Mundo, p. 165",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 4300000,
+  "ownership": {
+    "default": 0
+  }
+}

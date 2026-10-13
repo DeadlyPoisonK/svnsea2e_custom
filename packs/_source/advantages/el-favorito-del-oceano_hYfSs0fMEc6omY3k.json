@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "El favorito del océano",
+  "type": "advantage",
+  "_id": "hYfSs0fMEc6omY3k",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p><strong>Debes tener la ventaja «Casado con el mar».</strong></p><p>Mientras seas el capitán de tu barco:</p><ul><li>Puedes gastar 1 punto de héroe para reorganizar a tus brigadas antes de tirar los dados al principio de una ronda.</li><li>Gastar 1 punto de héroe para ayudar a un héroe que se encuentra a bordo de tu barco le concede 4 dados adicionales en lugar de 3.</li><li>Consigues 1 dado adicional para cualquier Riesgo que realices a bordo de tu barco.</li></ul>",
+    "infosource": "Naciones Piratas, p. 151",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

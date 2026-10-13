@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Ojos de fantasma",
+  "type": "sorcery",
+  "_id": "emPqvoAA2MwiGPzQ",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Ojos arrancados de un muerto reciente, mezclados con agua bendita y mandrágora, y luego untados en el contorno de los ojos. Durante una única escena, este ungüento te permitirá ver espíritus, fantasmas y otros monstruos similares que normalmente serían invisibles.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 208",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 150000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

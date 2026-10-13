@@ -1,0 +1,15 @@
+{
+  "name": "Numa",
+  "sorting": "a",
+  "folder": "HXQ7qsrdETCoDfku",
+  "type": "Item",
+  "_id": "CXYgWftEL3IgByAi",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "a704e23a6d7c261380172684e021d890d546cc67"
+    }
+  }
+}

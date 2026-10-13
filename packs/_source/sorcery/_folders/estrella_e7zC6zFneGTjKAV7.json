@@ -1,0 +1,15 @@
+{
+  "name": "Estrella",
+  "sorting": "a",
+  "folder": "DMohupPGQDu5qKnD",
+  "type": "Item",
+  "_id": "e7zC6zFneGTjKAV7",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "50e16a1fcf95d35326ff8c6f018c7a709e02fe02"
+    }
+  }
+}

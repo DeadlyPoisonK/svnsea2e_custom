@@ -1,0 +1,21 @@
+{
+  "folder": "YTcrjQkDWcQTDfXz",
+  "name": "Corrupción",
+  "type": "sorcery",
+  "_id": "Kgl0PfUtEEyfkIkV",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Una abonsam con el Trato de la Corrupción a menudo se aparece como una ifricana, pero una claramente enfermiza. Su piel puede estar pudriéndose, puede estar sufriendo de una tos dolorosa o puede tener insectos y alimañas alrededor de su cuerpo. Tiene dominio sobre las enfermedades y puede crear una de naturaleza mágica y única cuya cura esté fuera de la habilidad de cualquier sanador mundano.</p><ul><li>Infectar a una criatura con una plaga mágica. Al comienzo de cada día, el objetivo sufre 1 Herida Dramática, y cualquiera que entre en contacto físico directo con el objetivo contrae la enfermedad (y la transmite de manera similar). Debido a su naturaleza mágica, este mal no se puede curar a través de medios mundanos.</li><li>Destruir una banda de matones en la escena actual. El dasusuo cura una cantidad de Heridas iguales a la Fuerza de la banda de matones destruida.</li><li>Infectar a un objetivo con una enfermedad con la que estás familiarizado. Esta enfermedad es mundana y se ve afectada por cualquier tratamiento normalmente efectivo.</li><li>Curar a una criatura de cualquier enfermedad de forma inmediata. Esa criatura se vuelve inmune a esa enfermedad hasta que vuelvas a usar este poder, momento en el que se vuelve susceptible una vez más (pero no contrae la enfermedad de manera automática).</li><li>Causar 1 Herida a todas las criaturas en la es cena actual.</li><li>Profanar un edificio o ubicación, haciendo que cualquier fiel a una deidad (como un sacerdote o un verdadero creyente) abandone el área lo más rápido posible. Los afectados no entrarán en el área por voluntad propia a menos que deban hacerlo por circunstancias extremas, como huir de un incendio.</li><li>Hacer que un cadáver u otro material inanimado que antes estuviera vivo (como la madera) se pudra y se convierta en polvo.</li></ul>",
+    "infosource": "Tierras de Fuego y Oro, p. 190",
+    "sorctype": "melbur",
+    "sorcdur": "none",
+    "sorccat": "patron",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

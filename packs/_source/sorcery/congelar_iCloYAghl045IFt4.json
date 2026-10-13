@@ -1,0 +1,22 @@
+{
+  "folder": "wmUeO7cH0sKrVnf8",
+  "name": "Congelar",
+  "type": "sorcery",
+  "_id": "iCloYAghl045IFt4",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Tu contacto hace que las víctimas se queden inmóviles en el sitio, ya sea porque sus músculos se agarrotan involuntariamente, porque quedan envueltas en hielo mágico o por algún otro efecto. Esto crea una Complicación en la escena actual: el personaje afectado no puede realizar ninguna acción hasta que la Complicación sea superada, lo que requiere tantos Aumentos como tu Discordia. Los personajes congelados de este modo aún pueden tirar al comienzo de una ronda (progresando así para liberarse si lo desean) y siguen siendo conscientes de su entorno. Mientras está congelado, el personaje no puede sufrir daños y no sufre Heridas de ninguna fuente. Luego, tu Discordia pasa a ser 0.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 207 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

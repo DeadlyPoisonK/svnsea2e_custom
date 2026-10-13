@@ -1,0 +1,21 @@
+{
+  "folder": "QuihQ8WMuSlbOpw4",
+  "name": "La Voz Perdida",
+  "type": "sorcery",
+  "_id": "Dl0T03nBtbV260Pk",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Aunque Papa Ahron nunca habla por s&iacute; mismo, habla por<br>aquellos que no pueden. Mientras Papa Ahron lo posea,<br>el s&egrave;vit&egrave; puede gastar 1 punto de h&eacute;roe para hablar como<br>representante de cualquiera, vivo o muerto. El s&egrave;vit&egrave; debe<br>ser capaz de tocar el cuerpo del objetivo o algo de much&iacute;simo<br>valor personal que le pertenezca. Debe haber otro<br>participante que se una a la conversaci&oacute;n, ya que el s&egrave;vit&egrave;<br>no puede hablar consigo mismo. Esto no le otorga al s&egrave;vit&egrave;<br>ning&uacute;n conocimiento sobre lo que desea el objetivo, solo le<br>permite actuar como un recipiente mediante el cual puede<br>hablar la otra persona.</p>",
+    "infosource": "Naciones Piratas, p. 164",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "gros",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

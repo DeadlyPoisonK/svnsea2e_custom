@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Rápido",
+  "type": "monsterquality",
+  "_id": "Vn01AfQD9YGLsxkL",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Más rápido que una bala… literalmente. Esta criatura puede moverse a tal velocidad que el ojo humano no la puede seguir, y mucho menos reaccionar a tiempo. Gasta 1 punto de peligro para realizar una acción de manera inmediata.</p>",
+    "infosource": "7º Mar (básico), p. 198",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

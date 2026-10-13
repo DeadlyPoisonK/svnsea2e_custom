@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Cuna aristocrática",
+  "type": "advantage",
+  "_id": "uohR57zYLRUP5vkT",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Estás acostumbrado a frecuentar las más altas cortes nobles de Khitai. Colabora con el DJ para determinar la naturaleza de tu familiaridad, ya sea por linaje o por instrucción formal. Cuando realizas un Riesgo usando Apuntar, Convencer, Protocolo o Tentar como tu Enfoque y gastas un punto de héroe (para obtener un dado adicional, ayudar a un aliado en la misma ronda o hacer que tus 10 exploten), puedes volver a tirar cualquier dado cuyo resultado esté por debajo de tus rangos en esa habilidad. Debes conservar el nuevo resultado, incluso si es menor.</p>",
+    "infosource": "Khitai, p. 120 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

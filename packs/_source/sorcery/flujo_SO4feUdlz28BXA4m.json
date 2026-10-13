@@ -1,0 +1,22 @@
+{
+  "folder": "JCGNFduWcmx1JNa2",
+  "name": "Flujo",
+  "type": "sorcery",
+  "_id": "SO4feUdlz28BXA4m",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 2 de Furia. Los espíritus facilitan tu desplazamiento entre ubicaciones. Mueve a un personaje de tu Zona actual a otra Zona conectada por un Puente.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 197 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

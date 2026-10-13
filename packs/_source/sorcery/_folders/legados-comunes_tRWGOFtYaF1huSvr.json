@@ -1,0 +1,15 @@
+{
+  "name": "Legados comunes",
+  "sorting": "a",
+  "folder": "7YB3a6kzBCVgRM2q",
+  "type": "Item",
+  "_id": "tRWGOFtYaF1huSvr",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "2fbe1ecf512035cf3c6de0fd5bd4beb57f14dc22"
+    }
+  }
+}

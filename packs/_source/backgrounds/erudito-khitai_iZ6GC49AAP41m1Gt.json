@@ -1,0 +1,31 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Erudito (Khitai)",
+  "type": "background",
+  "_id": "iZ6GC49AAP41m1Gt",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Sabiduría</p><p><em>Habilidades de Khitai sin equivalente en la hoja: Protocolo.</em></p>",
+    "infosource": "Khitai, p. 107 (traducción no oficial)",
+    "quirk": "<p>Gana un punto de héroe cuando te pongas en peligro en pos del conocimiento.</p>",
+    "skills": [
+      "empathy",
+      "ride",
+      "scholarship",
+      "tempt"
+    ],
+    "advantages": [
+      "El cerebro del grupo (Khitai)",
+      "Sonrisa encantadora (Khitai)"
+    ],
+    "nation": "none",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

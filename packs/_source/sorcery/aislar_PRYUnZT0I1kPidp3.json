@@ -1,0 +1,21 @@
+{
+  "folder": "COvFX4cO6Vx1BswB",
+  "name": "Aislar",
+  "type": "sorcery",
+  "_id": "PRYUnZT0I1kPidp3",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Para usar esta Manifestación durante una secuencia de Acción, debes gastar un Aumento además del punto de héroe normal.</p><p>Toca una criatura no muerta y no podrá moverse de su ubicación actual hasta que la liberes o hasta el final de la escena. Una criatura afectada por esta Manifestación solo puede infligir Heridas a otro personaje que pueda alcanzar (como un duelista que esté en combate con ella o si la criatura tiene alguna forma de ataque a distancia).</p><p>Cuando activas esta Manifestación, un destello de luz sale de tu mano o de tus ojos y golpea a tu víctima, envolviéndola en cadenas espectrales y ataduras mientras la Manifestación permanece activa.</p>",
+    "infosource": "El Nuevo Mundo, p. 178",
+    "sorctype": "wanuy",
+    "sorcdur": "none",
+    "sorccat": "manifestation",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

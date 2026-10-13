@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Acepta tu destino (Khitai)",
+  "type": "advantage",
+  "_id": "puKxyRZiViAWBuC6",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Durante una secuencia de acción, puedes gastar un punto de héroe para actuar antes que los villanos en cada Aumento hasta el final de la ronda.</p>",
+    "infosource": "Khitai, p. 122 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 4,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,17 @@
+{
+  "folder": "ZP9JMCrX0jaFLHs0",
+  "name": "Tenaz",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando te vayan a matar. Sobrevives gracias a algún giro del destino o circunstancia, pero se te elimina de la escena por la fuerza y de manera inmediata.</p>",
+    "infosource": "El ahogado · Naciones Piratas, p. 154"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "R56HS1dmPZz7z38J",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

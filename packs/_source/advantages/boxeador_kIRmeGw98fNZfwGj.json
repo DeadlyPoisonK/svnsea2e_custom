@@ -1,0 +1,23 @@
+{
+  "name": "Boxeador",
+  "type": "advantage",
+  "_id": "kIRmeGw98fNZfwGj",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Ganas 1 dado adicional cuando realices un Riesgo de Pelear para dar un puñetazo, una patada, un cabezazo o para herir de cualquier otro modo a un personaje usando únicamente tu cuerpo.</p>",
+    "infosource": "7º Mar (básico), p. 151",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "folder": "bxjpDobMNO20CU8R",
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

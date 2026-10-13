@@ -1,0 +1,18 @@
+{
+  "folder": "e1trSwu912DnmVrS",
+  "name": "Badayah",
+  "type": "duelstyle",
+  "_id": "9rYsDHY7H5iKMFmT",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Los Badayah, una pequeña tribu nómada que se encuentra en el 8º Mar, son una de las tribus más peligrosas que hay entre las dunas. Sus guerreros son maestros en las tácticas de emboscada, y las historias dicen que pueden acechar bajo las arenas durante días hasta que aparece un objetivo. Los Badayah son también los únicos maestros conocidos del estilo de esgrima Badayah. Cada esgrimista entrenada en Badayah posee un peshñal, su arma principal, entre sus otros armamentos. Estos cuchillos tienen hojas curvadas y dentadas que se mantienen afiladas. Las Heridas infligidas por los esgrimistas Badayah son extremadamente dolorosas, y la cantidad de daño infligido a menudo requiere la atención de un médico capacitado para curarse por completo.</p><p>Comúnmente se dice que la señal de un desacuerdo de Badayah que escala a la violencia ocurre al primer peshñal desenvainado. Los Badayah creen que un peshñal desenvainado no puede envainarse sin derramar sangre, y estos duelos suelen ser a muerte. Los esgrimistas Badayah con más cicatrices son los guerreros más talentosos o conflictivos de la tribu; con frecuencia, ambas cosas a la vez.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 204",
+    "bonus": "<p><strong>Laceración de Badayah.</strong></p><p>Cuando empuñes un arma ligera (una daga, un cuchillo, una espada corta u otra arma similar) en una o ambas manos, puedes realizar una maniobra especial llamada Laceración de Badayah. Cuando realizas una Laceración de Badayah, infliges una Herida y dejas una llaga irregular y sangrante. Cada vez que el objetivo realiza una acción en esta ronda, sufre una Herida adicional. El objetivo puede gastar tantos Aumentos como niveles tengas en Armas para finalizar este efecto. Puedes realizar la Laceración de Badayah solo una vez por ronda.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  }
+}

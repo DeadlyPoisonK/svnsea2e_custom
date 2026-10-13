@@ -1,0 +1,32 @@
+{
+  "folder": "NUOxMdBqWbDQh6uy",
+  "name": "Fuera de la rueda",
+  "type": "background",
+  "_id": "iO8TxvmgHP8fqb6u",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Compasión</p>",
+    "quirk": "<p>Gana un punto de héroe cuando te pongas en peligro para enmendar tus errores o fracasos del pasado.</p>",
+    "skills": [
+      "brawl",
+      "hide",
+      "notice",
+      "tempt",
+      "theft"
+    ],
+    "advantages": [
+      "Seguid sin mí (Khitai)",
+      "Callejero (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 109 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

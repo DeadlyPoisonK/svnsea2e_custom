@@ -1,0 +1,32 @@
+{
+  "folder": "pz1cTXqfxYJssm9B",
+  "name": "Kangam",
+  "type": "background",
+  "_id": "16mCrj0QqWx7R0tV",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Mbey confía en que seas sabio. No defraudes a tu pueblo.</p>",
+    "used": false,
+    "quirk": "<p>Gana 1 punto de héroe cuando tu insistencia en liderar con el ejemplo te meta en problemas.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "notice",
+      "perform",
+      "ride"
+    ],
+    "advantages": [
+      "Luz en la oscuridad",
+      "Espíritu valiente"
+    ],
+    "active": true,
+    "infosource": "Tierras de Fuego y Oro, p. 176",
+    "nation": "mbey"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

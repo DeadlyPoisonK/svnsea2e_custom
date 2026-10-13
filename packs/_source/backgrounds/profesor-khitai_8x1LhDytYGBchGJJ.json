@@ -1,0 +1,31 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Profesor (Khitai)",
+  "type": "background",
+  "_id": "8x1LhDytYGBchGJJ",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Sabiduría</p>",
+    "quirk": "<p>Gana un punto de héroe cuando uses los conocimientos de un texto oscuro para resolver un problema complicado.</p>",
+    "skills": [
+      "convince",
+      "notice",
+      "perform",
+      "scholarship",
+      "warfare"
+    ],
+    "advantages": [
+      "Predicar con el ejemplo (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 108 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "vxu1cHRUsVi9hzod",
+  "name": "Polvo negro castellano",
+  "type": "advantage",
+  "_id": "pB9re5s6Cq2nNypW",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando a una unidad con este Mérito se le ordena tomar la Estrategia Listos… Apuntad… ¡Fuego!, sus 10 explotan. Los jugadores, al frente de un ejército de rebeldes pérsicos contra el Ejército Nacional Pérsico, han comenzado un ataque furtivo contra la fuerza mayor. Al mando de 1000 soldados, esperan obtener suficiente ventaja por medio del elemento de la sorpresa para derrotar al ejército imperial de 2000 cabezas que tienen ante ellos.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 196",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

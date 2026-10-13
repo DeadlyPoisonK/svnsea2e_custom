@@ -1,0 +1,22 @@
+{
+  "folder": "MPxL1iJv9JWQs4La",
+  "name": "Moderación",
+  "type": "sorcery",
+  "_id": "8anGrLg0zIsYe4k4",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p><strong>Límite: </strong>Todo lo que hagas debes hacerlo con moderación y, si te excedes, pierdes tus dones.</p><p><strong>Penitencia: </strong>Debes comprometerte a realizar ayuno, sin darte el gusto de realizar tu actividad favorita, durante un mes.</p>",
+    "infosource": "7º Mar (básico), p. 218",
+    "sorctype": "darm",
+    "sorccat": "restriction",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

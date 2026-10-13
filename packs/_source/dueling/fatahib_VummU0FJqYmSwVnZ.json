@@ -1,0 +1,18 @@
+{
+  "folder": "e1trSwu912DnmVrS",
+  "name": "Fa’tahib",
+  "type": "duelstyle",
+  "_id": "VummU0FJqYmSwVnZ",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Fa’tahib ha sido durante generaciones el estilo de esgrima tradicional de la élite dentro del Imperio de la Media Luna. Si bien originalmente se pensó como un verdadero estilo de combate, a lo largo de los años, Fa’tahib se ha convertido en un arte escénico. Las exhibiciones que usan Fa’tahib son comunes en las grandes celebraciones, donde un artista usa el tradicional asaaya (un palo pesado de aproximadamente un metro veinte de largo) para demostrar su dominio de la forma a través de una danza coreografiada con música. Este esgrimista teje su asaaya en patrones complejos, nunca golpeando realmente a su compañero.</p><p>Si bien la demostración de Fa’tahib, similar a una danza, es realizada tradicionalmente por personas con la fuerza bruta para empuñar un asaaya, se ha adoptado una nueva versión más acrobática, que es igual de popular. Esta nueva versión de Fa’tahib a menudo se realiza simultáneamente con una actuación tradicional, pero requiere que el bailarín sea ágil en lugar de fuerte. Mientras que el mensaje subyacente de una actuación tradicional de Fa’tahib es «¡Tengo un arma y sé cómo usarla!», el nuevo baile dice: «No eres tan impresionante, ¡yo también puedo bailar con un palo!».</p>",
+    "infosource": "El Imperio de la Media Luna, p. 204",
+    "bonus": "<p><strong>Paso Fa’tahib.</strong></p><p>Cuando empuñas un arma contundente en ambas manos (típicamente un asaaya pero a veces un garrote o una maza), puedes realizar una maniobra especial llamada Paso Fa’tahib. Esto evita una Herida, y seleccionas una maniobra que puedes realizar en tu próxima acción. Si realizas esa maniobra, aumenta el número de Heridas infligidas o evitadas en una cantidad igual a tu nivel en Interpretar. Un héroe solo puede realizar el Paso Fa’tahib una vez por ronda.</p>"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Polvo de fuga",
+  "type": "sorcery",
+  "_id": "Y3tcqTJGtrfBvaHG",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Se cuece un cuerno de demonio, hongos y harina de hueso, que luego se muele hasta obtener un polvo al que se le añade té. Cuando una persona se lo beba olvidará todo lo que ha ocurrido durante el último día. El polvo de fuga es muy difícil de elaborar, ya que los cuernos de demonio no se suelen encontrar tirados por ahí. Para que funcione se requiere una gran cantidad de té.</p>",
+    "used": false,
+    "infosource": "Naciones de Théah vol. 2, p. 53",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "RviIM3HnTInorSgf",
+  "name": "Calor",
+  "type": "sorcery",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El fuego es luz, calor, conocimiento. Es muchas cosas y habría muy pocas sin él. Los Talismanes de Calor siempre se cocinan en hornos y hogares, atrapando el calor dentro. <em>Talismán: </em>Cuando se activa un Talismán de Calor, el portador no tendrá frío, ni por las nieves del norte ni por las noches del desierto, ni por efectos mágicos siquiera. El Talismán mantiene a su portador tan caliente como si estuviera cerca de una hoguera. Este efecto dura una escena o 24 horas.</p><p><em>Inscripción: </em>Una Inscripción de Calor en un objeto o estructura lo calienta durante hasta 24 horas, a la temperatura que elija el practicante de Heka. A lo largo de los siglos, esta ha sido utilizada tanto para actos de gran compasión como para acciones de enorme crueldad.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 187",
+    "sorctype": "heka",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "B3j7JZ0X2QUHnKut",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

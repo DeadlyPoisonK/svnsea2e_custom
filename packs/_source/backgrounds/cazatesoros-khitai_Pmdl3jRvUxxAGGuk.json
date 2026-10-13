@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Cazatesoros (Khitai)",
+  "type": "background",
+  "_id": "Pmdl3jRvUxxAGGuk",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Alegría</p>",
+    "quirk": "<p>Gana un punto de héroe cuando tu avidez por baratijas raras, artefactos perdidos o tesoros similares te meta en problemas.</p>",
+    "skills": [
+      "aim",
+      "athletics",
+      "hide",
+      "scholarship",
+      "theft"
+    ],
+    "advantages": [
+      "Más allá de la vista (Khitai)",
+      "Nervios de acero (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 108 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

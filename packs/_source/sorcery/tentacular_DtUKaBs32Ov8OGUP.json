@@ -1,0 +1,18 @@
+{
+  "folder": "kVhaipf31zmAe5cy",
+  "name": "Tentacular",
+  "type": "monsterquality",
+  "_id": "DtUKaBs32Ov8OGUP",
+  "img": "systems/svnsea2e/icons/monsterquality.jpg",
+  "system": {
+    "description": "<p>Quizás sea un pulpo, un calamar gigante o una criatura más «normal» que ha sufrido en manos de la magia negra o de experimentos científicos prohibidos. Esta criatura tiene unos poderosos tentáculos que la convierten en una mayor amenaza de lo que sería de otro modo; tiene 1 tentáculo por cada 5 puntos de Fuerza. Los tentáculos siempre tienen Fuerza 5 y se pueden destruir infligiendo una sola Herida Dramática.</p>",
+    "infosource": "7º Mar (básico), p. 198",
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

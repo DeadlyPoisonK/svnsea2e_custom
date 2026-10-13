@@ -1,0 +1,22 @@
+{
+  "folder": "piYhdrGNp0ZAVmW9",
+  "name": "Destruir",
+  "type": "sorcery",
+  "_id": "NENUVNxCTvGFIzmt",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Vaciar el contenido de esta poción sobre un objeto mundano hace que se consuma por corrosión. Esta poción puede destruir tantos metros cúbicos de material como su Potencia.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 199 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

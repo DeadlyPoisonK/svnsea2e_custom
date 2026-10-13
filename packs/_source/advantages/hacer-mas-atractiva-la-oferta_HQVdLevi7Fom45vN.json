@@ -1,0 +1,24 @@
+{
+  "folder": "I9m8PDxajde5dlgb",
+  "name": "Hacer más atractiva la oferta",
+  "type": "advantage",
+  "_id": "HQVdLevi7Fom45vN",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 de Riqueza para sobornar a un personaje durante una secuencia de acción o durante una secuencia dramática sin gastar 1 Aumento. Puedes hacerlo una vez por secuencia.</p>",
+    "infosource": "Naciones Piratas, p. 151",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

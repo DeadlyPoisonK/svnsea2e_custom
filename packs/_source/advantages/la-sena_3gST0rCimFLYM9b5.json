@@ -1,0 +1,23 @@
+{
+  "folder": "RG9SbRc6HWTwmtGu",
+  "name": "La seña",
+  "type": "advantage",
+  "_id": "3gST0rCimFLYM9b5",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes transmitir un mensaje de una sola palabra (como «peligro», «ayuda», «ir» o «huir») a cualquier aliado que pueda escucharlo o verlo a través de un sonido o movimiento inocuo que otros no entenderán, y que a menudo incluso parece perfectamente normal. La mayoría de las veces se trata de cantos de pájaros, gritos de animales o gestos sutiles.</p>",
+    "infosource": "El Nuevo Mundo, p. 165",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

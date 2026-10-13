@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Sirviente (Khitai)",
+  "type": "background",
+  "_id": "1by4Li4L47oDJI8s",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Lealtad</p>",
+    "quirk": "<p>Gana un punto de héroe cada vez que conviertas la mala decisión de un amigo en una victoria decisiva para esa persona.</p>",
+    "skills": [
+      "aim",
+      "hide",
+      "notice",
+      "theft",
+      "weaponry"
+    ],
+    "advantages": [
+      "Un inocente malentendido (Khitai)",
+      "Voluntad indómita (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 107 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

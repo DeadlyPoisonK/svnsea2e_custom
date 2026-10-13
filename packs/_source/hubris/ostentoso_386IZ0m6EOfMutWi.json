@@ -1,0 +1,17 @@
+{
+  "folder": "mISBGS3k1JGW0JWu",
+  "name": "Ostentoso",
+  "type": "hubris",
+  "_id": "386IZ0m6EOfMutWi",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Gana un punto de héroe cuando te asegures de llamar la atención cuando te beneficiaría mantener un perfil bajo.</p>",
+    "infosource": "Mariposa · Khitai, p. 126 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Artesano (Khitai)",
+  "type": "background",
+  "_id": "JrHx3tWURn3hj6hJ",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Honestidad</p>",
+    "quirk": "<p>Gana un punto de héroe cuando uses la artesanía cotidiana para resolver un problema considerado demasiado complejo para una solución tan sencilla.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "notice",
+      "perform",
+      "scholarship"
+    ],
+    "advantages": [
+      "Maestro artesano (Khitai)",
+      "Contactos (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 104 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "li9WDKazVu5ySEdo",
+  "name": "Robo de vida",
+  "type": "sorcery",
+  "_id": "JPfQrCvs8BrQxZs0",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Cuando tu espada prueba la sangre de un enemigo, puedes absorber parte de su fuerza vital para recuperarte. Una vez por sesión, puedes gastar 1 punto de héroe cuando inflijas Heridas para curarte 1 Herida Dramática.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 200",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "H8YHEdynbKnCLx9a",
+  "name": "Recuerda mi nombre",
+  "type": "advantage",
+  "_id": "InAgWU97dUEYRjwS",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Gasta 1 punto de héroe para activar esta ventaja antes de tirar los dados en un Riesgo contra un personaje con el que te hayas encontrado antes. Recuérdale lo que sucedió la última vez que os visteis (si la interacción resultó a tu favor) o dile específicamente cómo será diferente esta vez (si no fue así). Ganas 5 dados adicionales en todos los Riesgos contra ese personaje. Este efecto dura hasta el final de la escena.</p><p><em>Coste: 5 (3 si eres anatolio).</em></p>",
+    "infosource": "El Imperio de la Media Luna, p. 161",
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 3400000,
+  "ownership": {
+    "default": 0
+  }
+}

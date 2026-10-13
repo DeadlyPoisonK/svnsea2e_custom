@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Ancla Menor",
+  "type": "sorcery",
+  "_id": "zE9cyPNHO0DzCt7d",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p><br>El ancla representa a un qing que se enfrenta a los desaf&iacute;os&nbsp;para que otros no tengan que hacerlo. Es fiable y sacrificado.&nbsp;Se lanza literalmente a las profundidades para que otros no&nbsp;tengan que perderse, independientemente de qui&eacute;nes sean&nbsp;los otros. Choca con el cangrejo, cuya motivaci&oacute;n de ser un&nbsp;guardi&aacute;n suele ser personal.</p>\n<hr>\n<p><br>Activa este mohwoo para permitir que otro h&eacute;roe que se&nbsp;encuentre en esta escena gane 1 punto de h&eacute;roe. Un qing&nbsp;solo puede activar este mohwoo una vez por escena.<br>.</p>",
+    "infosource": "Naciones Piratas, p. 171",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  }
+}

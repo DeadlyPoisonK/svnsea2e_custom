@@ -1,0 +1,17 @@
+{
+  "folder": "BrBmrdx9NrOeGW5g",
+  "name": "Flexible",
+  "type": "virtue",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para realizar tu primera acción antes que todos los demás en una ronda.</p>",
+    "infosource": "Monedas (para el barquero) · 7º Mar (básico), p. 157"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "LnkDcDOipgdvOLK0",
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  }
+}

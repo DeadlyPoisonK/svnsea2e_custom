@@ -1,0 +1,33 @@
+{
+  "folder": "zs32dqYrmZlqCpWg",
+  "name": "Rycerz ludzi",
+  "type": "background",
+  "_id": "OhsVa5P6SyaVK8kT",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Eres un caballero del pueblo que defiende a la gente común de cualquier tipo de amenaza.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 207",
+    "used": false,
+    "quirk": "<p>Ganas un Punto de Héroe cuando resuelves un problema convenciendo a un grupo de personas de que se unan y resistan.</p>",
+    "skills": [
+      "convince",
+      "empathy",
+      "notice",
+      "ride",
+      "weaponry"
+    ],
+    "advantages": [
+      "Hoja centelleante",
+      "Liderazgo",
+      "Lingüista"
+    ],
+    "nation": "sarmatia",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

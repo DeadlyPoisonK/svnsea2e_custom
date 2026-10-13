@@ -1,0 +1,22 @@
+{
+  "folder": "w8EyPDrQaZwuIq34",
+  "name": "Mandato",
+  "type": "sorcery",
+  "_id": "3Kd0Ebj9LaY0QsBR",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Tus palabras son como miel para un monstruo, permitiéndote doblegarlo temporalmente a tu voluntad.</p><p>Genera 2 de Plaga. Da una única orden a un grupo de monstruos (como atacar, recoger algo, etc.). El grupo de monstruos no puede atacarse a sí mismo como resultado de este poder.</p>",
+    "infosource": "Khitai, p. 203 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none",
+    "used": false
+  },
+  "effects": [],
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

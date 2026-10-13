@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Virtuoso (Khitai)",
+  "type": "advantage",
+  "_id": "5ETcoAhmJCM40xDu",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Elige un tipo específico de interpretación, como cantar, tocar un instrumento musical concreto o bailar. Colabora con el DJ para determinar cómo llegaste a ser tan hábil en ese tipo de música. ¿Estudiaste a los pies de un maestro, o simplemente y por naturaleza tienes la voz de un ángel? Obtienes 1 dado adicional cuando realizas un Riesgo de Interpretar de esa manera.</p>",
+    "infosource": "Khitai, p. 120 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

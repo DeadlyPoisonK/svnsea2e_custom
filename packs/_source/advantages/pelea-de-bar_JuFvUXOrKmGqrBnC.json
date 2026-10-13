@@ -1,0 +1,23 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Pelea de bar",
+  "type": "advantage",
+  "_id": "JuFvUXOrKmGqrBnC",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Ganas 1 dado adicional cuando realices un Riesgo con Pelear para luchar usando una mesa al revés, un taburete, un tablón de madera o cualquier otra arma improvisada.</p>",
+    "infosource": "7º Mar (básico), p. 152",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 1500000,
+  "ownership": {
+    "default": 0
+  }
+}

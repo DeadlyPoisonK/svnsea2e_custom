@@ -1,0 +1,31 @@
+{
+  "folder": "8AjTGHJtL0XNoqWh",
+  "name": "Mercenario",
+  "type": "background",
+  "_id": "InE0ewGhObEapsm5",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Vendes tus habilidades en batalla al mejor postor.</p>",
+    "infosource": "7º Mar (básico), p. 140",
+    "quirk": "<p>Ganas 1 punto de héroe cuando elijas llevar a cabo tu trabajo por una razón que para ti vale más que el dinero.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "intimidate",
+      "notice",
+      "weaponry"
+    ],
+    "advantages": [
+      "Duro de matar",
+      "Estómago de hierro"
+    ],
+    "nation": "none",
+    "active": true
+  },
+  "effects": [],
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

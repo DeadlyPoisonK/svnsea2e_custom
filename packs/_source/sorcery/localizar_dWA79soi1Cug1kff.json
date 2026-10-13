@@ -1,0 +1,22 @@
+{
+  "folder": "3RPIRXn1ftcKXUa4",
+  "name": "Localizar",
+  "type": "sorcery",
+  "_id": "dWA79soi1Cug1kff",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este poder para encontrar lo que estás buscando (como un ladrón al acecho o una caja fuerte oculta). Lo que buscas debe estar en un área inmediata e investigable.</p><p>El segundo paso en el Camino de los Veraces es aprender a montar cualquier animal. Tu Maravilla te permite comunicarte con un animal. A través de esta comunicación, el animal te ayuda a llegar a donde necesitas ir.</p><p><strong>Montar:</strong> Activa este poder y elige un animal que no sea agresivo y resulte lo suficientemente grande como para soportar tu peso. Ese animal te permite montarlo durante una escena, siguiendo órdenes simples sin quejarse, tales como en qué dirección ir, cómo de rápido caminar o correr, si debe permanecer en silencio, etc. Mientras estás montado en este animal, recibes 1 Aumento gratis para cualquier Riesgo de Equitación. Si el animal es amenazado o está en peligro por cualquier razón, el poder termina, te obliga a desmontar y luego huye. El último paso es el de la honestidad, y te muestra que la verdad es siempre la mejor manera de comunicarte. Tu Maravilla te permite garantizar que la verdad se diga cuando sea necesario.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 170",
+    "sorctype": "prophet",
+    "sorccat": "path",
+    "sorcsubcat": "none",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

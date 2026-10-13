@@ -1,0 +1,19 @@
+{
+  "folder": "SHTZehac4c9ek4Nd",
+  "name": "Listos… Apuntad… ¡Fuego!",
+  "type": "duelstyle",
+  "img": "systems/svnsea2e/icons/duelstyle.jpg",
+  "system": {
+    "description": "<p>Ya sea que la unidad esté armada con arcos largos, ballestas, pistolas o mosquetes, la Estrategia Listos… Apuntad… ¡Fuego! no solo daña a una unidad enemiga sino que también la disuade de contraatacar. Cuando ordenes Listos… Apuntad… ¡Fuego!, provoca un Impacto y tu unidad tira tantos dados como su Fuerza. La próxima vez que el objetivo reparta Impactos en esta ronda, repartirá uno menos por cada Aumento obtenido.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 193",
+    "used": false,
+    "bonus": ""
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_id": "Xg9Q5zatMRKpKr8D",
+  "sort": 500000
+}

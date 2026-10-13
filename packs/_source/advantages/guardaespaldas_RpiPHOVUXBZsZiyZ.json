@@ -1,0 +1,23 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Guardaespaldas",
+  "type": "advantage",
+  "_id": "RpiPHOVUXBZsZiyZ",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes gastar 1 punto de héroe cuando un aliado vaya a recibir Heridas. Gasta Aumentos para evitar la misma cantidad de Heridas a tu aliado.</p>",
+    "infosource": "Tierras de Fuego y Oro, p. 177",
+    "cost": {
+      "normal": 2,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

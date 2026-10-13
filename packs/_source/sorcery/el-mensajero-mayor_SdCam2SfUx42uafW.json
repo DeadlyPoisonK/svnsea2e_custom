@@ -1,0 +1,21 @@
+{
+  "folder": "lUyQwJwbG6GzVDjj",
+  "name": "El mensajero Mayor",
+  "type": "sorcery",
+  "_id": "SdCam2SfUx42uafW",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>El khadim se pone en peligro para que sus aliados no tengan que hacerlo. Este Khidma le permite comunicarse con sus compañeros, incluso mientras permanecen a una distancia segura. Por lo tanto, solo una vida está en peligro, mientras que todas las mentes aún pueden contribuir a mantener esa vida a salvo.</p><p>Activa este Khidma y, durante el resto de la escena, tú y el portador de tu thiqa compartís todos los sentidos. Todo lo que uno ve, oye, toca, siente o saborea, el otro también lo siente.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 182",
+    "sorctype": "mithaq",
+    "sorcdur": "none",
+    "sorccat": "thiqa",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

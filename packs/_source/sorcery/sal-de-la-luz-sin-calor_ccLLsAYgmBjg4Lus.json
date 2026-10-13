@@ -1,0 +1,21 @@
+{
+  "folder": "pVGrpMjo5Filx8Qq",
+  "name": "Sal de la luz sin calor",
+  "type": "sorcery",
+  "_id": "ccLLsAYgmBjg4Lus",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Puedes preparar un compuesto que produce la luz suficiente para iluminar una sala durante una escena sin que produzca calor ni combustión.</p><ul><li></li></ul>",
+    "infosource": "Naciones de Théah vol. 1, p. 95",
+    "sorctype": "alquimia",
+    "sorcdur": "none",
+    "sorccat": "juvenilia",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

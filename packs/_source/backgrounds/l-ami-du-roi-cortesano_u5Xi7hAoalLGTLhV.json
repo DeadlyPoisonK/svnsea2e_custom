@@ -1,0 +1,33 @@
+{
+  "folder": "K4Suv6nR4omjCfBo",
+  "name": "L'ami du roi (Cortesano)",
+  "type": "background",
+  "_id": "u5Xi7hAoalLGTLhV",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Eres, literalmente, uno de los cortesanos favoritos del rey de Montaigne.</p>",
+    "infosource": "7º Mar (básico), p. 144",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando utilices la influencia del favor del rey para resolver un problema.</p>",
+    "skills": [
+      "convince",
+      "perform",
+      "ride",
+      "tempt",
+      "weaponry"
+    ],
+    "advantages": [
+      "Amigos en la corte",
+      "Contactos",
+      "Lingüista"
+    ],
+    "nation": "montaigne"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

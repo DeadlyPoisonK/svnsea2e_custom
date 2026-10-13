@@ -1,0 +1,32 @@
+{
+  "folder": "b4Fq6Low3CPtvATU",
+  "name": "Contrabandista de las Shannagary",
+  "type": "background",
+  "_id": "30p6yB5hyb1FImsI",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Un marinero experimentado puede atravesar con seguridad las islas Shannagary en tres días. Tú puedes hacerlo en dos, aunque con un par de arañazos.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 203",
+    "used": false,
+    "quirk": "<p>Ganas un punto de héroe cuando sacrifiques la seguridad por la velocidad y al hacerlo te metas en problemas.</p>",
+    "skills": [
+      "athletics",
+      "brawl",
+      "notice",
+      "sailing",
+      "warfare"
+    ],
+    "advantages": [
+      "Atrapa el viento",
+      "Casado con el mar"
+    ],
+    "nation": "highland",
+    "active": true
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

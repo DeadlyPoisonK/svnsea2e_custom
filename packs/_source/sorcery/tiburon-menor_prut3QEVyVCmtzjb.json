@@ -1,0 +1,21 @@
+{
+  "folder": "7lHEVIbEcYzHCRzi",
+  "name": "Tiburon Menor",
+  "type": "sorcery",
+  "_id": "prut3QEVyVCmtzjb",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p><br>El tibur&oacute;n es un cazador implacable. A un h&eacute;roe agresivo&nbsp;y decidido se le suele dar el mohwoo del tibur&oacute;n cuando&nbsp;valora la acci&oacute;n inmediata por encima de un enfoque&nbsp;m&aacute;s pasivo de &laquo;esperar y ver&raquo; al resolver un problema. El&nbsp;tibur&oacute;n tambi&eacute;n puede representar a un h&eacute;roe que persigue&nbsp;algo, en contraposici&oacute;n con el pez, que desea descubrir algo.</p>\n<hr>\n<p><br>Cuando activas este mohwoo, ning&uacute;n personaje puede&nbsp;evitar tu percepci&oacute;n (ya sea haciendo un Riesgo de<br>Esconder o por medios similares) a menos que tenga una&nbsp;capacidad sobrenatural para hacerlo, como Hechicer&iacute;a o un&nbsp;artefacto. Si tiene tales medios, los dos efectos se cancelan&nbsp;entre s&iacute;: el otro puede intentar Esconderse con normalidad&nbsp;y t&uacute; puedes intentar Percibir con normalidad. Un qing solo&nbsp;puede activar este mohwoo una vez por episodio.</p>",
+    "infosource": "Naciones Piratas, p. 171",
+    "sorctype": "mohwoo",
+    "sorcdur": "scene",
+    "sorccat": "none",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 100391,
+  "ownership": {
+    "default": 0
+  }
+}

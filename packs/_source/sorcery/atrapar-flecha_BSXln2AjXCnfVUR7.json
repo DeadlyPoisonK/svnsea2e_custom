@@ -1,0 +1,22 @@
+{
+  "folder": "pRnQODnoY7cWX42i",
+  "name": "Atrapar flecha",
+  "type": "sorcery",
+  "_id": "BSXln2AjXCnfVUR7",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este Glamour para atrapar cualquier cosa que te arrojen o te disparen, salvo si es con armas de fuego. Esto incluye cuchillos, hachas o incluso flechas. Debes tener una mano libre para realizar esta maniobra y recibes una Herida menos por cada nivel que tengas en este Glamour.</p>",
+    "infosource": "7º Mar (básico), p. 216",
+    "sorctype": "knight",
+    "sorccat": "glamour",
+    "sorcsubcat": "minor",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,33 @@
+{
+  "folder": "3AEY6C9jJm6ze9iL",
+  "name": "Bardo",
+  "type": "background",
+  "_id": "GHkg5eFb8hfNTJIo",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p>Cuentas antiguos relatos y las historias de las Leyendas, y te aseguras de que el alma de Ávalon nunca se olvide.</p>",
+    "infosource": "7º Mar (básico), p. 142",
+    "used": false,
+    "active": true,
+    "quirk": "<p>Ganas 1 punto de héroe cuando resuelvas un problema siguiendo un ejemplo establecido por una Leyenda.</p>",
+    "skills": [
+      "aim",
+      "convince",
+      "empathy",
+      "perform",
+      "ride"
+    ],
+    "advantages": [
+      "Buen bebedor",
+      "Regatear",
+      "Virtuoso"
+    ],
+    "nation": "none"
+  },
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

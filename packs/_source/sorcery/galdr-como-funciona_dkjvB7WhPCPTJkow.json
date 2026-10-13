@@ -1,0 +1,22 @@
+{
+  "folder": "DMohupPGQDu5qKnD",
+  "name": "Galdr: cómo funciona",
+  "type": "sorcery",
+  "_id": "dkjvB7WhPCPTJkow",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Cada vez que adquieras la ventaja de Hechicería aprendes dos runas del futhark y el poder de invocar su poder para ayudar a tus aliados o perjudicar a tus enemigos. Cada runa tiene dos palabras y, por tanto, dos efectos: una <em>stort merke</em> (marca grande) y una <em>litet merke</em> (marca pequeña). Escribir cualquiera de las merke de una runa no requiere ningún tipo de magia (al fin y al cabo, cualquier niño puede garabatear una figura), pero solo un vala puede entrelazar las runas y añadir su voluntad a la escritura para llenarla de magia.</p><p>Pero no es el dibujo de una runa lo que crea la magia, sino romperla. Un vala suele llevar pequeñas tabletas de arcilla con inscripciones rúnicas comunes y las parte o las tira al suelo para poder activar su magia. Un vala también aprende a dibujar runas rápidamente en el suelo usando un palo, el dedo o garabateándolas en una piedra con tiza. En estos casos la magia se libera simplemente destruyendo la escritura de la runa, borrando la runa del suelo con el pie o pasando una mano sobre el dibujo de la tiza.</p><p>La litet merke siempre modifica la stort merke, y un vala entreteje las dos runas en la escritura, uniéndolas de forma casi inseparable. Pero también hay un tercer elemento en la magia del Galdr, una tercera runa: el nombre del vala, escrito de su propia mano. Debido a ello, los dibujos o tabletas escritos por otro no poseen magia. Al escribir su nombre junto a las antiguas palabras de poder, el vala vincula la magia a su propia voluntad y da forma al cambio que tiene lugar en el mundo.</p><p>Cada vez que un vala activa su Galdr, gasta un punto de héroe y elige la stort merke para cualquier runa que conozca, consiguiendo sus efectos. Luego, escoge la litet merke de cualquier runa que conozca y también consigue sus efectos. Se puede elegir la misma runa dos veces. Activar el Galdr durante una secuencia de acción o dramática cuesta un Aumento además del punto de héroe.</p><p>Muchas litet merke añaden otro efecto sobre el objetivo de la stort merke. Si la stort merke que se active no tiene un objetivo específico (por ejemplo, si la stort merke no dice «elige a un personaje»), entonces la litet merke puede afectar a cualquier personaje que haya en la misma escena. Si la stort merke especifica claramente que se tiene que elegir a un personaje, la litet merke siempre afectará al mismo personaje.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 189",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

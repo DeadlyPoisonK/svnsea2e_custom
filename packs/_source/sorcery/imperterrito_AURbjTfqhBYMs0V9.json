@@ -1,0 +1,21 @@
+{
+  "folder": "fAgf1ip8yOiUWsc3",
+  "name": "Impertérrito",
+  "type": "sorcery",
+  "_id": "AURbjTfqhBYMs0V9",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Mareaux te har&aacute; creer que no hay nada que temer en la<br>oscuridad. Mientras Mareaux lo posea, el s&egrave;vit&egrave; puede<br>gastar 1 punto de h&eacute;roe para ignorar todo el miedo,<br>incluyendo el que infligen los monstruos de manera<br>sobrenatural, la hechicer&iacute;a u otro efecto m&aacute;gico. Ten<br>en cuenta que esto no transmite la misma resistencia a<br>tus compa&ntilde;eros.</p>",
+    "infosource": "Naciones Piratas, p. 162",
+    "sorctype": "kapsevi",
+    "sorcdur": "none",
+    "sorccat": "ti",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

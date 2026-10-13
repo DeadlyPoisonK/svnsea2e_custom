@@ -1,0 +1,22 @@
+{
+  "folder": "pRnQODnoY7cWX42i",
+  "name": "Atrapar bala",
+  "type": "sorcery",
+  "_id": "LlwVkgZZPhfRzO9F",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "used": false,
+    "description": "<p>Activa este Glamour para atrapar cualquier cosa, incluso una bala que te hayan disparado. Debes tener una mano libre para realizar esta maniobra y no recibes la Herida Dramática automática porque te hayan disparado con una pistola. Puedes activar este Glamour una vez más por episodio por cada nivel que tengas.</p>",
+    "infosource": "7º Mar (básico), p. 216",
+    "sorctype": "knight",
+    "sorccat": "glamour",
+    "sorcsubcat": "major",
+    "sorcdur": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

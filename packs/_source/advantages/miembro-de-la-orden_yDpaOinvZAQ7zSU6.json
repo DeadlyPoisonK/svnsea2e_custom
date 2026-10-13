@@ -1,0 +1,24 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Miembro de la orden",
+  "type": "advantage",
+  "_id": "yDpaOinvZAQ7zSU6",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Puedes esperar refugio, un lugar donde quedarte y comida caliente en cualquier iglesia. También tienes acceso a muchas de las bibliotecas de la Iglesia, pero no a todas. Finalmente, también consigues 2 dados para cualquier Riesgo social contra personajes que sean adeptos de tu fe.</p><p><em>Coste: 3 (2 si eres castellano).</em></p>",
+    "infosource": "7º Mar (básico), p. 152",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": 2
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

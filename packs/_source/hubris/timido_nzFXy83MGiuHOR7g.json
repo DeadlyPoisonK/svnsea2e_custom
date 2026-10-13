@@ -1,0 +1,17 @@
+{
+  "folder": "y4NSZLM4Tpr3LrUL",
+  "name": "Tímido",
+  "type": "hubris",
+  "img": "systems/svnsea2e/icons/hubris.jpg",
+  "system": {
+    "description": "<p>Recibe 1 punto de héroe cuando evites ser el centro de atención, cuando insistas que no estás haciendo nada que no haría un hombre sencillo o te niegues a recibir crédito por algo que sería ventajoso para ti al reclamar como obra tuya.</p>",
+    "infosource": "El pescador · Naciones Piratas, p. 154"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "nzFXy83MGiuHOR7g",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

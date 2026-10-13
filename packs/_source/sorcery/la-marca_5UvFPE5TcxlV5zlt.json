@@ -1,0 +1,22 @@
+{
+  "folder": "3uHWVTNF7udgvwFC",
+  "name": "La marca",
+  "type": "sorcery",
+  "_id": "5UvFPE5TcxlV5zlt",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Cuando Tură te entrega tu primer don, te marca con su dedo. Esta marca adopta la forma de un borrón negro sobre tu piel, ya sea en tu cara, en el cuello o en las manos, y siempre estará frío al tacto. Si tienes la marca, puedes distinguir si la marca de otro es verdadera o falsa. Además, Tură también puede concederte dones adicionales sin tener que ir a visitarle de nuevo a las montañas.</p><p>La forma en que los ussuros tratan a los malditos depende de si saben que tiene la marca o no. Si no lo saben, suponen que el maldito es otro poluchatel y lo tratan igual que a estos, incluso aunque le vean usar un don que sólo concede Tură.</p><p>Sin embargo, si han visto la marca sabrán que es uno de los malditos de Chernobog y lo tratan con suspicacia y lástima: suspicacia porque han oído las historias que los malditos han contado sobre su relación con Chernobog y lástima porque creen que todos los malditos están condenados a sufrir una muerte violenta.</p><p>Si un ussuro sabe que eres uno de los malditos, cualquier acción que realices sobre él en una secuencia dramática requiere un Aumento adicional para vencer su suspicacia.</p><p>Por lo general, los malditos y los poluchatel se tratan bien entre ellos. Los poluchatel tienden a tratar de forma amable a todos los extraños y los malditos tratan de hacer amigos para poder conseguir más adelante información. Sin embargo, cuando Matushka descubra que Tură ha estado entrometiéndose, las relaciones entre los malditos y los poluchatel cambiarán casi seguro.</p>",
+    "infosource": "Naciones de Théah vol. 2, p. 150",
+    "used": false,
+    "sorctype": "tura",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

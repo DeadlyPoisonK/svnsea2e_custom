@@ -1,0 +1,23 @@
+{
+  "folder": "bxjpDobMNO20CU8R",
+  "name": "Oportunista",
+  "type": "advantage",
+  "_id": "QIiWMG2R846BqSKq",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Cuando otro héroe gaste un Aumento para crear una Oportunidad puedes gastar 1 punto de héroe para activarla inmediatamente para ti.</p>",
+    "infosource": "7º Mar (básico), p. 152",
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

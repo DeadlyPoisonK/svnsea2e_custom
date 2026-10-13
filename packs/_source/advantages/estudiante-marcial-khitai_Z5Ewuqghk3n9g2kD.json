@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Estudiante marcial (Khitai)",
+  "type": "advantage",
+  "_id": "Z5Ewuqghk3n9g2kD",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Aunque nunca has asistido a una Academia de esgrima formal, has tenido suficiente entrenamiento (ya sea a manos de un maestro o en la escuela de la vida) para aprender algunos pasos básicos de las artes marciales formales. Colabora con el DJ para determinar cómo aprendiste lo poco que sabes de dichas artes y por qué nunca terminaste tu entrenamiento. ¿Fuiste traicionado por un estudiante rival y expulsado, o asesinaron a tu maestro antes de que tuviera ocasión de enseñarte las formas más elevadas de su arte? Aprendes las maniobras Estocada y Parada, así como una maniobra que no sea de estilo de tu elección, y puedes ejecutarlas como lo hace un espadachín. La ventaja Academia de esgrima se considera una ventaja de 3 puntos para ti.</p>",
+    "infosource": "Khitai, p. 120 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 3,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

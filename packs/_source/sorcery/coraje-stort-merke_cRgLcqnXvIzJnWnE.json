@@ -1,0 +1,22 @@
+{
+  "folder": "7okTCjMzppFJENbT",
+  "name": "Coraje Stort Merke",
+  "type": "sorcery",
+  "_id": "cRgLcqnXvIzJnWnE",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": "<p>Gasta los puntos de héroe que quieras. El DJ pierde la misma cantidad de puntos de peligro.</p>",
+    "infosource": "Naciones de Théah vol. 1, p. 191",
+    "used": false,
+    "sorctype": "galdr",
+    "sorcdur": "none",
+    "sorccat": "futhark",
+    "sorcsubcat": "great"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

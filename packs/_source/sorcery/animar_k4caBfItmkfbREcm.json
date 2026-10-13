@@ -1,0 +1,22 @@
+{
+  "folder": "d2B7Md5aTTuNRl5Z",
+  "name": "Animar",
+  "type": "sorcery",
+  "_id": "k4caBfItmkfbREcm",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Mediante oscuros rituales eres capaz de devolver a una criatura muerta a una apariencia de vida. Genera 5 de Plaga y anima un cadáver. Este cadáver es un monstruo con una Fuerza igual a la mitad de tu Plaga en el momento de ser animado. (Si tu Plaga sube o baja posteriormente, no afecta a la Fuerza del monstruo). Puedes otorgarle cualidades de monstruo generando 3 de Plaga por cada cualidad. Este monstruo sigue tus órdenes lo mejor que puede, pero ignora órdenes más complejas que una sola palabra. «Ataca» es una orden válida, pero «Quédate aquí hasta que me oigas llamar» no lo es. Un ocultista solo puede tener un único monstruo animado bajo su control a la vez.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 203 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

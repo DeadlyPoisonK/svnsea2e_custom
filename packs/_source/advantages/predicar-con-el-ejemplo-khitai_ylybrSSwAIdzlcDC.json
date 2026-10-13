@@ -1,0 +1,24 @@
+{
+  "folder": "9LdYvsyxT82kgNev",
+  "name": "Predicar con el ejemplo (Khitai)",
+  "type": "advantage",
+  "_id": "ylybrSSwAIdzlcDC",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Tu héroe siempre vigila a sus aliados, listo para tender una mano amiga si es necesario. Gasta un punto de héroe después de realizar un Riesgo y elige a cualquier personaje que haya obtenido menos Aumentos que tú. Ese personaje puede cambiar su Enfoque para que coincida con el tuyo y obtiene dos Aumentos adicionales.</p>",
+    "infosource": "Khitai, p. 122 (traducción no oficial)",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

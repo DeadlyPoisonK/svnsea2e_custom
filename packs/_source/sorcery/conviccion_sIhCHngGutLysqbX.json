@@ -1,0 +1,22 @@
+{
+  "folder": "FsybWQHPKvw1ZnzZ",
+  "name": "Convicción",
+  "type": "sorcery",
+  "_id": "sIhCHngGutLysqbX",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Invoca el espíritu de tu antepasado para empoderar tus acciones. Vuelve a tirar tantos dados en un Riesgo como tu Discordia actual. Luego, tu Discordia pasa a ser 0.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 206 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

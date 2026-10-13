@@ -1,0 +1,22 @@
+{
+  "folder": "eG96HljF3u2nUwA8",
+  "name": "Gachas funerarias",
+  "type": "sorcery",
+  "_id": "rJR1ZD9hifBp32PX",
+  "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+  "system": {
+    "description": "<p>Un riñón y un hígado de un cadáver triturados hasta conseguir unas gachas grumosas y mezcladas con venenos y poderosos sedantes. Cuando un ser vivo las consume, las Gachas funerarias infligen 1 Herida Dramática inmediatamente. Si una persona muere el mismo día en que consume estas gachas, se alzará como un monstruo no muerto bajo tu mandato tres días después de su muerte. Tú determinas el tipo de no muerto cuando realices las gachas (un cadáver andante, un espíritu, etcétera) y además el monstruo tratará siempre todas tus órdenes como si se encontrara bajo los efectos de Pan de amo. Crear una dosis de gachas siempre genera corrupción, pero además ganarás corrupción dos veces si haces una dosis de Gachas funerarias y luego se las das de comer a otro personaje.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 207",
+    "sorctype": "hex",
+    "sorcdur": "none",
+    "sorccat": "unguents",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

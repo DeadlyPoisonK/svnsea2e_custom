@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Ingenioso",
+  "type": "virtue",
+  "_id": "EvpzDRqVIBj7U1Rg",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud para escapar del peligro y salir de la escena actual. No puedes rescatar a nadie excepto a ti mismo.</p>",
+    "infosource": "Mapache · Khitai, p. 127 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

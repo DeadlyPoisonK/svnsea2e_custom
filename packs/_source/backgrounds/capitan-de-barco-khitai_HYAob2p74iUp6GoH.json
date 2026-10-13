@@ -1,0 +1,32 @@
+{
+  "folder": "nUc70rQf0xeeNLgj",
+  "name": "Capitán de barco (Khitai)",
+  "type": "background",
+  "_id": "HYAob2p74iUp6GoH",
+  "img": "systems/svnsea2e/icons/background.jpg",
+  "system": {
+    "description": "<p><strong>Rasgo:</strong> Lealtad</p>",
+    "quirk": "<p>Gana un punto de héroe cada vez que seas el último miembro de tu tripulación en ponerse a salvo.</p>",
+    "skills": [
+      "athletics",
+      "intimidate",
+      "scholarship",
+      "warfare",
+      "weaponry"
+    ],
+    "advantages": [
+      "Crítica mordaz (Khitai)",
+      "Amigos en la corte (Khitai)"
+    ],
+    "nation": "none",
+    "infosource": "Khitai, p. 107 (traducción no oficial)",
+    "active": true,
+    "used": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

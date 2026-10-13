@@ -1,0 +1,21 @@
+{
+  "folder": "8yRTt6IGKB0lpv51",
+  "name": "Revelación incipiente",
+  "type": "sorcery",
+  "_id": "ffGAqBMbIPlWvy1D",
+  "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
+  "system": {
+    "description": "<p>Activa este turru para invocar a los poderes del más allá y que estos revelen una pieza de información importante y necesaria para ayudarte en tu situación actual. Sin embargo, hay que tener cuidado, la concepción que tienen los poderes de lo necesario (y cuándo es necesario) puede no ser la misma que la tuya. Lo que obtengas siempre será útil, pero no necesariamente como esperas…</p>",
+    "infosource": "El Imperio de la Media Luna, p. 185",
+    "sorctype": "nawaru",
+    "sorcdur": "none",
+    "sorccat": "turrus",
+    "sorcsubcat": "major"
+  },
+  "effects": [],
+  "flags": {},
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

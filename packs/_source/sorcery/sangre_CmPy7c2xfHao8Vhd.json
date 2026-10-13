@@ -1,0 +1,22 @@
+{
+  "folder": "UAD1q5zNVMpOyhGo",
+  "name": "Sangre",
+  "type": "sorcery",
+  "_id": "CmPy7c2xfHao8Vhd",
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "system": {
+    "description": "<p>Gasta 1 punto de h&eacute;roe mientras le haces&nbsp;la tercera Herida Dram&aacute;tica a otro personaje&nbsp;para dejarlo Indefenso de inmediato. Solo puedes&nbsp;activar este poder una vez por episodio.</p>",
+    "used": false,
+    "infosource": "Tierras de Fuego y Oro, p. 194",
+    "sorctype": "redtouch",
+    "sorcdur": "none",
+    "sorccat": "disruption",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

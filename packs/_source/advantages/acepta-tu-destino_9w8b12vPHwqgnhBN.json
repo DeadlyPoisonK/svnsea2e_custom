@@ -1,0 +1,24 @@
+{
+  "folder": "yECDvkOZsan9lVBP",
+  "name": "Acepta tu destino",
+  "type": "advantage",
+  "_id": "9w8b12vPHwqgnhBN",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Durante una secuencia de acción, puedes gastar 1 punto de héroe para actuar antes que los villanos en cada Aumento hasta el final de la ronda.</p><p><em>Coste: 5 (3 si eres mandenká).</em></p>",
+    "infosource": "Tierras de Fuego y Oro, p. 178",
+    "used": false,
+    "cost": {
+      "normal": 5,
+      "reducecost": 3
+    },
+    "knack": true,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

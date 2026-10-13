@@ -1,0 +1,22 @@
+{
+  "folder": "JCGNFduWcmx1JNa2",
+  "name": "Potenciar",
+  "type": "sorcery",
+  "_id": "V5T66BbatGBPmkBo",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Genera 1 de Furia. Invoca la furia de los espíritus, lo que incrementa enormemente tus capacidades. Tira tantos dados adicionales en un Riesgo como la Tranquilidad de la escena, y el DJ obtiene de inmediato tantos puntos de peligro como la mitad del valor de Furia de la escena.</p>",
+    "used": false,
+    "infosource": "Khitai, p. 197 (traducción no oficial)",
+    "sorctype": "none",
+    "sorcdur": "none",
+    "sorccat": "none",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

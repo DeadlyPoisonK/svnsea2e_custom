@@ -1,0 +1,23 @@
+{
+  "folder": "vxu1cHRUsVi9hzod",
+  "name": "Jenízaros (solo Anatol Ayh)",
+  "type": "advantage",
+  "_id": "24kBcohlM4W49pvm",
+  "img": "systems/svnsea2e/icons/advantage.jpg",
+  "system": {
+    "description": "<p>Esta unidad ignora las pruebas de Moral y lucha hasta la muerte a menos que su general le ordene retirarse.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 196",
+    "cost": {
+      "normal": 1,
+      "reducecost": null
+    },
+    "knack": false,
+    "innate": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

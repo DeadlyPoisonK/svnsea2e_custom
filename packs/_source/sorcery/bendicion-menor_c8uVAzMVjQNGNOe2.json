@@ -1,0 +1,22 @@
+{
+  "folder": "1n4xl0pm4vNYsfMx",
+  "name": "Bendición Menor",
+  "type": "sorcery",
+  "_id": "c8uVAzMVjQNGNOe2",
+  "img": "icons/magic/perception/eye-ringed-green.webp",
+  "system": {
+    "description": "<p>Puedes concederle una Bendici&oacute;n a otro personaje.<br>Esto requiere un beso (sea casto o no). Besar a alguien<br>durante una secuencia de acci&oacute;n cuesta 1 Aumento.<br><br>Coge 1 hebra o m&aacute;s para darle a un h&eacute;roe o villano una<br>Bendici&oacute;n menor: un n&uacute;mero de dados adicionales igual<br>al n&uacute;mero de hebras que tengas cuando la lances. El otro<br>personaje puede conservar estos dados adicionales hasta<br>que los use o hasta el final de la escena (lo que suceda<br>primero), pero solo para un Riesgo. Si un personaje<br>elige usar su Bendici&oacute;n en un Riesgo, debe usar todos<br>los dados adicionales que se le han concedido.</p>",
+    "used": false,
+    "infosource": "7º Mar (básico), p. 230",
+    "sorctype": "sorte",
+    "sorcdur": "none",
+    "sorccat": "tesse",
+    "sorcsubcat": "minor"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

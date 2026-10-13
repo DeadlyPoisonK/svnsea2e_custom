@@ -1,0 +1,17 @@
+{
+  "folder": "0Zkn6IurIaBV7vMd",
+  "name": "Despreocupado",
+  "type": "virtue",
+  "_id": "oK6M00swYxFwPqP1",
+  "img": "systems/svnsea2e/icons/virtue.jpg",
+  "system": {
+    "description": "<p>Activa tu Virtud cuando seas el objetivo de algún efecto (magia, artefactos, monstruos, etc.). Tú (y solo tú) resultas completamente inmune.</p>",
+    "infosource": "Delfín · Khitai, p. 126 (traducción no oficial)"
+  },
+  "effects": [],
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

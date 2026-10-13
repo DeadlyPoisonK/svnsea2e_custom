@@ -1,0 +1,22 @@
+{
+  "folder": "k1HL2jkmGetnNNuC",
+  "name": "Proyectar",
+  "type": "sorcery",
+  "_id": "oZn0ArDtJrR4sgYJ",
+  "img": "systems/svnsea2e/icons/sorcery.jpg",
+  "system": {
+    "description": "<p>Activa este poder para hablar mentalmente con otro personaje dispuesto en la misma escena que tú. No es necesario compartir idioma para comunicarse, pero sí lo es una inteligencia aproximada al nivel de un humano (no se puede usar este poder para hablar con una ardilla, por ejemplo).</p><p>El paso tres te enseña que al-Musawwir te guía y te permite llevar tu Camino a donde sea que ese Camino te lleve. A través de tu Maravilla, puedes desbloquear puertas que te corten el paso.</p>",
+    "infosource": "El Imperio de la Media Luna, p. 168",
+    "used": false,
+    "sorctype": "prophet",
+    "sorcdur": "none",
+    "sorccat": "path",
+    "sorcsubcat": "none"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
