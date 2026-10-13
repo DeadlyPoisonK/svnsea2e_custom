@@ -5,7 +5,7 @@
   "type": "Item",
   "description": "",
   "sort": 0,
-  "color": null,
+  "color": "#3a3f4a",
   "flags": {
     "scene-packer": {
       "hash": "52c50faae69f63c67fd724df718a6a41856733f7"
